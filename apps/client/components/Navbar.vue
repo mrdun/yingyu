@@ -105,6 +105,7 @@ interface AnchorAttributes extends Record<string, any> {
 }
 const HEADER_OPTIONS: AnchorAttributes[] = [
   { name: "编辑器", href: "/editor" },
+  { name: "复习", href: "/review" },
   { name: "文档", href: runtimeConfig.public.helpDocsURL as string, target: "_blank" },
   { name: "功能", href: "#features" },
   { name: "问题", href: "#faq" },
