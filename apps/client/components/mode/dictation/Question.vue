@@ -7,28 +7,26 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, watch } from "vue";
 
-import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
+import { usePlaySentenceSound } from "~/composables/main/englishSound/sentence";
 import { useCourseStore } from "~/store/course";
 
-usePlayEnglishSound();
-const { playSound } = useCurrentStatementEnglishSound();
+// 听写模式：进入题目/切换下一句时自动播放整句发音
+const { playSentenceSound, pauseSentenceSound } = usePlaySentenceSound();
+const courseStore = useCourseStore();
 
-function usePlayEnglishSound() {
-  onMounted(() => {
-    const pauseSound = playSound();
-    const courseStore = useCourseStore();
+onMounted(() => {
+  playSentenceSound();
 
-    watch(
-      () => courseStore.statementIndex,
-      () => {
-        pauseSound();
-        playSound();
-      },
-    );
+  watch(
+    () => courseStore.statementIndex,
+    () => {
+      pauseSentenceSound();
+      playSentenceSound();
+    },
+  );
 
-    onUnmounted(() => {
-      pauseSound();
-    });
+  onUnmounted(() => {
+    pauseSentenceSound();
   });
-}
+});
 </script>

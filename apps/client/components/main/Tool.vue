@@ -25,17 +25,46 @@
 
     <!-- 右侧 -->
     <div class="flex items-center gap-4">
-      <div
-        @click="openGameSettingModal"
-        v-if="isDictationMode()"
-      >
-        <UTooltip text="游戏设置">
-          <UIcon
-            name="i-ph-gear"
-            class="clickable-item h-6 w-6"
-          />
-        </UTooltip>
+      <div class="flex items-center gap-2">
+        <span class="text-sm dark:text-gray-200">听写模式</span>
+        <input
+          type="checkbox"
+          class="toggle toggle-secondary toggle-sm"
+          :checked="isDictationMode()"
+          aria-label="听写模式"
+          @change="toggleDictationMode"
+        />
       </div>
+
+      <template v-if="isDictationMode()">
+        <div @click="toggleSentenceSound">
+          <UTooltip :text="isPlaying ? '暂停发音' : '播放发音'">
+            <UIcon
+              :name="isPlaying ? 'i-ph-pause-circle' : 'i-ph-play-circle'"
+              class="clickable-item h-6 w-6"
+            />
+          </UTooltip>
+        </div>
+
+        <div @click="handleToggleSlowRate">
+          <UTooltip :text="isSlowRate() ? '恢复正常语速' : '慢速播放'">
+            <UIcon
+              name="i-ph-turtle"
+              class="clickable-item h-6 w-6"
+              :class="{ 'text-fuchsia-500': isSlowRate() }"
+            />
+          </UTooltip>
+        </div>
+
+        <div @click="openGameSettingModal">
+          <UTooltip text="游戏设置（重复次数/播放间隔/倍速）">
+            <UIcon
+              name="i-ph-gear"
+              class="clickable-item h-6 w-6"
+            />
+          </UTooltip>
+        </div>
+      </template>
 
       <div
         v-if="isAuthenticated()"
@@ -82,24 +111,35 @@
 
 <script setup lang="ts">
 import { useModal } from "#imports";
-import { computed, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 
 import Dialog from "~/components/common/Dialog.vue";
 import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
 import { courseTimer } from "~/composables/courses/courseTimer";
+import { useToolbar } from "~/composables/main/dictation";
+import { SLOW_RATE, usePlaySentenceSound } from "~/composables/main/englishSound/sentence";
 import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useCourseContents } from "~/composables/main/useCourseContents";
 import { useGamePause } from "~/composables/main/useGamePause";
 import { useGameSetting } from "~/composables/main/useGameSetting";
 import { useRanking } from "~/composables/rank/rankingList";
-import { useGamePlayMode } from "~/composables/user/gamePlayMode";
+import { GamePlayMode, useGamePlayMode } from "~/composables/user/gamePlayMode";
 import { parseShortcut, useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 
 const { shortcutKeys } = useShortcutKeyMode();
-const { isDictationMode } = useGamePlayMode();
+const { isDictationMode, toggleGamePlayMode } = useGamePlayMode();
+const { toolBarData, recoverToolBarData } = useToolbar();
+const { isPlaying, pauseSentenceSound, toggleSentenceSound, toggleSlowRate } =
+  usePlaySentenceSound();
+
+// 进入游戏页时恢复持久化的工具栏设置（含慢速倍率）
+onMounted(() => {
+  recoverToolBarData();
+});
+
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
 const { focusInput } = useQuestionInput();
@@ -127,6 +167,21 @@ const currentPercentage = computed(() => {
 });
 
 const isOpenCourseContents = ref(false);
+
+// 听写模式开关：持久化在 localStorage（gamePlayMode），默认中译英（关）
+function toggleDictationMode() {
+  // 切换模式前停掉当前发音，避免切换后继续播放
+  pauseSentenceSound();
+  toggleGamePlayMode(isDictationMode() ? GamePlayMode.ChineseToEnglish : GamePlayMode.Dictation);
+}
+
+function isSlowRate() {
+  return Number(toolBarData.rate) === SLOW_RATE;
+}
+
+function handleToggleSlowRate() {
+  toggleSlowRate();
+}
 
 function useDoAgain() {
   const { showQuestion } = useGameMode();
