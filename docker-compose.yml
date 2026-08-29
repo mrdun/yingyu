@@ -17,7 +17,7 @@ services:
       timeout: 5s
       retries: 5
     ports:
-      - 5433:5432
+      - 127.0.0.1:5433:5432
   testdb:
     image: postgres:14-alpine
     user: postgres
@@ -28,20 +28,20 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_DB: earthworm_test
     ports:
-      - 5480:5432
+      - 127.0.0.1:5480:5432
   redis:
     image: redis:5-alpine
     restart: always
     volumes:
       - data:/var/lib/redis
     ports:
-      - 6379:6379
+      - 127.0.0.1:6379:6379
   testRedis:
     image: redis:5-alpine
     volumes:
       - data:/var/lib/test-redis
     ports:
-      - 6380:6379
+      - 127.0.0.1:6380:6379
   logto:
     restart: always
     depends_on:
@@ -50,8 +50,8 @@ services:
     image: svhd/logto:1.18.0
     entrypoint: ["sh", "-c", "npm run cli db seed -- --swe && npm start"]
     ports:
-      - 3010:3010
-      - 3011:3011
+      - 127.0.0.1:3010:3010
+      - 127.0.0.1:3011:3011
     environment:
       - TRUST_PROXY_HEADER=1
       - DB_URL=postgres://postgres:p0stgr3s@logtoPostgres:5432/logto
