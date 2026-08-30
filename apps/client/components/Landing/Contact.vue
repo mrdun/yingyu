@@ -11,99 +11,59 @@
               src="/logo.png"
               alt="earth-worm-logo"
             />
-            <span class="mt-4 text-3xl">Earthworm</span>
+            <span class="mt-4 text-3xl">学以致用</span>
           </div>
 
           <p class="typing mt-4 max-w-[16rem] text-base leading-relaxed">
             一起来加入我们
             <span
               class="bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 bg-clip-text text-transparent dark:from-purple-600 dark:to-gray-100"
-              >Earthworm</span
+              >学以致用</span
             >!
           </p>
-
-          <ul class="mt-6 flex gap-6 transition">
-            <li>
-              <a
-                href="https://x.com/cui_xiaorui"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <span class="sr-only">Twitter</span>
-                <UIcon
-                  name="i-simple-icons-x"
-                  class="icon-link icon-link-gray"
-                ></UIcon>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://t.me/+dohhXSz-5n1kZDQ1"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <UIcon
-                  name="i-simple-icons-telegram"
-                  class="icon-link icon-link-gray"
-                ></UIcon>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/cuixueshe/earthworm"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <UIcon
-                  name="i-simple-icons-github"
-                  class="icon-link icon-link-gray"
-                ></UIcon>
-              </a>
-            </li>
-          </ul>
         </div>
 
         <div class="grid grid-cols-1 gap-6 transition sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
           <div>
-            <p class="text-lg font-medium">Earthworm</p>
+            <p class="text-lg font-medium">学以致用</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
                 <a
-                  href="https://github.com/cuixueshe/earthworm"
+                  href="#features"
                   class="hover:opacity-80"
                 >
-                  开源
+                  产品功能
                 </a>
               </li>
 
               <li>
                 <a
-                  href="https://github.com/cuixueshe/earthworm/issues"
+                  href="#faq"
                   class="hover:opacity-80"
                 >
-                  问题
+                  常见问题
                 </a>
               </li>
 
               <li>
                 <a
-                  href="https://github.com/cuixueshe/earthworm/issues/91"
+                  href="#home"
                   class="hover:opacity-80"
                 >
-                  贡献代码
+                  开始学习
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <p class="text-lg font-medium">团队</p>
+            <p class="text-lg font-medium">支持</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
                 <a
-                  href="https://t.me/+dohhXSz-5n1kZDQ1"
+                  href="#faq"
                   class="hover:opacity-80"
                 >
                   联系我们

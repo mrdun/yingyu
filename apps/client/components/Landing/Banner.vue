@@ -34,7 +34,7 @@
         class="btn relative"
         type="button"
       >
-        <strong>开启Earthworm</strong>
+        <strong>开启学以致用</strong>
         <div id="container-stars">
           <div id="stars"></div>
         </div>
@@ -44,37 +44,6 @@
           <div class="circle"></div>
         </div>
       </button>
-      <a
-        href="https://github.com/cuixueshe/earthworm"
-        rel="noreferrer noopener"
-        target="_blank"
-        class="group relative inline-flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-full px-6 duration-500"
-      >
-        <div
-          class="relative inline-flex -translate-x-0 items-center transition group-hover:-translate-x-6"
-        >
-          <div
-            class="absolute flex translate-x-0 items-center justify-center text-purple-600 opacity-100 transition group-hover:-translate-x-6 group-hover:opacity-0"
-          >
-            <UIcon
-              name="i-ph-star-fill"
-              class="h-5 w-5"
-            ></UIcon>
-          </div>
-          <span
-            class="bg-gradient-to-r from-purple-600 to-gray-300 bg-clip-text pl-6 font-medium text-transparent"
-            >Star us on GitHub</span
-          >
-          <div
-            class="absolute right-0 flex translate-x-12 items-center justify-center text-purple-400 opacity-0 transition group-hover:translate-x-6 group-hover:opacity-100"
-          >
-            <UIcon
-              name="i-ph-arrow-right"
-              class="h-5 w-5"
-            ></UIcon>
-          </div>
-        </div>
-      </a>
     </div>
     <div class="mt-20 flex w-full justify-center">
       <img

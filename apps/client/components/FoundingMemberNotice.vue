@@ -4,9 +4,7 @@
     v-if="showNotice"
   >
     <div class="flex items-center justify-between">
-      <div class="font-bold">
-        【邀请函】加入 Earthworm 创始会员 与我们一起成就更好的英语学习平台
-      </div>
+      <div class="font-bold">【邀请函】加入 学以致用 创始会员 与我们一起成就更好的英语学习平台</div>
       <div class="hidden sm:flex sm:space-x-4">
         <button
           class="text-black"

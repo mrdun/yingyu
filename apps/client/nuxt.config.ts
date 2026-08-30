@@ -28,7 +28,17 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Earthworm",
+      title: "学以致用 - 像玩游戏一样，用句子学英语",
+      htmlAttrs: {
+        lang: "zh-CN",
+      },
+      meta: [
+        {
+          name: "description",
+          content:
+            "学以致用 - 像玩游戏一样，用句子学英语。连词成句、游戏化闯关，让英语学习不再痛苦。",
+        },
+      ],
       link: [{ rel: "icon", href: "/favicon.ico" }],
       script: appScripts,
     },

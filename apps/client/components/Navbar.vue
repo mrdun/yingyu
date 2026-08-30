@@ -20,7 +20,7 @@
                 alt="earth-worm-logo"
               />
               <h1 class="text-wrap text-2xl font-extrabold leading-normal dark:text-white">
-                Earthworm
+                学以致用
               </h1>
             </div>
           </NuxtLink>

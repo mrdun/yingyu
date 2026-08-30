@@ -4,8 +4,8 @@
     id="what"
   >
     <CommonTitle
-      title="What is Earthworm?"
-      :description="['An open-source, collaborative, user-friendly English learning tool.']"
+      title="什么是学以致用？"
+      :description="['像玩游戏一样，用句子学英语。']"
     />
     <section class="flex w-full justify-around py-8">
       <div

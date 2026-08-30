@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-screen-xl">
       <CommonTitle
         title="用户反馈"
-        :description="['如果您正在使用 Earthworm ，请随时在 Twitter 上向我们提供您的反馈!']"
+        :description="['听听正在使用 学以致用 的同学们怎么说!']"
       />
       <div class="mt-8 sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
         <div
@@ -29,10 +29,6 @@
                     {{ "@" + item.account }}
                   </p>
                 </div>
-                <UIcon
-                  name="i-simple-icons-twitter"
-                  class="h-6 w-6 self-start text-[#03a9f4]"
-                ></UIcon>
               </div>
               <p class="mt-4 text-sm text-gray-700 dark:text-gray-300 lg:text-base">
                 {{ item.chinese }}
@@ -51,14 +47,6 @@
                   ></UIcon>
                   <span class="text-gray-500 dark:text-gray-400">{{ item.likeCount }} likes</span>
                 </div>
-                <a
-                  :href="item.link"
-                  class="text-blue-500 dark:text-blue-400"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  style="pointer-events: none"
-                  >See {{ item.account }}'s</a
-                >
               </div>
             </div>
           </blockquote>

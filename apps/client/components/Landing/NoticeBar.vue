@@ -22,7 +22,7 @@
 const props = defineProps({
   main_title: {
     type: String,
-    default: "Earthworm is now available! 🎉",
+    default: "学以致用现已上线! 🎉",
   },
   sub_title: {
     type: String,
@@ -30,7 +30,7 @@ const props = defineProps({
   },
   link: {
     type: String,
-    default: "https://github.com/cuixueshe/earthworm",
+    default: "#home",
   },
   btn_text: {
     type: String,
