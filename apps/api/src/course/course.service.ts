@@ -1,7 +1,7 @@
 import { Inject, Injectable, NotFoundException } from "@nestjs/common";
-import { and, asc, eq, gt } from "drizzle-orm";
+import { and, asc, eq, gt, sql } from "drizzle-orm";
 
-import { course, statement } from "@earthworm/schema";
+import { course, statement, userLearnRecord } from "@earthworm/schema";
 import { CourseHistoryService } from "../course-history/course-history.service";
 import { DB, DbType } from "../global/providers/db.provider";
 import { RankService } from "../rank/rank.service";
@@ -82,10 +82,45 @@ export class CourseService {
       await this.courseHistoryService.upsert(userId, coursePackId, courseId);
       nextCourse &&
         (await this.userCourseProgressService.upsert(userId, coursePackId, nextCourse.id, 0));
+
+      // 记录每日学习句数到 user_learn_record, 供 stats / 金币任务(study_10/study_30)使用
+      const learnedCount = await this.countStatements(coursePackId, courseId);
+      await this.upsertUserLearnRecord(userId, learnedCount);
     }
 
     return {
       nextCourse: await this._findNext(coursePackId, courseId),
     };
+  }
+
+  /**
+   * 统计该课程包含的句子数量 (完成该课程即视为学习了这些句子)
+   */
+  private async countStatements(coursePackId: string, courseId: string): Promise<number> {
+    const [row] = await this.db
+      .select({ total: sql<number>`count(*)` })
+      .from(statement)
+      .innerJoin(course, eq(course.id, statement.courseId))
+      .where(and(eq(statement.courseId, courseId), eq(course.coursePackId, coursePackId)));
+
+    return Number(row?.total ?? 0);
+  }
+
+  /**
+   * 按 userId+day upsert user_learn_record, 冲突时 count 累加。
+   * day 约定与 stats 模块一致: UTC 日期字符串 (YYYY-MM-DD)。
+   */
+  async upsertUserLearnRecord(userId: string, learnedCount: number): Promise<void> {
+    if (!learnedCount || learnedCount <= 0) return;
+
+    const day = new Date().toISOString().split("T")[0];
+
+    await this.db
+      .insert(userLearnRecord)
+      .values({ userId, count: learnedCount, day })
+      .onConflictDoUpdate({
+        target: [userLearnRecord.userId, userLearnRecord.day],
+        set: { count: sql`${userLearnRecord.count} + excluded."count"` },
+      });
   }
 }

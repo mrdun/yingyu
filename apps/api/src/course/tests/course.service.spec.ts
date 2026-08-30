@@ -92,6 +92,54 @@ describe("course service", () => {
     });
   });
 
+  describe("upsertUserLearnRecord", () => {
+    it("should insert a record for today with the given count", async () => {
+      await courseService.upsertUserLearnRecord("cxr", 5);
+
+      const rows = await db.query.userLearnRecord.findMany();
+      expect(rows).toHaveLength(1);
+      expect(rows[0]).toMatchObject({ userId: "cxr", count: 5 });
+      expect(String(rows[0].day)).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    });
+
+    it("should accumulate count when upserting the same userId+day again", async () => {
+      await courseService.upsertUserLearnRecord("cxr", 3);
+      await courseService.upsertUserLearnRecord("cxr", 4);
+
+      const rows = await db.query.userLearnRecord.findMany();
+      expect(rows).toHaveLength(1);
+      expect(rows[0].count).toBe(7);
+    });
+
+    it("should keep different users in separate rows", async () => {
+      await courseService.upsertUserLearnRecord("user-a", 2);
+      await courseService.upsertUserLearnRecord("user-b", 6);
+
+      const rows = await db.query.userLearnRecord.findMany();
+      expect(rows).toHaveLength(2);
+      const counts = rows.map((r) => r.count).sort();
+      expect(counts).toEqual([2, 6]);
+    });
+
+    it("should ignore zero or negative counts", async () => {
+      await courseService.upsertUserLearnRecord("cxr", 0);
+      await courseService.upsertUserLearnRecord("cxr", -1);
+
+      const rows = await db.query.userLearnRecord.findMany();
+      expect(rows).toHaveLength(0);
+    });
+
+    it("should record learned statements when completing a course", async () => {
+      const { userId, courseEntityFirst, coursePackId } = await setupDBData(db);
+
+      await courseService.completeCourse(userId, coursePackId, courseEntityFirst.id);
+
+      const rows = await db.query.userLearnRecord.findMany();
+      expect(rows).toHaveLength(1);
+      expect(rows[0]).toMatchObject({ userId, count: 2 }); // 该课程有 2 个 statements
+    });
+  });
+
   describe("completeCourse", () => {
     it("should perform actions to complete a course for a user with userId and return the next course", async () => {
       const { userId, courseEntityFirst, coursePackId } = await setupDBData(db);
