@@ -4,6 +4,7 @@ import { computed, ref, watchEffect } from "vue";
 import type { Course, Statement } from "~/types";
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
+import { useRatingTracker } from "~/composables/main/ratingTracker";
 import { isAuthenticated } from "~/services/auth";
 import { useMasteredElementsStore } from "~/store/masteredElements";
 import { useStatement } from "./statement";
@@ -13,6 +14,7 @@ export const useCourseStore = defineStore("course", () => {
   const currentStatement = ref<Statement>();
   const { statementIndex, setupAutoSaveProgress } = useStatement();
   const masteredElementsStore = useMasteredElementsStore();
+  const { resetRating } = useRatingTracker();
 
   const { updateActiveCourseMap } = useActiveCourseMap();
 
@@ -113,6 +115,7 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   function doAgain() {
+    resetRating(); // 重置一次性答对统计
     resetStatementIndex();
     updateActiveCourseMap(currentCourse.value?.coursePackId!, currentCourse.value?.id!);
   }
@@ -129,6 +132,7 @@ export const useCourseStore = defineStore("course", () => {
     course.statements = markMasteredElements(course.statements);
 
     currentCourse.value = course;
+    resetRating(); // 新课程开始, 重置一次性答对统计
     if (isAuthenticated()) {
       setupAutoSaveProgress(currentCourse);
       if (statementIndex.value === 0) {

@@ -1,11 +1,12 @@
 import { Inject, Injectable, NotFoundException } from "@nestjs/common";
 import { and, asc, eq, or } from "drizzle-orm";
 
-import { course, coursePack } from "@earthworm/schema";
+import { course, coursePack, courseRating } from "@earthworm/schema";
 import { CourseHistoryService } from "../course-history/course-history.service";
 import { CourseService } from "../course/course.service";
 import { DB, DbType } from "../global/providers/db.provider";
 import { MembershipService } from "../membership/membership.service";
+import { calcGrade, calcScoreRate, isBetterScore } from "./rating";
 
 @Injectable()
 export class CoursePackService {
@@ -149,5 +150,64 @@ export class CoursePackService {
 
   async completeCourse(userId: string, coursePackId: string, courseId: string) {
     return await this.courseService.completeCourse(userId, coursePackId, courseId);
+  }
+
+  async rateCourse(
+    userId: string,
+    coursePackId: string,
+    courseId: string,
+    total: number,
+    correct: number,
+  ) {
+    const scoreRate = calcScoreRate(correct, total);
+    const grade = calcGrade(scoreRate);
+
+    const existing = await this.db.query.courseRating.findFirst({
+      where: and(
+        eq(courseRating.userId, userId),
+        eq(courseRating.coursePackId, coursePackId),
+        eq(courseRating.courseId, courseId),
+      ),
+    });
+
+    const isBest = isBetterScore(scoreRate, existing?.scoreRate);
+
+    if (!existing) {
+      await this.db.insert(courseRating).values({
+        userId,
+        coursePackId,
+        courseId,
+        scoreRate,
+        grade,
+      });
+    } else if (isBest) {
+      await this.db
+        .update(courseRating)
+        .set({ scoreRate, grade })
+        .where(eq(courseRating.id, existing.id));
+    }
+
+    // 无论本次是否刷新最佳, 返回的都是历史最高评级
+    const best = isBest
+      ? { scoreRate, grade }
+      : { scoreRate: existing!.scoreRate, grade: existing!.grade };
+
+    return {
+      scoreRate: best.scoreRate,
+      grade: best.grade,
+      isBest,
+    };
+  }
+
+  async getRatings(userId: string, coursePackId: string) {
+    return await this.db
+      .select({
+        courseId: courseRating.courseId,
+        scoreRate: courseRating.scoreRate,
+        grade: courseRating.grade,
+        updatedAt: courseRating.updatedAt,
+      })
+      .from(courseRating)
+      .where(and(eq(courseRating.userId, userId), eq(courseRating.coursePackId, coursePackId)));
   }
 }

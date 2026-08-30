@@ -8,3 +8,4 @@ export * from "./coursePack";
 export * from "./userLearningActivities";
 export * from "./masteredElements";
 export * from "./reviewRecord";
+export * from "./courseRating";

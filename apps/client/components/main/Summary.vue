@@ -49,6 +49,27 @@
             )} `
           }}
         </p>
+
+        <!-- SSS 评级展示 -->
+        <div
+          v-if="ratingResult"
+          class="mt-2 flex flex-col items-center gap-1"
+        >
+          <div
+            class="text-6xl font-extrabold tracking-wider sm:text-7xl lg:text-8xl"
+            :class="gradeColorClass(ratingResult.grade)"
+          >
+            {{ ratingResult.grade }}
+          </div>
+          <div class="text-sm text-gray-500 sm:text-base">得分率 {{ ratingResult.scoreRate }}%</div>
+          <div
+            v-if="ratingResult.isBest"
+            class="rounded-full bg-amber-100 px-3 py-0.5 text-xs font-bold text-amber-600"
+          >
+            🏆 个人最佳
+          </div>
+        </div>
+
         <p
           v-if="isAuthenticated()"
           class="pl-2 text-xs leading-loose text-gray-400 sm:pl-4 sm:text-sm lg:pl-14 lg:text-base"
@@ -98,6 +119,8 @@ import { useModal } from "#imports";
 import { computed, ref, watch } from "vue";
 import { toast } from "vue-sonner";
 
+import type { RateCourseResponse } from "~/api/course";
+import { fetchRateCourse } from "~/api/course";
 import Dialog from "~/components/common/Dialog.vue";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
@@ -105,6 +128,7 @@ import { useConfetti } from "~/composables/main/confetti/useConfetti";
 import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
 import { useLearningTimeTracker } from "~/composables/main/learningTimeTracker";
+import { useRatingTracker } from "~/composables/main/ratingTracker";
 import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useNavigation } from "~/composables/useNavigation";
@@ -115,6 +139,7 @@ import { useGameStore } from "~/store/game";
 import { permitSaveStatement, preventSaveStatement } from "~/store/statement";
 import { formatSecondsToTime } from "~/utils/date";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+import { gradeColorClass } from "~/utils/rating";
 
 const courseStore = useCourseStore();
 const coursePackStore = useCoursePackStore();
@@ -131,6 +156,8 @@ const { totalMinutes, formattedMinutes } = useTotalLearningTime();
 
 const gameStore = useGameStore();
 const modal = useModal();
+
+const ratingResult = ref<RateCourseResponse | undefined>(undefined);
 
 watch(showModal, (val) => {
   if (val) {
@@ -254,9 +281,21 @@ function useCourse() {
 
   async function completeCourse() {
     if (isAuthenticated() && courseStore.currentCourse) {
-      const { coursePackId } = courseStore.currentCourse;
+      const { coursePackId, id: courseId } = courseStore.currentCourse;
       const { nextCourse } = await courseStore.completeCourse();
       coursePackStore.updateCoursesCompleteCount(coursePackId);
+
+      // 上报评级 (一次性答对统计在 ratingTracker 中)
+      const total = courseStore.currentCourse.statements.length;
+      const correct = useRatingTracker().getFirstTryCorrect();
+      try {
+        ratingResult.value = await fetchRateCourse(coursePackId, courseId, {
+          total,
+          correct,
+        });
+      } catch (e) {
+        console.error("rate course failed", e);
+      }
 
       if (nextCourse) {
         nextCourseId.value = nextCourse.id;
