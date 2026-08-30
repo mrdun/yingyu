@@ -1,5 +1,5 @@
 import { Inject, Injectable, NotFoundException } from "@nestjs/common";
-import { and, asc, eq, or } from "drizzle-orm";
+import { and, asc, eq, ilike, or } from "drizzle-orm";
 
 import { course, coursePack, courseRating } from "@earthworm/schema";
 import { CourseHistoryService } from "../course-history/course-history.service";
@@ -17,49 +17,55 @@ export class CoursePackService {
     private readonly membershipService: MembershipService,
   ) {}
 
-  async findAll(userId?: string) {
+  async findAll(userId?: string, options?: { keyword?: string; filter?: string }) {
     let result = [];
 
-    const publicCoursePacks = await this.findAllPublicCoursePacks();
+    const publicCoursePacks = await this.findAllPublicCoursePacks(options?.keyword);
     result.push(...publicCoursePacks);
 
     if (userId) {
-      const userIdOwnedCoursePacks = await this.findAllForUser(userId);
+      const userIdOwnedCoursePacks = await this.findAllForUser(userId, options?.keyword);
       result.push(...userIdOwnedCoursePacks);
 
       // 看看是不是创始会员
       // 是的话 需要去查所有课程包的 shareLevel 为 founder_only 的
       if (await this.membershipService.isFounderMembership(userId)) {
-        const founderOnlyCoursePacks = await this.findFounderOnly();
+        const founderOnlyCoursePacks = await this.findFounderOnly(options?.keyword);
         result.push(...founderOnlyCoursePacks);
       }
     }
 
+    result = applyFilter(result, options?.filter);
+
     return result;
   }
 
-  async findFounderOnly() {
+  async findFounderOnly(keyword?: string) {
     const coursePacks = await this.db.query.coursePack.findMany({
       orderBy: asc(coursePack.order),
-      where: and(eq(coursePack.shareLevel, "founder_only")), // TODO 缺一个 shareLevel 的枚举类型
+      where: and(eq(coursePack.shareLevel, "founder_only"), keywordWhere(keyword)),
     });
 
     return coursePacks;
   }
 
-  async findAllForUser(userId: string) {
+  async findAllForUser(userId: string, keyword?: string) {
     const userIdOwnedCoursePacks = await this.db.query.coursePack.findMany({
       orderBy: asc(coursePack.order),
-      where: and(eq(coursePack.creatorId, userId), eq(coursePack.shareLevel, "private")),
+      where: and(
+        eq(coursePack.creatorId, userId),
+        eq(coursePack.shareLevel, "private"),
+        keywordWhere(keyword),
+      ),
     });
 
     return userIdOwnedCoursePacks;
   }
 
-  async findAllPublicCoursePacks() {
+  async findAllPublicCoursePacks(keyword?: string) {
     return await this.db.query.coursePack.findMany({
       orderBy: asc(coursePack.order),
-      where: eq(coursePack.shareLevel, "public"),
+      where: and(eq(coursePack.shareLevel, "public"), keywordWhere(keyword)),
     });
   }
 
@@ -210,4 +216,21 @@ export class CoursePackService {
       .from(courseRating)
       .where(and(eq(courseRating.userId, userId), eq(courseRating.coursePackId, coursePackId)));
   }
+}
+
+function keywordWhere(keyword?: string) {
+  if (!keyword?.trim()) return undefined;
+
+  const pattern = `%${keyword.trim()}%`;
+  return or(ilike(coursePack.title, pattern), ilike(coursePack.description, pattern));
+}
+
+function applyFilter(
+  result: { isFree: boolean | null }[],
+  filter?: string,
+): { isFree: boolean | null }[] {
+  if (!filter || filter === "all") return result;
+  if (filter === "free") return result.filter((item) => item.isFree);
+  if (filter === "paid") return result.filter((item) => !item.isFree);
+  return result;
 }

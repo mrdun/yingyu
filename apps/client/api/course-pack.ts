@@ -19,9 +19,13 @@ export interface CoursePackApiResponse {
   courses: CourseApiResponse[];
 }
 
-export async function fetchCoursePacks() {
+export async function fetchCoursePacks(params?: { keyword?: string; filter?: string }) {
   const http = getHttp();
-  return (await http<CoursePacksItemApiResponse[]>("/course-pack", {
+  const query = new URLSearchParams();
+  if (params?.keyword) query.set("keyword", params.keyword);
+  if (params?.filter && params.filter !== "all") query.set("filter", params.filter);
+  const qs = query.toString();
+  return (await http<CoursePacksItem[]>(`/course-pack${qs ? `?${qs}` : ""}`, {
     method: "get",
   })) as CoursePacksItem[];
 }

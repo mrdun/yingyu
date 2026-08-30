@@ -1,6 +1,28 @@
 <template>
   <div class="flex w-full flex-col">
     <h2 class="mb-4 text-center text-3xl dark:border-gray-600">课程包列表</h2>
+
+    <!-- 搜索 + 筛选 -->
+    <div class="mb-4 flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
+      <input
+        v-model="keyword"
+        type="text"
+        placeholder="搜索课程包..."
+        class="input input-sm input-bordered w-full max-w-xs"
+      />
+      <div class="join">
+        <button
+          v-for="opt in filterOptions"
+          :key="opt.value"
+          class="btn join-item btn-sm"
+          :class="filter === opt.value ? 'btn-primary' : 'btn-ghost'"
+          @click="setFilter(opt.value)"
+        >
+          {{ opt.label }}
+        </button>
+      </div>
+    </div>
+
     <template v-if="isLoading">
       <Loading></Loading>
     </template>
@@ -28,9 +50,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { onBeforeUnmount, ref, watch } from "vue";
 
 import type { CoursePack } from "~/types";
+import { fetchCoursePacks } from "~/api/course-pack";
 import CoursePackCard from "~/components/courses/CoursePackCard.vue";
 import { useNavigation } from "~/composables/useNavigation";
 import { useCoursePackStore } from "~/store/coursePack";
@@ -39,6 +62,16 @@ const coursePackStore = useCoursePackStore();
 const { gotoCourseList } = useNavigation();
 const isLoading = ref(false);
 
+const keyword = ref("");
+const filter = ref("all");
+let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+
+const filterOptions = [
+  { label: "全部", value: "all" },
+  { label: "免费", value: "free" },
+  { label: "会员", value: "paid" },
+];
+
 setup();
 
 async function setup() {
@@ -46,6 +79,33 @@ async function setup() {
   if (coursePackStore.coursePacks.length === 0) {
     isLoading.value = true;
     await coursePackStore.setupCoursePacks();
+    isLoading.value = false;
+  }
+}
+
+watch([keyword, filter], () => {
+  if (debounceTimer) clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(() => {
+    applySearch();
+  }, 300);
+});
+
+onBeforeUnmount(() => {
+  if (debounceTimer) clearTimeout(debounceTimer);
+});
+
+function setFilter(value: string) {
+  filter.value = value;
+}
+
+async function applySearch() {
+  isLoading.value = true;
+  try {
+    coursePackStore.coursePacks = await fetchCoursePacks({
+      keyword: keyword.value,
+      filter: filter.value,
+    });
+  } finally {
     isLoading.value = false;
   }
 }

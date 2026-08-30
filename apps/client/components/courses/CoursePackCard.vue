@@ -11,6 +11,12 @@
         height="180"
         class="inset-0 h-full w-full object-cover"
       />
+      <span
+        class="absolute right-2 top-2 rounded-full px-2 py-0.5 text-xs font-medium text-white shadow"
+        :class="coursePack.isFree ? 'bg-green-500' : 'bg-purple-500'"
+      >
+        {{ coursePack.isFree ? "免费" : "会员" }}
+      </span>
     </figure>
     <div class="card-body">
       <h2 class="card-title truncate">{{ coursePack.title }}</h2>

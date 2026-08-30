@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Post, UseGuards } from "@nestjs/common";
+import { Body, Controller, Get, Param, Post, Query, UseGuards } from "@nestjs/common";
 
 import { AuthGuard, UncheckAuth } from "../guards/auth.guard";
 import { User, UserEntity } from "../user/user.decorators";
@@ -12,8 +12,12 @@ export class CoursePackController {
   @UncheckAuth()
   @UseGuards(AuthGuard)
   @Get()
-  async findAll(@User() user: UserEntity) {
-    return await this.coursePackService.findAll(user.userId);
+  async findAll(
+    @User() user: UserEntity,
+    @Query("keyword") keyword?: string,
+    @Query("filter") filter?: string,
+  ) {
+    return await this.coursePackService.findAll(user.userId, { keyword, filter });
   }
 
   @UncheckAuth()
