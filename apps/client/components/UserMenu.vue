@@ -84,6 +84,12 @@ const modal = useModal();
 const showMenuOptions = computed(() => {
   return [
     {
+      title: "会员",
+      name: "membership",
+      eventName: handleMembership,
+      icon: "i-ph-crown-simple-duotone",
+    },
+    {
       title: "设置",
       name: "setting",
       eventName: handleSetting,
@@ -141,6 +147,11 @@ function handleFeedback() {
 function handleMasteredElements() {
   closeUserMenu();
   navigateTo("/mastered-elements");
+}
+
+function handleMembership() {
+  closeUserMenu();
+  navigateTo("/membership");
 }
 
 function handleSetting() {

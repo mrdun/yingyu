@@ -10,3 +10,4 @@ export * from "./masteredElements";
 export * from "./reviewRecord";
 export * from "./courseRating";
 export * from "./coin";
+export * from "./order";

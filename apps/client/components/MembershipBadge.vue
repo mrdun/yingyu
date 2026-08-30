@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex items-center">
     <UIcon
       v-if="userStore.isFounderMembership()"
       name="i-ph-crown-simple-fill"
@@ -8,13 +8,32 @@
       style="width: 20px; height: 20px"
     >
     </UIcon>
+    <UIcon
+      v-else-if="isMember"
+      name="i-ph-seal-check-fill"
+      class="bg-purple-500"
+      title="会员"
+      style="width: 20px; height: 20px"
+    >
+    </UIcon>
   </div>
 </template>
 
 <script setup lang="ts">
+import { fetchMembershipStatus } from "~/api/membership";
 import { useUserStore } from "~/store/user";
 
 const userStore = useUserStore();
+const isMember = ref(false);
+
+onMounted(async () => {
+  try {
+    const res = await fetchMembershipStatus();
+    isMember.value = Boolean(res?.isMember);
+  } catch {
+    isMember.value = false;
+  }
+});
 </script>
 
 <style scoped>

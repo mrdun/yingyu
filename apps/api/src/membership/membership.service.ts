@@ -2,9 +2,10 @@ import { Inject, Injectable, Logger } from "@nestjs/common";
 import { Cron } from "@nestjs/schedule";
 import { and, eq, lt } from "drizzle-orm";
 
-import { membership } from "@earthworm/schema";
+import { coinTransactions, membership, orders } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { BuyMembershipDto, MembershipPeriod } from "./dto/buy-membership.dto";
+import { findPlan } from "./plans";
 import { MembershipType } from "./types/membership.types";
 
 @Injectable()
@@ -73,12 +74,142 @@ export class MembershipService {
     return endDate;
   }
 
-  async isMember(userId: string) {
+  async isMember(userId: string): Promise<boolean> {
     const result = await this.db.query.membership.findFirst({
       where: eq(membership.userId, userId),
     });
 
     return result?.isActive || false;
+  }
+
+  /**
+   * 当前用户会员状态 (供 /membership/status 与 /membership/my)
+   */
+  async getMembershipStatus(userId: string) {
+    const result = await this.db.query.membership.findFirst({
+      where: eq(membership.userId, userId),
+    });
+
+    const isMember = Boolean(result?.isActive && result.end_date > new Date());
+    return {
+      isMember,
+      type: result?.type ?? null,
+      startDate: isMember ? result.start_date : null,
+      endDate: isMember ? result.end_date : null,
+    };
+  }
+
+  /**
+   * 按天数开通/延长会员 (供订单支付成功回调使用)
+   */
+  async activateForDays(userId: string, durationDays: number) {
+    const now = new Date();
+    const membershipEntity = await this.findMembership(userId);
+    const active = membershipEntity && membershipEntity.isActive && membershipEntity.end_date > now;
+
+    let startDate: Date;
+    let endDate: Date;
+    if (active) {
+      startDate = membershipEntity.start_date;
+      endDate = new Date(membershipEntity.end_date);
+      endDate.setDate(endDate.getDate() + durationDays);
+      await this.db
+        .update(membership)
+        .set({ end_date: endDate })
+        .where(eq(membership.userId, userId));
+      this.logger.log(`Membership for user ${userId} extended to ${endDate}`);
+    } else {
+      startDate = now;
+      endDate = new Date(now);
+      endDate.setDate(endDate.getDate() + durationDays);
+      if (!membershipEntity) {
+        await this.db.insert(membership).values({
+          userId,
+          start_date: startDate,
+          end_date: endDate,
+          isActive: true,
+        });
+      } else {
+        await this.db
+          .update(membership)
+          .set({ start_date: startDate, end_date: endDate, isActive: true })
+          .where(eq(membership.userId, userId));
+      }
+    }
+    return { startDate, endDate, isActive: true };
+  }
+
+  /**
+   * 创建订单记录
+   */
+  async createOrder(input: {
+    userId: string;
+    planId: string;
+    amountFen: number;
+    provider: string;
+    providerOrderId: string;
+  }) {
+    const [order] = await this.db
+      .insert(orders)
+      .values({
+        userId: input.userId,
+        planId: input.planId,
+        amountFen: input.amountFen,
+        status: "pending",
+        provider: input.provider,
+        providerOrderId: input.providerOrderId,
+      })
+      .returning();
+    return order;
+  }
+
+  async findOrder(orderId: string) {
+    const [order] = await this.db.select().from(orders).where(eq(orders.id, orderId));
+    return order;
+  }
+
+  async findOrderByProviderOrderId(providerOrderId: string) {
+    const [order] = await this.db
+      .select()
+      .from(orders)
+      .where(eq(orders.providerOrderId, providerOrderId));
+    return order;
+  }
+
+  /**
+   * markOrderPaid 的 providerOrderId 版本 (mock-pay 页使用)
+   */
+  async markPaidByProviderOrderId(providerOrderId: string) {
+    const order = await this.findOrderByProviderOrderId(providerOrderId);
+    if (order) {
+      await this.markOrderPaid(order.id);
+    }
+  }
+
+  /**
+   * 订单支付成功后的业务动作: 开通/延长会员 + 金币流水留痕
+   */
+  async markOrderPaid(orderId: string) {
+    const [order] = await this.db.select().from(orders).where(eq(orders.id, orderId));
+    if (!order || order.status === "paid") return;
+
+    await this.db
+      .update(orders)
+      .set({ status: "paid", paidAt: new Date() })
+      .where(eq(orders.id, orderId));
+
+    const plan = findPlan(order.planId);
+    if (plan) {
+      await this.activateForDays(order.userId, plan.durationDays);
+    }
+
+    // 金币流水留痕 (不加减金币, amount=0)
+    await this.db.insert(coinTransactions).values({
+      userId: order.userId,
+      amount: 0,
+      reason: "membership_purchase",
+      relatedId: orderId,
+    });
   }
 
   async getMembershipDetails(userId: string) {
