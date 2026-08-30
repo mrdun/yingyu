@@ -96,6 +96,8 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted, ref } from "vue";
+
 import type { CreateOrderResponse, MembershipPlanId, OrderStatusResponse } from "~/api/membership";
 import {
   confirmMockPay,

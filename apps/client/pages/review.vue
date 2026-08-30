@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { onMounted, ref } from "vue";
+
 import type { ReviewQueueItem } from "~/api/review";
 import { fetchReviewAnswer, fetchReviewToday } from "~/api/review";
 

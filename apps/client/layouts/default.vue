@@ -45,7 +45,7 @@
 
 <script setup lang="ts">
 import { useRoute } from "#imports";
-import { onErrorCaptured, ref } from "vue";
+import { computed, onErrorCaptured, ref } from "vue";
 
 import FoundingMemberNotice from "../components/FoundingMemberNotice.vue";
 import WorkNav from "../components/WorkNav.vue";

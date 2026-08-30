@@ -18,6 +18,10 @@ export function signOut() {
 }
 
 export function isAuthenticated() {
+  // Logto 插件可能尚未初始化(渲染早期/插件失败), 此时视为未登录, 避免 TypeError 白屏
+  if (!logto) {
+    return false;
+  }
   return logto.isAuthenticated.value;
 }
 

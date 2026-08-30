@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { onMounted, ref } from "vue";
+
 import type { CheckInResponse, CoinBalance, TodayTask } from "~/api/coins";
 import { checkInTask, fetchCoinBalance, fetchTodayTasks } from "~/api/coins";
 import { signIn } from "~/services/auth";
