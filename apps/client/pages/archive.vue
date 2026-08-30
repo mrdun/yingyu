@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed, onMounted, ref } from "vue";
+
 import { fetchReviewToday } from "~/api/review";
 import { isAuthenticated, signIn } from "~/services/auth";
 

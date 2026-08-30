@@ -2,6 +2,13 @@
   <div
     class="h-full w-full bg-white text-slate-600 transition-colors dark:bg-theme-dark dark:text-slate-300"
   >
+    <div
+      v-if="renderError"
+      class="fixed inset-0 z-[9999] overflow-auto bg-red-50 p-6 text-sm text-red-700"
+    >
+      <h2 class="mb-2 text-lg font-bold">渲染错误</h2>
+      <pre class="whitespace-pre-wrap">{{ renderError }}</pre>
+    </div>
     <div class="m-auto flex h-fit min-h-screen flex-col items-center">
       <Navbar />
       <FoundingMemberNotice></FoundingMemberNotice>
@@ -37,9 +44,19 @@
 </template>
 
 <script setup lang="ts">
+import { useRoute } from "#imports";
+import { onErrorCaptured, ref } from "vue";
+
 import FoundingMemberNotice from "../components/FoundingMemberNotice.vue";
 import WorkNav from "../components/WorkNav.vue";
 import { isAuthenticated } from "../services/auth";
+
+const renderError = ref("");
+
+onErrorCaptured((err) => {
+  renderError.value = err?.message || String(err);
+  return false;
+});
 
 const route = useRoute();
 
