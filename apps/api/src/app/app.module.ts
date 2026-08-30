@@ -4,6 +4,7 @@ import { ScheduleModule } from "@nestjs/schedule";
 
 import { AdminModule } from "../admin/admin.module";
 import { AiContentModule } from "../ai-content/ai-content.module";
+import { CoinsModule } from "../coins/coins.module";
 import { CourseHistoryModule } from "../course-history/course-history.module";
 import { CoursePackModule } from "../course-pack/course-pack.module";
 import { CourseModule } from "../course/course.module";
@@ -37,6 +38,7 @@ import { UserModule } from "../user/user.module";
     MembershipModule,
     MasteredElementModule,
     ReviewModule,
+    CoinsModule,
     StatsModule,
     AdminModule,
     RedisModule.forRootAsync({

@@ -54,14 +54,25 @@
             v-if="isAuthenticated()"
             class="logged-in flex items-center"
           >
-            <div
-              class="h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-gray-300 transition-all hover:scale-125 hover:opacity-90 dark:bg-gray-700"
-              @click="openUserMenu"
-            >
-              <UAvatar
-                :src="userStore.user?.avatar"
-                alt="Avatar"
-              />
+            <div class="flex items-center">
+              <!-- 金币余额 -->
+              <NuxtLink
+                v-if="coinBalance !== null"
+                to="/rewards"
+                class="mr-3 flex items-center gap-1 rounded-full bg-amber-50 px-3 py-1 text-sm font-semibold text-amber-600 dark:bg-amber-900/30 dark:text-amber-400"
+                title="前往奖励中心"
+              >
+                🪙 {{ coinBalance.coins }}
+              </NuxtLink>
+              <div
+                class="h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-gray-300 transition-all hover:scale-125 hover:opacity-90 dark:bg-gray-700"
+                @click="openUserMenu"
+              >
+                <UAvatar
+                  :src="userStore.user?.avatar"
+                  alt="Avatar"
+                />
+              </div>
             </div>
           </div>
           <!-- 登录/注册 -->
@@ -82,12 +93,29 @@
 <script setup lang="ts">
 import { useWindowScroll } from "@vueuse/core";
 import { useRuntimeConfig } from "nuxt/app";
-import { computed } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 
+import type { CoinBalance } from "~/api/coins";
+import { fetchCoinBalance } from "~/api/coins";
 import { useUserMenu } from "~/composables/user/useUserMenu";
 import { isAuthenticated, signIn } from "~/services/auth";
 import { useUserStore } from "~/store/user";
+
+const coinBalance = ref<CoinBalance | null>(null);
+
+async function loadCoinBalance() {
+  if (!isAuthenticated()) return;
+  try {
+    coinBalance.value = await fetchCoinBalance();
+  } catch {
+    coinBalance.value = null;
+  }
+}
+
+onMounted(() => {
+  loadCoinBalance();
+});
 
 const runtimeConfig = useRuntimeConfig();
 const { openUserMenu } = useUserMenu();
@@ -107,6 +135,7 @@ const HEADER_OPTIONS: AnchorAttributes[] = [
   { name: "编辑器", href: "/editor" },
   { name: "复习", href: "/review" },
   { name: "报告", href: "/stats" },
+  { name: "奖励", href: "/rewards" },
   { name: "文档", href: runtimeConfig.public.helpDocsURL as string, target: "_blank" },
   { name: "功能", href: "#features" },
   { name: "问题", href: "#faq" },
