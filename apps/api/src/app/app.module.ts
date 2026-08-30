@@ -2,6 +2,7 @@ import { RedisModule } from "@nestjs-modules/ioredis";
 import { Module } from "@nestjs/common";
 import { ScheduleModule } from "@nestjs/schedule";
 
+import { AdminModule } from "../admin/admin.module";
 import { AiContentModule } from "../ai-content/ai-content.module";
 import { CourseHistoryModule } from "../course-history/course-history.module";
 import { CoursePackModule } from "../course-pack/course-pack.module";
@@ -37,6 +38,7 @@ import { UserModule } from "../user/user.module";
     MasteredElementModule,
     ReviewModule,
     StatsModule,
+    AdminModule,
     RedisModule.forRootAsync({
       useFactory: () => ({
         type: "single",
