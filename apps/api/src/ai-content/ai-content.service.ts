@@ -48,7 +48,7 @@ export class AiContentService {
         description: dto.description ?? "",
         order: 0,
         isFree: true,
-        shareLevel: "private",
+        shareLevel: "public",
         creatorId: "ai-content",
       })
       .returning();
