@@ -1,70 +1,66 @@
 <template>
-  <div class="mt-8 flex w-full justify-between">
-    <!-- 左侧头像区域 -->
-    <div class="mr-16 hidden w-72 md:block">
-      <div
-        class="mx-auto h-56 w-56 overflow-hidden rounded-full border-2 border-gray-300 bg-gray-300 dark:border-gray-700 dark:bg-gray-700"
-      >
-        <!-- 通过给定高度来自适应拉伸图片，如果图片不存在或者加载失败则显示外层的背景色（没有宽度） -->
-        <img
-          class="h-full object-cover"
-          :src="userStore.user?.avatar"
-        />
+  <div class="mx-auto mt-6 flex w-full max-w-screen-xl gap-6 px-4">
+    <!-- 左侧导航 -->
+    <div class="hidden w-52 shrink-0 md:block">
+      <div class="sticky top-16 max-h-[calc(100vh-4rem)] self-start overflow-y-auto">
+        <WorkNav />
       </div>
-      <div class="mt-4 truncate">
-        <div class="flex gap-2">
-          <div class="text-3xl font-medium">{{ userStore.user?.username }}</div>
-          <MembershipBadge></MembershipBadge>
-        </div>
-        <div class="text-md text-gray-400">
-          {{ userStore.user?.name }}
-        </div>
-      </div>
-      <hr class="my-5 dark:border-gray-700" />
-      <!-- TODO: 等后续勋章制作完成再放出来 -->
-      <!-- <div class="text-lg font-medium">勋章</div>
-      <div class="mt-2 grid grid-cols-4 gap-2">
-        <div
-          v-for="i in 6"
-          class="h-16 w-16 rounded-full bg-gray-200 dark:bg-gray-700"
-        ></div>
-      </div> -->
     </div>
 
-    <!-- 右侧课程包区域 -->
+    <!-- 中间主内容区 -->
     <div class="min-w-0 flex-1">
-      <!-- 每日打卡卡片 -->
       <CheckInCard />
 
-      <div class="mb-4 flex justify-between border-b pb-2 dark:border-gray-700">
-        <div class="text-xl font-medium">最近使用的课程包</div>
+      <DailyTasksCard class="mb-6" />
+
+      <!-- 我的课程 -->
+      <div class="mb-4 flex items-center justify-between border-b pb-2 dark:border-gray-700">
+        <div class="text-lg font-medium text-gray-800 dark:text-gray-200">我的课程</div>
         <NuxtLink
           href="/course-pack"
-          class="link text-blue-500 no-underline hover:opacity-75"
-          >更多课程包
+          class="link text-sm text-blue-500 no-underline hover:opacity-75"
+        >
+          课程包商城
         </NuxtLink>
       </div>
       <HomeRecentCoursePack />
+
+      <!-- 平板/手机上的 CalendarGraph -->
       <HomeCalendarGraph
-        class="mt-10"
+        class="mt-8 lg:hidden"
         :data="learningDailyTimeList"
         :totalLearningTime="learningDailyTotalTime"
         @toggleYear="toggleYear"
       />
     </div>
+
+    <!-- 右侧热力图（桌面端） -->
+    <div class="hidden w-[340px] shrink-0 lg:block">
+      <div class="sticky top-16">
+        <HomeCalendarGraph
+          :data="learningDailyTimeList"
+          :totalLearningTime="learningDailyTotalTime"
+          @toggleYear="toggleYear"
+        />
+      </div>
+    </div>
   </div>
 </template>
+
 <script setup lang="ts">
 import { useAsyncData } from "#imports";
 import { ref } from "vue";
 
 import { fetchTodayLearningTime } from "~/api/user-learning-activity";
+import CheckInCard from "~/components/CheckInCard.vue";
+import DailyTasksCard from "~/components/DailyTasksCard.vue";
+import HomeCalendarGraph from "~/components/Home/CalendarGraph.vue";
+import HomeRecentCoursePack from "~/components/Home/RecentCoursePack.vue";
+import WorkNav from "~/components/WorkNav.vue";
 import { useLearningDailyTime } from "~/composables/learningDailyTime";
+import { useLearningTimeTracker } from "~/composables/main/learningTimeTracker";
 import { type CalendarDataItem } from "~/composables/user/calendarGraph";
-import { useUserStore } from "~/store/user";
-import { useLearningTimeTracker } from "../../composables/main/learningTimeTracker";
 
-const userStore = useUserStore();
 const { learningDailyTimeList, learningDailyTotalTime, setupLearningDailyTime } =
   useLearningDailyTime();
 const { toggleYear } = useCalendarGraph();
@@ -80,7 +76,6 @@ function useCalendarGraph() {
   const totalLearningTime = ref<number>(0);
 
   async function toggleYear(year?: number) {
-    // TODO 需要支持多年份的切换
     setupLearningDailyTime();
   }
 
