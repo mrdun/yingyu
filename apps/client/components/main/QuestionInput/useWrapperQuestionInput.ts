@@ -1,4 +1,5 @@
 import { courseTimer } from "~/composables/courses/courseTimer";
+import { useComboTracker } from "~/composables/main/comboTracker";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
 import { useRatingTracker } from "~/composables/main/ratingTracker";
@@ -24,11 +25,13 @@ export function useWrapperQuestionInput() {
   const { isAutoNextQuestion } = useAutoNextQuestion();
   const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
   const { recordCorrect, recordWrong } = useRatingTracker();
+  const { incrementCombo, resetCombo } = useComboTracker();
 
   // 答错时记录该题 (用于评级: 答错过的题不计入一次性答对)
   function handleAnswerWrong() {
     recordWrong(courseStore.statementIndex);
     handleAnswerError();
+    resetCombo(); // 连击归零
   }
 
   const {
@@ -58,12 +61,14 @@ export function useWrapperQuestionInput() {
     playRightSound();
     // 统计一次性答对 (若本题答错过或用过提示则不计入)
     recordCorrect(courseStore.statementIndex);
+    incrementCombo(); // 连击+1
 
     if (isAutoNextQuestion()) {
       // 自动下一题
       if (courseStore.isAllDone()) {
         blurInput(); // 失去输入焦点，防止结束时光标仍然在输入框，造成后续结算面板回车事件无法触发
         showSummary();
+        resetCombo(); // 课结束，连击归零
       }
       courseStore.toNextStatement();
     } else {

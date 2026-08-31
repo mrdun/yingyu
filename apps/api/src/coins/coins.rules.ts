@@ -8,6 +8,7 @@ export const TASK_DEFS: Record<TaskType, { reward: number; label: string }> = {
   study_30: { reward: 25, label: "今日练满 30 句" },
   review_done: { reward: 10, label: "完成一次复习" },
   sss_once: { reward: 15, label: "今日获得一次 SSS 评级" },
+  daily_check_in: { reward: 5, label: "每日打卡" },
 };
 
 export const STREAK_BONUS: Record<number, number> = {
@@ -99,6 +100,8 @@ export function isEligible(taskType: TaskType, snapshot: CheckInSnapshot): boole
       return snapshot.hasReviewToday;
     case "sss_once":
       return snapshot.hasSssToday;
+    case "daily_check_in":
+      return true; // 每日打卡任务，无额外条件
     default:
       return false;
   }
@@ -191,6 +194,7 @@ const TASK_REASON: Record<TaskType, string> = {
   study_30: "daily_study",
   review_done: "daily_review",
   sss_once: "sss_rating",
+  daily_check_in: "daily_check_in",
 };
 
 export function taskReason(taskType: TaskType): string {

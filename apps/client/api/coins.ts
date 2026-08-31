@@ -1,6 +1,6 @@
 import { getHttp } from "./http";
 
-export type CoinTaskType = "study_10" | "study_30" | "review_done" | "sss_once";
+export type CoinTaskType = "study_10" | "study_30" | "review_done" | "sss_once" | "daily_check_in";
 
 export interface CoinBalance {
   coins: number;
@@ -50,5 +50,12 @@ export async function checkInTask(taskType: CoinTaskType) {
   return await http<CheckInResponse>("/coins/check-in", {
     method: "post",
     body: { taskType },
+  });
+}
+
+export async function fetchCheckInHistory() {
+  const http = getHttp();
+  return await http<{ dates: string[] }>("/coins/check-in-history", {
+    method: "get",
   });
 }

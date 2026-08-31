@@ -20,6 +20,11 @@ export class CoinsController {
     return await this.coinsService.getTodayTasks(user.userId);
   }
 
+  @Get("check-in-history")
+  async checkInHistory(@User() user: UserEntity) {
+    return await this.coinsService.getCheckInHistory(user.userId);
+  }
+
   @Post("check-in")
   async checkIn(@User() user: UserEntity, dto: CheckInDto) {
     return await this.coinsService.checkIn(user.userId, dto.taskType);

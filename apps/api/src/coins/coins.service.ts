@@ -75,6 +75,7 @@ export class CoinsService {
       study_30: { target: 30, current: studyCount },
       review_done: { target: 1, current: Number(review?.total ?? 0) },
       sss_once: { target: 1, current: Number(sss?.total ?? 0) },
+      daily_check_in: { target: 1, current: 1 }, // 每日打卡总是可领取
     };
 
     return {
@@ -91,5 +92,15 @@ export class CoinsService {
         };
       }),
     };
+  }
+
+  async getCheckInHistory(userId: string) {
+    const rows = await this.db
+      .select({ date: dailyTasks.date })
+      .from(dailyTasks)
+      .where(sql`${dailyTasks.userId} = ${userId} and ${dailyTasks.taskType} = 'daily_check_in'`)
+      .orderBy(dailyTasks.date);
+
+    return { dates: rows.map((r) => r.date) };
   }
 }

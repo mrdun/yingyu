@@ -1,5 +1,6 @@
 import { ref } from "vue";
 
+import { useComboTracker } from "~/composables/main/comboTracker";
 import { useRatingTracker } from "~/composables/main/ratingTracker";
 import { useCourseStore } from "~/store/course";
 
@@ -37,6 +38,7 @@ function markHint() {
   try {
     const courseStore = useCourseStore();
     useRatingTracker().recordHint(courseStore.statementIndex);
+    useComboTracker().resetCombo(); // 使用提示，连击归零
   } catch {
     // pinia 未初始化时(单测)忽略
   }

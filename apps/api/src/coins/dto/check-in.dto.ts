@@ -1,7 +1,13 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { IsIn } from "class-validator";
 
-export const TASK_TYPES = ["study_10", "study_30", "review_done", "sss_once"] as const;
+export const TASK_TYPES = [
+  "study_10",
+  "study_30",
+  "review_done",
+  "sss_once",
+  "daily_check_in",
+] as const;
 
 export type TaskType = (typeof TASK_TYPES)[number];
 

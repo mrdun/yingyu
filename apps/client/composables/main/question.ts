@@ -2,6 +2,8 @@ import type { WatchStopHandle } from "vue";
 
 import { nextTick, reactive, ref, watchEffect } from "vue";
 
+import { useComboTracker } from "./comboTracker";
+
 interface Word {
   text: string;
   isActive: boolean;
@@ -49,6 +51,8 @@ export function useInput({
   getInputCursorPosition,
   inputChangedCallback,
 }: InputOptions) {
+  const { incrementCombo, resetCombo } = useComboTracker();
+
   function initialize() {
     // for test unit
     // 每次都需要清空 watchEffect 不然调用多次后就报错了
@@ -221,13 +225,19 @@ export function useInput({
 
     if (checkWordCorrect()) {
       mode.value = Mode.Input;
+      incrementCombo(); // 连击+1
       correctCallback?.(); // 调用输入正确的回调
       inputValue.value = "";
     } else {
       mode.value = Mode.Fix;
+      resetCombo(); // 连击归0
       wrongCallback?.(); // 调用输入错误的回调
     }
   }
+
+  // 暴露给外部使用的连击注入点
+  // 注意：实际的连击逻辑在 useWrapperQuestionInput 中处理
+  // 这里保留接口以便未来扩展
 
   async function fixFirstIncorrectWord() {
     if (mode.value === Mode.Fix) {
