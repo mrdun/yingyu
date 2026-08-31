@@ -25,6 +25,15 @@ export function isAuthenticated() {
   return logto.isAuthenticated.value;
 }
 
+// 响应式登录态 ref (在 Vue 组件/模板里用 computed 依赖它, 登录态变化时自动重渲染)
+export function useAuthState() {
+  if (!logto) {
+    // 插件未初始化时返回一个稳定的 false ref
+    return { isAuthenticated: computed(() => false) };
+  }
+  return { isAuthenticated: logto.isAuthenticated };
+}
+
 export async function getToken() {
   const accessToken = await logto.getAccessToken(runtimeConfig.public.backendEndpoint);
 
@@ -41,7 +50,8 @@ export function getSignInCallback() {
     sessionStorage.removeItem("callback");
     return callback;
   } else {
-    return "/";
+    // 登录成功后默认进入课程商城(工作台), 让左侧导航立即可见
+    return "/course-pack";
   }
 }
 

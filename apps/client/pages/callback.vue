@@ -17,7 +17,7 @@ const useAutoRedirect = (delay: number) => {
   const redirectTimer = ref<NodeJS.Timeout | null>(null);
   const startAutoRedirect = () => {
     redirectTimer.value = setTimeout(() => {
-      navigateTo("/");
+      navigateTo(getSignInCallback());
     }, delay);
   };
 

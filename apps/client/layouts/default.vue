@@ -49,7 +49,7 @@ import { computed, onErrorCaptured, ref } from "vue";
 
 import FoundingMemberNotice from "../components/FoundingMemberNotice.vue";
 import WorkNav from "../components/WorkNav.vue";
-import { isAuthenticated } from "../services/auth";
+import { useAuthState } from "../services/auth";
 
 const renderError = ref("");
 
@@ -59,13 +59,14 @@ onErrorCaptured((err) => {
 });
 
 const route = useRoute();
+const { isAuthenticated: isLoggedIn } = useAuthState();
 
 // 首页与营销页不显示左侧导航; /game 全屏沉浸学习、/admin、/editor 也走全宽布局
 const HIDDEN_PREFIXES = ["/game", "/admin", "/editor", "/privacy-policy", "/terms"];
 const HIDDEN_PATHS = ["/"];
 
 const showWorkNav = computed(() => {
-  if (!isAuthenticated()) return false;
+  if (!isLoggedIn.value) return false;
   if (HIDDEN_PATHS.includes(route.path)) return false;
   return !HIDDEN_PREFIXES.some((prefix) => route.path.startsWith(prefix));
 });

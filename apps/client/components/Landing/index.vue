@@ -13,7 +13,6 @@
 import { onMounted, onUnmounted } from "vue";
 import { useRouter } from "vue-router";
 
-import { isAuthenticated } from "~/services/auth";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const { startEarthworm } = useShortcutToGame();
@@ -22,9 +21,8 @@ function useShortcutToGame() {
   const router = useRouter();
 
   async function startEarthworm() {
-    if (!isAuthenticated()) {
-      router.push(`/course-pack`);
-    }
+    // 无论登录与否都进入课程商城; 未登录时商城页会引导登录
+    router.push(`/course-pack`);
   }
 
   onMounted(() => {
