@@ -78,9 +78,20 @@
           >
             字幕文件 (.srt / .vtt)
           </button>
+          <button
+            type="button"
+            class="btn join-item flex-1"
+            :class="inputMode === 'audio' ? 'btn-primary' : 'btn-ghost'"
+            @click="inputMode = 'audio'"
+          >
+            音频 (MP3)
+          </button>
         </div>
 
-        <div class="flex items-center gap-2">
+        <div
+          v-if="inputMode !== 'audio'"
+          class="flex items-center gap-2"
+        >
           <input
             type="file"
             accept=".srt,.vtt,.txt"
@@ -107,7 +118,7 @@
           ></textarea>
         </template>
 
-        <template v-else>
+        <template v-else-if="inputMode === 'subtitle'">
           <label
             class="label"
             for="editor-subtitle"
@@ -122,6 +133,30 @@
             placeholder="粘贴 .srt 或 .vtt 字幕全文，系统会自动去除时间戳并 AI 拆句"
             class="textarea textarea-bordered w-full font-mono text-sm leading-relaxed"
           ></textarea>
+        </template>
+
+        <template v-else>
+          <label class="label">
+            <span class="label-text">音频文件（必填，MP3/WAV/M4A 等）</span>
+          </label>
+          <input
+            type="file"
+            accept="audio/*,.mp3,.m4a,.wav,.webm,.ogg"
+            class="file-input file-input-bordered w-full"
+            @change="handleAudioUpload"
+          />
+          <p
+            v-if="audioSelected"
+            class="mt-2 text-sm text-green-600"
+          >
+            已选择音频，提交后将 Whisper 转写 → AI 拆句 → 生成课程包（较大音频可能需要一到数分钟）。
+          </p>
+          <p
+            v-else
+            class="mt-2 text-xs text-gray-400"
+          >
+            选择音频文件后自动转 base64 提交；需在 .env 配置 OPENAI_API_KEY。
+          </p>
         </template>
       </div>
 
@@ -177,17 +212,24 @@
 import { reactive, ref } from "vue";
 
 import type { CoursePackResponse } from "~/api/ai-content";
-import { createCoursePack, createCoursePackFromSubtitle } from "~/api/ai-content";
+import {
+  createCoursePack,
+  createCoursePackFromAudio,
+  createCoursePackFromSubtitle,
+} from "~/api/ai-content";
 
 const form = reactive({
   title: "",
   description: "",
   text: "",
   subtitle: "",
+  audioBase64: "",
+  audioMimeType: "",
   courseSize: 10,
 });
 
-const inputMode = ref<"text" | "subtitle">("text");
+const inputMode = ref<"text" | "subtitle" | "audio">("text");
+const audioSelected = ref(false);
 const isLoading = ref(false);
 const progressText = ref("正在提交…");
 const errorMessage = ref("");
@@ -214,11 +256,37 @@ function handleFileUpload(event: Event) {
   input.value = ""; // 允许重复选择同一文件
 }
 
+function handleAudioUpload(event: Event) {
+  const input = event.target as HTMLInputElement;
+  const file = input.files?.[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = () => {
+    // data:audio/mpeg;base64,XXXX → 拆出 base64 与 mimeType
+    const dataUrl = String(reader.result ?? "");
+    const commaIndex = dataUrl.indexOf(",");
+    if (commaIndex === -1) {
+      errorMessage.value = "读取音频失败";
+      return;
+    }
+    form.audioMimeType = file.type || "audio/mpeg";
+    form.audioBase64 = dataUrl.slice(commaIndex + 1);
+    audioSelected.value = true;
+  };
+  reader.readAsDataURL(file);
+  input.value = ""; // 允许重复选择同一文件
+}
+
 function validate(): string {
   if (!form.title.trim()) {
     return "请填写标题";
   }
-  if (inputMode.value === "subtitle") {
+  if (inputMode.value === "audio") {
+    if (!form.audioBase64) {
+      return "请选择音频文件";
+    }
+  } else if (inputMode.value === "subtitle") {
     if (form.subtitle.trim().length < 20) {
       return "字幕内容至少需要 20 个字符";
     }
@@ -242,7 +310,10 @@ async function handleSubmit() {
   }
 
   isLoading.value = true;
-  progressText.value = "正在AI拆句，可能需要一到两分钟…";
+  progressText.value =
+    inputMode.value === "audio"
+      ? "正在语音转写与AI拆句，可能需要一到数分钟…"
+      : "正在AI拆句，可能需要一到两分钟…";
   try {
     // 长文本分阶段提示
     setTimeout(() => {
@@ -257,10 +328,18 @@ async function handleSubmit() {
       courseSize: form.courseSize,
     };
 
-    const response =
-      inputMode.value === "subtitle"
-        ? await createCoursePackFromSubtitle({ ...common, subtitle: form.subtitle })
-        : await createCoursePack({ ...common, text: form.text });
+    let response: CoursePackResponse;
+    if (inputMode.value === "audio") {
+      response = await createCoursePackFromAudio({
+        ...common,
+        audioBase64: form.audioBase64,
+        mimeType: form.audioMimeType,
+      });
+    } else if (inputMode.value === "subtitle") {
+      response = await createCoursePackFromSubtitle({ ...common, subtitle: form.subtitle });
+    } else {
+      response = await createCoursePack({ ...common, text: form.text });
+    }
 
     result.value = response;
   } catch (error: any) {

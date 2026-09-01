@@ -58,3 +58,19 @@ export async function createCoursePackFromSubtitle(input: CreateCoursePackFromSu
     body: input,
   })) as CoursePackResponse;
 }
+
+export interface CreateCoursePackFromAudioInput {
+  title: string;
+  description?: string;
+  audioBase64: string;
+  mimeType?: string;
+  courseSize?: number;
+}
+
+export async function createCoursePackFromAudio(input: CreateCoursePackFromAudioInput) {
+  const http = getAnonymousHttp();
+  return (await http<CoursePackResponse>("ai-content/audio", {
+    method: "post",
+    body: input,
+  })) as CoursePackResponse;
+}
