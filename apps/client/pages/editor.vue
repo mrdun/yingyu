@@ -61,20 +61,68 @@
       </div>
 
       <div class="form-control">
-        <label
-          class="label"
-          for="editor-text"
-        >
-          <span class="label-text">课程正文（必填，至少 50 字符）</span>
-          <span class="label-text-alt">当前 {{ form.text.trim().length }} 字符</span>
-        </label>
-        <textarea
-          id="editor-text"
-          v-model="form.text"
-          rows="12"
-          placeholder="粘贴英文素材，每句一行或多行均可，AI 会自动拆句"
-          class="textarea textarea-bordered w-full leading-relaxed"
-        ></textarea>
+        <div class="join mb-2 w-full">
+          <button
+            type="button"
+            class="btn join-item flex-1"
+            :class="inputMode === 'text' ? 'btn-primary' : 'btn-ghost'"
+            @click="inputMode = 'text'"
+          >
+            文本素材
+          </button>
+          <button
+            type="button"
+            class="btn join-item flex-1"
+            :class="inputMode === 'subtitle' ? 'btn-primary' : 'btn-ghost'"
+            @click="inputMode = 'subtitle'"
+          >
+            字幕文件 (.srt / .vtt)
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <input
+            type="file"
+            accept=".srt,.vtt,.txt"
+            class="file-input file-input-bordered file-input-sm w-full max-w-xs"
+            @change="handleFileUpload"
+          />
+          <span class="text-xs text-gray-400">或上传 .srt/.vtt/.txt 文件自动填充</span>
+        </div>
+
+        <template v-if="inputMode === 'text'">
+          <label
+            class="label"
+            for="editor-text"
+          >
+            <span class="label-text">课程正文（必填，至少 50 字符）</span>
+            <span class="label-text-alt">当前 {{ form.text.trim().length }} 字符</span>
+          </label>
+          <textarea
+            id="editor-text"
+            v-model="form.text"
+            rows="12"
+            placeholder="粘贴英文素材，每句一行或多行均可，AI 会自动拆句"
+            class="textarea textarea-bordered w-full leading-relaxed"
+          ></textarea>
+        </template>
+
+        <template v-else>
+          <label
+            class="label"
+            for="editor-subtitle"
+          >
+            <span class="label-text">字幕内容（必填，粘贴 .srt/.vtt 全文）</span>
+            <span class="label-text-alt">当前 {{ form.subtitle.trim().length }} 字符</span>
+          </label>
+          <textarea
+            id="editor-subtitle"
+            v-model="form.subtitle"
+            rows="12"
+            placeholder="粘贴 .srt 或 .vtt 字幕全文，系统会自动去除时间戳并 AI 拆句"
+            class="textarea textarea-bordered w-full font-mono text-sm leading-relaxed"
+          ></textarea>
+        </template>
       </div>
 
       <div class="form-control w-48">
@@ -129,25 +177,52 @@
 import { reactive, ref } from "vue";
 
 import type { CoursePackResponse } from "~/api/ai-content";
-import { createCoursePack } from "~/api/ai-content";
+import { createCoursePack, createCoursePackFromSubtitle } from "~/api/ai-content";
 
 const form = reactive({
   title: "",
   description: "",
   text: "",
+  subtitle: "",
   courseSize: 10,
 });
 
+const inputMode = ref<"text" | "subtitle">("text");
 const isLoading = ref(false);
 const progressText = ref("正在提交…");
 const errorMessage = ref("");
 const result = ref<CoursePackResponse | null>(null);
 
+function handleFileUpload(event: Event) {
+  const input = event.target as HTMLInputElement;
+  const file = input.files?.[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = () => {
+    const content = String(reader.result ?? "");
+    const ext = file.name.split(".").pop()?.toLowerCase();
+    if (ext === "srt" || ext === "vtt") {
+      inputMode.value = "subtitle";
+      form.subtitle = content;
+    } else {
+      inputMode.value = "text";
+      form.text = content;
+    }
+  };
+  reader.readAsText(file);
+  input.value = ""; // 允许重复选择同一文件
+}
+
 function validate(): string {
   if (!form.title.trim()) {
     return "请填写标题";
   }
-  if (form.text.trim().length < 50) {
+  if (inputMode.value === "subtitle") {
+    if (form.subtitle.trim().length < 20) {
+      return "字幕内容至少需要 20 个字符";
+    }
+  } else if (form.text.trim().length < 50) {
     return "课程正文至少需要 50 个字符";
   }
   if (!Number.isInteger(form.courseSize) || form.courseSize < 1 || form.courseSize > 50) {
@@ -176,12 +251,17 @@ async function handleSubmit() {
       }
     }, 8000);
 
-    const response = await createCoursePack({
+    const common = {
       title: form.title.trim(),
       description: form.description.trim(),
-      text: form.text,
       courseSize: form.courseSize,
-    });
+    };
+
+    const response =
+      inputMode.value === "subtitle"
+        ? await createCoursePackFromSubtitle({ ...common, subtitle: form.subtitle })
+        : await createCoursePack({ ...common, text: form.text });
+
     result.value = response;
   } catch (error: any) {
     const message = error?.data?.message || error?.message || "生成失败，请稍后重试";

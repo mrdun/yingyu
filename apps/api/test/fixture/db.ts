@@ -1,6 +1,14 @@
 import { DbType } from "src/global/providers/db.provider";
 
-import { course, coursePack, statement, userCourseProgress } from "@earthworm/schema";
+import {
+  course,
+  coursePack,
+  learningPath,
+  learningPathItem,
+  pictureWord,
+  statement,
+  userCourseProgress,
+} from "@earthworm/schema";
 import { getTokenOwner } from "../../test/fixture/user";
 
 type CoursePackInsert = typeof coursePack.$inferInsert;
@@ -68,6 +76,70 @@ export async function insertStatement(
     .insert(statement)
     .values({
       ...defaultStatement,
+      ...values,
+    })
+    .returning();
+
+  return entity;
+}
+
+type LearningPathInsert = typeof learningPath.$inferInsert;
+export async function insertLearningPath(db: DbType, values?: Partial<LearningPathInsert>) {
+  const defaults = {
+    title: "学习路线",
+    order: 1,
+    isPublished: true,
+  } satisfies LearningPathInsert;
+
+  const [entity] = await db
+    .insert(learningPath)
+    .values({
+      ...defaults,
+      ...values,
+    })
+    .returning();
+
+  return entity;
+}
+
+type LearningPathItemInsert = typeof learningPathItem.$inferInsert;
+export async function insertLearningPathItem(
+  db: DbType,
+  learningPathId: string,
+  coursePackId: string,
+  values?: Partial<LearningPathItemInsert>,
+) {
+  const defaults = {
+    learningPathId,
+    coursePackId,
+    order: 1,
+  } satisfies LearningPathItemInsert;
+
+  const [entity] = await db
+    .insert(learningPathItem)
+    .values({
+      ...defaults,
+      ...values,
+    })
+    .returning();
+
+  return entity;
+}
+
+type PictureWordInsert = typeof pictureWord.$inferInsert;
+export async function insertPictureWord(db: DbType, values?: Partial<PictureWordInsert>) {
+  const defaults = {
+    word: "apple",
+    chinese: "苹果",
+    soundmark: "/ˈæpl/",
+    imageUrl: "https://example.com/apple.jpg",
+    order: 1,
+  } satisfies PictureWordInsert;
+
+  const [entity] = await db
+    .insert(pictureWord)
+    .values({
+      ...defaults,
       ...values,
     })
     .returning();

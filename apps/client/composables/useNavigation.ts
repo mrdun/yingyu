@@ -9,8 +9,13 @@ export function useNavigation() {
     navigateTo(`/game/${coursePackId}/${courseId}`);
   }
 
+  function gotoLearningPathDetail(pathId: string) {
+    navigateTo(`/learning-path/${pathId}`);
+  }
+
   return {
     gotoCourseList,
     gotoGame,
+    gotoLearningPathDetail,
   };
 }

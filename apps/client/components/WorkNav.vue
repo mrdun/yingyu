@@ -24,6 +24,8 @@ const route = useRoute();
 
 const menuItems = [
   { label: "开始学习", to: "/course-pack", icon: "📚" },
+  { label: "学习路线", to: "/learning-path", icon: "🗺️" },
+  { label: "看图学词", to: "/picture-word", icon: "🖼️" },
   { label: "复习", to: "/review", icon: "🔁" },
   { label: "奖励", to: "/rewards", icon: "🎁" },
   { label: "成长报告", to: "/stats", icon: "📈" },

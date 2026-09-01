@@ -11,3 +11,5 @@ export * from "./reviewRecord";
 export * from "./courseRating";
 export * from "./coin";
 export * from "./order";
+export * from "./learningPath";
+export * from "./pictureWord";

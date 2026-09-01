@@ -2,7 +2,7 @@ import { Body, Controller, Get, Param, Post, UseGuards } from "@nestjs/common";
 
 import { AuthGuard, UncheckAuth } from "../guards/auth.guard";
 import { AiContentService } from "./ai-content.service";
-import { CoursePackDto, SplitDto } from "./dto/ai-content.dto";
+import { AudioDto, CoursePackDto, SplitDto, SubtitleDto } from "./dto/ai-content.dto";
 
 @Controller("ai-content")
 export class AiContentController {
@@ -20,6 +20,20 @@ export class AiContentController {
   @Post("course-pack")
   async createCoursePack(@Body() dto: CoursePackDto) {
     return await this.aiContentService.createCoursePack(dto);
+  }
+
+  @UncheckAuth()
+  @UseGuards(AuthGuard)
+  @Post("subtitle")
+  async createCoursePackFromSubtitle(@Body() dto: SubtitleDto) {
+    return await this.aiContentService.createCoursePackFromSubtitle(dto);
+  }
+
+  @UncheckAuth()
+  @UseGuards(AuthGuard)
+  @Post("audio")
+  async createCoursePackFromAudio(@Body() dto: AudioDto) {
+    return await this.aiContentService.createCoursePackFromAudio(dto);
   }
 
   @UncheckAuth()

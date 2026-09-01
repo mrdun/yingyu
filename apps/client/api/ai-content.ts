@@ -43,3 +43,18 @@ export async function createCoursePack(input: CreateCoursePackInput) {
     body: input,
   })) as CoursePackResponse;
 }
+
+export interface CreateCoursePackFromSubtitleInput {
+  title: string;
+  description?: string;
+  subtitle: string;
+  courseSize?: number;
+}
+
+export async function createCoursePackFromSubtitle(input: CreateCoursePackFromSubtitleInput) {
+  const http = getAnonymousHttp();
+  return (await http<CoursePackResponse>("ai-content/subtitle", {
+    method: "post",
+    body: input,
+  })) as CoursePackResponse;
+}

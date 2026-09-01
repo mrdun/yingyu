@@ -1,9 +1,11 @@
-import { HttpException, HttpStatus, Inject, Injectable, Logger } from "@nestjs/common";
+import { HttpException, HttpStatus, Inject, Injectable, Logger, Optional } from "@nestjs/common";
 import { asc, eq } from "drizzle-orm";
 
 import { course, coursePack, statement } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
-import { CoursePackDto, SplitDto } from "./dto/ai-content.dto";
+import { ASR_PROVIDER, AsrProvider, WhisperAsrProvider } from "./asr-provider";
+import { AudioDto, CoursePackDto, SplitDto, SubtitleDto } from "./dto/ai-content.dto";
+import { parseSubtitle, subtitleToText } from "./subtitle-parser";
 
 export interface SplitStatement {
   chinese: string;
@@ -30,11 +32,55 @@ Text:`;
 export class AiContentService {
   private readonly logger = new Logger(AiContentService.name);
 
-  constructor(@Inject(DB) private db: DbType) {}
+  constructor(
+    @Inject(DB) private db: DbType,
+    @Optional() @Inject(ASR_PROVIDER) private asrProvider?: AsrProvider,
+  ) {}
 
   async split(dto: SplitDto): Promise<SplitStatement[]> {
     const content = await this.callDeepSeek(dto.title, dto.text);
     return this.parseStatements(content);
+  }
+
+  async createCoursePackFromSubtitle(dto: SubtitleDto) {
+    const segments = parseSubtitle(dto.subtitle);
+    const text = subtitleToText(segments);
+    if (!text.trim()) {
+      throw new HttpException("字幕内容为空或无法解析", HttpStatus.BAD_REQUEST);
+    }
+    return await this.createCoursePack({
+      title: dto.title,
+      description: dto.description,
+      text,
+      courseSize: dto.courseSize,
+    });
+  }
+
+  async createCoursePackFromAudio(dto: AudioDto) {
+    const provider = this.asrProvider ?? new WhisperAsrProvider();
+    const audio = Buffer.from(dto.audioBase64, "base64");
+
+    let transcript: string;
+    try {
+      transcript = await provider.transcribe(audio, { mimeType: dto.mimeType });
+    } catch (error) {
+      this.logger.error(`ASR failed: ${error}`);
+      throw new HttpException(
+        `语音转写失败: ${error instanceof Error ? error.message : "未知错误"}`,
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
+    }
+
+    if (!transcript.trim()) {
+      throw new HttpException("音频转写结果为空", HttpStatus.BAD_REQUEST);
+    }
+
+    return await this.createCoursePack({
+      title: dto.title,
+      description: dto.description,
+      text: transcript,
+      courseSize: dto.courseSize,
+    });
   }
 
   async createCoursePack(dto: CoursePackDto) {

@@ -7,3 +7,5 @@ export * from "./models/tool";
 export * from "./models/mastered-elements";
 export * from "./models/rank";
 export * from "./models/user-course-progress";
+export * from "./models/learning-path";
+export * from "./models/picture-word";
