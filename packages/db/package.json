@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "init:ci": "tsx src/migrate.ts",
+    "init:ci": "drizzle-kit push --force --config=drizzle.config.test.ts",
     "init:test": "drizzle-kit push --config=drizzle.config.test.ts",
     "init": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",

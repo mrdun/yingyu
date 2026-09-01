@@ -2,10 +2,11 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, "feature/**"]
   pull_request:
     branches: [main]
     # types: [review_requested, ready_for_review]
+  workflow_dispatch:
 
 jobs:
   test:
@@ -49,7 +50,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run database initialization command
+      - name: Push schema to test DB (creates all tables incl. learning_paths/picture_words)
         run: pnpm db:init:test:ci
 
       - name: Run build schema
