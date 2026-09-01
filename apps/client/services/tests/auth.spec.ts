@@ -26,7 +26,7 @@ describe("auth", () => {
     expect(callback).toBe("/main/1");
 
     const callback2 = getSignInCallback();
-    expect(callback2).toBe("/");
+    expect(callback2).toBe("/course-pack");
   });
 
   it("should get default callback", () => {
@@ -34,6 +34,6 @@ describe("auth", () => {
 
     const callback = getSignInCallback();
 
-    expect(callback).toBe("/");
+    expect(callback).toBe("/course-pack");
   });
 });
