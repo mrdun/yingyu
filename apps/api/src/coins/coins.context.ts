@@ -17,8 +17,9 @@ import { CheckInContext, CheckInSnapshot } from "./coins.rules";
 export class CoinsContext implements CheckInContext {
   constructor(@Inject(DB) private db: DbType) {}
 
-  private todayStart(today: string): Date {
-    return new Date(`${today}T00:00:00.000Z`);
+  private todayStart(today: string): string {
+    // postgres.js 3.4.4 绑定 Date 参数会崩 (bytes.js str), 统一用 ISO 字符串
+    return `${today}T00:00:00.000Z`;
   }
 
   async getSnapshot(userId: string, today: string, taskType: TaskType): Promise<CheckInSnapshot> {

@@ -81,7 +81,7 @@
 </template>
 
 <script setup lang="ts">
-import { nextTick, onMounted, ref, watchEffect } from "vue";
+import { nextTick, onMounted, ref, watch } from "vue";
 
 import type { CalendarDataItem, EmitsType } from "~/composables/user/calendarGraph";
 import { useCalendarGraph } from "~/composables/user/calendarGraph";
@@ -158,9 +158,16 @@ function scrollAutoToRight() {
   });
 }
 
-watchEffect(() => {
-  tbody.value = renderBody(props.data);
-});
+// watch 只追踪 props.data 的引用变化; handler 里读写 tbody 不参与依赖收集,
+// 从根上避免 watchEffect 读 tbody 又写 tbody 的自触发无限循环
+watch(
+  () => props.data,
+  (data) => {
+    const snapshot = data ? data.map((item) => ({ ...item })) : [];
+    tbody.value = renderBody(snapshot);
+  },
+  { immediate: true },
+);
 </script>
 
 <style scoped>

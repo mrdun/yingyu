@@ -42,7 +42,8 @@ export class CoinsService {
    */
   async getTodayTasks(userId: string) {
     const today = this.today();
-    const start = new Date(`${today}T00:00:00.000Z`);
+    // postgres.js 3.4.4 绑定 Date 参数会崩, 用 ISO 字符串
+    const start = `${today}T00:00:00.000Z`;
 
     const [study] = await this.db
       .select({ count: sql<number>`coalesce(sum(${userLearnRecord.count}), 0)` })
