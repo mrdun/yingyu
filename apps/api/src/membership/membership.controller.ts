@@ -70,7 +70,11 @@ export class MembershipController {
   @UseGuards(AuthGuard)
   @Get("orders/:orderId")
   async getOrder(@User() user: UserEntity, @Param("orderId") orderId: string) {
-    const order = await this.membershipService.findOrder(orderId);
+    // orderId 可能是 DB 内部 id 或 providerOrderId (create 返回的 mock_xxx)
+    let order = await this.membershipService.findOrder(orderId);
+    if (!order) {
+      order = await this.membershipService.findOrderByProviderOrderId(orderId);
+    }
     if (!order || order.userId !== user.userId) {
       throw new HttpException("Order not found", HttpStatus.NOT_FOUND);
     }
