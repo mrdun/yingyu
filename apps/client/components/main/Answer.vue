@@ -4,13 +4,13 @@
       <span
         v-for="word in words"
         :key="word"
-        class="cursor-pointer p-1 hover:text-fuchsia-500"
+        class="cursor-pointer p-1 hover:text-brand-600"
         @click="handlePlayWordSound(word)"
         >{{ word }}</span
       >
       <UIcon
         name="i-ph-speaker-simple-high"
-        class="ml-1 inline-block h-7 w-7 cursor-pointer text-gray-500 hover:text-fuchsia-500"
+        class="ml-1 inline-block h-7 w-7 cursor-pointer text-gray-500 hover:text-brand-600"
         @click="handlePlayEnglishSound"
       ></UIcon>
     </div>

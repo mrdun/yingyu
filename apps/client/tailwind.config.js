@@ -1,3 +1,5 @@
+const daisyThemes = require("daisyui/src/theming/themes");
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: "class",
@@ -135,4 +137,26 @@ export default {
       addUtilities(scrollbar, ["responsive"]);
     },
   ],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...daisyThemes["light"],
+          primary: "#2F5BEA",
+          "primary-content": "#ffffff",
+          "base-100": "#f7f4ee",
+          "base-200": "#f0ece3",
+          "base-300": "#e6e1d6",
+        },
+        dark: {
+          ...daisyThemes["dark"],
+          primary: "#6f8bff",
+          "primary-content": "#ffffff",
+          "base-100": "#0b1220",
+          "base-200": "#111a2c",
+          "base-300": "#182338",
+        },
+      },
+    ],
+  },
 };

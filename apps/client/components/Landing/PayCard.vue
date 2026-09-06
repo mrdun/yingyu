@@ -223,14 +223,14 @@ button:hover::after {
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #7e22ce, #adafb3);
+  background: linear-gradient(to right, #2F5BEA, #6f8bff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #7e22ce, #adafb3);
+  background: linear-gradient(to right, #2F5BEA, #6f8bff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

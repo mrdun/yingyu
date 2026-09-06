@@ -91,7 +91,7 @@ function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
 </script>
 <style scoped>
 .arrow-btn {
-  @apply text-[#475569] hover:text-[#d946ef] dark:text-[#cbd5e1] dark:hover:text-[#d946ef];
+  @apply text-[#475569] hover:text-brand-600 dark:text-[#cbd5e1] dark:hover:text-brand-400;
   @apply transition-transform duration-150 ease-in-out;
 }
 .arrow-btn:active {

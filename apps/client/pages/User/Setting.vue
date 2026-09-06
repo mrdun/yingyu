@@ -240,11 +240,11 @@ const shortcutKeyBindList = [
 .btn-outline.btn-secondary:hover,
 .toggle-secondary:checked,
 .btn:is(input[type="radio"]:checked) {
-  @apply border-fuchsia-500 bg-fuchsia-500 text-[#ffffff];
+  @apply border-brand-600 bg-brand-600 text-[#ffffff];
 }
 
 .btn-outline.btn-secondary {
-  @apply text-fuchsia-500 outline-fuchsia-500;
+  @apply text-brand-600 outline-brand-600;
 }
 
 section > h2 {

@@ -51,7 +51,7 @@
             <UIcon
               name="i-ph-turtle"
               class="clickable-item h-6 w-6"
-              :class="{ 'text-fuchsia-500': isSlowRate() }"
+              :class="{ 'text-brand-600': isSlowRate() }"
             />
           </UTooltip>
         </div>
@@ -223,6 +223,6 @@ function useDoAgain() {
 
 <style scoped>
 .clickable-item {
-  @apply cursor-pointer select-none hover:text-fuchsia-500;
+  @apply cursor-pointer select-none hover:text-brand-600;
 }
 </style>
