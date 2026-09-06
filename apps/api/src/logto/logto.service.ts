@@ -21,7 +21,7 @@ export class LogtoService {
 
   private async initLogtoApi() {
     this.logtoApi = axios.create({
-      baseURL: process.env.LOGTO_ENDPOINT,
+      baseURL: process.env.LOGTO_ENDPOINT || "http://localhost:3010/",
       timeout: 5000,
     });
 
@@ -37,7 +37,7 @@ export class LogtoService {
 
     const { data } = await axios({
       method: "post",
-      baseURL: process.env.LOGTO_ENDPOINT,
+      baseURL: process.env.LOGTO_ENDPOINT || "http://localhost:3010/",
       url: "oidc/token",
       data: {
         grant_type: "client_credentials",

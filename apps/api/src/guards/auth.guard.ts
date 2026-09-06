@@ -15,7 +15,7 @@ export const Permissions = (...permissions: string[]) => SetMetadata("permission
 export class AuthGuard implements CanActivate {
   private jwks: any;
   constructor() {
-    this.jwks = createRemoteJWKSet(new URL("/oidc/jwks", process.env.LOGTO_ENDPOINT));
+    this.jwks = createRemoteJWKSet(new URL("/oidc/jwks", process.env.LOGTO_ENDPOINT || "http://localhost:3010/"));
   }
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
@@ -56,7 +56,7 @@ export class AuthGuard implements CanActivate {
       this.jwks,
       {
         // Expected issuer of the token, issued by the Logto server
-        issuer: new URL("oidc", process.env.LOGTO_ENDPOINT).href,
+        issuer: new URL("oidc", process.env.LOGTO_ENDPOINT || "http://localhost:3010/").href,
         // Expected audience token, the resource indicator of the current API
         audience: process.env.BACKEND_ENDPOINT,
       },
