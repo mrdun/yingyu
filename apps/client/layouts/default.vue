@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-full w-full bg-white text-slate-600 transition-colors dark:bg-theme-dark dark:text-slate-300"
+    class="h-full w-full bg-cream text-slate-600 transition-colors dark:bg-theme-dark dark:text-slate-300"
   >
     <div
       v-if="renderError"

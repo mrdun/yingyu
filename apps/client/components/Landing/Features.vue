@@ -15,7 +15,7 @@
         >
           <div class="flex items-start gap-4">
             <span
-              class="shrink-0 rounded-lg border border-gray-300 bg-white p-2 text-purple-400 dark:border-gray-800 dark:bg-[#121229] dark:text-[#bea6ff]"
+              class="shrink-0 rounded-lg border border-brand-100 bg-brand-50 p-2 text-brand-600 dark:border-gray-800 dark:bg-brand-900/30 dark:text-brand-300"
             >
               <span v-html="feItem.icon"></span>
             </span>
