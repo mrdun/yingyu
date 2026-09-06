@@ -116,7 +116,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="mb-6 rounded-lg border border-purple-200 bg-gradient-to-br from-purple-50 to-pink-50 p-6 shadow-sm dark:border-purple-700 dark:from-purple-900/20 dark:to-pink-900/20"
+    class="mb-6 rounded-lg border border-brand-100 bg-gradient-to-br from-brand-50 to-brand-100 p-6 shadow-sm dark:border-brand-700 dark:from-brand-900/20 dark:to-brand-900/20"
   >
     <!-- 连胜 + 累计 -->
     <div class="mb-4 grid grid-cols-2 gap-4">
@@ -142,7 +142,7 @@ onMounted(() => {
       </div>
       <div class="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-600">
         <div
-          class="h-full rounded-full bg-gradient-to-r from-purple-400 to-pink-400 transition-all duration-500"
+          class="h-full rounded-full bg-gradient-to-r from-brand-500 to-brand-300 transition-all duration-500"
           :style="{
             width:
               dailyGoal.target > 0

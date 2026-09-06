@@ -43,7 +43,7 @@
                 <div class="flex items-center">
                   <UIcon
                     name="i-ph-heart-straight-fill"
-                    class="mr-2 h-5 w-5 fill-current text-pink-300 dark:text-blue-300"
+                    class="mr-2 h-5 w-5 fill-current text-brand-300 dark:text-brand-300"
                   ></UIcon>
                   <span class="text-gray-500 dark:text-gray-400">{{ item.likeCount }} likes</span>
                 </div>
