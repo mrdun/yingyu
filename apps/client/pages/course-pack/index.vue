@@ -1,21 +1,25 @@
 <template>
   <div class="flex w-full flex-col">
-    <h2 class="mb-4 text-center text-3xl dark:border-gray-600">课程包列表</h2>
+    <h2 class="mb-6 text-center text-3xl font-semibold tracking-tight text-zinc-900 dark:text-white">课程广场</h2>
 
     <!-- 搜索 + 筛选 -->
-    <div class="mb-4 flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
+    <div class="mb-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
       <input
         v-model="keyword"
         type="text"
         placeholder="搜索课程包..."
-        class="input input-sm input-bordered w-full max-w-xs"
+        class="input input-sm input-bordered w-full max-w-xs rounded-full border-zinc-200 bg-white"
       />
-      <div class="join">
+      <div class="flex items-center gap-2">
         <button
           v-for="opt in filterOptions"
           :key="opt.value"
-          class="btn join-item btn-sm"
-          :class="filter === opt.value ? 'btn-primary' : 'btn-ghost'"
+          class="rounded-full px-5 py-1.5 text-xs font-medium tracking-wide transition-all duration-200"
+          :class="
+            filter === opt.value
+              ? 'bg-brand-600 text-white shadow-lg shadow-blue-200/60'
+              : 'border border-zinc-200 bg-white text-zinc-600 hover:border-brand-300 hover:text-brand-600'
+          "
           @click="setFilter(opt.value)"
         >
           {{ opt.label }}

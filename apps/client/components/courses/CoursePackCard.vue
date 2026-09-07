@@ -51,8 +51,8 @@ defineEmits<{
 
 <style scoped>
 .course-pack-card {
-  @apply flex cursor-pointer flex-col overflow-hidden rounded-md rounded-t-xl border bg-white transition-all duration-300 dark:border-gray-700 dark:bg-gray-900;
-  @apply hover:text-purple-500 hover:shadow-even-lg hover:shadow-gray-300 hover:dark:text-purple-400 dark:hover:shadow-gray-500;
+  @apply flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-soft-lg dark:border-zinc-700 dark:bg-zinc-900;
+  @apply hover:text-brand-600;
   width: 100%;
   max-width: 100%; /* 在移动端允许卡片占满整个宽度 */
   height: 100%;
