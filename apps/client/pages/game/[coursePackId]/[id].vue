@@ -1,11 +1,15 @@
 <template>
-  <div class="flex w-full flex-col pt-2">
+  <div class="w-full py-4">
     <template v-if="isLoading">
       <Loading></Loading>
     </template>
     <template v-else>
-      <MainTool />
-      <MainGame />
+      <div
+        class="mx-auto flex w-full max-w-5xl flex-col overflow-hidden rounded-[1.35rem] border border-zinc-200/60 bg-white shadow-soft dark:border-zinc-700 dark:bg-zinc-900"
+      >
+        <MainTool />
+        <MainGame />
+      </div>
     </template>
   </div>
 </template>

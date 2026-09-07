@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex items-center justify-between border-t border-solid border-gray-300 pb-3 pt-4 text-base dark:border-gray-600"
+    class="relative flex items-center justify-between border-b border-solid border-zinc-200 px-6 py-4 text-base dark:border-zinc-700"
   >
     <!-- 左侧 -->
     <div class="flex items-center">
@@ -103,7 +103,7 @@
   </div>
 
   <CommonProgressBar
-    class="h-6 p-[2px]"
+    class="mt-2"
     :percentage="currentPercentage"
   />
   <RankRankingBoard />
