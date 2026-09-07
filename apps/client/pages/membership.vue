@@ -29,7 +29,7 @@
     <template v-else>
       <!-- 当前状态 -->
       <div
-        class="mb-6 rounded-lg border p-4 text-center shadow-sm"
+        class="mb-6 rounded-2xl border p-4 text-center shadow-soft"
         :class="
           status?.isMember
             ? 'border-purple-300 bg-purple-50 dark:border-purple-600 dark:bg-purple-900/30'
@@ -59,16 +59,16 @@
         <div
           v-for="plan in plans"
           :key="plan.id"
-          class="flex flex-col rounded-lg border p-5 text-center shadow-sm transition-shadow hover:shadow-md"
+          class="flex flex-col rounded-2xl border p-5 text-center shadow-soft transition-all hover:-translate-y-1 hover:shadow-soft-lg"
           :class="
             plan.id === 'yearly'
-              ? 'border-purple-400 bg-white dark:border-purple-500 dark:bg-gray-800'
+              ? 'border-brand-300 bg-white dark:border-brand-500 dark:bg-gray-800'
               : 'border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800'
           "
         >
           <div
             v-if="plan.id === 'yearly'"
-            class="mb-2 inline-block self-center rounded-full bg-purple-100 px-3 py-0.5 text-xs text-purple-600 dark:bg-purple-900 dark:text-purple-300"
+            class="mb-2 inline-block self-center rounded-full bg-gradient-to-r from-brand-600 to-brand-400 px-3 py-0.5 text-xs font-medium text-white shadow-md shadow-blue-200/60"
           >
             最划算
           </div>
