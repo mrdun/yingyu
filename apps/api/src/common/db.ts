@@ -29,9 +29,6 @@ export async function setupDB() {
     }
   }
 
-  logger.debug(`Connecting to ${process.env.DATABASE_URL}`);
-  logger.debug(`SECRET: ${process.env.SECRET}`);
-
   connection = await createConnection();
 
   return drizzle(connection, {

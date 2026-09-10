@@ -65,21 +65,53 @@ describe("MembershipService", () => {
   });
 
   describe("isMember", () => {
-    it("should return true for an active member", async () => {
-      const { userId } = await insertMembership(db, true);
-      const result = await service.isMember(userId);
-      expect(result).toBe(true);
+    it("should return true when end_date is in the future", async () => {
+      const userId = "member-future";
+      const now = new Date();
+      const future = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+      await db.insert(membership).values({
+        userId,
+        start_date: now,
+        end_date: future,
+        isActive: true,
+        type: MembershipType.REGULAR,
+      });
+
+      expect(await service.isMember(userId)).toBe(true);
     });
 
-    it("should return false for an inactive member", async () => {
-      const { userId } = await insertMembership(db, false);
-      const result = await service.isMember(userId);
-      expect(result).toBe(false);
+    it("should return false when end_date is in the past (even if isActive=true)", async () => {
+      const userId = "member-expired";
+      const now = new Date();
+      const past = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+      await db.insert(membership).values({
+        userId,
+        start_date: past,
+        end_date: past,
+        isActive: true,
+        type: MembershipType.REGULAR,
+      });
+
+      expect(await service.isMember(userId)).toBe(false);
+    });
+
+    it("should return true for a founder (permanent) member even with past end_date", async () => {
+      const userId = "member-founder";
+      const now = new Date();
+      const past = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+      await db.insert(membership).values({
+        userId,
+        start_date: past,
+        end_date: past,
+        isActive: false,
+        type: MembershipType.FOUNDER,
+      });
+
+      expect(await service.isMember(userId)).toBe(true);
     });
 
     it("should return false for a non-member", async () => {
-      const result = await service.isMember("nonexistent-user");
-      expect(result).toBe(false);
+      expect(await service.isMember("nonexistent-user")).toBe(false);
     });
   });
 

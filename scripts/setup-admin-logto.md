@@ -15,11 +15,15 @@
 ## 重放
 
 ```bash
-docker exec -i <logto-postgres-container> psql -U postgres -d logto < scripts/setup-admin-logto.sql
+# 通过环境变量指定管理员用户名
+export ADMIN_USERNAME="mrdun"
+
+docker exec -i <logto-postgres-container> psql -U postgres -d logto \
+  -v admin_username="$ADMIN_USERNAME" < scripts/setup-admin-logto.sql
 ```
 
-脚本幂等, 可重复执行。第 4 步会把角色分配给 default tenant 全部用户 (dev 便利),
-生产环境请改为只插具体管理员 user_id。
+脚本幂等, 可重复执行。第 4 步只把 `default:admin` 角色授予
+`admin_username` 指定的用户名; 未设置 `ADMIN_USERNAME` (空字符串) 时不会授权任何人。
 
 ## 给新用户提权
 

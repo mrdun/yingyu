@@ -31,10 +31,14 @@ WHERE r.tenant_id = 'default' AND r.name = 'default:admin'
   AND s.tenant_id = 'default' AND s.name = 'admin:access' AND s.resource_id = 'k9b22v5stmqbpw37cx27z'
 ON CONFLICT DO NOTHING;
 
--- 4) (Dev convenience) Assign the role to ALL registered users in the default tenant,
---    so their JWTs contain 'admin:access'. For production, insert only for real admins.
+-- 4) 授予指定管理员用户 (不再默认授予全部用户)。
+--    通过 psql 变量 admin_username 指定用户名: -v admin_username=xxx
+--    未指定 (空字符串) 时不会授权任何人。
 INSERT INTO users_roles (tenant_id, id, user_id, role_id)
 SELECT 'default', 'defadmur' || u.id, u.id, r.id
 FROM users u, roles r
-WHERE r.tenant_id = 'default' AND r.name = 'default:admin' AND u.tenant_id = 'default'
+WHERE r.tenant_id = 'default'
+  AND r.name = 'default:admin'
+  AND u.tenant_id = 'default'
+  AND u.username = :'admin_username'
 ON CONFLICT DO NOTHING;

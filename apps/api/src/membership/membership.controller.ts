@@ -5,6 +5,7 @@ import {
   HttpException,
   HttpStatus,
   Inject,
+  NotFoundException,
   Param,
   Post,
   Query,
@@ -13,6 +14,7 @@ import {
 } from "@nestjs/common";
 import { Response } from "express";
 
+import { isProduction } from "../common/env";
 import { AuthGuard, Permissions, UncheckAuth } from "../guards/auth.guard";
 import { PAYMENT_PROVIDER, PaymentProvider } from "../payment/payment-provider.interface";
 import { User, UserEntity } from "../user/user.decorators";
@@ -110,6 +112,11 @@ export class MembershipController {
     @Query("confirm") confirm: string,
     @Res() res: Response,
   ) {
+    // 生产环境禁止访问模拟支付
+    if (isProduction()) {
+      throw new NotFoundException();
+    }
+
     const order = await this.membershipService.findOrderByProviderOrderId(orderId);
     if (!order) {
       res.status(404).send("<h1>order not found</h1>");

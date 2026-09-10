@@ -79,7 +79,13 @@ export class MembershipService {
       where: eq(membership.userId, userId),
     });
 
-    return result?.isActive || false;
+    if (!result) return false;
+
+    // 永久会员 (创始会员) 始终有效
+    if (result.type === MembershipType.FOUNDER) return true;
+
+    // 普通会员: 未过期 (end_date > 当前时间), 不依赖 isActive 字段
+    return result.end_date > new Date();
   }
 
   /**
