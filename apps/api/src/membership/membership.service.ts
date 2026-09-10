@@ -1,8 +1,8 @@
 import { Inject, Injectable, Logger } from "@nestjs/common";
 import { Cron } from "@nestjs/schedule";
-import { and, eq, lt } from "drizzle-orm";
+import { and, eq, isNull, lt } from "drizzle-orm";
 
-import { coinTransactions, membership, orders } from "@earthworm/schema";
+import { coinTransactions, membership, orders, plans } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { BuyMembershipDto, MembershipPeriod } from "./dto/buy-membership.dto";
 import { findPlan } from "./plans";
@@ -74,6 +74,59 @@ export class MembershipService {
     return endDate;
   }
 
+  /**
+   * 会员数据迁移: 旧模型 (type + isActive) → 新模型 (plan_id + status + end_date)。
+   * 幂等 (只处理 plan_id 为 null 的记录)。供测试与一次性迁移使用。
+   */
+  async migrateLegacyMemberships() {
+    // 确保 legacy_regular 计划存在 (无法推断时长的 regular 会员兜底)
+    await this.db
+      .insert(plans)
+      .values({
+        id: "legacy_regular",
+        name: "旧版普通会员",
+        priceFen: 0,
+        durationDays: null,
+        sortOrder: 99,
+        isActive: false,
+      })
+      .onConflictDoNothing({ target: plans.id });
+
+    // founder → lifetime (永久会员, end_date = null)
+    await this.db
+      .update(membership)
+      .set({ planId: "lifetime", status: "active", end_date: null })
+      .where(and(eq(membership.type, "founder"), isNull(membership.planId)));
+
+    // regular → 按 end_date - start_date 推断计划
+    const regularMembers = await this.db
+      .select()
+      .from(membership)
+      .where(and(eq(membership.type, "regular"), isNull(membership.planId)));
+
+    for (const m of regularMembers) {
+      const planId =
+        m.end_date == null
+          ? "legacy_regular"
+          : this.inferPlanId(
+              Math.round((m.end_date.getTime() - m.start_date.getTime()) / (24 * 60 * 60 * 1000)),
+            );
+      await this.db
+        .update(membership)
+        .set({ planId, status: "active" })
+        .where(eq(membership.id, m.id));
+    }
+
+    return { migrated: regularMembers.length };
+  }
+
+  private inferPlanId(durationDays: number): string {
+    if (durationDays >= 27 && durationDays <= 32) return "monthly";
+    if (durationDays >= 88 && durationDays <= 93) return "quarterly";
+    if (durationDays >= 360 && durationDays <= 370) return "yearly";
+    return "legacy_regular";
+  }
+
   async isMember(userId: string): Promise<boolean> {
     const result = await this.db.query.membership.findFirst({
       where: eq(membership.userId, userId),
@@ -81,11 +134,10 @@ export class MembershipService {
 
     if (!result) return false;
 
-    // 永久会员 (创始会员) 始终有效
-    if (result.type === MembershipType.FOUNDER) return true;
-
-    // 普通会员: 未过期 (end_date > 当前时间), 不依赖 isActive 字段
-    return result.end_date > new Date();
+    // 新模型: status=active 且 (永久 end_date=null 或 未过期), 替代 isActive
+    return (
+      result.status === "active" && (result.end_date === null || result.end_date > new Date())
+    );
   }
 
   /**
@@ -96,7 +148,9 @@ export class MembershipService {
       where: eq(membership.userId, userId),
     });
 
-    const isMember = Boolean(result?.isActive && result.end_date > new Date());
+    const isMember = Boolean(
+      result?.status === "active" && (result.end_date === null || result.end_date > new Date()),
+    );
     return {
       isMember,
       type: result?.type ?? null,
@@ -108,7 +162,7 @@ export class MembershipService {
   /**
    * 按天数开通/延长会员 (供订单支付成功回调使用)
    */
-  async activateForDays(userId: string, durationDays: number) {
+  async activateForDays(userId: string, durationDays: number, planId?: string) {
     const now = new Date();
     const membershipEntity = await this.findMembership(userId);
     const active = membershipEntity && membershipEntity.isActive && membershipEntity.end_date > now;
@@ -121,7 +175,7 @@ export class MembershipService {
       endDate.setDate(endDate.getDate() + durationDays);
       await this.db
         .update(membership)
-        .set({ end_date: endDate })
+        .set({ end_date: endDate, ...(planId ? { planId, status: "active" } : {}) })
         .where(eq(membership.userId, userId));
       this.logger.log(`Membership for user ${userId} extended to ${endDate}`);
     } else {
@@ -134,11 +188,17 @@ export class MembershipService {
           start_date: startDate,
           end_date: endDate,
           isActive: true,
+          ...(planId ? { planId, status: "active" } : {}),
         });
       } else {
         await this.db
           .update(membership)
-          .set({ start_date: startDate, end_date: endDate, isActive: true })
+          .set({
+            start_date: startDate,
+            end_date: endDate,
+            isActive: true,
+            ...(planId ? { planId, status: "active" } : {}),
+          })
           .where(eq(membership.userId, userId));
       }
     }
@@ -206,7 +266,7 @@ export class MembershipService {
 
     const plan = findPlan(order.planId);
     if (plan) {
-      await this.activateForDays(order.userId, plan.durationDays);
+      await this.activateForDays(order.userId, plan.durationDays, plan.id);
     }
 
     // 金币流水留痕 (不加减金币, amount=0)
@@ -225,7 +285,7 @@ export class MembershipService {
         type: true,
         start_date: true,
       },
-      where: and(eq(membership.userId, userId), eq(membership.isActive, true)),
+      where: and(eq(membership.userId, userId), eq(membership.status, "active")),
     });
 
     if (!result) return;

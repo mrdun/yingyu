@@ -2,7 +2,7 @@ import { Test, TestingModule } from "@nestjs/testing";
 import { eq } from "drizzle-orm";
 import { DbType } from "src/global/providers/db.provider";
 
-import { coinTransactions, membership, orders } from "@earthworm/schema";
+import { coinTransactions, membership, orders, plans } from "@earthworm/schema";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB } from "../../global/providers/db.provider";
@@ -10,6 +10,19 @@ import { MockPaymentProvider } from "../../payment/mock-payment.provider";
 import { PAYMENT_PROVIDER } from "../../payment/payment-provider.interface";
 import { MembershipService } from "../membership.service";
 import { MEMBERSHIP_PLANS } from "../plans";
+
+async function seedPlans(db: DbType) {
+  const rows = [
+    { id: "monthly", priceFen: 1800, durationDays: 30 },
+    { id: "quarterly", priceFen: 4800, durationDays: 90 },
+    { id: "yearly", priceFen: 16800, durationDays: 365 },
+  ] as const;
+  for (const p of rows) {
+    await db
+      .insert(plans)
+      .values({ id: p.id, name: p.id, priceFen: p.priceFen, durationDays: p.durationDays, sortOrder: 1 });
+  }
+}
 
 describe("Membership orders (mock payment)", () => {
   let service: MembershipService;
@@ -29,10 +42,13 @@ describe("Membership orders (mock payment)", () => {
 
   beforeEach(async () => {
     await cleanDB(db);
+    await db.delete(plans);
+    await seedPlans(db);
   });
 
   afterAll(async () => {
     await cleanDB(db);
+    await db.delete(plans);
     await endDB();
   });
 

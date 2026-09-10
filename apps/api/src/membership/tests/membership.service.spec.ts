@@ -95,15 +95,15 @@ describe("MembershipService", () => {
       expect(await service.isMember(userId)).toBe(false);
     });
 
-    it("should return true for a founder (permanent) member even with past end_date", async () => {
-      const userId = "member-founder";
+    it("should return true for a permanent member (end_date = null)", async () => {
+      const userId = "member-permanent";
       const now = new Date();
-      const past = new Date(now.getTime() - 24 * 60 * 60 * 1000);
       await db.insert(membership).values({
         userId,
-        start_date: past,
-        end_date: past,
-        isActive: false,
+        start_date: now,
+        end_date: null,
+        isActive: true,
+        status: "active",
         type: MembershipType.FOUNDER,
       });
 
@@ -187,6 +187,7 @@ async function insertMembership(db: DbType, isActive: boolean) {
     start_date: currentDate,
     end_date: expiredEndDate,
     isActive,
+    status: isActive ? "active" : "cancelled",
     type: MembershipType.REGULAR,
   });
 
