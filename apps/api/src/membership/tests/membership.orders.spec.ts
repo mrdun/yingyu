@@ -2,7 +2,7 @@ import { Test, TestingModule } from "@nestjs/testing";
 import { eq } from "drizzle-orm";
 import { DbType } from "src/global/providers/db.provider";
 
-import { coinTransactions, membership, orders, plans } from "@earthworm/schema";
+import { coinTransactions, membership, orders, plans, user } from "@earthworm/schema";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB } from "../../global/providers/db.provider";
@@ -21,6 +21,12 @@ async function seedPlans(db: DbType) {
     await db
       .insert(plans)
       .values({ id: p.id, name: p.id, priceFen: p.priceFen, durationDays: p.durationDays, sortOrder: 1 });
+  }
+}
+
+async function seedUsers(db: DbType) {
+  for (const id of ["user-1", "user-2", "user-3", "user-4"]) {
+    await db.insert(user).values({ id }).onConflictDoNothing();
   }
 }
 
@@ -44,11 +50,13 @@ describe("Membership orders (mock payment)", () => {
     await cleanDB(db);
     await db.delete(plans);
     await seedPlans(db);
+    await seedUsers(db);
   });
 
   afterAll(async () => {
     await cleanDB(db);
     await db.delete(plans);
+    await db.delete(user);
     await endDB();
   });
 

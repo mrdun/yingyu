@@ -1,4 +1,4 @@
-import { Inject, Injectable, Logger } from "@nestjs/common";
+import { BadRequestException, Inject, Injectable, Logger, NotFoundException } from "@nestjs/common";
 import { Cron } from "@nestjs/schedule";
 import { and, eq, isNull, lt } from "drizzle-orm";
 
@@ -7,6 +7,7 @@ import { DB, DbType } from "../global/providers/db.provider";
 import { BuyMembershipDto, MembershipPeriod } from "./dto/buy-membership.dto";
 import { findPlan } from "./plans";
 import { MembershipType } from "./types/membership.types";
+import { OrderStatus } from "./types/order-status";
 
 @Injectable()
 export class MembershipService {
@@ -58,8 +59,8 @@ export class MembershipService {
     }
   }
 
-  private async findMembership(userId: string) {
-    const result = await this.db.select().from(membership).where(eq(membership.userId, userId));
+  private async findMembership(userId: string, db: DbType = this.db) {
+    const result = await db.select().from(membership).where(eq(membership.userId, userId));
     return result[0];
   }
 
@@ -162,9 +163,10 @@ export class MembershipService {
   /**
    * 按天数开通/延长会员 (供订单支付成功回调使用)
    */
-  async activateForDays(userId: string, durationDays: number, planId?: string) {
+  async activateForDays(userId: string, durationDays: number, planId?: string, tx?: DbType) {
+    const db = tx ?? this.db;
     const now = new Date();
-    const membershipEntity = await this.findMembership(userId);
+    const membershipEntity = await this.findMembership(userId, db);
     const active = membershipEntity && membershipEntity.isActive && membershipEntity.end_date > now;
 
     let startDate: Date;
@@ -173,7 +175,7 @@ export class MembershipService {
       startDate = membershipEntity.start_date;
       endDate = new Date(membershipEntity.end_date);
       endDate.setDate(endDate.getDate() + durationDays);
-      await this.db
+      await db
         .update(membership)
         .set({ end_date: endDate, ...(planId ? { planId, status: "active" } : {}) })
         .where(eq(membership.userId, userId));
@@ -183,7 +185,7 @@ export class MembershipService {
       endDate = new Date(now);
       endDate.setDate(endDate.getDate() + durationDays);
       if (!membershipEntity) {
-        await this.db.insert(membership).values({
+        await db.insert(membership).values({
           userId,
           start_date: startDate,
           end_date: endDate,
@@ -191,7 +193,7 @@ export class MembershipService {
           ...(planId ? { planId, status: "active" } : {}),
         });
       } else {
-        await this.db
+        await db
           .update(membership)
           .set({
             start_date: startDate,
@@ -256,26 +258,50 @@ export class MembershipService {
    * 订单支付成功后的业务动作: 开通/延长会员 + 金币流水留痕
    */
   async markOrderPaid(orderId: string) {
+    await this.db.transaction(async (tx) => {
+      const [order] = await tx.select().from(orders).where(eq(orders.id, orderId));
+      // 幂等: 只有 pending 可转 paid; 已 paid/refunded/cancelled 直接返回
+      if (!order || order.status !== OrderStatus.PENDING) return;
+
+      await tx
+        .update(orders)
+        .set({ status: OrderStatus.PAID, paidAt: new Date(), updatedAt: new Date() })
+        .where(eq(orders.id, orderId));
+
+      const plan = findPlan(order.planId);
+      if (plan) {
+        await this.activateForDays(order.userId, plan.durationDays, plan.id, tx);
+      }
+
+      // 金币流水留痕 (不加减金币, amount=0)
+      await tx.insert(coinTransactions).values({
+        userId: order.userId,
+        amount: 0,
+        reason: "membership_purchase",
+        relatedId: orderId,
+      });
+    });
+  }
+
+  /**
+   * 退款: 仅 paid -> refunded, 并记录 refunded_at。
+   * refunded 后不能再次激活会员 (markOrderPaid 只处理 pending)。
+   */
+  async refundOrder(orderId: string) {
     const [order] = await this.db.select().from(orders).where(eq(orders.id, orderId));
-    if (!order || order.status === "paid") return;
-
-    await this.db
-      .update(orders)
-      .set({ status: "paid", paidAt: new Date() })
-      .where(eq(orders.id, orderId));
-
-    const plan = findPlan(order.planId);
-    if (plan) {
-      await this.activateForDays(order.userId, plan.durationDays, plan.id);
+    if (!order) {
+      throw new NotFoundException(`Order ${orderId} not found`);
+    }
+    if (order.status !== OrderStatus.PAID) {
+      throw new BadRequestException("Only paid orders can be refunded");
     }
 
-    // 金币流水留痕 (不加减金币, amount=0)
-    await this.db.insert(coinTransactions).values({
-      userId: order.userId,
-      amount: 0,
-      reason: "membership_purchase",
-      relatedId: orderId,
-    });
+    const [updated] = await this.db
+      .update(orders)
+      .set({ status: OrderStatus.REFUNDED, refundedAt: new Date(), updatedAt: new Date() })
+      .where(eq(orders.id, orderId))
+      .returning();
+    return updated;
   }
 
   async getMembershipDetails(userId: string) {
