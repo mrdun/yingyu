@@ -13,3 +13,4 @@ export * from "./coin";
 export * from "./order";
 export * from "./learningPath";
 export * from "./pictureWord";
+export * from "./user";
