@@ -14,3 +14,4 @@ export * from "./order";
 export * from "./learningPath";
 export * from "./pictureWord";
 export * from "./user";
+export * from "./plan";
