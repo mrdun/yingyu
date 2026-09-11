@@ -259,7 +259,12 @@ export class MembershipService {
    */
   async markOrderPaid(orderId: string) {
     await this.db.transaction(async (tx) => {
-      const [order] = await tx.select().from(orders).where(eq(orders.id, orderId));
+      // 行锁: 并发下只有一个事务能读到 pending 并推进到 paid
+      const [order] = await tx
+        .select()
+        .from(orders)
+        .where(eq(orders.id, orderId))
+        .for("update");
       // 幂等: 只有 pending 可转 paid; 已 paid/refunded/cancelled 直接返回
       if (!order || order.status !== OrderStatus.PENDING) return;
 
@@ -286,22 +291,55 @@ export class MembershipService {
   /**
    * 退款: 仅 paid -> refunded, 并记录 refunded_at。
    * refunded 后不能再次激活会员 (markOrderPaid 只处理 pending)。
+   * 同时撤销本订单产生的会员权益 (减少 end_date 对应天数)。
    */
   async refundOrder(orderId: string) {
-    const [order] = await this.db.select().from(orders).where(eq(orders.id, orderId));
-    if (!order) {
-      throw new NotFoundException(`Order ${orderId} not found`);
-    }
-    if (order.status !== OrderStatus.PAID) {
-      throw new BadRequestException("Only paid orders can be refunded");
-    }
+    return await this.db.transaction(async (tx) => {
+      const [order] = await tx
+        .select()
+        .from(orders)
+        .where(eq(orders.id, orderId))
+        .for("update");
+      if (!order) {
+        throw new NotFoundException(`Order ${orderId} not found`);
+      }
+      if (order.status !== OrderStatus.PAID) {
+        throw new BadRequestException("Only paid orders can be refunded");
+      }
 
-    const [updated] = await this.db
-      .update(orders)
-      .set({ status: OrderStatus.REFUNDED, refundedAt: new Date(), updatedAt: new Date() })
-      .where(eq(orders.id, orderId))
-      .returning();
-    return updated;
+      const [updated] = await tx
+        .update(orders)
+        .set({ status: OrderStatus.REFUNDED, refundedAt: new Date(), updatedAt: new Date() })
+        .where(eq(orders.id, orderId))
+        .returning();
+
+      // 撤销本订单产生的会员权益
+      const plan = findPlan(order.planId);
+      if (plan) {
+        await this.revokeMembershipDays(order.userId, plan.durationDays, tx);
+      }
+
+      return updated;
+    });
+  }
+
+  /**
+   * 撤销订单产生的会员权益: 将会员 end_date 减少对应天数。
+   * 永久会员 (end_date=null) 暂不撤销 (lifetime 订单尚未实现, 留待未来扩展)。
+   */
+  private async revokeMembershipDays(userId: string, durationDays: number, tx?: DbType) {
+    const db = tx ?? this.db;
+    const membershipEntity = await this.findMembership(userId, db);
+    if (!membershipEntity) return;
+    if (membershipEntity.end_date == null) return;
+
+    const newEndDate = new Date(
+      membershipEntity.end_date.getTime() - durationDays * 24 * 60 * 60 * 1000,
+    );
+    await db
+      .update(membership)
+      .set({ end_date: newEndDate, updatedAt: new Date() })
+      .where(eq(membership.id, membershipEntity.id));
   }
 
   async getMembershipDetails(userId: string) {

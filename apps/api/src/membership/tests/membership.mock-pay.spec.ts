@@ -44,3 +44,13 @@ describe("MembershipController mockPay", () => {
     ).rejects.toThrow(NotFoundException);
   });
 });
+
+describe("MembershipController permissions", () => {
+  it("buyMembership requires admin:access (not a free membership backdoor)", () => {
+    const permissions = Reflect.getMetadata(
+      "permissions",
+      MembershipController.prototype.buyMembership,
+    );
+    expect(permissions).toEqual(["admin:access"]);
+  });
+});

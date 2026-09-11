@@ -1,7 +1,7 @@
 import { Test, TestingModule } from "@nestjs/testing";
 import { eq } from "drizzle-orm";
 
-import { membership, orders, planEntitlements, plans, user } from "@earthworm/schema";
+import { coinTransactions, membership, orders, planEntitlements, plans, user } from "@earthworm/schema";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
@@ -26,7 +26,7 @@ async function seedPlans(db: DbType) {
 }
 
 async function seedUsers(db: DbType) {
-  for (const id of ["u-1", "u-2", "u-3", "u-4", "u-5", "u-6"]) {
+  for (const id of ["u-1", "u-2", "u-3", "u-4", "u-5", "u-6", "u-7", "u-8", "u-9", "u-10", "u-11"]) {
     await db.insert(user).values({ id }).onConflictDoNothing();
   }
 }
@@ -146,5 +146,87 @@ describe("Orders commercial model", () => {
 
     await service.markOrderPaid(order.id);
     expect(await service.isMember("u-6")).toBe(false);
+  });
+
+  it("concurrent markOrderPaid activates membership only once", async () => {
+    const order = await service.createOrder({
+      userId: "u-7",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_g1",
+    });
+
+    await Promise.all([service.markOrderPaid(order.id), service.markOrderPaid(order.id)]);
+
+    const txs = await db.select().from(coinTransactions).where(eq(coinTransactions.userId, "u-7"));
+    expect(txs).toHaveLength(1);
+  });
+
+  it("does not re-activate a refunded order", async () => {
+    const order = await service.createOrder({
+      userId: "u-8",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_h1",
+    });
+    await service.markOrderPaid(order.id);
+    await service.refundOrder(order.id);
+    await service.markOrderPaid(order.id);
+
+    const txs = await db.select().from(coinTransactions).where(eq(coinTransactions.userId, "u-8"));
+    expect(txs).toHaveLength(1);
+  });
+
+  it("does not activate a cancelled order", async () => {
+    const order = await service.createOrder({
+      userId: "u-9",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_i1",
+    });
+    await db.update(orders).set({ status: OrderStatus.CANCELLED }).where(eq(orders.id, order.id));
+
+    await service.markOrderPaid(order.id);
+    expect(await service.isMember("u-9")).toBe(false);
+  });
+
+  it("refund reduces membership entitlement (end_date)", async () => {
+    const order = await service.createOrder({
+      userId: "u-10",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_j1",
+    });
+    await service.markOrderPaid(order.id);
+
+    const [before] = await db.select().from(membership).where(eq(membership.userId, "u-10"));
+    await service.refundOrder(order.id);
+    const [after] = await db.select().from(membership).where(eq(membership.userId, "u-10"));
+
+    const diffDays = Math.round(
+      (new Date(before.end_date).getTime() - new Date(after.end_date).getTime()) / 86400000,
+    );
+    expect(diffDays).toBe(30);
+    expect(await service.isMember("u-10")).toBe(false);
+  });
+
+  it("markPaidByProviderOrderId is idempotent", async () => {
+    await service.createOrder({
+      userId: "u-11",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_k1",
+    });
+
+    await service.markPaidByProviderOrderId("mock_k1");
+    await service.markPaidByProviderOrderId("mock_k1");
+
+    const txs = await db.select().from(coinTransactions).where(eq(coinTransactions.userId, "u-11"));
+    expect(txs).toHaveLength(1);
   });
 });

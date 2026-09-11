@@ -21,6 +21,7 @@ import { User, UserEntity } from "../user/user.decorators";
 import { CreateOrderDto } from "./dto/create-order.dto";
 import { MembershipService } from "./membership.service";
 import { findPlan } from "./plans";
+import { OrderStatus } from "./types/order-status";
 
 @Controller("membership")
 export class MembershipController {
@@ -29,7 +30,7 @@ export class MembershipController {
     @Inject(PAYMENT_PROVIDER) private readonly paymentProvider: PaymentProvider,
   ) {}
 
-  @Permissions("write:membership")
+  @Permissions("admin:access")
   @UseGuards(AuthGuard)
   @Post("buy")
   async buyMembership(@Body() buyMembershipDto: any) {
@@ -82,11 +83,11 @@ export class MembershipController {
     }
 
     let status = order.status;
-    if (status === "pending" && order.provider === "mock" && order.providerOrderId) {
+    if (status === OrderStatus.PENDING && order.provider === "mock" && order.providerOrderId) {
       const result = await this.paymentProvider.queryOrder(order.providerOrderId);
       if (result.status === "paid") {
         await this.membershipService.markOrderPaid(order.id);
-        status = "paid";
+        status = OrderStatus.PAID;
       }
     }
 
@@ -122,7 +123,7 @@ export class MembershipController {
       res.status(404).send("<h1>order not found</h1>");
       return;
     }
-    if (confirm === "1" && order.status === "pending") {
+    if (confirm === "1" && order.status === OrderStatus.PENDING) {
       await this.membershipService.markPaidByProviderOrderId(orderId);
     }
     res.type("html").send(
