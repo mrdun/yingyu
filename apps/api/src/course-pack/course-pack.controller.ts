@@ -81,4 +81,10 @@ export class CoursePackController {
   getRatings(@User() user: UserEntity, @Param("coursePackId") coursePackId: string) {
     return this.coursePackService.getRatings(user.userId, coursePackId);
   }
+
+  @UseGuards(AuthGuard)
+  @Get(":coursePackId/progress")
+  getProgress(@User() user: UserEntity, @Param("coursePackId") coursePackId: string) {
+    return this.coursePackService.getProgress(user.userId, coursePackId);
+  }
 }

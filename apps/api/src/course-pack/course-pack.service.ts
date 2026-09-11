@@ -1,7 +1,14 @@
 import { ForbiddenException, Inject, Injectable, NotFoundException } from "@nestjs/common";
-import { and, asc, eq, ilike, or } from "drizzle-orm";
+import { and, asc, eq, ilike, inArray, or } from "drizzle-orm";
 
-import { course, coursePack, courseRating } from "@earthworm/schema";
+import {
+  course,
+  coursePack,
+  courseRating,
+  statement,
+  userCourseProgress,
+  userStatementProgress,
+} from "@earthworm/schema";
 import { CourseHistoryService } from "../course-history/course-history.service";
 import { CourseService } from "../course/course.service";
 import { DB, DbType } from "../global/providers/db.provider";
@@ -152,6 +159,110 @@ export class CoursePackService {
   async completeCourse(userId: string, coursePackId: string, courseId: string) {
     await this.assertCanStudy(userId, coursePackId);
     return await this.courseService.completeCourse(userId, coursePackId, courseId);
+  }
+
+  /**
+   * 记录用户完成某个 Statement (学习最小单位)。
+   * 校验: statement 属于 course、course 属于 coursePack、用户有学习权限。
+   * 事务保证 statement progress 与 user_course_progress 最后位置一致。
+   */
+  async completeStatement(userId: string, courseId: string, statementId: string) {
+    const stmt = await this.db.query.statement.findFirst({
+      where: and(eq(statement.id, statementId), eq(statement.courseId, courseId)),
+    });
+    if (!stmt) {
+      throw new NotFoundException(
+        `Statement with ID ${statementId} not found in course ${courseId}`,
+      );
+    }
+
+    const courseEntity = await this.db.query.course.findFirst({
+      where: eq(course.id, courseId),
+    });
+    if (!courseEntity) {
+      throw new NotFoundException(`Course with ID ${courseId} not found`);
+    }
+
+    await this.assertCanStudy(userId, courseEntity.coursePackId);
+
+    await this.db.transaction(async (tx) => {
+      await tx
+        .insert(userStatementProgress)
+        .values({ userId, statementId, status: "completed" })
+        .onConflictDoNothing({
+          target: [userStatementProgress.userId, userStatementProgress.statementId],
+        });
+
+      await tx
+        .insert(userCourseProgress)
+        .values({
+          userId,
+          coursePackId: courseEntity.coursePackId,
+          courseId,
+          statementIndex: stmt.order,
+        })
+        .onConflictDoUpdate({
+          target: [userCourseProgress.userId, userCourseProgress.coursePackId],
+          set: { courseId, statementIndex: stmt.order },
+        });
+    });
+
+    return { statementId, completed: true };
+  }
+
+  /**
+   * 课程包学习进度: totalCourses / completedCourses / progress。
+   * Course 完成 = 该 Course 下所有 Statement 均已完成。
+   */
+  async getProgress(userId: string, coursePackId: string) {
+    await this.assertCanStudy(userId, coursePackId);
+
+    const courses = await this.db.query.course.findMany({
+      where: eq(course.coursePackId, coursePackId),
+      with: {
+        statements: { columns: { id: true } },
+      },
+    });
+
+    const totalCourses = courses.length;
+    if (totalCourses === 0) {
+      return { totalCourses: 0, completedCourses: 0, progress: 0 };
+    }
+
+    const statementIds = courses.flatMap((c) => c.statements.map((s) => s.id));
+    const completed = statementIds.length
+      ? await this.db.query.userStatementProgress.findMany({
+          where: and(
+            eq(userStatementProgress.userId, userId),
+            inArray(userStatementProgress.statementId, statementIds),
+          ),
+        })
+      : [];
+    const completedIds = new Set(completed.map((r) => r.statementId));
+
+    let completedCourses = 0;
+    for (const c of courses) {
+      const total = c.statements.length;
+      const done = c.statements.filter((s) => completedIds.has(s.id)).length;
+      if (total > 0 && done === total) completedCourses++;
+    }
+
+    const progress = Math.round((completedCourses / totalCourses) * 100);
+
+    const last = await this.db.query.userCourseProgress.findFirst({
+      where: and(
+        eq(userCourseProgress.userId, userId),
+        eq(userCourseProgress.coursePackId, coursePackId),
+      ),
+    });
+
+    return {
+      totalCourses,
+      completedCourses,
+      progress,
+      lastCourseId: last?.courseId ?? null,
+      lastStatementIndex: last?.statementIndex ?? 0,
+    };
   }
 
   async rateCourse(

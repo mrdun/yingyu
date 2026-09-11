@@ -6,10 +6,11 @@ import { MembershipModule } from "../membership/membership.module";
 import { CourseAccessService } from "./course-access.service";
 import { CoursePackController } from "./course-pack.controller";
 import { CoursePackService } from "./course-pack.service";
+import { StatementProgressController } from "./statement-progress.controller";
 
 @Module({
   imports: [CourseModule, MembershipModule, CourseHistoryModule],
   providers: [CoursePackService, CourseAccessService],
-  controllers: [CoursePackController],
+  controllers: [CoursePackController, StatementProgressController],
 })
 export class CoursePackModule {}

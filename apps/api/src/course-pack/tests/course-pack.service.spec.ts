@@ -1,9 +1,11 @@
 import { ForbiddenException, NotFoundException } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
 import { createId } from "@paralleldrive/cuid2";
+import { eq } from "drizzle-orm";
 
+import { userStatementProgress } from "@earthworm/schema";
 import type { DbType } from "../../global/providers/db.provider";
-import { insertCourse, insertCoursePack } from "../../../test/fixture/db";
+import { insertCourse, insertCoursePack, insertStatement } from "../../../test/fixture/db";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { CourseHistoryService } from "../../course-history/course-history.service";
@@ -201,6 +203,67 @@ describe("CoursePackService", () => {
     it("throws NotFound for getRatings on a non-existent pack", async () => {
       await expect(coursePackService.getRatings("u1", createId())).rejects.toThrow(
         NotFoundException,
+      );
+    });
+  });
+
+  describe("statement completion / progress", () => {
+    it("records a statement completion once (idempotent)", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      const c = await insertCourse(db, pack.id);
+      const s = await insertStatement(db, c.id, 0);
+
+      await coursePackService.completeStatement("u1", c.id, s.id);
+      await coursePackService.completeStatement("u1", c.id, s.id);
+
+      const rows = await db.query.userStatementProgress.findMany({
+        where: eq(userStatementProgress.userId, "u1"),
+      });
+      expect(rows).toHaveLength(1);
+      expect(rows[0].statementId).toBe(s.id);
+    });
+
+    it("computes course pack progress from statement completions", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      const c1 = await insertCourse(db, pack.id);
+      const c2 = await insertCourse(db, pack.id);
+      const s1 = await insertStatement(db, c1.id, 0);
+      const s2 = await insertStatement(db, c1.id, 1);
+      const s3 = await insertStatement(db, c2.id, 0);
+
+      await coursePackService.completeStatement("u1", c1.id, s1.id);
+      await coursePackService.completeStatement("u1", c1.id, s2.id);
+
+      const result = await coursePackService.getProgress("u1", pack.id);
+      expect(result.totalCourses).toBe(2);
+      expect(result.completedCourses).toBe(1); // c1 全部完成, c2 未完成
+      expect(result.progress).toBe(50);
+
+      await coursePackService.completeStatement("u1", c2.id, s3.id);
+      const done = await coursePackService.getProgress("u1", pack.id);
+      expect(done.completedCourses).toBe(2);
+      expect(done.progress).toBe(100);
+    });
+
+    it("rejects completing a statement that does not belong to the course (IDOR)", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      const c1 = await insertCourse(db, pack.id);
+      const c2 = await insertCourse(db, pack.id);
+      const foreignStatement = await insertStatement(db, c2.id, 0);
+
+      await expect(
+        coursePackService.completeStatement("u1", c1.id, foreignStatement.id),
+      ).rejects.toThrow(NotFoundException);
+    });
+
+    it("rejects a non-member completing a membership course statement", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "membership", isFree: false });
+      const c = await insertCourse(db, pack.id);
+      const s = await insertStatement(db, c.id, 0);
+      mockCourseAccess.canStudyCoursePack.mockResolvedValue(false);
+
+      await expect(coursePackService.completeStatement("u1", c.id, s.id)).rejects.toThrow(
+        ForbiddenException,
       );
     });
   });

@@ -3,6 +3,7 @@ export * from "./courseHistory";
 export * from "./statement";
 export * from "./userLearnRecord";
 export * from "./userCourseProgress";
+export * from "./userStatementProgress";
 export * from "./membership";
 export * from "./coursePack";
 export * from "./userLearningActivities";
