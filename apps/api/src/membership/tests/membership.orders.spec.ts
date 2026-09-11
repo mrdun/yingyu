@@ -123,13 +123,27 @@ describe("Membership orders (mock payment)", () => {
     expect(txs.length).toBe(1);
   });
 
-  it("activateForDays should extend an active membership", async () => {
+  it("stacked orders extend the membership end date", async () => {
     const now = new Date();
-    await service.activateForDays("user-3", 30);
+    const order1 = await service.createOrder({
+      userId: "user-3",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_ext1",
+    });
+    await service.markOrderPaid(order1.id);
     const first = await service.getMembershipStatus("user-3");
     expect(first.isMember).toBe(true);
 
-    await service.activateForDays("user-3", 90);
+    const order2 = await service.createOrder({
+      userId: "user-3",
+      planId: "quarterly",
+      amountFen: 4800,
+      provider: "mock",
+      providerOrderId: "mock_ext2",
+    });
+    await service.markOrderPaid(order2.id);
     const second = await service.getMembershipStatus("user-3");
     const firstEnd = new Date(first.endDate).getTime();
     const secondEnd = new Date(second.endDate).getTime();

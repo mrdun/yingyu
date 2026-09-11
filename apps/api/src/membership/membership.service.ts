@@ -2,7 +2,7 @@ import { BadRequestException, Inject, Injectable, Logger, NotFoundException } fr
 import { Cron } from "@nestjs/schedule";
 import { and, eq, isNull, lt } from "drizzle-orm";
 
-import { coinTransactions, membership, orders, plans } from "@earthworm/schema";
+import { coinTransactions, membership, membershipPeriod, orders, plans } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { BuyMembershipDto, MembershipPeriod } from "./dto/buy-membership.dto";
 import { findPlan } from "./plans";
@@ -128,6 +128,45 @@ export class MembershipService {
     return "legacy_regular";
   }
 
+  /**
+   * 为历史已支付订单回填 membership_periods (best-effort)。
+   * 历史 stacking 无法可靠还原, 这里用近似区间 (start_at=paid_at, end_at=paid_at+durationDays);
+   * 幂等 (按 order_id 唯一)。无法用硬编码计划还原的订单 (lifetime/legacy) 跳过并记录限制。
+   */
+  async backfillMembershipPeriods() {
+    const paidOrders = await this.db.select().from(orders).where(eq(orders.status, OrderStatus.PAID));
+    let backfilled = 0;
+    let skipped = 0;
+    for (const order of paidOrders) {
+      const plan = findPlan(order.planId);
+      if (!plan) {
+        skipped++;
+        continue;
+      }
+      const m = await this.findMembership(order.userId);
+      if (!m) {
+        skipped++;
+        continue;
+      }
+      const startAt = order.paidAt ?? order.createdAt;
+      const endAt = new Date(startAt.getTime() + plan.durationDays * 24 * 60 * 60 * 1000);
+      const inserted = await this.db
+        .insert(membershipPeriod)
+        .values({
+          membershipId: m.id,
+          orderId: order.id,
+          planId: order.planId,
+          startAt,
+          endAt,
+          status: "active",
+        })
+        .onConflictDoNothing({ target: membershipPeriod.orderId })
+        .returning({ id: membershipPeriod.id });
+      if (inserted.length > 0) backfilled++;
+    }
+    return { backfilled, skipped };
+  }
+
   async isMember(userId: string): Promise<boolean> {
     const result = await this.db.query.membership.findFirst({
       where: eq(membership.userId, userId),
@@ -161,50 +200,82 @@ export class MembershipService {
   }
 
   /**
-   * 按天数开通/延长会员 (供订单支付成功回调使用)
+   * 订单支付成功后开通/延长会员, 并为该订单创建一条明确的权益 period。
+   * start_at = 当前有效 end (若已过期则为 now), end_at = start_at + durationDays (永久 = null)。
    */
-  async activateForDays(userId: string, durationDays: number, planId?: string, tx?: DbType) {
+  async activateForDays(
+    userId: string,
+    durationDays: number,
+    planId: string,
+    orderId: string,
+    tx?: DbType,
+  ) {
     const db = tx ?? this.db;
     const now = new Date();
     const membershipEntity = await this.findMembership(userId, db);
-    const active = membershipEntity && membershipEntity.isActive && membershipEntity.end_date > now;
 
-    let startDate: Date;
-    let endDate: Date;
-    if (active) {
-      startDate = membershipEntity.start_date;
-      endDate = new Date(membershipEntity.end_date);
-      endDate.setDate(endDate.getDate() + durationDays);
-      await db
-        .update(membership)
-        .set({ end_date: endDate, ...(planId ? { planId, status: "active" } : {}) })
-        .where(eq(membership.userId, userId));
-      this.logger.log(`Membership for user ${userId} extended to ${endDate}`);
+    let membershipId: string;
+    let effectiveEnd: Date | null = null;
+
+    if (!membershipEntity) {
+      const [created] = await db
+        .insert(membership)
+        .values({ userId, start_date: now, end_date: null, isActive: true, status: "active", planId })
+        .returning();
+      membershipId = created.id;
     } else {
-      startDate = now;
-      endDate = new Date(now);
-      endDate.setDate(endDate.getDate() + durationDays);
-      if (!membershipEntity) {
-        await db.insert(membership).values({
-          userId,
-          start_date: startDate,
-          end_date: endDate,
-          isActive: true,
-          ...(planId ? { planId, status: "active" } : {}),
-        });
-      } else {
-        await db
-          .update(membership)
-          .set({
-            start_date: startDate,
-            end_date: endDate,
-            isActive: true,
-            ...(planId ? { planId, status: "active" } : {}),
-          })
-          .where(eq(membership.userId, userId));
-      }
+      membershipId = membershipEntity.id;
+      effectiveEnd = await this.computeEffectiveEnd(membershipId, db);
     }
-    return { startDate, endDate, isActive: true };
+
+    const startAt = effectiveEnd && effectiveEnd > now ? effectiveEnd : now;
+    const endAt =
+      durationDays == null ? null : new Date(startAt.getTime() + durationDays * 24 * 60 * 60 * 1000);
+
+    await db.insert(membershipPeriod).values({
+      membershipId,
+      orderId,
+      planId,
+      startAt,
+      endAt,
+      status: "active",
+    });
+
+    const newEffectiveEnd = await this.computeEffectiveEnd(membershipId, db);
+    await db
+      .update(membership)
+      .set({ end_date: newEffectiveEnd, status: "active", planId, updatedAt: new Date() })
+      .where(eq(membership.id, membershipId));
+
+    this.logger.log(`Membership for user ${userId} activated until ${endAt ?? "permanent"}`);
+    return { startDate: startAt, endDate: endAt, isActive: true };
+  }
+
+  /** 当前有效 end = 所有 active period 的最大 end_at; 存在永久 period 时为 null */
+  private async computeEffectiveEnd(membershipId: string, db: DbType = this.db): Promise<Date | null> {
+    const periods = await db
+      .select()
+      .from(membershipPeriod)
+      .where(
+        and(eq(membershipPeriod.membershipId, membershipId), eq(membershipPeriod.status, "active")),
+      );
+    if (periods.length === 0) return null;
+    if (periods.some((p) => p.endAt == null)) return null; // 永久
+    let maxEnd = periods[0].endAt!;
+    for (const p of periods) {
+      if (p.endAt && p.endAt > maxEnd) maxEnd = p.endAt;
+    }
+    return maxEnd;
+  }
+
+  private async hasActivePeriod(membershipId: string, db: DbType = this.db): Promise<boolean> {
+    const periods = await db
+      .select({ id: membershipPeriod.id })
+      .from(membershipPeriod)
+      .where(
+        and(eq(membershipPeriod.membershipId, membershipId), eq(membershipPeriod.status, "active")),
+      );
+    return periods.length > 0;
   }
 
   /**
@@ -275,7 +346,7 @@ export class MembershipService {
 
       const plan = findPlan(order.planId);
       if (plan) {
-        await this.activateForDays(order.userId, plan.durationDays, plan.id, tx);
+        await this.activateForDays(order.userId, plan.durationDays, plan.id, order.id, tx);
       }
 
       // 金币流水留痕 (不加减金币, amount=0)
@@ -313,33 +384,42 @@ export class MembershipService {
         .where(eq(orders.id, orderId))
         .returning();
 
-      // 撤销本订单产生的会员权益
-      const plan = findPlan(order.planId);
-      if (plan) {
-        await this.revokeMembershipDays(order.userId, plan.durationDays, tx);
-      }
+      // 精确撤销本订单产生的会员权益 period
+      await this.revokePeriodByOrderId(order.id, tx);
 
       return updated;
     });
   }
 
   /**
-   * 撤销订单产生的会员权益: 将会员 end_date 减少对应天数。
-   * 永久会员 (end_date=null) 暂不撤销 (lifetime 订单尚未实现, 留待未来扩展)。
+   * 通过 order_id 精确撤销该订单产生的权益 period, 并重算会员有效 end。
+   * 永久会员 period (end_at=null) 同样会被标记 revoked。
    */
-  private async revokeMembershipDays(userId: string, durationDays: number, tx?: DbType) {
+  private async revokePeriodByOrderId(orderId: string, tx?: DbType) {
     const db = tx ?? this.db;
-    const membershipEntity = await this.findMembership(userId, db);
-    if (!membershipEntity) return;
-    if (membershipEntity.end_date == null) return;
+    const [period] = await db
+      .select()
+      .from(membershipPeriod)
+      .where(eq(membershipPeriod.orderId, orderId))
+      .for("update");
+    if (!period) return; // 无 period (历史数据未回填), 跳过
 
-    const newEndDate = new Date(
-      membershipEntity.end_date.getTime() - durationDays * 24 * 60 * 60 * 1000,
-    );
+    await db
+      .update(membershipPeriod)
+      .set({ status: "revoked", updatedAt: new Date() })
+      .where(eq(membershipPeriod.id, period.id));
+
+    const membershipId = period.membershipId;
+    const newEffectiveEnd = await this.computeEffectiveEnd(membershipId, db);
+    const active = await this.hasActivePeriod(membershipId, db);
     await db
       .update(membership)
-      .set({ end_date: newEndDate, updatedAt: new Date() })
-      .where(eq(membership.id, membershipEntity.id));
+      .set({
+        end_date: newEffectiveEnd,
+        status: active ? "active" : "cancelled",
+        updatedAt: new Date(),
+      })
+      .where(eq(membership.id, membershipId));
   }
 
   async getMembershipDetails(userId: string) {

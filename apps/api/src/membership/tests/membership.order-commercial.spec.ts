@@ -193,7 +193,7 @@ describe("Orders commercial model", () => {
     expect(await service.isMember("u-9")).toBe(false);
   });
 
-  it("refund reduces membership entitlement (end_date)", async () => {
+  it("refund revokes the order's membership period", async () => {
     const order = await service.createOrder({
       userId: "u-10",
       planId: "monthly",
@@ -204,13 +204,12 @@ describe("Orders commercial model", () => {
     await service.markOrderPaid(order.id);
 
     const [before] = await db.select().from(membership).where(eq(membership.userId, "u-10"));
+    expect(before.end_date).toBeTruthy();
     await service.refundOrder(order.id);
     const [after] = await db.select().from(membership).where(eq(membership.userId, "u-10"));
 
-    const diffDays = Math.round(
-      (new Date(before.end_date).getTime() - new Date(after.end_date).getTime()) / 86400000,
-    );
-    expect(diffDays).toBe(30);
+    expect(after.status).toBe("cancelled");
+    expect(after.end_date).toBeNull();
     expect(await service.isMember("u-10")).toBe(false);
   });
 

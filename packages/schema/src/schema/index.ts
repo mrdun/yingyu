@@ -15,3 +15,4 @@ export * from "./learningPath";
 export * from "./pictureWord";
 export * from "./user";
 export * from "./plan";
+export * from "./membershipPeriod";
