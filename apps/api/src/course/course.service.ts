@@ -63,12 +63,13 @@ export class CourseService {
   }
 
   private async _findNext(coursePackId: string, courseId: string) {
-    const { order } = await this.db.query.course.findFirst({
-      where: eq(course.id, courseId),
+    const current = await this.db.query.course.findFirst({
+      where: and(eq(course.id, courseId), eq(course.coursePackId, coursePackId)),
     });
+    if (!current) return undefined;
 
     const nextCourse = await this.db.query.course.findFirst({
-      where: and(eq(course.coursePackId, coursePackId), eq(course.order, order + 1)),
+      where: and(eq(course.coursePackId, coursePackId), eq(course.order, current.order + 1)),
     });
 
     return nextCourse;

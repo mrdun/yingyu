@@ -90,6 +90,20 @@ describe("course service", () => {
         NotFoundException,
       );
     });
+
+    it("should throw NotFoundException when the course does not belong to the pack (IDOR)", async () => {
+      const { coursePackId, courseEntityFirst } = await setupDBData(db);
+      const otherPack = await insertCoursePack(db, { title: "other pack" });
+      const foreignCourse = await insertCourse(db, otherPack.id, { title: "foreign", order: 0 });
+
+      await expect(courseService.findNext(coursePackId, foreignCourse.id)).rejects.toThrow(
+        NotFoundException,
+      );
+      // 原始课程仍在自己的 pack 中正常工作
+      await expect(
+        courseService.findNext(coursePackId, courseEntityFirst.id),
+      ).resolves.toBeTruthy();
+    });
   });
 
   describe("upsertUserLearnRecord", () => {

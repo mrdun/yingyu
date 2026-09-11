@@ -1,7 +1,23 @@
-import { Body, Controller, Get, Param, Patch, Post, Query, UseGuards } from "@nestjs/common";
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Patch,
+  Post,
+  Query,
+  UseGuards,
+} from "@nestjs/common";
 
 import { AuthGuard, Permissions } from "../guards/auth.guard";
 import { AdminService } from "./admin.service";
+import {
+  CreateCourseDto,
+  CreateStatementDto,
+  UpdateCourseDto,
+  UpdateStatementDto,
+} from "./dto/course-content.dto";
 import { CreateCoursePackDto, SetAccessLevelDto, UpdateCoursePackDto } from "./dto/course-pack.dto";
 
 @Controller("admin")
@@ -99,5 +115,44 @@ export class AdminController {
   @Permissions("admin:access")
   async restore(@Param("id") id: string) {
     return await this.adminService.restoreCoursePack(id);
+  }
+
+  @Post("course-packs/:coursePackId/courses")
+  @Permissions("admin:access")
+  async createCourse(@Param("coursePackId") coursePackId: string, @Body() dto: CreateCourseDto) {
+    return await this.adminService.createCourse(coursePackId, dto);
+  }
+
+  @Patch("courses/:courseId")
+  @Permissions("admin:access")
+  async updateCourse(@Param("courseId") courseId: string, @Body() dto: UpdateCourseDto) {
+    return await this.adminService.updateCourse(courseId, dto);
+  }
+
+  @Delete("courses/:courseId")
+  @Permissions("admin:access")
+  async deleteCourse(@Param("courseId") courseId: string) {
+    return await this.adminService.deleteCourse(courseId);
+  }
+
+  @Post("courses/:courseId/statements")
+  @Permissions("admin:access")
+  async createStatement(@Param("courseId") courseId: string, @Body() dto: CreateStatementDto) {
+    return await this.adminService.createStatement(courseId, dto);
+  }
+
+  @Patch("statements/:statementId")
+  @Permissions("admin:access")
+  async updateStatement(
+    @Param("statementId") statementId: string,
+    @Body() dto: UpdateStatementDto,
+  ) {
+    return await this.adminService.updateStatement(statementId, dto);
+  }
+
+  @Delete("statements/:statementId")
+  @Permissions("admin:access")
+  async deleteStatement(@Param("statementId") statementId: string) {
+    return await this.adminService.deleteStatement(statementId);
   }
 }

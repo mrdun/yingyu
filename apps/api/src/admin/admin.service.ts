@@ -1,11 +1,14 @@
 import { BadRequestException, Inject, Injectable, NotFoundException } from "@nestjs/common";
-import { and, count, eq, sql } from "drizzle-orm";
+import { and, count, eq, inArray, sql } from "drizzle-orm";
 
 import {
   course,
+  courseHistory,
   coursePack,
+  courseRating,
   reviewRecords,
   statement,
+  userCourseProgress,
   userLearningActivities,
   userLearnRecord,
 } from "@earthworm/schema";
@@ -387,6 +390,237 @@ export class AdminService {
 
   async restoreCoursePack(id: string) {
     return await this.transitionCoursePackStatus(id, "draft");
+  }
+
+  // ---------------------------------------------------------------------------
+  // Course / Statement 内容结构管理 (核心学习内容)
+  // 规则: draft 可编辑; review/published 编辑后自动退回 draft 重新审核; archived 拒绝。
+  // ---------------------------------------------------------------------------
+
+  async createCourse(
+    coursePackId: string,
+    dto: { title: string; description?: string; video?: string; order?: number },
+  ) {
+    const pack = await this.findCoursePackOrThrow(coursePackId);
+    this.assertContentEditable(pack);
+
+    const order = dto.order ?? (await this.nextCourseOrder(coursePackId));
+    const [created] = await this.db
+      .insert(course)
+      .values({
+        coursePackId,
+        title: dto.title,
+        description: dto.description ?? "",
+        video: dto.video ?? "",
+        order,
+      })
+      .returning();
+
+    await this.markContentDirty(pack);
+    return created;
+  }
+
+  async updateCourse(
+    courseId: string,
+    dto: { title?: string; description?: string; video?: string; order?: number },
+  ) {
+    const courseEntity = await this.findCourseOrThrow(courseId);
+    const pack = await this.findCoursePackOrThrow(courseEntity.coursePackId);
+    this.assertContentEditable(pack);
+
+    const set: Record<string, unknown> = { updatedAt: new Date() };
+    if (dto.title !== undefined) set.title = dto.title;
+    if (dto.description !== undefined) set.description = dto.description;
+    if (dto.video !== undefined) set.video = dto.video;
+    if (dto.order !== undefined) set.order = dto.order;
+
+    const [updated] = await this.db
+      .update(course)
+      .set(set)
+      .where(eq(course.id, courseId))
+      .returning();
+    await this.markContentDirty(pack);
+    return updated;
+  }
+
+  async deleteCourse(courseId: string) {
+    const courseEntity = await this.findCourseOrThrow(courseId);
+    const pack = await this.findCoursePackOrThrow(courseEntity.coursePackId);
+    this.assertContentDeletable(pack);
+
+    await this.db.transaction(async (tx) => {
+      const statementIds = await tx
+        .select({ id: statement.id })
+        .from(statement)
+        .where(eq(statement.courseId, courseId));
+      if (statementIds.length > 0) {
+        await tx.delete(reviewRecords).where(
+          inArray(
+            reviewRecords.statementId,
+            statementIds.map((s) => s.id),
+          ),
+        );
+        await tx.delete(statement).where(eq(statement.courseId, courseId));
+      }
+      // 无 FK 的学习/评分数据: 显式清理, 避免孤儿
+      await tx.delete(courseHistory).where(eq(courseHistory.courseId, courseId));
+      await tx.delete(userCourseProgress).where(eq(userCourseProgress.courseId, courseId));
+      await tx.delete(courseRating).where(eq(courseRating.courseId, courseId));
+      await tx.delete(course).where(eq(course.id, courseId));
+    });
+
+    return { id: courseId, deleted: true };
+  }
+
+  async createStatement(
+    courseId: string,
+    dto: {
+      chinese: string;
+      english: string;
+      soundmark?: string;
+      sourceType?: string;
+      audioUrl?: string;
+      startMs?: number;
+      endMs?: number;
+      order?: number;
+    },
+  ) {
+    const courseEntity = await this.findCourseOrThrow(courseId);
+    const pack = await this.findCoursePackOrThrow(courseEntity.coursePackId);
+    this.assertContentEditable(pack);
+
+    const order = dto.order ?? (await this.nextStatementOrder(courseId));
+    const [created] = await this.db
+      .insert(statement)
+      .values({
+        courseId,
+        order,
+        chinese: dto.chinese,
+        english: dto.english,
+        soundmark: dto.soundmark ?? "",
+        sourceType: dto.sourceType ?? "text",
+        audioUrl: dto.audioUrl,
+        startMs: dto.startMs,
+        endMs: dto.endMs,
+      })
+      .returning();
+
+    await this.markContentDirty(pack);
+    return created;
+  }
+
+  async updateStatement(
+    statementId: string,
+    dto: {
+      chinese?: string;
+      english?: string;
+      soundmark?: string;
+      sourceType?: string;
+      audioUrl?: string;
+      startMs?: number;
+      endMs?: number;
+      order?: number;
+    },
+  ) {
+    const stmt = await this.findStatementOrThrow(statementId);
+    const courseEntity = await this.findCourseOrThrow(stmt.courseId);
+    const pack = await this.findCoursePackOrThrow(courseEntity.coursePackId);
+    this.assertContentEditable(pack);
+
+    const set: Record<string, unknown> = { updatedAt: new Date() };
+    if (dto.chinese !== undefined) set.chinese = dto.chinese;
+    if (dto.english !== undefined) set.english = dto.english;
+    if (dto.soundmark !== undefined) set.soundmark = dto.soundmark;
+    if (dto.sourceType !== undefined) set.sourceType = dto.sourceType;
+    if (dto.audioUrl !== undefined) set.audioUrl = dto.audioUrl;
+    if (dto.startMs !== undefined) set.startMs = dto.startMs;
+    if (dto.endMs !== undefined) set.endMs = dto.endMs;
+    if (dto.order !== undefined) set.order = dto.order;
+
+    const [updated] = await this.db
+      .update(statement)
+      .set(set)
+      .where(eq(statement.id, statementId))
+      .returning();
+    await this.markContentDirty(pack);
+    return updated;
+  }
+
+  async deleteStatement(statementId: string) {
+    const stmt = await this.findStatementOrThrow(statementId);
+    const courseEntity = await this.findCourseOrThrow(stmt.courseId);
+    const pack = await this.findCoursePackOrThrow(courseEntity.coursePackId);
+    this.assertContentDeletable(pack);
+
+    await this.db.transaction(async (tx) => {
+      await tx.delete(reviewRecords).where(eq(reviewRecords.statementId, statementId));
+      await tx.delete(statement).where(eq(statement.id, statementId));
+    });
+
+    return { id: statementId, deleted: true };
+  }
+
+  /** 核心内容编辑仅在 draft/review/published 允许 (archived 拒绝); 非 draft 会自动退回 draft。 */
+  private assertContentEditable(pack: { status: string }) {
+    if (pack.status === "archived") {
+      throw new BadRequestException(
+        "Archived course pack content cannot be edited directly; restore it first",
+      );
+    }
+  }
+
+  /** 删除仅允许 draft/review, published/archived 拒绝 (保护历史学习数据)。 */
+  private assertContentDeletable(pack: { status: string }) {
+    if (pack.status !== "draft" && pack.status !== "review") {
+      throw new BadRequestException(
+        `Only draft/review course content can be deleted (current: ${pack.status})`,
+      );
+    }
+  }
+
+  /** 核心内容发生变更后, 使 review/published 退回 draft, 要求重新审核发布。 */
+  private async markContentDirty(pack: { id: string; status: string }) {
+    if (pack.status === "draft") return;
+    await this.db
+      .update(coursePack)
+      .set({ status: "draft", shareLevel: "private", updatedAt: new Date() })
+      .where(eq(coursePack.id, pack.id));
+  }
+
+  private async nextCourseOrder(coursePackId: string): Promise<number> {
+    const [row] = await this.db
+      .select({ max: sql<number>`coalesce(max(${course.order}), -1)` })
+      .from(course)
+      .where(eq(course.coursePackId, coursePackId));
+    return Number(row?.max ?? -1) + 1;
+  }
+
+  private async nextStatementOrder(courseId: string): Promise<number> {
+    const [row] = await this.db
+      .select({ max: sql<number>`coalesce(max(${statement.order}), -1)` })
+      .from(statement)
+      .where(eq(statement.courseId, courseId));
+    return Number(row?.max ?? -1) + 1;
+  }
+
+  private async findCourseOrThrow(courseId: string) {
+    const courseEntity = await this.db.query.course.findFirst({
+      where: eq(course.id, courseId),
+    });
+    if (!courseEntity) {
+      throw new NotFoundException(`Course with ID ${courseId} not found`);
+    }
+    return courseEntity;
+  }
+
+  private async findStatementOrThrow(statementId: string) {
+    const stmt = await this.db.query.statement.findFirst({
+      where: eq(statement.id, statementId),
+    });
+    if (!stmt) {
+      throw new NotFoundException(`Statement with ID ${statementId} not found`);
+    }
+    return stmt;
   }
 
   /** 状态机统一入口: 校验并执行合法状态转换 (review->published 由 publish 单独处理 shareLevel)。 */
