@@ -184,6 +184,18 @@ describe("course service", () => {
 
       expect(result.nextCourse).toBeUndefined();
     });
+
+    it("should throw NotFoundException when the course does not belong to the pack (IDOR)", async () => {
+      const { coursePackId } = await setupDBData(db);
+      const otherPack = await insertCoursePack(db, { title: "other" });
+      const foreignCourse = await insertCourse(db, otherPack.id, { title: "foreign", order: 0 });
+
+      await expect(
+        courseService.completeCourse("cxr", coursePackId, foreignCourse.id),
+      ).rejects.toThrow(NotFoundException);
+      expect(rankService.userFinishCourse).not.toHaveBeenCalled();
+      expect(courseHistoryService.upsert).not.toHaveBeenCalled();
+    });
   });
 });
 

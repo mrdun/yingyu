@@ -161,6 +161,15 @@ export class CoursePackService {
     total: number,
     correct: number,
   ) {
+    // 防 IDOR + 访问控制: 先确认用户可学习该课程包, 且该课程属于该课程包
+    await this.assertCanStudy(userId, coursePackId);
+    const courseEntity = await this.db.query.course.findFirst({
+      where: and(eq(course.id, courseId), eq(course.coursePackId, coursePackId)),
+    });
+    if (!courseEntity) {
+      throw new NotFoundException(`Course with ID ${courseId} not found`);
+    }
+
     const scoreRate = calcScoreRate(correct, total);
     const grade = calcGrade(scoreRate);
 
@@ -202,6 +211,13 @@ export class CoursePackService {
   }
 
   async getRatings(userId: string, coursePackId: string) {
+    const pack = await this.db.query.coursePack.findFirst({
+      where: eq(coursePack.id, coursePackId),
+    });
+    if (!pack) {
+      throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
+    }
+
     return await this.db
       .select({
         courseId: courseRating.courseId,

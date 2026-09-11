@@ -76,6 +76,16 @@ export class CourseService {
   }
 
   async completeCourse(userId: string, coursePackId: string, courseId: string) {
+    // 防 IDOR: 完成课程前必须确认该 course 属于指定 coursePack
+    const courseEntity = await this.db.query.course.findFirst({
+      where: and(eq(course.id, courseId), eq(course.coursePackId, coursePackId)),
+    });
+    if (!courseEntity) {
+      throw new NotFoundException(
+        `CoursePack with ID ${coursePackId} and CourseId with ID ${courseId} not found`,
+      );
+    }
+
     const nextCourse = await this._findNext(coursePackId, courseId);
 
     if (userId) {

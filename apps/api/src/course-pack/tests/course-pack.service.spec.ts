@@ -168,6 +168,42 @@ describe("CoursePackService", () => {
       expect(courseService.find).toHaveBeenCalledWith(pack.id, fakeCourseId);
     });
   });
+
+  describe("rateCourse / getRatings access control", () => {
+    it("throws NotFound when rating a course that belongs to another pack (IDOR)", async () => {
+      const packA = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      const packB = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      const courseB = await insertCourse(db, packB.id);
+
+      await expect(coursePackService.rateCourse("u1", packA.id, courseB.id, 10, 8)).rejects.toThrow(
+        NotFoundException,
+      );
+    });
+
+    it("throws Forbidden when a non-member rates a membership course", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "membership", isFree: false });
+      const c = await insertCourse(db, pack.id);
+      mockCourseAccess.canStudyCoursePack.mockResolvedValue(false);
+
+      await expect(coursePackService.rateCourse("u1", pack.id, c.id, 10, 8)).rejects.toThrow(
+        ForbiddenException,
+      );
+    });
+
+    it("records a rating for an accessible course", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      const c = await insertCourse(db, pack.id);
+
+      const result = await coursePackService.rateCourse("u1", pack.id, c.id, 10, 8);
+      expect(result.scoreRate).toBe(80);
+    });
+
+    it("throws NotFound for getRatings on a non-existent pack", async () => {
+      await expect(coursePackService.getRatings("u1", createId())).rejects.toThrow(
+        NotFoundException,
+      );
+    });
+  });
 });
 
 async function setupTesting() {
