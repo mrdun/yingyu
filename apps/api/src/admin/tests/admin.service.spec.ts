@@ -168,7 +168,11 @@ describe("AdminService", () => {
             id: "p1",
             title: "Basics",
             isFree: true,
+            status: "published",
+            source: "manual",
+            accessLevel: "free",
             createdAt: new Date("2026-03-01T00:00:00Z"),
+            updatedAt: new Date("2026-03-02T00:00:00Z"),
             courseCount: "3",
             statementCount: "40",
           },
@@ -184,27 +188,33 @@ describe("AdminService", () => {
         id: "p1",
         title: "Basics",
         isFree: true,
+        status: "published",
+        source: "manual",
+        accessLevel: "free",
         courseCount: 3,
         statementCount: 40,
         createdAt: "2026-03-01T00:00:00.000Z",
+        updatedAt: "2026-03-02T00:00:00.000Z",
       });
     });
   });
 
   describe("toggleCoursePackFree", () => {
-    it("flips isFree", async () => {
+    it("flips access_level free <-> membership", async () => {
+      let accessLevel = "membership";
       const db: Record<string, any> = {};
       db.query = {
         coursePack: {
-          findFirst: jest
-            .fn()
-            .mockResolvedValueOnce({ id: "p1", isFree: false })
-            .mockResolvedValueOnce({ id: "p1", isFree: true }),
+          findFirst: jest.fn().mockImplementation(async () => ({ id: "p1", accessLevel })),
         },
       };
       db.update = jest.fn().mockReturnValue(db);
-      db.set = jest.fn().mockReturnValue(db);
-      db.where = jest.fn().mockResolvedValue(undefined);
+      db.set = jest.fn().mockImplementation((v: Record<string, unknown>) => {
+        if (v.accessLevel) accessLevel = v.accessLevel as string;
+        return db;
+      });
+      db.where = jest.fn().mockReturnValue(db);
+      db.returning = jest.fn().mockResolvedValue([{ id: "p1", accessLevel }]);
       (service as any).db = db;
 
       expect(await service.toggleCoursePackFree("p1")).toEqual({ id: "p1", isFree: true });
@@ -216,7 +226,9 @@ describe("AdminService", () => {
       db.query = { coursePack: { findFirst: jest.fn().mockResolvedValue(undefined) } };
       (service as any).db = db;
 
-      await expect(service.toggleCoursePackFree("nope")).rejects.toThrow("course pack not found");
+      await expect(service.toggleCoursePackFree("nope")).rejects.toThrow(
+        "CoursePack with ID nope not found",
+      );
     });
   });
 });

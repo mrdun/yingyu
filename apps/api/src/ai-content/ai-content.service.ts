@@ -87,47 +87,50 @@ export class AiContentService {
     const statements = await this.split({ title: dto.title, text: dto.text });
     const courseSize = dto.courseSize ?? DEFAULT_COURSE_SIZE;
 
-    const [coursePackEntity] = await this.db
-      .insert(coursePack)
-      .values({
-        title: dto.title,
-        description: dto.description ?? "",
-        order: 0,
-        isFree: false,
-        shareLevel: "private",
-        creatorId: "ai-content",
-        status: "draft",
-        source: "ai",
-        accessLevel: "membership",
-      })
-      .returning();
-
-    const courseCount = Math.ceil(statements.length / courseSize);
-
-    for (let i = 0; i < courseCount; i++) {
-      const chunk = statements.slice(i * courseSize, (i + 1) * courseSize);
-      const [courseEntity] = await this.db
-        .insert(course)
+    // 事务保证: AI 建课要么全部成功, 要么不留下孤儿 draft 脏数据 (绝不产生公开内容)。
+    return await this.db.transaction(async (tx) => {
+      const [coursePackEntity] = await tx
+        .insert(coursePack)
         .values({
-          title: `${dto.title} - Lesson ${i + 1}`,
+          title: dto.title,
           description: dto.description ?? "",
-          order: i,
-          coursePackId: coursePackEntity.id,
+          order: 0,
+          isFree: false,
+          shareLevel: "private",
+          creatorId: "ai-content",
+          status: "draft",
+          source: "ai",
+          accessLevel: "membership",
         })
         .returning();
 
-      await this.db.insert(statement).values(
-        chunk.map((s) => ({
-          order: s.order,
-          chinese: s.chinese,
-          english: s.english,
-          soundmark: s.soundmark ?? "",
-          courseId: courseEntity.id,
-        })),
-      );
-    }
+      const courseCount = Math.ceil(statements.length / courseSize);
 
-    return { coursePackId: coursePackEntity.id, courseCount };
+      for (let i = 0; i < courseCount; i++) {
+        const chunk = statements.slice(i * courseSize, (i + 1) * courseSize);
+        const [courseEntity] = await tx
+          .insert(course)
+          .values({
+            title: `${dto.title} - Lesson ${i + 1}`,
+            description: dto.description ?? "",
+            order: i,
+            coursePackId: coursePackEntity.id,
+          })
+          .returning();
+
+        await tx.insert(statement).values(
+          chunk.map((s) => ({
+            order: s.order,
+            chinese: s.chinese,
+            english: s.english,
+            soundmark: s.soundmark ?? "",
+            courseId: courseEntity.id,
+          })),
+        );
+      }
+
+      return { coursePackId: coursePackEntity.id, courseCount };
+    });
   }
 
   async findCoursePack(coursePackId: string) {

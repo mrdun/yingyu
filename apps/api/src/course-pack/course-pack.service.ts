@@ -36,28 +36,6 @@ export class CoursePackService {
     return applyFilter(result, options?.filter);
   }
 
-  async findFounderOnly(keyword?: string) {
-    const coursePacks = await this.db.query.coursePack.findMany({
-      orderBy: asc(coursePack.order),
-      where: and(eq(coursePack.shareLevel, "founder_only"), keywordWhere(keyword)),
-    });
-
-    return coursePacks;
-  }
-
-  async findAllForUser(userId: string, keyword?: string) {
-    const userIdOwnedCoursePacks = await this.db.query.coursePack.findMany({
-      orderBy: asc(coursePack.order),
-      where: and(
-        eq(coursePack.creatorId, userId),
-        eq(coursePack.shareLevel, "private"),
-        keywordWhere(keyword),
-      ),
-    });
-
-    return userIdOwnedCoursePacks;
-  }
-
   async findAllPublicCoursePacks(keyword?: string) {
     return await this.db.query.coursePack.findMany({
       orderBy: asc(coursePack.order),
@@ -67,18 +45,6 @@ export class CoursePackService {
         keywordWhere(keyword),
       ),
     });
-  }
-
-  async findOne(coursePackId: string) {
-    const result = await this.db.query.coursePack.findFirst({
-      where: eq(coursePack.id, coursePackId),
-    });
-
-    if (!result) {
-      throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
-    }
-
-    return result;
   }
 
   /**

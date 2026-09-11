@@ -1,3 +1,4 @@
+import { BadRequestException } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
 import { and, eq } from "drizzle-orm";
 
@@ -9,7 +10,29 @@ import { LogtoService } from "../../logto/logto.service";
 import { AdminController } from "../admin.controller";
 import { AdminService } from "../admin.service";
 
-describe("AdminService publish / toggle-free", () => {
+async function insertPack(
+  db: DbType,
+  status: string,
+  extra?: Partial<typeof coursePack.$inferInsert>,
+) {
+  const [pack] = await db
+    .insert(coursePack)
+    .values({
+      order: 1,
+      title: "t",
+      creatorId: "admin",
+      status,
+      source: "manual",
+      accessLevel: "membership",
+      shareLevel: status === "published" ? "public" : "private",
+      isFree: false,
+      ...extra,
+    })
+    .returning();
+  return pack;
+}
+
+describe("AdminService course operations (state machine / CRUD / filters)", () => {
   let db: DbType;
   let service: AdminService;
 
@@ -34,62 +57,153 @@ describe("AdminService publish / toggle-free", () => {
     await endDB();
   });
 
-  it("publishes a draft course pack", async () => {
-    const [pack] = await db
-      .insert(coursePack)
-      .values({
-        order: 1,
-        title: "t",
-        creatorId: "admin",
-        status: "draft",
-        source: "ai",
-        accessLevel: "membership",
-        shareLevel: "private",
-        isFree: false,
-      })
-      .returning();
+  describe("state machine", () => {
+    it("draft -> review (submit-review)", async () => {
+      const pack = await insertPack(db, "draft");
+      const updated = await service.submitReview(pack.id);
+      expect(updated.status).toBe("review");
+    });
 
-    await service.publishCoursePack(pack.id);
+    it("review -> draft (reject)", async () => {
+      const pack = await insertPack(db, "review");
+      const updated = await service.rejectReview(pack.id);
+      expect(updated.status).toBe("draft");
+    });
 
-    const [updated] = await db.select().from(coursePack).where(eq(coursePack.id, pack.id));
-    expect(updated.status).toBe("published");
-    expect(updated.shareLevel).toBe("public");
+    it("review -> published (publish)", async () => {
+      const pack = await insertPack(db, "review");
+      const updated = await service.publishCoursePack(pack.id);
+      expect(updated.status).toBe("published");
+      expect(updated.shareLevel).toBe("public");
+    });
 
-    // 商城查询条件 = status=published 且 shareLevel=public, 发布后立即可见
-    const marketplace = await db
-      .select()
-      .from(coursePack)
-      .where(and(eq(coursePack.status, "published"), eq(coursePack.shareLevel, "public")));
-    expect(marketplace.some((p) => p.id === pack.id)).toBe(true);
+    it("published -> archived (archive)", async () => {
+      const pack = await insertPack(db, "published");
+      const updated = await service.archiveCoursePack(pack.id);
+      expect(updated.status).toBe("archived");
+    });
+
+    it("archived -> draft (restore)", async () => {
+      const pack = await insertPack(db, "archived");
+      const updated = await service.restoreCoursePack(pack.id);
+      expect(updated.status).toBe("draft");
+    });
+
+    it("rejects draft -> published", async () => {
+      const pack = await insertPack(db, "draft");
+      await expect(service.publishCoursePack(pack.id)).rejects.toThrow(BadRequestException);
+    });
+
+    it("rejects draft -> archived", async () => {
+      const pack = await insertPack(db, "draft");
+      await expect(service.archiveCoursePack(pack.id)).rejects.toThrow(BadRequestException);
+    });
+
+    it("rejects published -> draft", async () => {
+      const pack = await insertPack(db, "published");
+      await expect(service.restoreCoursePack(pack.id)).rejects.toThrow(BadRequestException);
+    });
+
+    it("rejects published -> review", async () => {
+      const pack = await insertPack(db, "published");
+      await expect(service.submitReview(pack.id)).rejects.toThrow(BadRequestException);
+    });
+
+    it("rejects archived -> published", async () => {
+      const pack = await insertPack(db, "archived");
+      await expect(service.publishCoursePack(pack.id)).rejects.toThrow(BadRequestException);
+    });
   });
 
-  it("toggle-free syncs access_level", async () => {
-    const [pack] = await db
-      .insert(coursePack)
-      .values({
-        order: 1,
-        title: "t",
-        creatorId: "admin",
-        isFree: false,
-        accessLevel: "membership",
-      })
-      .returning();
+  describe("create / update / access level", () => {
+    it("creates a course pack as draft + manual + membership by default", async () => {
+      const pack = await service.createCoursePack({ title: "new" });
+      expect(pack.status).toBe("draft");
+      expect(pack.source).toBe("manual");
+      expect(pack.accessLevel).toBe("membership");
+      expect(pack.isFree).toBe(false);
+      expect(pack.shareLevel).toBe("private");
+    });
 
-    await service.toggleCoursePackFree(pack.id);
+    it("creates a free course pack when accessLevel is free", async () => {
+      const pack = await service.createCoursePack({ title: "free", accessLevel: "free" });
+      expect(pack.accessLevel).toBe("free");
+      expect(pack.isFree).toBe(true);
+    });
 
-    const [updated] = await db.select().from(coursePack).where(eq(coursePack.id, pack.id));
-    expect(updated.isFree).toBe(true);
-    expect(updated.accessLevel).toBe("free");
+    it("updates attributes without changing status", async () => {
+      const pack = await insertPack(db, "published");
+      const updated = await service.updateCoursePack(pack.id, {
+        title: "updated",
+        accessLevel: "free",
+      });
+      expect(updated.title).toBe("updated");
+      expect(updated.accessLevel).toBe("free");
+      expect(updated.isFree).toBe(true);
+      expect(updated.status).toBe("published");
+    });
+
+    it("setAccessLevel flips free <-> membership and syncs is_free", async () => {
+      const pack = await insertPack(db, "draft");
+      const free = await service.setCoursePackAccessLevel(pack.id, "free");
+      expect(free.accessLevel).toBe("free");
+      expect(free.isFree).toBe(true);
+
+      const membership = await service.setCoursePackAccessLevel(pack.id, "membership");
+      expect(membership.accessLevel).toBe("membership");
+      expect(membership.isFree).toBe(false);
+    });
   });
 
-  it("admin course-pack endpoints require admin:access (no normal user entry)", () => {
-    const methods = ["coursePacks", "toggleFree", "publish"];
-    for (const method of methods) {
-      const permissions = Reflect.getMetadata(
-        "permissions",
-        (AdminController.prototype as any)[method],
-      );
-      expect(permissions).toEqual(["admin:access"]);
-    }
+  describe("list filters", () => {
+    it("filters by status / source / access_level", async () => {
+      await insertPack(db, "draft", { source: "ai", accessLevel: "membership" });
+      await insertPack(db, "review", { source: "manual", accessLevel: "free", isFree: true });
+      await insertPack(db, "published", { source: "manual", accessLevel: "membership" });
+
+      const drafts = await service.listCoursePacks({ page: 1, pageSize: 20, status: "draft" });
+      expect(drafts.total).toBe(1);
+      expect(drafts.coursePacks[0].source).toBe("ai");
+
+      const free = await service.listCoursePacks({ page: 1, pageSize: 20, accessLevel: "free" });
+      expect(free.total).toBe(1);
+      expect(free.coursePacks[0].status).toBe("review");
+    });
+
+    it("published + public courses are marketplace visible", async () => {
+      const pack = await insertPack(db, "review");
+      await service.publishCoursePack(pack.id);
+
+      const marketplace = await db
+        .select()
+        .from(coursePack)
+        .where(and(eq(coursePack.status, "published"), eq(coursePack.shareLevel, "public")));
+      expect(marketplace).toHaveLength(1);
+      expect(marketplace[0].id).toBe(pack.id);
+    });
+  });
+
+  describe("permissions", () => {
+    it("all admin course-pack endpoints require admin:access", () => {
+      const methods = [
+        "coursePacks",
+        "createCoursePack",
+        "updateCoursePack",
+        "setAccessLevel",
+        "toggleFree",
+        "submitReview",
+        "reject",
+        "publish",
+        "archive",
+        "restore",
+      ];
+      for (const method of methods) {
+        const permissions = Reflect.getMetadata(
+          "permissions",
+          (AdminController.prototype as any)[method],
+        );
+        expect(permissions).toEqual(["admin:access"]);
+      }
+    });
   });
 });

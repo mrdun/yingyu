@@ -1,4 +1,4 @@
-import { Inject, Injectable } from "@nestjs/common";
+import { BadRequestException, Inject, Injectable, NotFoundException } from "@nestjs/common";
 import { and, count, eq, sql } from "drizzle-orm";
 
 import {
@@ -9,6 +9,7 @@ import {
   userLearningActivities,
   userLearnRecord,
 } from "@earthworm/schema";
+import { isLegalCourseStatusTransition } from "../course-pack/course-status";
 import { DB, DbType } from "../global/providers/db.provider";
 import { LogtoService } from "../logto/logto.service";
 
@@ -41,9 +42,13 @@ export interface AdminCoursePackRow {
   id: string;
   title: string;
   isFree: boolean;
+  status: string;
+  source: string;
+  accessLevel: string;
   courseCount: number;
   statementCount: number;
   createdAt: string;
+  updatedAt: string;
 }
 
 export interface AdminCoursePackList {
@@ -219,37 +224,58 @@ export class AdminService {
     };
   }
 
-  async listCoursePacks(params: { page: number; pageSize: number }): Promise<AdminCoursePackList> {
+  async listCoursePacks(params: {
+    page: number;
+    pageSize: number;
+    status?: string;
+    source?: string;
+    accessLevel?: string;
+  }): Promise<AdminCoursePackList> {
     const { page, pageSize } = params;
     const offset = (page - 1) * pageSize;
+
+    const conditions = [];
+    if (params.status) conditions.push(eq(coursePack.status, params.status));
+    if (params.source) conditions.push(eq(coursePack.source, params.source));
+    if (params.accessLevel) conditions.push(eq(coursePack.accessLevel, params.accessLevel));
+    const where = conditions.length ? and(...conditions) : undefined;
 
     const rows = await this.db
       .select({
         id: coursePack.id,
         title: coursePack.title,
         isFree: coursePack.isFree,
+        status: coursePack.status,
+        source: coursePack.source,
+        accessLevel: coursePack.accessLevel,
         createdAt: coursePack.createdAt,
+        updatedAt: coursePack.updatedAt,
         courseCount: sql<number>`count(distinct ${course.id})`,
         statementCount: sql<number>`count(${statement.id})`,
       })
       .from(coursePack)
       .leftJoin(course, eq(course.coursePackId, coursePack.id))
       .leftJoin(statement, eq(statement.courseId, course.id))
+      .where(where)
       .groupBy(coursePack.id)
       .orderBy(coursePack.order)
       .limit(pageSize)
       .offset(offset);
 
-    const [totalRow] = await this.db.select({ total: count() }).from(coursePack);
+    const [totalRow] = await this.db.select({ total: count() }).from(coursePack).where(where);
 
     return {
       coursePacks: rows.map((r) => ({
         id: r.id,
         title: r.title,
         isFree: Boolean(r.isFree),
+        status: r.status,
+        source: r.source,
+        accessLevel: r.accessLevel,
         courseCount: Number(r.courseCount) || 0,
         statementCount: Number(r.statementCount) || 0,
         createdAt: r.createdAt ? new Date(r.createdAt).toISOString() : "",
+        updatedAt: r.updatedAt ? new Date(r.updatedAt).toISOString() : "",
       })),
       total: Number(totalRow?.total ?? 0),
       page,
@@ -257,28 +283,133 @@ export class AdminService {
     };
   }
 
-  async toggleCoursePackFree(id: string): Promise<{ id: string; isFree: boolean }> {
-    const existing = await this.db.query.coursePack.findFirst({ where: eq(coursePack.id, id) });
-    if (!existing) {
-      throw new Error("course pack not found");
-    }
-    const next = !existing.isFree;
-    await this.db
-      .update(coursePack)
-      .set({ isFree: next, accessLevel: next ? "free" : "membership" })
-      .where(eq(coursePack.id, id));
-    return { id, isFree: next };
+  /** 创建课程 (管理员): 永远以 draft 起步, 不能创建后直接 published。 */
+  async createCoursePack(dto: {
+    title: string;
+    description?: string;
+    cover?: string;
+    accessLevel?: "free" | "membership";
+  }) {
+    const accessLevel = dto.accessLevel ?? "membership";
+    const [pack] = await this.db
+      .insert(coursePack)
+      .values({
+        title: dto.title,
+        description: dto.description ?? "",
+        cover: dto.cover ?? null,
+        order: 0,
+        creatorId: "admin",
+        shareLevel: "private",
+        status: "draft",
+        source: "manual",
+        accessLevel,
+        isFree: accessLevel === "free",
+      })
+      .returning();
+    return pack;
   }
 
-  async publishCoursePack(id: string): Promise<{ id: string; status: string }> {
-    const existing = await this.db.query.coursePack.findFirst({ where: eq(coursePack.id, id) });
-    if (!existing) {
-      throw new Error("course pack not found");
+  /** 编辑课程属性 (管理员): 不改动 status, 避免普通编辑导致状态意外变化。 */
+  async updateCoursePack(
+    id: string,
+    dto: {
+      title?: string;
+      description?: string;
+      cover?: string;
+      accessLevel?: "free" | "membership";
+    },
+  ) {
+    await this.findCoursePackOrThrow(id);
+
+    const set: Record<string, unknown> = { updatedAt: new Date() };
+    if (dto.title !== undefined) set.title = dto.title;
+    if (dto.description !== undefined) set.description = dto.description;
+    if (dto.cover !== undefined) set.cover = dto.cover;
+    if (dto.accessLevel !== undefined) {
+      set.accessLevel = dto.accessLevel;
+      set.isFree = dto.accessLevel === "free"; // 旧字段兼容同步
     }
-    await this.db
+
+    const [updated] = await this.db
       .update(coursePack)
-      .set({ status: "published", shareLevel: "public" })
-      .where(eq(coursePack.id, id));
-    return { id, status: "published" };
+      .set(set)
+      .where(eq(coursePack.id, id))
+      .returning();
+    return updated;
+  }
+
+  /** 管理员修改课程访问属性 free <-> membership (不影响 status)。 */
+  async setCoursePackAccessLevel(id: string, accessLevel: "free" | "membership") {
+    await this.findCoursePackOrThrow(id);
+    const [updated] = await this.db
+      .update(coursePack)
+      .set({ accessLevel, isFree: accessLevel === "free", updatedAt: new Date() })
+      .where(eq(coursePack.id, id))
+      .returning();
+    return updated;
+  }
+
+  /** 兼容旧 toggle-free 语义: 取反 access_level。 */
+  async toggleCoursePackFree(id: string): Promise<{ id: string; isFree: boolean }> {
+    const existing = await this.findCoursePackOrThrow(id);
+    const nextLevel = existing.accessLevel === "free" ? "membership" : "free";
+    await this.setCoursePackAccessLevel(id, nextLevel);
+    return { id, isFree: nextLevel === "free" };
+  }
+
+  async submitReview(id: string) {
+    return await this.transitionCoursePackStatus(id, "review");
+  }
+
+  async rejectReview(id: string) {
+    return await this.transitionCoursePackStatus(id, "draft");
+  }
+
+  async publishCoursePack(id: string) {
+    const existing = await this.findCoursePackOrThrow(id);
+    if (!isLegalCourseStatusTransition(existing.status, "published")) {
+      throw new BadRequestException(
+        `Illegal course status transition: ${existing.status} -> published`,
+      );
+    }
+    // 发布后进入课程中心 (status=published 且 shareLevel=public)
+    const [updated] = await this.db
+      .update(coursePack)
+      .set({ status: "published", shareLevel: "public", updatedAt: new Date() })
+      .where(eq(coursePack.id, id))
+      .returning();
+    return updated;
+  }
+
+  async archiveCoursePack(id: string) {
+    return await this.transitionCoursePackStatus(id, "archived");
+  }
+
+  async restoreCoursePack(id: string) {
+    return await this.transitionCoursePackStatus(id, "draft");
+  }
+
+  /** 状态机统一入口: 校验并执行合法状态转换 (review->published 由 publish 单独处理 shareLevel)。 */
+  private async transitionCoursePackStatus(id: string, to: string) {
+    const existing = await this.findCoursePackOrThrow(id);
+    if (!isLegalCourseStatusTransition(existing.status, to)) {
+      throw new BadRequestException(
+        `Illegal course status transition: ${existing.status} -> ${to}`,
+      );
+    }
+    const [updated] = await this.db
+      .update(coursePack)
+      .set({ status: to, updatedAt: new Date() })
+      .where(eq(coursePack.id, id))
+      .returning();
+    return updated;
+  }
+
+  private async findCoursePackOrThrow(id: string) {
+    const pack = await this.db.query.coursePack.findFirst({ where: eq(coursePack.id, id) });
+    if (!pack) {
+      throw new NotFoundException(`CoursePack with ID ${id} not found`);
+    }
+    return pack;
   }
 }
