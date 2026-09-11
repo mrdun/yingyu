@@ -5,7 +5,6 @@ import { course, coursePack, user } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { LogtoService } from "../logto/logto.service";
 import { MembershipService } from "../membership/membership.service";
-import { PartnerService } from "../partner/partner.service";
 import { type MembershipDetails } from "../membership/types/membership.types";
 import { UserCourseProgressService } from "../user-course-progress/user-course-progress.service";
 import { UserEntity } from "../user/user.decorators";
@@ -19,7 +18,6 @@ export class UserService {
     private readonly logtoService: LogtoService,
     private readonly userCourseProgressService: UserCourseProgressService,
     private readonly membershipService: MembershipService,
-    private readonly partnerService: PartnerService,
   ) {}
 
   async findUser(uId: string) {
@@ -43,10 +41,10 @@ export class UserService {
    * @param uId
    * @returns
    */
-  async findCurrentUser(uId: string, referralCode?: string) {
+  async findCurrentUser(uId: string) {
     try {
       // 登录后同步影子表 (不阻断主流程; Logto 不可用时静默跳过)
-      await this.syncShadowUser(uId, referralCode);
+      await this.syncShadowUser(uId);
       return {
         membership: await this.getMembershipInfo(uId),
       };
@@ -69,7 +67,7 @@ export class UserService {
    * 登录后把 Logto 用户信息同步到本地 users 影子表 (upsert)。
    * 首次登录创建记录, 之后登录按 username/avatar 更新; 用主键 id 保证幂等, 并发安全。
    */
-  async syncShadowUser(userId: string, referralCode?: string) {
+  async syncShadowUser(userId: string) {
     try {
       const { data: logtoUserInfo } = await this.logtoService.logtoApi.get(`/api/users/${userId}`);
       await this.db
@@ -87,9 +85,6 @@ export class UserService {
             updatedAt: new Date(),
           },
         });
-      if (referralCode) {
-        await this.partnerService.attributeReferral(referralCode, userId);
-      }
     } catch (error) {
       console.error("Error syncing shadow user:", error);
     }

@@ -52,40 +52,41 @@ describe("PartnerService (partner / referral / commission)", () => {
     await db.insert(user).values({ id }).onConflictDoNothing();
   }
 
-  it("becomes a partner and is not a partner by default", async () => {
+  it("becomes a partner with a unique referral_code and bps rate", async () => {
     await seedUser("p1");
     await seedUser("p2");
 
     expect(await partnerService.isActivePartner("p1")).toBe(false);
 
     const p = await partnerService.becomePartner("p1");
-    expect(p.commissionRate).toBeCloseTo(0.4);
+    expect(p.referralCode).toBeTruthy();
+    expect(p.commissionRateBps).toBe(4000);
     expect(await partnerService.isActivePartner("p1")).toBe(true);
     expect(await partnerService.isActivePartner("p2")).toBe(false);
   });
 
-  it("binds referral_code and rejects self-referral and duplicate", async () => {
+  it("binds referral by code and rejects self-referral and duplicate", async () => {
     await seedUser("ref_partner");
     await seedUser("ref_user");
-    await partnerService.becomePartner("ref_partner");
+    const p = await partnerService.becomePartner("ref_partner");
 
-    const first = await partnerService.attributeReferral("ref_partner", "ref_user");
+    const first = await partnerService.attributeReferral(p.referralCode, "ref_user");
     expect(first.attributed).toBe(true);
 
-    const dup = await partnerService.attributeReferral("ref_partner", "ref_user");
+    const dup = await partnerService.attributeReferral(p.referralCode, "ref_user");
     expect(dup.attributed).toBe(false);
     expect(dup.reason).toBe("already_referred");
 
-    const self = await partnerService.attributeReferral("ref_partner", "ref_partner");
+    const self = await partnerService.attributeReferral(p.referralCode, "ref_partner");
     expect(self.attributed).toBe(false);
     expect(self.reason).toBe("self_referral");
   });
 
-  it("generates commission on payment and does not duplicate", async () => {
+  it("generates integer commission (floor) and does not duplicate", async () => {
     await seedUser("partner");
     await seedUser("buyer");
-    await partnerService.becomePartner("partner");
-    await partnerService.attributeReferral("partner", "buyer");
+    const p = await partnerService.becomePartner("partner", 4000);
+    await partnerService.attributeReferral(p.referralCode, "buyer");
 
     const order = await membershipService.createOrder({
       userId: "buyer",
@@ -102,16 +103,16 @@ describe("PartnerService (partner / referral / commission)", () => {
       .from(commissionRecord)
       .where(eq(commissionRecord.orderId, order.id));
     expect(records).toHaveLength(1);
-    expect(records[0].commissionFen).toBe(Math.round(1800 * 0.4));
-    expect(records[0].rate).toBeCloseTo(0.4);
+    expect(records[0].commissionFen).toBe(Math.floor((1800 * 4000) / 10000)); // 720
+    expect(records[0].rateBps).toBe(4000);
     expect(records[0].status).toBe("pending");
   });
 
-  it("keeps historical commission rate after partner rate changes", async () => {
+  it("keeps historical commission rate snapshot after partner rate changes", async () => {
     await seedUser("partner");
     await seedUser("buyer");
-    await partnerService.becomePartner("partner", 0.4);
-    await partnerService.attributeReferral("partner", "buyer");
+    const p = await partnerService.becomePartner("partner", 4000);
+    await partnerService.attributeReferral(p.referralCode, "buyer");
 
     const order = await membershipService.createOrder({
       userId: "buyer",
@@ -122,21 +123,21 @@ describe("PartnerService (partner / referral / commission)", () => {
     });
     await membershipService.markOrderPaid(order.id);
 
-    await partnerService.becomePartner("partner", 0.5);
+    await partnerService.becomePartner("partner", 5000);
 
     const [rec] = await db
       .select()
       .from(commissionRecord)
       .where(eq(commissionRecord.orderId, order.id));
-    expect(rec.rate).toBeCloseTo(0.4);
-    expect(rec.commissionFen).toBe(Math.round(1800 * 0.4));
+    expect(rec.rateBps).toBe(4000);
+    expect(rec.commissionFen).toBe(Math.floor((1800 * 4000) / 10000));
   });
 
   it("reverses commission on refund", async () => {
     await seedUser("partner");
     await seedUser("buyer");
-    await partnerService.becomePartner("partner");
-    await partnerService.attributeReferral("partner", "buyer");
+    const p = await partnerService.becomePartner("partner");
+    await partnerService.attributeReferral(p.referralCode, "buyer");
 
     const order = await membershipService.createOrder({
       userId: "buyer",

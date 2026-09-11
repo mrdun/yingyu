@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Patch, Post, Query, UseGuards } from "@nestjs/common";
+import { Body, Controller, Get, Patch, Post, UseGuards } from "@nestjs/common";
 
 import { AuthGuard } from "../guards/auth.guard";
 import { User, UserEntity } from "../user/user.decorators";
@@ -16,11 +16,8 @@ export class UserController {
 
   @UseGuards(AuthGuard)
   @Get()
-  async getCurrentUser(
-    @User() user: UserEntity,
-    @Query("referral_code") referralCode?: string,
-  ) {
-    const userInfo = await this.userService.findCurrentUser(user.userId, referralCode);
+  async getCurrentUser(@User() user: UserEntity) {
+    const userInfo = await this.userService.findCurrentUser(user.userId);
     return userInfo;
   }
 

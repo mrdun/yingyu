@@ -1,3 +1,4 @@
+import { createId } from "@paralleldrive/cuid2";
 import { Inject, Injectable } from "@nestjs/common";
 import { and, desc, eq, inArray } from "drizzle-orm";
 
@@ -6,7 +7,7 @@ import { DB, DbType } from "../global/providers/db.provider";
 
 /**
  * Partner / Referral / Commission 业务逻辑。
- * referral_code 即 Partner 的 user_id (最小设计, 无需额外 code 表)。
+ * 佣金比例使用整数 basis points (40% = 4000), 避免浮点财务精度问题。
  */
 @Injectable()
 export class PartnerService {
@@ -21,14 +22,29 @@ export class PartnerService {
     return Boolean(p && p.status === "active");
   }
 
-  /** 让用户成为 Partner (默认 40%), 供管理员/测试使用 */
-  async becomePartner(userId: string, commissionRate = 0.4) {
+  /**
+   * 让用户成为 Partner (仅管理员调用)。创建时生成唯一推广码。
+   * 再次调用只更新比例/状态, 不改变 referral_code (保持稳定)。
+   */
+  async becomePartner(userId: string, commissionRateBps = 4000) {
+    const referralCode = createId();
     const [p] = await this.db
       .insert(partner)
-      .values({ userId, commissionRate, status: "active" })
+      .values({
+        userId,
+        referralCode,
+        commissionRate: commissionRateBps / 10000,
+        commissionRateBps,
+        status: "active",
+      })
       .onConflictDoUpdate({
         target: partner.userId,
-        set: { commissionRate, status: "active", updatedAt: new Date() },
+        set: {
+          commissionRate: commissionRateBps / 10000,
+          commissionRateBps,
+          status: "active",
+          updatedAt: new Date(),
+        },
       })
       .returning();
     return p;
@@ -36,15 +52,14 @@ export class PartnerService {
 
   /** 归因: 只发生一次; 防自邀请、防重复绑定 */
   async attributeReferral(referralCode: string, referredUserId: string) {
-    if (referralCode === referredUserId) {
-      return { attributed: false, reason: "self_referral" };
-    }
-
     const referrer = await this.db.query.partner.findFirst({
-      where: and(eq(partner.userId, referralCode), eq(partner.status, "active")),
+      where: and(eq(partner.referralCode, referralCode), eq(partner.status, "active")),
     });
     if (!referrer) {
       return { attributed: false, reason: "partner_not_found" };
+    }
+    if (referrer.userId === referredUserId) {
+      return { attributed: false, reason: "self_referral" };
     }
 
     const existing = await this.db.query.referral.findFirst({
@@ -93,7 +108,7 @@ export class PartnerService {
 
   /**
    * 订单支付成功后生成佣金 (在 markOrderPaid 事务内调用)。
-   * 一笔订单最多一条 (order_id 唯一); 金额/比例快照。
+   * 整数计算: commission_fen = floor(order_amount_fen * rate_bps / 10000); 比例快照。
    */
   async generateCommissionForOrder(
     order: { id: string; userId: string; amountFen: number },
@@ -115,7 +130,7 @@ export class PartnerService {
       .limit(1);
     if (!p) return null;
 
-    const commissionFen = Math.round(order.amountFen * p.commissionRate);
+    const commissionFen = Math.floor((order.amountFen * p.commissionRateBps) / 10000);
     const [rec] = await db
       .insert(commissionRecord)
       .values({
@@ -123,7 +138,8 @@ export class PartnerService {
         referredUserId: order.userId,
         orderId: order.id,
         orderAmountFen: order.amountFen,
-        rate: p.commissionRate,
+        rate: p.commissionRateBps / 10000,
+        rateBps: p.commissionRateBps,
         commissionFen,
         status: "pending",
       })

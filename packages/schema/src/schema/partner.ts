@@ -14,13 +14,16 @@ export const partner = pgTable(
     userId: text("user_id")
       .notNull()
       .references(() => user.id),
-    commissionRate: real("commission_rate").notNull().default(0.4),
+    referralCode: text("referral_code"), // 独立推广码, Partner 创建时生成
+    commissionRate: real("commission_rate").notNull().default(0.4), // 旧字段, 保留兼容
+    commissionRateBps: integer("commission_rate_bps").notNull().default(4000), // 40% = 4000
     status: text("status").notNull().default("active"), // active / inactive
     createdAt: timestamp("created_at").notNull().defaultNow(),
     updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
   },
   (t) => ({
     unqUser: unique("partners_user_id_unique").on(t.userId),
+    unqCode: unique("partners_referral_code_unique").on(t.referralCode),
   }),
 );
 
@@ -64,7 +67,8 @@ export const commissionRecord = pgTable(
       .notNull()
       .references(() => orders.id),
     orderAmountFen: integer("order_amount_fen").notNull(),
-    rate: real("rate").notNull(),
+    rate: real("rate").notNull(), // 旧字段, 保留兼容
+    rateBps: integer("rate_bps").notNull().default(4000),
     commissionFen: integer("commission_fen").notNull(),
     status: text("status").notNull().default("pending"), // pending / paid / reversed
     createdAt: timestamp("created_at").notNull().defaultNow(),
