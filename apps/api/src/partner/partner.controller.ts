@@ -48,4 +48,12 @@ export class PartnerController {
   async activate(@Body() dto: { userId: string; commissionRateBps?: number }) {
     return await this.partnerService.becomePartner(dto.userId, dto.commissionRateBps ?? 4000);
   }
+
+  /** 管理员暂停 Partner (历史 referral/commission 保留, 新订单不再产生佣金) */
+  @Permissions("admin:access")
+  @UseGuards(AuthGuard)
+  @Post("suspend")
+  async suspend(@Body() dto: { userId: string }) {
+    return await this.partnerService.suspendPartner(dto.userId);
+  }
 }

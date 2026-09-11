@@ -1,9 +1,15 @@
+import { BadRequestException, Inject, Injectable } from "@nestjs/common";
 import { createId } from "@paralleldrive/cuid2";
-import { Inject, Injectable } from "@nestjs/common";
 import { and, desc, eq, inArray } from "drizzle-orm";
 
-import { commissionRecord, partner, referral } from "@earthworm/schema";
+import { commissionRecord, partner, referral, user } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
+
+/** 隐私脱敏: 只保留首字符, 不返回完整用户名 */
+function maskUsername(username: string | null): string {
+  if (!username) return "***";
+  return username.slice(0, 1) + "***";
+}
 
 /**
  * Partner / Referral / Commission 业务逻辑。
@@ -27,6 +33,13 @@ export class PartnerService {
    * 再次调用只更新比例/状态, 不改变 referral_code (保持稳定)。
    */
   async becomePartner(userId: string, commissionRateBps = 4000) {
+    if (
+      !Number.isInteger(commissionRateBps) ||
+      commissionRateBps < 0 ||
+      commissionRateBps > 10000
+    ) {
+      throw new BadRequestException("commissionRateBps must be an integer between 0 and 10000");
+    }
     const referralCode = createId();
     const [p] = await this.db
       .insert(partner)
@@ -48,6 +61,16 @@ export class PartnerService {
       })
       .returning();
     return p;
+  }
+
+  /** 管理员暂停 Partner: 新订单不再产生佣金, 历史 referral/commission 保留 */
+  async suspendPartner(userId: string) {
+    const [p] = await this.db
+      .update(partner)
+      .set({ status: "inactive", updatedAt: new Date() })
+      .where(eq(partner.userId, userId))
+      .returning();
+    return p ?? null;
   }
 
   /** 归因: 只发生一次; 防自邀请、防重复绑定 */
@@ -83,7 +106,49 @@ export class PartnerService {
       where: eq(referral.referrerId, partnerUserId),
       orderBy: desc(referral.createdAt),
     });
-    return { count: refs.length, referrals: refs };
+
+    // 隐私: 不返回 referrer_id / referred_user_id / referral_code 等内部标识
+    const referredIds = refs.map((r) => r.referredUserId);
+    const users = referredIds.length
+      ? await this.db
+          .select({ id: user.id, username: user.username })
+          .from(user)
+          .where(inArray(user.id, referredIds))
+      : [];
+    const userMap = new Map(users.map((u) => [u.id, u.username]));
+
+    const commissionRows = referredIds.length
+      ? await this.db
+          .select({
+            referredUserId: commissionRecord.referredUserId,
+            commissionFen: commissionRecord.commissionFen,
+            status: commissionRecord.status,
+          })
+          .from(commissionRecord)
+          .where(
+            and(
+              eq(commissionRecord.partnerUserId, partnerUserId),
+              inArray(commissionRecord.referredUserId, referredIds),
+            ),
+          )
+      : [];
+    const commissionByUser = new Map<string, number>();
+    for (const c of commissionRows) {
+      if (c.status === "reversed") continue;
+      commissionByUser.set(
+        c.referredUserId,
+        (commissionByUser.get(c.referredUserId) ?? 0) + c.commissionFen,
+      );
+    }
+
+    return {
+      count: refs.length,
+      referrals: refs.map((r) => ({
+        createdAt: r.createdAt,
+        username: maskUsername(userMap.get(r.referredUserId) ?? null),
+        commissionFen: commissionByUser.get(r.referredUserId) ?? 0,
+      })),
+    };
   }
 
   async getCommissionSummary(partnerUserId: string) {

@@ -1,5 +1,6 @@
 import { createId } from "@paralleldrive/cuid2";
-import { index, integer, pgTable, real, text, timestamp, unique } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
+import { check, index, integer, pgTable, real, text, timestamp, unique } from "drizzle-orm/pg-core";
 
 import { orders } from "./order";
 import { user } from "./user";
@@ -24,6 +25,11 @@ export const partner = pgTable(
   (t) => ({
     unqUser: unique("partners_user_id_unique").on(t.userId),
     unqCode: unique("partners_referral_code_unique").on(t.referralCode),
+    chkRateBps: check(
+      "partners_commission_rate_bps_check",
+      sql`${t.commissionRateBps} >= 0 AND ${t.commissionRateBps} <= 10000`,
+    ),
+    chkStatus: check("partners_status_check", sql`${t.status} IN ('active', 'inactive')`),
   }),
 );
 
@@ -47,6 +53,10 @@ export const referral = pgTable(
   (t) => ({
     unqReferred: unique("referrals_referred_user_id_unique").on(t.referredUserId),
     idxReferrer: index("referrals_referrer_id_idx").on(t.referrerId),
+    chkNoSelfReferral: check(
+      "referrals_no_self_referral_check",
+      sql`${t.referrerId} <> ${t.referredUserId}`,
+    ),
   }),
 );
 
@@ -78,5 +88,18 @@ export const commissionRecord = pgTable(
   (t) => ({
     unqOrder: unique("commission_records_order_id_unique").on(t.orderId),
     idxPartner: index("commission_records_partner_user_id_idx").on(t.partnerUserId),
+    chkOrderAmount: check(
+      "commission_records_order_amount_fen_check",
+      sql`${t.orderAmountFen} >= 0`,
+    ),
+    chkCommission: check("commission_records_commission_fen_check", sql`${t.commissionFen} >= 0`),
+    chkRateBps: check(
+      "commission_records_rate_bps_check",
+      sql`${t.rateBps} >= 0 AND ${t.rateBps} <= 10000`,
+    ),
+    chkStatus: check(
+      "commission_records_status_check",
+      sql`${t.status} IN ('pending', 'paid', 'reversed')`,
+    ),
   }),
 );

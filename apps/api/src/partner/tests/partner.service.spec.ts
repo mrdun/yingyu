@@ -155,4 +155,119 @@ describe("PartnerService (partner / referral / commission)", () => {
       .where(eq(commissionRecord.orderId, order.id));
     expect(rec.status).toBe("reversed");
   });
+
+  it("rejects invalid commission rate", async () => {
+    await seedUser("p_invalid");
+    await expect(partnerService.becomePartner("p_invalid", -1)).rejects.toThrow();
+    await expect(partnerService.becomePartner("p_invalid", 10001)).rejects.toThrow();
+    await expect(partnerService.becomePartner("p_invalid", 12.5)).rejects.toThrow();
+  });
+
+  it("supports 0% and 100% commission rates (integer boundary)", async () => {
+    await seedUser("p_zero");
+    await seedUser("buyer_zero");
+    const p0 = await partnerService.becomePartner("p_zero", 0);
+    await partnerService.attributeReferral(p0.referralCode, "buyer_zero");
+    const o0 = await membershipService.createOrder({
+      userId: "buyer_zero",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_rate0",
+    });
+    await membershipService.markOrderPaid(o0.id);
+    const [c0] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, o0.id));
+    expect(c0.rateBps).toBe(0);
+    expect(c0.commissionFen).toBe(0);
+
+    await seedUser("p_full");
+    await seedUser("buyer_full");
+    const pFull = await partnerService.becomePartner("p_full", 10000);
+    await partnerService.attributeReferral(pFull.referralCode, "buyer_full");
+    const oFull = await membershipService.createOrder({
+      userId: "buyer_full",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_rate100",
+    });
+    await membershipService.markOrderPaid(oFull.id);
+    const [cFull] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, oFull.id));
+    expect(cFull.rateBps).toBe(10000);
+    expect(cFull.commissionFen).toBe(1800);
+  });
+
+  it("suspend keeps history and stops new commissions", async () => {
+    await seedUser("partner_s");
+    await seedUser("buyer_s");
+    const p = await partnerService.becomePartner("partner_s", 4000);
+    await partnerService.attributeReferral(p.referralCode, "buyer_s");
+
+    const o1 = await membershipService.createOrder({
+      userId: "buyer_s",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_suspend1",
+    });
+    await membershipService.markOrderPaid(o1.id);
+
+    await partnerService.suspendPartner("partner_s");
+    expect(await partnerService.isActivePartner("partner_s")).toBe(false);
+
+    const o2 = await membershipService.createOrder({
+      userId: "buyer_s",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_suspend2",
+    });
+    await membershipService.markOrderPaid(o2.id);
+
+    const records = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.partnerUserId, "partner_s"));
+    expect(records).toHaveLength(1);
+    expect(records[0].orderId).toBe(o1.id);
+
+    // 历史归因保留
+    const refs = await db.select().from(referral).where(eq(referral.referredUserId, "buyer_s"));
+    expect(refs).toHaveLength(1);
+  });
+
+  it("masks referral identity in listReferrals", async () => {
+    await db
+      .insert(user)
+      .values({ id: "partner_p", username: "PartnerName" })
+      .onConflictDoNothing();
+    await db.insert(user).values({ id: "buyer_p", username: "Alice" }).onConflictDoNothing();
+    const p = await partnerService.becomePartner("partner_p");
+    await partnerService.attributeReferral(p.referralCode, "buyer_p");
+
+    const result = await partnerService.listReferrals("partner_p");
+    expect(result.count).toBe(1);
+    expect(result.referrals[0].username).toBe("A***");
+    expect(result.referrals[0]).not.toHaveProperty("referredUserId");
+    expect(result.referrals[0]).not.toHaveProperty("referrerId");
+    expect(JSON.stringify(result)).not.toContain("buyer_p");
+    expect(JSON.stringify(result)).not.toContain("partner_p");
+  });
+
+  it("rejects self-referral at database level", async () => {
+    await db.insert(user).values({ id: "self_user" }).onConflictDoNothing();
+    await expect(
+      db.insert(referral).values({
+        referrerId: "self_user",
+        referredUserId: "self_user",
+        referralCode: "any",
+      }),
+    ).rejects.toThrow();
+  });
 });
