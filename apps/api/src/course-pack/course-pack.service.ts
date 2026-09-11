@@ -1,11 +1,10 @@
-import { Inject, Injectable, NotFoundException } from "@nestjs/common";
+import { ForbiddenException, Inject, Injectable, NotFoundException } from "@nestjs/common";
 import { and, asc, eq, ilike, or } from "drizzle-orm";
 
 import { course, coursePack, courseRating } from "@earthworm/schema";
 import { CourseHistoryService } from "../course-history/course-history.service";
 import { CourseService } from "../course/course.service";
 import { DB, DbType } from "../global/providers/db.provider";
-import { MembershipService } from "../membership/membership.service";
 import { CourseAccessService } from "./course-access.service";
 import { calcGrade, calcScoreRate, isBetterScore } from "./rating";
 
@@ -15,31 +14,26 @@ export class CoursePackService {
     @Inject(DB) private db: DbType,
     private readonly courseService: CourseService,
     private readonly courseHistoryService: CourseHistoryService,
-    private readonly membershipService: MembershipService,
     private readonly courseAccessService: CourseAccessService,
   ) {}
 
   async findAll(userId?: string, options?: { keyword?: string; filter?: string }) {
-    let result = [];
-
     const publicCoursePacks = await this.findAllPublicCoursePacks(options?.keyword);
-    result.push(...publicCoursePacks);
-
-    if (userId) {
-      const userIdOwnedCoursePacks = await this.findAllForUser(userId, options?.keyword);
-      result.push(...userIdOwnedCoursePacks);
-
-      // 看看是不是创始会员
-      // 是的话 需要去查所有课程包的 shareLevel 为 founder_only 的
-      if (await this.membershipService.isFounderMembership(userId)) {
-        const founderOnlyCoursePacks = await this.findFounderOnly(options?.keyword);
-        result.push(...founderOnlyCoursePacks);
-      }
+    const result = [];
+    for (const pack of publicCoursePacks) {
+      const accessLevel = resolveAccessLevel(pack);
+      result.push({
+        id: pack.id,
+        title: pack.title,
+        description: pack.description,
+        cover: pack.cover,
+        isFree: accessLevel === "free",
+        accessLevel,
+        accessible: await this.courseAccessService.canStudyCoursePack(userId ?? null, pack),
+      });
     }
 
-    result = applyFilter(result, options?.filter);
-
-    return result;
+    return applyFilter(result, options?.filter);
   }
 
   async findFounderOnly(keyword?: string) {
@@ -87,23 +81,15 @@ export class CoursePackService {
     return result;
   }
 
-  async findOneWithCourses(userId: string, coursePackId: string) {
-    const coursePackWithCourses = await this.findCoursePackWithCourses(coursePackId, userId);
-
-    if (userId) {
-      coursePackWithCourses.courses = await this.addCompletionCountsToCourses(
-        userId,
-        coursePackWithCourses.courses,
-        coursePackId,
-      );
-    }
-
-    return coursePackWithCourses;
-  }
-
-  private async findCoursePackWithCourses(coursePackId: string, userId: string) {
-    const coursePackWithCourses = await this.db.query.coursePack.findFirst({
-      where: and(eq(coursePack.id, coursePackId)),
+  /**
+   * 课程详情: 统一入口做 view / study 分离。
+   * - draft/review/archived → 404;
+   * - free → 完整内容;
+   * - membership → 游客/非会员只返回基本信息 (requiresMembership=true), 会员返回完整内容。
+   */
+  async findOneWithCourses(userId: string | null, coursePackId: string) {
+    const pack = await this.db.query.coursePack.findFirst({
+      where: eq(coursePack.id, coursePackId),
       with: {
         courses: {
           orderBy: asc(course.order),
@@ -111,28 +97,59 @@ export class CoursePackService {
       },
     });
 
-    if (!coursePackWithCourses) {
+    if (!pack) {
       throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
     }
 
-    if (coursePackWithCourses.shareLevel === "private") {
-      if (coursePackWithCourses.creatorId === userId) {
-        return coursePackWithCourses;
-      } else {
-        throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
-      }
-    } else if (coursePackWithCourses.shareLevel === "founder_only") {
-      if (await this.membershipService.isFounderMembership(userId)) {
-        return coursePackWithCourses;
-      } else {
-        throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
-      }
-    } else {
-      const canAccess = await this.courseAccessService.canAccess(userId, coursePackWithCourses);
-      if (!canAccess) {
-        throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
-      }
-      return coursePackWithCourses;
+    if (!this.courseAccessService.canViewCoursePack(pack)) {
+      throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
+    }
+
+    const accessLevel = resolveAccessLevel(pack);
+    const canStudy = await this.courseAccessService.canStudyCoursePack(userId, pack);
+
+    if (!canStudy) {
+      return {
+        id: pack.id,
+        title: pack.title,
+        description: pack.description,
+        cover: pack.cover,
+        isFree: accessLevel === "free",
+        accessLevel,
+        accessible: false,
+        requiresMembership: accessLevel === "membership",
+      };
+    }
+
+    const result: any = {
+      ...pack,
+      isFree: accessLevel === "free",
+      accessLevel,
+      accessible: true,
+    };
+
+    if (userId) {
+      result.courses = await this.addCompletionCountsToCourses(
+        userId,
+        result.courses,
+        coursePackId,
+      );
+    }
+
+    return result;
+  }
+
+  /** 学习内容访问统一入口: 校验用户是否有权进入该课程包的学习内容 */
+  private async assertCanStudy(userId: string | null, coursePackId: string) {
+    const pack = await this.db.query.coursePack.findFirst({
+      where: eq(coursePack.id, coursePackId),
+    });
+    if (!pack) {
+      throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
+    }
+    const canStudy = await this.courseAccessService.canStudyCoursePack(userId, pack);
+    if (!canStudy) {
+      throw new ForbiddenException("This course requires an active membership");
     }
   }
 
@@ -152,7 +169,8 @@ export class CoursePackService {
     );
   }
 
-  async findCourse(userId: string, coursePackId: string, courseId: string) {
+  async findCourse(userId: string | null, coursePackId: string, courseId: string) {
+    await this.assertCanStudy(userId, coursePackId);
     if (userId) {
       return await this.courseService.findWithUserProgress(coursePackId, courseId, userId);
     } else {
@@ -160,11 +178,13 @@ export class CoursePackService {
     }
   }
 
-  async findNextCourse(coursePackId: string, courseId: string) {
+  async findNextCourse(userId: string | null, coursePackId: string, courseId: string) {
+    await this.assertCanStudy(userId, coursePackId);
     return await this.courseService.findNext(coursePackId, courseId);
   }
 
   async completeCourse(userId: string, coursePackId: string, courseId: string) {
+    await this.assertCanStudy(userId, coursePackId);
     return await this.courseService.completeCourse(userId, coursePackId, courseId);
   }
 
@@ -235,10 +255,11 @@ function keywordWhere(keyword?: string) {
   return or(ilike(coursePack.title, pattern), ilike(coursePack.description, pattern));
 }
 
-function applyFilter(
-  result: { isFree: boolean | null }[],
-  filter?: string,
-): { isFree: boolean | null }[] {
+function resolveAccessLevel(pack: { accessLevel: string | null; isFree: boolean | null }) {
+  return (pack.accessLevel ?? (pack.isFree ? "free" : "membership")) as "free" | "membership";
+}
+
+function applyFilter<T extends { isFree: boolean | null }>(result: T[], filter?: string): T[] {
   if (!filter || filter === "all") return result;
   if (filter === "free") return result.filter((item) => item.isFree);
   if (filter === "paid") return result.filter((item) => !item.isFree);

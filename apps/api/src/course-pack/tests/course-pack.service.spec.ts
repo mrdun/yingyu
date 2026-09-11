@@ -1,4 +1,4 @@
-import { NotFoundException } from "@nestjs/common";
+import { ForbiddenException, NotFoundException } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
 import { createId } from "@paralleldrive/cuid2";
 
@@ -9,7 +9,6 @@ import { endDB } from "../../common/db";
 import { CourseHistoryService } from "../../course-history/course-history.service";
 import { CourseService } from "../../course/course.service";
 import { DB } from "../../global/providers/db.provider";
-import { MembershipService } from "../../membership/membership.service";
 import { CourseAccessService } from "../course-access.service";
 import { CoursePackService } from "../course-pack.service";
 
@@ -17,19 +16,24 @@ describe("CoursePackService", () => {
   let db: DbType;
   let coursePackService: CoursePackService;
   let courseService: CourseService;
+  let mockCourseAccess: { canViewCoursePack: jest.Mock; canStudyCoursePack: jest.Mock };
 
   const fakeCoursePackId = createId();
   const fakeCourseId = createId();
+
   beforeAll(async () => {
     const testHelper = await setupTesting();
     db = testHelper.db;
     coursePackService = testHelper.coursePackService;
     courseService = testHelper.courseService;
+    mockCourseAccess = testHelper.mockCourseAccess;
   });
 
   beforeEach(async () => {
     await cleanDB(db);
     jest.clearAllMocks();
+    mockCourseAccess.canViewCoursePack.mockReturnValue(true);
+    mockCourseAccess.canStudyCoursePack.mockResolvedValue(true);
   });
 
   afterAll(async () => {
@@ -37,193 +41,141 @@ describe("CoursePackService", () => {
     await endDB();
   });
 
-  describe("findAll", () => {
-    it("should return all course packs including private and public", async () => {
-      await insertCoursePack(db, { creatorId: "admin", shareLevel: "public" });
-      await insertCoursePack(db, { creatorId: "user1", shareLevel: "public" });
-
-      const result = await coursePackService.findAll("user1");
-
-      expect(result.length).toBe(2); // user1's private and public packs
-    });
-
-    it("should return only public course packs", async () => {
-      await insertCoursePack(db, { creatorId: "admin", shareLevel: "public" });
-      await insertCoursePack(db, { creatorId: "admin", shareLevel: "public" });
-      await insertCoursePack(db, { creatorId: "user2", shareLevel: "private" });
-
-      const result = await coursePackService.findAllPublicCoursePacks();
-
-      expect(result.length).toBe(2); // all public packs
-    });
-
-    it("should return only private course packs and public course packs for a specific user", async () => {
-      await insertCoursePack(db, { creatorId: "user1", shareLevel: "private" });
-      await insertCoursePack(db, { creatorId: "admin", shareLevel: "public" });
-      await insertCoursePack(db, { creatorId: "user2", shareLevel: "private" });
-
-      const result = await coursePackService.findAll("user1");
-
-      expect(result.length).toBe(2); // user1's private pack
-    });
-
-    it("should return all course packs including founder_only for a founder member", async () => {
-      await insertCoursePack(db, { creatorId: "founderUser", shareLevel: "private" });
-      await insertCoursePack(db, { creatorId: "admin", shareLevel: "founder_only" });
-
-      const result = await coursePackService.findAll("founderUser");
-
-      expect(result.length).toBe(2); // founderUser's private pack and founder_only pack
-    });
-
-    it("should return only private course packs for a non-founder member", async () => {
-      await insertCoursePack(db, { creatorId: "nonFounderUser", shareLevel: "private" });
-      await insertCoursePack(db, { creatorId: "admin", shareLevel: "founder_only" });
-
-      const result = await coursePackService.findAll("nonFounderUser");
-
-      expect(result.length).toBe(1); // nonFounderUser's private pack
-    });
-  });
-
-  describe("findOne", () => {
-    it("should return a course pack for a valid ID", async () => {
-      const coursePackEntity = await insertCoursePack(db);
-
-      const result = await coursePackService.findOne(coursePackEntity.id);
-
-      expect(result).toEqual(coursePackEntity);
-    });
-
-    it("should throw NotFoundException for an invalid ID", async () => {
-      await expect(coursePackService.findOne(createId())).rejects.toThrow(NotFoundException);
-    });
-  });
-
-  describe("findOneWithCourses", () => {
-    it("should return a course pack with courses and completion counts when userId is provided and course pack is public", async () => {
-      const userId = "cxr";
-      const coursePackEntity = await insertCoursePack(db, { shareLevel: "public" });
-      await insertCourse(db, coursePackEntity.id);
-
-      const result = await coursePackService.findOneWithCourses(userId, coursePackEntity.id);
-
-      expect(result.courses.length).toBe(1);
-      expect(result.courses[0]).toHaveProperty("completionCount");
-    });
-
-    it("should return a course pack with courses and completion counts when userId is provided and course pack is private but user is the creator", async () => {
-      const userId = "cxr";
-      const coursePackEntity = await insertCoursePack(db, {
+  describe("findAll (marketplace)", () => {
+    it("returns only published + public course packs", async () => {
+      const published = await insertCoursePack(db, {
+        creatorId: "admin",
+        shareLevel: "public",
+        status: "published",
+        accessLevel: "free",
+      });
+      await insertCoursePack(db, { creatorId: "admin", shareLevel: "public", status: "draft" });
+      await insertCoursePack(db, { creatorId: "admin", shareLevel: "public", status: "review" });
+      await insertCoursePack(db, { creatorId: "admin", shareLevel: "public", status: "archived" });
+      await insertCoursePack(db, {
+        creatorId: "admin",
         shareLevel: "private",
-        creatorId: userId,
+        status: "published",
       });
-      await insertCourse(db, coursePackEntity.id);
+      await insertCoursePack(db, {
+        creatorId: "admin",
+        shareLevel: "founder_only",
+        status: "published",
+      });
 
-      const result = await coursePackService.findOneWithCourses(userId, coursePackEntity.id);
+      const result = await coursePackService.findAll("u1");
 
-      expect(result.courses.length).toBe(1);
+      expect(result).toHaveLength(1);
+      expect(result[0].id).toBe(published.id);
+    });
+
+    it("maps free/membership access level and accessible flag", async () => {
+      const free = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      await insertCoursePack(db, { accessLevel: "membership", isFree: false });
+
+      mockCourseAccess.canStudyCoursePack.mockResolvedValue(false);
+
+      const result = await coursePackService.findAll(null);
+
+      expect(result).toHaveLength(2);
+      expect(result.find((r) => r.id === free.id)?.accessLevel).toBe("free");
+      expect(result.find((r) => r.id === free.id)?.isFree).toBe(true);
+      expect(result.every((r) => r.accessible === false)).toBe(true);
+    });
+
+    it("filters by free / paid", async () => {
+      await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      await insertCoursePack(db, { accessLevel: "membership", isFree: false });
+
+      const free = await coursePackService.findAll(null, { filter: "free" });
+      expect(free).toHaveLength(1);
+      expect(free[0].isFree).toBe(true);
+
+      const paid = await coursePackService.findAll(null, { filter: "paid" });
+      expect(paid).toHaveLength(1);
+      expect(paid[0].isFree).toBe(false);
+    });
+  });
+
+  describe("findOneWithCourses (view / study)", () => {
+    it("throws NotFound for a draft course pack", async () => {
+      const draft = await insertCoursePack(db, { status: "draft" });
+      mockCourseAccess.canViewCoursePack.mockReturnValue(false);
+
+      await expect(coursePackService.findOneWithCourses(null, draft.id)).rejects.toThrow(
+        NotFoundException,
+      );
+    });
+
+    it("returns full content for a published free course pack", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      await insertCourse(db, pack.id);
+
+      const result = await coursePackService.findOneWithCourses(null, pack.id);
+
+      expect(result.accessible).toBe(true);
+      expect(result.courses).toHaveLength(1);
+    });
+
+    it("returns basic info (no courses) for a guest on a membership course pack", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "membership", isFree: false });
+      await insertCourse(db, pack.id);
+      mockCourseAccess.canStudyCoursePack.mockResolvedValue(false);
+
+      const result = await coursePackService.findOneWithCourses(null, pack.id);
+
+      expect(result.id).toBe(pack.id);
+      expect(result.accessible).toBe(false);
+      expect(result.requiresMembership).toBe(true);
+      expect(result).not.toHaveProperty("courses");
+    });
+
+    it("returns full content for a member on a membership course pack", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "membership", isFree: false });
+      await insertCourse(db, pack.id);
+      mockCourseAccess.canStudyCoursePack.mockResolvedValue(true);
+
+      const result = await coursePackService.findOneWithCourses("m1", pack.id);
+
+      expect(result.accessible).toBe(true);
+      expect(result.courses).toHaveLength(1);
       expect(result.courses[0]).toHaveProperty("completionCount");
     });
-
-    it("should throw NotFoundException when course pack ID does not exist", async () => {
-      const userId = "cxr";
-      const nonExistentCoursePackId = "non-existent-id";
-
-      await expect(
-        coursePackService.findOneWithCourses(userId, nonExistentCoursePackId),
-      ).rejects.toThrow(NotFoundException);
-    });
-
-    it("should throw NotFoundException when course pack is private and user is not the creator", async () => {
-      const userId = "cxr";
-      const coursePackEntity = await insertCoursePack(db, {
-        shareLevel: "private",
-        creatorId: "another-user-id",
-      });
-      await insertCourse(db, coursePackEntity.id);
-
-      await expect(
-        coursePackService.findOneWithCourses(userId, coursePackEntity.id),
-      ).rejects.toThrow(NotFoundException);
-    });
-
-    it("should return a course pack with courses without completion counts when userId is not provided", async () => {
-      const notUserId = "";
-      const coursePackEntity = await insertCoursePack(db, { shareLevel: "public" });
-      await insertCourse(db, coursePackEntity.id);
-
-      const result = await coursePackService.findOneWithCourses(notUserId, coursePackEntity.id);
-
-      expect(result.courses.length).toBe(1);
-      expect(result.courses[0]).not.toHaveProperty("completionCount");
-    });
-
-    it("should return a course pack with courses and completion counts when userId is provided and user is a founder member", async () => {
-      const userId = "founderUser";
-      const coursePackEntity = await insertCoursePack(db, {
-        shareLevel: "founder_only",
-        creatorId: "another-user-id", // The creator can be different from the founder member
-      });
-      await insertCourse(db, coursePackEntity.id);
-
-      const result = await coursePackService.findOneWithCourses(userId, coursePackEntity.id);
-
-      expect(result.courses.length).toBe(1);
-      expect(result.courses[0]).toHaveProperty("completionCount");
-    });
-
-    it("should throw NotFoundException when course pack is founder_only and user is not a founder member", async () => {
-      const userId = "nonFounderUser";
-      const coursePackEntity = await insertCoursePack(db, {
-        shareLevel: "founder_only",
-        creatorId: "another-user-id", // The creator can be different from the non-founder member
-      });
-      await insertCourse(db, coursePackEntity.id);
-
-      await expect(
-        coursePackService.findOneWithCourses(userId, coursePackEntity.id),
-      ).rejects.toThrow(NotFoundException);
-    });
   });
 
-  describe("findCourse", () => {
-    it("should call courseService.findWithUserProgress when userId is provided", async () => {
-      await coursePackService.findCourse("cxr", fakeCoursePackId, fakeCourseId);
+  describe("study endpoints access control", () => {
+    it("throws Forbidden when a non-member studies a membership course pack", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "membership", isFree: false });
+      await insertCourse(db, pack.id);
+      mockCourseAccess.canStudyCoursePack.mockResolvedValue(false);
 
-      expect(courseService);
-
-      expect(courseService.findWithUserProgress).toHaveBeenCalled();
+      await expect(coursePackService.findCourse("u1", pack.id, fakeCourseId)).rejects.toThrow(
+        ForbiddenException,
+      );
+      await expect(coursePackService.findNextCourse("u1", pack.id, fakeCourseId)).rejects.toThrow(
+        ForbiddenException,
+      );
+      await expect(coursePackService.completeCourse("u1", pack.id, fakeCourseId)).rejects.toThrow(
+        ForbiddenException,
+      );
     });
 
-    it("should call courseService.find when userId is not provided", async () => {
-      const notUserId = "";
-      await coursePackService.findCourse(notUserId, fakeCoursePackId, fakeCourseId);
+    it("allows a guest to study a free course pack", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      await insertCourse(db, pack.id);
 
-      expect(courseService);
-
-      expect(courseService.find).toHaveBeenCalled();
-    });
-  });
-
-  describe("findNextCourse", () => {
-    it("should call courseService.findNext", async () => {
-      await coursePackService.findNextCourse(fakeCoursePackId, fakeCourseId);
-
-      expect(courseService.findNext).toHaveBeenCalled();
-    });
-  });
-
-  describe("completeCourse", () => {
-    it("should call courseService.completeCourse", async () => {
-      await coursePackService.completeCourse("cxr", fakeCoursePackId, fakeCourseId);
-
-      expect(courseService.completeCourse).toHaveBeenCalled();
+      await coursePackService.findCourse(null, pack.id, fakeCourseId);
+      expect(courseService.find).toHaveBeenCalledWith(pack.id, fakeCourseId);
     });
   });
 });
 
 async function setupTesting() {
+  const mockCourseAccess = {
+    canViewCoursePack: jest.fn(() => true),
+    canStudyCoursePack: jest.fn(async () => true),
+  };
+
   const MockCourseService = {
     findWithUserProgress: jest.fn(),
     find: jest.fn(),
@@ -235,43 +187,21 @@ async function setupTesting() {
     findCompletionCount: jest.fn(() => 1),
   };
 
-  const MockMembershipService = {
-    isFounderMembership: jest.fn((userId) => userId === "founderUser"),
-  };
-
-  const MockCourseAccessService = {
-    canAccess: jest.fn(() => true),
-  };
-
   const moduleRef = await Test.createTestingModule({
     imports: testImportModules,
     providers: [
       CoursePackService,
       { provide: CourseService, useValue: MockCourseService },
-      {
-        provide: CourseHistoryService,
-        useValue: MockCourseHistoryService,
-      },
-      {
-        provide: MembershipService,
-        useValue: MockMembershipService,
-      },
-      {
-        provide: CourseAccessService,
-        useValue: MockCourseAccessService,
-      },
+      { provide: CourseHistoryService, useValue: MockCourseHistoryService },
+      { provide: CourseAccessService, useValue: mockCourseAccess },
     ],
   }).compile();
 
-  const courseService = moduleRef.get<CourseService>(CourseService);
-  const courseHistoryService = moduleRef.get<CourseHistoryService>(CourseHistoryService);
-  const coursePackService = moduleRef.get<CoursePackService>(CoursePackService);
-
   return {
     moduleRef,
-    courseService,
-    coursePackService,
-    courseHistoryService,
+    courseService: moduleRef.get<CourseService>(CourseService),
+    coursePackService: moduleRef.get<CoursePackService>(CoursePackService),
+    mockCourseAccess,
     db: moduleRef.get<DbType>(DB),
   };
 }

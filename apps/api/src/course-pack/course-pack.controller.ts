@@ -41,8 +41,12 @@ export class CoursePackController {
   @UncheckAuth()
   @UseGuards(AuthGuard)
   @Get(":coursePackId/courses/:courseId/next")
-  findNextCourse(@Param("coursePackId") coursePackId: string, @Param("courseId") courseId: string) {
-    return this.coursePackService.findNextCourse(coursePackId, courseId);
+  findNextCourse(
+    @User() user: UserEntity,
+    @Param("coursePackId") coursePackId: string,
+    @Param("courseId") courseId: string,
+  ) {
+    return this.coursePackService.findNextCourse(user.userId, coursePackId, courseId);
   }
 
   @UseGuards(AuthGuard)

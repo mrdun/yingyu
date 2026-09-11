@@ -1,11 +1,12 @@
 import { Test, TestingModule } from "@nestjs/testing";
-import { eq } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 
 import { coursePack } from "@earthworm/schema";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
 import { LogtoService } from "../../logto/logto.service";
+import { AdminController } from "../admin.controller";
 import { AdminService } from "../admin.service";
 
 describe("AdminService publish / toggle-free", () => {
@@ -53,12 +54,25 @@ describe("AdminService publish / toggle-free", () => {
     const [updated] = await db.select().from(coursePack).where(eq(coursePack.id, pack.id));
     expect(updated.status).toBe("published");
     expect(updated.shareLevel).toBe("public");
+
+    // 商城查询条件 = status=published 且 shareLevel=public, 发布后立即可见
+    const marketplace = await db
+      .select()
+      .from(coursePack)
+      .where(and(eq(coursePack.status, "published"), eq(coursePack.shareLevel, "public")));
+    expect(marketplace.some((p) => p.id === pack.id)).toBe(true);
   });
 
   it("toggle-free syncs access_level", async () => {
     const [pack] = await db
       .insert(coursePack)
-      .values({ order: 1, title: "t", creatorId: "admin", isFree: false, accessLevel: "membership" })
+      .values({
+        order: 1,
+        title: "t",
+        creatorId: "admin",
+        isFree: false,
+        accessLevel: "membership",
+      })
       .returning();
 
     await service.toggleCoursePackFree(pack.id);
@@ -66,5 +80,16 @@ describe("AdminService publish / toggle-free", () => {
     const [updated] = await db.select().from(coursePack).where(eq(coursePack.id, pack.id));
     expect(updated.isFree).toBe(true);
     expect(updated.accessLevel).toBe("free");
+  });
+
+  it("admin course-pack endpoints require admin:access (no normal user entry)", () => {
+    const methods = ["coursePacks", "toggleFree", "publish"];
+    for (const method of methods) {
+      const permissions = Reflect.getMetadata(
+        "permissions",
+        (AdminController.prototype as any)[method],
+      );
+      expect(permissions).toEqual(["admin:access"]);
+    }
   });
 });

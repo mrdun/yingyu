@@ -30,27 +30,27 @@ describe("CourseAccessService", () => {
     await endDB();
   });
 
-  it("draft course is not accessible", async () => {
-    const ok = await service.canAccess(null, { status: "draft", accessLevel: "free", isFree: true });
-    expect(ok).toBe(false);
+  it("draft course is neither viewable nor studyable", async () => {
+    const pack = { status: "draft", accessLevel: "free", isFree: true };
+    expect(service.canViewCoursePack(pack)).toBe(false);
+    await expect(service.canStudyCoursePack(null, pack)).resolves.toBe(false);
   });
 
-  it("published free course is accessible to anyone", async () => {
-    const ok = await service.canAccess(null, {
-      status: "published",
-      accessLevel: "free",
-      isFree: true,
-    });
-    expect(ok).toBe(true);
+  it("published free course is viewable and studyable by anyone", async () => {
+    const pack = { status: "published", accessLevel: "free", isFree: true };
+    expect(service.canViewCoursePack(pack)).toBe(true);
+    await expect(service.canStudyCoursePack(null, pack)).resolves.toBe(true);
+  });
+
+  it("published membership course is viewable but not studyable by a guest", async () => {
+    const pack = { status: "published", accessLevel: "membership", isFree: false };
+    expect(service.canViewCoursePack(pack)).toBe(true);
+    await expect(service.canStudyCoursePack(null, pack)).resolves.toBe(false);
   });
 
   it("published membership course rejects a non-member", async () => {
-    const ok = await service.canAccess("u1", {
-      status: "published",
-      accessLevel: "membership",
-      isFree: false,
-    });
-    expect(ok).toBe(false);
+    const pack = { status: "published", accessLevel: "membership", isFree: false };
+    await expect(service.canStudyCoursePack("u1", pack)).resolves.toBe(false);
   });
 
   it("published membership course allows an active member", async () => {
@@ -64,20 +64,15 @@ describe("CourseAccessService", () => {
       type: "regular",
     });
 
-    const ok = await service.canAccess("m1", {
-      status: "published",
-      accessLevel: "membership",
-      isFree: false,
-    });
-    expect(ok).toBe(true);
+    const pack = { status: "published", accessLevel: "membership", isFree: false };
+    await expect(service.canStudyCoursePack("m1", pack)).resolves.toBe(true);
   });
 
   it("falls back to is_free when access_level is null", async () => {
-    const ok = await service.canAccess(null, {
-      status: "published",
-      accessLevel: null,
-      isFree: true,
-    });
-    expect(ok).toBe(true);
+    const freePack = { status: "published", accessLevel: null, isFree: true };
+    await expect(service.canStudyCoursePack(null, freePack)).resolves.toBe(true);
+
+    const membershipPack = { status: "published", accessLevel: null, isFree: false };
+    await expect(service.canStudyCoursePack(null, membershipPack)).resolves.toBe(false);
   });
 });
