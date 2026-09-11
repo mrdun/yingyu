@@ -5,6 +5,7 @@ import { membership } from "@earthworm/schema";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB } from "../../global/providers/db.provider";
+import { PartnerService } from "../../partner/partner.service";
 import { MembershipPeriod } from "../dto/buy-membership.dto";
 import { MembershipService } from "../membership.service";
 import { MembershipType } from "../types/membership.types";
@@ -16,7 +17,7 @@ describe("MembershipService", () => {
   beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: testImportModules,
-      providers: [MembershipService],
+      providers: [MembershipService, PartnerService],
     }).compile();
 
     db = module.get<DbType>(DB);

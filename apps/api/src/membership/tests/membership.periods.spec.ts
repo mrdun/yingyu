@@ -5,6 +5,7 @@ import { membership, membershipPeriod, orders, planEntitlements, plans, user } f
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
+import { PartnerService } from "../../partner/partner.service";
 import { MembershipService } from "../membership.service";
 
 const DAY = 24 * 60 * 60 * 1000;
@@ -34,7 +35,7 @@ describe("Membership periods (order refund attribution)", () => {
   beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: testImportModules,
-      providers: [MembershipService],
+      providers: [MembershipService, PartnerService],
     }).compile();
     db = module.get<DbType>(DB);
     service = module.get<MembershipService>(MembershipService);

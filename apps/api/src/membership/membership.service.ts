@@ -4,6 +4,7 @@ import { and, eq, isNull, lt } from "drizzle-orm";
 
 import { coinTransactions, membership, membershipPeriod, orders, plans } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
+import { PartnerService } from "../partner/partner.service";
 import { BuyMembershipDto, MembershipPeriod } from "./dto/buy-membership.dto";
 import { findPlan } from "./plans";
 import { MembershipType } from "./types/membership.types";
@@ -12,7 +13,10 @@ import { OrderStatus } from "./types/order-status";
 @Injectable()
 export class MembershipService {
   private readonly logger = new Logger(MembershipService.name);
-  constructor(@Inject(DB) private db: DbType) {}
+  constructor(
+    @Inject(DB) private db: DbType,
+    private readonly partnerService: PartnerService,
+  ) {}
 
   async upsert(startDate: Date, buyMembershipDto: BuyMembershipDto) {
     const { userId } = buyMembershipDto;
@@ -356,6 +360,9 @@ export class MembershipService {
         reason: "membership_purchase",
         relatedId: orderId,
       });
+
+      // 支付成功后生成 Partner 佣金 (若该用户被归因)
+      await this.partnerService.generateCommissionForOrder(order, tx);
     });
   }
 
@@ -386,6 +393,9 @@ export class MembershipService {
 
       // 精确撤销本订单产生的会员权益 period
       await this.revokePeriodByOrderId(order.id, tx);
+
+      // 撤销本订单产生的佣金 (pending/paid → reversed)
+      await this.partnerService.reverseCommissionForOrder(order.id, tx);
 
       return updated;
     });

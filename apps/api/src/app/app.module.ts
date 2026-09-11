@@ -15,6 +15,7 @@ import { LogtoModule } from "../logto/logto.module";
 import { MasteredElementModule } from "../mastered-element/mastered-element.module";
 import { MembershipModule } from "../membership/membership.module";
 import { PictureWordModule } from "../picture-word/picture-word.module";
+import { PartnerModule } from "../partner/partner.module";
 import { PlansModule } from "../plans/plans.module";
 import { RankModule } from "../rank/rank.module";
 import { ReviewModule } from "../review/review.module";
@@ -42,6 +43,7 @@ import { UserModule } from "../user/user.module";
     CourseHistoryModule,
     MembershipModule,
     MasteredElementModule,
+    PartnerModule,
     PlansModule,
     ReviewModule,
     CoinsModule,
