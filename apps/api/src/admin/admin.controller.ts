@@ -39,4 +39,10 @@ export class AdminController {
   async toggleFree(@Param("id") id: string) {
     return await this.adminService.toggleCoursePackFree(id);
   }
+
+  @Patch("course-packs/:id/publish")
+  @Permissions("admin:access")
+  async publish(@Param("id") id: string) {
+    return await this.adminService.publishCoursePack(id);
+  }
 }

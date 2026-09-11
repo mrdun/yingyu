@@ -15,6 +15,9 @@ export const coursePack = pgTable("course_packs", {
   cover: text("cover"),
   creatorId: text("creator_id").notNull(),
   shareLevel: text("share_level").default("private"),
+  status: text("status").notNull().default("draft"), // draft / review / published / archived
+  source: text("source").notNull().default("manual"), // manual / ai / subtitle / audio / import
+  accessLevel: text("access_level").notNull().default("membership"), // free / membership
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
 });

@@ -10,6 +10,7 @@ import { CourseHistoryService } from "../../course-history/course-history.servic
 import { CourseService } from "../../course/course.service";
 import { DB } from "../../global/providers/db.provider";
 import { MembershipService } from "../../membership/membership.service";
+import { CourseAccessService } from "../course-access.service";
 import { CoursePackService } from "../course-pack.service";
 
 describe("CoursePackService", () => {
@@ -238,6 +239,10 @@ async function setupTesting() {
     isFounderMembership: jest.fn((userId) => userId === "founderUser"),
   };
 
+  const MockCourseAccessService = {
+    canAccess: jest.fn(() => true),
+  };
+
   const moduleRef = await Test.createTestingModule({
     imports: testImportModules,
     providers: [
@@ -250,6 +255,10 @@ async function setupTesting() {
       {
         provide: MembershipService,
         useValue: MockMembershipService,
+      },
+      {
+        provide: CourseAccessService,
+        useValue: MockCourseAccessService,
       },
     ],
   }).compile();

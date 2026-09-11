@@ -6,6 +6,7 @@ import { CourseHistoryService } from "../course-history/course-history.service";
 import { CourseService } from "../course/course.service";
 import { DB, DbType } from "../global/providers/db.provider";
 import { MembershipService } from "../membership/membership.service";
+import { CourseAccessService } from "./course-access.service";
 import { calcGrade, calcScoreRate, isBetterScore } from "./rating";
 
 @Injectable()
@@ -15,6 +16,7 @@ export class CoursePackService {
     private readonly courseService: CourseService,
     private readonly courseHistoryService: CourseHistoryService,
     private readonly membershipService: MembershipService,
+    private readonly courseAccessService: CourseAccessService,
   ) {}
 
   async findAll(userId?: string, options?: { keyword?: string; filter?: string }) {
@@ -65,7 +67,11 @@ export class CoursePackService {
   async findAllPublicCoursePacks(keyword?: string) {
     return await this.db.query.coursePack.findMany({
       orderBy: asc(coursePack.order),
-      where: and(eq(coursePack.shareLevel, "public"), keywordWhere(keyword)),
+      where: and(
+        eq(coursePack.shareLevel, "public"),
+        eq(coursePack.status, "published"),
+        keywordWhere(keyword),
+      ),
     });
   }
 
@@ -122,6 +128,10 @@ export class CoursePackService {
         throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
       }
     } else {
+      const canAccess = await this.courseAccessService.canAccess(userId, coursePackWithCourses);
+      if (!canAccess) {
+        throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
+      }
       return coursePackWithCourses;
     }
   }

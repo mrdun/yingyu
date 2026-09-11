@@ -12,6 +12,10 @@ export const statement = pgTable("statements", {
   chinese: text("chinese").notNull(),
   english: text("english").notNull(),
   soundmark: text("soundmark").notNull(),
+  sourceType: text("source_type").default("text"), // text / audio / video
+  audioUrl: text("audio_url"),
+  startMs: integer("start_ms"),
+  endMs: integer("end_ms"),
   courseId: text("course_id")
     .notNull()
     .references(() => course.id),

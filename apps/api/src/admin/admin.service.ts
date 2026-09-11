@@ -263,7 +263,22 @@ export class AdminService {
       throw new Error("course pack not found");
     }
     const next = !existing.isFree;
-    await this.db.update(coursePack).set({ isFree: next }).where(eq(coursePack.id, id));
+    await this.db
+      .update(coursePack)
+      .set({ isFree: next, accessLevel: next ? "free" : "membership" })
+      .where(eq(coursePack.id, id));
     return { id, isFree: next };
+  }
+
+  async publishCoursePack(id: string): Promise<{ id: string; status: string }> {
+    const existing = await this.db.query.coursePack.findFirst({ where: eq(coursePack.id, id) });
+    if (!existing) {
+      throw new Error("course pack not found");
+    }
+    await this.db
+      .update(coursePack)
+      .set({ status: "published", shareLevel: "public" })
+      .where(eq(coursePack.id, id));
+    return { id, status: "published" };
   }
 }
