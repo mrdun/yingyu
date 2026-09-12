@@ -6,9 +6,9 @@ import { coinTransactions, membership, orders, plans, user } from "@earthworm/sc
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB } from "../../global/providers/db.provider";
+import { PartnerService } from "../../partner/partner.service";
 import { MockPaymentProvider } from "../../payment/mock-payment.provider";
 import { PAYMENT_PROVIDER } from "../../payment/payment-provider.interface";
-import { PartnerService } from "../../partner/partner.service";
 import { MembershipService } from "../membership.service";
 import { MEMBERSHIP_PLANS } from "../plans";
 
@@ -21,7 +21,13 @@ async function seedPlans(db: DbType) {
   for (const p of rows) {
     await db
       .insert(plans)
-      .values({ id: p.id, name: p.id, priceFen: p.priceFen, durationDays: p.durationDays, sortOrder: 1 });
+      .values({
+        id: p.id,
+        name: p.id,
+        priceFen: p.priceFen,
+        durationDays: p.durationDays,
+        sortOrder: 1,
+      });
   }
 }
 
@@ -156,37 +162,53 @@ describe("Membership orders (mock payment)", () => {
     expect(new Date(now).getTime()).toBeLessThan(secondEnd);
   });
 
-  it("mock provider queryOrder: pending before 10s, then paid; order state machine transitions", async () => {
-    const created = await provider.createOrder("user-4", "monthly");
-    expect(created.payUrl).toContain("/membership/mock-pay/");
-    expect(created.payUrl).toContain("?confirm=1");
+  it("mock provider queryPayment: pending before 10s, then paid; order state machine transitions", async () => {
+    const created = await provider.createPayment({
+      id: "o_tmp",
+      userId: "user-4",
+      planId: "monthly",
+      amountFen: 1800,
+      currency: "CNY",
+      providerOrderId: null,
+    });
+    expect(created.providerOrderId).toContain("mock_");
 
     const order = await service.createOrder({
       userId: "user-4",
       planId: "monthly",
       amountFen: 1800,
       provider: "mock",
-      providerOrderId: created.orderId,
+      providerOrderId: created.providerOrderId,
     });
+    const orderCtx = {
+      id: order.id,
+      userId: "user-4",
+      planId: "monthly",
+      amountFen: 1800,
+      currency: "CNY",
+      providerOrderId: created.providerOrderId,
+    };
 
     // 立即查询: pending
-    let q = await provider.queryOrder(created.orderId);
+    let q = await provider.queryPayment(orderCtx);
     expect(q.status).toBe("pending");
     expect((await service.findOrder(order.id)).status).toBe("pending");
 
     // 时间快进超过 10s: provider 返回 paid
-    const createdAt = (provider as any).orders.get(created.orderId) as number;
-    (provider as any).orders.set(created.orderId, createdAt - 11_000);
-    q = await provider.queryOrder(created.orderId);
+    const createdAt = (provider as any).orders.get(created.providerOrderId) as number;
+    (provider as any).orders.set(created.providerOrderId, createdAt - 11_000);
+    q = await provider.queryPayment(orderCtx);
     expect(q.status).toBe("paid");
 
     // 模拟回调: 置 paid + 开通会员
-    await service.markPaidByProviderOrderId(created.orderId);
+    await service.markPaidByProviderOrderId(created.providerOrderId);
     const updated = await service.findOrder(order.id);
     expect(updated.status).toBe("paid");
     expect(await service.isMember("user-4")).toBe(true);
 
     // 不存在的订单 -> failed
-    expect((await provider.queryOrder("mock_missing")).status).toBe("failed");
+    expect(
+      (await provider.queryPayment({ ...orderCtx, providerOrderId: "mock_missing" })).status,
+    ).toBe("failed");
   });
 });

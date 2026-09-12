@@ -38,9 +38,7 @@ export class MembershipController {
     return await this.membershipService.upsert(new Date(), buyMembershipDto);
   }
 
-  /**
-   * 创建会员购买订单 (模拟支付流程)
-   */
+  /** 创建会员购买订单: 内部订单(金额=DB plan) → Provider.createPayment → 回填 providerOrderId */
   @UseGuards(AuthGuard)
   @Post("orders")
   async createOrder(@User() user: UserEntity, @Body() dto: CreateOrderDto) {
@@ -49,20 +47,28 @@ export class MembershipController {
       throw new HttpException("Invalid planId", HttpStatus.BAD_REQUEST);
     }
 
-    const result = await this.paymentProvider.createOrder(user.userId, plan.id);
-
-    const providerOrderId = result.orderId;
     const order = await this.membershipService.createOrder({
       userId: user.userId,
       planId: plan.id,
-      provider: "mock",
-      providerOrderId,
+      provider: this.paymentProvider.name,
       idempotencyKey: dto.idempotencyKey,
     });
 
+    const payment = await this.paymentProvider.createPayment({
+      id: order.id,
+      userId: order.userId,
+      planId: order.planId,
+      amountFen: order.amountFen,
+      currency: order.currency,
+      providerOrderId: order.providerOrderId,
+    });
+
+    await this.membershipService.setProviderOrderId(order.id, payment.providerOrderId);
+
     return {
-      orderId: providerOrderId,
-      payUrl: result.payUrl,
+      orderId: order.id,
+      providerOrderId: payment.providerOrderId,
+      paymentPayload: payment.paymentPayload,
       amountFen: order.amountFen,
     };
   }
@@ -85,7 +91,14 @@ export class MembershipController {
 
     let status = order.status;
     if (status === OrderStatus.PENDING && order.provider === "mock" && order.providerOrderId) {
-      const result = await this.paymentProvider.queryOrder(order.providerOrderId);
+      const result = await this.paymentProvider.queryPayment({
+        id: order.id,
+        userId: order.userId,
+        planId: order.planId,
+        amountFen: order.amountFen,
+        currency: order.currency,
+        providerOrderId: order.providerOrderId,
+      });
       if (result.status === "paid") {
         await this.membershipService.markOrderPaid(order.id);
         status = OrderStatus.PAID;

@@ -6,6 +6,8 @@ import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
 import { PartnerService } from "../../partner/partner.service";
+import { MockPaymentProvider } from "../../payment/mock-payment.provider";
+import { PAYMENT_PROVIDER } from "../../payment/payment-provider.interface";
 import { MembershipService } from "../membership.service";
 
 const DAY = 24 * 60 * 60 * 1000;
@@ -36,7 +38,11 @@ describe("MembershipService.migrateLegacyMemberships", () => {
   beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: testImportModules,
-      providers: [MembershipService, PartnerService],
+      providers: [
+        MembershipService,
+        PartnerService,
+        { provide: PAYMENT_PROVIDER, useClass: MockPaymentProvider },
+      ],
     }).compile();
     db = module.get<DbType>(DB);
     service = module.get<MembershipService>(MembershipService);

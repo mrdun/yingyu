@@ -6,6 +6,8 @@ import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB } from "../../global/providers/db.provider";
 import { PartnerService } from "../../partner/partner.service";
+import { MockPaymentProvider } from "../../payment/mock-payment.provider";
+import { PAYMENT_PROVIDER } from "../../payment/payment-provider.interface";
 import { MembershipPeriod } from "../dto/buy-membership.dto";
 import { MembershipService } from "../membership.service";
 import { MembershipType } from "../types/membership.types";
@@ -17,7 +19,11 @@ describe("MembershipService", () => {
   beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: testImportModules,
-      providers: [MembershipService, PartnerService],
+      providers: [
+        MembershipService,
+        PartnerService,
+        { provide: PAYMENT_PROVIDER, useClass: MockPaymentProvider },
+      ],
     }).compile();
 
     db = module.get<DbType>(DB);

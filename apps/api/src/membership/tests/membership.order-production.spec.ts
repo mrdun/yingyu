@@ -7,6 +7,7 @@ import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
 import { PartnerService } from "../../partner/partner.service";
 import { MockPaymentProvider } from "../../payment/mock-payment.provider";
+import { PAYMENT_PROVIDER } from "../../payment/payment-provider.interface";
 import { MembershipService } from "../membership.service";
 
 async function seedPlans(db: DbType) {
@@ -32,7 +33,11 @@ describe("MembershipService order production (lifetime / amount / idempotency)",
   beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: testImportModules,
-      providers: [MembershipService, PartnerService],
+      providers: [
+        MembershipService,
+        PartnerService,
+        { provide: PAYMENT_PROVIDER, useClass: MockPaymentProvider },
+      ],
     }).compile();
     db = module.get<DbType>(DB);
     service = module.get<MembershipService>(MembershipService);
@@ -122,7 +127,16 @@ describe("MembershipService order production (lifetime / amount / idempotency)",
     process.env.NODE_ENV = "prod";
     try {
       const provider = new MockPaymentProvider();
-      await expect(provider.createOrder("u1", "monthly")).rejects.toThrow();
+      await expect(
+        provider.createPayment({
+          id: "o1",
+          userId: "u1",
+          planId: "monthly",
+          amountFen: 1800,
+          currency: "CNY",
+          providerOrderId: null,
+        }),
+      ).rejects.toThrow();
     } finally {
       if (original === undefined) delete process.env.NODE_ENV;
       else process.env.NODE_ENV = original;

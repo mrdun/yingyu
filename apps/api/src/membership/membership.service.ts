@@ -5,6 +5,7 @@ import { and, desc, eq, isNull, lt } from "drizzle-orm";
 import { coinTransactions, membership, membershipPeriod, orders, plans } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { PartnerService } from "../partner/partner.service";
+import { PAYMENT_PROVIDER, PaymentProvider } from "../payment/payment-provider.interface";
 import { BuyMembershipDto, MembershipPeriod } from "./dto/buy-membership.dto";
 import { MembershipType } from "./types/membership.types";
 import { OrderStatus } from "./types/order-status";
@@ -15,6 +16,7 @@ export class MembershipService {
   constructor(
     @Inject(DB) private db: DbType,
     private readonly partnerService: PartnerService,
+    @Inject(PAYMENT_PROVIDER) private readonly paymentProvider: PaymentProvider,
   ) {}
 
   /** 查询 DB plans (金额/时长唯一可信来源) */
@@ -357,7 +359,7 @@ export class MembershipService {
     userId: string;
     planId: string;
     provider: string;
-    providerOrderId: string;
+    providerOrderId?: string;
     idempotencyKey?: string;
     /** 可选覆盖 (仅测试/内部使用; 正常链路由 DB plan.price_fen 派生, controller 不传) */
     amountFen?: number;
@@ -380,7 +382,7 @@ export class MembershipService {
         amountFen,
         status: "pending",
         provider: input.provider,
-        providerOrderId: input.providerOrderId,
+        providerOrderId: input.providerOrderId ?? null,
         ...(input.idempotencyKey ? { idempotencyKey: input.idempotencyKey } : {}),
       })
       .onConflictDoNothing({ target: [orders.userId, orders.idempotencyKey] })
@@ -393,6 +395,16 @@ export class MembershipService {
       where: and(eq(orders.userId, input.userId), eq(orders.idempotencyKey, input.idempotencyKey)),
     });
     return existing!;
+  }
+
+  /** 支付创建后回填 Provider 订单号 */
+  async setProviderOrderId(orderId: string, providerOrderId: string) {
+    const [updated] = await this.db
+      .update(orders)
+      .set({ providerOrderId, updatedAt: new Date() })
+      .where(eq(orders.id, orderId))
+      .returning();
+    return updated;
   }
 
   async findOrder(orderId: string) {
@@ -464,6 +476,24 @@ export class MembershipService {
    * 同时撤销本订单产生的会员权益 (减少 end_date 对应天数)。
    */
   async refundOrder(orderId: string) {
+    const order = await this.findOrder(orderId);
+    if (!order) {
+      throw new NotFoundException(`Order ${orderId} not found`);
+    }
+    if (order.status !== OrderStatus.PAID) {
+      throw new BadRequestException("Only paid orders can be refunded");
+    }
+
+    // 先第三方退款 (失败则本地不退款)
+    await this.paymentProvider.refundPayment({
+      id: order.id,
+      userId: order.userId,
+      planId: order.planId,
+      amountFen: order.amountFen,
+      currency: order.currency,
+      providerOrderId: order.providerOrderId,
+    });
+
     return await this.db.transaction(async (tx) => {
       const [order] = await tx.select().from(orders).where(eq(orders.id, orderId)).for("update");
       if (!order) {

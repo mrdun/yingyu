@@ -1,11 +1,20 @@
 import { Test, TestingModule } from "@nestjs/testing";
 import { eq } from "drizzle-orm";
 
-import { coinTransactions, membership, orders, planEntitlements, plans, user } from "@earthworm/schema";
+import {
+  coinTransactions,
+  membership,
+  orders,
+  planEntitlements,
+  plans,
+  user,
+} from "@earthworm/schema";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
 import { PartnerService } from "../../partner/partner.service";
+import { MockPaymentProvider } from "../../payment/mock-payment.provider";
+import { PAYMENT_PROVIDER } from "../../payment/payment-provider.interface";
 import { MembershipService } from "../membership.service";
 import { OrderStatus } from "../types/order-status";
 
@@ -27,7 +36,19 @@ async function seedPlans(db: DbType) {
 }
 
 async function seedUsers(db: DbType) {
-  for (const id of ["u-1", "u-2", "u-3", "u-4", "u-5", "u-6", "u-7", "u-8", "u-9", "u-10", "u-11"]) {
+  for (const id of [
+    "u-1",
+    "u-2",
+    "u-3",
+    "u-4",
+    "u-5",
+    "u-6",
+    "u-7",
+    "u-8",
+    "u-9",
+    "u-10",
+    "u-11",
+  ]) {
     await db.insert(user).values({ id }).onConflictDoNothing();
   }
 }
@@ -39,7 +60,11 @@ describe("Orders commercial model", () => {
   beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: testImportModules,
-      providers: [MembershipService, PartnerService],
+      providers: [
+        MembershipService,
+        PartnerService,
+        { provide: PAYMENT_PROVIDER, useClass: MockPaymentProvider },
+      ],
     }).compile();
     db = module.get<DbType>(DB);
     service = module.get<MembershipService>(MembershipService);

@@ -7,6 +7,8 @@ import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
 import { MembershipService } from "../../membership/membership.service";
+import { MockPaymentProvider } from "../../payment/mock-payment.provider";
+import { PAYMENT_PROVIDER } from "../../payment/payment-provider.interface";
 import { PartnerService } from "../partner.service";
 
 async function seedPlans(db: DbType) {
@@ -24,7 +26,11 @@ describe("PartnerService (partner / referral / commission)", () => {
   beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: testImportModules,
-      providers: [PartnerService, MembershipService],
+      providers: [
+        PartnerService,
+        MembershipService,
+        { provide: PAYMENT_PROVIDER, useClass: MockPaymentProvider },
+      ],
     }).compile();
     db = module.get<DbType>(DB);
     partnerService = module.get<PartnerService>(PartnerService);
