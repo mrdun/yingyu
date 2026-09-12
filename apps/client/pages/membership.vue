@@ -76,8 +76,7 @@
           <div class="my-2 text-3xl font-bold text-purple-600 dark:text-purple-400">
             ¥{{ (plan.priceFen / 100).toFixed(0) }}
           </div>
-          <div class="text-sm text-gray-500">{{ plan.durationDays }} 天</div>
-          <div class="mt-1 text-xs text-gray-400">{{ plan.description }}</div>
+          <div class="text-sm text-gray-500">{{ durationLabel(plan.durationDays) }}</div>
           <button
             class="btn mt-4 border-none bg-purple-500 text-white shadow-md hover:bg-purple-600 disabled:cursor-not-allowed disabled:bg-gray-300 disabled:text-gray-500"
             :disabled="paying !== ''"
@@ -98,17 +97,22 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 
-import type { CreateOrderResponse, MembershipPlanId, OrderStatusResponse } from "~/api/membership";
+import type {
+  CreateOrderResponse,
+  MembershipPlanId,
+  MembershipPlanInfo,
+  OrderStatusResponse,
+} from "~/api/membership";
 import {
   confirmMockPay,
   createMembershipOrder,
   fetchMembershipStatus,
   fetchOrderStatus,
-  MEMBERSHIP_PLANS,
+  fetchPlans,
 } from "~/api/membership";
 import { signIn } from "~/services/auth";
 
-const plans = MEMBERSHIP_PLANS;
+const plans = ref<MembershipPlanInfo[]>([]);
 const loading = ref(true);
 const needLogin = ref(false);
 const errorMessage = ref("");
@@ -119,6 +123,10 @@ const paying = ref("");
 function formatDate(d: string | null) {
   if (!d) return "-";
   return new Date(d).toLocaleDateString("zh-CN");
+}
+
+function durationLabel(days: number | null) {
+  return days == null ? "永久" : `${days} 天`;
 }
 
 async function loadStatus() {
@@ -135,6 +143,15 @@ async function loadStatus() {
     }
   } finally {
     loading.value = false;
+  }
+
+  async function loadPlans() {
+    try {
+      plans.value = await fetchPlans();
+    } catch {
+      // 加载失败时保持空, 避免展示过期硬编码价格
+      plans.value = [];
+    }
   }
 }
 
@@ -181,5 +198,8 @@ async function mockPay(planId: MembershipPlanId) {
   }
 }
 
-onMounted(loadStatus);
+onMounted(() => {
+  loadStatus();
+  loadPlans();
+});
 </script>

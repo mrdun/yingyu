@@ -37,11 +37,11 @@ describe("MembershipController mockPay", () => {
 
   it("is forbidden in production", async () => {
     process.env.NODE_ENV = "prod";
-    const controller = new MembershipController({} as any, {} as any);
+    const controller = new MembershipController({} as any, {} as any, {} as any);
 
-    await expect(
-      controller.mockPay("mock_order", undefined, {} as any),
-    ).rejects.toThrow(NotFoundException);
+    await expect(controller.mockPay("mock_order", undefined, {} as any)).rejects.toThrow(
+      NotFoundException,
+    );
   });
 });
 

@@ -24,6 +24,7 @@ export const orders = pgTable(
     status: text("status").notNull().default("pending"), // pending | paid | failed | cancelled | refunded
     provider: text("provider").notNull().default("mock"), // mock | wechat | stripe
     providerOrderId: text("provider_order_id"),
+    idempotencyKey: text("idempotency_key"),
     currency: varchar("currency", { length: 8 }).notNull().default("CNY"),
     paidAt: timestamp("paid_at"),
     refundedAt: timestamp("refunded_at"),
@@ -33,5 +34,6 @@ export const orders = pgTable(
   (t) => ({
     idx: index("orders_user_id_created_at_idx").on(t.userId, t.createdAt),
     unq: unique("orders_provider_order_id_unique").on(t.providerOrderId),
+    unqIdempotency: unique("orders_user_id_idempotency_key_unique").on(t.userId, t.idempotencyKey),
   }),
 );

@@ -17,10 +17,10 @@ import { Response } from "express";
 import { isProduction } from "../common/env";
 import { AuthGuard, Permissions, UncheckAuth } from "../guards/auth.guard";
 import { PAYMENT_PROVIDER, PaymentProvider } from "../payment/payment-provider.interface";
+import { PlansService } from "../plans/plans.service";
 import { User, UserEntity } from "../user/user.decorators";
 import { CreateOrderDto } from "./dto/create-order.dto";
 import { MembershipService } from "./membership.service";
-import { findPlan } from "./plans";
 import { OrderStatus } from "./types/order-status";
 
 @Controller("membership")
@@ -28,6 +28,7 @@ export class MembershipController {
   constructor(
     private readonly membershipService: MembershipService,
     @Inject(PAYMENT_PROVIDER) private readonly paymentProvider: PaymentProvider,
+    private readonly plansService: PlansService,
   ) {}
 
   @Permissions("admin:access")
@@ -43,7 +44,7 @@ export class MembershipController {
   @UseGuards(AuthGuard)
   @Post("orders")
   async createOrder(@User() user: UserEntity, @Body() dto: CreateOrderDto) {
-    const plan = findPlan(dto.planId);
+    const plan = await this.plansService.findById(dto.planId);
     if (!plan) {
       throw new HttpException("Invalid planId", HttpStatus.BAD_REQUEST);
     }
@@ -51,18 +52,18 @@ export class MembershipController {
     const result = await this.paymentProvider.createOrder(user.userId, plan.id);
 
     const providerOrderId = result.orderId;
-    await this.membershipService.createOrder({
+    const order = await this.membershipService.createOrder({
       userId: user.userId,
       planId: plan.id,
-      amountFen: plan.priceFen,
       provider: "mock",
       providerOrderId,
+      idempotencyKey: dto.idempotencyKey,
     });
 
     return {
       orderId: providerOrderId,
       payUrl: result.payUrl,
-      amountFen: plan.priceFen,
+      amountFen: order.amountFen,
     };
   }
 

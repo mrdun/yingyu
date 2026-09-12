@@ -1,14 +1,12 @@
 import { getHttp } from "./http";
 
-export type MembershipPlanId = "monthly" | "quarterly" | "yearly";
+export type MembershipPlanId = "monthly" | "quarterly" | "yearly" | "lifetime";
 
 export interface MembershipPlanInfo {
   id: MembershipPlanId;
   name: string;
   priceFen: number;
-  priceYuan: string;
-  durationDays: number;
-  description: string;
+  durationDays: number | null;
 }
 
 export interface MembershipStatus {
@@ -33,33 +31,11 @@ export interface OrderStatusResponse {
   createdAt: string;
 }
 
-/** 会员计划常量 (与 apps/api/src/membership/plans.ts 保持一致) */
-export const MEMBERSHIP_PLANS: MembershipPlanInfo[] = [
-  {
-    id: "monthly",
-    name: "月度会员",
-    priceFen: 1800,
-    priceYuan: "¥18",
-    durationDays: 30,
-    description: "适合先体验一下",
-  },
-  {
-    id: "quarterly",
-    name: "季度会员",
-    priceFen: 4800,
-    priceYuan: "¥48",
-    durationDays: 90,
-    description: "性价比之选",
-  },
-  {
-    id: "yearly",
-    name: "年度会员",
-    priceFen: 16800,
-    priceYuan: "¥168",
-    durationDays: 365,
-    description: "最划算, 立省 4 个月",
-  },
-];
+/** 会员方案 (价格以服务端 DB plans 为唯一权威) */
+export async function fetchPlans(): Promise<MembershipPlanInfo[]> {
+  const http = getHttp();
+  return await http<MembershipPlanInfo[]>("/plans", { method: "get" });
+}
 
 export async function fetchMembershipStatus() {
   const http = getHttp();

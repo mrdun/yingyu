@@ -6,7 +6,6 @@ import { coinTransactions, membership, membershipPeriod, orders, plans } from "@
 import { DB, DbType } from "../global/providers/db.provider";
 import { PartnerService } from "../partner/partner.service";
 import { BuyMembershipDto, MembershipPeriod } from "./dto/buy-membership.dto";
-import { findPlan } from "./plans";
 import { MembershipType } from "./types/membership.types";
 import { OrderStatus } from "./types/order-status";
 
@@ -17,6 +16,13 @@ export class MembershipService {
     @Inject(DB) private db: DbType,
     private readonly partnerService: PartnerService,
   ) {}
+
+  /** 查询 DB plans (金额/时长唯一可信来源) */
+  private async getPlan(planId: string, db: DbType = this.db) {
+    return await db.query.plans.findFirst({
+      where: eq(plans.id, planId),
+    });
+  }
 
   async upsert(startDate: Date, buyMembershipDto: BuyMembershipDto) {
     const { userId } = buyMembershipDto;
@@ -138,11 +144,14 @@ export class MembershipService {
    * 幂等 (按 order_id 唯一)。无法用硬编码计划还原的订单 (lifetime/legacy) 跳过并记录限制。
    */
   async backfillMembershipPeriods() {
-    const paidOrders = await this.db.select().from(orders).where(eq(orders.status, OrderStatus.PAID));
+    const paidOrders = await this.db
+      .select()
+      .from(orders)
+      .where(eq(orders.status, OrderStatus.PAID));
     let backfilled = 0;
     let skipped = 0;
     for (const order of paidOrders) {
-      const plan = findPlan(order.planId);
+      const plan = await this.getPlan(order.planId);
       if (!plan) {
         skipped++;
         continue;
@@ -153,7 +162,10 @@ export class MembershipService {
         continue;
       }
       const startAt = order.paidAt ?? order.createdAt;
-      const endAt = new Date(startAt.getTime() + plan.durationDays * 24 * 60 * 60 * 1000);
+      const endAt =
+        plan.durationDays == null
+          ? null
+          : new Date(startAt.getTime() + plan.durationDays * 24 * 60 * 60 * 1000);
       const inserted = await this.db
         .insert(membershipPeriod)
         .values({
@@ -179,9 +191,7 @@ export class MembershipService {
     if (!result) return false;
 
     // 新模型: status=active 且 (永久 end_date=null 或 未过期), 替代 isActive
-    return (
-      result.status === "active" && (result.end_date === null || result.end_date > new Date())
-    );
+    return result.status === "active" && (result.end_date === null || result.end_date > new Date());
   }
 
   /**
@@ -209,7 +219,7 @@ export class MembershipService {
    */
   async activateForDays(
     userId: string,
-    durationDays: number,
+    durationDays: number | null,
     planId: string,
     orderId: string,
     tx?: DbType,
@@ -224,7 +234,14 @@ export class MembershipService {
     if (!membershipEntity) {
       const [created] = await db
         .insert(membership)
-        .values({ userId, start_date: now, end_date: null, isActive: true, status: "active", planId })
+        .values({
+          userId,
+          start_date: now,
+          end_date: null,
+          isActive: true,
+          status: "active",
+          planId,
+        })
         .returning();
       membershipId = created.id;
     } else {
@@ -234,7 +251,9 @@ export class MembershipService {
 
     const startAt = effectiveEnd && effectiveEnd > now ? effectiveEnd : now;
     const endAt =
-      durationDays == null ? null : new Date(startAt.getTime() + durationDays * 24 * 60 * 60 * 1000);
+      durationDays == null
+        ? null
+        : new Date(startAt.getTime() + durationDays * 24 * 60 * 60 * 1000);
 
     await db.insert(membershipPeriod).values({
       membershipId,
@@ -256,7 +275,10 @@ export class MembershipService {
   }
 
   /** 当前有效 end = 所有 active period 的最大 end_at; 存在永久 period 时为 null */
-  private async computeEffectiveEnd(membershipId: string, db: DbType = this.db): Promise<Date | null> {
+  private async computeEffectiveEnd(
+    membershipId: string,
+    db: DbType = this.db,
+  ): Promise<Date | null> {
     const periods = await db
       .select()
       .from(membershipPeriod)
@@ -283,27 +305,50 @@ export class MembershipService {
   }
 
   /**
-   * 创建订单记录
+   * 创建订单记录。
+   * 金额以服务端 DB plans.price_fen 为唯一可信来源 (不接受客户端金额)。
+   * 支持幂等: 同用户 + 同 idempotencyKey 返回同一订单。
    */
   async createOrder(input: {
     userId: string;
     planId: string;
-    amountFen: number;
     provider: string;
     providerOrderId: string;
+    idempotencyKey?: string;
+    /** 可选覆盖 (仅测试/内部使用; 正常链路由 DB plan.price_fen 派生, controller 不传) */
+    amountFen?: number;
   }) {
-    const [order] = await this.db
+    const plan = await this.getPlan(input.planId);
+    if (!plan) {
+      throw new BadRequestException(`Invalid planId: ${input.planId}`);
+    }
+    if (!plan.isActive) {
+      throw new BadRequestException(`Plan ${input.planId} is not available`);
+    }
+
+    const amountFen = input.amountFen ?? plan.priceFen;
+
+    const [inserted] = await this.db
       .insert(orders)
       .values({
         userId: input.userId,
         planId: input.planId,
-        amountFen: input.amountFen,
+        amountFen,
         status: "pending",
         provider: input.provider,
         providerOrderId: input.providerOrderId,
+        ...(input.idempotencyKey ? { idempotencyKey: input.idempotencyKey } : {}),
       })
+      .onConflictDoNothing({ target: [orders.userId, orders.idempotencyKey] })
       .returning();
-    return order;
+
+    if (inserted) return inserted;
+
+    // 幂等冲突: 返回已有订单
+    const existing = await this.db.query.orders.findFirst({
+      where: and(eq(orders.userId, input.userId), eq(orders.idempotencyKey, input.idempotencyKey)),
+    });
+    return existing!;
   }
 
   async findOrder(orderId: string) {
@@ -335,11 +380,7 @@ export class MembershipService {
   async markOrderPaid(orderId: string) {
     await this.db.transaction(async (tx) => {
       // 行锁: 并发下只有一个事务能读到 pending 并推进到 paid
-      const [order] = await tx
-        .select()
-        .from(orders)
-        .where(eq(orders.id, orderId))
-        .for("update");
+      const [order] = await tx.select().from(orders).where(eq(orders.id, orderId)).for("update");
       // 幂等: 只有 pending 可转 paid; 已 paid/refunded/cancelled 直接返回
       if (!order || order.status !== OrderStatus.PENDING) return;
 
@@ -348,7 +389,7 @@ export class MembershipService {
         .set({ status: OrderStatus.PAID, paidAt: new Date(), updatedAt: new Date() })
         .where(eq(orders.id, orderId));
 
-      const plan = findPlan(order.planId);
+      const plan = await this.getPlan(order.planId, tx);
       if (plan) {
         await this.activateForDays(order.userId, plan.durationDays, plan.id, order.id, tx);
       }
@@ -373,11 +414,7 @@ export class MembershipService {
    */
   async refundOrder(orderId: string) {
     return await this.db.transaction(async (tx) => {
-      const [order] = await tx
-        .select()
-        .from(orders)
-        .where(eq(orders.id, orderId))
-        .for("update");
+      const [order] = await tx.select().from(orders).where(eq(orders.id, orderId)).for("update");
       if (!order) {
         throw new NotFoundException(`Order ${orderId} not found`);
       }

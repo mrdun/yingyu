@@ -19,6 +19,14 @@ export class PlansService {
     });
   }
 
+  /** 仅返回可购买的 active 计划 (月/季/年/终身) */
+  async findActive() {
+    return await this.db.query.plans.findMany({
+      where: eq(plans.isActive, true),
+      orderBy: asc(plans.sortOrder),
+    });
+  }
+
   async findById(planId: string) {
     return await this.db.query.plans.findFirst({
       where: eq(plans.id, planId),

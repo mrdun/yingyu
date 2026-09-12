@@ -1,6 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { createId } from "@paralleldrive/cuid2";
 
+import { isProduction } from "../common/env";
 import {
   CreateOrderResult,
   PaymentOrderStatus,
@@ -21,6 +22,9 @@ export class MockPaymentProvider implements PaymentProvider {
   static readonly AUTO_PAID_DELAY_MS = 10_000;
 
   async createOrder(userId: string, planId: string): Promise<CreateOrderResult> {
+    if (isProduction()) {
+      throw new Error("Mock payment is not available in production");
+    }
     const orderId = `mock_${createId()}`;
     this.orders.set(orderId, Date.now());
     return {
@@ -30,6 +34,9 @@ export class MockPaymentProvider implements PaymentProvider {
   }
 
   async queryOrder(orderId: string): Promise<QueryOrderResult> {
+    if (isProduction()) {
+      return { status: "failed" as PaymentOrderStatus };
+    }
     const createdAt = this.orders.get(orderId);
     if (!createdAt) {
       return { status: "failed" as PaymentOrderStatus };
