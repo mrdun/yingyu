@@ -14,6 +14,13 @@ export class AdminPlansController {
     return await this.plansService.findAll();
   }
 
+  /** 商业化健康检查: plans 为空/无在售方案时返回明确告警 */
+  @Get("health")
+  @Permissions("admin:access")
+  async health() {
+    return await this.plansService.getHealth();
+  }
+
   @Post()
   @Permissions("admin:access")
   async create(@Body() dto: PlanInput & { id: string; name: string; priceFen: number }) {

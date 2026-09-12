@@ -25,6 +25,28 @@ function maskUsername(username: string | null): string {
   return username.slice(0, 1) + "***";
 }
 
+/** 当前唯一启用的 Partner 类型 (未来扩展等级时从这里扩展) */
+export const PARTNER_TYPE_LIFETIME = "lifetime";
+
+/** bps → 展示用百分比字符串 (4000 → "40%", 3750 → "37.5%") */
+export function formatRateBps(rateBps: number): string {
+  const percent = rateBps / 100;
+  return `${Number.isInteger(percent) ? percent : Number(percent.toFixed(2))}%`;
+}
+
+export interface EffectiveCommissionRate {
+  rateBps: number;
+  percentage: string;
+}
+
+export interface EffectiveCommission {
+  /** 全局默认规则 (plan_id = null); 无默认规则时为 null */
+  rateBps: number | null;
+  percentage: string | null;
+  /** 按 plan 覆盖的规则 (计划级优先于全局默认) */
+  plans: Array<EffectiveCommissionRate & { planId: string }>;
+}
+
 /**
  * Partner / Referral / Commission 业务逻辑。
  * 佣金比例使用整数 basis points (40% = 4000), 避免浮点财务精度问题。
@@ -335,7 +357,8 @@ export class PartnerService {
     if (!p) return null;
 
     // 动态佣金规则 (partner_type + plan), 无有效规则则安全失败 (不默认40%)
-    const rule = await this.findActiveCommissionRule("lifetime", order.planId, db);
+    // 注意: 唯一来源是规则表, 不读取 partners.commission_rate 旧字段
+    const rule = await this.findActiveCommissionRule(PARTNER_TYPE_LIFETIME, order.planId, db);
     if (!rule) return null;
 
     const commissionFen = Math.floor((order.amountFen * rule.rateBps) / 10000);
@@ -451,24 +474,60 @@ export class PartnerService {
     return updated;
   }
 
+  /**
+   * 当前生效的佣金规则集合 (按生效时间倒序, 保证同一 partner_type 下选择结果确定)。
+   * 无唯一约束, 因此必须显式排序, 否则「展示比例」可能不等于「实际计算比例」。
+   */
+  private async listActiveCommissionRules(partnerType: string, db: DbType = this.db) {
+    const now = new Date();
+    return await db.query.partnerCommissionRule.findMany({
+      where: and(
+        eq(partnerCommissionRule.partnerType, partnerType),
+        eq(partnerCommissionRule.status, "active"),
+        lte(partnerCommissionRule.effectiveFrom, now),
+        or(isNull(partnerCommissionRule.effectiveTo), gte(partnerCommissionRule.effectiveTo, now)),
+      ),
+      orderBy: [desc(partnerCommissionRule.effectiveFrom), desc(partnerCommissionRule.createdAt)],
+    });
+  }
+
   /** 查找当前生效的佣金规则: 优先特定 plan, 其次全局 (plan_id=null) */
   async findActiveCommissionRule(partnerType: string, planId: string, db: DbType = this.db) {
-    const now = new Date();
-    const baseWhere = and(
-      eq(partnerCommissionRule.partnerType, partnerType),
-      eq(partnerCommissionRule.status, "active"),
-      lte(partnerCommissionRule.effectiveFrom, now),
-      or(isNull(partnerCommissionRule.effectiveTo), gte(partnerCommissionRule.effectiveTo, now)),
-    );
+    const rules = await this.listActiveCommissionRules(partnerType, db);
+    return rules.find((r) => r.planId === planId) ?? rules.find((r) => r.planId === null) ?? null;
+  }
 
-    const specific = await db.query.partnerCommissionRule.findFirst({
-      where: and(baseWhere, eq(partnerCommissionRule.planId, planId)),
-    });
-    if (specific) return specific;
+  /**
+   * 对外的「当前生效佣金」信息 (partner/me 展示用)。
+   * 唯一来源: partner_commission_rules。禁止读取 partners.commission_rate(_bps) 旧字段。
+   */
+  async getEffectiveCommission(
+    partnerType: string = PARTNER_TYPE_LIFETIME,
+    db: DbType = this.db,
+  ): Promise<EffectiveCommission> {
+    const rules = await this.listActiveCommissionRules(partnerType, db);
 
-    return await db.query.partnerCommissionRule.findFirst({
-      where: and(baseWhere, isNull(partnerCommissionRule.planId)),
-    });
+    const globalRule = rules.find((r) => r.planId === null) ?? null;
+    const planRules = rules
+      .filter((r): r is (typeof rules)[number] & { planId: string } => r.planId !== null)
+      .reduce<Array<{ planId: string; rateBps: number }>>((acc, rule) => {
+        // 同一 plan 只保留排序最靠前 (最新生效) 的一条
+        if (!acc.some((item) => item.planId === rule.planId)) {
+          acc.push({ planId: rule.planId, rateBps: rule.rateBps });
+        }
+        return acc;
+      }, [])
+      .sort((a, b) => a.planId.localeCompare(b.planId));
+
+    return {
+      rateBps: globalRule?.rateBps ?? null,
+      percentage: globalRule ? formatRateBps(globalRule.rateBps) : null,
+      plans: planRules.map((rule) => ({
+        planId: rule.planId,
+        rateBps: rule.rateBps,
+        percentage: formatRateBps(rule.rateBps),
+      })),
+    };
   }
 
   async listCommissionRules() {

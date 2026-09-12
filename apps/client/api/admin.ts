@@ -134,6 +134,14 @@ export interface BusinessSettingRow {
   updatedAt: string | null;
 }
 
+/** 会员计划商业健康检查 (生产安全检查) */
+export interface AdminPlansHealth {
+  ok: boolean;
+  plansTotal: number;
+  purchasablePlans: number;
+  warnings: string[];
+}
+
 export async function fetchAdminOverview() {
   const http = getHttp();
   return await http<AdminOverview>("/admin/overview", { method: "get" });
@@ -188,6 +196,11 @@ export async function fetchDashboardPartners() {
 export async function fetchAdminPlans() {
   const http = getHttp();
   return await http<AdminPlanRow[]>("/admin/plans", { method: "get" });
+}
+
+export async function fetchAdminPlansHealth() {
+  const http = getHttp();
+  return await http<AdminPlansHealth>("/admin/plans/health", { method: "get" });
 }
 
 export async function createAdminPlan(

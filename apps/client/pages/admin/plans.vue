@@ -1,11 +1,17 @@
 <script setup lang="ts">
 import { onMounted, reactive, ref } from "vue";
 
-import type { AdminPlanPayload, AdminPlanRow, BusinessSettingRow } from "~/api/admin";
+import type {
+  AdminPlanPayload,
+  AdminPlanRow,
+  AdminPlansHealth,
+  BusinessSettingRow,
+} from "~/api/admin";
 import {
   createAdminPlan,
   deleteAdminPlan,
   fetchAdminPlans,
+  fetchAdminPlansHealth,
   fetchBusinessSettings,
   updateAdminPlan,
   updateBusinessSetting,
@@ -21,6 +27,7 @@ const busy = ref("");
 
 const plans = ref<AdminPlanRow[]>([]);
 const settings = ref<BusinessSettingRow[]>([]);
+const health = ref<AdminPlansHealth | null>(null);
 
 const form = reactive({
   id: "",
@@ -62,9 +69,14 @@ async function loadAll() {
   noPermission.value = false;
   errorMessage.value = "";
   try {
-    const [planRows, settingRows] = await Promise.all([fetchAdminPlans(), fetchBusinessSettings()]);
+    const [planRows, settingRows, healthData] = await Promise.all([
+      fetchAdminPlans(),
+      fetchBusinessSettings(),
+      fetchAdminPlansHealth().catch(() => null),
+    ]);
     plans.value = planRows;
     settings.value = settingRows;
+    health.value = healthData;
   } catch (e: any) {
     const status = e?.status ?? e?.statusCode;
     if (status === 401) needLogin.value = true;
@@ -133,6 +145,7 @@ async function onSubmit() {
     }
     resetForm();
     plans.value = await fetchAdminPlans();
+    health.value = await fetchAdminPlansHealth().catch(() => health.value);
   } catch (e: any) {
     if (isSettingError(e)) {
       actionMessage.value = e?.message ?? "保存失败，请检查输入";
@@ -249,6 +262,21 @@ onMounted(loadAll);
         class="alert alert-info mb-4 py-2 text-sm"
       >
         {{ actionMessage }}
+      </div>
+
+      <!-- 生产安全检查: 无可售方案时明确告警, 不静默运行 -->
+      <div
+        v-if="health && !health.ok"
+        class="alert alert-error mb-4 py-2 text-sm"
+      >
+        <ul>
+          <li
+            v-for="warning in health.warnings"
+            :key="warning"
+          >
+            {{ warning }}
+          </li>
+        </ul>
       </div>
 
       <h2 class="mb-2 text-lg font-semibold">方案列表</h2>

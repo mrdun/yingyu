@@ -2,11 +2,25 @@ import { getHttp } from "./http";
 
 export type PartnerStatus = "pending" | "active" | "suspended" | "rejected";
 
+/** 计划级佣金规则 (按 plan 覆盖全局默认) */
+export interface PlanCommissionRate {
+  planId: string;
+  rateBps: number;
+  percentage: string;
+}
+
+/** 当前生效佣金 (唯一来源: 后端 partner_commission_rules, 前端不做任何计算) */
+export interface EffectiveCommission {
+  rateBps: number | null;
+  percentage: string | null;
+  plans: PlanCommissionRate[];
+}
+
 export interface PartnerMe {
   isPartner: boolean;
-  commissionRateBps: number | null;
   status: PartnerStatus | null;
   referralCode: string | null;
+  commission: EffectiveCommission;
 }
 
 export interface AttributeReferralResult {

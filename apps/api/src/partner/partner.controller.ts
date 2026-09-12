@@ -8,17 +8,26 @@ import { PartnerService } from "./partner.service";
 export class PartnerController {
   constructor(private readonly partnerService: PartnerService) {}
 
+  /**
+   * Partner 视图统一投影。
+   * 佣金信息只来自 partner_commission_rules, 不返回 partners.commission_rate 旧字段。
+   */
+  private async buildPartnerView(userId: string) {
+    const p = await this.partnerService.findByUserId(userId);
+    const commission = await this.partnerService.getEffectiveCommission();
+    return {
+      isPartner: Boolean(p),
+      status: p?.status ?? null,
+      referralCode: p?.referralCode ?? null,
+      commission,
+    };
+  }
+
   /** 当前用户查看自己的 Partner 信息 */
   @UseGuards(AuthGuard)
   @Get("me")
   async me(@User() user: UserEntity) {
-    const p = await this.partnerService.findByUserId(user.userId);
-    return {
-      isPartner: Boolean(p),
-      commissionRateBps: p?.commissionRateBps ?? null,
-      status: p?.status ?? null,
-      referralCode: p?.referralCode ?? null,
-    };
+    return await this.buildPartnerView(user.userId);
   }
 
   /** 当前用户查看自己的邀请列表 */
@@ -46,6 +55,7 @@ export class PartnerController {
   @UseGuards(AuthGuard)
   @Post("apply")
   async apply(@User() user: UserEntity) {
-    return await this.partnerService.apply(user.userId);
+    await this.partnerService.apply(user.userId);
+    return await this.buildPartnerView(user.userId);
   }
 }

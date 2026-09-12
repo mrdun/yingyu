@@ -1,4 +1,11 @@
-import { BadRequestException, Inject, Injectable, NotFoundException } from "@nestjs/common";
+import {
+  BadRequestException,
+  Inject,
+  Injectable,
+  Logger,
+  NotFoundException,
+  OnModuleInit,
+} from "@nestjs/common";
 import { and, asc, eq } from "drizzle-orm";
 
 import { membership, orders, planEntitlements, plans } from "@earthworm/schema";
@@ -13,12 +20,60 @@ export interface PlanInput {
   isPublic?: boolean;
 }
 
+export interface PlansHealth {
+  ok: boolean;
+  plansTotal: number;
+  purchasablePlans: number;
+  warnings: string[];
+}
+
 /**
  * 会员计划服务 (数据库驱动, 唯一价格来源)。管理员可配置, 无硬编码价格。
  */
 @Injectable()
-export class PlansService {
+export class PlansService implements OnModuleInit {
+  private readonly logger = new Logger(PlansService.name);
+
   constructor(@Inject(DB) private db: DbType) {}
+
+  /**
+   * 生产安全检查: plans 为空时商城无商品可卖, 必须显式告警而不是静默运行。
+   * 只告警不阻断启动 (管理员可通过 /admin/plans 立即补数据)。
+   */
+  async onModuleInit() {
+    try {
+      const health = await this.getHealth();
+      for (const warning of health.warnings) {
+        this.logger.error(warning);
+      }
+    } catch (e) {
+      this.logger.warn(`Plans startup health check skipped: ${(e as Error).message}`);
+    }
+  }
+
+  /** 商业化健康检查: 计划是否可用 (供启动告警与 /admin/plans/health 使用) */
+  async getHealth(): Promise<PlansHealth> {
+    const all = await this.findAll();
+    const purchasable = all.filter((plan) => plan.isActive && plan.isPublic);
+    const warnings: string[] = [];
+
+    if (all.length === 0) {
+      warnings.push(
+        "会员计划为空: 商城无可售商品。请执行 migration 0030 或通过 /admin/plans 创建会员方案。",
+      );
+    } else if (purchasable.length === 0) {
+      warnings.push(
+        "没有可售会员计划 (is_active=true 且 is_public=true): 用户在会员页无法购买, 请在 /admin/plans 上架方案。",
+      );
+    }
+
+    return {
+      ok: warnings.length === 0,
+      plansTotal: all.length,
+      purchasablePlans: purchasable.length,
+      warnings,
+    };
+  }
 
   /** 管理端: 全部计划 */
   async findAll() {

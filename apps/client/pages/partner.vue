@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-3xl p-6">
     <h1 class="mb-2 text-2xl font-bold dark:text-white">推广中心</h1>
     <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">
-      推荐新会员购买后, 你将按当前生效的佣金规则获得佣金{{ commissionLabel }}。
+      推荐新会员购买后, 你将按当前生效的佣金规则获得佣金。
     </p>
 
     <div
@@ -25,6 +25,24 @@
         class="mb-6 rounded-2xl border p-5 shadow-soft"
       >
         <div class="font-semibold text-purple-600 dark:text-purple-300">✨ 推广中</div>
+        <!-- 佣金比例全部来自后端规则, 规则调整后自动更新 -->
+        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
+          当前推广佣金：
+          <span class="font-semibold text-purple-600 dark:text-purple-300">
+            {{ headlineCommission }}
+          </span>
+        </p>
+        <ul
+          v-if="planCommissions.length > 0"
+          class="mt-2 space-y-1 text-xs text-gray-500 dark:text-gray-400"
+        >
+          <li
+            v-for="plan in planCommissions"
+            :key="plan.planId"
+          >
+            {{ planLabels[plan.planId] ?? plan.planId }}：{{ plan.percentage }}
+          </li>
+        </ul>
         <p class="mt-2 text-sm text-gray-500">你的推广链接</p>
         <div class="mt-2 flex items-center gap-2">
           <input
@@ -95,13 +113,15 @@
 import { useRuntimeConfig } from "#app";
 import { computed, onMounted, ref } from "vue";
 
+import type { MembershipPlanInfo } from "~/api/membership";
 import type { PartnerMe } from "~/api/partner";
-import { fetchMembershipStatus } from "~/api/membership";
+import { fetchMembershipStatus, fetchPlans } from "~/api/membership";
 import { applyPartner, fetchPartnerMe } from "~/api/partner";
 import { signIn } from "~/services/auth";
 
 const partner = ref<PartnerMe | null>(null);
 const membership = ref<Awaited<ReturnType<typeof fetchMembershipStatus>> | null>(null);
+const plans = ref<MembershipPlanInfo[]>([]);
 const loading = ref(true);
 const needLogin = ref(false);
 const applying = ref(false);
@@ -113,20 +133,30 @@ const referralLink = computed(() =>
   partner.value?.referralCode ? `${origin}/?ref=${partner.value.referralCode}` : "",
 );
 const isLifetime = computed(() => membership.value?.planId === "lifetime");
-// 佣金比例以后台规则为准, 不硬编码 (无快照时不展示具体数字)
-const commissionLabel = computed(() => {
-  const bps = partner.value?.commissionRateBps;
-  if (bps === null || bps === undefined) return "";
-  return `（当前 ${Number((bps / 100).toFixed(2))}%）`;
+
+// 佣金展示完全来自 API (partner_commission_rules), 前端不硬编码、不换算
+const headlineCommission = computed(
+  () => partner.value?.commission?.percentage ?? "以生效规则为准",
+);
+const planCommissions = computed(() => partner.value?.commission?.plans ?? []);
+const planLabels = computed<Record<string, string>>(() => {
+  const map: Record<string, string> = {};
+  for (const plan of plans.value) map[plan.id] = plan.name;
+  return map;
 });
 
 async function load() {
   loading.value = true;
   needLogin.value = false;
   try {
-    const [me, status] = await Promise.all([fetchPartnerMe(), fetchMembershipStatus()]);
+    const [me, status, planList] = await Promise.all([
+      fetchPartnerMe(),
+      fetchMembershipStatus(),
+      fetchPlans().catch(() => [] as MembershipPlanInfo[]),
+    ]);
     partner.value = me;
     membership.value = status;
+    plans.value = planList;
   } catch (e: any) {
     if (e?.status === 401 || e?.statusCode === 401) {
       needLogin.value = true;
