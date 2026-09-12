@@ -1,3 +1,4 @@
+import { BadRequestException } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
 
 import { businessSettings } from "@earthworm/schema";
@@ -45,8 +46,27 @@ describe("BusinessSettingsService", () => {
   });
 
   it("falls back when the stored value is not a number", async () => {
-    await service.set("refund_window_hours", "abc");
+    // 直接写库模拟历史/脏数据 (service.set 现在会在写入前校验)
+    await db.insert(businessSettings).values({ key: "refund_window_hours", value: "abc" });
     expect(await service.getRefundWindowHours()).toBe(DEFAULT_REFUND_WINDOW_HOURS);
+  });
+
+  it("rejects invalid values before writing (防误配置)", async () => {
+    await expect(service.set("refund_window_hours", "-1")).rejects.toThrow(BadRequestException);
+    await expect(service.set("refund_window_hours", "abc")).rejects.toThrow(BadRequestException);
+    await expect(service.set("commission_settlement_days", "-3")).rejects.toThrow(
+      BadRequestException,
+    );
+    await expect(service.set("partner_enabled", "yes")).rejects.toThrow(BadRequestException);
+    await expect(service.set("lifetime_partner_required", "1")).rejects.toThrow(
+      BadRequestException,
+    );
+    await expect(service.set("currency", "CNYY")).rejects.toThrow(BadRequestException);
+
+    // 合法值可写入
+    await service.set("currency", "CNY");
+    await service.set("partner_enabled", "false");
+    expect((await service.getAll()).find((s) => s.key === "currency")?.value).toBe("CNY");
   });
 
   it("lists all settings", async () => {

@@ -4,7 +4,7 @@ import { planEntitlements, plans } from "@earthworm/schema";
 /**
  * 预置默认会员计划 (数据库驱动)。
  * 运行：pnpm -F @earthworm/xingrong-courses seed:plans
- * 价格取自当前硬编码 MEMBERSHIP_PLANS (membership/plans.ts)；幂等，可重复执行。
+ * 仅用于初始化/本地开发；上线后价格以管理员后台 (/admin/plans) 为准，幂等，可重复执行。
  */
 (async function () {
   const seedPlans = [

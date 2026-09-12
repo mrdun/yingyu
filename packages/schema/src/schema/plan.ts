@@ -11,7 +11,8 @@ export const plans = pgTable("plans", {
   priceFen: integer("price_fen").notNull(),
   durationDays: integer("duration_days"), // null = 永久会员
   sortOrder: integer("sort_order").notNull().default(0),
-  isActive: boolean("is_active").notNull().default(true),
+  isActive: boolean("is_active").notNull().default(true), // 可购买/启用
+  isPublic: boolean("is_public").notNull().default(true), // 是否在公开方案页展示 (公开销售)
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
 });
@@ -33,9 +34,6 @@ export const planEntitlements = pgTable(
     createdAt: timestamp("created_at").notNull().defaultNow(),
   },
   (t) => ({
-    unq: unique("plan_entitlements_plan_id_entitlement_key_unique").on(
-      t.planId,
-      t.entitlementKey,
-    ),
+    unq: unique("plan_entitlements_plan_id_entitlement_key_unique").on(t.planId, t.entitlementKey),
   }),
 );

@@ -5,6 +5,7 @@ import { Cron } from "@nestjs/schedule";
 import { and, desc, eq, gte, isNull, lt, lte } from "drizzle-orm";
 
 import {
+  businessSettings,
   coinTransactions,
   membership,
   membershipPeriod,
@@ -33,6 +34,14 @@ export class MembershipService {
     return await db.query.plans.findFirst({
       where: eq(plans.id, planId),
     });
+  }
+
+  /** 结算币种 (商业参数, 缺省 CNY) */
+  private async getCurrency(): Promise<string> {
+    const row = await this.db.query.businessSettings.findFirst({
+      where: eq(businessSettings.key, "currency"),
+    });
+    return row?.value?.trim() || "CNY";
   }
 
   /**
@@ -382,6 +391,7 @@ export class MembershipService {
     }
 
     const amountFen = input.amountFen ?? plan.priceFen;
+    const currency = await this.getCurrency();
 
     const [inserted] = await this.db
       .insert(orders)
@@ -391,6 +401,7 @@ export class MembershipService {
         amountFen,
         status: "pending",
         provider: input.provider,
+        currency,
         providerOrderId: input.providerOrderId ?? null,
         ...(input.idempotencyKey ? { idempotencyKey: input.idempotencyKey } : {}),
       })

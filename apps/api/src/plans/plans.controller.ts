@@ -12,7 +12,7 @@ export class PlansController {
   @UseGuards(AuthGuard)
   @Get()
   async findAll() {
-    const plans = await this.plansService.findActive();
+    const plans = await this.plansService.findPublic();
     return plans.map((p) => ({
       id: p.id,
       name: p.name,

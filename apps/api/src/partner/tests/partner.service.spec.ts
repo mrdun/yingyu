@@ -394,6 +394,33 @@ describe("PartnerService (partner / referral / commission)", () => {
     await expect(partnerService.becomePartner("p_invalid", 12.5)).rejects.toThrow();
   });
 
+  it("rejects invalid commission rules from the admin API (0-10000 bps, integer)", async () => {
+    await expect(partnerService.createCommissionRule({ rateBps: -1 })).rejects.toThrow(
+      BadRequestException,
+    );
+    await expect(partnerService.createCommissionRule({ rateBps: 10001 })).rejects.toThrow(
+      BadRequestException,
+    );
+    await expect(partnerService.createCommissionRule({ rateBps: 12.5 })).rejects.toThrow(
+      BadRequestException,
+    );
+
+    const rule = await partnerService.createCommissionRule({
+      partnerType: "lifetime",
+      planId: "monthly",
+      rateBps: 4000,
+    });
+    await expect(partnerService.updateCommissionRule(rule.id, { rateBps: 20000 })).rejects.toThrow(
+      BadRequestException,
+    );
+    // 校验失败不得落库
+    const [stored] = await db
+      .select()
+      .from(partnerCommissionRule)
+      .where(eq(partnerCommissionRule.id, rule.id));
+    expect(stored.rateBps).toBe(4000);
+  });
+
   it("supports 0% and 100% commission rules (integer boundary)", async () => {
     await seedUser("p_zero");
     await seedUser("buyer_zero");

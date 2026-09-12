@@ -124,7 +124,24 @@ onMounted(loadAll);
 
 <template>
   <div class="mx-auto max-w-6xl px-4 py-6">
-    <h1 class="mb-6 text-2xl font-bold">商业数据看板</h1>
+    <div class="mb-6 flex items-center gap-4">
+      <h1 class="text-2xl font-bold">商业数据看板</h1>
+      <nav class="flex gap-2 text-sm">
+        <NuxtLink
+          class="btn btn-xs"
+          to="/admin"
+        >
+          总览
+        </NuxtLink>
+        <span class="btn btn-primary btn-xs">商业看板</span>
+        <NuxtLink
+          class="btn btn-xs"
+          to="/admin/plans"
+        >
+          会员方案
+        </NuxtLink>
+      </nav>
+    </div>
 
     <div
       v-if="loading"

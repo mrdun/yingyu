@@ -110,6 +110,18 @@ onMounted(loadAll);
       <h1 class="text-2xl font-bold">管理后台</h1>
       <nav class="flex gap-2 text-sm">
         <span class="btn btn-primary btn-xs">总览</span>
+        <NuxtLink
+          class="btn btn-xs"
+          to="/admin/dashboard"
+        >
+          商业看板
+        </NuxtLink>
+        <NuxtLink
+          class="btn btn-xs"
+          to="/admin/plans"
+        >
+          会员方案
+        </NuxtLink>
       </nav>
     </div>
 

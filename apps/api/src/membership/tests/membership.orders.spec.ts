@@ -10,7 +10,6 @@ import { PartnerService } from "../../partner/partner.service";
 import { MockPaymentProvider } from "../../payment/mock-payment.provider";
 import { PAYMENT_PROVIDER } from "../../payment/payment-provider.interface";
 import { MembershipService } from "../membership.service";
-import { MEMBERSHIP_PLANS } from "../plans";
 
 async function seedPlans(db: DbType) {
   const rows = [
@@ -19,15 +18,13 @@ async function seedPlans(db: DbType) {
     { id: "yearly", priceFen: 16800, durationDays: 365 },
   ] as const;
   for (const p of rows) {
-    await db
-      .insert(plans)
-      .values({
-        id: p.id,
-        name: p.id,
-        priceFen: p.priceFen,
-        durationDays: p.durationDays,
-        sortOrder: 1,
-      });
+    await db.insert(plans).values({
+      id: p.id,
+      name: p.id,
+      priceFen: p.priceFen,
+      durationDays: p.durationDays,
+      sortOrder: 1,
+    });
   }
 }
 
@@ -71,15 +68,12 @@ describe("Membership orders (mock payment)", () => {
     await endDB();
   });
 
-  it("should export three plans with correct prices", () => {
-    expect(MEMBERSHIP_PLANS.map((p) => p.id)).toEqual(["monthly", "quarterly", "yearly"]);
-    const byId = Object.fromEntries(MEMBERSHIP_PLANS.map((p) => [p.id, p]));
+  it("plan prices come from the database (no hardcoded source)", async () => {
+    const rows = await db.select().from(plans);
+    const byId = Object.fromEntries(rows.map((p) => [p.id, p]));
     expect(byId.monthly.priceFen).toBe(1800);
-    expect(byId.monthly.durationDays).toBe(30);
     expect(byId.quarterly.priceFen).toBe(4800);
-    expect(byId.quarterly.durationDays).toBe(90);
     expect(byId.yearly.priceFen).toBe(16800);
-    expect(byId.yearly.durationDays).toBe(365);
   });
 
   it("should create a pending order", async () => {

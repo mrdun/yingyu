@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-3xl p-6">
     <h1 class="mb-2 text-2xl font-bold dark:text-white">推广中心</h1>
     <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">
-      推荐新会员购买后, 你将获得实际支付金额的 40% 佣金。
+      推荐新会员购买后, 你将按当前生效的佣金规则获得佣金{{ commissionLabel }}。
     </p>
 
     <div
@@ -113,6 +113,12 @@ const referralLink = computed(() =>
   partner.value?.referralCode ? `${origin}/?ref=${partner.value.referralCode}` : "",
 );
 const isLifetime = computed(() => membership.value?.planId === "lifetime");
+// 佣金比例以后台规则为准, 不硬编码 (无快照时不展示具体数字)
+const commissionLabel = computed(() => {
+  const bps = partner.value?.commissionRateBps;
+  if (bps === null || bps === undefined) return "";
+  return `（当前 ${Number((bps / 100).toFixed(2))}%）`;
+});
 
 async function load() {
   loading.value = true;

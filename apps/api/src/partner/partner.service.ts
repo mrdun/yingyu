@@ -42,6 +42,15 @@ export class PartnerService {
     return Number.isFinite(parsed) && parsed >= 0 ? parsed : 24;
   }
 
+  /** 布尔型商业参数, 缺省值兜底 */
+  private async getBoolSetting(key: string, fallback: boolean): Promise<boolean> {
+    const row = await this.db.query.businessSettings.findFirst({
+      where: eq(businessSettings.key, key),
+    });
+    if (!row) return fallback;
+    return row.value === "true";
+  }
+
   async findByUserId(userId: string) {
     return await this.db.query.partner.findFirst({ where: eq(partner.userId, userId) });
   }
@@ -86,10 +95,14 @@ export class PartnerService {
    * 幂等: 已存在 (pending/active/suspended/rejected) 返回现有记录。
    */
   async apply(userId: string) {
+    if (!(await this.getBoolSetting("partner_enabled", true))) {
+      throw new BadRequestException("Partner program is currently disabled");
+    }
     const existing = await this.findByUserId(userId);
     if (existing) return existing;
 
-    if (!(await this.isLifetimeMember(userId))) {
+    const lifetimeRequired = await this.getBoolSetting("lifetime_partner_required", true);
+    if (lifetimeRequired && !(await this.isLifetimeMember(userId))) {
       throw new BadRequestException("Only lifetime members can apply to become a partner");
     }
 

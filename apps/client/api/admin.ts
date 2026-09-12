@@ -105,6 +105,35 @@ export interface DashboardPartnerStats {
   };
 }
 
+export interface AdminPlanRow {
+  id: string;
+  name: string;
+  priceFen: number;
+  durationDays: number | null;
+  sortOrder: number;
+  isActive: boolean;
+  isPublic: boolean;
+  createdAt: string | null;
+  updatedAt: string | null;
+}
+
+/** 会员计划可写字段 (价格/周期/排序/上下架/公开销售) */
+export interface AdminPlanPayload {
+  id?: string;
+  name?: string;
+  priceFen?: number;
+  durationDays?: number | null;
+  sortOrder?: number;
+  isActive?: boolean;
+  isPublic?: boolean;
+}
+
+export interface BusinessSettingRow {
+  key: string;
+  value: string;
+  updatedAt: string | null;
+}
+
 export async function fetchAdminOverview() {
   const http = getHttp();
   return await http<AdminOverview>("/admin/overview", { method: "get" });
@@ -153,4 +182,41 @@ export async function fetchDashboardOrders(params: {
 export async function fetchDashboardPartners() {
   const http = getHttp();
   return await http<DashboardPartnerStats>("/admin/dashboard/partners", { method: "get" });
+}
+
+/** 管理端会员计划 (含未公开/已下架) */
+export async function fetchAdminPlans() {
+  const http = getHttp();
+  return await http<AdminPlanRow[]>("/admin/plans", { method: "get" });
+}
+
+export async function createAdminPlan(
+  payload: AdminPlanPayload & { id: string; name: string; priceFen: number },
+) {
+  const http = getHttp();
+  return await http<AdminPlanRow>("/admin/plans", { method: "post", body: payload });
+}
+
+export async function updateAdminPlan(id: string, payload: AdminPlanPayload) {
+  const http = getHttp();
+  return await http<AdminPlanRow>(`/admin/plans/${id}`, { method: "patch", body: payload });
+}
+
+export async function deleteAdminPlan(id: string) {
+  const http = getHttp();
+  return await http<{ id: string; deleted: boolean }>(`/admin/plans/${id}`, { method: "delete" });
+}
+
+/** 商业参数统一配置中心 */
+export async function fetchBusinessSettings() {
+  const http = getHttp();
+  return await http<BusinessSettingRow[]>("/admin/business-settings", { method: "get" });
+}
+
+export async function updateBusinessSetting(key: string, value: string) {
+  const http = getHttp();
+  return await http<{ key: string; value: string }>(`/admin/business-settings/${key}`, {
+    method: "patch",
+    body: { value },
+  });
 }
