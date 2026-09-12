@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Post, UseGuards } from "@nestjs/common";
 
-import { AuthGuard, Permissions } from "../guards/auth.guard";
+import { AuthGuard } from "../guards/auth.guard";
 import { User, UserEntity } from "../user/user.decorators";
 import { PartnerService } from "./partner.service";
 
@@ -41,19 +41,10 @@ export class PartnerController {
     return await this.partnerService.attributeReferral(dto.referralCode, user.userId);
   }
 
-  /** 管理员激活 Partner */
-  @Permissions("admin:access")
+  /** 用户申请成为 Partner (lifetime 会员) → pending */
   @UseGuards(AuthGuard)
-  @Post("activate")
-  async activate(@Body() dto: { userId: string; commissionRateBps?: number }) {
-    return await this.partnerService.becomePartner(dto.userId, dto.commissionRateBps ?? 4000);
-  }
-
-  /** 管理员暂停 Partner (历史 referral/commission 保留, 新订单不再产生佣金) */
-  @Permissions("admin:access")
-  @UseGuards(AuthGuard)
-  @Post("suspend")
-  async suspend(@Body() dto: { userId: string }) {
-    return await this.partnerService.suspendPartner(dto.userId);
+  @Post("apply")
+  async apply(@User() user: UserEntity) {
+    return await this.partnerService.apply(user.userId);
   }
 }

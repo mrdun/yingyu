@@ -1,7 +1,8 @@
+import { BadRequestException } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
 import { eq } from "drizzle-orm";
 
-import { commissionRecord, partner, plans, referral, user } from "@earthworm/schema";
+import { commissionRecord, membership, partner, plans, referral, user } from "@earthworm/schema";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
@@ -9,9 +10,10 @@ import { MembershipService } from "../../membership/membership.service";
 import { PartnerService } from "../partner.service";
 
 async function seedPlans(db: DbType) {
-  await db
-    .insert(plans)
-    .values({ id: "monthly", name: "月度会员", priceFen: 1800, durationDays: 30, sortOrder: 1 });
+  await db.insert(plans).values([
+    { id: "monthly", name: "月度会员", priceFen: 1800, durationDays: 30, sortOrder: 1 },
+    { id: "lifetime", name: "永久会员", priceFen: 19900, durationDays: null, sortOrder: 4 },
+  ]);
 }
 
 describe("PartnerService (partner / referral / commission)", () => {
@@ -50,6 +52,18 @@ describe("PartnerService (partner / referral / commission)", () => {
 
   async function seedUser(id: string) {
     await db.insert(user).values({ id }).onConflictDoNothing();
+  }
+
+  async function seedLifetimeMember(userId: string) {
+    await db.insert(membership).values({
+      userId,
+      start_date: new Date(),
+      end_date: null,
+      isActive: true,
+      status: "active",
+      planId: "lifetime",
+      type: "regular",
+    });
   }
 
   it("becomes a partner with a unique referral_code and bps rate", async () => {
@@ -218,7 +232,7 @@ describe("PartnerService (partner / referral / commission)", () => {
     });
     await membershipService.markOrderPaid(o1.id);
 
-    await partnerService.suspendPartner("partner_s");
+    await partnerService.suspendPartner(p.id);
     expect(await partnerService.isActivePartner("partner_s")).toBe(false);
 
     const o2 = await membershipService.createOrder({
@@ -269,5 +283,69 @@ describe("PartnerService (partner / referral / commission)", () => {
         referralCode: "any",
       }),
     ).rejects.toThrow();
+  });
+
+  describe("partner lifecycle (apply / state machine)", () => {
+    it("lifetime member applies -> pending", async () => {
+      await seedUser("u_life");
+      await seedLifetimeMember("u_life");
+
+      const p = await partnerService.apply("u_life");
+      expect(p.status).toBe("pending");
+      expect(p.referralCode).toBeTruthy();
+    });
+
+    it("non-lifetime user cannot apply", async () => {
+      await seedUser("u_month");
+      await db.insert(membership).values({
+        userId: "u_month",
+        start_date: new Date(),
+        end_date: new Date(Date.now() + 86400000),
+        isActive: true,
+        status: "active",
+        planId: "monthly",
+        type: "regular",
+      });
+
+      await expect(partnerService.apply("u_month")).rejects.toThrow(BadRequestException);
+    });
+
+    it("apply is idempotent (same partner returned)", async () => {
+      await seedUser("u_life2");
+      await seedLifetimeMember("u_life2");
+
+      const first = await partnerService.apply("u_life2");
+      const second = await partnerService.apply("u_life2");
+      expect(second.id).toBe(first.id);
+    });
+
+    it("approve -> active; suspend -> suspended; activate -> active", async () => {
+      await seedUser("u_life3");
+      await seedLifetimeMember("u_life3");
+      const p = await partnerService.apply("u_life3");
+
+      expect((await partnerService.approvePartner(p.id)).status).toBe("active");
+      expect((await partnerService.suspendPartner(p.id)).status).toBe("suspended");
+      expect((await partnerService.activatePartner(p.id)).status).toBe("active");
+    });
+
+    it("reject -> rejected; cannot activate a rejected partner", async () => {
+      await seedUser("u_life4");
+      await seedLifetimeMember("u_life4");
+      const p = await partnerService.apply("u_life4");
+
+      expect((await partnerService.rejectPartner(p.id)).status).toBe("rejected");
+      await expect(partnerService.activatePartner(p.id)).rejects.toThrow(BadRequestException);
+    });
+
+    it("illegal transitions are rejected", async () => {
+      await seedUser("u_life5");
+      await seedLifetimeMember("u_life5");
+      const p = await partnerService.apply("u_life5");
+
+      // pending 不能直接 suspend/activate
+      await expect(partnerService.suspendPartner(p.id)).rejects.toThrow(BadRequestException);
+      await expect(partnerService.activatePartner(p.id)).rejects.toThrow(BadRequestException);
+    });
   });
 });

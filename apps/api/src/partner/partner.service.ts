@@ -1,9 +1,10 @@
-import { BadRequestException, Inject, Injectable } from "@nestjs/common";
+import { BadRequestException, Inject, Injectable, NotFoundException } from "@nestjs/common";
 import { createId } from "@paralleldrive/cuid2";
 import { and, desc, eq, inArray } from "drizzle-orm";
 
-import { commissionRecord, partner, referral, user } from "@earthworm/schema";
+import { commissionRecord, membership, partner, referral, user } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
+import { canTransitionPartnerStatus, PARTNER_STATUS } from "./partner-status";
 
 /** 隐私脱敏: 只保留首字符, 不返回完整用户名 */
 function maskUsername(username: string | null): string {
@@ -23,14 +24,125 @@ export class PartnerService {
     return await this.db.query.partner.findFirst({ where: eq(partner.userId, userId) });
   }
 
+  async listPartners() {
+    return await this.db.query.partner.findMany({
+      orderBy: desc(partner.createdAt),
+    });
+  }
+
+  async getPartner(partnerId: string) {
+    return await this.findPartnerOrThrow(partnerId);
+  }
+
   async isActivePartner(userId: string) {
     const p = await this.findByUserId(userId);
     return Boolean(p && p.status === "active");
   }
 
+  private async findPartnerOrThrow(partnerId: string) {
+    const p = await this.db.query.partner.findFirst({ where: eq(partner.id, partnerId) });
+    if (!p) {
+      throw new NotFoundException(`Partner ${partnerId} not found`);
+    }
+    return p;
+  }
+
+  /** 只有有效 lifetime 会员可以申请成为 Partner (以 DB 权益为准, 不信任前端) */
+  private async isLifetimeMember(userId: string): Promise<boolean> {
+    const m = await this.db.query.membership.findFirst({
+      where: and(
+        eq(membership.userId, userId),
+        eq(membership.status, "active"),
+        eq(membership.planId, "lifetime"),
+      ),
+    });
+    return Boolean(m);
+  }
+
   /**
-   * 让用户成为 Partner (仅管理员调用)。创建时生成唯一推广码。
-   * 再次调用只更新比例/状态, 不改变 referral_code (保持稳定)。
+   * 用户申请成为 Partner (lifetime 会员): 创建 pending 记录。
+   * 幂等: 已存在 (pending/active/suspended/rejected) 返回现有记录。
+   */
+  async apply(userId: string) {
+    const existing = await this.findByUserId(userId);
+    if (existing) return existing;
+
+    if (!(await this.isLifetimeMember(userId))) {
+      throw new BadRequestException("Only lifetime members can apply to become a partner");
+    }
+
+    const referralCode = createId();
+    const [created] = await this.db
+      .insert(partner)
+      .values({
+        userId,
+        referralCode,
+        commissionRate: 0.4,
+        commissionRateBps: 4000,
+        status: PARTNER_STATUS.PENDING,
+      })
+      .onConflictDoNothing({ target: partner.userId })
+      .returning();
+
+    return created ?? (await this.findByUserId(userId))!;
+  }
+
+  /** 状态机统一入口: 校验 from -> to 并更新 status */
+  private async transitionPartnerStatus(
+    partnerId: string,
+    from: (typeof PARTNER_STATUS)[keyof typeof PARTNER_STATUS],
+    to: (typeof PARTNER_STATUS)[keyof typeof PARTNER_STATUS],
+  ) {
+    const p = await this.findPartnerOrThrow(partnerId);
+    if (p.status !== from) {
+      throw new BadRequestException(`Partner ${partnerId} is ${p.status}, expected ${from}`);
+    }
+    if (!canTransitionPartnerStatus(from, to)) {
+      throw new BadRequestException(`Illegal partner status transition: ${from} -> ${to}`);
+    }
+    const [updated] = await this.db
+      .update(partner)
+      .set({ status: to, updatedAt: new Date() })
+      .where(eq(partner.id, partnerId))
+      .returning();
+    return updated;
+  }
+
+  async approvePartner(partnerId: string) {
+    return await this.transitionPartnerStatus(
+      partnerId,
+      PARTNER_STATUS.PENDING,
+      PARTNER_STATUS.ACTIVE,
+    );
+  }
+
+  async rejectPartner(partnerId: string) {
+    return await this.transitionPartnerStatus(
+      partnerId,
+      PARTNER_STATUS.PENDING,
+      PARTNER_STATUS.REJECTED,
+    );
+  }
+
+  async activatePartner(partnerId: string) {
+    return await this.transitionPartnerStatus(
+      partnerId,
+      PARTNER_STATUS.SUSPENDED,
+      PARTNER_STATUS.ACTIVE,
+    );
+  }
+
+  async suspendPartner(partnerId: string) {
+    return await this.transitionPartnerStatus(
+      partnerId,
+      PARTNER_STATUS.ACTIVE,
+      PARTNER_STATUS.SUSPENDED,
+    );
+  }
+
+  /**
+   * 让用户直接成为 active Partner (仅供测试/内部种子数据使用)。
+   * 正式流程走 apply + approve (状态机), 不要通过本方法绕过 pending 审核。
    */
   async becomePartner(userId: string, commissionRateBps = 4000) {
     if (
@@ -61,16 +173,6 @@ export class PartnerService {
       })
       .returning();
     return p;
-  }
-
-  /** 管理员暂停 Partner: 新订单不再产生佣金, 历史 referral/commission 保留 */
-  async suspendPartner(userId: string) {
-    const [p] = await this.db
-      .update(partner)
-      .set({ status: "inactive", updatedAt: new Date() })
-      .where(eq(partner.userId, userId))
-      .returning();
-    return p ?? null;
   }
 
   /** 归因: 只发生一次; 防自邀请、防重复绑定 */

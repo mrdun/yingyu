@@ -18,7 +18,7 @@ export const partner = pgTable(
     referralCode: text("referral_code"), // 独立推广码, Partner 创建时生成
     commissionRate: real("commission_rate").notNull().default(0.4), // 旧字段, 保留兼容
     commissionRateBps: integer("commission_rate_bps").notNull().default(4000), // 40% = 4000
-    status: text("status").notNull().default("active"), // active / inactive
+    status: text("status").notNull().default("pending"), // pending / active / suspended / rejected
     createdAt: timestamp("created_at").notNull().defaultNow(),
     updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
   },
@@ -29,7 +29,10 @@ export const partner = pgTable(
       "partners_commission_rate_bps_check",
       sql`${t.commissionRateBps} >= 0 AND ${t.commissionRateBps} <= 10000`,
     ),
-    chkStatus: check("partners_status_check", sql`${t.status} IN ('active', 'inactive')`),
+    chkStatus: check(
+      "partners_status_check",
+      sql`${t.status} IN ('pending', 'active', 'suspended', 'rejected')`,
+    ),
   }),
 );
 
