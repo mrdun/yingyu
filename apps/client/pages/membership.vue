@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-3xl p-6">
     <h1 class="mb-2 text-2xl font-bold dark:text-white">会员计划</h1>
     <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">
-      开通会员解锁更多权益。当前为模拟支付环境, 点击「模拟支付」即可体验完整开通流程。
+      选择会员方案与支付方式, 扫码支付成功后会员自动开通 (支付结果以服务端确认为准)。
     </p>
 
     <!-- 未登录 -->
@@ -54,7 +54,87 @@
         {{ message }}
       </p>
 
-      <!-- 三档价格卡片 -->
+      <!-- 支付方式 (由服务端渠道开关决定) -->
+      <div
+        v-if="paymentMethods.length > 0"
+        class="mb-6"
+      >
+        <div class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-300">支付方式</div>
+        <div class="flex flex-wrap gap-2">
+          <button
+            v-for="method in paymentMethods"
+            :key="method.method"
+            class="btn btn-sm"
+            :class="
+              selectedMethod === method.method
+                ? 'border-none bg-purple-500 text-white hover:bg-purple-600'
+                : 'btn-outline'
+            "
+            :disabled="!!paying"
+            @click="selectedMethod = method.method"
+          >
+            {{ method.label }}
+          </button>
+        </div>
+      </div>
+
+      <!-- 支付中: 二维码 / 支付链接 -->
+      <div
+        v-if="activeOrder"
+        class="mb-6 rounded-2xl border border-purple-200 bg-white p-5 text-center shadow-soft dark:border-purple-700 dark:bg-gray-800"
+      >
+        <div class="font-semibold text-purple-600 dark:text-purple-300">
+          {{ methodLabel(activeOrder.method) }}
+        </div>
+        <p class="mt-1 text-xs text-gray-500">
+          待支付金额 ¥{{ (activeOrder.amountFen / 100).toFixed(2) }}
+          <span v-if="remainingText"> · {{ remainingText }}</span>
+        </p>
+
+        <div
+          v-if="activeOrder.payCode"
+          class="mt-4"
+        >
+          <p class="mb-2 text-sm text-gray-600 dark:text-gray-300">
+            {{ activeOrder.qr ? "请使用手机扫码完成支付" : "请在支付渠道中完成支付" }}
+          </p>
+          <div
+            class="mx-auto max-w-md break-all rounded-lg bg-gray-50 p-3 font-mono text-xs text-gray-700 dark:bg-gray-900 dark:text-gray-300"
+          >
+            {{ activeOrder.payCode }}
+          </div>
+          <button
+            class="btn btn-outline btn-xs mt-3"
+            @click="copyPayCode"
+          >
+            {{ copied ? "已复制" : "复制支付链接" }}
+          </button>
+        </div>
+
+        <div
+          v-if="activeOrder.payUrl"
+          class="mt-4"
+        >
+          <a
+            :href="activeOrder.payUrl"
+            class="btn border-none bg-purple-500 text-white hover:bg-purple-600"
+          >
+            前往支付页面
+          </a>
+        </div>
+
+        <p class="mt-4 text-xs text-gray-400">
+          支付完成后会自动确认 (无需手动刷新), 请勿关闭本页面。
+        </p>
+        <button
+          class="btn btn-ghost btn-xs mt-2"
+          @click="cancelActiveOrder"
+        >
+          取消 / 重新选择
+        </button>
+      </div>
+
+      <!-- 价格卡片 -->
       <div class="grid gap-4 md:grid-cols-3">
         <div
           v-for="plan in plans"
@@ -66,12 +146,6 @@
               : 'border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800'
           "
         >
-          <div
-            v-if="plan.id === 'yearly'"
-            class="mb-2 inline-block self-center rounded-full bg-gradient-to-r from-brand-600 to-brand-400 px-3 py-0.5 text-xs font-medium text-white shadow-md shadow-blue-200/60"
-          >
-            最划算
-          </div>
           <div class="text-lg font-semibold dark:text-white">{{ plan.name }}</div>
           <div class="my-2 text-3xl font-bold text-purple-600 dark:text-purple-400">
             ¥{{ (plan.priceFen / 100).toFixed(0) }}
@@ -79,46 +153,72 @@
           <div class="text-sm text-gray-500">{{ durationLabel(plan.durationDays) }}</div>
           <button
             class="btn mt-4 border-none bg-purple-500 text-white shadow-md hover:bg-purple-600 disabled:cursor-not-allowed disabled:bg-gray-300 disabled:text-gray-500"
-            :disabled="paying !== ''"
-            @click="mockPay(plan.id)"
+            :disabled="paying !== '' || !!activeOrder"
+            @click="pay(plan.id)"
           >
-            {{ paying === plan.id ? "支付中…" : "模拟支付" }}
+            {{ paying === plan.id ? "处理中…" : payButtonLabel }}
           </button>
         </div>
       </div>
 
-      <p class="mt-6 text-xs text-gray-400">
-        开发环境说明: 模拟支付会在下单后自动确认支付 (约 10 秒), 页面会轮询订单状态并展示结果。
+      <p
+        v-if="plans.length === 0"
+        class="mt-6 text-center text-sm text-gray-400"
+      >
+        暂无可购买的会员方案, 请稍后再试。
       </p>
     </template>
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { computed, onMounted, onUnmounted, ref } from "vue";
 
 import type {
-  CreateOrderResponse,
   MembershipPlanId,
   MembershipPlanInfo,
   OrderStatusResponse,
+  PaymentMethod,
+  PaymentMethodInfo,
+  PaymentPayload,
 } from "~/api/membership";
 import {
   confirmMockPay,
   createMembershipOrder,
   fetchMembershipStatus,
   fetchOrderStatus,
+  fetchPaymentMethods,
   fetchPlans,
 } from "~/api/membership";
 import { signIn } from "~/services/auth";
 
+const PAYMENT_POLL_INTERVAL_MS = 2000;
+
+interface ActiveOrder {
+  orderId: string;
+  amountFen: number;
+  method: PaymentMethod;
+  qr: boolean;
+  payCode?: string;
+  payUrl?: string;
+  expiresAt: string | null;
+}
+
 const plans = ref<MembershipPlanInfo[]>([]);
+const paymentMethods = ref<PaymentMethodInfo[]>([]);
+const selectedMethod = ref<PaymentMethod | undefined>(undefined);
 const loading = ref(true);
 const needLogin = ref(false);
 const errorMessage = ref("");
 const message = ref("");
 const status = ref<Awaited<ReturnType<typeof fetchMembershipStatus>> | null>(null);
 const paying = ref("");
+const activeOrder = ref<ActiveOrder | null>(null);
+const copied = ref(false);
+const nowMs = ref(Date.now());
+
+let pollTimer: ReturnType<typeof setInterval> | undefined;
+let clockTimer: ReturnType<typeof setInterval> | undefined;
 
 function formatDate(d: string | null) {
   if (!d) return "-";
@@ -128,6 +228,25 @@ function formatDate(d: string | null) {
 function durationLabel(days: number | null) {
   return days == null ? "永久" : `${days} 天`;
 }
+
+function methodLabel(method: PaymentMethod) {
+  return paymentMethods.value.find((m) => m.method === method)?.label ?? "支付";
+}
+
+const payButtonLabel = computed(() => {
+  const method = paymentMethods.value.find((m) => m.method === selectedMethod.value);
+  return method ? method.label : "立即开通";
+});
+
+const remainingText = computed(() => {
+  const expiresAt = activeOrder.value?.expiresAt;
+  if (!expiresAt) return "";
+  const remaining = Math.max(0, new Date(expiresAt).getTime() - nowMs.value);
+  if (remaining === 0) return "订单已过期";
+  const minutes = Math.floor(remaining / 60000);
+  const seconds = Math.floor((remaining % 60000) / 1000);
+  return `剩余 ${minutes}:${String(seconds).padStart(2, "0")}`;
+});
 
 async function loadStatus() {
   loading.value = true;
@@ -144,52 +263,113 @@ async function loadStatus() {
   } finally {
     loading.value = false;
   }
+}
 
-  async function loadPlans() {
-    try {
-      plans.value = await fetchPlans();
-    } catch {
-      // 加载失败时保持空, 避免展示过期硬编码价格
-      plans.value = [];
-    }
+async function loadPlans() {
+  try {
+    plans.value = await fetchPlans();
+  } catch {
+    // 加载失败时保持空, 避免展示过期硬编码价格
+    plans.value = [];
   }
 }
 
-/**
- * 模拟支付流程: 创建订单 -> 请求 mock-pay 确认 -> 轮询订单状态 (约 3 秒) -> 成功提示
- */
-async function mockPay(planId: MembershipPlanId) {
+async function loadPaymentMethods() {
+  try {
+    paymentMethods.value = await fetchPaymentMethods();
+  } catch {
+    paymentMethods.value = [];
+  }
+  if (
+    !selectedMethod.value ||
+    !paymentMethods.value.some((m) => m.method === selectedMethod.value)
+  ) {
+    selectedMethod.value = paymentMethods.value[0]?.method;
+  }
+}
+
+function buildActiveOrder(
+  orderId: string,
+  amountFen: number,
+  method: PaymentMethod,
+  payload: PaymentPayload | undefined,
+  expiresAt: string | null,
+): ActiveOrder {
+  const meta = paymentMethods.value.find((m) => m.method === method);
+  const rawUrl = payload?.payUrl;
+  const absoluteUrl = rawUrl && /^https?:\/\//.test(rawUrl) ? rawUrl : undefined;
+  return {
+    orderId,
+    amountFen,
+    method,
+    qr: Boolean(meta?.qr),
+    // 微信 code_url / 支付宝 qr_code / 模拟支付相对链接 (可复制)
+    payCode: payload?.codeUrl ?? payload?.qrCode ?? (absoluteUrl ? undefined : rawUrl),
+    payUrl: absoluteUrl,
+    expiresAt,
+  };
+}
+
+function stopPolling() {
+  if (pollTimer) clearInterval(pollTimer);
+  pollTimer = undefined;
+}
+
+/** 轮询服务端订单状态 (服务端会与渠道对账, 前端不信任本地结果) */
+function startPolling(orderId: string) {
+  stopPolling();
+  pollTimer = setInterval(async () => {
+    try {
+      const res: OrderStatusResponse = await fetchOrderStatus(orderId);
+      if (res.status === "paid") {
+        stopPolling();
+        activeOrder.value = null;
+        message.value = "🎉 开通成功! 会员已生效";
+        status.value = await fetchMembershipStatus();
+        return;
+      }
+      if (["failed", "cancelled", "expired", "refunded"].includes(res.status)) {
+        stopPolling();
+        activeOrder.value = null;
+        message.value =
+          res.status === "expired" ? "订单已超时关闭, 请重新下单" : "支付未完成, 请重试";
+      }
+    } catch {
+      // 网络抖动: 继续轮询
+    }
+  }, PAYMENT_POLL_INTERVAL_MS);
+}
+
+async function pay(planId: MembershipPlanId) {
   message.value = "";
   paying.value = planId;
   try {
-    const order: CreateOrderResponse = await createMembershipOrder(planId);
-    // 通知 mock 支付页确认支付 (仅 dev)
-    try {
-      await confirmMockPay(order.orderId);
-    } catch {
-      // mock-pay 失败不影响轮询 (provider 也会在 10 秒后自动置为 paid)
-    }
-    // 轮询订单状态, 最多 10 秒 (通常 mock 确认后 1-2 秒内 paid)
-    const deadline = Date.now() + 10_000;
-    let paid = false;
-    while (Date.now() < deadline) {
-      await new Promise((r) => setTimeout(r, 1000));
-      const res: OrderStatusResponse = await fetchOrderStatus(order.orderId);
-      if (res.status === "paid") {
-        paid = true;
-        break;
+    const idempotencyKey = `${planId}-${Date.now()}`;
+    const order = await createMembershipOrder(planId, selectedMethod.value, idempotencyKey);
+
+    if (order.paymentMethod === "mock" && order.providerOrderId) {
+      // 开发环境: 触发 mock 支付确认, 随后轮询
+      try {
+        await confirmMockPay(order.providerOrderId);
+      } catch {
+        // 忽略: provider 也会在 10 秒后自动置为 paid
       }
-      if (res.status === "failed") break;
     }
-    if (paid) {
-      message.value = "🎉 开通成功! 会员已生效";
-      status.value = await fetchMembershipStatus();
-    } else {
-      message.value = "支付确认中, 请稍后刷新查看";
-    }
+
+    activeOrder.value = buildActiveOrder(
+      order.orderId,
+      order.amountFen,
+      order.paymentMethod,
+      order.paymentPayload,
+      order.expiresAt ?? null,
+    );
+    startPolling(order.orderId);
   } catch (e: any) {
     if (e?.status === 401 || e?.statusCode === 401) {
       needLogin.value = true;
+    } else if (e?.status === 400 || e?.statusCode === 400) {
+      message.value = typeof e?.message === "string" ? e.message : "当前支付方式不可用";
+      await loadPaymentMethods();
     } else {
       message.value = "支付失败, 请稍后再试";
     }
@@ -198,8 +378,31 @@ async function mockPay(planId: MembershipPlanId) {
   }
 }
 
-onMounted(() => {
-  loadStatus();
-  loadPlans();
+async function copyPayCode() {
+  const code = activeOrder.value?.payCode;
+  if (!code) return;
+  try {
+    await navigator.clipboard.writeText(code);
+    copied.value = true;
+    setTimeout(() => (copied.value = false), 1500);
+  } catch {
+    // 剪贴板不可用时忽略
+  }
+}
+
+function cancelActiveOrder() {
+  stopPolling();
+  activeOrder.value = null;
+  message.value = "";
+}
+
+onMounted(async () => {
+  await Promise.all([loadStatus(), loadPlans(), loadPaymentMethods()]);
+  clockTimer = setInterval(() => (nowMs.value = Date.now()), 1000);
+});
+
+onUnmounted(() => {
+  stopPolling();
+  if (clockTimer) clearInterval(clockTimer);
 });
 </script>

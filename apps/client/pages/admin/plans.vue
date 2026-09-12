@@ -2,6 +2,7 @@
 import { onMounted, reactive, ref } from "vue";
 
 import type {
+  AdminPaymentChannel,
   AdminPlanPayload,
   AdminPlanRow,
   AdminPlansHealth,
@@ -13,8 +14,10 @@ import {
   fetchAdminPlans,
   fetchAdminPlansHealth,
   fetchBusinessSettings,
+  fetchPaymentChannels,
   updateAdminPlan,
   updateBusinessSetting,
+  updatePaymentChannel,
 } from "~/api/admin";
 import { signIn } from "~/services/auth";
 
@@ -28,6 +31,7 @@ const busy = ref("");
 const plans = ref<AdminPlanRow[]>([]);
 const settings = ref<BusinessSettingRow[]>([]);
 const health = ref<AdminPlansHealth | null>(null);
+const channels = ref<AdminPaymentChannel[]>([]);
 
 const form = reactive({
   id: "",
@@ -69,14 +73,16 @@ async function loadAll() {
   noPermission.value = false;
   errorMessage.value = "";
   try {
-    const [planRows, settingRows, healthData] = await Promise.all([
+    const [planRows, settingRows, healthData, channelRows] = await Promise.all([
       fetchAdminPlans(),
       fetchBusinessSettings(),
       fetchAdminPlansHealth().catch(() => null),
+      fetchPaymentChannels().catch(() => [] as AdminPaymentChannel[]),
     ]);
     plans.value = planRows;
     settings.value = settingRows;
     health.value = healthData;
+    channels.value = channelRows;
   } catch (e: any) {
     const status = e?.status ?? e?.statusCode;
     if (status === 401) needLogin.value = true;
@@ -193,6 +199,21 @@ async function onSettingChange(setting: BusinessSettingRow, value: string) {
     actionMessage.value = "商业参数已更新";
   } catch (e: any) {
     if (isSettingError(e)) actionMessage.value = e?.message ?? "参数不合法";
+  } finally {
+    busy.value = "";
+  }
+}
+
+async function onToggleChannel(channel: AdminPaymentChannel) {
+  busy.value = channel.provider;
+  actionMessage.value = "";
+  try {
+    const updated = await updatePaymentChannel(channel.provider, !channel.enabled);
+    channel.enabled = updated.enabled;
+    channel.configured = updated.configured;
+    actionMessage.value = `${channel.provider} 渠道已${updated.enabled ? "开启" : "关闭"}`;
+  } catch (e: any) {
+    if (isSettingError(e)) actionMessage.value = e?.message ?? "渠道开关更新失败";
   } finally {
     busy.value = "";
   }
@@ -445,6 +466,60 @@ onMounted(loadAll);
       </form>
 
       <h2 class="mb-2 mt-8 text-lg font-semibold">商业参数</h2>
+      <h2 class="mb-2 mt-8 text-lg font-semibold">支付渠道</h2>
+      <div class="overflow-x-auto rounded-lg bg-base-200">
+        <table class="table table-zebra">
+          <thead>
+            <tr>
+              <th>渠道</th>
+              <th>支持方式</th>
+              <th>环境变量</th>
+              <th>状态</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="channel in channels"
+              :key="channel.provider"
+            >
+              <td class="font-mono text-xs">{{ channel.provider }}</td>
+              <td class="text-xs">{{ channel.methods.map((m) => m.label).join(", ") || "-" }}</td>
+              <td>
+                <span :class="channel.configured ? 'badge badge-success' : 'badge badge-ghost'">
+                  {{ channel.configured ? "已配置" : "未配置" }}
+                </span>
+              </td>
+              <td>
+                <span :class="channel.enabled ? 'badge badge-success' : 'badge badge-ghost'">
+                  {{ channel.enabled ? "enabled" : "disabled" }}
+                </span>
+              </td>
+              <td>
+                <button
+                  class="btn btn-outline btn-xs"
+                  :disabled="busy === channel.provider"
+                  @click="onToggleChannel(channel)"
+                >
+                  {{ channel.enabled ? "关闭" : "开启" }}
+                </button>
+              </td>
+            </tr>
+            <tr v-if="channels.length === 0">
+              <td
+                colspan="5"
+                class="text-center text-base-content/60"
+              >
+                暂无支付渠道
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-2 mt-2 text-xs text-base-content/60">
+        商户号、API 密钥与证书只来自服务器环境变量, 后台仅保存渠道开关, 不会展示任何密钥内容。
+      </p>
+
       <div class="overflow-x-auto rounded-lg bg-base-200">
         <table class="table table-zebra">
           <thead>

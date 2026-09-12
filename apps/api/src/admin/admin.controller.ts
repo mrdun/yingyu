@@ -35,6 +35,17 @@ export class AdminController {
     return await this.adminService.getOverview();
   }
 
+  /**
+   * 管理员退款 (唯一退款入口):
+   * 订单锁定 → 第三方退款 → refunded → 撤销会员权益 → 撤销佣金。
+   * 重复退款会被状态机拒绝。
+   */
+  @Post("orders/:orderId/refund")
+  @Permissions("admin:access")
+  async refundOrder(@Param("orderId") orderId: string) {
+    return await this.membershipService.refundOrder(orderId);
+  }
+
   @Get("users")
   @Permissions("admin:access")
   async users(

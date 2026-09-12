@@ -6,7 +6,8 @@ import { user } from "./user";
 
 /**
  * 会员购买订单 (商业化模型, 支持多支付渠道/退款/幂等)
- * 状态机: pending -> paid | failed | cancelled; paid -> refunded
+ * 状态机: pending -> processing | failed | cancelled | expired;
+ *         processing -> paid | failed; paid -> refunding -> refunded | paid
  */
 export const orders = pgTable(
   "orders",
@@ -21,9 +22,11 @@ export const orders = pgTable(
       .notNull()
       .references(() => plans.id),
     amountFen: integer("amount_fen").notNull(), // 人民币分
-    status: text("status").notNull().default("pending"), // pending | paid | failed | cancelled | refunded
-    provider: text("provider").notNull().default("mock"), // mock | wechat | stripe
+    status: text("status").notNull().default("pending"), // pending|processing|paid|refunding|failed|cancelled|expired|refunded
+    provider: text("provider").notNull().default("mock"), // mock | wechat | alipay
+    paymentMethod: text("payment_method"), // wechat_native | wechat_jsapi | alipay_qr | mock
     providerOrderId: text("provider_order_id"),
+    providerTransactionId: text("provider_transaction_id"), // 第三方交易号 (对账/退款用)
     idempotencyKey: text("idempotency_key"),
     currency: varchar("currency", { length: 8 }).notNull().default("CNY"),
     paidAt: timestamp("paid_at"),

@@ -3,6 +3,8 @@ import { createId } from "@paralleldrive/cuid2";
 
 import { isProduction } from "../common/env";
 import {
+  CallbackAck,
+  ClosePaymentResult,
   CreatePaymentResult,
   NormalizedPayment,
   PaymentOrder,
@@ -20,13 +22,25 @@ import {
 @Injectable()
 export class MockPaymentProvider implements PaymentProvider {
   readonly name = "mock";
+  readonly supportedMethods = ["mock"] as const;
 
   private readonly orders = new Map<string, number>();
   static readonly AUTO_PAID_DELAY_MS = 10_000;
 
-  async createPayment(order: PaymentOrder): Promise<CreatePaymentResult> {
+  get merchantId(): undefined {
+    return undefined;
+  }
+
+  get configured(): boolean {
+    return !isProduction();
+  }
+
+  async createPayment(order: PaymentOrder, method?: string): Promise<CreatePaymentResult> {
     if (isProduction()) {
       throw new Error("Mock payment is not available in production");
+    }
+    if (method && !(this.supportedMethods as readonly string[]).includes(method)) {
+      throw new Error(`Mock payment does not support method: ${method}`);
     }
     const providerOrderId = `mock_${createId()}`;
     this.orders.set(providerOrderId, Date.now());
@@ -73,10 +87,19 @@ export class MockPaymentProvider implements PaymentProvider {
     throw new Error("Mock payment does not support callback");
   }
 
+  /** Mock 无第三方面单, 直接视为已关闭 */
+  async closePayment(): Promise<ClosePaymentResult> {
+    return { closed: true };
+  }
+
   async refundPayment(order: PaymentOrder): Promise<RefundResult> {
     if (isProduction()) {
       throw new Error("Mock payment is not available in production");
     }
     return { refunded: true };
+  }
+
+  callbackAck(): CallbackAck {
+    return { contentType: "application/json; charset=utf-8", body: JSON.stringify({ ok: true }) };
   }
 }

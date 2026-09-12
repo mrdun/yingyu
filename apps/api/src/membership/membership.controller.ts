@@ -6,6 +6,7 @@ import {
   HttpStatus,
   Inject,
   NotFoundException,
+  Optional,
   Param,
   Post,
   Query,
@@ -16,7 +17,14 @@ import { Response } from "express";
 
 import { isProduction } from "../common/env";
 import { AuthGuard, Permissions, UncheckAuth } from "../guards/auth.guard";
-import { PAYMENT_PROVIDER, PaymentProvider } from "../payment/payment-provider.interface";
+import { PaymentChannelService } from "../payment/payment-channel.service";
+import { isPaymentMethod, PaymentMethod } from "../payment/payment-method";
+import {
+  PAYMENT_PROVIDER,
+  PAYMENT_PROVIDERS,
+  PaymentProvider,
+} from "../payment/payment-provider.interface";
+import { PaymentProviderRegistry } from "../payment/payment-provider.registry";
 import { PlansService } from "../plans/plans.service";
 import { User, UserEntity } from "../user/user.decorators";
 import { CreateOrderDto } from "./dto/create-order.dto";
@@ -29,7 +37,56 @@ export class MembershipController {
     private readonly membershipService: MembershipService,
     @Inject(PAYMENT_PROVIDER) private readonly paymentProvider: PaymentProvider,
     private readonly plansService: PlansService,
+    @Optional()
+    @Inject(PAYMENT_PROVIDERS)
+    private readonly paymentProviders?: PaymentProviderRegistry,
+    @Optional() private readonly paymentChannelService?: PaymentChannelService,
   ) {}
+
+  private providerOf(method: PaymentMethod): PaymentProvider {
+    return this.paymentProviders?.resolveMethod(method) ?? this.paymentProvider;
+  }
+
+  private async resolvePaymentMethod(requested?: string): Promise<PaymentMethod> {
+    if (requested) {
+      if (!isPaymentMethod(requested)) {
+        throw new HttpException(`Unsupported paymentMethod: ${requested}`, HttpStatus.BAD_REQUEST);
+      }
+      if (
+        this.paymentChannelService &&
+        !(await this.paymentChannelService.isMethodAvailable(requested))
+      ) {
+        throw new HttpException(
+          `Payment method is not available: ${requested}`,
+          HttpStatus.BAD_REQUEST,
+        );
+      }
+      return requested;
+    }
+
+    const available = this.paymentChannelService
+      ? await this.paymentChannelService.availableMethods()
+      : [];
+    const fallback = available[0]?.method;
+    if (!fallback) {
+      throw new HttpException(
+        "No payment method is available (channels disabled or not configured)",
+        HttpStatus.BAD_REQUEST,
+      );
+    }
+    return fallback;
+  }
+
+  /** 可用支付方式 (游客可读: 前端据此渲染支付方式选择) */
+  @UncheckAuth()
+  @UseGuards(AuthGuard)
+  @Get("payment-methods")
+  async paymentMethods() {
+    if (!this.paymentChannelService) {
+      return [{ method: "mock", provider: "mock", label: "模拟支付 (仅开发)", qr: false }];
+    }
+    return await this.paymentChannelService.availableMethods();
+  }
 
   @Permissions("admin:access")
   @UseGuards(AuthGuard)
@@ -38,7 +95,11 @@ export class MembershipController {
     return await this.membershipService.upsert(new Date(), buyMembershipDto);
   }
 
-  /** 创建会员购买订单: 内部订单(金额=DB plan) → Provider.createPayment → 回填 providerOrderId */
+  /**
+   * 创建会员购买订单:
+   * 选择 plan → 选择支付方式 → 内部订单(金额=DB plan) → Provider.createPayment(order, method)
+   * → 回填 providerOrderId → 返回支付参数(二维码/JSAPI 参数)。
+   */
   @UseGuards(AuthGuard)
   @Post("orders")
   async createOrder(@User() user: UserEntity, @Body() dto: CreateOrderDto) {
@@ -46,30 +107,48 @@ export class MembershipController {
     if (!plan) {
       throw new HttpException("Invalid planId", HttpStatus.BAD_REQUEST);
     }
+    if (!plan.isActive) {
+      throw new HttpException("Plan is not available for purchase", HttpStatus.BAD_REQUEST);
+    }
+
+    const method = await this.resolvePaymentMethod(dto.paymentMethod);
+    const provider = this.providerOf(method);
 
     const order = await this.membershipService.createOrder({
       userId: user.userId,
       planId: plan.id,
-      provider: this.paymentProvider.name,
+      provider: provider.name,
+      paymentMethod: method,
       idempotencyKey: dto.idempotencyKey,
     });
 
-    const payment = await this.paymentProvider.createPayment({
-      id: order.id,
-      userId: order.userId,
-      planId: order.planId,
-      amountFen: order.amountFen,
-      currency: order.currency,
-      providerOrderId: order.providerOrderId,
-    });
+    // 幂等命中已有订单且已回填 providerOrderId 时, 复用原支付参数, 不再重复下单
+    const payment = order.providerOrderId
+      ? { providerOrderId: order.providerOrderId, paymentPayload: undefined, expiresAt: undefined }
+      : await provider.createPayment(
+          {
+            id: order.id,
+            userId: order.userId,
+            planId: order.planId,
+            amountFen: order.amountFen,
+            currency: order.currency,
+            providerOrderId: order.providerOrderId,
+            description: `会员-${plan.name}`,
+          },
+          method,
+        );
 
-    await this.membershipService.setProviderOrderId(order.id, payment.providerOrderId);
+    if (!order.providerOrderId) {
+      await this.membershipService.setProviderOrderId(order.id, payment.providerOrderId);
+    }
 
     return {
       orderId: order.id,
       providerOrderId: payment.providerOrderId,
+      paymentMethod: method,
       paymentPayload: payment.paymentPayload,
       amountFen: order.amountFen,
+      expiresAt: await this.membershipService.getOrderExpiresAt(order),
     };
   }
 
@@ -90,26 +169,18 @@ export class MembershipController {
     }
 
     let status = order.status;
-    if (status === OrderStatus.PENDING && order.provider === "mock" && order.providerOrderId) {
-      const result = await this.paymentProvider.queryPayment({
-        id: order.id,
-        userId: order.userId,
-        planId: order.planId,
-        amountFen: order.amountFen,
-        currency: order.currency,
-        providerOrderId: order.providerOrderId,
-      });
-      if (result.status === "paid") {
-        await this.membershipService.markOrderPaid(order.id);
-        status = OrderStatus.PAID;
-      }
-    }
+    // 轮询兜底: 回调丢失时主动查单 (金额/币种必须与本地一致才入账)
+    const synced = await this.membershipService.syncOrderWithProvider(order.id);
+    status = synced?.status ?? status;
 
     return {
       orderId: order.id,
       planId: order.planId,
       amountFen: order.amountFen,
       status,
+      paymentMethod: order.paymentMethod,
+      providerOrderId: order.providerOrderId,
+      expiresAt: await this.membershipService.getOrderExpiresAt(order),
       paidAt: order.paidAt,
       createdAt: order.createdAt,
     };

@@ -3,13 +3,14 @@
  * 状态机:
  *   pending -> processing | failed | cancelled | expired
  *   processing -> paid | failed
- *   paid -> refunded
+ *   paid -> refunding (退款抢占) -> refunded | paid (第三方退款失败回滚)
  * 禁止: failed/cancelled/refunded/expired -> paid (不可逆回 paid)
  */
 export enum OrderStatus {
   PENDING = "pending",
   PROCESSING = "processing",
   PAID = "paid",
+  REFUNDING = "refunding",
   FAILED = "failed",
   CANCELLED = "cancelled",
   REFUNDED = "refunded",
@@ -25,7 +26,9 @@ export const ORDER_STATUS_TRANSITIONS: Record<OrderStatus, OrderStatus[]> = {
     OrderStatus.EXPIRED,
   ],
   [OrderStatus.PROCESSING]: [OrderStatus.PAID, OrderStatus.FAILED],
-  [OrderStatus.PAID]: [OrderStatus.REFUNDED],
+  [OrderStatus.PAID]: [OrderStatus.REFUNDING],
+  // refunding 只允许收尾 (refunded) 或回滚 (paid, 第三方退款失败时)
+  [OrderStatus.REFUNDING]: [OrderStatus.REFUNDED, OrderStatus.PAID],
   [OrderStatus.FAILED]: [],
   [OrderStatus.CANCELLED]: [],
   [OrderStatus.REFUNDED]: [],

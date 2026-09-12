@@ -2,6 +2,27 @@ import { getHttp } from "./http";
 
 export type MembershipPlanId = "monthly" | "quarterly" | "yearly" | "lifetime";
 
+/** 支付方式 (与后端 payment-method.ts 一一对应) */
+export type PaymentMethod = "mock" | "wechat_native" | "wechat_jsapi" | "alipay_qr";
+
+export interface PaymentMethodInfo {
+  method: PaymentMethod;
+  provider: string;
+  label: string;
+  qr: boolean;
+}
+
+/** 支付参数: codeUrl(微信扫码) / qrCode(支付宝扫码) / payUrl(模拟支付) / jsapiParams */
+export interface PaymentPayload {
+  provider?: string;
+  method?: PaymentMethod;
+  codeUrl?: string | null;
+  qrCode?: string | null;
+  prepayId?: string | null;
+  payUrl?: string;
+  jsapiParams?: Record<string, string>;
+}
+
 export interface MembershipPlanInfo {
   id: MembershipPlanId;
   name: string;
@@ -19,15 +40,21 @@ export interface MembershipStatus {
 
 export interface CreateOrderResponse {
   orderId: string;
-  payUrl: string;
+  providerOrderId?: string;
+  paymentMethod: PaymentMethod;
+  paymentPayload?: PaymentPayload;
   amountFen: number;
+  expiresAt?: string;
 }
 
 export interface OrderStatusResponse {
   orderId: string;
   planId: string;
   amountFen: number;
-  status: "pending" | "paid" | "failed";
+  status: "pending" | "processing" | "paid" | "failed" | "cancelled" | "expired" | "refunded";
+  paymentMethod?: PaymentMethod | null;
+  providerOrderId?: string | null;
+  expiresAt?: string | null;
   paidAt: string | null;
   createdAt: string;
 }
@@ -36,6 +63,12 @@ export interface OrderStatusResponse {
 export async function fetchPlans(): Promise<MembershipPlanInfo[]> {
   const http = getHttp();
   return await http<MembershipPlanInfo[]>("/plans", { method: "get" });
+}
+
+/** 可用支付方式 (渠道开关 + 环境变量凭据由后端判定) */
+export async function fetchPaymentMethods(): Promise<PaymentMethodInfo[]> {
+  const http = getHttp();
+  return await http<PaymentMethodInfo[]>("/membership/payment-methods", { method: "get" });
 }
 
 export async function fetchMembershipStatus() {
@@ -49,11 +82,15 @@ export async function fetchMembershipStatus() {
   }>("/membership/status", { method: "get" });
 }
 
-export async function createMembershipOrder(planId: MembershipPlanId) {
+export async function createMembershipOrder(
+  planId: MembershipPlanId,
+  paymentMethod?: PaymentMethod,
+  idempotencyKey?: string,
+) {
   const http = getHttp();
   return await http<CreateOrderResponse>("/membership/orders", {
     method: "post",
-    body: { planId },
+    body: { planId, paymentMethod, idempotencyKey },
   });
 }
 

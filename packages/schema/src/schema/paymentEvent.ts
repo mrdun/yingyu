@@ -19,6 +19,7 @@ export const paymentEvent = pgTable(
     provider: text("provider").notNull(),
     eventType: text("event_type").notNull(), // callback / query
     payloadHash: text("payload_hash").notNull(),
+    payload: text("payload"), // 原始回调报文 (验签/对账审计, 已截断)
     createdAt: timestamp("created_at").notNull().defaultNow(),
     processedAt: timestamp("processed_at"),
   },

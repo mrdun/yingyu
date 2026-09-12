@@ -233,3 +233,24 @@ export async function updateBusinessSetting(key: string, value: string) {
     body: { value },
   });
 }
+
+/** 支付渠道 (仅开关状态与凭据是否配置; 不含任何密钥) */
+export interface AdminPaymentChannel {
+  provider: string;
+  enabled: boolean;
+  configured: boolean;
+  methods: Array<{ method: string; provider: string; label: string; qr: boolean }>;
+}
+
+export async function fetchPaymentChannels() {
+  const http = getHttp();
+  return await http<AdminPaymentChannel[]>("/admin/payment-channels", { method: "get" });
+}
+
+export async function updatePaymentChannel(provider: string, enabled: boolean) {
+  const http = getHttp();
+  return await http<AdminPaymentChannel>(`/admin/payment-channels/${provider}`, {
+    method: "patch",
+    body: { enabled },
+  });
+}
