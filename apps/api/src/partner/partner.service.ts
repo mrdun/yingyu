@@ -1,8 +1,15 @@
 import { BadRequestException, Inject, Injectable, NotFoundException } from "@nestjs/common";
 import { createId } from "@paralleldrive/cuid2";
-import { and, desc, eq, inArray } from "drizzle-orm";
+import { and, desc, eq, gte, inArray, isNull, lte, or } from "drizzle-orm";
 
-import { commissionRecord, membership, partner, referral, user } from "@earthworm/schema";
+import {
+  commissionRecord,
+  membership,
+  partner,
+  partnerCommissionRule,
+  referral,
+  user,
+} from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { canTransitionPartnerStatus, PARTNER_STATUS } from "./partner-status";
 
@@ -278,7 +285,7 @@ export class PartnerService {
    * 整数计算: commission_fen = floor(order_amount_fen * rate_bps / 10000); 比例快照。
    */
   async generateCommissionForOrder(
-    order: { id: string; userId: string; amountFen: number },
+    order: { id: string; userId: string; amountFen: number; planId: string },
     tx?: DbType,
   ) {
     const db = tx ?? this.db;
@@ -297,7 +304,11 @@ export class PartnerService {
       .limit(1);
     if (!p) return null;
 
-    const commissionFen = Math.floor((order.amountFen * p.commissionRateBps) / 10000);
+    // 动态佣金规则 (partner_type + plan), 无有效规则则安全失败 (不默认40%)
+    const rule = await this.findActiveCommissionRule("lifetime", order.planId, db);
+    if (!rule) return null;
+
+    const commissionFen = Math.floor((order.amountFen * rule.rateBps) / 10000);
     const [rec] = await db
       .insert(commissionRecord)
       .values({
@@ -305,8 +316,8 @@ export class PartnerService {
         referredUserId: order.userId,
         orderId: order.id,
         orderAmountFen: order.amountFen,
-        rate: p.commissionRateBps / 10000,
-        rateBps: p.commissionRateBps,
+        rate: rule.rateBps / 10000,
+        rateBps: rule.rateBps,
         commissionFen,
         status: "pending",
       })
@@ -328,5 +339,93 @@ export class PartnerService {
           inArray(commissionRecord.status, ["pending", "paid"]),
         ),
       );
+  }
+
+  /** 查找当前生效的佣金规则: 优先特定 plan, 其次全局 (plan_id=null) */
+  async findActiveCommissionRule(partnerType: string, planId: string, db: DbType = this.db) {
+    const now = new Date();
+    const baseWhere = and(
+      eq(partnerCommissionRule.partnerType, partnerType),
+      eq(partnerCommissionRule.status, "active"),
+      lte(partnerCommissionRule.effectiveFrom, now),
+      or(isNull(partnerCommissionRule.effectiveTo), gte(partnerCommissionRule.effectiveTo, now)),
+    );
+
+    const specific = await db.query.partnerCommissionRule.findFirst({
+      where: and(baseWhere, eq(partnerCommissionRule.planId, planId)),
+    });
+    if (specific) return specific;
+
+    return await db.query.partnerCommissionRule.findFirst({
+      where: and(baseWhere, isNull(partnerCommissionRule.planId)),
+    });
+  }
+
+  async listCommissionRules() {
+    return await this.db.query.partnerCommissionRule.findMany({
+      orderBy: desc(partnerCommissionRule.createdAt),
+    });
+  }
+
+  async createCommissionRule(dto: {
+    partnerType?: string;
+    planId?: string | null;
+    rateBps: number;
+    status?: string;
+    effectiveFrom?: Date;
+    effectiveTo?: Date | null;
+  }) {
+    this.assertValidRateBps(dto.rateBps);
+    const [rule] = await this.db
+      .insert(partnerCommissionRule)
+      .values({
+        partnerType: dto.partnerType ?? "lifetime",
+        planId: dto.planId ?? null,
+        rateBps: dto.rateBps,
+        status: dto.status ?? "active",
+        effectiveFrom: dto.effectiveFrom ?? new Date(),
+        effectiveTo: dto.effectiveTo ?? null,
+      })
+      .returning();
+    return rule;
+  }
+
+  async updateCommissionRule(
+    id: string,
+    dto: {
+      planId?: string | null;
+      rateBps?: number;
+      status?: string;
+      effectiveFrom?: Date;
+      effectiveTo?: Date | null;
+    },
+  ) {
+    const existing = await this.db.query.partnerCommissionRule.findFirst({
+      where: eq(partnerCommissionRule.id, id),
+    });
+    if (!existing) {
+      throw new NotFoundException(`Commission rule ${id} not found`);
+    }
+    if (dto.rateBps !== undefined) this.assertValidRateBps(dto.rateBps);
+
+    const set: Record<string, unknown> = { updatedAt: new Date() };
+    if (dto.planId !== undefined) set.planId = dto.planId;
+    if (dto.rateBps !== undefined) set.rateBps = dto.rateBps;
+    if (dto.status !== undefined) set.status = dto.status;
+    if (dto.effectiveFrom !== undefined) set.effectiveFrom = dto.effectiveFrom;
+    if (dto.effectiveTo !== undefined) set.effectiveTo = dto.effectiveTo;
+
+    const [updated] = await this.db
+      .update(partnerCommissionRule)
+      .set(set)
+      .where(eq(partnerCommissionRule.id, id))
+      .returning();
+    return updated;
+  }
+
+  private assertValidRateBps(rateBps: number) {
+    if (!Number.isInteger(rateBps) || rateBps < 0 || rateBps > 10000) {
+      throw new BadRequestException("rateBps must be an integer between 0 and 10000");
+    }
   }
 }

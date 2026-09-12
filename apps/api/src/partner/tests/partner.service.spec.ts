@@ -2,7 +2,15 @@ import { BadRequestException } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
 import { eq } from "drizzle-orm";
 
-import { commissionRecord, membership, partner, plans, referral, user } from "@earthworm/schema";
+import {
+  commissionRecord,
+  membership,
+  partner,
+  partnerCommissionRule,
+  plans,
+  referral,
+  user,
+} from "@earthworm/schema";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
@@ -16,6 +24,19 @@ async function seedPlans(db: DbType) {
     { id: "monthly", name: "月度会员", priceFen: 1800, durationDays: 30, sortOrder: 1 },
     { id: "lifetime", name: "永久会员", priceFen: 19900, durationDays: null, sortOrder: 4 },
   ]);
+}
+
+async function seedDefaultCommissionRule(db: DbType) {
+  await db
+    .insert(partnerCommissionRule)
+    .values({
+      id: "default_lifetime_all",
+      partnerType: "lifetime",
+      planId: null,
+      rateBps: 4000,
+      status: "active",
+    })
+    .onConflictDoNothing();
 }
 
 describe("PartnerService (partner / referral / commission)", () => {
@@ -42,8 +63,10 @@ describe("PartnerService (partner / referral / commission)", () => {
     await db.delete(commissionRecord);
     await db.delete(referral);
     await db.delete(partner);
+    await db.delete(partnerCommissionRule);
     await db.delete(plans);
     await seedPlans(db);
+    await seedDefaultCommissionRule(db);
   });
 
   afterAll(async () => {
@@ -51,6 +74,7 @@ describe("PartnerService (partner / referral / commission)", () => {
     await db.delete(commissionRecord);
     await db.delete(referral);
     await db.delete(partner);
+    await db.delete(partnerCommissionRule);
     await db.delete(plans);
     await db.delete(user);
     await endDB();
@@ -202,6 +226,81 @@ describe("PartnerService (partner / referral / commission)", () => {
     expect(rec.status).toBe("reversed");
   });
 
+  it("changing rule rate affects new orders but not historical commission", async () => {
+    await seedUser("partner_rate");
+    await seedUser("buyer_rate");
+    const p = await partnerService.becomePartner("partner_rate");
+    await partnerService.attributeReferral(p.referralCode, "buyer_rate");
+
+    const o1 = await membershipService.createOrder({
+      userId: "buyer_rate",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_rule_a",
+    });
+    await membershipService.markOrderPaid(o1.id);
+    const [c1] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, o1.id));
+    expect(c1.rateBps).toBe(4000);
+
+    // 修改 monthly 佣金规则为 30%
+    await partnerService.createCommissionRule({
+      partnerType: "lifetime",
+      planId: "monthly",
+      rateBps: 3000,
+    });
+
+    const o2 = await membershipService.createOrder({
+      userId: "buyer_rate",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_rule_b",
+    });
+    await membershipService.markOrderPaid(o2.id);
+    const [c2] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, o2.id));
+    expect(c2.rateBps).toBe(3000);
+    expect(c2.commissionFen).toBe(Math.floor((1800 * 3000) / 10000));
+
+    // 旧佣金快照不变
+    const [c1After] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, o1.id));
+    expect(c1After.rateBps).toBe(4000);
+    expect(c1After.commissionFen).toBe(Math.floor((1800 * 4000) / 10000));
+  });
+
+  it("no active rule -> no commission (safe fail)", async () => {
+    await seedUser("partner_norule");
+    await seedUser("buyer_norule");
+    const p = await partnerService.becomePartner("partner_norule");
+    await partnerService.attributeReferral(p.referralCode, "buyer_norule");
+
+    await db.delete(partnerCommissionRule);
+
+    const o = await membershipService.createOrder({
+      userId: "buyer_norule",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_norule",
+    });
+    await membershipService.markOrderPaid(o.id);
+
+    const records = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, o.id));
+    expect(records).toHaveLength(0);
+  });
+
   it("rejects invalid commission rate", async () => {
     await seedUser("p_invalid");
     await expect(partnerService.becomePartner("p_invalid", -1)).rejects.toThrow();
@@ -209,11 +308,16 @@ describe("PartnerService (partner / referral / commission)", () => {
     await expect(partnerService.becomePartner("p_invalid", 12.5)).rejects.toThrow();
   });
 
-  it("supports 0% and 100% commission rates (integer boundary)", async () => {
+  it("supports 0% and 100% commission rules (integer boundary)", async () => {
     await seedUser("p_zero");
     await seedUser("buyer_zero");
-    const p0 = await partnerService.becomePartner("p_zero", 0);
+    const p0 = await partnerService.becomePartner("p_zero");
     await partnerService.attributeReferral(p0.referralCode, "buyer_zero");
+    await partnerService.createCommissionRule({
+      partnerType: "lifetime",
+      planId: "monthly",
+      rateBps: 0,
+    });
     const o0 = await membershipService.createOrder({
       userId: "buyer_zero",
       planId: "monthly",
@@ -231,12 +335,17 @@ describe("PartnerService (partner / referral / commission)", () => {
 
     await seedUser("p_full");
     await seedUser("buyer_full");
-    const pFull = await partnerService.becomePartner("p_full", 10000);
+    const pFull = await partnerService.becomePartner("p_full");
     await partnerService.attributeReferral(pFull.referralCode, "buyer_full");
+    await partnerService.createCommissionRule({
+      partnerType: "lifetime",
+      planId: "lifetime",
+      rateBps: 10000,
+    });
     const oFull = await membershipService.createOrder({
       userId: "buyer_full",
-      planId: "monthly",
-      amountFen: 1800,
+      planId: "lifetime",
+      amountFen: 19900,
       provider: "mock",
       providerOrderId: "mock_rate100",
     });
@@ -246,7 +355,7 @@ describe("PartnerService (partner / referral / commission)", () => {
       .from(commissionRecord)
       .where(eq(commissionRecord.orderId, oFull.id));
     expect(cFull.rateBps).toBe(10000);
-    expect(cFull.commissionFen).toBe(1800);
+    expect(cFull.commissionFen).toBe(19900);
   });
 
   it("suspend keeps history and stops new commissions", async () => {
