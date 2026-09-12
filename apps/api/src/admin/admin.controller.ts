@@ -11,6 +11,7 @@ import {
 } from "@nestjs/common";
 
 import { AuthGuard, Permissions } from "../guards/auth.guard";
+import { MembershipService } from "../membership/membership.service";
 import { AdminService } from "./admin.service";
 import {
   CreateCourseDto,
@@ -23,7 +24,10 @@ import { CreateCoursePackDto, SetAccessLevelDto, UpdateCoursePackDto } from "./d
 @Controller("admin")
 @UseGuards(AuthGuard)
 export class AdminController {
-  constructor(private readonly adminService: AdminService) {}
+  constructor(
+    private readonly adminService: AdminService,
+    private readonly membershipService: MembershipService,
+  ) {}
 
   @Get("overview")
   @Permissions("admin:access")
@@ -154,5 +158,27 @@ export class AdminController {
   @Permissions("admin:access")
   async deleteStatement(@Param("statementId") statementId: string) {
     return await this.adminService.deleteStatement(statementId);
+  }
+
+  /** 管理员查看订单列表 */
+  @Get("orders")
+  @Permissions("admin:access")
+  async listOrders(@Query("limit") limit?: string) {
+    const l = Math.min(Math.max(Number(limit) || 50, 1), 200);
+    return await this.membershipService.listOrders(l);
+  }
+
+  /** 管理员查看单个订单 */
+  @Get("orders/:id")
+  @Permissions("admin:access")
+  async getOrder(@Param("id") id: string) {
+    return await this.membershipService.findOrder(id);
+  }
+
+  /** 管理员赠送会员 (不产生 order/payment) */
+  @Post("memberships/grant")
+  @Permissions("admin:access")
+  async grantMembership(@Body() dto: { userId: string; planId: string }) {
+    return await this.membershipService.grantMembership(dto.userId, dto.planId);
   }
 }

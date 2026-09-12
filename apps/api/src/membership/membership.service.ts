@@ -1,6 +1,6 @@
 import { BadRequestException, Inject, Injectable, Logger, NotFoundException } from "@nestjs/common";
 import { Cron } from "@nestjs/schedule";
-import { and, eq, isNull, lt } from "drizzle-orm";
+import { and, desc, eq, isNull, lt } from "drizzle-orm";
 
 import { coinTransactions, membership, membershipPeriod, orders, plans } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
@@ -22,6 +22,49 @@ export class MembershipService {
     return await db.query.plans.findFirst({
       where: eq(plans.id, planId),
     });
+  }
+
+  /**
+   * 管理员赠送会员 (plan 驱动, 不产生 order/payment/membership_period)。
+   * 与普通购买 (/membership/orders) 严格区分: 这是 grant, 不是 buy。
+   */
+  async grantMembership(userId: string, planId: string) {
+    const plan = await this.getPlan(planId);
+    if (!plan) {
+      throw new BadRequestException(`Invalid planId: ${planId}`);
+    }
+    if (!plan.isActive) {
+      throw new BadRequestException(`Plan ${planId} is not available`);
+    }
+
+    const now = new Date();
+    const membershipEntity = await this.findMembership(userId);
+    const startAt =
+      membershipEntity?.end_date && membershipEntity.end_date > now
+        ? membershipEntity.end_date
+        : now;
+    const endAt =
+      plan.durationDays == null
+        ? null
+        : new Date(startAt.getTime() + plan.durationDays * 24 * 60 * 60 * 1000);
+
+    if (!membershipEntity) {
+      await this.db.insert(membership).values({
+        userId,
+        start_date: now,
+        end_date: endAt,
+        isActive: true,
+        status: "active",
+        planId,
+      });
+    } else {
+      await this.db
+        .update(membership)
+        .set({ end_date: endAt, status: "active", planId, isActive: true, updatedAt: new Date() })
+        .where(eq(membership.userId, userId));
+    }
+
+    return { userId, planId, startDate: startAt, endDate: endAt };
   }
 
   async upsert(startDate: Date, buyMembershipDto: BuyMembershipDto) {
@@ -355,6 +398,13 @@ export class MembershipService {
   async findOrder(orderId: string) {
     const [order] = await this.db.select().from(orders).where(eq(orders.id, orderId));
     return order;
+  }
+
+  async listOrders(limit = 50) {
+    return await this.db.query.orders.findMany({
+      orderBy: desc(orders.createdAt),
+      limit,
+    });
   }
 
   async findOrderByProviderOrderId(providerOrderId: string) {

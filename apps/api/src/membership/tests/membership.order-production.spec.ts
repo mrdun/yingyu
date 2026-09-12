@@ -128,4 +128,20 @@ describe("MembershipService order production (lifetime / amount / idempotency)",
       else process.env.NODE_ENV = original;
     }
   });
+
+  it("admin grant grants lifetime without creating an order", async () => {
+    const result = await service.grantMembership("u1", "lifetime");
+    expect(result.endDate).toBeNull();
+
+    const [m] = await db.select().from(membership).where(eq(membership.userId, "u1"));
+    expect(m.planId).toBe("lifetime");
+    expect(m.end_date).toBeNull();
+
+    const allOrders = await db.select().from(orders).where(eq(orders.userId, "u1"));
+    expect(allOrders).toHaveLength(0);
+  });
+
+  it("admin grant rejects an invalid plan", async () => {
+    await expect(service.grantMembership("u1", "nonexistent")).rejects.toThrow();
+  });
 });
