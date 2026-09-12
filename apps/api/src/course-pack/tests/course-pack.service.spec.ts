@@ -3,7 +3,7 @@ import { Test } from "@nestjs/testing";
 import { createId } from "@paralleldrive/cuid2";
 import { eq } from "drizzle-orm";
 
-import { userStatementProgress } from "@earthworm/schema";
+import { statement, userStatementProgress } from "@earthworm/schema";
 import type { DbType } from "../../global/providers/db.provider";
 import { insertCourse, insertCoursePack, insertStatement } from "../../../test/fixture/db";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
@@ -265,6 +265,50 @@ describe("CoursePackService", () => {
       await expect(coursePackService.completeStatement("u1", c.id, s.id)).rejects.toThrow(
         ForbiddenException,
       );
+    });
+
+    it("handles concurrent completion of the same statement (idempotent)", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      const c = await insertCourse(db, pack.id);
+      const s = await insertStatement(db, c.id, 0);
+
+      await Promise.all([
+        coursePackService.completeStatement("u1", c.id, s.id),
+        coursePackService.completeStatement("u1", c.id, s.id),
+        coursePackService.completeStatement("u1", c.id, s.id),
+      ]);
+
+      const rows = await db.query.userStatementProgress.findMany({
+        where: eq(userStatementProgress.userId, "u1"),
+      });
+      expect(rows).toHaveLength(1);
+    });
+
+    it("recomputes progress when a statement is added to a completed course", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      const c = await insertCourse(db, pack.id);
+      const s1 = await insertStatement(db, c.id, 0);
+
+      await coursePackService.completeStatement("u1", c.id, s1.id);
+      expect((await coursePackService.getProgress("u1", pack.id)).completedCourses).toBe(1);
+
+      await insertStatement(db, c.id, 1);
+
+      expect((await coursePackService.getProgress("u1", pack.id)).completedCourses).toBe(0);
+    });
+
+    it("keeps completion when a statement text is edited (statementId unchanged)", async () => {
+      const pack = await insertCoursePack(db, { accessLevel: "free", isFree: true });
+      const c = await insertCourse(db, pack.id);
+      const s = await insertStatement(db, c.id, 0);
+
+      await coursePackService.completeStatement("u1", c.id, s.id);
+
+      // 模拟仅修改文本 (statement id 不变)
+      await db.update(statement).set({ chinese: "新的文本" }).where(eq(statement.id, s.id));
+
+      const progress = await coursePackService.getProgress("u1", pack.id);
+      expect(progress.completedCourses).toBe(1);
     });
   });
 });

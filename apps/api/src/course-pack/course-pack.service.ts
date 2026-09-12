@@ -1,5 +1,5 @@
 import { ForbiddenException, Inject, Injectable, NotFoundException } from "@nestjs/common";
-import { and, asc, eq, ilike, inArray, or } from "drizzle-orm";
+import { and, asc, eq, ilike, or, sql } from "drizzle-orm";
 
 import {
   course,
@@ -217,37 +217,34 @@ export class CoursePackService {
   async getProgress(userId: string, coursePackId: string) {
     await this.assertCanStudy(userId, coursePackId);
 
-    const courses = await this.db.query.course.findMany({
-      where: eq(course.coursePackId, coursePackId),
-      with: {
-        statements: { columns: { id: true } },
-      },
-    });
+    // 单次聚合查询: 每个 course 的 total / completed statements (避免 N+1)
+    const rows = await this.db
+      .select({
+        courseId: course.id,
+        totalStatements: sql<number>`count(${statement.id})`,
+        completedStatements: sql<number>`count(${userStatementProgress.id})`,
+      })
+      .from(course)
+      .leftJoin(statement, eq(statement.courseId, course.id))
+      .leftJoin(
+        userStatementProgress,
+        and(
+          eq(userStatementProgress.statementId, statement.id),
+          eq(userStatementProgress.userId, userId),
+        ),
+      )
+      .where(eq(course.coursePackId, coursePackId))
+      .groupBy(course.id);
 
-    const totalCourses = courses.length;
-    if (totalCourses === 0) {
-      return { totalCourses: 0, completedCourses: 0, progress: 0 };
-    }
-
-    const statementIds = courses.flatMap((c) => c.statements.map((s) => s.id));
-    const completed = statementIds.length
-      ? await this.db.query.userStatementProgress.findMany({
-          where: and(
-            eq(userStatementProgress.userId, userId),
-            inArray(userStatementProgress.statementId, statementIds),
-          ),
-        })
-      : [];
-    const completedIds = new Set(completed.map((r) => r.statementId));
-
+    const totalCourses = rows.length;
     let completedCourses = 0;
-    for (const c of courses) {
-      const total = c.statements.length;
-      const done = c.statements.filter((s) => completedIds.has(s.id)).length;
-      if (total > 0 && done === total) completedCourses++;
+    for (const r of rows) {
+      const total = Number(r.totalStatements);
+      const done = Number(r.completedStatements);
+      if (total > 0 && done >= total) completedCourses++;
     }
 
-    const progress = Math.round((completedCourses / totalCourses) * 100);
+    const progress = totalCourses === 0 ? 0 : Math.round((completedCourses / totalCourses) * 100);
 
     const last = await this.db.query.userCourseProgress.findFirst({
       where: and(

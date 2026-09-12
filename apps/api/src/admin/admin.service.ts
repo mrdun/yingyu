@@ -11,6 +11,7 @@ import {
   userCourseProgress,
   userLearningActivities,
   userLearnRecord,
+  userStatementProgress,
 } from "@earthworm/schema";
 import { isLegalCourseStatusTransition } from "../course-pack/course-status";
 import { DB, DbType } from "../global/providers/db.provider";
@@ -454,6 +455,12 @@ export class AdminService {
         .from(statement)
         .where(eq(statement.courseId, courseId));
       if (statementIds.length > 0) {
+        await tx.delete(userStatementProgress).where(
+          inArray(
+            userStatementProgress.statementId,
+            statementIds.map((s) => s.id),
+          ),
+        );
         await tx.delete(reviewRecords).where(
           inArray(
             reviewRecords.statementId,
@@ -553,6 +560,9 @@ export class AdminService {
     this.assertContentDeletable(pack);
 
     await this.db.transaction(async (tx) => {
+      await tx
+        .delete(userStatementProgress)
+        .where(eq(userStatementProgress.statementId, statementId));
       await tx.delete(reviewRecords).where(eq(reviewRecords.statementId, statementId));
       await tx.delete(statement).where(eq(statement.id, statementId));
     });

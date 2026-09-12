@@ -2,7 +2,8 @@ import { BadRequestException } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
 import { eq } from "drizzle-orm";
 
-import { course, coursePack, statement } from "@earthworm/schema";
+import { course, coursePack, statement, userStatementProgress } from "@earthworm/schema";
+import { insertStatement } from "../../../test/fixture/db";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
@@ -130,6 +131,44 @@ describe("AdminService course content (course / statement CRUD)", () => {
       const result = await service.deleteStatement(s.id);
       expect(result.deleted).toBe(true);
       expect(await db.query.statement.findFirst({ where: eq(statement.id, s.id) })).toBeUndefined();
+    });
+  });
+
+  describe("delete safety (statement progress cleanup)", () => {
+    it("deleting a statement removes its user_statement_progress (no orphan)", async () => {
+      const pack = await insertPack(db, "draft");
+      const c = await insertCourseEntity(db, pack.id);
+      const s = await insertStatement(db, c.id, 0);
+      await db
+        .insert(userStatementProgress)
+        .values({ userId: "u1", statementId: s.id })
+        .returning();
+
+      await service.deleteStatement(s.id);
+
+      expect(
+        await db.query.userStatementProgress.findFirst({
+          where: eq(userStatementProgress.statementId, s.id),
+        }),
+      ).toBeUndefined();
+    });
+
+    it("deleting a course removes all its statements' progress (no orphan)", async () => {
+      const pack = await insertPack(db, "draft");
+      const c = await insertCourseEntity(db, pack.id);
+      const s = await insertStatement(db, c.id, 0);
+      await db
+        .insert(userStatementProgress)
+        .values({ userId: "u1", statementId: s.id })
+        .returning();
+
+      await service.deleteCourse(c.id);
+
+      expect(
+        await db.query.userStatementProgress.findFirst({
+          where: eq(userStatementProgress.statementId, s.id),
+        }),
+      ).toBeUndefined();
     });
   });
 
