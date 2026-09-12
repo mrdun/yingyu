@@ -3,6 +3,7 @@ import { createId } from "@paralleldrive/cuid2";
 import { and, desc, eq, gte, inArray, isNull, lte, or } from "drizzle-orm";
 
 import {
+  businessSettings,
   commissionRecord,
   membership,
   partner,
@@ -11,6 +12,11 @@ import {
   user,
 } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
+import {
+  canTransitionCommissionStatus,
+  COMMISSION_STATUS,
+  CommissionStatusValue,
+} from "./commission-status";
 import { canTransitionPartnerStatus, PARTNER_STATUS } from "./partner-status";
 
 /** 隐私脱敏: 只保留首字符, 不返回完整用户名 */
@@ -26,6 +32,15 @@ function maskUsername(username: string | null): string {
 @Injectable()
 export class PartnerService {
   constructor(@Inject(DB) private db: DbType) {}
+
+  /** 退款保护期 (小时): 读取 business_settings, 缺省 24 */
+  private async getRefundWindowHours(db: DbType = this.db): Promise<number> {
+    const row = await db.query.businessSettings.findFirst({
+      where: eq(businessSettings.key, "refund_window_hours"),
+    });
+    const parsed = row ? Number(row.value) : NaN;
+    return Number.isFinite(parsed) && parsed >= 0 ? parsed : 24;
+  }
 
   async findByUserId(userId: string) {
     return await this.db.query.partner.findFirst({ where: eq(partner.userId, userId) });
@@ -273,7 +288,9 @@ export class PartnerService {
       totalCommissionFen: records
         .filter((r) => r.status !== "reversed")
         .reduce((s, r) => s + r.commissionFen, 0),
+      holdingFen: sum(COMMISSION_STATUS.HOLDING),
       pendingFen: sum("pending"),
+      payableFen: sum(COMMISSION_STATUS.PAYABLE),
       paidFen: sum("paid"),
       reversedFen: sum("reversed"),
       count: records.length,
@@ -309,6 +326,9 @@ export class PartnerService {
     if (!rule) return null;
 
     const commissionFen = Math.floor((order.amountFen * rule.rateBps) / 10000);
+    // 退款保护期: holding, hold_until = now + refund_window_hours
+    const windowHours = await this.getRefundWindowHours(db);
+    const holdUntil = new Date(Date.now() + windowHours * 60 * 60 * 1000);
     const [rec] = await db
       .insert(commissionRecord)
       .values({
@@ -319,7 +339,8 @@ export class PartnerService {
         rate: rule.rateBps / 10000,
         rateBps: rule.rateBps,
         commissionFen,
-        status: "pending",
+        status: COMMISSION_STATUS.HOLDING,
+        holdUntil,
       })
       .onConflictDoNothing({ target: commissionRecord.orderId })
       .returning();
@@ -327,18 +348,94 @@ export class PartnerService {
     return rec ?? null;
   }
 
-  /** 退款时把该订单佣金 pending/paid → reversed (在 refundOrder 事务内调用) */
+  /** 退款时把该订单佣金 holding/pending/payable/paid → reversed (在 refundOrder 事务内调用) */
   async reverseCommissionForOrder(orderId: string, tx?: DbType) {
     const db = tx ?? this.db;
     await db
       .update(commissionRecord)
-      .set({ status: "reversed", updatedAt: new Date() })
+      .set({ status: COMMISSION_STATUS.REVERSED, updatedAt: new Date() })
       .where(
         and(
           eq(commissionRecord.orderId, orderId),
-          inArray(commissionRecord.status, ["pending", "paid"]),
+          inArray(commissionRecord.status, [
+            COMMISSION_STATUS.HOLDING,
+            COMMISSION_STATUS.PENDING,
+            COMMISSION_STATUS.PAYABLE,
+            COMMISSION_STATUS.PAID,
+          ]),
         ),
       );
+  }
+
+  /** 退款保护期结束: holding -> pending (幂等; 支持手动/未来 Cron) */
+  async confirmExpiredCommission(now: Date = new Date()) {
+    const rows = await this.db
+      .update(commissionRecord)
+      .set({ status: COMMISSION_STATUS.PENDING, updatedAt: new Date() })
+      .where(
+        and(
+          eq(commissionRecord.status, COMMISSION_STATUS.HOLDING),
+          lte(commissionRecord.holdUntil, now),
+        ),
+      )
+      .returning({ id: commissionRecord.id });
+    return { confirmed: rows.length };
+  }
+
+  /** 满足结算条件: pending -> payable (幂等) */
+  async markCommissionPayable(commissionId: string) {
+    return await this.transitionCommission(
+      commissionId,
+      COMMISSION_STATUS.PENDING,
+      COMMISSION_STATUS.PAYABLE,
+    );
+  }
+
+  /** 管理员结算: payable -> paid (幂等) */
+  async settleCommission(commissionId: string) {
+    const [updated] = await this.db
+      .update(commissionRecord)
+      .set({ status: COMMISSION_STATUS.PAID, paidAt: new Date(), updatedAt: new Date() })
+      .where(
+        and(
+          eq(commissionRecord.id, commissionId),
+          eq(commissionRecord.status, COMMISSION_STATUS.PAYABLE),
+        ),
+      )
+      .returning();
+    if (updated) return updated;
+    // 已是 paid 幂等返回; 其他状态非法
+    const existing = await this.db.query.commissionRecord.findFirst({
+      where: eq(commissionRecord.id, commissionId),
+    });
+    if (!existing) throw new NotFoundException(`Commission ${commissionId} not found`);
+    if (existing.status === COMMISSION_STATUS.PAID) return existing;
+    throw new BadRequestException(
+      `Illegal commission status transition: ${existing.status} -> ${COMMISSION_STATUS.PAID}`,
+    );
+  }
+
+  private async transitionCommission(
+    commissionId: string,
+    from: CommissionStatusValue,
+    to: CommissionStatusValue,
+  ) {
+    const existing = await this.db.query.commissionRecord.findFirst({
+      where: eq(commissionRecord.id, commissionId),
+    });
+    if (!existing) throw new NotFoundException(`Commission ${commissionId} not found`);
+    if (existing.status === to) return existing; // 幂等
+    if (existing.status !== from || !canTransitionCommissionStatus(from, to)) {
+      throw new BadRequestException(
+        `Illegal commission status transition: ${existing.status} -> ${to}`,
+      );
+    }
+    const [updated] = await this.db
+      .update(commissionRecord)
+      .set({ status: to, updatedAt: new Date() })
+      .where(eq(commissionRecord.id, commissionId))
+      .returning();
+    return updated;
   }
 
   /** 查找当前生效的佣金规则: 优先特定 plan, 其次全局 (plan_id=null) */

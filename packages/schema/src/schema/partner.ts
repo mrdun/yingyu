@@ -83,7 +83,9 @@ export const commissionRecord = pgTable(
     rate: real("rate").notNull(), // 旧字段, 保留兼容
     rateBps: integer("rate_bps").notNull().default(4000),
     commissionFen: integer("commission_fen").notNull(),
-    status: text("status").notNull().default("pending"), // pending / paid / reversed
+    // holding (退款保护期) / pending / payable / paid / reversed
+    status: text("status").notNull().default("holding"),
+    holdUntil: timestamp("hold_until"), // 退款保护期结束时间 (holding -> pending)
     createdAt: timestamp("created_at").notNull().defaultNow(),
     paidAt: timestamp("paid_at"),
     updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
@@ -102,7 +104,7 @@ export const commissionRecord = pgTable(
     ),
     chkStatus: check(
       "commission_records_status_check",
-      sql`${t.status} IN ('pending', 'paid', 'reversed')`,
+      sql`${t.status} IN ('holding', 'pending', 'payable', 'paid', 'reversed')`,
     ),
   }),
 );

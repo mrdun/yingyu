@@ -4,6 +4,7 @@ import { ScheduleModule } from "@nestjs/schedule";
 
 import { AdminModule } from "../admin/admin.module";
 import { AiContentModule } from "../ai-content/ai-content.module";
+import { BusinessSettingsModule } from "../business-settings/business-settings.module";
 import { CoinsModule } from "../coins/coins.module";
 import { CourseHistoryModule } from "../course-history/course-history.module";
 import { CoursePackModule } from "../course-pack/course-pack.module";
@@ -14,8 +15,8 @@ import { LearningPathModule } from "../learning-path/learning-path.module";
 import { LogtoModule } from "../logto/logto.module";
 import { MasteredElementModule } from "../mastered-element/mastered-element.module";
 import { MembershipModule } from "../membership/membership.module";
-import { PictureWordModule } from "../picture-word/picture-word.module";
 import { PartnerModule } from "../partner/partner.module";
+import { PictureWordModule } from "../picture-word/picture-word.module";
 import { PlansModule } from "../plans/plans.module";
 import { RankModule } from "../rank/rank.module";
 import { ReviewModule } from "../review/review.module";
@@ -49,6 +50,7 @@ import { UserModule } from "../user/user.module";
     CoinsModule,
     StatsModule,
     AdminModule,
+    BusinessSettingsModule,
     RedisModule.forRootAsync({
       useFactory: () => ({
         type: "single",

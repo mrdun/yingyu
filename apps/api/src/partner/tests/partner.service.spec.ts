@@ -12,6 +12,7 @@ import {
   user,
 } from "@earthworm/schema";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
+import { BusinessSettingsService } from "../../business-settings/business-settings.service";
 import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
 import { MembershipService } from "../../membership/membership.service";
@@ -43,6 +44,7 @@ describe("PartnerService (partner / referral / commission)", () => {
   let db: DbType;
   let partnerService: PartnerService;
   let membershipService: MembershipService;
+  let businessSettings: BusinessSettingsService;
 
   beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -50,12 +52,14 @@ describe("PartnerService (partner / referral / commission)", () => {
       providers: [
         PartnerService,
         MembershipService,
+        BusinessSettingsService,
         { provide: PAYMENT_PROVIDER, useClass: MockPaymentProvider },
       ],
     }).compile();
     db = module.get<DbType>(DB);
     partnerService = module.get<PartnerService>(PartnerService);
     membershipService = module.get<MembershipService>(MembershipService);
+    businessSettings = module.get<BusinessSettingsService>(BusinessSettingsService);
   });
 
   beforeEach(async () => {
@@ -67,6 +71,7 @@ describe("PartnerService (partner / referral / commission)", () => {
     await db.delete(plans);
     await seedPlans(db);
     await seedDefaultCommissionRule(db);
+    await businessSettings.set("refund_window_hours", "24");
   });
 
   afterAll(async () => {
@@ -175,7 +180,8 @@ describe("PartnerService (partner / referral / commission)", () => {
     expect(records).toHaveLength(1);
     expect(records[0].commissionFen).toBe(Math.floor((1800 * 4000) / 10000)); // 720
     expect(records[0].rateBps).toBe(4000);
-    expect(records[0].status).toBe("pending");
+    expect(records[0].status).toBe("holding");
+    expect(records[0].holdUntil).toBeInstanceOf(Date);
   });
 
   it("keeps historical commission rate snapshot after partner rate changes", async () => {
@@ -224,6 +230,86 @@ describe("PartnerService (partner / referral / commission)", () => {
       .from(commissionRecord)
       .where(eq(commissionRecord.orderId, order.id));
     expect(rec.status).toBe("reversed");
+  });
+
+  async function seedHoldingCommission(idSuffix: string) {
+    await seedUser(`partner_${idSuffix}`);
+    await seedUser(`buyer_${idSuffix}`);
+    const p = await partnerService.becomePartner(`partner_${idSuffix}`);
+    await partnerService.attributeReferral(p.referralCode, `buyer_${idSuffix}`);
+    const order = await membershipService.createOrder({
+      userId: `buyer_${idSuffix}`,
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: `mock_${idSuffix}`,
+    });
+    await membershipService.markOrderPaid(order.id);
+    const [rec] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, order.id));
+    return { order, rec };
+  }
+
+  it("confirmExpiredCommission moves holding -> pending only after the refund window", async () => {
+    const { order, rec } = await seedHoldingCommission("holdconfirm");
+    expect(rec.status).toBe("holding");
+
+    // 窗口内不确认
+    await partnerService.confirmExpiredCommission(new Date());
+    let [after] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, order.id));
+    expect(after.status).toBe("holding");
+
+    // 超过 hold_until
+    await db
+      .update(commissionRecord)
+      .set({ holdUntil: new Date(Date.now() - 1000) })
+      .where(eq(commissionRecord.orderId, order.id));
+    const res = await partnerService.confirmExpiredCommission(new Date());
+    expect(res.confirmed).toBe(1);
+    [after] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, order.id));
+    expect(after.status).toBe("pending");
+  });
+
+  it("refund within the refund window reverses the holding commission", async () => {
+    const { order, rec } = await seedHoldingCommission("holdrefund");
+    expect(rec.status).toBe("holding");
+
+    await membershipService.refundOrder(order.id);
+    const [after] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, order.id));
+    expect(after.status).toBe("reversed");
+  });
+
+  it("supports holding -> pending -> payable -> paid and rejects illegal transitions", async () => {
+    const { order, rec } = await seedHoldingCommission("flow");
+
+    // holding -> paid / holding -> payable 均非法
+    await expect(partnerService.settleCommission(rec.id)).rejects.toThrow(BadRequestException);
+    await expect(partnerService.markCommissionPayable(rec.id)).rejects.toThrow(BadRequestException);
+
+    await db
+      .update(commissionRecord)
+      .set({ holdUntil: new Date(Date.now() - 1000) })
+      .where(eq(commissionRecord.orderId, order.id));
+    await partnerService.confirmExpiredCommission(new Date());
+
+    const payable = await partnerService.markCommissionPayable(rec.id);
+    expect(payable.status).toBe("payable");
+    const paid = await partnerService.settleCommission(rec.id);
+    expect(paid.status).toBe("paid");
+
+    // paid -> payable 非法
+    await expect(partnerService.markCommissionPayable(rec.id)).rejects.toThrow(BadRequestException);
   });
 
   it("changing rule rate affects new orders but not historical commission", async () => {

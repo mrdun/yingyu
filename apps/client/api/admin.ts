@@ -96,7 +96,9 @@ export interface DashboardPartnerStats {
   referrals: { total: number; today: number; month: number };
   conversion: { paidUsers: number; conversionRate: number };
   commission: {
+    holdingFen: number;
     pendingFen: number;
+    payableFen: number;
     paidFen: number;
     reversedFen: number;
     totalFen: number;

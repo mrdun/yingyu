@@ -55,12 +55,17 @@ const orderCards = computed(() => {
 
 const partnerCards = computed(() => {
   const p = partnerStats.value;
+  const c = p?.commission;
   return [
     { label: "活跃推广者", value: p?.activePartners ?? 0 },
     { label: "累计推广", value: p?.referrals.total ?? 0 },
     { label: "付费转化", value: p?.conversion.paidUsers ?? 0 },
     { label: "转化率", value: `${p?.conversion.conversionRate ?? 0}%` },
-    { label: "待结算佣金", value: yuan(p?.commission.pendingFen ?? 0) },
+    { label: "保护期佣金", value: yuan(c?.holdingFen ?? 0) },
+    { label: "待确认佣金", value: yuan(c?.pendingFen ?? 0) },
+    { label: "待结算佣金", value: yuan(c?.payableFen ?? 0) },
+    { label: "已结算佣金", value: yuan(c?.paidFen ?? 0) },
+    { label: "已撤销佣金", value: yuan(c?.reversedFen ?? 0) },
   ];
 });
 

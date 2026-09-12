@@ -215,7 +215,9 @@ export class DashboardService {
       referralsToday,
       referralsMonth,
       paidReferralUsers,
+      commissionHolding,
       commissionPending,
+      commissionPayable,
       commissionPaid,
       commissionReversed,
       commissionTotal,
@@ -231,7 +233,15 @@ export class DashboardService {
       this.db
         .select({ total: sql<number>`coalesce(sum(${commissionRecord.commissionFen}), 0)` })
         .from(commissionRecord)
+        .where(eq(commissionRecord.status, "holding")),
+      this.db
+        .select({ total: sql<number>`coalesce(sum(${commissionRecord.commissionFen}), 0)` })
+        .from(commissionRecord)
         .where(eq(commissionRecord.status, "pending")),
+      this.db
+        .select({ total: sql<number>`coalesce(sum(${commissionRecord.commissionFen}), 0)` })
+        .from(commissionRecord)
+        .where(eq(commissionRecord.status, "payable")),
       this.db
         .select({ total: sql<number>`coalesce(sum(${commissionRecord.commissionFen}), 0)` })
         .from(commissionRecord)
@@ -260,7 +270,9 @@ export class DashboardService {
         conversionRate: totalRefs ? Math.round((paidUsers / totalRefs) * 100) : 0,
       },
       commission: {
+        holdingFen: Number(commissionHolding[0]?.total ?? 0),
         pendingFen: Number(commissionPending[0]?.total ?? 0),
+        payableFen: Number(commissionPayable[0]?.total ?? 0),
         paidFen: Number(commissionPaid[0]?.total ?? 0),
         reversedFen: Number(commissionReversed[0]?.total ?? 0),
         totalFen: Number(commissionTotal[0]?.total ?? 0),
