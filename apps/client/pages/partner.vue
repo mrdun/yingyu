@@ -1,0 +1,158 @@
+<template>
+  <div class="mx-auto max-w-3xl p-6">
+    <h1 class="mb-2 text-2xl font-bold dark:text-white">推广中心</h1>
+    <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">
+      推荐新会员购买后, 你将获得实际支付金额的 40% 佣金。
+    </p>
+
+    <div
+      v-if="needLogin"
+      class="text-center"
+    >
+      <p class="mb-4 text-gray-500">登录后即可查看推广信息</p>
+      <button
+        class="btn border-none bg-purple-500 text-white shadow-md hover:bg-purple-600"
+        @click="signIn()"
+      >
+        登录
+      </button>
+    </div>
+
+    <template v-else-if="!loading">
+      <!-- active Partner: 推广链接 -->
+      <div
+        v-if="partner?.status === 'active'"
+        class="mb-6 rounded-2xl border p-5 shadow-soft"
+      >
+        <div class="font-semibold text-purple-600 dark:text-purple-300">✨ 推广中</div>
+        <p class="mt-2 text-sm text-gray-500">你的推广链接</p>
+        <div class="mt-2 flex items-center gap-2">
+          <input
+            :value="referralLink"
+            readonly
+            class="input input-sm input-bordered w-full rounded-lg bg-gray-50"
+          />
+          <button
+            class="btn btn-sm border-none bg-purple-500 text-white hover:bg-purple-600"
+            @click="copyLink"
+          >
+            {{ copied ? "已复制" : "复制" }}
+          </button>
+        </div>
+        <p class="mt-2 text-xs text-gray-400">推广码: {{ partner.referralCode }}</p>
+      </div>
+
+      <!-- pending -->
+      <div
+        v-else-if="partner?.status === 'pending'"
+        class="mb-6 rounded-2xl border p-5 text-center shadow-soft"
+      >
+        <div class="font-semibold text-amber-600 dark:text-amber-400">⏳ 审核中</div>
+        <p class="mt-2 text-sm text-gray-500">你的 Partner 申请正在审核, 请稍候。</p>
+      </div>
+
+      <!-- suspended / rejected -->
+      <div
+        v-else-if="partner?.status === 'suspended' || partner?.status === 'rejected'"
+        class="mb-6 rounded-2xl border p-5 text-center shadow-soft"
+      >
+        <div class="font-semibold text-red-600 dark:text-red-400">
+          {{ partner.status === "suspended" ? "已暂停" : "已拒绝" }}
+        </div>
+        <p class="mt-2 text-sm text-gray-500">当前状态无法进行推广, 如有疑问请联系管理员。</p>
+      </div>
+
+      <!-- 尚未成为 Partner -->
+      <div
+        v-else
+        class="mb-6 rounded-2xl border p-5 text-center shadow-soft"
+      >
+        <template v-if="isLifetime">
+          <p class="text-gray-600 dark:text-gray-300">你是终身会员, 可以申请成为推广者</p>
+          <button
+            class="btn mt-4 border-none bg-purple-500 text-white shadow-md hover:bg-purple-600"
+            :disabled="applying"
+            @click="apply"
+          >
+            {{ applying ? "申请中…" : "申请成为 Partner" }}
+          </button>
+        </template>
+        <template v-else>
+          <p class="text-gray-600 dark:text-gray-300">成为推广者需要先开通终身会员</p>
+          <button
+            class="btn mt-4 border-none bg-purple-500 text-white shadow-md hover:bg-purple-600"
+            @click="navigateTo('/membership')"
+          >
+            查看会员方案
+          </button>
+        </template>
+      </div>
+    </template>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { useRuntimeConfig } from "#app";
+import { computed, onMounted, ref } from "vue";
+
+import type { PartnerMe } from "~/api/partner";
+import { fetchMembershipStatus } from "~/api/membership";
+import { applyPartner, fetchPartnerMe } from "~/api/partner";
+import { signIn } from "~/services/auth";
+
+const partner = ref<PartnerMe | null>(null);
+const membership = ref<Awaited<ReturnType<typeof fetchMembershipStatus>> | null>(null);
+const loading = ref(true);
+const needLogin = ref(false);
+const applying = ref(false);
+const copied = ref(false);
+
+const runtimeConfig = useRuntimeConfig();
+const origin = typeof window !== "undefined" ? window.location.origin : "";
+const referralLink = computed(() =>
+  partner.value?.referralCode ? `${origin}/?ref=${partner.value.referralCode}` : "",
+);
+const isLifetime = computed(() => membership.value?.planId === "lifetime");
+
+async function load() {
+  loading.value = true;
+  needLogin.value = false;
+  try {
+    const [me, status] = await Promise.all([fetchPartnerMe(), fetchMembershipStatus()]);
+    partner.value = me;
+    membership.value = status;
+  } catch (e: any) {
+    if (e?.status === 401 || e?.statusCode === 401) {
+      needLogin.value = true;
+    }
+  } finally {
+    loading.value = false;
+  }
+}
+
+async function apply() {
+  applying.value = true;
+  try {
+    partner.value = await applyPartner();
+  } catch (e: any) {
+    if (e?.status === 401 || e?.statusCode === 401) {
+      needLogin.value = true;
+    }
+  } finally {
+    applying.value = false;
+  }
+}
+
+async function copyLink() {
+  if (!referralLink.value) return;
+  try {
+    await navigator.clipboard.writeText(referralLink.value);
+    copied.value = true;
+    setTimeout(() => (copied.value = false), 1500);
+  } catch {
+    // 剪贴板不可用时静默忽略
+  }
+}
+
+onMounted(load);
+</script>

@@ -32,6 +32,7 @@ import { Toaster } from "vue-sonner";
 import { fetchCurrentUser } from "~/api/user";
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { isAuthenticated } from "~/services/auth";
+import { attributePendingReferral } from "~/services/referral";
 import { useUserStore } from "./store/user";
 
 const { initDarkMode, darkMode } = useDarkMode();
@@ -42,6 +43,7 @@ const { status } = useAsyncData("initApplication", async () => {
   if (isAuthenticated()) {
     const user = await fetchCurrentUser();
     userStore.initUser(user);
+    attributePendingReferral();
   }
 });
 </script>

@@ -12,6 +12,7 @@ export interface MembershipPlanInfo {
 export interface MembershipStatus {
   isMember: boolean;
   type: string | null;
+  planId: string | null;
   startDate: string | null;
   endDate: string | null;
 }
@@ -42,6 +43,7 @@ export async function fetchMembershipStatus() {
   return await http<{
     isMember: boolean;
     type: string | null;
+    planId: string | null;
     startDate: string | null;
     endDate: string | null;
   }>("/membership/status", { method: "get" });

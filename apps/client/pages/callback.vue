@@ -7,6 +7,7 @@ import { toast } from "vue-sonner";
 
 import { fetchCurrentUser } from "~/api/user";
 import { getSignInCallback } from "~/services/auth";
+import { attributePendingReferral } from "~/services/referral";
 import { useUserStore } from "~/store/user";
 
 const userStore = useUserStore();
@@ -37,6 +38,7 @@ const { isLoading, error } = useHandleSignInCallback(async () => {
   stopAutoRedirect();
   const res = await fetchCurrentUser();
   userStore.initUser(res);
+  attributePendingReferral();
 
   // 新用户并且没有用户名需要设置
   if (userStore.isNewUser()) {

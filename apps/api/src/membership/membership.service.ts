@@ -208,6 +208,7 @@ export class MembershipService {
     return {
       isMember,
       type: result?.type ?? null,
+      planId: result?.planId ?? null,
       startDate: isMember ? result.start_date : null,
       endDate: isMember ? result.end_date : null,
     };

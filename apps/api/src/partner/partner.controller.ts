@@ -17,6 +17,7 @@ export class PartnerController {
       isPartner: Boolean(p),
       commissionRateBps: p?.commissionRateBps ?? null,
       status: p?.status ?? null,
+      referralCode: p?.referralCode ?? null,
     };
   }
 

@@ -32,6 +32,7 @@ const menuItems = [
   { label: "掌握列表", to: "/mastered-elements", icon: "✅" },
   { label: "学习档案", to: "/archive", icon: "🗂️" },
   { label: "会员", to: "/membership", icon: "👑" },
+  { label: "推广中心", to: "/partner", icon: "🤝" },
   { label: "设置", to: "/User/Setting", icon: "⚙️" },
 ];
 

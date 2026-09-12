@@ -96,6 +96,32 @@ describe("PartnerService (partner / referral / commission)", () => {
     expect(self.reason).toBe("self_referral");
   });
 
+  it("suspended partner cannot be attributed", async () => {
+    await seedUser("partner_susp");
+    await seedUser("buyer_susp");
+    const p = await partnerService.becomePartner("partner_susp");
+    await partnerService.suspendPartner(p.id);
+
+    const result = await partnerService.attributeReferral(p.referralCode, "buyer_susp");
+    expect(result.attributed).toBe(false);
+    expect(result.reason).toBe("partner_not_found");
+  });
+
+  it("concurrent attribution produces only one referral", async () => {
+    await seedUser("partner_conc");
+    await seedUser("buyer_conc");
+    const p = await partnerService.becomePartner("partner_conc");
+
+    await Promise.all([
+      partnerService.attributeReferral(p.referralCode, "buyer_conc"),
+      partnerService.attributeReferral(p.referralCode, "buyer_conc"),
+      partnerService.attributeReferral(p.referralCode, "buyer_conc"),
+    ]);
+
+    const refs = await db.select().from(referral).where(eq(referral.referredUserId, "buyer_conc"));
+    expect(refs).toHaveLength(1);
+  });
+
   it("generates integer commission (floor) and does not duplicate", async () => {
     await seedUser("partner");
     await seedUser("buyer");
