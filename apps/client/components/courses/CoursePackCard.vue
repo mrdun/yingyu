@@ -13,9 +13,9 @@
       />
       <span
         class="absolute right-2 top-2 rounded-full px-2 py-0.5 text-xs font-medium text-white shadow"
-        :class="coursePack.isFree ? 'bg-green-500' : 'bg-purple-500'"
+        :class="isFree ? 'bg-green-500' : 'bg-purple-500'"
       >
-        {{ coursePack.isFree ? "免费" : "会员" }}
+        {{ isFree ? "免费" : "会员专享" }}
       </span>
     </figure>
     <div class="card-body">
@@ -32,6 +32,8 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
+
 interface Props {
   coursePack: {
     id: string;
@@ -39,10 +41,16 @@ interface Props {
     description: string;
     cover: string;
     isFree: boolean;
+    accessLevel?: "free" | "membership";
   };
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const isFree = computed(() => {
+  if (props.coursePack.accessLevel) return props.coursePack.accessLevel === "free";
+  return props.coursePack.isFree;
+});
 
 defineEmits<{
   (e: "cardClick", coursePack: any): void;

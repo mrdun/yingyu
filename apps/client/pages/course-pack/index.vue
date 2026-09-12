@@ -1,6 +1,10 @@
 <template>
   <div class="flex w-full flex-col">
-    <h2 class="mb-6 text-center text-3xl font-semibold tracking-tight text-zinc-900 dark:text-white">课程广场</h2>
+    <h2
+      class="mb-6 text-center text-3xl font-semibold tracking-tight text-zinc-900 dark:text-white"
+    >
+      课程广场
+    </h2>
 
     <!-- 搜索 + 筛选 -->
     <div class="mb-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
@@ -43,6 +47,7 @@
                 description: coursePack.description,
                 cover: coursePack.cover,
                 isFree: coursePack.isFree,
+                accessLevel: coursePack.accessLevel,
               }"
               @cardClick="handleGoToCoursePack"
             ></CoursePackCard>
@@ -54,6 +59,7 @@
 </template>
 
 <script setup lang="ts">
+import { navigateTo } from "#app";
 import { onBeforeUnmount, ref, watch } from "vue";
 
 import type { CoursePack } from "~/types";
@@ -115,12 +121,12 @@ async function applySearch() {
 }
 
 function handleGoToCoursePack(coursePack: CoursePack) {
-  if (coursePack.isFree) {
+  // 后端返回的 accessible 是最终权限依据; 前端只负责展示与跳转
+  if (coursePack.accessible) {
     gotoCourseList(coursePack.id);
   } else {
-    // 看看是不是会员 不是的话 直接弹出消息告知 需要是会员
-    // TODO 还没有检测是不是会员的功能函数
-    console.log("需要是会员");
+    // 会员课程但无权限 → 进入会员页
+    navigateTo("/membership");
   }
 }
 </script>

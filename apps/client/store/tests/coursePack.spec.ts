@@ -3,11 +3,13 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import type { Course, CoursePack } from "~/types";
 import { fetchCourseHistory } from "~/api/course-history";
-import { fetchCoursePack } from "~/api/course-pack";
+import { fetchCoursePack, fetchCoursePackProgress } from "~/api/course-pack";
+import { isAuthenticated } from "~/services/auth";
 import { useCoursePackStore } from "../coursePack";
 
 vi.mock("~/api/course-pack");
 vi.mock("~/api/course-history");
+vi.mock("~/services/auth");
 
 describe("course pack store", () => {
   beforeEach(() => {
@@ -91,5 +93,27 @@ describe("course pack store", () => {
 
     expect(coursePackStore.currentCoursePack?.courses[0].completionCount).toBe(5);
     expect(coursePackStore.currentCoursePack?.courses[1].completionCount).toBe(0);
+  });
+
+  it("loads course pack progress for an authenticated user", async () => {
+    vi.mocked(isAuthenticated).mockReturnValue(true);
+    vi.mocked(fetchCoursePackProgress).mockResolvedValue({
+      totalCourses: 10,
+      completedCourses: 3,
+      progress: 30,
+      lastCourseId: "course-1",
+      lastStatementIndex: 2,
+    });
+
+    const coursePackStore = useCoursePackStore();
+    await coursePackStore.setupCoursePackProgress("coursePackId");
+
+    expect(coursePackStore.currentProgress).toEqual({
+      totalCourses: 10,
+      completedCourses: 3,
+      progress: 30,
+      lastCourseId: "course-1",
+      lastStatementIndex: 2,
+    });
   });
 });

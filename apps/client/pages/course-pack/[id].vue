@@ -8,8 +8,51 @@
       <h2 class="mb-4 text-center text-3xl dark:border-gray-600">
         {{ coursePackStore.currentCoursePack?.title }}
       </h2>
+
+      <!-- 学习进度 + 继续学习 -->
+      <div
+        v-if="isAuthenticated && coursePackStore.currentProgress"
+        class="mb-6 flex flex-col items-center gap-3"
+      >
+        <div class="flex w-full max-w-md items-center gap-3">
+          <progress
+            class="progress progress-primary w-full"
+            :value="coursePackStore.currentProgress.progress"
+            max="100"
+          ></progress>
+          <span class="whitespace-nowrap text-sm text-zinc-600 dark:text-zinc-300">
+            {{ coursePackStore.currentProgress.completedCourses }} /
+            {{ coursePackStore.currentProgress.totalCourses }} 课 （{{
+              coursePackStore.currentProgress.progress
+            }}%）
+          </span>
+        </div>
+        <button
+          v-if="canContinueLearning"
+          class="rounded-full bg-brand-600 px-6 py-2 text-sm font-medium text-white shadow hover:bg-brand-500"
+          @click="continueLearning"
+        >
+          继续学习
+        </button>
+      </div>
+
+      <!-- 会员课程无权限: 展示 CTA -->
+      <div
+        v-if="coursePackStore.currentCoursePack?.requiresMembership"
+        class="flex flex-col items-center gap-4 py-12"
+      >
+        <p class="text-lg text-zinc-600 dark:text-zinc-300">这是会员专享课程</p>
+        <button
+          class="rounded-full bg-brand-600 px-8 py-3 text-base font-semibold text-white shadow hover:bg-brand-500"
+          @click="navigateTo('/membership')"
+        >
+          开通会员后学习
+        </button>
+      </div>
+
       <div class="h-full scrollbar-hide">
         <div
+          v-if="!coursePackStore.currentCoursePack?.requiresMembership"
           class="grid h-[79vh] grid-cols-1 justify-start gap-8 overflow-y-auto overflow-x-hidden pb-96 pl-0 pr-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
         >
           <template
@@ -67,6 +110,11 @@ const ratingMap = computed(() => {
   return map;
 });
 
+const canContinueLearning = computed(() => {
+  const progress = coursePackStore.currentProgress;
+  return Boolean(progress && progress.lastCourseId && progress.progress < 100);
+});
+
 function badgeClass(grade: string) {
   switch (grade) {
     case "SSS":
@@ -90,6 +138,7 @@ async function setup() {
   isLoading.value = true;
   await coursePackStore.setupCoursePack(coursePackId);
   if (isAuthenticated()) {
+    await coursePackStore.setupCoursePackProgress(coursePackId);
     try {
       ratings.value = await fetchCourseRatings(coursePackId);
     } catch (e) {
@@ -102,6 +151,13 @@ async function setup() {
 function handleChangeCourse(courseId: string) {
   updateActiveCourseMap(coursePackId, courseId);
   navigateTo(`/game/${coursePackId}/${courseId}`);
+}
+
+function continueLearning() {
+  const progress = coursePackStore.currentProgress;
+  if (progress?.lastCourseId) {
+    handleChangeCourse(progress.lastCourseId);
+  }
 }
 </script>
 

@@ -1,13 +1,15 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
 
-import type { CoursePack, CoursePacksItem } from "~/types";
+import type { CoursePack, CoursePackProgress, CoursePacksItem } from "~/types";
 import { fetchCourseHistory } from "~/api/course-history";
-import { fetchCoursePack, fetchCoursePacks } from "~/api/course-pack";
+import { fetchCoursePack, fetchCoursePackProgress, fetchCoursePacks } from "~/api/course-pack";
+import { isAuthenticated } from "~/services/auth";
 
 export const useCoursePackStore = defineStore("course-pack", () => {
   const coursePacks = ref<CoursePacksItem[]>([]);
   const currentCoursePack = ref<CoursePack>();
+  const currentProgress = ref<CoursePackProgress>();
 
   async function setupCoursePacks() {
     const res = await fetchCoursePacks();
@@ -19,6 +21,18 @@ export const useCoursePackStore = defineStore("course-pack", () => {
 
     const res = await fetchCoursePack(coursePackId);
     currentCoursePack.value = res;
+  }
+
+  async function setupCoursePackProgress(coursePackId: string) {
+    if (!isAuthenticated()) {
+      currentProgress.value = undefined;
+      return;
+    }
+    try {
+      currentProgress.value = await fetchCoursePackProgress(coursePackId);
+    } catch {
+      currentProgress.value = undefined;
+    }
   }
 
   async function updateCoursesCompleteCount(coursePackId: string) {
@@ -39,8 +53,10 @@ export const useCoursePackStore = defineStore("course-pack", () => {
   return {
     setupCoursePack,
     setupCoursePacks,
+    setupCoursePackProgress,
     updateCoursesCompleteCount,
     currentCoursePack,
+    currentProgress,
     coursePacks,
   };
 });

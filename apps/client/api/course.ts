@@ -40,6 +40,20 @@ export async function fetchCompleteCourse(coursePackId: string, courseId: string
   );
 }
 
+export interface StatementCompleteResponse {
+  statementId: string;
+  completed: boolean;
+}
+
+/** 完成单个 Statement (新学习闭环): 写入 user_statement_progress + 更新学习位置 */
+export async function fetchCompleteStatement(courseId: string, statementId: string) {
+  const http = getHttp();
+  return (await http<StatementCompleteResponse>(
+    `/courses/${courseId}/statements/${statementId}/complete`,
+    { method: "post" },
+  )) as StatementCompleteResponse;
+}
+
 export interface RateCourseResponse {
   scoreRate: number;
   grade: string;

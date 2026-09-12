@@ -1,6 +1,7 @@
 import { ref } from "vue";
 import { toast } from "vue-sonner";
 
+import { fetchCompleteStatement } from "~/api/course";
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { isAuthenticated } from "~/services/auth";
@@ -33,6 +34,15 @@ export function useMastered() {
     const undoMasteredElements = await masteredElements.addElement({
       english: courseStore.currentStatement?.english!,
     });
+
+    // 记录 Statement 完成 (新学习闭环 → user_statement_progress), 失败不影响掌握列表
+    const courseId = courseStore.currentCourse?.id;
+    const statementId = courseStore.currentStatement?.id;
+    if (courseId && statementId) {
+      fetchCompleteStatement(courseId, statementId).catch(() => {
+        // 网络失败不阻断学习流程; 后端幂等, 后续重试安全
+      });
+    }
 
     handleMasteredToast(undoMasteredElements);
     addLoading.value = false;
