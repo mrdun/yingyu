@@ -1,8 +1,17 @@
+import { createHash } from "node:crypto";
+
 import { BadRequestException, Inject, Injectable, Logger, NotFoundException } from "@nestjs/common";
 import { Cron } from "@nestjs/schedule";
-import { and, desc, eq, isNull, lt } from "drizzle-orm";
+import { and, desc, eq, gte, isNull, lt, lte } from "drizzle-orm";
 
-import { coinTransactions, membership, membershipPeriod, orders, plans } from "@earthworm/schema";
+import {
+  coinTransactions,
+  membership,
+  membershipPeriod,
+  orders,
+  paymentEvent,
+  plans,
+} from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { PartnerService } from "../partner/partner.service";
 import { PAYMENT_PROVIDER, PaymentProvider } from "../payment/payment-provider.interface";
@@ -412,10 +421,28 @@ export class MembershipService {
     return order;
   }
 
-  async listOrders(limit = 50) {
+  async listOrders(
+    params: {
+      limit?: number;
+      status?: string;
+      provider?: string;
+      userId?: string;
+      from?: Date;
+      to?: Date;
+    } = {},
+  ) {
+    const conditions = [];
+    if (params.status) conditions.push(eq(orders.status, params.status));
+    if (params.provider) conditions.push(eq(orders.provider, params.provider));
+    if (params.userId) conditions.push(eq(orders.userId, params.userId));
+    if (params.from) conditions.push(gte(orders.createdAt, params.from));
+    if (params.to) conditions.push(lte(orders.createdAt, params.to));
+    const where = conditions.length ? and(...conditions) : undefined;
+
     return await this.db.query.orders.findMany({
+      where,
       orderBy: desc(orders.createdAt),
-      limit,
+      limit: params.limit ?? 50,
     });
   }
 
@@ -425,6 +452,37 @@ export class MembershipService {
       .from(orders)
       .where(eq(orders.providerOrderId, providerOrderId));
     return order;
+  }
+
+  /** 记录支付事件 (幂等, 同 order+eventType+payloadHash 只记录一次) */
+  async recordPaymentEvent(input: {
+    orderId: string;
+    provider: string;
+    eventType: string;
+    payload: string;
+  }) {
+    const payloadHash = createHash("sha256").update(input.payload).digest("hex");
+    const [inserted] = await this.db
+      .insert(paymentEvent)
+      .values({
+        orderId: input.orderId,
+        provider: input.provider,
+        eventType: input.eventType,
+        payloadHash,
+      })
+      .onConflictDoNothing({
+        target: [paymentEvent.orderId, paymentEvent.eventType, paymentEvent.payloadHash],
+      })
+      .returning({ id: paymentEvent.id });
+    return inserted ? { isNew: true, id: inserted.id } : { isNew: false };
+  }
+
+  /** 标记支付事件已处理 */
+  async markPaymentEventProcessed(eventId: string) {
+    await this.db
+      .update(paymentEvent)
+      .set({ processedAt: new Date() })
+      .where(eq(paymentEvent.id, eventId));
   }
 
   /**
@@ -444,8 +502,13 @@ export class MembershipService {
     await this.db.transaction(async (tx) => {
       // 行锁: 并发下只有一个事务能读到 pending 并推进到 paid
       const [order] = await tx.select().from(orders).where(eq(orders.id, orderId)).for("update");
-      // 幂等: 只有 pending 可转 paid; 已 paid/refunded/cancelled 直接返回
-      if (!order || order.status !== OrderStatus.PENDING) return;
+      // 幂等: pending/processing 可转 paid; 已 paid/refunded/cancelled/expired 直接返回
+      if (
+        !order ||
+        (order.status !== OrderStatus.PENDING && order.status !== OrderStatus.PROCESSING)
+      ) {
+        return;
+      }
 
       await tx
         .update(orders)
@@ -468,6 +531,38 @@ export class MembershipService {
       // 支付成功后生成 Partner 佣金 (若该用户被归因)
       await this.partnerService.generateCommissionForOrder(order, tx);
     });
+  }
+
+  /** 标记订单处理中 (callback 已收到, 正在校验) */
+  async markOrderProcessing(orderId: string) {
+    const order = await this.findOrder(orderId);
+    if (!order || order.status !== OrderStatus.PENDING) return;
+    await this.db
+      .update(orders)
+      .set({ status: OrderStatus.PROCESSING, updatedAt: new Date() })
+      .where(and(eq(orders.id, orderId), eq(orders.status, OrderStatus.PENDING)));
+  }
+
+  /** 过期检测: pending -> expired (幂等, 不删除订单) */
+  async expireOrder(orderId: string) {
+    const order = await this.findOrder(orderId);
+    if (!order || order.status !== OrderStatus.PENDING) return;
+    const [updated] = await this.db
+      .update(orders)
+      .set({ status: OrderStatus.EXPIRED, updatedAt: new Date() })
+      .where(and(eq(orders.id, orderId), eq(orders.status, OrderStatus.PENDING)))
+      .returning();
+    return updated;
+  }
+
+  /** 批量过期超过阈值的 pending 订单 (供定时任务/查询时调用) */
+  async expirePendingOrders(before: Date) {
+    const result = await this.db
+      .update(orders)
+      .set({ status: OrderStatus.EXPIRED, updatedAt: new Date() })
+      .where(and(eq(orders.status, OrderStatus.PENDING), lt(orders.createdAt, before)))
+      .returning({ id: orders.id });
+    return { expired: result.length };
   }
 
   /**

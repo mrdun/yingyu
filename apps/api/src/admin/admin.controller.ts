@@ -163,9 +163,23 @@ export class AdminController {
   /** 管理员查看订单列表 */
   @Get("orders")
   @Permissions("admin:access")
-  async listOrders(@Query("limit") limit?: string) {
+  async listOrders(
+    @Query("limit") limit?: string,
+    @Query("status") status?: string,
+    @Query("provider") provider?: string,
+    @Query("userId") userId?: string,
+    @Query("from") from?: string,
+    @Query("to") to?: string,
+  ) {
     const l = Math.min(Math.max(Number(limit) || 50, 1), 200);
-    return await this.membershipService.listOrders(l);
+    return await this.membershipService.listOrders({
+      limit: l,
+      status,
+      provider,
+      userId,
+      from: from ? new Date(from) : undefined,
+      to: to ? new Date(to) : undefined,
+    });
   }
 
   /** 管理员查看单个订单 */

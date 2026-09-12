@@ -54,7 +54,19 @@ export class PaymentCallbackController {
       return { ok: true, status: payment.status };
     }
 
+    // 记录事件 (幂等, 同 payload 只处理一次)
+    const event = await this.membershipService.recordPaymentEvent({
+      orderId: order.id,
+      provider: this.provider.name,
+      eventType: "callback",
+      payload: raw,
+    });
+    if (!event.isNew) {
+      return { ok: true, status: "paid", duplicated: true };
+    }
+
     await this.membershipService.markOrderPaid(order.id);
+    await this.membershipService.markPaymentEventProcessed(event.id);
     return { ok: true, status: "paid" };
   }
 }

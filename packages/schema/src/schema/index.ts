@@ -18,3 +18,4 @@ export * from "./user";
 export * from "./plan";
 export * from "./membershipPeriod";
 export * from "./partner";
+export * from "./paymentEvent";

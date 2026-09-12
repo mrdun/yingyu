@@ -158,4 +158,66 @@ describe("MembershipService order production (lifetime / amount / idempotency)",
   it("admin grant rejects an invalid plan", async () => {
     await expect(service.grantMembership("u1", "nonexistent")).rejects.toThrow();
   });
+
+  it("expires a pending order (idempotent)", async () => {
+    const order = await service.createOrder({
+      userId: "u1",
+      planId: "monthly",
+      provider: "mock",
+      providerOrderId: "mock_exp",
+    });
+
+    await service.expireOrder(order.id);
+    expect((await service.findOrder(order.id)).status).toBe("expired");
+
+    // 幂等: 再次过期不报错
+    await service.expireOrder(order.id);
+    expect((await service.findOrder(order.id)).status).toBe("expired");
+  });
+
+  it("markOrderPaid accepts pending or processing, not expired", async () => {
+    const p1 = await service.createOrder({
+      userId: "u1",
+      planId: "monthly",
+      provider: "mock",
+      providerOrderId: "mock_proc1",
+    });
+    await service.markOrderProcessing(p1.id);
+    expect((await service.findOrder(p1.id)).status).toBe("processing");
+    await service.markOrderPaid(p1.id);
+    expect((await service.findOrder(p1.id)).status).toBe("paid");
+
+    const p2 = await service.createOrder({
+      userId: "u1",
+      planId: "monthly",
+      provider: "mock",
+      providerOrderId: "mock_exp2",
+    });
+    await service.expireOrder(p2.id);
+    await service.markOrderPaid(p2.id);
+    expect((await service.findOrder(p2.id)).status).toBe("expired");
+  });
+
+  it("records a payment event idempotently by payload hash", async () => {
+    const order = await service.createOrder({
+      userId: "u1",
+      planId: "monthly",
+      provider: "wechat",
+      providerOrderId: "wechat_ev",
+    });
+    const first = await service.recordPaymentEvent({
+      orderId: order.id,
+      provider: "wechat",
+      eventType: "callback",
+      payload: '{"out_trade_no":"wechat_ev"}',
+    });
+    const second = await service.recordPaymentEvent({
+      orderId: order.id,
+      provider: "wechat",
+      eventType: "callback",
+      payload: '{"out_trade_no":"wechat_ev"}',
+    });
+    expect(first.isNew).toBe(true);
+    expect(second.isNew).toBe(false);
+  });
 });
