@@ -1,4 +1,4 @@
-import { IsIn, IsOptional, IsString } from "class-validator";
+import { IsIn, IsInt, IsOptional, IsString, Min } from "class-validator";
 
 export class CreateCoursePackDto {
   @IsString()
@@ -29,6 +29,12 @@ export class UpdateCoursePackDto {
   @IsOptional()
   @IsString()
   cover?: string;
+
+  // 排序: 与课程/语句的 order 同一套校验 (非负整数), 详情页「编辑课程包」可写
+  @IsOptional()
+  @IsInt()
+  @Min(0)
+  order?: number;
 
   @IsOptional()
   @IsIn(["free", "membership"])

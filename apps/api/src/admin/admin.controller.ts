@@ -91,6 +91,16 @@ export class AdminController {
     });
   }
 
+  /**
+   * 单个课程包详情 (只读, 不限状态): draft/review/archived 都要能读。
+   * 只返回包字段 + courses (含 statementCount), 不返回语句正文。
+   */
+  @Get("course-packs/:id")
+  @Permissions("admin:access")
+  async coursePackDetail(@Param("id") id: string) {
+    return await this.adminService.getCoursePackDetail(id);
+  }
+
   @Post("course-packs")
   @Permissions("admin:access")
   async createCoursePack(@Body() dto: CreateCoursePackDto) {
@@ -167,6 +177,19 @@ export class AdminController {
   @Permissions("admin:access")
   async createStatement(@Param("courseId") courseId: string, @Body() dto: CreateStatementDto) {
     return await this.adminService.createStatement(courseId, dto);
+  }
+
+  /** 某课程的语句列表 (只读, 按 order 升序, 服务端分页) */
+  @Get("courses/:courseId/statements")
+  @Permissions("admin:access")
+  async courseStatements(
+    @Param("courseId") courseId: string,
+    @Query("page") page?: string,
+    @Query("pageSize") pageSize?: string,
+  ) {
+    const p = Math.max(Number(page) || 1, 1);
+    const ps = Math.min(Math.max(Number(pageSize) || 20, 1), 100);
+    return await this.adminService.listCourseStatements(courseId, { page: p, pageSize: ps });
   }
 
   @Patch("statements/:statementId")

@@ -79,18 +79,16 @@ describe("DashboardService", () => {
       },
       { id: "o4", userId: "u2", planId: "monthly", amountFen: 1800, status: "pending" },
     ]);
-    await db
-      .insert(membership)
-      .values([
-        {
-          userId: "u1",
-          start_date: new Date(),
-          end_date: null,
-          status: "active",
-          planId: "lifetime",
-          type: "regular",
-        },
-      ]);
+    await db.insert(membership).values([
+      {
+        userId: "u1",
+        start_date: new Date(),
+        end_date: null,
+        status: "active",
+        planId: "lifetime",
+        type: "regular",
+      },
+    ]);
     await db
       .insert(partner)
       .values([{ id: "pt1", userId: "p1", status: "active", referralCode: "rc1" }]);

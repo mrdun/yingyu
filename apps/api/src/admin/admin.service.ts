@@ -1,5 +1,5 @@
 import { BadRequestException, Inject, Injectable, Logger, NotFoundException } from "@nestjs/common";
-import { and, count, eq, inArray, sql } from "drizzle-orm";
+import { and, asc, count, eq, inArray, sql } from "drizzle-orm";
 
 import {
   course,
@@ -57,6 +57,56 @@ export interface AdminCoursePackRow {
 
 export interface AdminCoursePackList {
   coursePacks: AdminCoursePackRow[];
+  total: number;
+  page: number;
+  pageSize: number;
+}
+
+/** GET /admin/course-packs/:id 里的课程行 (不含语句正文, 只给数量) */
+export interface AdminCoursePackCourseRow {
+  id: string;
+  title: string;
+  description: string;
+  video: string;
+  order: number;
+  statementCount: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
+/** GET /admin/course-packs/:id —— 管理端课程包详情 (不限状态) */
+export interface AdminCoursePackDetail {
+  id: string;
+  title: string;
+  description: string;
+  cover: string | null;
+  status: string;
+  source: string;
+  accessLevel: string;
+  isFree: boolean;
+  order: number;
+  shareLevel: string;
+  createdAt: string;
+  updatedAt: string;
+  courses: AdminCoursePackCourseRow[];
+}
+
+/** GET /admin/courses/:courseId/statements 单项 */
+export interface AdminStatementRow {
+  id: string;
+  chinese: string;
+  english: string;
+  soundmark: string;
+  sourceType: string;
+  audioUrl: string | null;
+  startMs: number | null;
+  endMs: number | null;
+  order: number;
+}
+
+/** GET /admin/courses/:courseId/statements 响应 */
+export interface AdminStatementList {
+  items: AdminStatementRow[];
   total: number;
   page: number;
   pageSize: number;
@@ -319,7 +369,9 @@ export class AdminService {
       .leftJoin(statement, eq(statement.courseId, course.id))
       .where(where)
       .groupBy(coursePack.id)
-      .orderBy(coursePack.order)
+      // 新建包一律 order=0 (createCoursePack / AI 建课), 单键排序在 order 重复时顺序不确定,
+      // 配合 limit/offset 会翻页重复或漏行 —— id 兜底保证全序 (与 listCourseStatements 同一写法)
+      .orderBy(asc(coursePack.order), asc(coursePack.id))
       .limit(pageSize)
       .offset(offset);
 
@@ -337,6 +389,143 @@ export class AdminService {
         statementCount: Number(r.statementCount) || 0,
         createdAt: r.createdAt ? new Date(r.createdAt).toISOString() : "",
         updatedAt: r.updatedAt ? new Date(r.updatedAt).toISOString() : "",
+      })),
+      total: Number(totalRow?.total ?? 0),
+      page,
+      pageSize,
+    };
+  }
+
+  /**
+   * 管理端课程包详情 (只读, **不限状态**)。
+   *
+   * 为什么必须由管理端提供: 公开接口 (course-pack.service) 对 membership 包直接抛
+   * ForbiddenException, 且只暴露 published 内容 —— 管理端连自己刚建的草稿都读不回来,
+   * 课程中心就无法编辑草稿/待审/已归档的包。
+   *
+   * 返回: 包字段 + courses (按 order 升序, 含每课 statementCount)。
+   * 刻意**不**在这一层返回语句正文: 一个包可能有上千条语句, 详情接口会被响应体撑爆;
+   * 语句按课程分页读 (见 listCourseStatements)。
+   */
+  async getCoursePackDetail(id: string): Promise<AdminCoursePackDetail> {
+    const [pack] = await this.db
+      .select({
+        id: coursePack.id,
+        title: coursePack.title,
+        description: coursePack.description,
+        cover: coursePack.cover,
+        status: coursePack.status,
+        source: coursePack.source,
+        accessLevel: coursePack.accessLevel,
+        isFree: coursePack.isFree,
+        order: coursePack.order,
+        shareLevel: coursePack.shareLevel,
+        createdAt: coursePack.createdAt,
+        updatedAt: coursePack.updatedAt,
+      })
+      .from(coursePack)
+      .where(eq(coursePack.id, id));
+
+    if (!pack) {
+      // 与其它管理端查询一致: 不存在给 404, 不返回空对象 (前端会把空对象当成"存在但无数据")
+      throw new NotFoundException(`CoursePack with ID ${id} not found`);
+    }
+
+    const courseRows = await this.db
+      .select({
+        id: course.id,
+        title: course.title,
+        description: course.description,
+        video: course.video,
+        order: course.order,
+        createdAt: course.createdAt,
+        updatedAt: course.updatedAt,
+        statementCount: count(statement.id),
+      })
+      .from(course)
+      .leftJoin(statement, eq(statement.courseId, course.id))
+      .where(eq(course.coursePackId, id))
+      // course.id 是主键, group by 后可选同表其它列 (与 listCoursePacks 同一写法)
+      .groupBy(course.id)
+      .orderBy(asc(course.order), asc(course.id));
+
+    return {
+      id: pack.id,
+      title: pack.title,
+      description: pack.description ?? "",
+      cover: pack.cover ?? null,
+      status: pack.status,
+      source: pack.source,
+      accessLevel: pack.accessLevel,
+      isFree: Boolean(pack.isFree),
+      order: Number(pack.order) || 0,
+      shareLevel: pack.shareLevel ?? "private",
+      createdAt: pack.createdAt ? new Date(pack.createdAt).toISOString() : "",
+      updatedAt: pack.updatedAt ? new Date(pack.updatedAt).toISOString() : "",
+      courses: courseRows.map((row) => ({
+        id: row.id,
+        title: row.title,
+        description: row.description ?? "",
+        video: row.video ?? "",
+        order: Number(row.order) || 0,
+        statementCount: Number(row.statementCount) || 0,
+        createdAt: row.createdAt ? new Date(row.createdAt).toISOString() : "",
+        updatedAt: row.updatedAt ? new Date(row.updatedAt).toISOString() : "",
+      })),
+    };
+  }
+
+  /**
+   * 某课程下的语句列表 (只读, 按 order 升序, 服务端分页)。
+   *
+   * 管理端原本没有任何语句读取方法: 公开接口只暴露 published + public 的内容,
+   * 草稿里的语句在后台无法核对, 语句编辑器因此没法工作。
+   */
+  async listCourseStatements(
+    courseId: string,
+    params: { page: number; pageSize: number },
+  ): Promise<AdminStatementList> {
+    // 课程不存在 → 404 (与单条查询同一语义, 不返回空列表冒充"这门课没有语句")
+    await this.findCourseOrThrow(courseId);
+
+    const { page, pageSize } = params;
+    const offset = (page - 1) * pageSize;
+
+    const rows = await this.db
+      .select({
+        id: statement.id,
+        chinese: statement.chinese,
+        english: statement.english,
+        soundmark: statement.soundmark,
+        sourceType: statement.sourceType,
+        audioUrl: statement.audioUrl,
+        startMs: statement.startMs,
+        endMs: statement.endMs,
+        order: statement.order,
+      })
+      .from(statement)
+      .where(eq(statement.courseId, courseId))
+      // order 允许重复 (手工录入), 同 order 时用 id 兜底保证翻页不重不漏
+      .orderBy(asc(statement.order), asc(statement.id))
+      .limit(pageSize)
+      .offset(offset);
+
+    const [totalRow] = await this.db
+      .select({ total: count() })
+      .from(statement)
+      .where(eq(statement.courseId, courseId));
+
+    return {
+      items: rows.map((row) => ({
+        id: row.id,
+        chinese: row.chinese,
+        english: row.english,
+        soundmark: row.soundmark,
+        sourceType: row.sourceType ?? "text",
+        audioUrl: row.audioUrl ?? null,
+        startMs: row.startMs === null ? null : Number(row.startMs),
+        endMs: row.endMs === null ? null : Number(row.endMs),
+        order: Number(row.order) || 0,
       })),
       total: Number(totalRow?.total ?? 0),
       page,
@@ -377,6 +566,7 @@ export class AdminService {
       title?: string;
       description?: string;
       cover?: string;
+      order?: number;
       accessLevel?: "free" | "membership";
     },
   ) {
@@ -386,6 +576,7 @@ export class AdminService {
     if (dto.title !== undefined) set.title = dto.title;
     if (dto.description !== undefined) set.description = dto.description;
     if (dto.cover !== undefined) set.cover = dto.cover;
+    if (dto.order !== undefined) set.order = dto.order; // 只在传入时改排序, 不覆盖为 undefined
     if (dto.accessLevel !== undefined) {
       set.accessLevel = dto.accessLevel;
       set.isFree = dto.accessLevel === "free"; // 旧字段兼容同步

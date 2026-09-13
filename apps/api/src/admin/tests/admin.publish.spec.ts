@@ -1,5 +1,6 @@
 import { BadRequestException } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
+import { validate } from "class-validator";
 import { and, eq } from "drizzle-orm";
 
 import { coursePack } from "@earthworm/schema";
@@ -9,6 +10,7 @@ import { DB, DbType } from "../../global/providers/db.provider";
 import { LogtoService } from "../../logto/logto.service";
 import { AdminController } from "../admin.controller";
 import { AdminService } from "../admin.service";
+import { UpdateCoursePackDto } from "../dto/course-pack.dto";
 
 async function insertPack(
   db: DbType,
@@ -143,6 +145,23 @@ describe("AdminService course operations (state machine / CRUD / filters)", () =
       expect(updated.status).toBe("published");
     });
 
+    it("updates order when provided, keeps it when omitted (详情页可编辑排序)", async () => {
+      const pack = await insertPack(db, "draft", { order: 0 });
+
+      const reordered = await service.updateCoursePack(pack.id, { order: 3 });
+      expect(reordered.order).toBe(3);
+      expect(reordered.status).toBe("draft"); // 改排序不影响状态机
+
+      // 不传 order 时不覆盖已有排序 (dto.order !== undefined 才 set)
+      const renamed = await service.updateCoursePack(pack.id, { title: "renamed" });
+      expect(renamed.title).toBe("renamed");
+      expect(renamed.order).toBe(3);
+
+      // order=0 也必须能写入 (0 是合法值, 不能被 falsy 判断吃掉)
+      const zero = await service.updateCoursePack(pack.id, { order: 0 });
+      expect(zero.order).toBe(0);
+    });
+
     it("setAccessLevel flips free <-> membership and syncs is_free", async () => {
       const pack = await insertPack(db, "draft");
       const free = await service.setCoursePackAccessLevel(pack.id, "free");
@@ -152,6 +171,26 @@ describe("AdminService course operations (state machine / CRUD / filters)", () =
       const membership = await service.setCoursePackAccessLevel(pack.id, "membership");
       expect(membership.accessLevel).toBe("membership");
       expect(membership.isFree).toBe(false);
+    });
+  });
+
+  describe("UpdateCoursePackDto (order 字段)", () => {
+    function dto(partial: Record<string, unknown>): UpdateCoursePackDto {
+      return Object.assign(new UpdateCoursePackDto(), partial);
+    }
+
+    it("接受非负整数 order —— 详情页保存排序走的就是这条 PATCH", async () => {
+      expect(await validate(dto({ order: 0 }))).toHaveLength(0);
+      expect(await validate(dto({ order: 7, title: "t" }))).toHaveLength(0);
+      // 不传 order 依旧合法 (@IsOptional): 其它字段单独保存不被排序校验挡住
+      expect(await validate(dto({ title: "t" }))).toHaveLength(0);
+    });
+
+    it("拒绝负数 / 小数 order (与课程、语句同一套 @IsInt @Min(0) 规则)", async () => {
+      for (const bad of [-1, 1.5]) {
+        const errors = await validate(dto({ order: bad }));
+        expect(errors.map((e) => e.property)).toContain("order");
+      }
     });
   });
 

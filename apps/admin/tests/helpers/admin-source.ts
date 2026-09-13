@@ -66,8 +66,16 @@ export const BATCH2_PAGE_FILES = [
   "pages/settings/business.vue",
 ];
 
-/** 当前已交付的全部页面 (14 项断言都跑在这上面) */
-export const PAGE_FILES = [...BATCH1_PAGE_FILES, ...BATCH2_PAGE_FILES];
+/** O-03 批次交付的课程中心 4 个页面 (课程包列表 / 详情 / 语句编辑器 / AI 生成) */
+export const BATCH3_PAGE_FILES = [
+  "pages/courses/index.vue",
+  "pages/courses/[id].vue",
+  "pages/courses/[id]/courses/[courseId].vue",
+  "pages/courses/ai.vue",
+];
+
+/** 当前已交付的全部页面 (公共断言都跑在这上面) */
+export const PAGE_FILES = [...BATCH1_PAGE_FILES, ...BATCH2_PAGE_FILES, ...BATCH3_PAGE_FILES];
 
 export const SERVICE_FILES = [
   "services/admin-api.ts",
@@ -82,6 +90,8 @@ export const SERVICE_FILES = [
   "services/commissions.service.ts",
   "services/commissionRules.service.ts",
   "services/businessSettings.service.ts",
+  "services/courses.service.ts",
+  "services/aiContent.service.ts",
 ];
 
 export function countOccurrences(source: string, needle: string | RegExp): number {

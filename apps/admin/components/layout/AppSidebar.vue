@@ -11,8 +11,9 @@ import { NAV_ITEMS, normalizePath } from "~/utils/nav";
 
 /**
  * 左侧导航。
- * 13 项中已实现 11 项 (O-01 的 4 项 + O-02 的 7 项业务模块), 其余 2 项 (课程中心/学习路线)
- * 为可见但禁用的占位项, 点击提示"后续批次" —— 不用隐藏菜单假装模块不存在。
+ * 13 项中已实现 12 项 (O-01 的 4 项 + O-02 的 7 项业务模块 + O-03 的课程中心),
+ * 仅剩 1 项 (学习路线) 为可见但禁用的占位项, 点击提示"后续批次" ——
+ * 不用隐藏菜单假装模块不存在。
  */
 const props = withDefaults(defineProps<{ open?: boolean }>(), { open: false });
 const emit = defineEmits<{ close: [] }>();
@@ -30,7 +31,10 @@ const adminDetail = computed(() => {
 });
 
 function isActive(item: NavItem): boolean {
-  return item.to !== null && normalizePath(item.to) === activePath.value;
+  if (item.to === null) return false;
+  const base = normalizePath(item.to);
+  // 子路由 (例如 /courses/:id) 也属于该模块, 否则详情页不点亮任何菜单项
+  return activePath.value === base || activePath.value.startsWith(`${base}/`);
 }
 
 function onPlaceholderClick(item: NavItem): void {

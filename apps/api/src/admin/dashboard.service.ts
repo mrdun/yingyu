@@ -167,7 +167,9 @@ export class DashboardService {
       .from(orders)
       .leftJoin(plans, eq(plans.id, orders.planId))
       .where(where)
-      .orderBy(desc(orders.createdAt))
+      // createdAt 在同一事务批量写入时会完全相同, 单键排序在 Postgres 下不是全序,
+      // 配合 limit/offset 会翻页重复或漏行 —— 追加主键 id 兜底 (与 listCoursePacks 同一写法)
+      .orderBy(desc(orders.createdAt), desc(orders.id))
       .limit(limit)
       .offset(offset);
 

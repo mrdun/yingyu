@@ -1,7 +1,7 @@
 /**
  * 左侧导航 (13 项)。
- * O-02 批次后 11 项已实现 (Dashboard/用户/会员方案/会员/订单/支付渠道/Partner/佣金/
- * 佣金规则/业务设置/系统健康), 其余 2 项 (课程中心/学习路线) 仍是「可见但禁用」的占位项,
+ * O-03 批次后 12 项已实现 (Dashboard/用户/课程中心/会员方案/会员/订单/支付渠道/Partner/
+ * 佣金/佣金规则/业务设置/系统健康), 仅剩 1 项 (学习路线) 仍是「可见但禁用」的占位项,
  * 点击提示"后续批次" (见 AppSidebar)。
  * implemented=false 的项没有路由, 因此也不会进入面包屑。
  */
@@ -17,7 +17,7 @@ export interface NavItem {
 export const NAV_ITEMS: NavItem[] = [
   { key: "dashboard", label: "Dashboard", to: "/dashboard", implemented: true },
   { key: "users", label: "用户", to: "/users", implemented: true },
-  { key: "course-center", label: "课程中心", to: null, implemented: false },
+  { key: "course-center", label: "课程中心", to: "/courses", implemented: true },
   { key: "learning-path", label: "学习路线", to: null, implemented: false },
   { key: "plans", label: "会员方案", to: "/plans", implemented: true },
   { key: "members", label: "会员", to: "/memberships", implemented: true },
@@ -44,10 +44,36 @@ export function normalizePath(path: string): string {
 
 export function findNavItemByPath(path: string): NavItem | undefined {
   const normalized = normalizePath(path);
-  return NAV_ITEMS.find((item) => item.to !== null && normalizePath(item.to) === normalized);
+  const exact = NAV_ITEMS.find((item) => item.to !== null && normalizePath(item.to) === normalized);
+  if (exact) return exact;
+
+  // 子路由 (课程中心的 /courses/:id、/courses/:id/courses/:courseId、/courses/ai)
+  // 归属到最长的导航前缀, 否则详情页会变成"没有归属"的裸路径。
+  let matched: NavItem | undefined;
+  let matchedLength = -1;
+  for (const item of NAV_ITEMS) {
+    if (item.to === null) continue;
+    const base = normalizePath(item.to);
+    if (normalized.startsWith(`${base}/`) && base.length > matchedLength) {
+      matched = item;
+      matchedLength = base.length;
+    }
+  }
+  return matched;
 }
 
-/** 面包屑: 首页 / 当前模块 (未命中时退化为路径片段) */
+/** 当前路径相对所属导航项的子路径片段 (命中导航项本身时为空数组) */
+export function findNavSubPath(path: string): string[] {
+  const normalized = normalizePath(path);
+  const item = findNavItemByPath(normalized);
+  if (!item || item.to === null) return [];
+
+  const base = normalizePath(item.to);
+  if (normalized === base) return [];
+  return normalized.slice(base.length).split("/").filter(Boolean);
+}
+
+/** 面包屑: 首页 / 当前模块 / 子路径 (未命中时退化为路径片段) */
 export function buildBreadcrumb(path: string): string[] {
   const normalized = normalizePath(path);
   const item = findNavItemByPath(normalized);
@@ -55,14 +81,20 @@ export function buildBreadcrumb(path: string): string[] {
     const segments = normalized.split("/").filter(Boolean);
     return [HOME_NAV_ITEM.label, ...segments];
   }
-  if (item.key === HOME_NAV_ITEM.key) return [HOME_NAV_ITEM.label];
-  return [HOME_NAV_ITEM.label, item.label];
+  const trail =
+    item.key === HOME_NAV_ITEM.key ? [HOME_NAV_ITEM.label] : [HOME_NAV_ITEM.label, item.label];
+  return [...trail, ...findNavSubPath(normalized)];
 }
 
 export function resolvePageTitle(path: string): string {
-  const item = findNavItemByPath(path);
-  if (item) return item.label;
-  const segments = normalizePath(path).split("/").filter(Boolean);
+  const normalized = normalizePath(path);
+  const item = findNavItemByPath(normalized);
+  if (item) {
+    const sub = findNavSubPath(normalized);
+    const last = sub[sub.length - 1];
+    return last ? `${item.label} · ${last}` : item.label;
+  }
+  const segments = normalized.split("/").filter(Boolean);
   const last = segments[segments.length - 1];
   return last ? last : HOME_NAV_ITEM.label;
 }

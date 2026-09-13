@@ -366,3 +366,142 @@ export interface ServerPage<T> {
   items: T[];
   total: number;
 }
+
+/* ------------------------------------------------------------------------------------------
+ * O-03 批次: 课程中心 (课程包 / 课程 / 语句 / AI 生成)
+ * 字段来源: apps/api/src/admin/admin.service.ts、apps/api/src/ai-content/*、
+ *           packages/schema/src/schema/{coursePack,course,statement}.ts
+ * ------------------------------------------------------------------------------------------ */
+
+/** 课程包状态 (唯一来源: apps/api/src/course-pack/course-status.ts) */
+export type CoursePackStatusValue = "draft" | "review" | "published" | "archived";
+/** 内容来源 (人工创建 / AI 生成; schema 还允许 subtitle/audio/import) */
+export type CoursePackSourceValue = "manual" | "ai";
+/** 访问级别: 免费 / 会员 */
+export type CourseAccessLevelValue = "free" | "membership";
+/** 语句素材类型 */
+export type StatementSourceTypeValue = "text" | "audio" | "video";
+
+/** GET /admin/course-packs 单项 */
+export interface AdminCoursePackRow {
+  id: string;
+  title: string;
+  isFree: boolean;
+  status: string;
+  source: string;
+  accessLevel: string;
+  courseCount: number;
+  statementCount: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
+/**
+ * GET /admin/course-packs 响应。
+ * 注意字段名是 coursePacks (不是 items), 与 orders/commissions 的 items 不同 —— 页面通过
+ * services/courses.service.ts 归一化成 ServerPage。
+ */
+export interface AdminCoursePackList {
+  coursePacks: AdminCoursePackRow[];
+  total: number;
+  page: number;
+  pageSize: number;
+}
+
+/** GET /admin/course-packs/:id 里的课程行 (只含元数据与语句数量, 不含语句正文) */
+export interface AdminCourseRow {
+  id: string;
+  title: string;
+  description: string;
+  video: string;
+  order: number;
+  statementCount: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
+/** GET /admin/course-packs/:id —— 课程包详情 (不限状态) */
+export interface AdminCoursePackDetail {
+  id: string;
+  title: string;
+  description: string;
+  cover: string | null;
+  status: string;
+  source: string;
+  accessLevel: string;
+  isFree: boolean;
+  order: number;
+  shareLevel: string;
+  createdAt: string;
+  updatedAt: string;
+  courses: AdminCourseRow[];
+}
+
+/** GET /admin/courses/:courseId/statements 单项 */
+export interface AdminStatementRow {
+  id: string;
+  chinese: string;
+  english: string;
+  soundmark: string;
+  sourceType: string;
+  audioUrl: string | null;
+  startMs: number | null;
+  endMs: number | null;
+  order: number;
+}
+
+/** GET /admin/courses/:courseId/statements 响应 */
+export interface AdminStatementList {
+  items: AdminStatementRow[];
+  total: number;
+  page: number;
+  pageSize: number;
+}
+
+/**
+ * 课程包可写字段 (POST /admin/course-packs、PATCH /admin/course-packs/:id 的 DTO)。
+ * order 走 PATCH (`@IsOptional @IsInt @Min(0)`), 与课程/语句排序一样是同一条单条 PATCH;
+ * accessLevel 另有独立端点, status 只能走状态机 —— 三者不要混进同一个请求里。
+ */
+export interface AdminCoursePackWritePayload {
+  title?: string;
+  description?: string;
+  cover?: string;
+  /** 排序 (PATCH /admin/course-packs/:id 接受 order: @IsOptional @IsInt @Min(0)) */
+  order?: number;
+  accessLevel?: CourseAccessLevelValue;
+}
+
+/** 课程可写字段 (POST .../courses、PATCH /admin/courses/:courseId) —— order 由后端 DTO 接受 */
+export interface AdminCourseWritePayload {
+  title?: string;
+  description?: string;
+  video?: string;
+  order?: number;
+}
+
+/** 语句可写字段 (POST .../statements、PATCH /admin/statements/:statementId) */
+export interface AdminStatementWritePayload {
+  chinese?: string;
+  english?: string;
+  soundmark?: string;
+  sourceType?: string;
+  audioUrl?: string;
+  startMs?: number;
+  endMs?: number;
+  order?: number;
+}
+
+/** POST /ai-content/split 单项 (只预览, 不落库) */
+export interface AiSplitStatement {
+  chinese: string;
+  english: string;
+  soundmark: string;
+  order: number;
+}
+
+/** POST /ai-content/{course-pack,subtitle,audio} 的返回 (后端事务内已写入 draft + source=ai) */
+export interface AiCoursePackResult {
+  coursePackId: string;
+  courseCount: number;
+}

@@ -1,12 +1,40 @@
 import { Reflector } from "@nestjs/core";
 import { Test } from "@nestjs/testing";
 
+import { coursePack } from "@earthworm/schema";
 import { DB, DbType } from "../../global/providers/db.provider";
 import { LogtoService } from "../../logto/logto.service";
 import { AdminController } from "../admin.controller";
 import { AdminService } from "../admin.service";
 
 const TODAY = new Date("2026-08-29T12:00:00.000Z");
+
+/**
+ * 断言语义: 某个 SQL 表达式 (排序键 / 过滤条件) 是否**引用了**目标列。
+ *
+ * drizzle 的 asc()/desc()/eq()/and() 返回的都是**新建的 SQL 包装对象**, 不是传进去的列对象本身
+ * (所以 asc(coursePack.id) !== coursePack.id)。拿返回值跟列做引用相等 (toBe) 测的是
+ * "两个对象是不是同一个", 而不是"这个表达式用的是哪一列", 因此永远失败。
+ * 这里顺着 SQL 的结构 (queryChunks 数组, 以及 Param 这类 value 包装) 递归找列对象本身:
+ * 引用了 coursePack.id 就命中; 引用的是别的列 (coursePack.order) 或常量则不会命中。
+ *
+ * 只沿 SQL 结构下钻, 不遍历任意属性: Column 上有 table / columns 之类的回指,
+ * 泛化遍历会从 coursePack.order 绕回 coursePack.id, 反而失去区分能力。
+ */
+function referencesColumn(expr: unknown, column: unknown, depth = 0): boolean {
+  if (expr === column) return true;
+  if (expr === null || typeof expr !== "object" || depth > 8) return false;
+  if (Array.isArray(expr)) {
+    return expr.some((chunk) => referencesColumn(chunk, column, depth + 1));
+  }
+  const node = expr as { queryChunks?: unknown; value?: unknown };
+  const chunks = node.queryChunks;
+  if (Array.isArray(chunks)) {
+    return chunks.some((chunk) => referencesColumn(chunk, column, depth + 1));
+  }
+  if ("value" in node) return referencesColumn(node.value, column, depth + 1);
+  return false;
+}
 
 describe("AdminController guards/decorators", () => {
   it("declares the admin controller with admin:access permission on all routes", () => {
@@ -163,6 +191,29 @@ describe("AdminService", () => {
   });
 
   describe("listCoursePacks 分页", () => {
+    it("排序键是确定性的: order 之后追加主键 id (order 大量为 0 时翻页不重不漏)", async () => {
+      const db = makeDb([[], [{ total: "0" }]]) as unknown as Record<string, jest.Mock>;
+      (service as any).db = db;
+
+      await service.listCoursePacks({ page: 2, pageSize: 20 });
+
+      // 新建课程包一律写 order=0 (createCoursePack / AI 建课), 单键排序时 Postgres 不保证
+      // 行的先后; 配合 LIMIT/OFFSET 会让同一行出现在两页, 或者某一行一页都不出现。
+      const sortKeys = db.orderBy.mock.calls[0] as unknown[];
+      expect(sortKeys).toHaveLength(2);
+      // 主键: 第一个键引用 coursePack.order (业务排序的主键), 不能是 id
+      expect(referencesColumn(sortKeys[0], coursePack.order)).toBe(true);
+      expect(referencesColumn(sortKeys[0], coursePack.id)).toBe(false);
+      // 次键: 引用主键列 coursePack.id (不是常量 / 别名 / 别的列), 才能构成全序
+      expect(referencesColumn(sortKeys[1], coursePack.id)).toBe(true);
+      expect(referencesColumn(sortKeys[1], coursePack.order)).toBe(false);
+      expect(sortKeys[0]).not.toBe(sortKeys[1]);
+
+      // 只加排序键: 分页参数语义不变
+      expect(db.limit).toHaveBeenCalledWith(20);
+      expect(db.offset).toHaveBeenCalledWith(20);
+    });
+
     it("returns course packs with counts and pagination meta", async () => {
       const db = makeDb([
         [

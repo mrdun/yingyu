@@ -298,10 +298,10 @@ describe("侧边栏: O-02 的 7 个模块已启用", () => {
     expect(nav).toContain(`to: "${route}"`);
   });
 
-  it("导航里 7 个模块不再带「后续批次」占位 (只剩 2 项占位: 课程中心/学习路线)", () => {
-    expect(countOccurrences(nav, "implemented: false")).toBe(2);
-    expect(countOccurrences(nav, "implemented: true")).toBe(11);
-    const stillPlaceholder = ["课程中心", "学习路线"];
+  it("导航里 7 个模块不再带「后续批次」占位 (O-03 后只剩 1 项占位: 学习路线)", () => {
+    expect(countOccurrences(nav, "implemented: false")).toBe(1);
+    expect(countOccurrences(nav, "implemented: true")).toBe(12);
+    const stillPlaceholder = ["学习路线"];
     for (const label of stillPlaceholder) {
       const line = nav.split(/\r?\n/).find((item) => item.includes(`label: "${label}"`));
       expect(line, `${label} 应保持占位`).toContain("to: null");

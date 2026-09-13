@@ -30,9 +30,9 @@ describe("AiContentService createCoursePack (draft)", () => {
   });
 
   it("creates a draft course pack with source=ai and membership access", async () => {
-    jest.spyOn(service, "split").mockResolvedValue([
-      { chinese: "你好", english: "Hello.", soundmark: "", order: 0 },
-    ]);
+    jest
+      .spyOn(service, "split")
+      .mockResolvedValue([{ chinese: "你好", english: "Hello.", soundmark: "", order: 0 }]);
 
     const result = await service.createCoursePack({ title: "test", text: "Hello." });
 
