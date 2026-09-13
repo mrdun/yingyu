@@ -1,4 +1,12 @@
-import { Body, Controller, Get, Param, Patch, UseGuards } from "@nestjs/common";
+import {
+  BadRequestException,
+  Body,
+  Controller,
+  Get,
+  Param,
+  Patch,
+  UseGuards,
+} from "@nestjs/common";
 
 import { AuthGuard, Permissions } from "../guards/auth.guard";
 import { PaymentChannelService } from "./payment-channel.service";
@@ -9,6 +17,7 @@ import { PaymentChannelService } from "./payment-channel.service";
  */
 @Controller("admin/payment-channels")
 @UseGuards(AuthGuard)
+@Permissions("admin:access")
 export class PaymentChannelAdminController {
   constructor(private readonly paymentChannelService: PaymentChannelService) {}
 
@@ -21,6 +30,10 @@ export class PaymentChannelAdminController {
   @Patch(":provider")
   @Permissions("admin:access")
   async update(@Param("provider") provider: string, @Body() dto: { enabled?: boolean }) {
-    return await this.paymentChannelService.setEnabled(provider, Boolean(dto?.enabled));
+    // 严格布尔校验: 避免 "false" 字符串被当成 true 从而误开启支付渠道
+    if (typeof dto?.enabled !== "boolean") {
+      throw new BadRequestException("enabled must be a boolean");
+    }
+    return await this.paymentChannelService.setEnabled(provider, dto.enabled);
   }
 }

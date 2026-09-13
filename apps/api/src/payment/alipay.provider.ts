@@ -1,4 +1,4 @@
-import { Inject, Injectable } from "@nestjs/common";
+import { Inject, Injectable, Logger } from "@nestjs/common";
 
 import {
   buildAlipayRequestBody,
@@ -37,6 +37,8 @@ const REFUND = "alipay.trade.refund";
 export class AlipayProvider implements PaymentProvider {
   readonly name = "alipay";
   readonly supportedMethods = ["alipay_qr"] as const;
+
+  private readonly logger = new Logger(AlipayProvider.name);
 
   constructor(@Inject(PAYMENT_HTTP) private readonly http: PaymentHttpClient) {}
 
@@ -112,7 +114,13 @@ export class AlipayProvider implements PaymentProvider {
 
     const nodeKey = `${method.replace(/\./g, "_")}_response`;
     const publicKey = this.publicKey();
-    if (publicKey && !verifyAlipayResponse(response.text, nodeKey, publicKey)) {
+    // 支付宝错误响应使用 error_response 节点; 验签对象必须与响应节点一致,
+    // 否则会把「业务错误」误报成「验签失败」, 掩盖真实原因。
+    const signedNodeKey = response.text.includes(`"${nodeKey}"`) ? nodeKey : "error_response";
+    if (publicKey && !verifyAlipayResponse(response.text, signedNodeKey, publicKey)) {
+      this.logger.error(
+        `支付宝调用失败: provider=${this.name} action=${method} httpStatus=${response.status} status=invalid_signature`,
+      );
       throw new Error(`支付宝 ${method} 响应验签失败`);
     }
 
@@ -120,17 +128,26 @@ export class AlipayProvider implements PaymentProvider {
     try {
       payload = JSON.parse(response.text);
     } catch {
+      this.logger.error(
+        `支付宝调用失败: provider=${this.name} action=${method} httpStatus=${response.status} status=unparsable_response`,
+      );
       throw new Error(`支付宝 ${method} 返回无法解析的报文 (HTTP ${response.status})`);
     }
     const node = payload[nodeKey];
     if (!node) {
       const errorNode = (payload as Record<string, { sub_msg?: string; msg?: string }>)
         .error_response;
+      this.logger.error(
+        `支付宝调用失败: provider=${this.name} action=${method} status=error_response error=${errorNode?.sub_msg ?? errorNode?.msg ?? "unknown"}`,
+      );
       throw new Error(
         `支付宝 ${method} 调用失败: ${errorNode?.sub_msg ?? errorNode?.msg ?? "unknown"}`,
       );
     }
     if (node.code && node.code !== "10000") {
+      this.logger.error(
+        `支付宝业务失败: provider=${this.name} action=${method} status=business_error error=${node.sub_msg ?? node.msg ?? node.code}`,
+      );
       throw new Error(`支付宝 ${method} 业务失败: ${node.sub_msg ?? node.msg ?? node.code}`);
     }
     return node;

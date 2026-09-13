@@ -8,6 +8,7 @@ import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
 import { AlipayProvider } from "../alipay.provider";
 import { MockPaymentProvider } from "../mock-payment.provider";
+import { PaymentChannelAdminController } from "../payment-channel-admin.controller";
 import { PaymentChannelService } from "../payment-channel.service";
 import { PaymentHttpClient } from "../payment-http.client";
 import { PaymentProviderRegistry } from "../payment-provider.registry";
@@ -93,6 +94,25 @@ describe("PaymentChannelService (渠道开关, 不暴露密钥)", () => {
 
   it("rejects unknown providers", async () => {
     await expect(service.setEnabled("paypal", true)).rejects.toThrow(BadRequestException);
+  });
+
+  it('admin toggle rejects non-boolean enabled values (防止 "false" 被当成 true)', async () => {
+    const controller = new PaymentChannelAdminController(service);
+
+    await expect(
+      controller.update("wechat", { enabled: "false" as unknown as boolean }),
+    ).rejects.toThrow(BadRequestException);
+    await expect(controller.update("wechat", {} as { enabled: boolean })).rejects.toThrow(
+      BadRequestException,
+    );
+
+    await expect(controller.update("wechat", { enabled: true })).resolves.toMatchObject({
+      provider: "wechat",
+      enabled: true,
+    });
+    await expect(controller.update("wechat", { enabled: false })).resolves.toMatchObject({
+      enabled: false,
+    });
   });
 
   it("reports a configured channel as unavailable when credentials are missing", async () => {

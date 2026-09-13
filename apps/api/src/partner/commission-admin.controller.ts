@@ -5,6 +5,7 @@ import { PartnerService } from "./partner.service";
 
 @Controller("admin/commissions")
 @UseGuards(AuthGuard)
+@Permissions("admin:access")
 export class CommissionAdminController {
   constructor(private readonly partnerService: PartnerService) {}
 

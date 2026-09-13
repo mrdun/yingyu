@@ -1,5 +1,5 @@
 import { Inject, Injectable, NotFoundException } from "@nestjs/common";
-import { asc, eq } from "drizzle-orm";
+import { and, asc, eq } from "drizzle-orm";
 
 import { learningPath, learningPathItem } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
@@ -31,7 +31,8 @@ export class LearningPathService {
 
   async findOne(id: string) {
     const path = await this.db.query.learningPath.findFirst({
-      where: eq(learningPath.id, id),
+      // 游客可读接口: 未发布 (草稿) 的学习路线不可见, 与 findAll 的过滤保持一致
+      where: and(eq(learningPath.id, id), eq(learningPath.isPublished, true)),
       with: {
         items: {
           orderBy: asc(learningPathItem.order),

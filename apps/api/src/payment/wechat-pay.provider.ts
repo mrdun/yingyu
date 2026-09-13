@@ -104,13 +104,22 @@ export class WechatPayProvider implements PaymentProvider {
 
     const parsed = parseWechatXml(response.text);
     if (Object.keys(parsed).length === 0) {
+      this.logger.error(
+        `微信支付调用失败: provider=${this.name} action=${path} httpStatus=${response.status} status=unparsable_response`,
+      );
       throw new Error(`微信支付返回无法解析的报文 (HTTP ${response.status})`);
     }
     // 业务成功响应必须携带有效签名; 系统级失败 (return_code=FAIL) 允许无签名
     if (parsed["return_code"] === SUCCESS && !parsed["sign"]) {
+      this.logger.error(
+        `微信支付调用失败: provider=${this.name} action=${path} status=missing_signature`,
+      );
       throw new Error("微信支付响应缺少签名, 拒绝处理");
     }
     if (parsed["sign"] && !verifyWechatSign(parsed, this.apiKey)) {
+      this.logger.error(
+        `微信支付调用失败: provider=${this.name} action=${path} status=invalid_signature`,
+      );
       throw new Error("微信支付响应验签失败");
     }
     return parsed;
@@ -118,9 +127,15 @@ export class WechatPayProvider implements PaymentProvider {
 
   private assertSuccess(parsed: Record<string, string>, action: string) {
     if (parsed["return_code"] !== SUCCESS) {
+      this.logger.error(
+        `微信支付业务失败: provider=${this.name} action=${action} status=return_code_fail error=${parsed["return_msg"] ?? "unknown"}`,
+      );
       throw new Error(`微信支付${action}失败: ${parsed["return_msg"] ?? "unknown"}`);
     }
     if (parsed["result_code"] && parsed["result_code"] !== SUCCESS) {
+      this.logger.error(
+        `微信支付业务失败: provider=${this.name} action=${action} status=result_code_fail error=${parsed["err_code"] ?? ""}`,
+      );
       throw new Error(
         `微信支付${action}业务失败: ${parsed["err_code"] ?? ""} ${parsed["err_code_des"] ?? ""}`.trim(),
       );
@@ -252,7 +267,15 @@ export class WechatPayProvider implements PaymentProvider {
 
     const parsed = parseWechatXml(response.text);
     if (parsed["sign"] && !verifyWechatSign(parsed, this.apiKey)) {
+      this.logger.error(
+        `微信退款失败: provider=${this.name} orderId=${order.id} status=invalid_signature`,
+      );
       throw new Error("微信退款响应验签失败");
+    }
+    if (parsed["return_code"] !== SUCCESS || parsed["result_code"] !== SUCCESS) {
+      this.logger.error(
+        `微信退款失败: provider=${this.name} orderId=${order.id} status=refund_failed error=${parsed["err_code"] ?? parsed["return_msg"] ?? "unknown"}`,
+      );
     }
     this.assertSuccess(parsed, "退款");
 

@@ -1,4 +1,5 @@
-import { BadRequestException, Inject, Injectable, NotFoundException } from "@nestjs/common";
+import { BadRequestException, Inject, Injectable, Logger, NotFoundException } from "@nestjs/common";
+import { Cron } from "@nestjs/schedule";
 import { createId } from "@paralleldrive/cuid2";
 import { and, desc, eq, gte, inArray, isNull, lte, or } from "drizzle-orm";
 
@@ -53,6 +54,8 @@ export interface EffectiveCommission {
  */
 @Injectable()
 export class PartnerService {
+  private readonly logger = new Logger(PartnerService.name);
+
   constructor(@Inject(DB) private db: DbType) {}
 
   /** 退款保护期 (小时): 读取 business_settings, 缺省 24 */
@@ -416,6 +419,22 @@ export class PartnerService {
       )
       .returning({ id: commissionRecord.id });
     return { confirmed: rows.length };
+  }
+
+  /**
+   * 定时任务: 退款保护期结束后 holding → pending (每 30 分钟)。
+   * 保护期内的佣金不可结算, 超过保护期才进入后续结算流程。
+   */
+  @Cron("*/30 * * * *")
+  async confirmExpiredCommissionJob() {
+    try {
+      const result = await this.confirmExpiredCommission();
+      if (result.confirmed > 0) {
+        this.logger.log(`退款保护期结束, 佣金 holding → pending: count=${result.confirmed}`);
+      }
+    } catch (error) {
+      this.logger.error(`佣金确认任务失败: ${(error as Error).message}`);
+    }
   }
 
   /** 满足结算条件: pending -> payable (幂等) */

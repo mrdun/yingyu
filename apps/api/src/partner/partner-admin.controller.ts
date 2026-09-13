@@ -16,6 +16,7 @@ function toAdminPartnerView<T extends { commissionRate?: unknown; commissionRate
 
 @Controller("admin/partners")
 @UseGuards(AuthGuard)
+@Permissions("admin:access")
 export class PartnerAdminController {
   constructor(private readonly partnerService: PartnerService) {}
 

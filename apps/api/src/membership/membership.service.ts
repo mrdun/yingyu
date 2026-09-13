@@ -22,6 +22,7 @@ import {
 } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { PartnerService } from "../partner/partner.service";
+import { redactPaymentPayload } from "../payment/payment-payload-redaction";
 import {
   PAYMENT_PROVIDER,
   PAYMENT_PROVIDERS,
@@ -526,7 +527,8 @@ export class MembershipService {
         provider: input.provider,
         eventType: input.eventType,
         payloadHash,
-        payload: input.payload,
+        // 入库前脱敏 (openid / buyer_id 等支付隐私标识), 哈希仍基于原始报文
+        payload: redactPaymentPayload(input.payload, input.provider),
       })
       .onConflictDoNothing({
         target: [paymentEvent.orderId, paymentEvent.eventType, paymentEvent.payloadHash],
@@ -815,33 +817,53 @@ export class MembershipService {
       return updated;
     });
 
-    // 2) 第三方退款: 使用订单自己的渠道
-    const provider = this.resolveProvider(claimed.provider);
+    // 2) 第三方退款 + 3) 本地收尾 (撤销权益 + 撤销佣金)
+    return await this.attemptProviderRefundThenFinalize(claimed);
+  }
+
+  private toRefundPaymentOrder(order: typeof orders.$inferSelect) {
+    return {
+      id: order.id,
+      userId: order.userId,
+      planId: order.planId,
+      amountFen: order.amountFen,
+      currency: order.currency,
+      providerOrderId: order.providerOrderId,
+    };
+  }
+
+  /** 第三方退款 → 本地收尾; 渠道失败则把订单回滚为 paid (可修正后重试) */
+  private async attemptProviderRefundThenFinalize(order: typeof orders.$inferSelect) {
+    const provider = this.resolveProvider(order.provider);
+    const startedAt = Date.now();
     try {
-      const result = await provider.refundPayment({
-        id: claimed.id,
-        userId: claimed.userId,
-        planId: claimed.planId,
-        amountFen: claimed.amountFen,
-        currency: claimed.currency,
-        providerOrderId: claimed.providerOrderId,
-      });
+      const result = await provider.refundPayment(this.toRefundPaymentOrder(order));
       if (!result.refunded) {
         throw new BadRequestException("Provider refund was rejected");
       }
     } catch (error) {
-      // 回滚抢占状态, 允许管理员修正后重试
-      await this.db
-        .update(orders)
-        .set({ status: OrderStatus.PAID, updatedAt: new Date() })
-        .where(and(eq(orders.id, orderId), eq(orders.status, OrderStatus.REFUNDING)));
-      this.logger.error(
-        `第三方退款失败, 订单恢复 paid: order=${orderId} ${(error as Error).message}`,
-      );
+      await this.revertRefundClaim(order.id, (error as Error).message);
       throw error;
     }
 
-    // 3) 本地退款收尾 (幂等: 只有 refunding 能进入 refunded)
+    const finalized = await this.finalizeRefund(order.id);
+    this.logger.log(
+      `退款完成: orderId=${order.id} provider=${order.provider} status=${finalized.status} costMs=${Date.now() - startedAt}`,
+    );
+    return finalized;
+  }
+
+  /** 回滚退款抢占: refunding → paid (仅当当前仍是 refunding) */
+  private async revertRefundClaim(orderId: string, reason: string) {
+    await this.db
+      .update(orders)
+      .set({ status: OrderStatus.PAID, updatedAt: new Date() })
+      .where(and(eq(orders.id, orderId), eq(orders.status, OrderStatus.REFUNDING)));
+    this.logger.error(`退款失败, 订单恢复 paid: orderId=${orderId} status=paid reason=${reason}`);
+  }
+
+  /** 本地退款收尾: refunding → refunded + 撤销权益 + 撤销佣金 (幂等) */
+  private async finalizeRefund(orderId: string) {
     return await this.db.transaction(async (tx) => {
       const [locked] = await tx.select().from(orders).where(eq(orders.id, orderId)).for("update");
       if (!locked) {
@@ -866,6 +888,98 @@ export class MembershipService {
 
       return updated;
     });
+  }
+
+  /**
+   * 恢复中断的退款 (服务器在「置 refunding 之后、本地收尾之前」宕机)。
+   * 渠道退款单号确定化 (`RF + orderId`), 重复调用对渠道幂等:
+   * - 渠道确认已退款 → 本地收尾 refunded
+   * - 渠道明确失败 → 回滚 paid, 由管理员重新发起
+   */
+  async resumeRefundingOrder(orderId: string) {
+    const order = await this.findOrder(orderId);
+    if (!order || order.status !== OrderStatus.REFUNDING) return order;
+
+    this.logger.warn(
+      `恢复中断退款: orderId=${orderId} provider=${order.provider} status=refunding`,
+    );
+    try {
+      const provider = this.resolveProvider(order.provider);
+      const result = await provider.refundPayment(this.toRefundPaymentOrder(order));
+      if (!result.refunded) {
+        await this.revertRefundClaim(orderId, "provider refund was rejected");
+        return await this.findOrder(orderId);
+      }
+    } catch (error) {
+      await this.revertRefundClaim(orderId, (error as Error).message);
+      return await this.findOrder(orderId);
+    }
+
+    return await this.finalizeRefund(orderId);
+  }
+
+  /**
+   * 订单异常恢复入口 (管理员手动 / 定时任务):
+   * - pending: 已过期 → 先关单再过期; 未过期 → 主动查单 (回调丢失兜底)
+   * - refunding: 恢复中断的退款
+   * - 其他状态: 无操作
+   */
+  async reconcileOrder(orderId: string) {
+    const order = await this.findOrder(orderId);
+    if (!order) {
+      throw new NotFoundException(`Order ${orderId} not found`);
+    }
+
+    if (order.status === OrderStatus.PENDING) {
+      const expiresAt = await this.getOrderExpiresAt(order);
+      if (expiresAt.getTime() <= Date.now()) {
+        const result = await this.expireOrder(orderId);
+        return { orderId, from: order.status, to: result.status, action: "close_then_expire" };
+      }
+      const synced = await this.syncOrderWithProvider(orderId);
+      return {
+        orderId,
+        from: order.status,
+        to: synced?.status ?? order.status,
+        action: "provider_sync",
+      };
+    }
+
+    if (order.status === OrderStatus.REFUNDING) {
+      const resumed = await this.resumeRefundingOrder(orderId);
+      return {
+        orderId,
+        from: order.status,
+        to: resumed?.status ?? order.status,
+        action: "refund_resume",
+      };
+    }
+
+    return { orderId, from: order.status, to: order.status, action: "noop" };
+  }
+
+  /** 定时任务: 恢复长时间停留在 refunding 的订单 (每 15 分钟) */
+  @Cron("*/15 * * * *")
+  async reconcileStuckRefundsJob() {
+    const stuckBefore = new Date(Date.now() - 15 * 60 * 1000);
+    const stuck = await this.db
+      .select({ id: orders.id })
+      .from(orders)
+      .where(and(eq(orders.status, OrderStatus.REFUNDING), lt(orders.updatedAt, stuckBefore)))
+      .limit(20);
+
+    for (const row of stuck) {
+      try {
+        await this.resumeRefundingOrder(row.id);
+      } catch (error) {
+        this.logger.error(
+          `恢复中断退款失败: orderId=${row.id} status=refunding error=${(error as Error).message}`,
+        );
+      }
+    }
+    if (stuck.length > 0) {
+      this.logger.log(`退款恢复任务完成: scanned=${stuck.length}`);
+    }
   }
 
   /**

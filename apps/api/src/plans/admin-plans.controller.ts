@@ -5,6 +5,7 @@ import { PlanInput, PlansService } from "./plans.service";
 
 @Controller("admin/plans")
 @UseGuards(AuthGuard)
+@Permissions("admin:access")
 export class AdminPlansController {
   constructor(private readonly plansService: PlansService) {}
 

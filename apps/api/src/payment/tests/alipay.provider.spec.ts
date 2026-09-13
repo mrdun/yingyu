@@ -1,5 +1,7 @@
 import { createSign, generateKeyPairSync } from "node:crypto";
 
+import { Logger } from "@nestjs/common";
+
 import { buildAlipayRequestBody, signAlipayParams } from "../alipay-signature";
 import { AlipayProvider } from "../alipay.provider";
 import { PaymentHttpClient, PaymentHttpRequest } from "../payment-http.client";
@@ -198,5 +200,30 @@ describe("AlipayProvider (当面付, RSA2, 假传输层)", () => {
     const result = await provider.createPayment(order, "alipay_qr");
     expect(result.paymentPayload).toMatchObject({ qrCode: "https://qr.alipay.com/bax01234" });
     process.env.ALIPAY_PRIVATE_KEY = privateKey;
+  });
+
+  it("never leaks the private key in failure logs", async () => {
+    const messages: string[] = [];
+    const spy = jest.spyOn(Logger.prototype, "error").mockImplementation((message: unknown) => {
+      messages.push(String(message));
+    });
+
+    try {
+      // 支付宝错误响应同样带签名 (error_response 节点)
+      const errorNode = JSON.stringify({ code: "40002", sub_msg: "invalid app_id" });
+      const errorSign = createSign("RSA-SHA256")
+        .update(errorNode, "utf8")
+        .sign(privateKey, "base64");
+      http.response = `{"error_response":${errorNode},"sign":"${errorSign}"}`;
+      await expect(provider.createPayment(order, "alipay_qr")).rejects.toThrow();
+    } finally {
+      spy.mockRestore();
+    }
+
+    const logged = messages.join("\n");
+    expect(logged).toContain("provider=alipay");
+    expect(logged).toContain("error=invalid app_id");
+    expect(logged).not.toContain(privateKey.slice(0, 40));
+    expect(logged).not.toContain("BEGIN");
   });
 });

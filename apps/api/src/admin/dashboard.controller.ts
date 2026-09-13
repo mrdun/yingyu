@@ -5,6 +5,7 @@ import { DashboardService } from "./dashboard.service";
 
 @Controller("admin/dashboard")
 @UseGuards(AuthGuard)
+@Permissions("admin:access")
 export class DashboardController {
   constructor(private readonly dashboardService: DashboardService) {}
 

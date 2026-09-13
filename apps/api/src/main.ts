@@ -3,6 +3,8 @@ import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { NextFunction, Request, Response } from "express";
 
 import { AppModule } from "./app/app.module";
+import { resolveCorsOrigins } from "./app/cors";
+import { assertProductionConfig } from "./app/startup-config";
 import { appGlobalMiddleware } from "./app/useGlobal";
 
 /**
@@ -28,15 +30,15 @@ function paymentCallbackRawBody(req: Request, _res: Response, next: NextFunction
 }
 
 async function bootstrap() {
+  // 生产配置 fail-fast: 缺 DATABASE_URL/LOGTO_*/BACKEND_ENDPOINT/CORS_ORIGINS 等直接终止启动
+  assertProductionConfig(process.env.NODE_ENV === "prod" || process.env.NODE_ENV === "production");
+
   // rawBody: true → 保留原始报文, 支付回调验签必须基于原始字节
   const app = await NestFactory.create(AppModule, { rawBody: true });
   app.use("/payment/callback", paymentCallbackRawBody);
   app.enableCors({
-    origin: [
-      /^http:\/\/localhost(:\d+)?$/,
-      /^http:\/\/127\.0\.0\.1(:\d+)?$/,
-      /^http:\/\/earthworm\.cuixueshe\.com(:81)?$/,
-    ],
+    // 生产域名通过 CORS_ORIGINS 注入, 避免把真实站点域名硬编码在代码里
+    origin: resolveCorsOrigins(),
   });
 
   appGlobalMiddleware(app);

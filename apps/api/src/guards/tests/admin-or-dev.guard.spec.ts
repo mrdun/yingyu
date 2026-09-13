@@ -1,4 +1,4 @@
-import { ExecutionContext, UnauthorizedException } from "@nestjs/common";
+import { ExecutionContext, ForbiddenException, UnauthorizedException } from "@nestjs/common";
 
 import { AiContentController } from "../../ai-content/ai-content.controller";
 import { AdminOrDevGuard } from "../admin-or-dev.guard";
@@ -46,7 +46,8 @@ describe("AuthGuard permissions (admin RBAC)", () => {
 
     await expect(
       guard.canActivate(createContext({ token: "t", permissions: ["admin:access"] })),
-    ).rejects.toThrow(UnauthorizedException);
+      // 已登录但权限不足 → 403 (TASK-002-J-01: 401 会让前端误判为未登录)
+    ).rejects.toThrow(ForbiddenException);
   });
 
   it("rejects when no token is provided", async () => {
@@ -96,7 +97,7 @@ describe("AdminOrDevGuard (AI endpoints)", () => {
 
     await expect(
       guard.canActivate(createContext({ token: "t", permissions: ["admin:access"] })),
-    ).rejects.toThrow(UnauthorizedException);
+    ).rejects.toThrow(ForbiddenException);
   });
 });
 

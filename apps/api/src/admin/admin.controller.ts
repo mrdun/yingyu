@@ -23,6 +23,7 @@ import { CreateCoursePackDto, SetAccessLevelDto, UpdateCoursePackDto } from "./d
 
 @Controller("admin")
 @UseGuards(AuthGuard)
+@Permissions("admin:access")
 export class AdminController {
   constructor(
     private readonly adminService: AdminService,
@@ -44,6 +45,18 @@ export class AdminController {
   @Permissions("admin:access")
   async refundOrder(@Param("orderId") orderId: string) {
     return await this.membershipService.refundOrder(orderId);
+  }
+
+  /**
+   * 订单异常恢复 (管理员手动入口):
+   * - pending 且已超时 → 先关第三方单再过期
+   * - pending 未超时 → 主动向渠道查单 (回调丢失兜底, 已支付则入账)
+   * - refunding 长期停留 → 恢复中断的退款 (渠道退款单号幂等)
+   */
+  @Post("orders/:orderId/reconcile")
+  @Permissions("admin:access")
+  async reconcileOrder(@Param("orderId") orderId: string) {
+    return await this.membershipService.reconcileOrder(orderId);
   }
 
   @Get("users")

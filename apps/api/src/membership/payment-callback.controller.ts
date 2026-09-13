@@ -103,6 +103,9 @@ export class PaymentCallbackController {
     });
     await this.membershipService.markPaymentEventProcessed(event.id);
 
+    this.logger.log(
+      `支付回调处理成功: orderId=${order.id} provider=${provider.name} status=paid amountFen=${payment.amountFen} transactionId=${payment.transactionId ?? "-"}`,
+    );
     return this.ack(provider.callbackAck().contentType, provider.callbackAck().body, res);
   }
 

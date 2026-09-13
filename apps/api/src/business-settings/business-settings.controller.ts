@@ -13,6 +13,7 @@ import { BusinessSettingsService } from "./business-settings.service";
 
 @Controller("admin/business-settings")
 @UseGuards(AuthGuard)
+@Permissions("admin:access")
 export class BusinessSettingsController {
   constructor(private readonly businessSettingsService: BusinessSettingsService) {}
 

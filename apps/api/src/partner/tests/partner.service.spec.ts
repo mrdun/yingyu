@@ -190,6 +190,67 @@ describe("PartnerService (partner / referral / commission)", () => {
     const p = await partnerService.becomePartner("partner", 4000);
     await partnerService.attributeReferral(p.referralCode, "buyer");
 
+    // 首次购买
+    const first = await membershipService.createOrder({
+      userId: "buyer",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_renew_1",
+    });
+    await membershipService.markOrderPaid(first.id);
+
+    // 续费 (第二笔订单): 同一推广关系继续产生佣金
+    const second = await membershipService.createOrder({
+      userId: "buyer",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_renew_2",
+    });
+    await membershipService.markOrderPaid(second.id);
+
+    const records = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.partnerUserId, "partner"));
+    expect(records).toHaveLength(2);
+    expect(records.map((r) => r.orderId).sort()).toEqual([first.id, second.id].sort());
+    expect(records.every((r) => r.commissionFen === 720)).toBe(true);
+  });
+
+  it("lifetime purchase produces exactly one commission for that order (no recurrence)", async () => {
+    await seedUser("partner_lt");
+    await seedUser("buyer_lt");
+    const p = await partnerService.becomePartner("partner_lt", 4000);
+    await partnerService.attributeReferral(p.referralCode, "buyer_lt");
+
+    const order = await membershipService.createOrder({
+      userId: "buyer_lt",
+      planId: "lifetime",
+      amountFen: 19900,
+      provider: "mock",
+      providerOrderId: "mock_lifetime_1",
+    });
+    await membershipService.markOrderPaid(order.id);
+    // 重复支付回调不应产生第二条佣金
+    await membershipService.markOrderPaid(order.id);
+
+    const records = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, order.id));
+    expect(records).toHaveLength(1);
+    expect(records[0].commissionFen).toBe(Math.floor((19900 * 4000) / 10000)); // 7960
+    expect(records[0].status).toBe("holding");
+  });
+
+  it("keeps historical commission rate snapshot after partner rate changes", async () => {
+    await seedUser("partner");
+    await seedUser("buyer");
+    const p = await partnerService.becomePartner("partner", 4000);
+    await partnerService.attributeReferral(p.referralCode, "buyer");
+
     const order = await membershipService.createOrder({
       userId: "buyer",
       planId: "monthly",
@@ -288,6 +349,49 @@ describe("PartnerService (partner / referral / commission)", () => {
       .from(commissionRecord)
       .where(eq(commissionRecord.orderId, order.id));
     expect(after.status).toBe("reversed");
+  });
+
+  it("supports holding -> pending -> payable -> paid and rejects illegal transitions", async () => {
+    await seedUser("partner_cron");
+    await seedUser("buyer_cron");
+    const p = await partnerService.becomePartner("partner_cron", 4000);
+    await partnerService.attributeReferral(p.referralCode, "buyer_cron");
+
+    const order = await membershipService.createOrder({
+      userId: "buyer_cron",
+      planId: "monthly",
+      amountFen: 1800,
+      provider: "mock",
+      providerOrderId: "mock_cron_1",
+    });
+    await membershipService.markOrderPaid(order.id);
+
+    const [before] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, order.id));
+    expect(before.status).toBe("holding");
+
+    // 保护期内 (hold_until 未到): 定时任务不应结算
+    await partnerService.confirmExpiredCommissionJob();
+    const [stillHolding] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, order.id));
+    expect(stillHolding.status).toBe("holding");
+
+    // 保护期结束后: 定时任务把 holding 转为 pending
+    await db
+      .update(commissionRecord)
+      .set({ holdUntil: new Date(Date.now() - 60_000) })
+      .where(eq(commissionRecord.orderId, order.id));
+    await partnerService.confirmExpiredCommissionJob();
+
+    const [after] = await db
+      .select()
+      .from(commissionRecord)
+      .where(eq(commissionRecord.orderId, order.id));
+    expect(after.status).toBe("pending");
   });
 
   it("supports holding -> pending -> payable -> paid and rejects illegal transitions", async () => {

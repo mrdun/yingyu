@@ -1,6 +1,7 @@
 import {
   CanActivate,
   ExecutionContext,
+  ForbiddenException,
   Injectable,
   SetMetadata,
   UnauthorizedException,
@@ -15,14 +16,23 @@ export const Permissions = (...permissions: string[]) => SetMetadata("permission
 export class AuthGuard implements CanActivate {
   private jwks: any;
   constructor() {
-    this.jwks = createRemoteJWKSet(new URL("/oidc/jwks", process.env.LOGTO_ENDPOINT || "http://localhost:3010/"));
+    this.jwks = createRemoteJWKSet(
+      new URL("/oidc/jwks", process.env.LOGTO_ENDPOINT || "http://localhost:3010/"),
+    );
   }
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const request = context.switchToHttp().getRequest();
     const token = this.extractTokenFromHeader(request);
-    const uncheck = Reflect.getMetadata("uncheck", context.getHandler());
-    const permissions = Reflect.getMetadata("permissions", context.getHandler());
+    // 路由级元数据优先, 其次回退到控制器级 (控制器级让新增路由默认继承权限, 避免漏标即放开)
+    // getClass 在部分单测的 mock context 中不存在, 这里做防御性取值
+    const controllerClass = typeof context.getClass === "function" ? context.getClass() : undefined;
+    const uncheck =
+      Reflect.getMetadata("uncheck", context.getHandler()) ??
+      (controllerClass ? Reflect.getMetadata("uncheck", controllerClass) : undefined);
+    const permissions =
+      Reflect.getMetadata("permissions", context.getHandler()) ??
+      (controllerClass ? Reflect.getMetadata("permissions", controllerClass) : undefined);
 
     if (!token && uncheck) {
       request["userId"] = null;
@@ -36,12 +46,16 @@ export class AuthGuard implements CanActivate {
 
       if (permissions) {
         if (!permissions.every((scope) => scopes.includes(scope))) {
-          throw new UnauthorizedException();
+          // 已登录但权限不足: 403 (401 会让前端误判为「未登录」)
+          throw new ForbiddenException("Insufficient permissions");
         }
       }
 
       request["userId"] = payload.sub;
     } catch (e) {
+      if (e instanceof ForbiddenException) {
+        throw e;
+      }
       if (!uncheck) {
         throw new UnauthorizedException();
       }

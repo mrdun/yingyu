@@ -1,3 +1,5 @@
+import { Logger } from "@nestjs/common";
+
 import { PaymentHttpClient, PaymentHttpRequest } from "../payment-http.client";
 import { WechatPayProvider } from "../wechat-pay.provider";
 import { buildWechatXml, parseWechatXml, wechatSign } from "../wechat-signature";
@@ -176,5 +178,30 @@ describe("WechatPayProvider (v2 协议, 假传输层)", () => {
       /WECHAT_API_KEY/,
     );
     process.env.WECHAT_API_KEY = API_KEY;
+  });
+
+  it("never leaks credentials in failure logs", async () => {
+    const messages: string[] = [];
+    const spy = jest.spyOn(Logger.prototype, "error").mockImplementation((message: unknown) => {
+      messages.push(String(message));
+    });
+
+    try {
+      http.response = buildWechatXml({
+        return_code: "SUCCESS",
+        result_code: "SUCCESS",
+        code_url: "weixin://x",
+        sign: "BAD_SIGNATURE",
+      });
+      await expect(provider.createPayment(order, "wechat_native")).rejects.toThrow();
+    } finally {
+      spy.mockRestore();
+    }
+
+    const logged = messages.join("\n");
+    expect(logged).toContain("provider=wechat");
+    expect(logged).toContain("status=invalid_signature");
+    expect(logged).not.toContain(API_KEY);
+    expect(logged).not.toContain("code_url");
   });
 });

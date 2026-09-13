@@ -54,6 +54,12 @@ describe("LearningPathService", () => {
   });
 
   describe("findOne", () => {
+    it("未发布路线对游客不可见 (404, 防止草稿泄露)", async () => {
+      const draft = await insertLearningPath(db, { title: "未发布路线", isPublished: false });
+
+      await expect(service.findOne(draft.id)).rejects.toThrow(NotFoundException);
+    });
+
     it("按顺序返回路线内的课程包", async () => {
       const path = await insertLearningPath(db, { title: "进阶路线", isPublished: true });
 
