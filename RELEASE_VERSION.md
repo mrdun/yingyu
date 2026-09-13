@@ -108,16 +108,32 @@ pnpm smoke:prod -- --base=https://<api-host> [--token=<用户JWT>] [--admin-toke
 
 ## 4. 当前上线阻塞项 (必须人工完成)
 
-1. 真实商户联调 (微信/支付宝含退款) — 见 `PAYMENT_MERCHANT_INTEGRATION_CHECKLIST.md`
+> 状态更新 2026-09-13 (业务已确认):
+>
+> - **支付资质现状**: 已有营业执照; **微信支付商户号与域名 ICP 备案尚未办理**。
+>   → 上线策略: 先关闭支付渠道上线卖课 (系统支持「先上课程、后开支付」, 已验证) ;
+>   资质齐备后再按 `PAYMENT_MERCHANT_INTEGRATION_CHECKLIST.md` 联调并开启渠道。
+> - **lifetime 定价**: 维持 ¥199 占位**不作为阻塞项**; 上线前由业务在后台「会员方案管理」页自行改价
+>   (改价只影响新订单, 历史订单保留下单时价格快照; 需先关闭下方第 5 项的 admin 权限问题)。
+
+1. 真实商户联调 (微信/支付宝含退款) — 前置: 微信支付商户号 (需营业执照, 已有) + API 证书;
+   已备案域名 + HTTPS 公网入口 (微信回调必须走备案域名)。见 `PAYMENT_MERCHANT_INTEGRATION_CHECKLIST.md`。
+   → **不改代码即可先行上线**: 保持 `payment_wechat_enabled` / `payment_alipay_enabled` = false。
 2. 课程内容导入 + 至少 1 条已发布学习路线 — 见 `PRODUCTION_RELEASE_CHECKLIST.md` §2.1.1
-3. 前端用生产环境变量重新 `pnpm build:client`
-4. lifetime 价格 (默认 ¥199 占位) 业务确认
-5. 管理员 `admin:access` scope 配置 + 普通账号 403 验证
-6. 生产库备份策略落地 + 恢复演练 — 见 `BACKUP_RECOVERY_PLAN.md`
+3. 前端用生产环境变量重新 `pnpm build:client` (缺变量会在构建期直接报错, 见 nuxt.config.ts 门禁)
+4. lifetime 价格确认 → **已改为上线前自助改价, 不阻塞** (见上方状态更新)
+5. 管理员 `admin:access` scope: 前端原先未申请该 scope → `/admin/*` 全部 403, 后台实际上不可用。
+   修复方案 (2026-09-13 业务选择方案 B): 仅在访问管理后台时按需申请 `admin:access`。
+   修好后需重跑 `RC_MANUAL_TEST_CHECKLIST.md` A1–A8 (含「普通账号仍必须 403」)。
+6. 生产库备份策略落地 + 恢复演练 — 见 `BACKUP_RECOVERY_PLAN.md`。**本机等效演练已于 2026-09-13 完成**:
+   pg_dump → 独立库还原 → 29 表/7 CHECK 约束/15 张 A 级表计数与源库一致 → 还原库起 API smoke 全绿。
+   生产侧仍需按文档落地 cron 与告警。
 7. **CI 环境补齐 e2e 依赖**: `pnpm -F api test` 会先跑 unit 再跑 e2e
    (`jest.config.e2e.ts`), e2e 需要 test Redis (`127.0.0.1:6380`) 与可用的
    Logto M2M 凭据 (`.env.test` 的 `LOGTO_CLIENT_ID/SECRET`)。当前本地环境缺少这两项,
    e2e 会失败 (失败原因为环境, 非代码)。发布流水线必须提供上述依赖, 否则流水线恒红。
+   **CI 侧已就绪** (2026-09-13): `feature/commercial-v2` 的 CI 上 unit 53 suites/420 tests、
+   e2e 4 suites/15 tests、client 42 files 全部通过。
 
 > 代码层面无 P0 阻塞; 上述均为环境/内容/商务确认类前置条件。
 
