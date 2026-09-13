@@ -5,17 +5,23 @@ import { db } from "@earthworm/db";
 import {
   coursePack,
   course as courseSchema,
+  learningPathItem,
   statement as statementSchema,
 } from "@earthworm/schema";
+import { buildCoursePackSeedValues } from "./coursePackSeedValues";
 
 type Statement = typeof statementSchema.$inferInsert;
 
 const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
 
 (async function () {
-  await db.delete(coursePack);
+  // 删除顺序必须遵循外键依赖: 子表 → 父表
+  // (statement → course → course_pack, 以及 learning_path_items → course_pack)
+  // 否则二次导入会因 FK 约束直接失败 (TASK-002-L-01 RC 验证中发现)。
+  await db.delete(learningPathItem);
   await db.delete(statementSchema);
   await db.delete(courseSchema);
+  await db.delete(coursePack);
 
   const [coursePackEntity] = await db
     .insert(coursePack)
@@ -24,8 +30,8 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
       title: "星荣零基础学英语",
       description: "最适合零基础入门的课程",
       creatorId: "1",
-      shareLevel: "public",
       isFree: true,
+      ...buildCoursePackSeedValues(true),
       cover:
         "https://earthworm-prod-1312884695.cos.ap-beijing.myqcloud.com/course-packs/xingrong.jpg",
     })

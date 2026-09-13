@@ -55,6 +55,7 @@ REDIS_URL=redis://<redis-host>:6379
 LOGTO_ENDPOINT=https://<logto-host>/
 LOGTO_CLIENT_ID=<...>
 LOGTO_CLIENT_SECRET=<...>
+LOGTO_M2M_API=https://<logto-m2m-resource>/api   # M2M resource, 缺失时 Logto 返回 400 invalid_target
 BACKEND_ENDPOINT=https://<api-host>/          # JWT audience, 必须与前端一致
 PUBLIC_API_BASE_URL=https://<api-host>        # 生成支付回调 notify_url
 CORS_ORIGINS=https://<front-host>             # 逗号分隔

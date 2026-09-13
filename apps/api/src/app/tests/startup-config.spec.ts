@@ -10,6 +10,7 @@ const COMPLETE_ENV = {
   LOGTO_ENDPOINT: "https://logto.example.com/",
   LOGTO_CLIENT_ID: "client",
   LOGTO_CLIENT_SECRET: "secret",
+  LOGTO_M2M_API: "https://default.logto.app/api",
   BACKEND_ENDPOINT: "https://api.example.com",
   PUBLIC_API_BASE_URL: "https://api.example.com",
   CORS_ORIGINS: "https://www.example.com",
@@ -45,6 +46,8 @@ describe("生产启动配置校验 (task 一)", () => {
     expect(REQUIRED_PRODUCTION_ENV).toContain("CORS_ORIGINS");
     expect(REQUIRED_PRODUCTION_ENV).toContain("PUBLIC_API_BASE_URL");
     expect(REQUIRED_PRODUCTION_ENV).toContain("REDIS_URL");
+    // 缺失会导致 Logto 返回 400 invalid_target → 用户同步/健康检查失败
+    expect(REQUIRED_PRODUCTION_ENV).toContain("LOGTO_M2M_API");
   });
 });
 

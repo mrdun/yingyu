@@ -10,6 +10,8 @@ export const REQUIRED_PRODUCTION_ENV = [
   "LOGTO_ENDPOINT",
   "LOGTO_CLIENT_ID",
   "LOGTO_CLIENT_SECRET",
+  // M2M resource indicator: 缺失时 Logto 返回 400 invalid_target, 用户同步与健康检查都会失败
+  "LOGTO_M2M_API",
   "BACKEND_ENDPOINT",
   "PUBLIC_API_BASE_URL",
   "CORS_ORIGINS",

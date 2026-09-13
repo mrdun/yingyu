@@ -89,8 +89,9 @@ pnpm -F @earthworm/xingrong-courses seed:content # 生成学习路线 / 看图�
 ```
 
 - [ ] 已导入课程内容, 课程广场可看到课程包
+- [ ] 导入后 **课程包状态为 `published`** (否则商城为空; `upload` 脚本已修复为自动发布)
 - [ ] 免费课程 / 会员课程 `access_level` 设置正确 (免费课可被游客学习)
-- [ ] ⚠️ `upload` 脚本执行时会**先清空 course_packs / courses / statements 再插入**, 严禁在已有用户学习数据的生产库上重复执行
+- [ ] ⚠️ `upload` 脚本会**先清空 course_packs / courses / statements / learning_path_items 再插入** (已按外键顺序修复, 可重复执行); 但**已有用户学习数据时仍禁止重跑** (会删除句子进而影响学习记录)
 - [ ] 学习路线 (`learning_paths`) 至少有 1 条 `is_published=true`, 否则 `/learning-path` 页面为空
 
 ### 2.2 服务与域名
