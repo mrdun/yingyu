@@ -36,6 +36,13 @@ describe("页面只通过 service 取数", () => {
       ["pages/plans.vue", 'from "~/services/plans.service"'],
       ["pages/payment-channels.vue", 'from "~/services/paymentChannels.service"'],
       ["pages/system/health.vue", 'from "~/services/system.service"'],
+      ["pages/users.vue", 'from "~/services/users.service"'],
+      ["pages/orders.vue", 'from "~/services/orders.service"'],
+      ["pages/memberships.vue", 'from "~/services/memberships.service"'],
+      ["pages/partners.vue", 'from "~/services/partners.service"'],
+      ["pages/commissions.vue", 'from "~/services/commissions.service"'],
+      ["pages/commission-rules.vue", 'from "~/services/commissionRules.service"'],
+      ["pages/settings/business.vue", 'from "~/services/businessSettings.service"'],
     ];
     for (const [page, importPath] of expectations) {
       expect(readSource(page), `${page} 应引用 ${importPath}`).toContain(importPath);

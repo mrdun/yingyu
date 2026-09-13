@@ -47,13 +47,27 @@ export function listSourceFiles(): string[] {
   return collected.sort();
 }
 
-/** 本批次交付的 4 个页面 */
-export const PAGE_FILES = [
+/** O-01 批次交付的 4 个页面 */
+export const BATCH1_PAGE_FILES = [
   "pages/dashboard.vue",
   "pages/plans.vue",
   "pages/payment-channels.vue",
   "pages/system/health.vue",
 ];
+
+/** O-02 批次交付的 7 个业务模块页面 */
+export const BATCH2_PAGE_FILES = [
+  "pages/users.vue",
+  "pages/orders.vue",
+  "pages/memberships.vue",
+  "pages/partners.vue",
+  "pages/commissions.vue",
+  "pages/commission-rules.vue",
+  "pages/settings/business.vue",
+];
+
+/** 当前已交付的全部页面 (14 项断言都跑在这上面) */
+export const PAGE_FILES = [...BATCH1_PAGE_FILES, ...BATCH2_PAGE_FILES];
 
 export const SERVICE_FILES = [
   "services/admin-api.ts",
@@ -61,6 +75,13 @@ export const SERVICE_FILES = [
   "services/plans.service.ts",
   "services/paymentChannels.service.ts",
   "services/system.service.ts",
+  "services/users.service.ts",
+  "services/orders.service.ts",
+  "services/memberships.service.ts",
+  "services/partners.service.ts",
+  "services/commissions.service.ts",
+  "services/commissionRules.service.ts",
+  "services/businessSettings.service.ts",
 ];
 
 export function countOccurrences(source: string, needle: string | RegExp): number {

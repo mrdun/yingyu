@@ -59,6 +59,44 @@ jobs:
       - name: Run tests
         run: pnpm test:ci
 
+  # 独立管理后台 (apps/admin) 的门禁: 类型检查 + 源码级测试 + 静态构建。
+  # 之前的 CI 只跑 api / e2e / client, apps/admin 完全不在门禁内 —— 新后台的类型错误
+  # 与页面回归会直接合进主干。这里不改动上面的 test job, 只新增一个 admin job。
+  admin:
+    runs-on: ubuntu-latest
+    env:
+      # apps/admin/nuxt.config.ts 的构建期门禁要求这 6 个变量 (缺失会直接失败, 避免产出坏产物)。
+      # 全部是占位值: 它们会被写进前端产物, 因此不放任何真实密钥。
+      ADMIN_API_BASE_URL: http://localhost:3001
+      LOGTO_ENDPOINT: http://localhost:3010/
+      LOGTO_APP_ID: ci-placeholder-app-id
+      BACKEND_ENDPOINT: http://localhost:3001/
+      LOGTO_SIGN_IN_REDIRECT_URI: http://localhost:3002/callback
+      LOGTO_SIGN_OUT_REDIRECT_URI: http://localhost:3002/
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20.11.0"
+
+      - name: Setup pnpm
+        run: corepack enable
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Admin type check
+        run: pnpm -F admin type-check
+
+      - name: Admin unit tests
+        run: pnpm -F admin test
+
+      - name: Admin static build (nuxt generate)
+        run: pnpm -F admin generate
+
   # lint:
 
   #   runs-on: ubuntu-latest

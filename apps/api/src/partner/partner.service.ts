@@ -1,7 +1,7 @@
 import { BadRequestException, Inject, Injectable, Logger, NotFoundException } from "@nestjs/common";
 import { Cron } from "@nestjs/schedule";
 import { createId } from "@paralleldrive/cuid2";
-import { and, desc, eq, gte, inArray, isNull, lte, or } from "drizzle-orm";
+import { and, count, desc, eq, gte, inArray, isNull, lte, or } from "drizzle-orm";
 
 import {
   businessSettings,
@@ -332,6 +332,70 @@ export class PartnerService {
       paidFen: sum("paid"),
       reversedFen: sum("reversed"),
       count: records.length,
+    };
+  }
+
+  /**
+   * 管理端佣金流水 (只读, 供 GET /admin/commissions 使用)。
+   *
+   * - 分页: page 从 1 起, pageSize 上限 100; 状态过滤 status 由调用方校验语义 (当前 schema
+   *   约束为 holding / pending / payable / paid / reversed)。
+   * - 返回字段只含运营必需项: 伙伴、被推荐用户、关联订单、金额、费率、状态、hold 相关时间。
+   *   伙伴/被推荐用户只补用户名 (与 GET /admin/users 一致), 不返回任何凭证、令牌或密钥,
+   *   也不返回 partners.commission_rate 旧字段。
+   * - 只读: 不写入任何状态, 佣金状态推进仍走 confirm / payable / settle。
+   */
+  async listCommissions(params: { page: number; pageSize: number; status?: string }) {
+    const page = Math.max(Math.trunc(Number(params.page) || 1), 1);
+    const pageSize = Math.min(Math.max(Math.trunc(Number(params.pageSize) || 20), 1), 100);
+    const status = params.status?.trim() ? params.status.trim() : undefined;
+    const where = status ? eq(commissionRecord.status, status) : undefined;
+    const offset = (page - 1) * pageSize;
+
+    const rows = await this.db
+      .select({
+        id: commissionRecord.id,
+        partnerUserId: commissionRecord.partnerUserId,
+        referredUserId: commissionRecord.referredUserId,
+        orderId: commissionRecord.orderId,
+        orderAmountFen: commissionRecord.orderAmountFen,
+        rateBps: commissionRecord.rateBps,
+        commissionFen: commissionRecord.commissionFen,
+        status: commissionRecord.status,
+        holdUntil: commissionRecord.holdUntil,
+        createdAt: commissionRecord.createdAt,
+        paidAt: commissionRecord.paidAt,
+        updatedAt: commissionRecord.updatedAt,
+      })
+      .from(commissionRecord)
+      .where(where)
+      .orderBy(desc(commissionRecord.createdAt))
+      .limit(pageSize)
+      .offset(offset);
+
+    const [totalRow] = await this.db.select({ total: count() }).from(commissionRecord).where(where);
+
+    // 用户名一次性补齐 (与 /admin/users 相同口径: 管理端可见用户名, 不返回任何凭证)
+    const userIds = Array.from(
+      new Set(rows.flatMap((row) => [row.partnerUserId, row.referredUserId])),
+    );
+    const users = userIds.length
+      ? await this.db
+          .select({ id: user.id, username: user.username })
+          .from(user)
+          .where(inArray(user.id, userIds))
+      : [];
+    const usernameMap = new Map(users.map((row) => [row.id, row.username]));
+
+    return {
+      items: rows.map((row) => ({
+        ...row,
+        partnerUsername: usernameMap.get(row.partnerUserId) ?? null,
+        referredUsername: usernameMap.get(row.referredUserId) ?? null,
+      })),
+      total: Number(totalRow?.total ?? 0),
+      page,
+      pageSize,
     };
   }
 

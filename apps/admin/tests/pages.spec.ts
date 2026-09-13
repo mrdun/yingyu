@@ -18,7 +18,7 @@ const sidebar = readSource("components/layout/AppSidebar.vue");
 const layout = readSource("layouts/default.vue");
 const nav = readSource("utils/nav.ts");
 
-describe("本批次 4 个页面", () => {
+describe("已交付页面 (O-01 的 4 个 + O-02 的 7 个)", () => {
   it.each(PAGE_FILES)("%s 存在", (page) => {
     expect(fileExists(page), `${page} 应存在`).toBe(true);
   });
@@ -100,10 +100,10 @@ describe("布局与导航", () => {
     expect(layout).toContain("buildBreadcrumb");
   });
 
-  it("侧边栏 13 项, 其中 4 项已实现, 其余为可见的占位项", () => {
+  it("侧边栏 13 项, 其中 11 项已实现 (O-02 把 7 个业务模块从占位改为可用), 其余 2 项为可见的占位项", () => {
     expect(countOccurrences(nav, /key: "/g)).toBe(13);
-    expect(countOccurrences(nav, "implemented: true")).toBe(4);
-    expect(countOccurrences(nav, "implemented: false")).toBe(9);
+    expect(countOccurrences(nav, "implemented: true")).toBe(11);
+    expect(countOccurrences(nav, "implemented: false")).toBe(2);
 
     for (const label of [
       "Dashboard",

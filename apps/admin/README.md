@@ -6,9 +6,23 @@
 
 - 骨架: `ssr: false`, 可 `nuxt generate` 出静态产物; runtimeConfig 全部来自环境变量 (构建期门禁见 `nuxt.config.ts`)。
 - 认证: 复用 Logto SPA 应用 `earthworm-client` (不新建应用), scope 含 `admin:access`; 全局守卫区分 **401 (未登录 → 登录)** 与 **403 (已登录无权限 → Forbidden)**。
-- 布局: 左侧 13 项导航 (4 项已实现, 9 项为可见但禁用的占位) + 顶栏 (标题/面包屑/管理员身份)。
-- 页面: `/dashboard`、`/plans`、`/payment-channels`、`/system/health`。
+- 布局: 左侧 13 项导航 (11 项已实现, 2 项为可见但禁用的占位) + 顶栏 (标题/面包屑/管理员身份)。
+- 页面 (O-01): `/dashboard`、`/plans`、`/payment-channels`、`/system/health`。
 - Service 层: 统一入口 `services/admin-api.ts` (transport), 页面禁止直接 `$fetch`/`fetch`。
+
+## O-02 批次 (第二批) 范围
+
+- 页面 (7 个): `/users`、`/orders`、`/memberships`、`/partners`、`/commissions`、`/commission-rules`、`/settings/business`。
+- 后端增量 (唯一): `GET /admin/commissions` —— 分页 (`page`/`pageSize`, 上限 100) + 按 `status` 过滤的只读佣金列表
+  (状态枚举以 `packages/schema` 的 `commission_records` CHECK 约束为准: holding/pending/payable/paid/reversed)。
+  佣金状态推进仍只有既有三个 POST (`confirm` / `:id/payable` / `:id/settle`)。
+- 佣金比例: 后端整数 bps ↔ 界面百分比**只**通过 `utils/format.ts` 的 `formatBps` / `parsePercentToBps` 换算
+  (页面里不得出现任何写死的比例或自行做除法)。
+- 危险操作 (退款 / 授予会员 / Partner 审批与暂停 / 佣金结算 / 佣金规则启停 / 业务参数保存) 一律走
+  `AppConfirmDialog` 二次确认; 所有写操作的成功与否以接口返回为准, 前端不改状态。
+- 安全边界: 用户页与支付渠道页不展示任何凭证 (密码/token/密钥); 业务设置页只编辑 `business_settings`
+  里的业务参数, **系统密钥与连接串 (DATABASE*URL / REDIS_URL / LOGTO*\* / 支付私钥) 不在后台可编辑范围**。
+- 服务端分页复用 `composables/useServerPagedList.ts` (loading/empty/error/401/403/分页), 前端分页仍用 `usePagedList`。
 
 ## 常用命令
 
@@ -38,12 +52,15 @@ pnpm -F admin preview:static   # 用内置静态服务器预览产物 (端口 30
 ```
 api/          HTTP 传输 (ofetch 实例: baseURL / token / 错误归一化)
 services/     统一入口 admin-api.ts (transport) + 各模块 service
+              (dashboard / plans / paymentChannels / system / users / orders /
+               memberships / partners / commissions / commissionRules / businessSettings)
 stores/       跨页面状态 (access / session / toast)
-composables/  页面复用的状态机 (useAsyncResource / usePagedList / ...)
+composables/  页面复用的状态机 (useAsyncResource / usePagedList / useServerPagedList / ...)
 components/   layout / ui / table / form / status 五类自建 UI 基元
 middleware/   auth.global.ts 全局认证与权限守卫
 plugins/      logto / http
-utils/        format (金额/时间) / status (状态色调) / nav (导航与面包屑)
+utils/        format (金额/时间/佣金比例 bps) / status (状态色调) / nav (导航与面包屑) /
+              businessSettings (业务参数中文说明与只读兜底)
 types/        管理端 API 契约与 UI 类型
 ```
 

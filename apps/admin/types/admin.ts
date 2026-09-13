@@ -144,3 +144,225 @@ export interface AdminIdentity {
   email: string | null;
   name: string | null;
 }
+
+/* ------------------------------------------------------------------------------------------
+ * O-02 批次: 用户 / 订单 / 会员 / Partner / 佣金 / 佣金规则 / 业务设置
+ * 字段来源: apps/api/src/{admin,membership,partner,business-settings}/*
+ * ------------------------------------------------------------------------------------------ */
+
+/** GET /admin/users 单项 (教学概况来自 user_learn_record / user_learning_activities) */
+export interface AdminUserRow {
+  userId: string;
+  username: string | null;
+  createdAt: string | null;
+  todayStatements: number;
+  totalStatements: number;
+  totalDurationSeconds: number;
+}
+
+/** GET /admin/users 响应 (总数在 Logto 响应头 total-number, 缺失时后端降级为当前页条数) */
+export interface AdminUserList {
+  users: AdminUserRow[];
+  total: number;
+  page: number;
+  pageSize: number;
+}
+
+/**
+ * 订单状态 (唯一来源: apps/api/src/membership/types/order-status.ts)。
+ * 前端只用于展示与过滤, 任何状态变更都以接口返回为准。
+ */
+export type OrderStatusValue =
+  | "pending"
+  | "processing"
+  | "paid"
+  | "refunding"
+  | "failed"
+  | "cancelled"
+  | "expired"
+  | "refunded";
+
+/** GET /admin/dashboard/orders 单项 (列表行, 含 plan 名称与金额) */
+export interface AdminOrderRow {
+  orderId: string;
+  userId: string;
+  planName: string | null;
+  amountFen: number;
+  status: string;
+  provider: string;
+  createdAt: string | null;
+  paidAt: string | null;
+  refundedAt: string | null;
+}
+
+/** GET /admin/dashboard/orders 响应 */
+export interface AdminOrderList {
+  items: AdminOrderRow[];
+  total: number;
+  page: number;
+  limit: number;
+}
+
+/**
+ * GET /admin/orders/:id —— 订单详情 (orders 表投影)。
+ * 只声明页面真正展示的字段: 不读取/不渲染 providerOrderId / providerTransactionId /
+ * idempotencyKey 等渠道标识, 避免把第三方交易号带到浏览器上。
+ */
+export interface AdminOrderDetail {
+  id: string;
+  userId: string;
+  planId: string;
+  amountFen: number;
+  currency: string;
+  status: string;
+  provider: string;
+  paymentMethod: string | null;
+  paidAt: string | null;
+  refundedAt: string | null;
+  createdAt: string | null;
+  updatedAt: string | null;
+}
+
+/** POST /admin/orders/:orderId/reconcile 返回 (后端 reconcileOrder 的摘要) */
+export interface OrderReconcileResult {
+  orderId?: string;
+  action?: string;
+  status?: string;
+  recovered?: boolean;
+  [key: string]: unknown;
+}
+
+/** POST /admin/orders/:orderId/refund 返回 (后端 refundOrder 的结果) */
+export interface OrderRefundResult {
+  orderId?: string;
+  status?: string;
+  refundedAt?: string | null;
+  [key: string]: unknown;
+}
+
+/** GET /admin/dashboard/memberships 的日粒度会员增长点 */
+export interface AdminMembershipGrowthPoint {
+  date: string;
+  newMembers: number;
+  lifetimePurchases: number;
+  paidUsers: number;
+}
+
+/** GET /admin/dashboard/memberships 响应 (会员增长, 按天聚合) */
+export interface AdminMembershipGrowth {
+  daily: AdminMembershipGrowthPoint[];
+}
+
+/** POST /admin/memberships/grant 返回 */
+export interface MembershipGrantResult {
+  userId: string;
+  planId: string;
+  startDate: string | null;
+  endDate: string | null;
+}
+
+/**
+ * Partner 状态 (唯一来源: apps/api/src/partner/partner-status.ts)。
+ */
+export type PartnerStatusValue = "pending" | "active" | "suspended" | "rejected";
+
+/**
+ * GET /admin/partners 单项。
+ * 注意: 后端已剔除 partners.commission_rate(_bps) 旧字段, 佣金比例统一看 /admin/commission-rules。
+ */
+export interface AdminPartnerRow {
+  id: string;
+  userId: string;
+  referralCode: string | null;
+  status: string;
+  createdAt: string | null;
+  updatedAt: string | null;
+}
+
+/**
+ * 佣金状态 (唯一来源: apps/api/src/partner/commission-status.ts 与
+ * commission_records.status 的 CHECK 约束)。
+ */
+export type CommissionStatusValue = "holding" | "pending" | "payable" | "paid" | "reversed";
+
+/**
+ * GET /admin/commissions 单项 (本批次新增接口)。
+ * 金额/比例全部来自后端快照字段, 前端不做任何计算。
+ */
+export interface AdminCommissionRow {
+  id: string;
+  partnerUserId: string;
+  partnerUsername: string | null;
+  referredUserId: string;
+  referredUsername: string | null;
+  orderId: string;
+  orderAmountFen: number;
+  rateBps: number;
+  commissionFen: number;
+  status: string;
+  holdUntil: string | null;
+  createdAt: string | null;
+  paidAt: string | null;
+  updatedAt: string | null;
+}
+
+/** GET /admin/commissions 响应 */
+export interface AdminCommissionList {
+  items: AdminCommissionRow[];
+  total: number;
+  page: number;
+  pageSize: number;
+}
+
+/** POST /admin/commissions/confirm 返回 (退款保护期结束的 holding → pending 条数) */
+export interface CommissionConfirmResult {
+  confirmed: number;
+}
+
+/** 佣金规则状态 (后端 partner_commission_rules.status: active / inactive) */
+export type CommissionRuleStatusValue = "active" | "inactive";
+
+/** GET /admin/commission-rules 单项 (比例以整数 bps 存储) */
+export interface AdminCommissionRule {
+  id: string;
+  partnerType: string;
+  planId: string | null;
+  rateBps: number;
+  status: string;
+  effectiveFrom: string | null;
+  effectiveTo: string | null;
+  createdAt: string | null;
+  updatedAt: string | null;
+}
+
+/** 佣金规则可写字段 (rateBps 只能是整数, 页面通过 parsePercentToBps 换算) */
+export interface AdminCommissionRulePayload {
+  partnerType?: string;
+  planId?: string | null;
+  rateBps?: number;
+  status?: string;
+  effectiveFrom?: string;
+  effectiveTo?: string | null;
+}
+
+/**
+ * GET /admin/business-settings 单项。
+ * 只包含业务参数 (value 以字符串存储); 系统级密钥/连接串不在该表中, 后台也不可编辑。
+ */
+export interface AdminBusinessSetting {
+  key: string;
+  value: string;
+  updatedAt: string | null;
+}
+
+/** PATCH /admin/business-settings/:key 返回 (后端只回 key/value) */
+export interface AdminBusinessSettingUpdate {
+  key: string;
+  value: string;
+}
+
+/** 服务端分页列表的统一投影 (users / orders / commissions 三种响应归一化后用同一套状态机) */
+export interface ServerPage<T> {
+  items: T[];
+  total: number;
+}

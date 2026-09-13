@@ -11,8 +11,8 @@ import { NAV_ITEMS, normalizePath } from "~/utils/nav";
 
 /**
  * 左侧导航。
- * 13 项中已实现 4 项 (Dashboard / 会员方案 / 支付渠道 / 系统健康), 其余为可见但禁用的占位项,
- * 点击提示"后续批次" —— 不用隐藏菜单假装模块不存在。
+ * 13 项中已实现 11 项 (O-01 的 4 项 + O-02 的 7 项业务模块), 其余 2 项 (课程中心/学习路线)
+ * 为可见但禁用的占位项, 点击提示"后续批次" —— 不用隐藏菜单假装模块不存在。
  */
 const props = withDefaults(defineProps<{ open?: boolean }>(), { open: false });
 const emit = defineEmits<{ close: [] }>();

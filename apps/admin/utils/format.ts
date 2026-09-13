@@ -8,6 +8,15 @@
 /** 后端所有金额字段单位都是「分」 */
 const FEN_PER_YUAN = 100;
 
+/**
+ * 佣金比例的唯一换算基数: 后端以整数 basis point (bps) 存储, 100 bps = 1%。
+ * 比例同样只来自 API — 页面不得写死任何具体比例, 只能通过下面两个函数换算。
+ */
+const BPS_PER_PERCENT = 100;
+
+/** bps 合法区间 [0, 10000] (100% = 10000 bps), 与后端 check 约束一致 */
+const MAX_BPS = 10000;
+
 /** 数据缺失时的统一占位符 (后端没有的指标不许编造数字) */
 export const MISSING_TEXT = "—";
 
@@ -75,4 +84,33 @@ export function formatDurationDays(days: number | null | undefined): string {
   const value = Number(days);
   if (!Number.isFinite(value) || value <= 0) return MISSING_TEXT;
   return `${value} 天`;
+}
+
+/**
+ * 后端整数 bps → 人类可读百分比 (2500 → "25%", 3750 → "37.5%")。
+ * 页面只允许通过本函数展示佣金比例, 不得自行做除法或写死比例。
+ */
+export function formatBps(bps: number | null | undefined): string {
+  if (isMissing(bps) || Number.isNaN(Number(bps))) return MISSING_TEXT;
+  const percent = Number(bps) / BPS_PER_PERCENT;
+  const rounded = Number.isInteger(percent) ? percent : Number(percent.toFixed(2));
+  return `${rounded}%`;
+}
+
+/**
+ * 界面输入的百分比 → 后端整数 bps (允许带或不带 % 后缀)。
+ * 非法/越界输入返回 null, 由调用方展示校验错误 —— 不静默取 0 造成"零佣金"事故。
+ * 只接受最多两位小数: 0.01% 已是 bps 的最小粒度。
+ */
+export function parsePercentToBps(input: string | number | null | undefined): number | null {
+  const raw = String(input ?? "")
+    .trim()
+    .replace(/%$/, "")
+    .trim();
+  if (!raw) return null;
+  if (!/^\d+(\.\d{1,2})?$/.test(raw)) return null;
+
+  const bps = Math.round(Number(raw) * BPS_PER_PERCENT);
+  if (!Number.isInteger(bps) || bps < 0 || bps > MAX_BPS) return null;
+  return bps;
 }
