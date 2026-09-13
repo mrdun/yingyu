@@ -43,6 +43,7 @@ describe("页面只通过 service 取数", () => {
       ["pages/commissions.vue", 'from "~/services/commissions.service"'],
       ["pages/commission-rules.vue", 'from "~/services/commissionRules.service"'],
       ["pages/settings/business.vue", 'from "~/services/businessSettings.service"'],
+      ["pages/learning-paths.vue", 'from "~/services/learningPaths.service"'],
     ];
     for (const [page, importPath] of expectations) {
       expect(readSource(page), `${page} 应引用 ${importPath}`).toContain(importPath);

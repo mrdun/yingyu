@@ -6,7 +6,8 @@
 
 - 骨架: `ssr: false`, 可 `nuxt generate` 出静态产物; runtimeConfig 全部来自环境变量 (构建期门禁见 `nuxt.config.ts`)。
 - 认证: 复用 Logto SPA 应用 `earthworm-client` (不新建应用), scope 含 `admin:access`; 全局守卫区分 **401 (未登录 → 登录)** 与 **403 (已登录无权限 → Forbidden)**。
-- 布局: 左侧 13 项导航 (12 项已实现, 仅「学习路线」为可见但禁用的占位) + 顶栏 (标题/面包屑/管理员身份)。
+- 布局: 左侧 13 项导航 + 顶栏 (标题/面包屑/管理员身份)。
+  (O-04 之后 13 项全部可用, 零占位; 占位分支仍保留给将来的新模块, 见 `utils/nav.ts`。)
 - 页面 (O-01): `/dashboard`、`/plans`、`/payment-channels`、`/system/health`。
 - Service 层: 统一入口 `services/admin-api.ts` (transport), 页面禁止直接 `$fetch`/`fetch`。
 
@@ -53,6 +54,45 @@
      注: `PATCH /admin/course-packs/:id` 的 DTO 已接受 `order` (`@IsOptional @IsInt @Min(0)`),
      详情页的排序与 title/description/cover 一起保存, 不再需要只读展示。
 
+## O-04 批次 (第四批) 范围: 学习路线 + 清理用户端旧后台
+
+- 页面 (1 个): `/learning-paths` —— 学习路线列表 (含**未发布**) + 发布状态过滤 + 新建/编辑/发布/下架/删除,
+  以及本页核心的**条目编排** (阶段 → 课程包, 添加/编辑/删除/上移/下移)。
+  文案只讲"编排学习顺序": 不出现任何购买/价格/会员相关措辞。
+- 后端增量 (9 个写/读接口, 全部 `@Permissions("admin:access")`, 落在既有 admin 模块):
+
+  | 方法   | 路径                                 | 说明                                                      |
+  | ------ | ------------------------------------ | --------------------------------------------------------- |
+  | GET    | `/admin/learning-paths`              | 全部路线 (含未发布), `page/pageSize` + `isPublished` 过滤 |
+  | GET    | `/admin/learning-paths/:id`          | 详情 + 条目 (含 `coursePackTitle`), 不存在 404            |
+  | POST   | `/admin/learning-paths`              | 新建 (后端固定 `isPublished=false`)                       |
+  | PATCH  | `/admin/learning-paths/:id`          | 改 `title/description/cover/order` (只改传入项)           |
+  | PATCH  | `/admin/learning-paths/:id/publish`  | 发布 / 下架 (幂等)                                        |
+  | DELETE | `/admin/learning-paths/:id`          | 删除: **事务内**先删条目再删路线                          |
+  | POST   | `/admin/learning-paths/:id/items`    | 添加条目; 重复课程包 → 409 (可读 message, 不是 500)       |
+  | PATCH  | `/admin/learning-path-items/:itemId` | 改条目 (阶段/排序/课程包); 同路线重复课程包 → 409         |
+  | DELETE | `/admin/learning-path-items/:itemId` | 删除条目; 不存在 404                                      |
+
+  这 9 个接口是必需的: 公开接口 (`GET /learning-path`、`GET /learning-path/:id`) 只有 2 个只读方法且强制
+  `isPublished = true`, 管理端既看不到自己建的未发布路线, 也没有任何写入能力。
+  **公开接口的可见性逻辑未做任何改动**: 游客/会员仍然只看到已发布的路线。
+
+- 排序确定性: 所有列表查询都是 `asc(order), asc(id)` —— `order` 允许重复 (新建默认 0),
+  单键排序在重复时顺序不确定, 配 `limit/offset` 会翻页重复或漏行。条目列表同样是 `asc(order), asc(id)`。
+- 重复条目: 先按 `(learningPathId, coursePackId)` 查重给出可读的 409; 并发下漏过的重复由数据库的
+  `unique(learning_path_id, course_pack_id)` 兜底, 同样转成 409 (见 `apps/api/src/admin/db-errors.ts` 的
+  `isUniqueViolationError`) —— 不允许把驱动异常当 500 抛出去。前端把后端 message **原文**展示在表单里。
+- 排序 (上移/下移): 复用 O-03 的做法 —— `utils/reorder.ts` 算出相邻两条的新 order,
+  逐条发既有 `PATCH /admin/learning-path-items/:itemId`。**没有**任何批量排序接口。
+- 课程包下拉: 直接复用课程中心的列表接口 `services/courses.service.ts#fetchCoursePacks`
+  (分页拉全, 有上限兜底), 本批次没有新增任何课程包接口。
+- 危险操作: 发布/下架、删除路线 (提示**会连带删除条目**且不可撤销)、删除条目 (不可撤销) 全部走
+  `AppConfirmDialog`; 删除路线成功后若正在编排该路线, 自动收起条目面板。
+- 清理用户端旧后台 (同一个批次收尾): 删除 `apps/client/pages/admin.vue`、
+  `apps/client/pages/admin/{dashboard,plans}.vue` 与配套的 `apps/client/api/admin.ts`;
+  用户端 `layouts/default.vue` 的 `HIDDEN_PREFIXES` 移除已不存在的 `/admin`。
+  `apps/client/plugins/logto.ts` 的 scopes **未动** (移除 `admin:access` 的时机由独立 Logto 应用上线后决定)。
+
 ## 常用命令
 
 ```bash
@@ -83,7 +123,7 @@ api/          HTTP 传输 (ofetch 实例: baseURL / token / 错误归一化)
 services/     统一入口 admin-api.ts (transport) + 各模块 service
               (dashboard / plans / paymentChannels / system / users / orders /
                memberships / partners / commissions / commissionRules / businessSettings /
-               courses (课程中心) / aiContent (AI 生成))
+               courses (课程中心) / aiContent (AI 生成) / learningPaths (学习路线))
 stores/       跨页面状态 (access / session / toast)
 composables/  页面复用的状态机 (useAsyncResource / usePagedList / useServerPagedList /
               useCoursePackActions / ...)
@@ -93,7 +133,8 @@ plugins/      logto / http
 utils/        format (金额/时间/佣金比例 bps) / status (状态色调) / nav (导航与面包屑) /
               businessSettings (业务参数中文说明与只读兜底) /
               courseStatus (课程状态/来源/访问级别展示与可用动作) / reorder (相邻 order 交换) /
-              statementForm (语句表单取值与校验) / audio (音频转 base64 与大小提示)
+              statementForm (语句表单取值与校验) / audio (音频转 base64 与大小提示) /
+              learningPath (路线发布状态展示与条目默认排序)
 types/        管理端 API 契约与 UI 类型
 ```
 

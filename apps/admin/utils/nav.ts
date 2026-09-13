@@ -1,8 +1,10 @@
 /**
  * 左侧导航 (13 项)。
- * O-03 批次后 12 项已实现 (Dashboard/用户/课程中心/会员方案/会员/订单/支付渠道/Partner/
- * 佣金/佣金规则/业务设置/系统健康), 仅剩 1 项 (学习路线) 仍是「可见但禁用」的占位项,
- * 点击提示"后续批次" (见 AppSidebar)。
+ * O-04 批次后 **13 项全部实现** (Dashboard/用户/课程中心/学习路线/会员方案/会员/订单/
+ * 支付渠道/Partner/佣金/佣金规则/业务设置/系统健康), 已无任何占位项。
+ *
+ * AppSidebar 仍保留 implemented=false 的占位分支 (v-else + nav-placeholder): 将来新增
+ * 模块时先以占位项上架, 点击给出「后续批次」提示, 而不是把未完成的模块藏起来。
  * implemented=false 的项没有路由, 因此也不会进入面包屑。
  */
 export interface NavItem {
@@ -18,7 +20,7 @@ export const NAV_ITEMS: NavItem[] = [
   { key: "dashboard", label: "Dashboard", to: "/dashboard", implemented: true },
   { key: "users", label: "用户", to: "/users", implemented: true },
   { key: "course-center", label: "课程中心", to: "/courses", implemented: true },
-  { key: "learning-path", label: "学习路线", to: null, implemented: false },
+  { key: "learning-path", label: "学习路线", to: "/learning-paths", implemented: true },
   { key: "plans", label: "会员方案", to: "/plans", implemented: true },
   { key: "members", label: "会员", to: "/memberships", implemented: true },
   { key: "orders", label: "订单", to: "/orders", implemented: true },

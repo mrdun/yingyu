@@ -8,7 +8,7 @@ import { getToken } from "~/services/auth";
 /**
  * HTTP 错误: ofetch 默认只 reject 响应体, 会丢掉 HTTP 状态码,
  * 而页面用 `e?.status === 401 || e?.statusCode === 401` 判断游客态
- * (见 pages/membership.vue / pages/admin.vue / pages/partner.vue 等)。
+ * (见 pages/membership.vue / pages/partner.vue 等)。
  * 状态码丢失会让 401 落到「加载失败」分支, 游客因此看不到会员方案与价格。
  *
  * 这里统一 reject 一个带状态码的 Error, 同时保留旧写法能读到的字段:

@@ -403,11 +403,11 @@ describe("侧边栏「课程中心」由占位改为可用链接", () => {
     expect(line).toContain("implemented: true");
   });
 
-  it("仍未实现的学习路线保持占位 (不能假装已上线)", () => {
+  it("O-04 后学习路线已可用 (13 项零占位), 断言同步更新", () => {
     const line = nav.split(/\r?\n/).find((item) => item.includes('label: "学习路线"'));
-    expect(line).toContain("to: null");
-    expect(line).toContain("implemented: false");
-    expect(countOccurrences(nav, "implemented: false")).toBe(1);
+    expect(line).toContain('to: "/learning-paths"');
+    expect(line).toContain("implemented: true");
+    expect(countOccurrences(nav, "implemented: false")).toBe(0);
   });
 
   it("子路由 (详情/语句编辑器/AI 生成) 归属到课程中心, 面包屑与标题不再显示裸 id", () => {

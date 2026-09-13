@@ -2,7 +2,8 @@
  * 管理端 API 契约类型。
  *
  * 刻意复制 (禁止 apps/admin import apps/client —— 那会把两个前端构建耦合在一起)。
- * 来源: apps/client/api/admin.ts 与 apps/api/src/{admin,plans,payment,health}/*.ts。
+ * 来源: apps/api/src/{admin,plans,payment,health}/*.ts 的返回类型。
+ * (用户端的旧后台页面与配套 API 客户端已在 O-04 批次整体删除, 管理端契约只跟后端对齐。)
  * 后端字段增删请同步这里; 本批不改后端。
  */
 
@@ -504,4 +505,80 @@ export interface AiSplitStatement {
 export interface AiCoursePackResult {
   coursePackId: string;
   courseCount: number;
+}
+
+/* ------------------------------------------------------------------------------------------
+ * O-04 批次: 学习路线 (把课程包编排成有顺序的学习路径: 阶段 → 课程包)
+ * 字段来源: apps/api/src/admin/learning-paths.{controller,service}.ts、
+ *           packages/schema/src/schema/learningPath.ts
+ * ------------------------------------------------------------------------------------------ */
+
+/**
+ * GET /admin/learning-paths 单项。
+ * 管理端返回**全部**路线 (含未发布); isPublished 只用于展示与过滤,
+ * 公开接口 (GET /learning-path) 仍然只暴露 isPublished=true 的路线。
+ */
+export interface AdminLearningPathRow {
+  id: string;
+  title: string;
+  description: string;
+  cover: string | null;
+  order: number;
+  isPublished: boolean;
+  /** 该路线下的条目数 (列表页直接展示) */
+  itemCount: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
+/** GET /admin/learning-paths 响应 */
+export interface AdminLearningPathList {
+  items: AdminLearningPathRow[];
+  total: number;
+  page: number;
+  pageSize: number;
+}
+
+/** 路线条目 (阶段 → 课程包), coursePackTitle 由后端 join 出来 */
+export interface AdminLearningPathItemRow {
+  id: string;
+  stage: string;
+  coursePackId: string;
+  coursePackTitle: string;
+  order: number;
+}
+
+/** GET /admin/learning-paths/:id —— 详情 + 条目列表 (按 asc(order), asc(id)) */
+export interface AdminLearningPathDetail extends AdminLearningPathRow {
+  items: AdminLearningPathItemRow[];
+}
+
+/**
+ * 路线可写字段 (POST /admin/learning-paths、PATCH /admin/learning-paths/:id)。
+ * order 与课程包/课程/语句排序同一套规则 (@IsOptional @IsInt @Min(0));
+ * 发布状态**不在这里**改 —— 只能走 PATCH /admin/learning-paths/:id/publish。
+ */
+export interface AdminLearningPathWritePayload {
+  title?: string;
+  description?: string;
+  cover?: string;
+  order?: number;
+}
+
+/** 条目可写字段 (POST .../items、PATCH /admin/learning-path-items/:itemId) */
+export interface AdminLearningPathItemWritePayload {
+  coursePackId?: string;
+  stage?: string;
+  order?: number;
+}
+
+/**
+ * 条目编排用的课程包下拉项。
+ * 数据来自既有课程包列表接口 (GET /admin/course-packs), 本批次没有新增课程包接口。
+ */
+export interface CoursePackOption {
+  id: string;
+  title: string;
+  /** draft / review / published / archived —— 仅用于在下拉里标注, 不做过滤 */
+  status: string;
 }

@@ -100,10 +100,11 @@ describe("布局与导航", () => {
     expect(layout).toContain("buildBreadcrumb");
   });
 
-  it("侧边栏 13 项, 其中 12 项已实现 (O-03 把课程中心从占位改为可用), 其余 1 项为可见的占位项", () => {
+  it("侧边栏 13 项全部可用 (O-04 把最后一项占位 学习路线 改为可用), 零占位", () => {
     expect(countOccurrences(nav, /key: "/g)).toBe(13);
-    expect(countOccurrences(nav, "implemented: true")).toBe(12);
-    expect(countOccurrences(nav, "implemented: false")).toBe(1);
+    expect(countOccurrences(nav, "implemented: true")).toBe(13);
+    expect(countOccurrences(nav, "implemented: false")).toBe(0);
+    expect(nav).not.toContain("to: null");
 
     for (const label of [
       "Dashboard",

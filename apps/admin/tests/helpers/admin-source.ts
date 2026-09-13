@@ -74,8 +74,16 @@ export const BATCH3_PAGE_FILES = [
   "pages/courses/ai.vue",
 ];
 
+/** O-04 批次交付的学习路线页面 (路线列表 + 条目编排, 把上面 12 项之外的最后一个占位补上) */
+export const BATCH4_PAGE_FILES = ["pages/learning-paths.vue"];
+
 /** 当前已交付的全部页面 (公共断言都跑在这上面) */
-export const PAGE_FILES = [...BATCH1_PAGE_FILES, ...BATCH2_PAGE_FILES, ...BATCH3_PAGE_FILES];
+export const PAGE_FILES = [
+  ...BATCH1_PAGE_FILES,
+  ...BATCH2_PAGE_FILES,
+  ...BATCH3_PAGE_FILES,
+  ...BATCH4_PAGE_FILES,
+];
 
 export const SERVICE_FILES = [
   "services/admin-api.ts",
@@ -92,6 +100,7 @@ export const SERVICE_FILES = [
   "services/businessSettings.service.ts",
   "services/courses.service.ts",
   "services/aiContent.service.ts",
+  "services/learningPaths.service.ts",
 ];
 
 export function countOccurrences(source: string, needle: string | RegExp): number {

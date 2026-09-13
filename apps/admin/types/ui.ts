@@ -3,6 +3,8 @@
 import type {
   AdminCoursePackWritePayload,
   AdminCourseWritePayload,
+  AdminLearningPathItemWritePayload,
+  AdminLearningPathWritePayload,
   AdminPlanPayload,
   AdminStatementWritePayload,
 } from "~/types/admin";
@@ -45,4 +47,20 @@ export interface StatementFormSubmit {
   /** edit 时为语句 id; create 时为空字符串 */
   statementId: string;
   payload: AdminStatementWritePayload & { chinese: string; english: string };
+}
+
+/** 学习路线表单提交结果 (order 是 DTO 的合法字段; 发布状态只能走 publish 端点) */
+export interface LearningPathFormSubmit {
+  mode: "create" | "edit";
+  /** edit 时为路线 id; create 时为空字符串 */
+  id: string;
+  payload: AdminLearningPathWritePayload & { title: string };
+}
+
+/** 路线条目表单提交结果 (coursePackId 已由表单校验保证非空) */
+export interface LearningPathItemFormSubmit {
+  mode: "create" | "edit";
+  /** edit 时为条目 id; create 时为空字符串 */
+  itemId: string;
+  payload: AdminLearningPathItemWritePayload & { coursePackId: string };
 }

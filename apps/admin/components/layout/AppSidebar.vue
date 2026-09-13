@@ -11,9 +11,10 @@ import { NAV_ITEMS, normalizePath } from "~/utils/nav";
 
 /**
  * 左侧导航。
- * 13 项中已实现 12 项 (O-01 的 4 项 + O-02 的 7 项业务模块 + O-03 的课程中心),
- * 仅剩 1 项 (学习路线) 为可见但禁用的占位项, 点击提示"后续批次" ——
- * 不用隐藏菜单假装模块不存在。
+ * O-04 批次后 13 项全部可用 (O-01 的 4 项 + O-02 的 7 项业务模块 + O-03 的课程中心 +
+ * O-04 的学习路线), 零占位。
+ * 占位分支 (v-else, data-testid="nav-placeholder") 保留给将来的新模块: 未实现时
+ * 显示为禁用项并提示"后续批次", 而不是把菜单藏起来假装模块不存在。
  */
 const props = withDefaults(defineProps<{ open?: boolean }>(), { open: false });
 const emit = defineEmits<{ close: [] }>();

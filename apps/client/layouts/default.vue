@@ -61,8 +61,9 @@ onErrorCaptured((err) => {
 const route = useRoute();
 const { isAuthenticated: isLoggedIn } = useAuthState();
 
-// 首页与营销页不显示左侧导航; /game 全屏沉浸学习、/admin、/editor 也走全宽布局
-const HIDDEN_PREFIXES = ["/game", "/admin", "/editor", "/privacy-policy", "/terms"];
+// 首页与营销页不显示左侧导航; /game 全屏沉浸学习、/editor 也走全宽布局
+// 用户端已没有 /admin 路由 (旧后台页面已下线, 管理后台迁到独立应用 apps/admin), 故不再隐藏
+const HIDDEN_PREFIXES = ["/game", "/editor", "/privacy-policy", "/terms"];
 const HIDDEN_PATHS = ["/"];
 
 const showWorkNav = computed(() => {

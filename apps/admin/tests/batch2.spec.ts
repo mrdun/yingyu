@@ -298,15 +298,13 @@ describe("侧边栏: O-02 的 7 个模块已启用", () => {
     expect(nav).toContain(`to: "${route}"`);
   });
 
-  it("导航里 7 个模块不再带「后续批次」占位 (O-03 后只剩 1 项占位: 学习路线)", () => {
-    expect(countOccurrences(nav, "implemented: false")).toBe(1);
-    expect(countOccurrences(nav, "implemented: true")).toBe(12);
-    const stillPlaceholder = ["学习路线"];
-    for (const label of stillPlaceholder) {
-      const line = nav.split(/\r?\n/).find((item) => item.includes(`label: "${label}"`));
-      expect(line, `${label} 应保持占位`).toContain("to: null");
-      expect(line).toContain("implemented: false");
-    }
+  it("导航里 7 个模块不再带「后续批次」占位 (O-04 后 13 项全部实现, 零占位)", () => {
+    expect(countOccurrences(nav, "implemented: false")).toBe(0);
+    expect(countOccurrences(nav, "implemented: true")).toBe(13);
+    // O-04 把最后一项占位 (学习路线) 改成了可用路由
+    const learningPathLine = nav.split(/\r?\n/).find((item) => item.includes('label: "学习路线"'));
+    expect(learningPathLine).toContain('to: "/learning-paths"');
+    expect(learningPathLine).toContain("implemented: true");
   });
 
   it("侧边栏只为未实现项渲染占位按钮", () => {

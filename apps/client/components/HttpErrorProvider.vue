@@ -18,7 +18,7 @@ function useHttpStatusError() {
         // 否则游客态永远显示不出来, 且登录页与落地页之间会来回重定向。
         // 需要登录的「用户主动动作」由按钮显式调用 signIn()
         // (Navbar 登录 / 立即开通 / 申请成为 Partner / 领取奖励), 行为保持不变。
-        // 管理后台权限不足走 403, 仍由 default 分支提示 (见 admin.vue)。
+        // 权限不足 (403) 仍由 default 分支提示 (见 partner.vue 等需要权限的页面)。
         break;
       default:
         toast.error(errMessage);
