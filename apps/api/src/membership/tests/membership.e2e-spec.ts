@@ -4,6 +4,7 @@ import { Test, TestingModule } from "@nestjs/testing";
 import { Redis } from "ioredis";
 import * as request from "supertest";
 
+import { plans } from "@earthworm/schema";
 import { cleanDB, signin } from "../../../test/helper/utils";
 import { AppModule } from "../../app/app.module";
 import { appGlobalMiddleware } from "../../app/useGlobal";
@@ -28,6 +29,11 @@ describe("membership orders e2e", () => {
 
     await app.init();
     await cleanDB(db);
+    // cleanDB 会清空 plans, 因此这里必须自带会员方案 (e2e 不依赖 migration 0030 的 seed)
+    await db
+      .insert(plans)
+      .values([{ id: "monthly", name: "月度会员", priceFen: 1800, durationDays: 30, sortOrder: 1 }])
+      .onConflictDoNothing();
     token = await signin(moduleFixture);
   });
 
