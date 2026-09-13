@@ -55,6 +55,48 @@ export class CoursePackService {
   }
 
   /**
+   * 默认学习入口 (首页「开始学习」直接进入练习, 不经过课程商城):
+   * - 优先第一个 published + public 的 **free** 课程包 (游客可立即练);
+   * - 没有免费包时退化为第一个 published + public 课程包, 并标记 requiresMembership;
+   * - 始终返回第一个学习单元 (course) 与练习入口 URL, 前端无需硬编码课程 ID;
+   * - 无权限时 (会员课 + 游客) 不返回学习内容, 只返回课程包基本信息。
+   */
+  async findDefaultEntry(userId: string | null) {
+    const packs = await this.db.query.coursePack.findMany({
+      orderBy: asc(coursePack.order),
+      where: and(eq(coursePack.shareLevel, "public"), eq(coursePack.status, "published")),
+      with: {
+        courses: {
+          orderBy: asc(course.order),
+          limit: 1,
+        },
+      },
+    });
+
+    if (packs.length === 0) {
+      throw new NotFoundException("No published course pack available");
+    }
+
+    const pack = packs.find((item) => resolveAccessLevel(item) === "free") ?? packs[0];
+    const accessLevel = resolveAccessLevel(pack);
+    const canStudy = await this.courseAccessService.canStudyCoursePack(userId, pack);
+    const firstCourse = canStudy ? pack.courses[0] ?? null : null;
+
+    return {
+      id: pack.id,
+      title: pack.title,
+      description: pack.description,
+      cover: pack.cover,
+      accessLevel,
+      isFree: accessLevel === "free",
+      accessible: canStudy,
+      requiresMembership: accessLevel === "membership" && !canStudy,
+      firstCourse: firstCourse ? { id: firstCourse.id, title: firstCourse.title } : null,
+      entryUrl: firstCourse ? `/game/${pack.id}/${firstCourse.id}` : null,
+    };
+  }
+
+  /**
    * 课程详情: 统一入口做 view / study 分离。
    * - draft/review/archived → 404;
    * - free → 完整内容;

@@ -9,6 +9,7 @@ function readPage(relativePath: string): string {
 
 const membershipPage = readPage("../membership.vue");
 const partnerPage = readPage("../partner.vue");
+const indexPage = readPage("../index.vue");
 
 describe("商业化页面不硬编码商业数据 (task 七)", () => {
   it("membership page has no hardcoded price", () => {
@@ -51,5 +52,21 @@ describe("商业化页面不硬编码商业数据 (task 七)", () => {
     // 后端 type 取值是 legacy 的 regular/founder, 直接展示会让用户看到英文枚举
     expect(membershipPage).not.toContain("status.type");
     expect(membershipPage).toContain("currentPlanName");
+  });
+});
+
+describe("首页核心学习入口 (TASK-002-N-01)", () => {
+  it("开始学习直接进入默认课程的练习, 不再先进课程商城", () => {
+    expect(indexPage).toContain("fetchDefaultLearningEntry");
+    expect(indexPage).toContain("resolveStartLearningTarget");
+    // 不应再把首页按钮固定指向课程商城
+    expect(indexPage).not.toContain('push("/course-pack")');
+    expect(indexPage).not.toContain("push('/course-pack')");
+  });
+
+  it("使用后端返回的默认入口地址 (无硬编码课程 ID)", () => {
+    expect(indexPage).toContain("router.push(resolveStartLearningTarget(entry).path)");
+    // 页面里不应出现任何写死的课程包/课程 ID
+    expect(indexPage).not.toMatch(/coursePackId\s*=|courseId\s*=\s*"/);
   });
 });

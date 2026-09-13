@@ -44,6 +44,102 @@ describe("CoursePackService", () => {
   });
 
   describe("findAll (marketplace)", () => {
+    it("default entry prefers a free published pack and returns the first practice unit (guest)", async () => {
+      // 会员包排在前面, 但默认入口应优先免费包
+      await insertCoursePack(db, {
+        creatorId: "admin",
+        shareLevel: "public",
+        status: "published",
+        accessLevel: "membership",
+        order: 1,
+      });
+      const freePack = await insertCoursePack(db, {
+        creatorId: "admin",
+        shareLevel: "public",
+        status: "published",
+        accessLevel: "free",
+        order: 2,
+      });
+      const firstCourse = await insertCourse(db, freePack.id, { title: "第一课", order: 1 });
+      await insertCourse(db, freePack.id, { title: "第二课", order: 2 });
+      // 草稿包不应被选中
+      await insertCoursePack(db, {
+        creatorId: "admin",
+        shareLevel: "public",
+        status: "draft",
+        accessLevel: "free",
+        order: 0,
+      });
+
+      mockCourseAccess.canStudyCoursePack.mockResolvedValue(true);
+      const entry = await coursePackService.findDefaultEntry(null);
+
+      expect(entry.id).toBe(freePack.id);
+      expect(entry.accessLevel).toBe("free");
+      expect(entry.accessible).toBe(true);
+      expect(entry.requiresMembership).toBe(false);
+      expect(entry.firstCourse).toEqual({ id: firstCourse.id, title: "第一课" });
+      expect(entry.entryUrl).toBe(`/game/${freePack.id}/${firstCourse.id}`);
+    });
+
+    it("default entry never leaks study content for a membership pack to a guest", async () => {
+      const membershipPack = await insertCoursePack(db, {
+        creatorId: "admin",
+        shareLevel: "public",
+        status: "published",
+        accessLevel: "membership",
+      });
+      await insertCourse(db, membershipPack.id, { title: "会员课", order: 1 });
+
+      mockCourseAccess.canStudyCoursePack.mockResolvedValue(false);
+      const entry = await coursePackService.findDefaultEntry(null);
+
+      expect(entry.id).toBe(membershipPack.id);
+      expect(entry.requiresMembership).toBe(true);
+      expect(entry.accessible).toBe(false);
+      expect(entry.firstCourse).toBeNull();
+      expect(entry.entryUrl).toBeNull();
+    });
+
+    it("default entry returns content for a member on a membership pack", async () => {
+      const membershipPack = await insertCoursePack(db, {
+        creatorId: "admin",
+        shareLevel: "public",
+        status: "published",
+        accessLevel: "membership",
+      });
+      const course = await insertCourse(db, membershipPack.id, { title: "会员课", order: 1 });
+
+      mockCourseAccess.canStudyCoursePack.mockResolvedValue(true);
+      const entry = await coursePackService.findDefaultEntry("member-1");
+
+      expect(entry.accessible).toBe(true);
+      expect(entry.requiresMembership).toBe(false);
+      expect(entry.entryUrl).toBe(`/game/${membershipPack.id}/${course.id}`);
+    });
+
+    it("default entry 404s when there is no published pack", async () => {
+      await insertCoursePack(db, {
+        creatorId: "admin",
+        shareLevel: "public",
+        status: "draft",
+        accessLevel: "free",
+      });
+
+      await expect(coursePackService.findDefaultEntry(null)).rejects.toThrow(NotFoundException);
+    });
+
+    it("default entry ignores private packs", async () => {
+      await insertCoursePack(db, {
+        creatorId: "admin",
+        shareLevel: "private",
+        status: "published",
+        accessLevel: "free",
+      });
+
+      await expect(coursePackService.findDefaultEntry(null)).rejects.toThrow(NotFoundException);
+    });
+
     it("returns only published + public course packs", async () => {
       const published = await insertCoursePack(db, {
         creatorId: "admin",

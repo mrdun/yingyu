@@ -24,6 +24,27 @@ export interface CoursePackApiResponse {
   requiresMembership?: boolean;
 }
 
+/** 默认学习入口 (首页「开始学习」直接进入练习, 课程与学习单元均由后端决定) */
+export interface DefaultLearningEntryApiResponse {
+  id: string;
+  title: string;
+  description: string;
+  cover: string | null;
+  accessLevel: "free" | "membership";
+  isFree: boolean;
+  accessible: boolean;
+  requiresMembership: boolean;
+  firstCourse: { id: string; title: string } | null;
+  entryUrl: string | null;
+}
+
+export async function fetchDefaultLearningEntry() {
+  const http = getHttp();
+  return (await http<DefaultLearningEntryApiResponse>("/course-pack/default", {
+    method: "get",
+  })) as DefaultLearningEntryApiResponse;
+}
+
 export async function fetchCoursePacks(params?: { keyword?: string; filter?: string }) {
   const http = getHttp();
   const query = new URLSearchParams();

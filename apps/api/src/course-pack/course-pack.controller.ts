@@ -22,6 +22,16 @@ export class CoursePackController {
 
   @UncheckAuth()
   @UseGuards(AuthGuard)
+  @Get("default")
+  async findDefault(@User() user: UserEntity) {
+    return await this.coursePackService.findDefaultEntry(user.userId);
+  }
+
+  /**
+   * 注意: `default` 必须声明在 `:coursePackId` 之前, 否则会被当成课程包 ID。
+   */
+  @UncheckAuth()
+  @UseGuards(AuthGuard)
   @Get(":coursePackId")
   async findOne(@User() user: UserEntity, @Param("coursePackId") coursePackId: string) {
     return await this.coursePackService.findOneWithCourses(user.userId, coursePackId);
