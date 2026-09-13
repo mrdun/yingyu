@@ -69,14 +69,7 @@
         >
           <template v-for="coursePack in coursePackStore.coursePacks">
             <CoursePackCard
-              :coursePack="{
-                id: coursePack.id,
-                title: coursePack.title,
-                description: coursePack.description,
-                cover: coursePack.cover,
-                isFree: coursePack.isFree,
-                accessLevel: coursePack.accessLevel,
-              }"
+              :coursePack="coursePack"
               @cardClick="handleGoToCoursePack"
             ></CoursePackCard>
           </template>
@@ -90,16 +83,15 @@
 import { navigateTo } from "#app";
 import { onBeforeUnmount, ref, watch } from "vue";
 
-import type { CoursePack } from "~/types";
-import { fetchCoursePacks } from "~/api/course-pack";
+import type { CoursePacksItem } from "~/types";
+import { fetchCoursePack, fetchCoursePacks } from "~/api/course-pack";
 import { fetchMembershipStatus } from "~/api/membership";
 import CoursePackCard from "~/components/courses/CoursePackCard.vue";
-import { useNavigation } from "~/composables/useNavigation";
 import { signIn } from "~/services/auth";
 import { useCoursePackStore } from "~/store/coursePack";
+import { resolveCoursePackCardEntryPath } from "~/utils/coursePackEntry";
 
 const coursePackStore = useCoursePackStore();
-const { gotoCourseList } = useNavigation();
 const isLoading = ref(false);
 
 const keyword = ref("");
@@ -172,14 +164,15 @@ async function applySearch() {
   }
 }
 
-function handleGoToCoursePack(coursePack: CoursePack) {
-  // 后端返回的 accessible 是最终权限依据; 前端只负责展示与跳转
-  if (coursePack.accessible) {
-    gotoCourseList(coursePack.id);
-  } else {
-    // 会员课程但无权限 → 进入会员页
-    navigateTo("/membership");
-  }
+async function handleGoToCoursePack(coursePack: CoursePacksItem) {
+  // 「立即开始学习」必须真的立即开始: accessible === true (免费课 / 有权限的会员课)
+  // 先取一次课程包, 直接进入第一课练习; 无权限 / 取数失败 / 包内无课程 → 课程包详情页。
+  // 决策与兜底都在 utils/coursePackEntry.ts, 任何取值都不会把用户送去会员墙。
+  const target = await resolveCoursePackCardEntryPath(
+    (coursePackId) => fetchCoursePack(coursePackId),
+    coursePack,
+  );
+  await navigateTo(target.path);
 }
 </script>
 

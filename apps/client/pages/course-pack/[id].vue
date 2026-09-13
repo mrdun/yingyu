@@ -38,15 +38,17 @@
 
       <!-- 会员课程无权限: 展示 CTA -->
       <div
-        v-if="coursePackStore.currentCoursePack?.requiresMembership"
+        v-if="
+          coursePackStore.currentCoursePack?.requiresMembership && membershipCta.action !== 'none'
+        "
         class="flex flex-col items-center gap-4 py-12"
       >
         <p class="text-lg text-zinc-600 dark:text-zinc-300">这是会员专享课程</p>
         <button
           class="rounded-full bg-brand-600 px-8 py-3 text-base font-semibold text-white shadow hover:bg-brand-500"
-          @click="navigateTo('/membership')"
+          @click="handleMembershipCta()"
         >
-          开通会员后学习
+          {{ membershipCta.label }}
         </button>
       </div>
 
@@ -91,15 +93,22 @@ import { computed, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 
 import { fetchCourseRatings } from "~/api/course";
+import { fetchMembershipStatus } from "~/api/membership";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
-import { isAuthenticated } from "~/services/auth";
+import { isAuthenticated, signIn } from "~/services/auth";
 import { useCoursePackStore } from "~/store/coursePack";
+import type { MembershipIdentity } from "~/utils/coursePackEntry";
+import { resolveMembershipCta } from "~/utils/coursePackEntry";
 
 const isLoading = ref(false);
 const route = useRoute();
 const coursePackStore = useCoursePackStore();
 const coursePackId = route.params.id as string;
 const { updateActiveCourseMap } = useActiveCourseMap();
+
+/** 会员身份: 决定「会员专享」CTA 的文案与动作 (游客 → 登录, 非会员 → 会员页, 会员 → 无 CTA) */
+const membershipIdentity = ref<MembershipIdentity>("non-member");
+const membershipCta = computed(() => resolveMembershipCta(membershipIdentity.value));
 
 const ratings = ref<Awaited<ReturnType<typeof fetchCourseRatings>>>([]);
 const ratingMap = computed(() => {
@@ -137,6 +146,7 @@ setup();
 async function setup() {
   isLoading.value = true;
   await coursePackStore.setupCoursePack(coursePackId);
+  await loadMembershipIdentity();
   if (isAuthenticated()) {
     await coursePackStore.setupCoursePackProgress(coursePackId);
     try {
@@ -146,6 +156,31 @@ async function setup() {
     }
   }
   isLoading.value = false;
+}
+
+async function loadMembershipIdentity() {
+  if (!isAuthenticated()) {
+    membershipIdentity.value = "guest";
+    return;
+  }
+  try {
+    const status = await fetchMembershipStatus();
+    membershipIdentity.value = status.isMember ? "member" : "non-member";
+  } catch (e: any) {
+    const code = e?.status ?? e?.statusCode;
+    membershipIdentity.value = code === 401 ? "guest" : "non-member";
+  }
+}
+
+function handleMembershipCta() {
+  if (membershipCta.value.action === "sign-in") {
+    // 登录后回到当前课程包详情页 (而不是被丢回课程商城)
+    signIn(route.path);
+    return;
+  }
+  if (membershipCta.value.action === "membership") {
+    navigateTo("/membership");
+  }
 }
 
 function handleChangeCourse(courseId: string) {

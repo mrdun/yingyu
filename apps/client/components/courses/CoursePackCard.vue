@@ -5,7 +5,7 @@
   >
     <figure class="relative aspect-video overflow-hidden">
       <NuxtImg
-        :src="coursePack.cover"
+        :src="coursePack.cover ?? ''"
         :placeholder="[288, 180]"
         width="288"
         height="180"
@@ -26,7 +26,15 @@
       >
         {{ coursePack.description }}
       </p>
-      <slot name="actions"></slot>
+      <slot name="actions">
+        <span
+          v-if="showAction"
+          class="mt-3 inline-flex w-full items-center justify-center rounded-full px-4 py-2 text-sm font-medium text-white shadow transition-colors duration-200"
+          :class="isFree ? 'bg-brand-600 hover:bg-brand-500' : 'bg-purple-500 hover:bg-purple-400'"
+        >
+          {{ actionLabel }}
+        </span>
+      </slot>
     </div>
   </div>
 </template>
@@ -34,26 +42,43 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
+import type { CoursePackCardModel } from "~/utils/coursePackEntry";
+import { resolveCoursePackCardActionLabel } from "~/utils/coursePackEntry";
+
 interface Props {
-  coursePack: {
-    id: string;
-    title: string;
-    description: string;
-    cover: string;
-    isFree: boolean;
-    accessLevel?: "free" | "membership";
-  };
+  /**
+   * 必须是后端返回的完整课程包对象 (至少保留 accessible):
+   * 列表页手工裁剪字段会丢掉 accessible, 导致点击决策恒为 falsy。
+   */
+  coursePack: CoursePackCardModel;
+  /**
+   * 是否展示自动动作文案。默认展示 (课程广场);
+   * 学习路线等「拿不到 accessible」的场景可关闭, 避免给会员显示「开通会员解锁」这类错误提示。
+   */
+  showAction?: boolean;
 }
 
-const props = defineProps<Props>();
+/**
+ * 默认值必须写在 `withDefaults` 里, 不能靠 `props.showAction !== false` 兜底:
+ * Vue 对 `Boolean` 类型的 prop 有特殊转换规则 —— 上层未传 `show-action` 时,
+ * props 里会被填入 `false` (Boolean prop 缺省即 false), **不是** `undefined`。
+ * 于是 `props.showAction !== false` 恒为 false, 兜底动作文案永远走 v-if=false,
+ * 渲染成 `<!---->` (P1 缺陷: 卡片上既没有「立即开始学习」也没有「开通会员解锁」)。
+ */
+const props = withDefaults(defineProps<Props>(), {
+  showAction: true,
+});
 
 const isFree = computed(() => {
   if (props.coursePack.accessLevel) return props.coursePack.accessLevel === "free";
-  return props.coursePack.isFree;
+  return props.coursePack.isFree === true;
 });
 
+const actionLabel = computed(() => resolveCoursePackCardActionLabel(props.coursePack));
+const showAction = computed(() => props.showAction);
+
 defineEmits<{
-  (e: "cardClick", coursePack: any): void;
+  (e: "cardClick", coursePack: CoursePackCardModel): void;
 }>();
 </script>
 

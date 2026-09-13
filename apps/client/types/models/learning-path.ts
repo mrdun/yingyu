@@ -1,3 +1,5 @@
+import type { CoursePackAccessLevel } from "./course-pack";
+
 export type LearningPathSummary = {
   id: string;
   title: string;
@@ -16,6 +18,9 @@ export type LearningPathDetailItem = {
     description: string;
     isFree: boolean | null;
     cover: string | null;
+    /** 后端返回的权限字段: 不裁剪, 供卡片文案 / 跳转决策使用 */
+    accessLevel?: CoursePackAccessLevel | null;
+    accessible?: boolean;
   };
 };
 
