@@ -6,6 +6,34 @@
       课程广场
     </h2>
 
+    <!-- 首次进入引导: 说明如何开始 + 会员状态 (不含复杂引导流程) -->
+    <div
+      class="mb-6 rounded-2xl border border-gray-200 bg-white px-4 py-3 text-sm dark:border-gray-700 dark:bg-gray-800"
+    >
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <div class="text-gray-600 dark:text-gray-300">
+          <span class="font-medium">第一次来?</span>
+          免费课程可直接学习, 带「会员」标记的课程需要开通会员。
+        </div>
+        <div class="flex items-center gap-2">
+          <span
+            v-if="membershipState === 'member'"
+            class="badge badge-success badge-sm"
+          >
+            会员已生效
+          </span>
+          <button
+            v-if="membershipState !== 'member'"
+            class="btn btn-xs"
+            :class="membershipState === 'guest' ? '' : 'border-none bg-purple-500 text-white'"
+            @click="handleMembershipCta()"
+          >
+            {{ membershipState === "guest" ? "登录" : "查看会员方案" }}
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- 搜索 + 筛选 -->
     <div class="mb-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
       <input
@@ -64,8 +92,10 @@ import { onBeforeUnmount, ref, watch } from "vue";
 
 import type { CoursePack } from "~/types";
 import { fetchCoursePacks } from "~/api/course-pack";
+import { fetchMembershipStatus } from "~/api/membership";
 import CoursePackCard from "~/components/courses/CoursePackCard.vue";
 import { useNavigation } from "~/composables/useNavigation";
+import { signIn } from "~/services/auth";
 import { useCoursePackStore } from "~/store/coursePack";
 
 const coursePackStore = useCoursePackStore();
@@ -74,6 +104,8 @@ const isLoading = ref(false);
 
 const keyword = ref("");
 const filter = ref("all");
+/** 首次进入引导用的会员状态: member / non-member / guest */
+const membershipState = ref<"member" | "non-member" | "guest">("non-member");
 let debounceTimer: ReturnType<typeof setTimeout> | null = null;
 
 const filterOptions = [
@@ -83,6 +115,26 @@ const filterOptions = [
 ];
 
 setup();
+
+loadMembershipState();
+
+async function loadMembershipState() {
+  try {
+    const status = await fetchMembershipStatus();
+    membershipState.value = status.isMember ? "member" : "non-member";
+  } catch (e: any) {
+    const code = e?.status ?? e?.statusCode;
+    membershipState.value = code === 401 ? "guest" : "non-member";
+  }
+}
+
+function handleMembershipCta() {
+  if (membershipState.value === "guest") {
+    signIn();
+    return;
+  }
+  navigateTo("/membership");
+}
 
 async function setup() {
   // 课程包不会更新 所以初始化的时候只拉取一次数据就好了

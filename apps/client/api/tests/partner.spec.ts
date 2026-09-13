@@ -1,6 +1,11 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import { applyPartner, fetchPartnerMe } from "../partner";
+import {
+  applyPartner,
+  fetchPartnerCommissions,
+  fetchPartnerMe,
+  fetchPartnerReferrals,
+} from "../partner";
 
 const { httpMock } = vi.hoisted(() => ({ httpMock: vi.fn() }));
 
@@ -34,5 +39,28 @@ describe("partner API client", () => {
 
     expect(httpMock).toHaveBeenCalledWith("/partner/apply", { method: "post" });
     expect(me.commission.plans).toEqual([]);
+  });
+
+  it("loads referral records from the API", async () => {
+    await fetchPartnerReferrals();
+
+    expect(httpMock).toHaveBeenCalledWith("/partner/referrals", { method: "get" });
+  });
+
+  it("loads commission summary from the API (statuses are backend-defined)", async () => {
+    httpMock.mockResolvedValueOnce({
+      totalCommissionFen: 720,
+      holdingFen: 720,
+      pendingFen: 0,
+      payableFen: 0,
+      paidFen: 0,
+      reversedFen: 0,
+      count: 1,
+    });
+
+    const summary = await fetchPartnerCommissions();
+
+    expect(httpMock).toHaveBeenCalledWith("/partner/commissions", { method: "get" });
+    expect(summary.holdingFen).toBe(720);
   });
 });

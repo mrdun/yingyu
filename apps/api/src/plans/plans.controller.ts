@@ -13,12 +13,19 @@ export class PlansController {
   @Get()
   async findAll() {
     const plans = await this.plansService.findPublic();
-    return plans.map((p) => ({
-      id: p.id,
-      name: p.name,
-      priceFen: p.priceFen,
-      durationDays: p.durationDays,
-      sortOrder: p.sortOrder,
-    }));
+    // 权益同样来自数据库 (plan_entitlements), 前端不硬编码会员权益
+    return await Promise.all(
+      plans.map(async (p) => ({
+        id: p.id,
+        name: p.name,
+        priceFen: p.priceFen,
+        durationDays: p.durationDays,
+        sortOrder: p.sortOrder,
+        entitlements: (await this.plansService.getPlanEntitlements(p.id)).map((e) => ({
+          key: e.entitlementKey,
+          value: e.entitlementValue,
+        })),
+      })),
+    );
   }
 }

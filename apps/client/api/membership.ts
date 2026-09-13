@@ -1,6 +1,10 @@
 import { getHttp } from "./http";
 
-export type MembershipPlanId = "monthly" | "quarterly" | "yearly" | "lifetime";
+/**
+ * 计划 id 完全由后台配置 (Admin /admin/plans 可新增方案),
+ * 前端不做枚举假设, 否则后台新增方案会导致类型/布局不匹配。
+ */
+export type MembershipPlanId = string;
 
 /** 支付方式 (与后端 payment-method.ts 一一对应) */
 export type PaymentMethod = "mock" | "wechat_native" | "wechat_jsapi" | "alipay_qr";
@@ -23,11 +27,19 @@ export interface PaymentPayload {
   jsapiParams?: Record<string, string>;
 }
 
+/** 会员权益 (来自 plan_entitlements, 前端不硬编码) */
+export interface PlanEntitlement {
+  key: string;
+  value: string;
+}
+
 export interface MembershipPlanInfo {
   id: MembershipPlanId;
   name: string;
   priceFen: number;
   durationDays: number | null;
+  sortOrder?: number;
+  entitlements?: PlanEntitlement[];
 }
 
 export interface MembershipStatus {

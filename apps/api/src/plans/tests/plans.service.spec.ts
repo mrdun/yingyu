@@ -82,4 +82,25 @@ describe("PlansService", () => {
     expect(entitlements[0].entitlementKey).toBe("course_access");
     expect(entitlements[0].entitlementValue).toBe("all");
   });
+
+  it("only exposes public plans for the storefront (public list + entitlements)", async () => {
+    await seedPlans(db);
+    await db.insert(plans).values({
+      id: "hidden_promo",
+      name: "内部测试",
+      priceFen: 100,
+      durationDays: 7,
+      sortOrder: 9,
+      isPublic: false,
+    });
+
+    const publicPlans = await service.findPublic();
+    expect(publicPlans.map((p) => p.id)).not.toContain("hidden_promo");
+
+    // 权益数据可由 controller 层拼装 (J-02: 前端权益不得硬编码)
+    const entitlements = await service.getPlanEntitlements("yearly");
+    expect(entitlements.map((e) => [e.entitlementKey, e.entitlementValue])).toEqual([
+      ["course_access", "all"],
+    ]);
+  });
 });

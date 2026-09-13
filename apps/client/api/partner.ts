@@ -38,6 +38,39 @@ export async function applyPartner() {
   return await http<PartnerMe>("/partner/apply", { method: "post" });
 }
 
+/** 我的邀请记录 (后端已做隐私脱敏: 只返回用户名首字符) */
+export interface PartnerReferralRow {
+  createdAt: string;
+  username: string;
+  commissionFen: number;
+}
+
+export interface PartnerReferralList {
+  count: number;
+  referrals: PartnerReferralRow[];
+}
+
+/** 我的佣金汇总 (状态与后端 commission_records.status 一致) */
+export interface PartnerCommissionSummary {
+  totalCommissionFen: number;
+  holdingFen: number;
+  pendingFen: number;
+  payableFen: number;
+  paidFen: number;
+  reversedFen: number;
+  count: number;
+}
+
+export async function fetchPartnerReferrals(): Promise<PartnerReferralList> {
+  const http = getHttp();
+  return await http<PartnerReferralList>("/partner/referrals", { method: "get" });
+}
+
+export async function fetchPartnerCommissions(): Promise<PartnerCommissionSummary> {
+  const http = getHttp();
+  return await http<PartnerCommissionSummary>("/partner/commissions", { method: "get" });
+}
+
 /** 归因: 用推广码把当前登录用户归因到 active Partner (幂等, 后端校验) */
 export async function attributeReferral(referralCode: string): Promise<AttributeReferralResult> {
   const http = getHttp();
