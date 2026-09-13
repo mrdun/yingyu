@@ -67,7 +67,11 @@ describe("AdminService", () => {
 
   describe("overview 计算", () => {
     it("aggregates overview counters with mocked db", async () => {
-      logtoApi.get.mockResolvedValue({ data: { totalCount: 12, data: [] } });
+      // 真实响应形状: 数组 + total-number 响应头
+      logtoApi.get.mockResolvedValue({
+        data: [{ id: "u1", username: "alice", createdAt: "2026-01-01T00:00:00Z" }],
+        headers: { "total-number": "12" },
+      });
       const db = makeDb([
         [{ total: "3" }], // activeToday
         [{ total: "5" }], // coursePackCount
@@ -104,13 +108,11 @@ describe("AdminService", () => {
   describe("listUsers 分页", () => {
     it("maps logto users with per-user aggregates and pagination meta", async () => {
       logtoApi.get.mockResolvedValue({
-        data: {
-          totalCount: 2,
-          data: [
-            { id: "u1", username: "alice", createdAt: "2026-01-01T00:00:00Z" },
-            { id: "u2", username: "bob", createdAt: "2026-02-01T00:00:00Z" },
-          ],
-        },
+        data: [
+          { id: "u1", username: "alice", createdAt: "2026-01-01T00:00:00Z" },
+          { id: "u2", username: "bob", createdAt: "2026-02-01T00:00:00Z" },
+        ],
+        headers: { "total-number": "2" },
       });
       const db = makeDb([
         [{ userId: "u1", total: "7" }], // today

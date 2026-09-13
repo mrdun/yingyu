@@ -1,4 +1,4 @@
-import { BadRequestException, Inject, Injectable, NotFoundException } from "@nestjs/common";
+import { BadRequestException, Inject, Injectable, Logger, NotFoundException } from "@nestjs/common";
 import { and, count, eq, inArray, sql } from "drizzle-orm";
 
 import {
@@ -68,6 +68,8 @@ function todayStr(): string {
 
 @Injectable()
 export class AdminService {
+  private readonly logger = new Logger(AdminService.name);
+
   constructor(
     @Inject(DB) private db: DbType,
     private readonly logtoService: LogtoService,
@@ -102,15 +104,67 @@ export class AdminService {
     };
   }
 
+  /**
+   * 用户总数。Logto Management API 的 GET /api/users 返回的是**数组**,
+   * 没有 totalCount 字段; 真实总数在响应头 `total-number` 里 (字符串)。
+   */
   private async countUsers(): Promise<number> {
     try {
-      const { data } = await this.logtoService.logtoApi.get("/api/users", {
-        params: { page: 1, page_size: 1, include_default_role: true },
+      const { users, total } = await this.fetchLogtoUsers({
+        page: 1,
+        page_size: 1,
+        include_default_role: true,
       });
-      return Number(data?.totalCount ?? 0);
-    } catch {
+
+      if (total !== null) return total;
+
+      // 响应头缺失: 不伪装成 0, 降级为当前页条数 (下界), 并留下 warn 便于发现
+      this.logger.warn(
+        `Logto 用户总数响应头 total-number 缺失, 已降级为当前页条数: page=1 page_size=1 currentPageCount=${users.length}`,
+      );
+      return users.length;
+    } catch (error) {
+      // 不静默吞掉失败: 记录原因后降级为 0, 可通过日志与"真的是 0 个用户"区分
+      this.logger.warn(
+        `获取 Logto 用户总数失败, 已降级为 0: ${(error as Error)?.message ?? String(error)}`,
+      );
       return 0;
     }
+  }
+
+  /**
+   * 拉取一页 Logto 用户。返回 total 为 null 表示响应头缺失 (由调用方决定如何降级)。
+   */
+  private async fetchLogtoUsers(params: Record<string, unknown>): Promise<{
+    users: Array<{ id: string; username: string | null; createdAt: string | null }>;
+    total: number | null;
+  }> {
+    const response = await this.logtoService.logtoApi.get("/api/users", { params });
+
+    const rawUsers = Array.isArray(response.data) ? response.data : [];
+    const users = rawUsers.map((u: any) => ({
+      id: u?.id,
+      username: u?.username ?? null,
+      createdAt: u?.createdAt ?? null,
+    }));
+
+    const headers = response.headers as unknown as Record<string, unknown> | undefined;
+    return { users, total: this.parseTotalNumberHeader(headers?.["total-number"]) };
+  }
+
+  /**
+   * 解析响应头 total-number (字符串)。无法解析时返回 null, 让"取不到"与"真的是 0"可区分。
+   */
+  private parseTotalNumberHeader(value: unknown): number | null {
+    const raw = Array.isArray(value) ? value[0] : value;
+    if (typeof raw !== "string" && typeof raw !== "number") return null;
+
+    const text = String(raw).trim();
+    if (text === "") return null;
+
+    const parsed = Number(text);
+    if (!Number.isFinite(parsed) || parsed < 0) return null;
+    return Math.trunc(parsed);
   }
 
   private async countActiveToday(day: string): Promise<number> {
@@ -155,22 +209,25 @@ export class AdminService {
     let logtoUsers: Array<{ id: string; username: string | null; createdAt: string | null }> = [];
     let total = 0;
     try {
-      const { data } = await this.logtoService.logtoApi.get("/api/users", {
-        params: {
-          page,
-          page_size: pageSize,
-          include_default_role: true,
-          ...(keyword ? { search: keyword } : {}),
-        },
+      const fetched = await this.fetchLogtoUsers({
+        page,
+        page_size: pageSize,
+        include_default_role: true,
+        ...(keyword ? { search: keyword } : {}),
       });
-      total = Number(data?.totalCount ?? 0);
-      logtoUsers = (data?.data ?? []).map((u) => ({
-        id: u.id,
-        username: u.username ?? null,
-        createdAt: u.createdAt ?? null,
-      }));
-    } catch {
-      // Logto 不可用时返回空列表
+      logtoUsers = fetched.users;
+      // 与 countUsers 同源: 总数在响应头 total-number, 缺失时降级为当前页条数
+      total = fetched.total ?? fetched.users.length;
+      if (fetched.total === null) {
+        this.logger.warn(
+          `Logto 用户总数响应头 total-number 缺失, 列表 total 已降级为当前页条数: page=${page} page_size=${pageSize} currentPageCount=${fetched.users.length}`,
+        );
+      }
+    } catch (error) {
+      // Logto 不可用时仍返回空列表 (保持接口契约), 但记录原因便于排查
+      this.logger.warn(
+        `获取 Logto 用户列表失败, 已降级为空列表: ${(error as Error)?.message ?? String(error)}`,
+      );
     }
 
     const ids = logtoUsers.map((u) => u.id);
