@@ -6,7 +6,7 @@ import * as request from "supertest";
 
 import { userCourseProgress } from "@earthworm/schema";
 import { insertUserCourseProgress } from "../../../test/fixture/db";
-import { cleanDB, signin } from "../../../test/helper/utils";
+import { cleanDB, ensureUser, signin } from "../../../test/helper/utils";
 import { AppModule } from "../../app/app.module";
 import { appGlobalMiddleware } from "../../app/useGlobal";
 import { endDB } from "../../common/db";
@@ -16,6 +16,7 @@ describe("user-progress e2e", () => {
   let app: INestApplication;
   let db: DbType;
   let token: string;
+  let userId: string;
 
   beforeAll(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
@@ -27,6 +28,8 @@ describe("user-progress e2e", () => {
     db = moduleFixture.get<DbType>(DB);
     await app.init();
     token = await signin(moduleFixture);
+    // users 影子表在生产由登录流程写入, e2e 不经过登录, 这里显式造出该用户, 测试不依赖库内残留数据
+    userId = await ensureUser(db, token);
   });
 
   afterEach(async () => {
@@ -60,6 +63,8 @@ describe("user-progress e2e", () => {
     const courseId = createId();
     await insertUserCourseProgress(db, coursePackId, courseId, 1);
 
+    // 先 await 请求拿到 200, 再断言 DB (supertest 的 .expect(fn) 不会 await 异步回调,
+    // 异步断言会在测试生命周期之外执行, 读库时写入/数据可能已被 cleanDB 清掉)
     await request(app.getHttpServer())
       .put("/user-course-progress")
       .send({
@@ -68,16 +73,18 @@ describe("user-progress e2e", () => {
         statementIndex: 10,
       })
       .set("Authorization", `Bearer ${token}`)
-      .expect(200)
-      .expect(async () => {
-        const result = await db.query.userCourseProgress.findFirst({
-          where: and(
-            eq(userCourseProgress.coursePackId, coursePackId),
-            eq(userCourseProgress.courseId, courseId),
-          ),
-        });
+      .expect(200);
 
-        expect(result).toBeTruthy();
-      });
+    const result = await db.query.userCourseProgress.findFirst({
+      where: and(
+        eq(userCourseProgress.userId, userId),
+        eq(userCourseProgress.coursePackId, coursePackId),
+        eq(userCourseProgress.courseId, courseId),
+      ),
+    });
+
+    expect(result).toBeTruthy();
+    // 不只断言行存在, 还要断言 upsert 真的把进度写进去了
+    expect(result?.statementIndex).toBe(10);
   });
 });
