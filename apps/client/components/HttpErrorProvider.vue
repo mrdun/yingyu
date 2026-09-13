@@ -6,7 +6,6 @@
 import { toast } from "vue-sonner";
 
 import { injectHttpStatusErrorHandler } from "~/api/http.js";
-import { signIn } from "~/services/auth";
 
 useHttpStatusError();
 
@@ -14,12 +13,12 @@ function useHttpStatusError() {
   injectHttpStatusErrorHandler(async (errMessage, statusCode) => {
     switch (statusCode) {
       case 401:
-        toast.error(errMessage, {
-          duration: 2000,
-          onAutoClose() {
-            signIn(window.location.pathname);
-          },
-        });
+        // 401 = 未登录。这是「页面级数据请求」的正常结果 (游客浏览课程广场 / 会员价格),
+        // 页面自身会渲染游客态与登录入口, 全局这里既不能跳转登录页, 也不该弹错误提示:
+        // 否则游客态永远显示不出来, 且登录页与落地页之间会来回重定向。
+        // 需要登录的「用户主动动作」由按钮显式调用 signIn()
+        // (Navbar 登录 / 立即开通 / 申请成为 Partner / 领取奖励), 行为保持不变。
+        // 管理后台权限不足走 403, 仍由 default 分支提示 (见 admin.vue)。
         break;
       default:
         toast.error(errMessage);

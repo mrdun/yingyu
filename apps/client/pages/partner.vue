@@ -380,6 +380,8 @@ async function apply() {
   } catch (e: any) {
     if (e?.status === 401 || e?.statusCode === 401) {
       needLogin.value = true;
+      // 「申请成为 Partner」是用户主动动作: 未登录必须去登录 (页面级 401 不再自动跳转)
+      signIn();
     } else {
       errorMessage.value = typeof e?.message === "string" ? e.message : "申请失败, 请稍后再试";
     }

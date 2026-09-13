@@ -7,10 +7,10 @@
       </p>
     </header>
 
-    <!-- 未登录 -->
+    <!-- 未登录: 游客仍可见方案与价格, 点「登录」或「立即开通」时才跳转登录 -->
     <div
       v-if="needLogin"
-      class="rounded-2xl border border-gray-200 bg-white p-6 text-center dark:border-gray-700 dark:bg-gray-800"
+      class="mb-6 rounded-2xl border border-gray-200 bg-white p-6 text-center dark:border-gray-700 dark:bg-gray-800"
     >
       <p class="mb-4 text-gray-500">登录后即可开通会员</p>
       <button
@@ -28,7 +28,7 @@
       {{ errorMessage }}
     </div>
 
-    <template v-else>
+    <template v-if="!errorMessage">
       <!-- 已是会员: 直接给出下一步 -->
       <section
         v-if="status?.isMember"
@@ -270,7 +270,8 @@
         </template>
       </section>
 
-      <!-- 方案对比 (卡片数量自适应, 后台新增方案不会破版) -->
+      <!-- 方案对比 (卡片数量自适应, 后台新增方案不会破版);
+           游客也能先浏览价格, 点「立即开通」时才跳转登录 -->
       <section v-if="!status?.isMember">
         <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
           <h2 class="text-base font-semibold dark:text-white">选择方案</h2>
@@ -648,6 +649,11 @@ function startPolling(orderId: string) {
 }
 
 async function pay(planId: MembershipPlanId) {
+  // 「立即开通」是用户主动动作: 未登录时直接去登录 (页面级 401 不再自动跳转)
+  if (needLogin.value) {
+    signIn();
+    return;
+  }
   errorMessage.value = "";
   paying.value = planId;
   try {
@@ -686,6 +692,8 @@ async function pay(planId: MembershipPlanId) {
     const code = e?.status ?? e?.statusCode;
     if (code === 401) {
       needLogin.value = true;
+      // 明确要开通却没有有效登录态 (例如会话过期) → 回到登录页
+      signIn();
     } else if (code === 400) {
       failedReason.value =
         typeof e?.message === "string" ? e.message : "当前支付方式不可用, 请重新选择。";

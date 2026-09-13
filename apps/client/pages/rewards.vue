@@ -49,6 +49,8 @@ async function claim(task: TodayTask) {
   } catch (e: any) {
     if (e?.status === 401 || e?.statusCode === 401) {
       needLogin.value = true;
+      // 「领取奖励」是用户主动动作: 未登录必须去登录 (页面级 401 不再自动跳转)
+      signIn();
     } else {
       message.value = "领取失败，请稍后再试";
     }
