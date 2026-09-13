@@ -77,6 +77,10 @@ web_modules/
 .env.test
 .env.prod
 .env.rc
+# RC 本地演示环境运行时产物 (日志/进程号)
+rc-*.log
+rc-*.log.err
+rc-demo.pids.json
 .env.development.local
 .env.test.local
 .env.production.local

@@ -6,7 +6,11 @@
  *
  * 用法:
  *   pnpm build:client                 # 先生成 apps/client/.output/public
- *   node scripts/rc-static-server.mjs # 默认 http://127.0.0.1:4173
+ *   node scripts/rc-static-server.mjs # 默认 http://localhost:3000
+ *
+ * 端口默认 3000: 本地 Logto 应用的 Redirect URI 只注册了
+ * http://localhost:3000/callback 与 http://127.0.0.1:3000/callback,
+ * 换端口会导致登录回调失败 (除非同时在 Logto 控制台登记)。
  *
  * 注意: 仅用于本地 RC 验证, 不是生产服务器。
  */
@@ -15,7 +19,7 @@ import { createServer } from "node:http";
 import { extname, join, normalize } from "node:path";
 
 const root = join(process.cwd(), "apps/client/.output/public");
-const port = Number(process.env.RC_STATIC_PORT ?? 4173);
+const port = Number(process.env.RC_STATIC_PORT ?? 3000);
 
 const CONTENT_TYPES = {
   ".html": "text/html; charset=utf-8",
