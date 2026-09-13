@@ -1,5 +1,33 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
+/**
+ * 构建期门禁: 前端变量是在构建时写进产物的, 缺变量不会报错 —— 而是产出一个
+ * runtimeConfig 全空的坏产物 (页面能开, 但登录/课程/会员请求全部打回静态服务)。
+ * 这里在 build/generate 前直接失败, 避免"静默交付坏产物"。
+ * 变量清单见 PRODUCTION_RELEASE_CHECKLIST.md §2.2.1。
+ */
+const REQUIRED_BUILD_ENV = [
+  "API_BASE",
+  "LOGTO_ENDPOINT",
+  "LOGTO_APP_ID",
+  "BACKEND_ENDPOINT",
+  "LOGTO_SIGN_IN_REDIRECT_URI",
+  "LOGTO_SIGN_OUT_REDIRECT_URI",
+] as const;
+
+const isBuildCommand = process.argv.some((arg) => arg === "build" || arg === "generate");
+if (isBuildCommand) {
+  const missing = REQUIRED_BUILD_ENV.filter((key) => !process.env[key]);
+  if (missing.length > 0) {
+    throw new Error(
+      `前端构建缺少必需环境变量: ${missing.join(", ")}\n` +
+        `这些变量会在构建时写进产物, 缺失会产出无法连接后端的坏产物。\n` +
+        `请先 export 这些变量再构建 (见 PRODUCTION_RELEASE_CHECKLIST.md §2.2.1); ` +
+        `本地 RC 可参考 apps/client/.env 的值。`,
+    );
+  }
+}
+
 const appScripts: any = [];
 if (process.env.NODE_ENV === "production") {
   addClarity();

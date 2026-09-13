@@ -62,8 +62,18 @@ import { coursePack, learningPath, learningPathItem, pictureWord } from "@earthw
     { word: "moon", chinese: "月亮", soundmark: "/muːn/" },
   ];
 
+  // 幂等: 该脚本会被重复执行 (如 RC 重建环境), 不能重复插入示例词卡
+  let inserted = 0;
+  let skipped = 0;
   for (let i = 0; i < sampleWords.length; i++) {
     const w = sampleWords[i];
+    const existing = await db.query.pictureWord.findFirst({
+      where: eq(pictureWord.word, w.word),
+    });
+    if (existing) {
+      skipped++;
+      continue;
+    }
     await db.insert(pictureWord).values({
       word: w.word,
       chinese: w.chinese,
@@ -72,9 +82,10 @@ import { coursePack, learningPath, learningPathItem, pictureWord } from "@earthw
       exampleSentence: `This is a ${w.word}.`,
       order: i,
     });
+    inserted++;
   }
 
-  console.log(`看图学词已预置 ${sampleWords.length} 个示例词卡`);
+  console.log(`看图学词: 新增 ${inserted} 个示例词卡, 已存在跳过 ${skipped} 个`);
 
   process.exit(0);
 })();

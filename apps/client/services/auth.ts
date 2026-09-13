@@ -1,5 +1,6 @@
 import { useLogto } from "@logto/vue";
 import { useRuntimeConfig } from "nuxt/app";
+import { computed } from "vue";
 
 let logto: ReturnType<typeof useLogto>;
 let runtimeConfig: ReturnType<typeof useRuntimeConfig>;
