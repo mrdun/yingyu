@@ -10,6 +10,7 @@ function readPage(relativePath: string): string {
 const membershipPage = readPage("../membership.vue");
 const partnerPage = readPage("../partner.vue");
 const indexPage = readPage("../index.vue");
+const startLearningComposable = readPage("../../composables/useStartLearning.ts");
 
 describe("商业化页面不硬编码商业数据 (task 七)", () => {
   it("membership page has no hardcoded price", () => {
@@ -55,18 +56,25 @@ describe("商业化页面不硬编码商业数据 (task 七)", () => {
   });
 });
 
-describe("首页核心学习入口 (TASK-002-N-01)", () => {
+describe("首页核心学习入口 (TASK-002-N-01 / TASK-002-N-02)", () => {
   it("开始学习直接进入默认课程的练习, 不再先进课程商城", () => {
-    expect(indexPage).toContain("fetchDefaultLearningEntry");
-    expect(indexPage).toContain("resolveStartLearningTarget");
+    // 跳转逻辑只有一份 (composables/useStartLearning), 登录态首页与游客落地页共用
+    expect(indexPage).toContain("useStartLearning");
     // 不应再把首页按钮固定指向课程商城
-    expect(indexPage).not.toContain('push("/course-pack")');
-    expect(indexPage).not.toContain("push('/course-pack')");
+    expect(indexPage).not.toContain("/course-pack");
   });
 
-  it("使用后端返回的默认入口地址 (无硬编码课程 ID)", () => {
-    expect(indexPage).toContain("router.push(resolveStartLearningTarget(entry).path)");
-    // 页面里不应出现任何写死的课程包/课程 ID
+  it("跳转目标全部来自后端默认入口 (前端不硬编码课程/单元 ID)", () => {
+    expect(startLearningComposable).toContain("fetchDefaultLearningEntry");
+    expect(startLearningComposable).toContain("resolveStartLearningPath");
     expect(indexPage).not.toMatch(/coursePackId\s*=|courseId\s*=\s*"/);
+    // 练习地址只由 utils/learningEntry.ts 用后端返回值拼出来
+    expect(startLearningComposable).not.toMatch(/\/game\//);
+  });
+
+  it("回车快捷键只在首页注册一次, 与游客点击共用同一实现", () => {
+    expect(indexPage).toContain('registerShortcut("enter", startLearning)');
+    expect(indexPage.split('registerShortcut("enter"').length - 1).toBe(1);
+    expect(indexPage).toContain('cancelShortcut("enter", startLearning)');
   });
 });

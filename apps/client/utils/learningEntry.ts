@@ -4,6 +4,10 @@
  * 开源版核心体验: 打开网站 → 开始学习 → 直接进入默认课程的第一组练习,
  * 不经过课程商城 / 会员页。默认课程与首个学习单元全部由后端返回,
  * 前端不硬编码任何课程 ID。
+ *
+ * 这里同时是「开始学习」跳转逻辑的唯一来源: 登录态首页 (pages/index.vue)、
+ * 游客落地页 (components/Landing/index.vue) 与回车快捷键都复用本文件,
+ * 不允许各写一份 (历史上 Landing 曾自己写死跳转课程商城)。
  */
 
 export interface DefaultLearningEntry {
@@ -43,4 +47,20 @@ export function resolveStartLearningTarget(
   }
 
   return { path: `/course-pack/${entry.id}`, directPractice: false, requiresMembership };
+}
+
+/**
+ * 「开始学习」的唯一编排入口: 取后端默认学习入口 → 解析跳转目标。
+ *
+ * 取数函数由调用方注入 (页面/composable 才认识 HTTP 层), 因此这里保持纯函数,
+ * 可以直接做行为测试: 接口异常时退化为兜底目标 (课程商城), 用户不会卡在首页。
+ */
+export async function resolveStartLearningPath(
+  loadEntry: () => Promise<DefaultLearningEntry | null>,
+): Promise<StartLearningTarget> {
+  try {
+    return resolveStartLearningTarget(await loadEntry());
+  } catch {
+    return resolveStartLearningTarget(null);
+  }
 }

@@ -5,36 +5,29 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
-import { useRouter } from "vue-router";
 
-import { fetchDefaultLearningEntry } from "~/api/course-pack";
+import { useStartLearning } from "~/composables/useStartLearning";
 import { useAuthState } from "~/services/auth";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
-import { resolveStartLearningTarget } from "~/utils/learningEntry";
 
 const { isAuthenticated: isLoggedIn } = useAuthState();
-const router = useRouter();
 
 /**
- * 首页「开始学习」(含回车快捷键):
- * 直接进入后端返回的默认课程的第一组练习, 不经过课程商城/会员页。
- * 接口异常时兜底到课程商城, 保证用户不会卡在首页。
+ * 首页「开始学习」的跳转逻辑只有一份 (composables/useStartLearning):
+ * 直接进入后端返回的默认课程的第一组练习, 不经过课程商城/会员页;
+ * 接口异常时才兜底课程商城。游客落地页的按钮调用的是同一个实现。
  */
-async function startEarthworm() {
-  let entry = null;
-  try {
-    entry = await fetchDefaultLearningEntry();
-  } catch {
-    entry = null;
-  }
-  await router.push(resolveStartLearningTarget(entry).path);
-}
+const { startLearning } = useStartLearning();
 
+/**
+ * 回车快捷键在本页注册, 且只注册一次:
+ * 游客在落地页按 Enter 与点击「开启学习 →」走的是同一个 startLearning。
+ */
 onMounted(() => {
-  registerShortcut("enter", startEarthworm);
+  registerShortcut("enter", startLearning);
 });
 
 onUnmounted(() => {
-  cancelShortcut("enter", startEarthworm);
+  cancelShortcut("enter", startLearning);
 });
 </script>
