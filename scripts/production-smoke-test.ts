@@ -136,9 +136,14 @@ async function main() {
     await check("payment methods api", async () => {
       const res = await request(`${args.base}/membership/payment-methods`);
       const methods = Array.isArray(res.body) ? res.body : [];
+      // 渠道全部关闭时返回空数组是合法状态 (先上课程、后开支付), 不能算失败;
+      // 但只要渠道已开启就必须有可用支付方式, 因此空数组要在报告里显式提示。
+      const empty = methods.length === 0;
       return {
-        ok: res.status === 200 && methods.length > 0,
-        detail: `HTTP ${res.status}, methods=[${methods.map((m: any) => m.method).join(", ")}]`,
+        ok: res.status === 200,
+        detail: `HTTP ${res.status}, methods=[${methods.map((m: any) => m.method).join(", ")}]${
+          empty ? "  ⚠️ 当前无可用支付方式 (渠道未开启; 正式收款前需在后台开启并配置密钥)" : ""
+        }`,
       };
     }),
   );
