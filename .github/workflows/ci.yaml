@@ -50,7 +50,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Push schema to test DB (creates all tables incl. learning_paths/picture_words)
+      - name: Provision test DB via migrations (production path, includes CHECK constraints)
         run: pnpm db:init:test:ci
 
       - name: Run build schema

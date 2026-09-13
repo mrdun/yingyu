@@ -9,7 +9,7 @@ import { MockRedisModule } from "./mockRedis";
 
 export async function cleanDB(db: DbType) {
   await db.execute(
-    sql`TRUNCATE TABLE courses, statements, "course_packs" , "user_course_progress", "course_history", "user_learning_activities", "mastered_elements", "memberships", "user_learn_record", "orders", "user_coins", "coin_transactions", "daily_tasks", "learning_paths", "learning_path_items", "picture_words" RESTART IDENTITY CASCADE;`,
+    sql`TRUNCATE TABLE courses, statements, "course_packs" , "user_course_progress", "course_history", "user_learning_activities", "mastered_elements", "memberships", "user_learn_record", "orders", "user_coins", "coin_transactions", "daily_tasks", "learning_paths", "learning_path_items", "picture_words", "plan_entitlements", "plans" RESTART IDENTITY CASCADE;`,
   );
 }
 
