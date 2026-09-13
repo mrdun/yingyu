@@ -11,6 +11,7 @@ import { CoursePackModule } from "../course-pack/course-pack.module";
 import { CourseModule } from "../course/course.module";
 import { CronJobModule } from "../cron-job/cron-job.module";
 import { GlobalModule } from "../global/global.module";
+import { HealthModule } from "../health/health.module";
 import { LearningPathModule } from "../learning-path/learning-path.module";
 import { LogtoModule } from "../logto/logto.module";
 import { MasteredElementModule } from "../mastered-element/mastered-element.module";
@@ -29,6 +30,7 @@ import { UserModule } from "../user/user.module";
 @Module({
   imports: [
     GlobalModule,
+    HealthModule,
     AiContentModule,
     LogtoModule,
     UserModule,

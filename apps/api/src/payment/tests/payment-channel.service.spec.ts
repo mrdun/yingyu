@@ -155,4 +155,33 @@ describe("PaymentChannelService (渠道开关, 不暴露密钥)", () => {
       .where(eq(businessSettings.key, "order_expire_minutes"));
     expect(await service.orderExpireMinutes()).toBe(120);
   });
+
+  it("fails startup in production when an enabled channel lacks credentials (task 五)", async () => {
+    const original = process.env.NODE_ENV;
+    const originalKey = process.env.WECHAT_API_KEY;
+    process.env.NODE_ENV = "production";
+    delete process.env.WECHAT_API_KEY;
+    await service.setEnabled("wechat", true);
+
+    try {
+      await expect(service.onModuleInit()).rejects.toThrow(/缺少凭据|支付配置不完整/);
+    } finally {
+      process.env.NODE_ENV = original;
+      if (originalKey !== undefined) process.env.WECHAT_API_KEY = originalKey;
+      await service.setEnabled("wechat", false);
+    }
+  });
+
+  it("does not fail startup in production when no channel is enabled", async () => {
+    const original = process.env.NODE_ENV;
+    process.env.NODE_ENV = "production";
+    await service.setEnabled("wechat", false);
+    await service.setEnabled("alipay", false);
+
+    try {
+      await expect(service.onModuleInit()).resolves.toBeUndefined();
+    } finally {
+      process.env.NODE_ENV = original;
+    }
+  });
 });

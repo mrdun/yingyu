@@ -21,6 +21,8 @@
     "build:server": "pnpm schema:build && pnpm -F api build",
     "build:client": "pnpm -F client generate",
     "prod:serve": "pnpm -F api start:prod:pm",
+    "config:check:prod": "tsx scripts/production-config-check.ts",
+    "smoke:prod": "tsx scripts/production-smoke-test.ts",
     "format": "prettier --write --cache .",
     "format-check": "prettier --check --cache .",
     "test": "pnpm -F api test && pnpm -F client test",
