@@ -57,16 +57,19 @@ describe("membership orders e2e", () => {
     await request(app.getHttpServer()).get("/membership/status").expect(401);
   });
 
-  it("POST /membership/orders 创建订单并返回 orderId + payUrl", async () => {
+  it("POST /membership/orders 创建订单并返回 orderId + providerOrderId (mock 渠道)", async () => {
     const res = await request(app.getHttpServer())
       .post("/membership/orders")
       .set("Authorization", `Bearer ${token}`)
       .send({ planId: "monthly" })
       .expect(201);
 
-    expect(res.body.orderId).toContain("mock_");
-    expect(res.body.payUrl).toContain("/membership/mock-pay/");
+    // 契约: orderId 是本地订单 id, providerOrderId 才是渠道单号 (以前这里断言 payUrl, 接口早已移除该字段)
+    expect(res.body.orderId).toBeTruthy();
+    expect(res.body.providerOrderId).toMatch(/^mock_/);
+    expect(res.body.paymentMethod).toBe("mock");
     expect(res.body.amountFen).toBe(1800);
+    expect(res.body.expiresAt).toBeTruthy();
   });
 
   it("POST /membership/orders 非法 planId 返回 400", async () => {
@@ -85,6 +88,9 @@ describe("membership orders e2e", () => {
       .expect(201);
 
     const orderId = created.body.orderId;
+    // mock-pay 页面按渠道单号 (providerOrderId) 查订单, 不是本地 orderId
+    const providerOrderId = created.body.providerOrderId;
+    expect(providerOrderId).toMatch(/^mock_/);
 
     await request(app.getHttpServer())
       .get(`/membership/orders/${orderId}`)
@@ -95,7 +101,9 @@ describe("membership orders e2e", () => {
       });
 
     // 模拟支付页无需鉴权
-    await request(app.getHttpServer()).get(`/membership/mock-pay/${orderId}?confirm=1`).expect(200);
+    await request(app.getHttpServer())
+      .get(`/membership/mock-pay/${providerOrderId}?confirm=1`)
+      .expect(200);
 
     const after = await request(app.getHttpServer())
       .get(`/membership/orders/${orderId}`)
