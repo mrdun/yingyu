@@ -78,6 +78,21 @@ ALIPAY_GATEWAY                                          # 缺省正式网关; �
 - [ ] 确认 `business_settings` 存在: `order_expire_minutes` / `refund_window_hours` / `commission_settlement_days` / `partner_enabled` / `lifetime_partner_required` / `currency`
 - [ ] 确认支付渠道开关初始为 `false` (0031 seed), 上线时按计划逐个开启
 
+### 2.1.1 课程内容与运营数据 (⚠️ 空库迁移后没有课程)
+
+migration 只初始化商业数据 (方案/权益/佣金规则/商业参数), **不会导入课程内容**。
+全新库迁移后课程广场是空的, 上线前必须导入内容:
+
+```bash
+pnpm -F @earthworm/xingrong-courses upload       # 导入课程包/课程/句子 (seed.ts)
+pnpm -F @earthworm/xingrong-courses seed:content # 生成学习路线 / 看图学词 示例数据
+```
+
+- [ ] 已导入课程内容, 课程广场可看到课程包
+- [ ] 免费课程 / 会员课程 `access_level` 设置正确 (免费课可被游客学习)
+- [ ] ⚠️ `upload` 脚本执行时会**先清空 course_packs / courses / statements 再插入**, 严禁在已有用户学习数据的生产库上重复执行
+- [ ] 学习路线 (`learning_paths`) 至少有 1 条 `is_published=true`, 否则 `/learning-path` 页面为空
+
 ### 2.2 服务与域名
 
 - [ ] 服务启动会校验必需环境变量 (`DATABASE_URL` / `LOGTO_*` / `BACKEND_ENDPOINT` / `PUBLIC_API_BASE_URL` / `CORS_ORIGINS`), 缺失时**直接拒绝启动** (fail-fast, 见 `apps/api/src/app/startup-config.ts`)
@@ -85,6 +100,40 @@ ALIPAY_GATEWAY                                          # 缺省正式网关; �
 - [ ] 前端域名加入 `CORS_ORIGINS`
 - [ ] `PUBLIC_API_BASE_URL` 指向 API 公网地址 (非前端地址)
 - [ ] 数据库/Redis 不暴露公网端口
+
+### 2.2.1 前端构建环境变量 (⚠️ 易漏, 漏了会打到 localhost)
+
+前端是 `ssr: false` 的静态站点, 这些变量在 **build/generate 时**被写入产物, 因此
+**必须用生产值重新构建**, 改完环境变量不重新构建不生效:
+
+```bash
+# apps/client/.env.production (或部署平台的环境变量)
+API_BASE="https://<API域名>"                     # 空值 = 相对路径, 会导致接口 404
+LOGTO_ENDPOINT="https://<Logto域名>/"
+LOGTO_APP_ID="<Logto 应用 ID>"
+BACKEND_ENDPOINT="https://<API域名>/"            # 必须与 API 的 BACKEND_ENDPOINT 一致 (JWT audience)
+LOGTO_SIGN_IN_REDIRECT_URI="https://<前端域名>/callback"
+LOGTO_SIGN_OUT_REDIRECT_URI="https://<前端域名>/"
+```
+
+- [ ] 上述变量已用生产值配置
+- [ ] `pnpm build:client` (`nuxt generate`) 重新构建, 产物为 `apps/client/.output/public`
+- [ ] 构建产物中 `API_BASE` 指向生产 API (可在产物 JS 中搜索确认不出现 `localhost`)
+- [ ] 静态托管/CDN 指向 `.output/public`, 并配置 SPA 回退 (`/200.html`) 与 `favicon`/静态资源缓存策略
+- [ ] Logto 应用中已把前端域名加入 Redirect URI / CORS 白名单
+
+### 2.2.2 后端部署流程
+
+```bash
+pnpm install --frozen-lockfile
+pnpm build:server            # schema 构建 + nest build → apps/api/dist/src/main.js
+pnpm -F @earthworm/db migrate   # 生产 migration (不要用 drizzle-kit push)
+pnpm -F api start:prod:pm    # pm2 (ecosystem.config.js, NODE_ENV=production)
+```
+
+- [ ] pm2 使用 `apps/api/ecosystem.config.js`, 进程名为 `earthworm_api`
+- [ ] 部署脚本中 migration 步骤先于启动新版本服务 (当前仓库**未提供自动迁移的 CI/CD**, 需在发布流程中固定这一步)
+- [ ] 回滚方式: 切回上一版本代码 + pm2 reload (migration 为 add-only, 无需回滚)
 
 ### 2.3 微信支付配置
 

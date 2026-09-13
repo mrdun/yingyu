@@ -38,7 +38,7 @@
           <div>
             <div class="font-semibold text-purple-700 dark:text-purple-300">✨ 会员生效中</div>
             <div class="mt-1 text-sm text-gray-600 dark:text-gray-300">
-              {{ status.type ?? "会员" }} ·
+              {{ currentPlanName }} ·
               {{ status.endDate ? `有效期至 ${formatDate(status.endDate)}` : "永久有效" }}
             </div>
           </div>
@@ -454,6 +454,17 @@ const displayPlans = computed<DisplayPlan[]>(() =>
 
 const recommendedPlan = computed(() => pickRecommendedPlan(displayPlans.value));
 const lifetimePlan = computed(() => pickLifetimePlan(displayPlans.value));
+
+/**
+ * 当前会员方案名称: 用 planId 在方案列表里查名字。
+ * 不展示后端 legacy 字段 membership.type (值为 regular/founder, 对用户无意义)。
+ */
+const currentPlanName = computed(() => {
+  const planId = status.value?.planId;
+  if (!planId) return "会员";
+  return plans.value.find((plan) => plan.id === planId)?.name ?? "会员";
+});
+
 const monthlyPlan = computed(
   () =>
     displayPlans.value.find((plan) => plan.durationDays !== null && plan.durationDays <= 31) ??

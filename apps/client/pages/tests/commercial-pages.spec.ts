@@ -46,4 +46,10 @@ describe("商业化页面不硬编码商业数据 (task 七)", () => {
     // 不承诺"终身免费更新"等未定义权益
     expect(membershipPage).not.toContain("终身免费更新");
   });
+
+  it("membership page never shows the raw legacy membership.type to users", () => {
+    // 后端 type 取值是 legacy 的 regular/founder, 直接展示会让用户看到英文枚举
+    expect(membershipPage).not.toContain("status.type");
+    expect(membershipPage).toContain("currentPlanName");
+  });
 });

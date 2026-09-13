@@ -184,7 +184,7 @@ describe("PartnerService (partner / referral / commission)", () => {
     expect(records[0].holdUntil).toBeInstanceOf(Date);
   });
 
-  it("keeps historical commission rate snapshot after partner rate changes", async () => {
+  it("renewal (second paid order) generates another commission for the same referral", async () => {
     await seedUser("partner");
     await seedUser("buyer");
     const p = await partnerService.becomePartner("partner", 4000);
@@ -351,7 +351,7 @@ describe("PartnerService (partner / referral / commission)", () => {
     expect(after.status).toBe("reversed");
   });
 
-  it("supports holding -> pending -> payable -> paid and rejects illegal transitions", async () => {
+  it("confirmExpiredCommissionJob moves holding -> pending after the refund window", async () => {
     await seedUser("partner_cron");
     await seedUser("buyer_cron");
     const p = await partnerService.becomePartner("partner_cron", 4000);
