@@ -5,7 +5,7 @@ import { Redis } from "ioredis";
 import * as request from "supertest";
 
 import { plans } from "@earthworm/schema";
-import { cleanDB, signin } from "../../../test/helper/utils";
+import { cleanDB, ensureUser, signin } from "../../../test/helper/utils";
 import { AppModule } from "../../app/app.module";
 import { appGlobalMiddleware } from "../../app/useGlobal";
 import { endDB } from "../../common/db";
@@ -35,6 +35,8 @@ describe("membership orders e2e", () => {
       .values([{ id: "monthly", name: "月度会员", priceFen: 1800, durationDays: 30, sortOrder: 1 }])
       .onConflictDoNothing();
     token = await signin(moduleFixture);
+    // users 影子表在生产由登录流程写入, e2e 不经过登录, 这里显式造出该用户 (订单/会员有 FK)
+    await ensureUser(db, token);
   });
 
   afterEach(async () => {
