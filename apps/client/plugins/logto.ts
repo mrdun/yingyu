@@ -5,15 +5,6 @@ import { defineNuxtPlugin, useRuntimeConfig } from "nuxt/app";
 
 import { setupAuth } from "~/services/auth";
 
-/**
- * 后端 API 权限 scope (定义在 Logto 资源 earthworm-api 上)。
- * Logto 按角色下发: 只有拥有 default:admin 角色的用户才会真正拿到它,
- * 普通用户请求了也拿不到 —— 权限边界仍由角色保证。
- * 必须在此声明的原因是 @logto/client 的 getAccessToken 不支持按需申请 scope,
- * 只能通过初始化时的 LogtoConfig.scopes 声明。加上它, 管理员后台 /admin/* 才可用。
- */
-const ADMIN_ACCESS_SCOPE = "admin:access";
-
 export default defineNuxtPlugin((nuxtApp) => {
   const runtimeConfig = useRuntimeConfig();
 
@@ -21,13 +12,19 @@ export default defineNuxtPlugin((nuxtApp) => {
     endpoint: runtimeConfig.public.endpoint,
     appId: runtimeConfig.public.appId,
 
+    /**
+     * 只申请用户端真正需要的 scope。
+     *
+     * 这里**不再**申请 `admin:access`: 管理后台已拆成独立应用 (apps/admin, Logto 应用
+     * earthworm-admin), 用户端没有任何页面消费它了。此前的写法会让**每个会员登录都申请管理权限**
+     * (Logto 按角色下发, 普通用户拿不到, 但请求本身就是多余的), 拆除后回到干净状态。
+     */
     scopes: [
       UserScope.Email,
       UserScope.Phone,
       UserScope.CustomData,
       UserScope.Identities,
       UserScope.Organizations,
-      ADMIN_ACCESS_SCOPE,
     ],
     resources: [runtimeConfig.public.backendEndpoint],
   };
