@@ -123,6 +123,37 @@ LOGTO_SIGN_OUT_REDIRECT_URI="https://<前端域名>/"
 - [ ] 静态托管/CDN 指向 `.output/public`, 并配置 SPA 回退 (`/200.html`) 与 `favicon`/静态资源缓存策略
 - [ ] Logto 应用中已把前端域名加入 Redirect URI / CORS 白名单
 
+### 2.2.1b 管理后台部署 (apps/admin, 独立应用)
+
+管理后台是**独立的第三个应用**, 与用户端分别构建、分别托管, 建议独立子域
+(例如 `admin.<域名>`), 可选加 Cloudflare Access / IP 白名单 —— 它只走 API, 不直连数据库。
+
+```bash
+# apps/admin/.env (构建期注入, 会写进产物 —— 不要放任何密钥)
+ADMIN_API_BASE_URL="https://<API域名>"
+LOGTO_ENDPOINT="https://<Logto域名>/"
+LOGTO_APP_ID="<管理后台自己的 Logto 应用 ID>"   # 与用户端**不同**的应用, 见下
+BACKEND_ENDPOINT="https://<API域名>/"          # 必须与 API 的 BACKEND_ENDPOINT 一致 (JWT audience)
+LOGTO_SIGN_IN_REDIRECT_URI="https://<admin域名>/callback"
+LOGTO_SIGN_OUT_REDIRECT_URI="https://<admin域名>/"
+```
+
+```bash
+pnpm -F admin generate     # → apps/admin/.output/public (缺变量会直接构建失败, 见 nuxt.config.ts 门禁)
+pnpm -F admin preview:static   # 本地静态预览 (PORT 默认 3002)
+```
+
+- [ ] **在 Logto 中为管理后台单独注册一个 SPA 应用** (本地已用 `earthworm-admin`;
+      生产请在 Logto 控制台 → Applications 新建), 把它与用户端应用分开 —— 这样用户端无需申请 `admin:access`
+      (代码已摘除, 见 `apps/client/plugins/logto.ts`)
+- [ ] 该应用的 Redirect URI / Post-logout 已加入 admin 域名
+- [ ] **admin 域名已加入 `CORS_ORIGINS`** (否则后台所有接口被浏览器跨域拦截)
+- [ ] 管理员账号已授予 `default:admin` 角色 (只授权必要账号)
+- [ ] 构建产物中不出现 `localhost` (可在 `.output/public` 内搜索确认)
+- [ ] 后台静态托管同样配置 SPA 回退 (`/200.html`); 建议同时下发 `robots` noindex
+      (产物已内置 `<meta name="robots" content="noindex, nofollow">`)
+- [ ] 不要给 admin 产物配置公开 CDN 缓存策略过长的缓存 (后台更新需及时生效)
+
 ### 2.2.2 后端部署流程
 
 ```bash

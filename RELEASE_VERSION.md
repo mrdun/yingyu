@@ -58,7 +58,7 @@ LOGTO_CLIENT_SECRET=<...>
 LOGTO_M2M_API=https://<logto-m2m-resource>/api   # M2M resource, 缺失时 Logto 返回 400 invalid_target
 BACKEND_ENDPOINT=https://<api-host>/          # JWT audience, 必须与前端一致
 PUBLIC_API_BASE_URL=https://<api-host>        # 生成支付回调 notify_url
-CORS_ORIGINS=https://<front-host>             # 逗号分隔
+CORS_ORIGINS=https://<front-host>,https://<admin-host>   # 逗号分隔; 管理后台域名必须包含在内
 PAYMENT_PROVIDER=wechat|alipay                # 默认渠道
 ```
 
@@ -122,17 +122,15 @@ pnpm smoke:prod -- --base=https://<api-host> [--token=<用户JWT>] [--admin-toke
 2. 课程内容导入 + 至少 1 条已发布学习路线 — 见 `PRODUCTION_RELEASE_CHECKLIST.md` §2.1.1
 3. 前端用生产环境变量重新 `pnpm build:client` (缺变量会在构建期直接报错, 见 nuxt.config.ts 门禁)
 4. lifetime 价格确认 → **已改为上线前自助改价, 不阻塞** (见上方状态更新)
-5. 管理员 `admin:access`: 前端原先未声明该 scope → `/admin/*` 全部 403, 后台实际不可用。
-   **2026-09-13 结论**: 业务原选「按需申请 (方案 B)」, 但 **Logto SDK 不支持** ——
-   `@logto/client@2.6.8` 的 `getAccessToken` 为 `(resource?, organizationId?)`, `signIn` 的 options 也没有
-   `scopes`; 最新版 `@logto/client@3.1.9` 同样没有 (已用类型定义双重证实)。scopes 只能在初始化时声明。
-   → 已改为在 `apps/client/plugins/logto.ts` 声明 `admin:access`。**权限未放宽**: Logto 按角色下发,
-   请求 ≠ 获得 (实测: earthworm-server M2M 应用请求该 scope 后令牌仍无它, 调 `/admin/plans` 得 403;
-   本地 Logto 中仅 `mrdun`/`admin` 有 `default:admin` 角色, `borogov` 无任何角色)。
-   ⚠️ 令牌的 scopes 在登录时固定, 后台刷新不带新 scope → **存量会话需退出重登**才生效。
-   待验证: 管理员退出重登后 `/admin/plans` 可用 + 普通账号仍 403 (A1–A8 重跑)。
-   ⚠️ 线上 Logto 若未在 `earthworm-api` 资源上定义 `admin:access`, 声明它会导致登录时 `invalid_scope` 失败
-   —— 上线前必须在生产 Logto 上确认该 scope 存在。
+5. 管理员后台权限 → **已彻底解决** (2026-09-13)。
+   历史: 前端未声明 `admin:access` 导致 `/admin/*` 全 403; 「按需申请」在 Logto SDK 上不可行
+   (`@logto/client` 的 `getAccessToken`/`signIn` 均无 scopes 参数, 已用类型定义证实), 故当时在
+   `apps/client/plugins/logto.ts` 声明该 scope —— 副作用是**每个会员登录都申请管理权限**。
+   现状: 管理后台已拆为独立应用 `apps/admin`(Logto 应用 `earthworm-admin`, 本地已实测管理员登录可用),
+   用户端已**摘除** `admin:access`(产物中匹配数为 0; authorize scope 实测已不含它), 旧后台页面已删除。
+   ⚠️ 上线前仍需确认: 生产 Logto 的 `earthworm-api` 资源上定义了 `admin:access`,
+   且已为管理后台注册**独立** SPA 应用并把 admin 域名加入 `CORS_ORIGINS`
+   (见 `PRODUCTION_RELEASE_CHECKLIST.md` §2.2.1b)。
 6. 生产库备份策略落地 + 恢复演练 — 见 `BACKUP_RECOVERY_PLAN.md`。**本机等效演练已于 2026-09-13 完成**:
    pg_dump → 独立库还原 → 29 表/7 CHECK 约束/15 张 A 级表计数与源库一致 → 还原库起 API smoke 全绿。
    生产侧仍需按文档落地 cron 与告警。
