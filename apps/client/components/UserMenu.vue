@@ -102,12 +102,6 @@ const showMenuOptions = computed(() => {
       icon: "i-ph-book",
     },
     {
-      title: "编辑器",
-      name: "setting",
-      eventName: handleGoToEditor,
-      icon: "i-ph-planet-duotone",
-    },
-    {
       title: "帮助文档",
       name: "helpDocs",
       eventName: handleHelpDocs,
@@ -171,11 +165,6 @@ function handleLogout() {
       signOut();
     },
   });
-}
-
-function handleGoToEditor() {
-  closeUserMenu();
-  window.open("https://earthworm-editor.cuixueshe.com", "_blank");
 }
 </script>
 
