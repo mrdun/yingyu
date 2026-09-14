@@ -47,6 +47,9 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "zh-CN",
       },
+      // 后台此前**没有** favicon (访问 /favicon.ico 是 404), 浏览器只显示空白默认图标。
+      // 用与用户端**不同**的图标 (深底), 这样同时开两个标签页时一眼能分清哪个是后台。
+      link: [{ rel: "icon", href: "/favicon.ico", type: "image/x-icon" }],
       meta: [{ name: "robots", content: "noindex, nofollow" }],
     },
   },
