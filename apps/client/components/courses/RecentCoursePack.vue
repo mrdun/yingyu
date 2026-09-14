@@ -63,7 +63,7 @@ import { ref } from "vue";
 
 import CoursePackCard from "~/components/courses/CoursePackCard.vue";
 import { useNavigation } from "~/composables/useNavigation";
-import { useRecentCoursePack } from "./helper";
+import { useRecentCoursePack } from "./useRecentCoursePack";
 
 const { gotoCourseList, gotoGame } = useNavigation();
 const { coursePacks, fetchCoursePacks } = useRecentCoursePack();

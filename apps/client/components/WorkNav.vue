@@ -23,14 +23,14 @@ import { useRoute } from "#imports";
 const route = useRoute();
 
 const menuItems = [
-  { label: "开始学习", to: "/course-pack", icon: "📚" },
-  { label: "学习路线", to: "/learning-path", icon: "🗺️" },
+  { label: "主页", to: "/", icon: "🏠" },
+  { label: "课程广场", to: "/course-pack", icon: "📚" },
+  { label: "课程向导", to: "/learning-path", icon: "🗺️" },
+  { label: "我的课程", to: "/my-courses", icon: "🎒" },
   { label: "看图学词", to: "/picture-word", icon: "🖼️" },
   { label: "复习", to: "/review", icon: "🔁" },
   { label: "奖励", to: "/rewards", icon: "🎁" },
   { label: "成长报告", to: "/stats", icon: "📈" },
-  { label: "掌握列表", to: "/mastered-elements", icon: "✅" },
-  { label: "学习档案", to: "/archive", icon: "🗂️" },
   { label: "会员", to: "/membership", icon: "👑" },
   { label: "推广中心", to: "/partner", icon: "🤝" },
   { label: "设置", to: "/User/Setting", icon: "⚙️" },

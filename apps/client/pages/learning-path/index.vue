@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-full flex-col">
-    <h2 class="mb-4 text-center text-3xl dark:text-white">学习路线</h2>
+    <h2 class="mb-4 text-center text-3xl dark:text-white">课程向导</h2>
 
     <template v-if="isLoading">
       <Loading></Loading>
@@ -37,7 +37,7 @@
         v-if="paths.length === 0"
         class="mt-10 text-center text-gray-400"
       >
-        暂无学习路线
+        暂无课程向导
       </p>
     </template>
   </div>

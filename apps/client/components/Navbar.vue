@@ -132,9 +132,6 @@ interface AnchorAttributes extends Record<string, any> {
   download?: string;
 }
 const HEADER_OPTIONS: AnchorAttributes[] = [
-  { name: "复习", href: "/review" },
-  { name: "报告", href: "/stats" },
-  { name: "奖励", href: "/rewards" },
   { name: "文档", href: runtimeConfig.public.helpDocsURL as string, target: "_blank" },
   { name: "功能", href: "#features" },
   { name: "问题", href: "#faq" },

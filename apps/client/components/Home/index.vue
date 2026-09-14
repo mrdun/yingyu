@@ -16,12 +16,20 @@
       <!-- 我的课程 -->
       <div class="mb-4 flex items-center justify-between border-b pb-2 dark:border-gray-700">
         <div class="text-lg font-medium text-gray-800 dark:text-gray-200">我的课程</div>
-        <NuxtLink
-          href="/course-pack"
-          class="link text-sm text-blue-500 no-underline hover:opacity-75"
-        >
-          课程包商城
-        </NuxtLink>
+        <div class="flex items-center gap-4">
+          <NuxtLink
+            href="/course-pack"
+            class="link text-sm text-blue-500 no-underline hover:opacity-75"
+          >
+            课程包商城
+          </NuxtLink>
+          <NuxtLink
+            href="/my-courses"
+            class="link text-sm text-blue-500 no-underline hover:opacity-75"
+          >
+            全部 →
+          </NuxtLink>
+        </div>
       </div>
       <HomeRecentCoursePack />
 
@@ -55,7 +63,7 @@ import { fetchTodayLearningTime } from "~/api/user-learning-activity";
 import CheckInCard from "~/components/CheckInCard.vue";
 import DailyTasksCard from "~/components/DailyTasksCard.vue";
 import HomeCalendarGraph from "~/components/Home/CalendarGraph.vue";
-import HomeRecentCoursePack from "~/components/Home/RecentCoursePack.vue";
+import HomeRecentCoursePack from "~/components/courses/RecentCoursePack.vue";
 import WorkNav from "~/components/WorkNav.vue";
 import { useLearningDailyTime } from "~/composables/learningDailyTime";
 import { useLearningTimeTracker } from "~/composables/main/learningTimeTracker";

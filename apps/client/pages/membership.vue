@@ -59,7 +59,7 @@
         <h2 class="text-base font-semibold dark:text-white">为什么开通会员?</h2>
         <ul class="mt-3 grid gap-2 text-sm text-gray-600 dark:text-gray-300 sm:grid-cols-2">
           <li>· 解锁全部会员课程, 不再受单课限制</li>
-          <li>· 学习路线 / 复习 / 成长报告全部可用</li>
+          <li>· 课程向导 / 复习 / 成长报告全部可用</li>
           <li>· 新增课程持续更新, 会员期内直接学习</li>
           <li>· 一次开通, 到期前不重复扣费</li>
         </ul>
