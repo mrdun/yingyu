@@ -60,20 +60,34 @@ const marketingBranch = layout.slice(layout.indexOf("<Navbar />"));
 describe("侧栏组件 AppRail.vue", () => {
   it("文件存在, 且菜单来自唯一的数据模块 (不会与旧侧栏各写一份)", () => {
     expect(existsSync(join(process.cwd(), appRailPath))).toBe(true);
-    expect(appRail).toContain("WORKBENCH_NAV_GROUPS");
+    expect(appRail).toContain("WORKBENCH_NAV_ITEMS");
     expect(workbenchNav).toContain("export const WORKBENCH_NAV_GROUPS");
     expect(workbenchNav).toContain("export const WORKBENCH_NAV_ITEMS");
   });
 
-  it("三组标题齐全: 主导航 / 学习工具 / 账户", () => {
+  /**
+   * 侧栏**不显示分组标题**(用户要求; 目标站侧栏也是一列平铺项)。
+   * 分组数据保留只为表达顺序, 所以这里钉两件事:
+   *   ① 分组标题数据仍在 (排序守卫用它); ② 组件不渲染 `group.title`。
+   * 把 `{{ group.title }}` 那一段加回来 → 本用例立刻变红。
+   */
+  it("分组标题只在数据里 (表达顺序), 组件不渲染「主导航 / 学习工具 / 账户」", () => {
     expect(WORKBENCH_NAV_GROUPS.map((group) => group.title)).toEqual([
       "主导航",
       "学习工具",
       "账户",
     ]);
+
+    // 组件按平铺列表渲染, 不再遍历分组
+    expect(appRail).toContain('v-for="item in WORKBENCH_NAV_ITEMS"');
+    expect(appRail).not.toContain("group.title");
+    expect(appRail).not.toContain("WORKBENCH_NAV_GROUPS");
+    for (const title of ["主导航", "学习工具", "账户"]) {
+      expect(appRail, `侧栏不该出现分组标题「${title}」`).not.toContain(title);
+    }
   });
 
-  it("12 个路径一个不少, 顺序与分组照目标站侧栏", () => {
+  it("12 个路径一个不少, 顺序照目标站侧栏", () => {
     expect(WORKBENCH_NAV_ITEMS.map((item) => item.to)).toEqual([
       "/",
       "/my-courses",

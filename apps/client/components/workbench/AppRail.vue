@@ -43,28 +43,23 @@
       <span class="text-[15px] font-black text-[#1E293B]">学以致用</span>
     </NuxtLink>
 
-    <!-- 2. 导航卡: 三组 11 项, 卡片内滚动 -->
+    <!--
+      2. 导航卡: 12 项**平铺**, 不写分类标题。
+      目标站侧栏本身就是一列平铺项 (主页 / 我的课程 / 课程市场 / …), 没有分组标题 —— 用户要求去掉。
+      分组数据仍保留在 utils/workbenchNav.ts: 它定义**顺序**并被排序守卫使用, 只是不再渲染标题。
+      ⚠️ 本文件不要出现那几个分组标题的字面量 (守卫会读它当证据), 需要说明就写"分类标题"。
+    -->
     <nav class="app-rail__card flex min-h-0 flex-1 flex-col overflow-y-auto px-2 py-[10px]">
-      <template
-        v-for="group in WORKBENCH_NAV_GROUPS"
-        :key="group.title"
+      <NuxtLink
+        v-for="item in WORKBENCH_NAV_ITEMS"
+        :key="item.to"
+        :to="item.to"
+        :class="navItemClass(item.to)"
+        @click="closeDrawer"
       >
-        <p
-          class="px-[10px] pb-[5px] pt-2 text-[12px] font-semibold leading-normal tracking-[0.6px] text-[#666666]"
-        >
-          {{ group.title }}
-        </p>
-        <NuxtLink
-          v-for="item in group.items"
-          :key="item.to"
-          :to="item.to"
-          :class="navItemClass(item.to)"
-          @click="closeDrawer"
-        >
-          <span class="w-[18px] shrink-0 text-center text-[14px]">{{ item.icon }}</span>
-          <span class="truncate">{{ item.label }}</span>
-        </NuxtLink>
-      </template>
+        <span class="w-[18px] shrink-0 text-center text-[14px]">{{ item.icon }}</span>
+        <span class="truncate">{{ item.label }}</span>
+      </NuxtLink>
     </nav>
 
     <!-- 3. 用户卡: 点一下展开既有的 UserMenu (不重写菜单) -->
@@ -101,7 +96,7 @@ import { computed, ref } from "vue";
 
 import { useUserMenu } from "~/composables/user/useUserMenu";
 import { useUserStore } from "~/store/user";
-import { isWorkbenchNavActive, WORKBENCH_NAV_GROUPS } from "~/utils/workbenchNav";
+import { isWorkbenchNavActive, WORKBENCH_NAV_ITEMS } from "~/utils/workbenchNav";
 
 const route = useRoute();
 const userStore = useUserStore();
