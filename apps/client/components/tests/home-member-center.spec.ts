@@ -129,8 +129,8 @@ describe("会员中心主页: 7 个区块齐全, 且顺序照 DESIGN.md `## Layo
     expect(overviewSource).not.toContain("useDarkMode");
   });
 
-  it("区块 3: 四列分别是 今日练习时长 / 今日练习 / 累计掌握 / 连续天数", () => {
-    for (const label of ["今日练习时长", "今日练习", "累计掌握", "连续天数"]) {
+  it("区块 3: 四列分别是 今日练习时长 / 今日练习 / 累计练习 / 连续天数", () => {
+    for (const label of ["今日练习时长", "今日练习", "累计练习", "连续天数"]) {
       expect(statsSource).toContain(label);
     }
     expect(statsSource).toContain("repeat(4, 1fr)");

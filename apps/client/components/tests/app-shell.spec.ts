@@ -73,18 +73,19 @@ describe("侧栏组件 AppRail.vue", () => {
     ]);
   });
 
-  it("11 个路径一个不少, 顺序与分组照设计稿", () => {
+  it("12 个路径一个不少, 顺序与分组照目标站侧栏", () => {
     expect(WORKBENCH_NAV_ITEMS.map((item) => item.to)).toEqual([
       "/",
+      "/my-courses",
       "/course-pack",
       "/learning-path",
-      "/my-courses",
       "/picture-word",
       "/review",
       "/rewards",
       "/stats",
       "/membership",
       "/partner",
+      "/promotion",
       "/User/Setting",
     ]);
   });

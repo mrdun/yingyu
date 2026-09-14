@@ -1,11 +1,17 @@
 /**
- * 工作台侧栏 (AppRail) 的导航数据 —— 11 项 / 三组的唯一来源。
+ * 工作台侧栏 (AppRail) 的导航数据 —— 12 项 / 三组的唯一来源。
  *
  * 为什么单独抽文件:
  *   1. AppRail 与「营销外壳里登录后的旧首页侧栏」(components/WorkNav.vue) 展示同一份菜单,
  *      两处各写一份迟早会漂移 (菜单改名要改两个文件, 漏一个就是线上两个入口不一致);
  *   2. 分组与顺序是信息架构的一部分, 放在纯数据里才能被源码级守卫钉住
- *      (见 utils/tests/workbenchNav.spec.ts)。
+ *      (见 components/tests/nav-ia.spec.ts)。
+ *
+ * 顺序与命名对标目标站 (juyouenglish.com 会员中心侧栏):
+ *   主导航 = 主页 → 我的课程 → 课程广场 → 课程向导 (「我的课程」排在课程入口之前);
+ *   会员项叫「会员权益」;
+ *   推广拆成「合伙人招募」(申请/资格) 与「推广返利」(我的链接与佣金) 两项。
+ *   目标站把「设置」放在用户行的图标里, 我们按用户要求**保留侧栏设置项**。
  *
  * 图标沿用现有 emoji 方案 (本轮不做图标库统一)。
  * 激活判定沿用改造前的逻辑: `route.path === to` (子路径不点亮父项)。
@@ -28,9 +34,9 @@ export const WORKBENCH_NAV_GROUPS: WorkbenchNavGroup[] = [
     title: "主导航",
     items: [
       { label: "主页", to: "/", icon: "🏠" },
+      { label: "我的课程", to: "/my-courses", icon: "🎒" },
       { label: "课程广场", to: "/course-pack", icon: "📚" },
       { label: "课程向导", to: "/learning-path", icon: "🗺️" },
-      { label: "我的课程", to: "/my-courses", icon: "🎒" },
     ],
   },
   {
@@ -45,14 +51,15 @@ export const WORKBENCH_NAV_GROUPS: WorkbenchNavGroup[] = [
   {
     title: "账户",
     items: [
-      { label: "会员", to: "/membership", icon: "👑" },
-      { label: "推广中心", to: "/partner", icon: "🤝" },
+      { label: "会员权益", to: "/membership", icon: "👑" },
+      { label: "合伙人招募", to: "/partner", icon: "🤝" },
+      { label: "推广返利", to: "/promotion", icon: "💰" },
       { label: "设置", to: "/User/Setting", icon: "⚙️" },
     ],
   },
 ];
 
-/** 平铺后的 11 项 (旧版扁平侧栏 WorkNav.vue 直接复用, 不重排顺序) */
+/** 平铺后的 12 项 (旧版扁平侧栏 WorkNav.vue 直接复用, 不重排顺序) */
 export const WORKBENCH_NAV_ITEMS: WorkbenchNavItem[] = WORKBENCH_NAV_GROUPS.flatMap(
   (group) => group.items,
 );

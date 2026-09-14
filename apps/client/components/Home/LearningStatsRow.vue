@@ -14,8 +14,8 @@
     </div>
 
     <div class="stats__tile stats__tile--orange">
-      <p class="stats__k">累计掌握</p>
-      <p class="stats__v">{{ formatCount(props.mastered) }}<small>句</small></p>
+      <p class="stats__k">累计练习</p>
+      <p class="stats__v">{{ formatCount(props.totalStatements) }}<small>句</small></p>
       <span class="stats__wm">👑</span>
     </div>
 
@@ -33,11 +33,16 @@ import { formatCount } from "~/utils/memberCenter";
 /**
  * 四个数字全部是「接口值 → safeNumber → formatCount」,
  * 空态 (全 0) 渲染 0 分钟 / 0 句 / 0 句 / 0 天, 不会出现非法数字或空白。
+ *
+ * ⚠️ 第三张是「累计练习」(StatsOverview.totalStatements, 累计练习句数) ——
+ * 与目标站第三张卡口径一致。**不要**把它换回 masteredCount (累计掌握):
+ * 「累计掌握」是掌握句子数 (掌握判定更严), 与「累计练习」不是同一个量, 换回去是两个数字互相顶替。
+ * 掌握数仍在「千句进度」(SentenceGoalCard) 与成长报告里使用。
  */
 const props = defineProps<{
   minutes: number;
   statements: number;
-  mastered: number;
+  totalStatements: number;
   streak: number;
 }>();
 </script>

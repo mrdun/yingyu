@@ -28,21 +28,29 @@
     <!-- 2. 会员转化横幅: 会员不渲染 (条件渲染的唯一依据就是下面的 isMember) -->
     <MembershipUpsell v-if="!isMember" />
 
-    <!-- 3. 学习数据 4 列 -->
+    <!-- 3. 学习数据 4 列 (标题行右侧: 「+ 添加课程」与「成长报告 →」, 对标目标站的区块标题) -->
     <section>
       <div class="mc__head">
         <h3 class="mc__head-title">学习数据</h3>
-        <NuxtLink
-          to="/stats"
-          class="mc__head-link"
-        >
-          成长报告 →
-        </NuxtLink>
+        <div class="mc__head-actions">
+          <NuxtLink
+            to="/course-pack"
+            class="mc__head-add"
+          >
+            + 添加课程
+          </NuxtLink>
+          <NuxtLink
+            to="/stats"
+            class="mc__head-link"
+          >
+            成长报告 →
+          </NuxtLink>
+        </div>
       </div>
       <LearningStatsRow
         :minutes="todayMinutes"
         :statements="todayStatements"
-        :mastered="masteredCount"
+        :total-statements="totalStatements"
         :streak="streak"
       />
     </section>
@@ -183,6 +191,8 @@ const todayMinutes = computed(() => secondsToMinutes(todaySeconds.value));
 
 const streak = computed(() => safeNumber(overview.value?.reviewStreak));
 const masteredCount = computed(() => safeNumber(overview.value?.masteredCount));
+/** 累计练习句数: 学习数据第三张卡用这个 (不是 masteredCount), 与目标站口径一致 */
+const totalStatements = computed(() => safeNumber(overview.value?.totalStatements));
 const cumulativeDays = computed(() => safeNumber(overview.value?.totalLearnDays));
 const totalLearnSeconds = computed(() => safeNumber(overview.value?.totalLearnDurationSeconds));
 const checkedIn = computed(() => Boolean(dailyCheckInTask.value?.claimed));
@@ -303,6 +313,32 @@ onMounted(() => {
   font-size: 14.5px;
   font-weight: 900;
   color: #1e293b;
+}
+
+.mc__head-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*
+ * 「+ 添加课程」: 对标目标站区块标题右侧那颗按钮 —— 虚线描边的次级动作,
+ * 不用主色实心 (实心留给区块内真正的主动作, 否则一屏多个实心按钮抢焦点)。
+ */
+.mc__head-add {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #2a64e7;
+  text-decoration: none;
+  padding: 3px 10px;
+  border: 1px dashed #b9cdfb;
+  border-radius: 999px;
+  background: #f5f8ff;
+}
+
+.mc__head-add:hover {
+  border-style: solid;
+  border-color: #2a64e7;
 }
 
 .mc__head-link {

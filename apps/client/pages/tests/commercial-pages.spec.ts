@@ -9,6 +9,7 @@ function readPage(relativePath: string): string {
 
 const membershipPage = readPage("../membership.vue");
 const partnerPage = readPage("../partner.vue");
+const promotionPage = readPage("../promotion.vue");
 const indexPage = readPage("../index.vue");
 const startLearningComposable = readPage("../../composables/useStartLearning.ts");
 
@@ -23,12 +24,22 @@ describe("商业化页面不硬编码商业数据 (task 七)", () => {
   it("partner page has no hardcoded commission rate", () => {
     // 禁止 40% / 30% 这类写死的比例
     expect(partnerPage).not.toMatch(/\d+\s*%/);
-    expect(partnerPage).toContain("commissionHeadline");
     expect(partnerPage).toContain("commissionExampleFen");
+  });
+
+  it("promotion page has no hardcoded commission rate", () => {
+    // 佣金比例面板从 /partner 拆到 /promotion 后, 这条守卫跟着搬过来
+    expect(promotionPage).not.toMatch(/\d+\s*%/);
+    expect(promotionPage).toContain("commissionHeadline");
+    expect(promotionPage).toContain("planCommissionRates");
   });
 
   it("partner page has no hardcoded commission amount", () => {
     expect(partnerPage).not.toMatch(/¥\s*\d/);
+  });
+
+  it("promotion page has no hardcoded commission amount", () => {
+    expect(promotionPage).not.toMatch(/¥\s*\d/);
   });
 
   it("membership page renders plans from API with adaptive layout", () => {

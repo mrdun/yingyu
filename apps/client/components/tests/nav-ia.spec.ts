@@ -74,19 +74,29 @@ describe("工作台侧边栏菜单 (utils/workbenchNav.ts, AppRail 与 WorkNav �
     expectMenuItem(menuItems, "我的课程", "/my-courses", "🎒");
   });
 
-  it("四项新导航排在最前 (主页 -> 课程广场 -> 课程向导 -> 我的课程)", () => {
-    const order = ["主页", "课程广场", "课程向导", "我的课程"].map((label) =>
+  it("前四项导航顺序: 主页 -> 我的课程 -> 课程广场 -> 课程向导 (对标目标站)", () => {
+    const order = ["主页", "我的课程", "课程广场", "课程向导"].map((label) =>
       menuItems.indexOf(`label: "${label}"`),
     );
 
-    expect(order.every((index) => index >= 0)).toBe(true);
-    expect(order).toEqual([...order].sort((a, b) => a - b));
-    // 看图学词是这四项之后的第一项, 保证新增入口没有插在中间
+    expect(order.every((index) => index > -1)).toBe(true);
+    for (let i = 1; i < order.length; i += 1) {
+      expect(order[i]).toBeGreaterThan(order[i - 1]);
+    }
+
+    // 之后才是学习工具组 (看图学词)
     expect(menuItems.indexOf(`label: "看图学词"`)).toBeGreaterThan(order[3]);
   });
 
-  it("侧边栏仍是 11 项", () => {
-    expect(menuItems.split("label:").length - 1).toBe(11);
+  it("侧边栏是 12 项 (推广拆成合伙人招募 + 推广返利, 会员改名会员权益)", () => {
+    expect(menuItems.split("label:").length - 1).toBe(12);
+  });
+
+  it("账户组: 会员权益 / 合伙人招募 / 推广返利 / 设置", () => {
+    expectMenuItem(menuItems, "会员权益", "/membership", "👑");
+    expectMenuItem(menuItems, "合伙人招募", "/partner", "🤝");
+    expectMenuItem(menuItems, "推广返利", "/promotion", "💰");
+    expectMenuItem(menuItems, "设置", "/User/Setting", "⚙️");
   });
 
   it("旧标签与已被取代的入口不再出现在侧边栏", () => {
@@ -105,7 +115,7 @@ describe("工作台侧边栏菜单 (utils/workbenchNav.ts, AppRail 与 WorkNav �
     expect(workbenchNav).toContain("export function isWorkbenchNavActive");
     expect(workbenchNav).toContain("return currentPath === to;");
     expect(workNav).toContain("isWorkbenchNavActive(route.path, item.to)");
-    expect(WORKBENCH_NAV_ITEMS).toHaveLength(11);
+    expect(WORKBENCH_NAV_ITEMS).toHaveLength(12);
   });
 });
 
