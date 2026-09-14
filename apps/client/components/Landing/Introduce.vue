@@ -20,7 +20,9 @@
           <h3 class="pb-2 text-base font-semibold text-zinc-900">当前页面</h3>
           <p class="py-1 text-zinc-600">
             点击按钮
-            <span class="mx-1 inline-block rounded-lg border border-solid border-brand-300 px-1 text-brand-600">
+            <span
+              class="mx-1 inline-block rounded-lg border border-solid border-brand-300 px-1 text-brand-600"
+            >
               Get Started
             </span>
             <span class="text-zinc-400">（或快捷键 Enter ⏎）</span>
@@ -53,13 +55,8 @@
           </p>
           <h3 class="py-2 text-base font-semibold text-zinc-900">答题小技巧</h3>
           <p class="py-1 leading-7 text-zinc-600">
-            底部提示面板的按钮
-            <a
-              class="ml-1 text-brand-600 hover:text-brand-700"
-              href="https://www.bilibili.com/video/BV1py421q7Mp/"
-            >
-              👉 一分钟点我快速了解</a
-            >
+            底部提示面板会列出当前这道题可用的快捷键按钮（提交 / 显示答案 / 播放发音 / 掌握等），
+            可以直接点击按钮，也可以按下对应的快捷键执行
           </p>
           <p class="p-1">
             <button class="instruction-btn">⌃ Ctrl+'</button>
@@ -110,13 +107,17 @@
             学习原理：通过连词造句的方法来练习英语 😄
           </h2>
           <h3 class="pb-2 text-base font-semibold text-zinc-900">以句子为核心</h3>
-          <p class="py-1 text-zinc-600">每个句子包含单词/词组/语法，所以学会一个句子后，就可以清晰地表达出来。</p>
+          <p class="py-1 text-zinc-600">
+            每个句子包含单词/词组/语法，所以学会一个句子后，就可以清晰地表达出来。
+          </p>
           <h3 class="py-2 text-base font-semibold text-zinc-900">任务拆分</h3>
           <p class="py-1 leading-7 text-zinc-600">将一个长难句拆分成一个个的小单元（单词/词组）</p>
           <h3 class="py-2 text-base font-semibold text-zinc-900">重复</h3>
           <p class="py-1 leading-7 text-zinc-600">通过不断地重复来形成肌肉记忆</p>
           <h3 class="py-2 text-base font-semibold text-zinc-900">i+1</h3>
-          <p class="py-1 leading-7 text-zinc-600">循序渐进的增加难度，先从最简单的句型开始，再到更加丰富的概念</p>
+          <p class="py-1 leading-7 text-zinc-600">
+            循序渐进的增加难度，先从最简单的句型开始，再到更加丰富的概念
+          </p>
           <h3 class="pb-2 text-base font-semibold text-zinc-900">正向反馈来的快</h3>
           <p class="py-1 leading-7 text-zinc-600">
             当自己可以写出长难句时，会非常有成就感，所以也会越学越想学。打破了传统且非常痛苦的英语学习方案

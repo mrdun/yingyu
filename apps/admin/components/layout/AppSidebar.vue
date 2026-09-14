@@ -2,11 +2,11 @@
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 
+import type { NavItem } from "~/utils/nav";
 import AppButton from "~/components/ui/AppButton.vue";
 import { useAdminSession } from "~/composables/useAdminSession";
 import { useAdminToast } from "~/composables/useAdminToast";
 import { signOut } from "~/services/auth";
-import type { NavItem } from "~/utils/nav";
 import { NAV_ITEMS, normalizePath } from "~/utils/nav";
 
 /**
@@ -62,7 +62,7 @@ function onSignOut(): void {
     data-testid="app-sidebar"
   >
     <div class="flex h-14 items-center gap-2 border-b border-base-300 px-4">
-      <span class="text-sm font-semibold tracking-wide">Earthworm</span>
+      <span class="text-sm font-semibold tracking-wide">学以致用</span>
       <span class="text-xs text-base-content/60">管理后台</span>
     </div>
 

@@ -43,7 +43,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Earthworm 管理后台",
+      title: "学以致用 管理后台",
       htmlAttrs: {
         lang: "zh-CN",
       },

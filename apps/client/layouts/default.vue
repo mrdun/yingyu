@@ -11,7 +11,6 @@
     </div>
     <div class="m-auto flex h-fit min-h-screen flex-col items-center">
       <Navbar />
-      <FoundingMemberNotice></FoundingMemberNotice>
       <!-- 登录态: 左侧固定工作台导航 + 右侧主内容 -->
       <div
         v-if="showWorkNav"
@@ -47,7 +46,6 @@
 import { useRoute } from "#imports";
 import { computed, onErrorCaptured, ref } from "vue";
 
-import FoundingMemberNotice from "../components/FoundingMemberNotice.vue";
 import WorkNav from "../components/WorkNav.vue";
 import { useAuthState } from "../services/auth";
 

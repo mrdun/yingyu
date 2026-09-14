@@ -92,7 +92,6 @@
 
 <script setup lang="ts">
 import { useWindowScroll } from "@vueuse/core";
-import { useRuntimeConfig } from "nuxt/app";
 import { computed, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 
@@ -117,7 +116,6 @@ onMounted(() => {
   loadCoinBalance();
 });
 
-const runtimeConfig = useRuntimeConfig();
 const { openUserMenu } = useUserMenu();
 
 const route = useRoute();
@@ -132,7 +130,6 @@ interface AnchorAttributes extends Record<string, any> {
   download?: string;
 }
 const HEADER_OPTIONS: AnchorAttributes[] = [
-  { name: "文档", href: runtimeConfig.public.helpDocsURL as string, target: "_blank" },
   { name: "功能", href: "#features" },
   { name: "问题", href: "#faq" },
   { name: "联系我们", href: "#contact" },

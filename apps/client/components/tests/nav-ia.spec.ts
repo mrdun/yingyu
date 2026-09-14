@@ -105,15 +105,22 @@ describe("游客落地页导航 (Navbar) 只留非会员入口", () => {
     expect(headerOptions).not.toContain("/rewards");
   });
 
-  it("仍然保留 文档 / 功能 / 问题 / 联系我们", () => {
-    expect(headerOptions).toContain("helpDocsURL");
+  it("只剩 功能 / 问题 / 联系我们 三个页内锚点 (「文档」外链已下线)", () => {
     expect(headerOptions).toContain("#features");
     expect(headerOptions).toContain("#faq");
     expect(headerOptions).toContain("#contact");
-    expect(headerOptions).toContain('"文档"');
     expect(headerOptions).toContain('"功能"');
     expect(headerOptions).toContain('"问题"');
     expect(headerOptions).toContain('"联系我们"');
+
+    // 「文档」指向上游帮助站点 (helpDocsURL), 已随第三方外链清理一并移除; 不得回退
+    expect(headerOptions).not.toContain("helpDocsURL");
+    expect(headerOptions).not.toContain('"文档"');
+    // 其余三项必须是页内锚点, 不能借机换成任何外部地址
+    expect(headerOptions).not.toMatch(/href:\s*[`"']https?:/);
+
+    // 恰好三项: 防止有人"顺手"再补一个外链回来
+    expect(headerOptions.split("name:").length - 1).toBe(3);
   });
 
   it("登录态的金币余额入口保留 (它是登录后的 /rewards 入口, 不属于落地页导航)", () => {

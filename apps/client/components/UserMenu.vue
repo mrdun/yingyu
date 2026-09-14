@@ -60,7 +60,6 @@
 
 <script setup lang="ts">
 import { navigateTo, useModal } from "#imports";
-import { useRuntimeConfig } from "nuxt/app";
 import { computed } from "vue";
 
 import Dialog from "~/components/common/Dialog.vue";
@@ -71,8 +70,6 @@ import { useUserStore } from "~/store/user";
 
 const { isUserMenuOpen, closeUserMenu } = useUserMenu();
 const { darkMode, toggleDarkMode } = useDarkMode();
-
-const runtimeConfig = useRuntimeConfig();
 
 const emit = defineEmits(["logout"]);
 const open = defineModel("open");
@@ -102,18 +99,6 @@ const showMenuOptions = computed(() => {
       icon: "i-ph-book",
     },
     {
-      title: "帮助文档",
-      name: "helpDocs",
-      eventName: handleHelpDocs,
-      icon: "i-ph-book-open-text-duotone",
-    },
-    {
-      title: "建议反馈",
-      name: "feedback",
-      eventName: handleFeedback,
-      icon: "i-ph-hands-praying-duotone",
-    },
-    {
       title: "主题切换",
       name: "changeTheme",
       eventName: toggleDarkMode,
@@ -127,16 +112,6 @@ const showMenuOptions = computed(() => {
     },
   ];
 });
-
-function handleHelpDocs() {
-  closeUserMenu();
-  window.open(runtimeConfig.public.helpDocsURL, "_blank");
-}
-
-function handleFeedback() {
-  closeUserMenu();
-  window.open("https://txc.qq.com/products/652508", "_blank");
-}
 
 function handleMasteredElements() {
   closeUserMenu();
