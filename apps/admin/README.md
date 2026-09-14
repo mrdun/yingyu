@@ -47,7 +47,8 @@
 - AI 生成: 4 个入口 (`split` / `course-pack` / `subtitle` / `audio`) 严格按后端 DTO 传参;
   页面顶部常驻说明「AI 生成的内容一律为草稿且来源标记为 AI, 必须经过审核 → 发布流程,
   不能直接对外可见」, 生成成功后只跳转到该草稿详情页, **没有任何"直接发布"入口**。
-  音频走纯 base64 (去掉 dataURL 前缀, 与既有编辑器 `apps/client/pages/editor.vue` 一致),
+  音频走纯 base64: `apps/admin/utils/audio.ts` 的 `toAudioPayload` 负责去掉 dataURL 前缀并单独提交
+  `mimeType`, 调用点在 `apps/admin/pages/courses/ai.vue`;
   超过阈值给出体积提示、超过上限直接报错 (不静默失败)。
 - 已知后端缺口 (只报告, 本批次不改后端):
   1. `GET /admin/course-packs` 没有 `keyword` 参数 —— 列表页的关键词只在当前页内过滤, 页面已明确标注。

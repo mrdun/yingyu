@@ -81,7 +81,7 @@ describe("HTTP 层的错误对象约定", () => {
 
     expect(error.message).toBe("当前支付方式不可用");
     expect(error.data.message).toBe("当前支付方式不可用");
-    // editor.vue 的写法: error?.data?.message || error?.message
+    // 页面里常见的写法: error?.data?.message || error?.message
     expect(error?.data?.message || error?.message).toBe("当前支付方式不可用");
   });
 

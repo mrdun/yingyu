@@ -55,14 +55,18 @@ ALIPAY_GATEWAY                                          # 缺省正式网关; �
 
 ### 1.4 危险默认值 (⚠️ 上线前必须覆盖或确认)
 
-| 项目                              | 默认行为                                                      | 风险                                                                  |
-| --------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------- |
-| `NODE_ENV` 未设为 prod            | mock 支付可用、AI 调试权限开放 (`AdminOrDevGuard` 非生产放行) | **严重**: 生产可被免费开会员                                          |
-| `PAYMENT_PROVIDER` 默认 `mock`    | 生产下单会直接失败                                            | 上线当天无法支付 (fail-closed, 不会错扣款)                            |
-| `LOGTO_ENDPOINT` 默认 localhost   | 认证全失败                                                    | 配置错误被掩盖为「登录失败」                                          |
-| `BACKEND_ENDPOINT` 未配置         | audience 校验被跳过                                           | token 混用风险                                                        |
-| `CORS_ORIGINS` 未配置             | 只允许 localhost 与历史域名                                   | 前端不可用                                                            |
-| 无 `JWT_SECRET` / `COOKIE_SECRET` | 本服务**不使用**本地 JWT/签名 cookie                          | 无需配置; 不要把 `apps/api/.env.example` 里的 `SECRET` 当成生产必需项 |
+| 项目                              | 默认行为                                                     | 风险                                                                  |
+| --------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------------- |
+| `NODE_ENV` 未设为 prod            | mock 支付可用; AI 接口仍需 `admin:access` (不再随非生产放行) | **严重**: 生产可被免费开会员                                          |
+| `PAYMENT_PROVIDER` 默认 `mock`    | 生产下单会直接失败                                           | 上线当天无法支付 (fail-closed, 不会错扣款)                            |
+| `LOGTO_ENDPOINT` 默认 localhost   | 认证全失败                                                   | 配置错误被掩盖为「登录失败」                                          |
+| `BACKEND_ENDPOINT` 未配置         | audience 校验被跳过                                          | token 混用风险                                                        |
+| `CORS_ORIGINS` 未配置             | 只允许 localhost 与历史域名                                  | 前端不可用                                                            |
+| 无 `JWT_SECRET` / `COOKIE_SECRET` | 本服务**不使用**本地 JWT/签名 cookie                         | 无需配置; 不要把 `apps/api/.env.example` 里的 `SECRET` 当成生产必需项 |
+
+> AI 接口 (`/ai-content/*`) 的非生产放行改为**显式开关**: 只有非生产环境**且**把
+> `AI_CONTENT_DEV_BYPASS` 设为 `true` / `1` 时才跳过鉴权; 没设该变量 (默认) 与生产环境一律要求
+> `admin:access` —— 生产即使误设该变量也不会被削弱 (见 `apps/api/src/guards/admin-or-dev.guard.ts`)。
 
 ---
 

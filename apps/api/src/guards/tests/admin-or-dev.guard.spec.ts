@@ -67,21 +67,50 @@ describe("AuthGuard permissions (admin RBAC)", () => {
 
 describe("AdminOrDevGuard (AI endpoints)", () => {
   const originalNodeEnv = process.env.NODE_ENV;
+  const originalDevBypass = process.env.AI_CONTENT_DEV_BYPASS;
 
   afterEach(() => {
     if (originalNodeEnv === undefined) delete process.env.NODE_ENV;
     else process.env.NODE_ENV = originalNodeEnv;
+    if (originalDevBypass === undefined) delete process.env.AI_CONTENT_DEV_BYPASS;
+    else process.env.AI_CONTENT_DEV_BYPASS = originalDevBypass;
   });
 
-  it("bypasses auth in non-production (dev debug)", async () => {
+  /** 显式设置开关: undefined 表示删除该变量 (即「没设」) */
+  function setDevBypass(value: string | undefined) {
+    if (value === undefined) delete process.env.AI_CONTENT_DEV_BYPASS;
+    else process.env.AI_CONTENT_DEV_BYPASS = value;
+  }
+
+  it("rejects anonymous requests in non-production when the dev bypass is NOT set", async () => {
     process.env.NODE_ENV = "test";
+    setDevBypass(undefined);
+    const guard = new AdminOrDevGuard();
+
+    // 安全回归: 非生产默认必须要求 admin:access, 无令牌 → 401
+    await expect(guard.canActivate(createContext())).rejects.toThrow(UnauthorizedException);
+  });
+
+  it("bypasses auth in non-production only when AI_CONTENT_DEV_BYPASS is truthy", async () => {
+    process.env.NODE_ENV = "test";
+    setDevBypass("true");
     const guard = new AdminOrDevGuard();
 
     await expect(guard.canActivate(createContext())).resolves.toBe(true);
   });
 
+  it("ignores AI_CONTENT_DEV_BYPASS in production (no token → 401)", async () => {
+    process.env.NODE_ENV = "prod";
+    setDevBypass("true");
+    const guard = new AdminOrDevGuard();
+
+    // 生产即使误设开关也不得放行, 必须走 AuthGuard
+    await expect(guard.canActivate(createContext())).rejects.toThrow(UnauthorizedException);
+  });
+
   it("requires admin:access in production", async () => {
     process.env.NODE_ENV = "prod";
+    setDevBypass(undefined);
     const guard = new AdminOrDevGuard();
     mockJwt(guard, { sub: "user-1", scope: "admin:access something" });
 
@@ -92,6 +121,7 @@ describe("AdminOrDevGuard (AI endpoints)", () => {
 
   it("rejects a non-admin user in production", async () => {
     process.env.NODE_ENV = "prod";
+    setDevBypass(undefined);
     const guard = new AdminOrDevGuard();
     mockJwt(guard, { sub: "user-2", scope: "read:something" });
 
