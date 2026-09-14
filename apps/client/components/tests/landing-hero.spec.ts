@@ -8,6 +8,7 @@ const read = (relative: string) => readFileSync(resolve(__dirname, relative), "u
 const banner = read("../../components/Landing/Banner.vue");
 const navbar = read("../../components/Navbar.vue");
 const landingIndex = read("../../components/Landing/index.vue");
+const footer = read("../../components/Landing/Contact.vue");
 const tailwind = read("../../tailwind.config.js");
 
 /**
@@ -82,6 +83,20 @@ describe("Navbar: 品牌区与登录按钮按设计稿改, 逻辑不动", () => 
     expect(navbar).not.toContain("<img");
     expect(navbar).toContain("🐛");
     expect(navbar).toContain("gradient-to-br");
+  });
+
+  /**
+   * 品牌标记全页只有一个形态: 页头改成方块标后, 页脚不能还挂着旧的 /logo.png 图片,
+   * 否则同一个落地页出现两种品牌标记。
+   */
+  it("页脚用同一个方块标, 也不再引用 /logo.png", () => {
+    expect(footer).not.toContain("/logo.png");
+    expect(footer).not.toContain("<img");
+    expect(footer).toContain("🐛");
+    expect(footer).toContain("gradient-to-br");
+    // 页脚原有的栏目内容不受影响
+    expect(footer).toContain('href="#features"');
+    expect(footer).toContain("学以致用");
   });
 
   it("登录仍是按钮 + signIn(), 不是链接; 且是黄色胶囊带边框", () => {

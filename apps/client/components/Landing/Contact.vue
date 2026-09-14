@@ -4,13 +4,17 @@
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div>
           <div class="flex items-center">
-            <img
-              width="48"
-              height="48"
-              class="mr-6 overflow-hidden rounded-md"
-              src="/logo.png"
-              alt="earth-worm-logo"
-            />
+            <!--
+              品牌标记与页头保持一致 (Navbar 用同一个方块标) ——
+              此前这里挂的是位图 logo, 与页头那套并存会让同一页出现两种品牌标记。
+              ⚠️ 本文件的守卫会检查这里不出现旧的位图 logo 路径, 注释里也别写出那个字面量。
+            -->
+            <span
+              aria-hidden="true"
+              class="mr-6 grid h-[30px] w-[30px] shrink-0 place-items-center rounded-[9px] bg-gradient-to-br from-[#2f6fe8] to-[#2563eb] text-[15px] text-white shadow-[0_4px_12px_rgba(77,150,255,0.4)]"
+            >
+              🐛
+            </span>
             <span class="mt-4 text-3xl">学以致用</span>
           </div>
 
