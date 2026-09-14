@@ -39,11 +39,11 @@ export default {
       },
       backgroundColor: {
         "theme-dark": "#05051d",
-        cream: "#f7f4ee",
+        cream: "#FBF7E8",
       },
       colors: {
         "theme-dark": "#05051d",
-        cream: "#f7f4ee",
+        cream: "#FBF7E8",
         terra: {
           DEFAULT: "#b66a48",
           light: "#d38a5f",
@@ -86,13 +86,7 @@ export default {
           "Arial",
           "sans-serif",
         ],
-        serif: [
-          '"Songti SC"',
-          '"STSong"',
-          '"Noto Serif CJK SC"',
-          "Georgia",
-          "serif",
-        ],
+        serif: ['"Songti SC"', '"STSong"', '"Noto Serif CJK SC"', "Georgia", "serif"],
         customFont: [
           '"PingFang SC"',
           '"Hiragino Sans GB"',
@@ -104,7 +98,7 @@ export default {
       },
       borderColor: {
         "theme-dark": "#05051d",
-        cream: "#f7f4ee",
+        cream: "#FBF7E8",
       },
     },
   },

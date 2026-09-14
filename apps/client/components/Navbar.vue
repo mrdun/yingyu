@@ -12,14 +12,15 @@
         <div class="flex flex-1 items-center justify-between">
           <NuxtLink to="/">
             <div class="logo flex items-center">
-              <img
-                width="48"
-                height="48"
-                class="mr-6 hidden overflow-hidden rounded-md md:block"
-                src="/logo.png"
-                alt="earth-worm-logo"
-              />
-              <h1 class="text-wrap text-2xl font-extrabold leading-normal dark:text-white">
+              <span
+                aria-hidden="true"
+                class="grid h-[30px] w-[30px] shrink-0 place-items-center rounded-[9px] bg-gradient-to-br from-[#2f6fe8] to-[#2563eb] text-[15px] text-white shadow-[0_4px_12px_rgba(77,150,255,0.4)]"
+              >
+                🐛
+              </span>
+              <h1
+                class="ml-[9px] text-wrap text-2xl font-extrabold leading-normal text-[#0F172A] dark:text-white"
+              >
                 学以致用
               </h1>
             </div>
@@ -37,7 +38,7 @@
                 :key="optIndex"
               >
                 <a
-                  class="text-nowrap hover:text-purple-600 dark:text-white dark:hover:text-purple-400"
+                  class="text-nowrap text-[14px] font-semibold text-[#334155] hover:text-[#2563EB] dark:text-white dark:hover:text-[#2563EB]"
                   :href="optItem.href"
                   :target="optItem.target ?? '_self'"
                 >
@@ -79,7 +80,7 @@
           <button
             v-else
             aria-label="Login"
-            class="btn btn-sm mr-1 border-none bg-purple-500 text-white shadow-md hover:bg-purple-600 focus:outline-none"
+            class="mr-1 rounded-full border border-[#EAC300] bg-[#FFD93D] px-[19px] py-[9px] text-[13.5px] font-extrabold text-[#4A3800] shadow-[0_3px_0_rgba(180,146,0,0.35)] transition-colors hover:bg-[#FFC72E] focus:outline-none"
             @click="signIn()"
           >
             登录
