@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
   本地 RC (Release Candidate) 生产环境验证脚本 — TASK-002-L-01
 

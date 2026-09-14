@@ -107,17 +107,22 @@ node packages/db/scripts/rc-db.mjs verify earthworm_rc
 ## 启动 / 停止
 
 ```bash
-# 一键启动 (检查依赖 → 校验 RC 库 → 启动后端 → 启动前端 → 输出地址与 health)
+# 一键启动 (检查依赖 → 校验 RC 库 → 后端 3001 → 用户端 3000 → 后台 3002 → health + 地址)
 pwsh scripts/start-rc-demo.ps1
 # 或 Windows PowerShell 5.1: powershell -File scripts/start-rc-demo.ps1
+# 只要用户端、不要管理后台: 加 -SkipAdmin
 
-# 停止
+# 停止 (三个进程一起停)
 pwsh scripts/start-rc-demo.ps1 -Stop
 ```
 
-脚本内固定: 后端 `node apps/api/dist/src/main.js` (生产模式, **不使用 tsx**),
-前端 `node scripts/rc-static-server.mjs` (端口 3000, SPA 回退)。
-日志: `rc-api.log` / `rc-web.log`; 进程号: `rc-demo.pids.json`。
+脚本内固定: 后端 `node apps/api/dist/src/main.js` (生产模式, **不使用 tsx**);
+用户端 `node scripts/rc-static-server.mjs` (端口 3000, SPA 回退);
+管理后台 `node apps/admin/scripts/serve.mjs` (端口 3002, SPA 回退; 产物缺失时自动跳过)。
+日志: `rc-api.log` / `rc-web.log` / `rc-admin.log`; 进程号: `rc-demo.pids.json` (api / web / admin)。
+
+> 不要把脚本的输出接进管道 (如 `... | tail -20`): 它启动的服务进程会继承 stdout 句柄,
+> 管道永远收不到 EOF, 调用方会一直挂着 (看起来像"脚本卡死")。要留档请 `> rc-boot.log 2>&1`。
 
 重建环境 (如数据库被改乱):
 

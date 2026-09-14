@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
   RC 本地演示环境一键启动 (TASK-002-M-01)
 
@@ -7,21 +7,33 @@
   2. 校验 RC 数据库就绪 (earthworm_rc: 表数 / 方案 / 课程)
   3. 启动后端 (生产方式: node apps/api/dist/src/main.js)
   4. 启动前端静态服务 (apps/client/.output/public, 默认端口 3000)
-  5. 输出访问地址 + /health 检查结果
+  5. 启动管理后台静态服务 (apps/admin/.output/public, 默认端口 3002, -SkipAdmin 可跳过)
+  6. 输出访问地址 + /health 检查结果
 
   前端端口固定 3000: 本地 Logto 应用只登记了 http://localhost:3000/callback。
 
   前置: 已执行过 scripts/rc-local-prod.ps1 -Action reset / build 与 pnpm build:client。
 
 .EXAMPLE
-  pwsh scripts/start-rc-demo.ps1                 # 启动
-  pwsh scripts/start-rc-demo.ps1 -Stop           # 停止
+  pwsh scripts/start-rc-demo.ps1                 # 启动 (含管理后台)
+  pwsh scripts/start-rc-demo.ps1 -Stop           # 停止 (含管理后台)
+  pwsh scripts/start-rc-demo.ps1 -SkipAdmin      # 启动但不含管理后台
   powershell -File scripts/start-rc-demo.ps1     # Windows PowerShell 5.1 亦可
+
+.NOTES
+  * 本文件必须保持 **UTF-8 with BOM + CRLF**: Windows PowerShell 5.1 对无 BOM 的 .ps1 按 ANSI(GBK)
+    解码, 中文与引号会被错解, 报错还会指向完全无关的行(表现为"脚本坏了"), 而 pwsh 7 却能跑。
+    改完请勿让工具把它重写成"无 BOM / 纯 LF"。
+  * 不要把本脚本的输出接进管道(如 `... | tail -20`): 它启动的服务进程会继承 stdout 句柄,
+    管道永远收不到 EOF, 调用方会一直挂着, 看起来像"脚本卡死"。要留档请重定向到文件:
+      powershell -File scripts/start-rc-demo.ps1 > rc-boot.log 2>&1
 #>
 param(
   [switch]$Stop,
   [int]$ApiPort = 3001,
-  [int]$WebPort = 3000
+  [int]$WebPort = 3000,
+  [int]$AdminPort = 3002,
+  [switch]$SkipAdmin
 )
 
 $ErrorActionPreference = "Stop"
@@ -29,18 +41,30 @@ $repoRoot = Split-Path -Parent $PSScriptRoot
 $envFile = Join-Path $repoRoot "apps/api/.env.rc"
 $apiLog = Join-Path $repoRoot "rc-api.log"
 $webLog = Join-Path $repoRoot "rc-web.log"
+$adminLog = Join-Path $repoRoot "rc-admin.log"
 $pidFile = Join-Path $repoRoot "rc-demo.pids.json"
 
 function Write-Step([string]$text) { Write-Host "== $text ==" -ForegroundColor Cyan }
 function Test-Port([int]$port) {
-  try { return (Test-NetConnection -ComputerName 127.0.0.1 -Port $port -WarningAction SilentlyContinue).TcpTestSucceeded }
-  catch { return $false }
+  # 轻量 TCP 探测: Test-NetConnection 会先 ping 再做名称解析, 单次可能耗时数秒;
+  # 本脚本在"等待服务就绪"的循环里会调用数十次, 那样整个启动会拖到十几分钟。
+  $client = New-Object System.Net.Sockets.TcpClient
+  try {
+    $iar = $client.BeginConnect("127.0.0.1", $port, $null, $null)
+    if (-not $iar.AsyncWaitHandle.WaitOne(500)) { return $false }
+    $client.EndConnect($iar)
+    return $true
+  } catch {
+    return $false
+  } finally {
+    $client.Close()
+  }
 }
 
 if ($Stop) {
   if (Test-Path $pidFile) {
     $pids = Get-Content $pidFile | ConvertFrom-Json
-    foreach ($name in @("api", "web")) {
+    foreach ($name in @("api", "web", "admin")) {
       $procId = $pids.$name
       if ($procId) {
         Stop-Process -Id $procId -ErrorAction SilentlyContinue
@@ -50,7 +74,7 @@ if ($Stop) {
     Remove-Item $pidFile -Force
   } else {
     Write-Host "未找到 $pidFile, 尝试按端口清理"
-    foreach ($port in @($ApiPort, $WebPort)) {
+    foreach ($port in @($ApiPort, $WebPort, $AdminPort)) {
       $conn = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue
       if ($conn) { Stop-Process -Id $conn.OwningProcess -ErrorAction SilentlyContinue; Write-Host "已停止端口 $port 上的进程" }
     }
@@ -58,7 +82,7 @@ if ($Stop) {
   return
 }
 
-Write-Step "1/6 检查依赖服务"
+Write-Step "1/7 检查依赖服务"
 $deps = @(
   @{ name = "PostgreSQL"; port = 5480; hint = "docker compose up -d testdb" },
   @{ name = "Redis"; port = 6379; hint = "docker compose up -d redis" },
@@ -73,7 +97,7 @@ foreach ($dep in $deps) {
   }
 }
 
-Write-Step "2/6 校验 RC 环境与构建产物"
+Write-Step "2/7 校验 RC 环境与构建产物"
 if (-not (Test-Path $envFile)) { throw "缺少 $envFile (参考 apps/api/.env.rc.example)" }
 $apiEntry = Join-Path $repoRoot "apps/api/dist/src/main.js"
 if (-not (Test-Path $apiEntry)) { throw "缺少后端构建产物 $apiEntry → 请执行 pwsh scripts/rc-local-prod.ps1 -Action build" }
@@ -91,7 +115,7 @@ try {
   throw "RC 数据库校验失败 → 请执行 pwsh scripts/rc-local-prod.ps1 -Action reset"
 }
 
-Write-Step "3/6 启动后端 API (生产模式)"
+Write-Step "3/7 启动后端 API (生产模式)"
 if (Test-Port $ApiPort) {
   Write-Host "  ⚠️ 端口 $ApiPort 已被占用, 复用现有进程 (如需重启请先 -Stop)"
   $apiPid = (Get-NetTCPConnection -LocalPort $ApiPort -State Listen -ErrorAction SilentlyContinue).OwningProcess | Select-Object -First 1
@@ -124,7 +148,7 @@ if (Test-Port $ApiPort) {
 }
 Write-Host "  ✅ 后端已监听 http://localhost:$ApiPort"
 
-Write-Step "4/6 启动前端静态服务 (端口 $WebPort)"
+Write-Step "4/7 启动前端静态服务 (端口 $WebPort)"
 if (Test-Port $WebPort) {
   Write-Host "  ⚠️ 端口 $WebPort 已被占用, 复用现有进程"
   $webPid = (Get-NetTCPConnection -LocalPort $WebPort -State Listen -ErrorAction SilentlyContinue).OwningProcess | Select-Object -First 1
@@ -142,9 +166,33 @@ if (Test-Port $WebPort) {
 }
 Write-Host "  ✅ 前端已监听 http://localhost:$WebPort"
 
-@{ api = $apiPid; web = $webPid } | ConvertTo-Json | Set-Content $pidFile
+Write-Step "5/7 启动管理后台静态服务 (端口 $AdminPort)"
+$adminRoot = Join-Path $repoRoot "apps/admin/.output/public"
+if ($SkipAdmin) {
+  Write-Host "  ⏭️  已指定 -SkipAdmin, 跳过管理后台"
+} elseif (-not (Test-Path $adminRoot)) {
+  Write-Host "  ⚠️ 缺少管理后台构建产物 apps/admin/.output/public → 本次跳过 (构建: pnpm -F admin generate)" -ForegroundColor Yellow
+} elseif (Test-Port $AdminPort) {
+  Write-Host "  ⚠️ 端口 $AdminPort 已被占用, 复用现有进程"
+  $adminPid = (Get-NetTCPConnection -LocalPort $AdminPort -State Listen -ErrorAction SilentlyContinue).OwningProcess | Select-Object -First 1
+} else {
+  # apps/admin/scripts/serve.mjs 以 cwd 作为产物根, 所以必须把工作目录切到 apps/admin
+  $env:PORT = "$AdminPort"
+  $adminProc = Start-Process -FilePath "node" -ArgumentList "scripts/serve.mjs" `
+    -WorkingDirectory (Join-Path $repoRoot "apps/admin") -WindowStyle Hidden -PassThru `
+    -RedirectStandardOutput $adminLog -RedirectStandardError "$adminLog.err"
+  $adminPid = $adminProc.Id
+  foreach ($i in 1..15) {
+    Start-Sleep -Seconds 1
+    if (Test-Port $AdminPort) { break }
+  }
+  if (-not (Test-Port $AdminPort)) { throw "管理后台静态服务启动失败 (见 rc-admin.log)" }
+  Write-Host "  ✅ 管理后台已监听 http://localhost:$AdminPort"
+}
 
-Write-Step "5/6 健康检查"
+@{ api = $apiPid; web = $webPid; admin = $adminPid } | ConvertTo-Json | Set-Content $pidFile
+
+Write-Step "6/7 健康检查"
 try {
   $health = Invoke-RestMethod -Uri "http://localhost:$ApiPort/health" -TimeoutSec 20
   Write-Host ("  status={0} database={1} redis={2} logto={3}" -f `
@@ -154,9 +202,10 @@ try {
   Write-Host "  ❌ /health 调用失败: $($_.Exception.Message)" -ForegroundColor Red
 }
 
-Write-Step "6/6 访问地址"
+Write-Step "7/7 访问地址"
 Write-Host ""
 Write-Host "  前端 (人工测试入口): http://localhost:$WebPort" -ForegroundColor Green
+Write-Host "  管理后台 (Admin)    : http://localhost:$AdminPort" -ForegroundColor Green
 Write-Host "  后端 API           : http://localhost:$ApiPort" -ForegroundColor Green
 Write-Host "  API 健康检查        : http://localhost:$ApiPort/health"
 Write-Host "  API 文档 (Swagger)  : http://localhost:$ApiPort/swagger"
