@@ -78,11 +78,27 @@ describe("工作台进度文案: 第 N 课 · xx% (拿不到就退化, 不编数
       formatCoursePackProgressLine({ totalCourses: 4, completedCourses: 1, progress: 25 }),
     ).toBe("第 2 课 · 25%");
     expect(
-      formatCoursePackProgressLine({ totalCourses: 12, completedCourses: 0, progress: 0 }),
-    ).toBe("第 1 课 · 0%");
-    expect(
       formatCoursePackProgressLine({ totalCourses: 3, completedCourses: 3, progress: 100 }),
     ).toBe("第 3 课 · 100%");
+  });
+
+  /**
+   * 设计稿 (`.hermes/design/home-appshell.html`) 对**未开始**的课写的是
+   * 「第 1 课 · 还没开始」, 不是「第 1 课 · 0%」—— 0% 读起来像「学过了但没进展」。
+   * 实测踩过: RC 上 mrdun 的全新课包 (55 课 / 完成 0) 显示「第 1 课 · 0%」。
+   */
+  it("未开始 (完成 0 课且进度 0) → 第 N 课 · 还没开始, 不说 0%", () => {
+    expect(
+      formatCoursePackProgressLine({ totalCourses: 12, completedCourses: 0, progress: 0 }),
+    ).toBe("第 1 课 · 还没开始");
+    // 运行时真实数据: 零基础学英语 = 55 课, 全新账号完成 0
+    expect(
+      formatCoursePackProgressLine({ totalCourses: 55, completedCourses: 0, progress: 0 }),
+    ).toBe("第 1 课 · 还没开始");
+    // 进度被夹到 0 的非法负值同样算「还没开始」
+    expect(
+      formatCoursePackProgressLine({ totalCourses: 2, completedCourses: 0, progress: -30 }),
+    ).toBe("第 1 课 · 还没开始");
   });
 
   it("课号封顶在总课数, 进度收敛到 0–100", () => {
@@ -95,9 +111,6 @@ describe("工作台进度文案: 第 N 课 · xx% (拿不到就退化, 不编数
     expect(
       formatCoursePackProgressLine({ totalCourses: 2, completedCourses: 0, progress: 180 }),
     ).toBe("第 1 课 · 100%");
-    expect(
-      formatCoursePackProgressLine({ totalCourses: 2, completedCourses: 0, progress: -30 }),
-    ).toBe("第 1 课 · 0%");
   });
 
   it("拿不到进度 (无数据 / 空包 / 非法值 / 字符串) → 空串", () => {

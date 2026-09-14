@@ -69,7 +69,7 @@ export function coursePackCoverIcon(id?: string | null): string {
 }
 
 /**
- * 工作台形态的第二行文案: `第 N 课 · xx%`。
+ * 工作台形态的第二行文案: 未开始 → `第 N 课 · 还没开始`; 有进度 → `第 N 课 · xx%`。
  *
  * 数据来源是既有接口 `GET /course-pack/:coursePackId/progress`
  * (totalCourses / completedCourses / progress), 不是编的:
@@ -78,6 +78,9 @@ export function coursePackCoverIcon(id?: string | null): string {
  *     ⚠️ 接口不返回「最近一课在包内的序号」(`lastCourseId` 需要再取一次课程包详情才能定位),
  *     所以 N 是按完成数推出的「当前在学的第几课」, 用户跳课学习时可能与真实课号不一致。
  *     要精确到真实课号需要每张卡多打一次详情请求, 本期不做 (见任务报告)。
+ *
+ * ⚠️ 没学过时**不能说「0%」**: 设计稿 (`.hermes/design/home-appshell.html`) 对未开始的课
+ * 写的是「第 1 课 · **还没开始**」, 而 0% 读起来像「学过了但一点没进展」。
  *
  * 拿不到进度 (没请求到 / 包内没有课程 / 非法值) → 返回空串, 由调用方退化成课程包描述, **不编数字**。
  */
@@ -93,7 +96,22 @@ export function formatCoursePackProgressLine(progress?: CoursePackProgressInput 
   // 接口给的 progress 本身就是百分比, 所以分母固定 100 (clampPercent 负责收敛 0–100 与非法值)
   const percent = Math.round(clampPercent(progress?.progress, PERCENT_TOTAL));
 
+  if (!hasStartedCoursePack({ completedCourses, progress: percent })) {
+    return `第 ${lessonNumber} 课 · 还没开始`;
+  }
+
   return `第 ${lessonNumber} 课 · ${percent}%`;
+}
+
+/**
+ * 这门课「学过没有」= 完成过至少一课, 或进度百分比大于 0。
+ * 卡片第二行与按钮文案共用这一个判定, 免得出现「第二行说还没开始、按钮说继续游戏」这种自相矛盾。
+ */
+export function hasStartedCoursePack(progress?: CoursePackProgressInput | null): boolean {
+  const completedCourses = Math.floor(safeNumber(progress?.completedCourses));
+  const percent = clampPercent(progress?.progress, PERCENT_TOTAL);
+
+  return completedCourses > 0 || percent > 0;
 }
 
 /** 卡片第二行: 有真实进度就显示进度, 拿不到就退化成课程包描述 (都没有则空串) */
@@ -105,7 +123,7 @@ export function resolveCoursePackCardMetaLine(
 }
 
 /**
- * **工作台形态**的按钮文案 —— 按「有没有进度」说话, 与权限无关。
+ * **工作台形态**的按钮文案 —— 按「学过没有」说话, 与权限无关。
  *
  * 为什么不能用 `resolveCoursePackCardActionLabel` (permission 派生的「立即开始学习 / 开通会员解锁」):
  * 「我的课程」的数据来自 `GET /user-course-progress/recent-course-packs`, 该接口
@@ -116,10 +134,14 @@ export function resolveCoursePackCardMetaLine(
  * 即使某门课的会员权限真的失效了, 点进去也是课程详情页, 由该页展示会员 CTA
  * (见 utils/coursePackEntry.ts 的约定: 卡片点击永不直接跳 /membership) —— 用户不会被误导付费。
  *
+ * ⚠️ 判定必须与第二行文案同一个来源 (`hasStartedCoursePack`): 没学过 → 「开始第一课」;
+ * 用「第二行非空」当判定会让**每一门有课程的课都显示「继续游戏」**(实测踩过: 全新账号
+ * 在「零基础学英语」上看到「继续游戏」, 而设计稿对未开始的课写的是「开始第一课」)。
+ *
  * 后端补上 `accessLevel`/`accessible` 之后, 这里可以再考虑是否改回权限派生文案。
  */
 export function resolveWorkbenchCardActionLabel(progress?: CoursePackProgressInput | null): string {
-  return formatCoursePackProgressLine(progress) ? "继续游戏" : "开始第一课";
+  return hasStartedCoursePack(progress) ? "继续游戏" : "开始第一课";
 }
 
 /** 字符串 → 稳定下标 (djb2 变体; 空 id 落在 0), 不依赖 Math.random / 时间 */

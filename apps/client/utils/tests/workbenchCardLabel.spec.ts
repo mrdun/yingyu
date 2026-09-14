@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-import { resolveWorkbenchCardActionLabel } from "../coursePackCard";
+import { formatCoursePackProgressLine, resolveWorkbenchCardActionLabel } from "../coursePackCard";
 
 const cardSource = readFileSync(
   resolve(__dirname, "../../components/courses/CoursePackCard.vue"),
@@ -41,9 +41,46 @@ describe("P1: 工作台按钮文案按进度派生, 与权限无关", () => {
     expect(
       resolveWorkbenchCardActionLabel({ totalCourses: Number.NaN, progress: Number.NaN }),
     ).toBe("开始第一课");
-    expect(resolveWorkbenchCardActionLabel({ totalCourses: "abc", progress: 50 } as never)).toBe(
+    // 课数拿不到 (字符串) 且没有进度 → 开始第一课
+    expect(resolveWorkbenchCardActionLabel({ totalCourses: "abc", progress: 0 } as never)).toBe(
       "开始第一课",
     );
+    // 课数拿不到, 但进度明摆着是 50% → 学过, 继续游戏 (第二行会退化成课程包描述)
+    expect(resolveWorkbenchCardActionLabel({ totalCourses: "abc", progress: 50 } as never)).toBe(
+      "继续游戏",
+    );
+  });
+
+  /**
+   * 实测踩过的缺陷: 判定写成「第二行文案非空」→ 只要课程包有课程, 第二行就非空
+   * (原来是「第 1 课 · 0%」) → **全新账号也显示「继续游戏」**。
+   * RC 上真实数据: 零基础学英语 55 课 / mrdun 完成 0 课 → 必须显示「开始第一课」。
+   */
+  it("没学过 (完成 0 课且进度 0) → 开始第一课, 不是继续游戏", () => {
+    expect(
+      resolveWorkbenchCardActionLabel({ totalCourses: 55, completedCourses: 0, progress: 0 }),
+    ).toBe("开始第一课");
+    expect(
+      resolveWorkbenchCardActionLabel({ totalCourses: 12, completedCourses: 0, progress: 0 }),
+    ).toBe("开始第一课");
+    // 唯一算「学过」的情况: 完成过至少一课, 或进度百分比大于 0
+    expect(
+      resolveWorkbenchCardActionLabel({ totalCourses: 4, completedCourses: 1, progress: 25 }),
+    ).toBe("继续游戏");
+    expect(
+      resolveWorkbenchCardActionLabel({ totalCourses: 4, completedCourses: 0, progress: 5 }),
+    ).toBe("继续游戏");
+  });
+
+  it("按钮文案与第二行同理: 第二行说「还没开始」时, 按钮必须是「开始第一课」", () => {
+    for (const progress of [
+      { totalCourses: 55, completedCourses: 0, progress: 0 },
+      { totalCourses: 12, completedCourses: 0, progress: 0 },
+      { totalCourses: 2, completedCourses: 0, progress: -30 },
+    ]) {
+      expect(formatCoursePackProgressLine(progress)).toContain("还没开始");
+      expect(resolveWorkbenchCardActionLabel(progress)).toBe("开始第一课");
+    }
   });
 
   it("这个文案**永不**出现「开通会员解锁 / 立即开始学习」这类权限话术", () => {
