@@ -51,8 +51,9 @@ export function getSignInCallback() {
     sessionStorage.removeItem("callback");
     return callback;
   } else {
-    // 登录成功后默认进入课程商城(工作台), 让左侧导航立即可见
-    return "/course-pack";
+    // 登录成功后默认进入会员中心主页 (= 侧栏第一项「主页」), 而不是课程广场:
+    // 主页承载打卡/每日任务/我的课程, 是登录后的落点; 课程广场退为侧栏第二项。
+    return "/";
   }
 }
 

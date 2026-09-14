@@ -9,7 +9,7 @@ import { describe, expect, it } from "vitest";
  * 为什么不做挂载测试: 本项目 tsconfig 继承 .nuxt/tsconfig.json, 不包含 .vue 模块声明,
  * 在 spec 里 import .vue 会得到 TS2307 (仓库内也没有先例)。
  * 运行时行为 (accessible 被裁剪后的真实跳转) 由 utils/tests/coursePackEntry.spec.ts
- * 的行为测试 + Playwright 真实浏览器巡检覆盖; 这里只钉住「字段不许被裁剪」的接线。
+ * 的行为测试 + 真机手工巡检覆盖; 这里只钉住「字段不许被裁剪」的接线。
  *
  * P0 缺陷形态: pages/course-pack/index.vue 把课程包对象手工裁剪成
  * `{ id, title, description, cover, isFree, accessLevel }` 再传给卡片, 丢掉了 accessible,

@@ -7,7 +7,7 @@ import { describe, expect, it } from "vitest";
  * HttpErrorProvider 的 401 语义回归测试 (源码级)。
  *
  * 为什么不做挂载测试: 本项目 tsconfig 继承 .nuxt/tsconfig.json, 不包含 .vue 模块声明,
- * 在 spec 里 import .vue 会得到 TS2307 (仓库内也没有先例)。真实渲染行为由 Playwright
+ * 在 spec 里 import .vue 会得到 TS2307 (仓库内也没有先例)。真实渲染行为由手工巡检
  * 巡检覆盖 (12 路由游客巡检: 不跳登录页 / 无 pageerror)。
  *
  * 为什么不用 fileURLToPath: vitest 的 nuxt environment 下 import.meta.url 会触发

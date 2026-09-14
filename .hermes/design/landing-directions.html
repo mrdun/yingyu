@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>学以致用 · 落地页三个设计方向</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family:
+          "PingFang SC",
+          "Microsoft YaHei",
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+
+      .dir {
+        padding: 34px 28px 46px;
+        border-bottom: 3px solid #111;
+      }
+      .dir-label {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        padding: 5px 12px;
+        border-radius: 999px;
+        margin-bottom: 6px;
+      }
+      .dir-note {
+        font-size: 12.5px;
+        line-height: 1.7;
+        margin: 6px 0 26px;
+        max-width: 720px;
+      }
+
+      /* ---------- 通用骨架 ---------- */
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1080px;
+        margin: 0 auto 44px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-weight: 900;
+        font-size: 19px;
+      }
+      .logo-mark {
+        width: 30px;
+        height: 30px;
+        border-radius: 9px;
+        display: grid;
+        place-items: center;
+        font-size: 15px;
+      }
+      .navlinks {
+        display: flex;
+        gap: 26px;
+        font-size: 14px;
+      }
+      .hero {
+        max-width: 860px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 12.5px;
+        font-weight: 700;
+      }
+      .h1 {
+        font-size: 52px;
+        line-height: 1.16;
+        letter-spacing: -0.5px;
+        font-weight: 900;
+        margin-bottom: 20px;
+      }
+      .sub {
+        font-size: 15px;
+        line-height: 1.85;
+        max-width: 560px;
+        margin: 0 auto 30px;
+      }
+      .ctas {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 14px;
+      }
+      .btn {
+        font-size: 15.5px;
+        font-weight: 800;
+        cursor: pointer;
+      }
+      .fineprint {
+        font-size: 12px;
+      }
+      .shot {
+        max-width: 760px;
+        margin: 40px auto 0;
+        overflow: hidden;
+      }
+      .shot-bar {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 14px;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+      .shot-body {
+        padding: 22px 24px;
+      }
+      .shot-q {
+        font-size: 12px;
+        margin-bottom: 6px;
+      }
+      .shot-cn {
+        font-size: 19px;
+        font-weight: 800;
+        margin-bottom: 14px;
+      }
+      .shot-en {
+        font-size: 15px;
+        padding: 11px 14px;
+      }
+      .shot-tags {
+        display: flex;
+        gap: 8px;
+        margin-top: 14px;
+      }
+      .tag {
+        font-size: 11px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+      }
+
+      /* ================= 方案 A: 贴近参考(新粗野) ================= */
+      .A {
+        background: #fbf7e8;
+      }
+      .A .dir-label {
+        background: #111;
+        color: #ffd93d;
+      }
+      .A .dir-note {
+        color: #475569;
+      }
+      .A .logo-mark {
+        background: #00b2ff;
+        border: 2px solid #111;
+        color: #fff;
+      }
+      .A .navlinks {
+        color: #0f172a;
+        font-weight: 700;
+      }
+      .A .nav-cta {
+        background: #ffd93d;
+        border: 2px solid #111;
+        border-radius: 999px;
+        padding: 8px 18px;
+        font-size: 13.5px;
+        font-weight: 800;
+      }
+      .A .pill {
+        background: #fff;
+        border: 2px solid #111;
+        border-radius: 999px;
+        padding: 7px 15px;
+        color: #0f172a;
+      }
+      .A .h1 {
+        color: #0f172a;
+      }
+      .A .mark {
+        background: linear-gradient(transparent 58%, #ffd93d 58%);
+        padding: 0 2px;
+      }
+      .A .blue {
+        color: #00b2ff;
+      }
+      .A .sub {
+        color: #475569;
+      }
+      .A .btn-primary {
+        background: #4d96ff;
+        color: #fff;
+        border: 2px solid #111;
+        border-radius: 13px;
+        padding: 14px 30px;
+        box-shadow: 0 5px 0 #111;
+      }
+      .A .btn-ghost {
+        background: #fff;
+        color: #0f172a;
+        border: 2px solid #111;
+        border-radius: 13px;
+        padding: 14px 26px;
+        box-shadow: 0 5px 0 #111;
+      }
+      .A .fineprint {
+        color: #64748b;
+      }
+      .A .shot {
+        background: #fff;
+        border: 2.5px solid #111;
+        border-radius: 16px;
+        box-shadow: 0 9px 0 rgba(17, 17, 17, 0.16);
+      }
+      .A .shot-bar {
+        background: #00b2ff;
+        border-bottom: 2.5px solid #111;
+      }
+      .A .dot {
+        border: 1.5px solid #111;
+      }
+      .A .shot-q {
+        color: #94a3b8;
+      }
+      .A .shot-en {
+        background: #fbf7e8;
+        border: 2px solid #111;
+        border-radius: 10px;
+        color: #0f172a;
+        font-weight: 700;
+      }
+      .A .tag {
+        border: 2px solid #111;
+      }
+      .A .tag-y {
+        background: #ffd93d;
+        color: #0f172a;
+      }
+      .A .tag-b {
+        background: #4d96ff;
+        color: #fff;
+      }
+
+      /* ================= 方案 B: 柔和游戏化(推荐) ================= */
+      .B {
+        background: #fcfaf4;
+      }
+      .B .dir-label {
+        background: #4d96ff;
+        color: #fff;
+      }
+      .B .dir-note {
+        color: #475569;
+      }
+      .B .logo-mark {
+        background: linear-gradient(135deg, #4d96ff, #a29bfe);
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(77, 150, 255, 0.4);
+      }
+      .B .navlinks {
+        color: #334155;
+        font-weight: 600;
+      }
+      .B .nav-cta {
+        background: #ffd93d;
+        color: #0f172a;
+        border-radius: 999px;
+        padding: 9px 19px;
+        font-size: 13.5px;
+        font-weight: 800;
+        box-shadow: 0 3px 0 rgba(217, 175, 0, 0.5);
+      }
+      .B .pill {
+        background: rgba(77, 150, 255, 0.1);
+        color: #2563eb;
+        border-radius: 999px;
+        padding: 8px 16px;
+      }
+      .B .h1 {
+        color: #0f172a;
+      }
+      .B .mark {
+        background: linear-gradient(transparent 60%, rgba(255, 217, 61, 0.75) 60%);
+        padding: 0 3px;
+        border-radius: 4px;
+      }
+      .B .blue {
+        background: linear-gradient(135deg, #4d96ff, #a29bfe);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .B .sub {
+        color: #64748b;
+      }
+      .B .btn-primary {
+        background: linear-gradient(135deg, #4d96ff, #6c8bff);
+        color: #fff;
+        border: none;
+        border-radius: 999px;
+        padding: 15px 32px;
+        box-shadow: 0 6px 18px rgba(77, 150, 255, 0.42);
+      }
+      .B .btn-ghost {
+        background: #fff;
+        color: #0f172a;
+        border: 1.5px solid #e2e8f0;
+        border-radius: 999px;
+        padding: 15px 26px;
+        box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+      }
+      .B .fineprint {
+        color: #94a3b8;
+      }
+      .B .shot {
+        background: #fff;
+        border: 1px solid #eef2f7;
+        border-radius: 20px;
+        box-shadow: 0 22px 48px -12px rgba(15, 23, 42, 0.18);
+      }
+      .B .shot-bar {
+        background: #f8fafc;
+        border-bottom: 1px solid #eef2f7;
+      }
+      .B .shot-q {
+        color: #94a3b8;
+      }
+      .B .shot-en {
+        background: #f6f9ff;
+        border: 1.5px dashed #c7d9f7;
+        border-radius: 12px;
+        color: #1e293b;
+        font-weight: 700;
+      }
+      .B .tag-y {
+        background: #fff4c2;
+        color: #8a6d00;
+      }
+      .B .tag-b {
+        background: #e8f0ff;
+        color: #2563eb;
+      }
+
+      /* ================= 方案 C: 最小改动 ================= */
+      .C {
+        background: #fdfbf7;
+      }
+      .C .dir-label {
+        background: #ede9fe;
+        color: #6d28d9;
+      }
+      .C .dir-note {
+        color: #475569;
+      }
+      .C .logo-mark {
+        background: #7c3aed;
+        color: #fff;
+      }
+      .C .navlinks {
+        color: #334155;
+        font-weight: 600;
+      }
+      .C .nav-cta {
+        background: #7c3aed;
+        color: #fff;
+        border-radius: 999px;
+        padding: 9px 19px;
+        font-size: 13.5px;
+        font-weight: 700;
+      }
+      .C .pill {
+        background: #f5f3ff;
+        color: #6d28d9;
+        border-radius: 999px;
+        padding: 8px 16px;
+      }
+      .C .h1 {
+        color: #0f172a;
+      }
+      .C .mark {
+        background: linear-gradient(transparent 60%, rgba(255, 217, 61, 0.8) 60%);
+        padding: 0 3px;
+        border-radius: 4px;
+      }
+      .C .blue {
+        color: #7c3aed;
+      }
+      .C .sub {
+        color: #64748b;
+      }
+      .C .btn-primary {
+        background: #7c3aed;
+        color: #fff;
+        border: none;
+        border-radius: 999px;
+        padding: 15px 32px;
+        box-shadow: 0 5px 0 #5b21b6;
+      }
+      .C .btn-ghost {
+        background: #fff;
+        color: #0f172a;
+        border: 1.5px solid #e2e8f0;
+        border-radius: 999px;
+        padding: 15px 26px;
+      }
+      .C .fineprint {
+        color: #94a3b8;
+      }
+      .C .shot {
+        background: #fff;
+        border: 1px solid #eef2f7;
+        border-radius: 16px;
+        box-shadow: 0 6px 0 rgba(124, 58, 237, 0.14);
+      }
+      .C .shot-bar {
+        background: #f8fafc;
+        border-bottom: 1px solid #eef2f7;
+      }
+      .C .shot-q {
+        color: #94a3b8;
+      }
+      .C .shot-en {
+        background: #f8f7ff;
+        border: 1.5px solid #e4e0fb;
+        border-radius: 10px;
+        color: #1e293b;
+        font-weight: 700;
+      }
+      .C .tag-y {
+        background: #fff4c2;
+        color: #8a6d00;
+      }
+      .C .tag-b {
+        background: #ede9fe;
+        color: #6d28d9;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============================================================ -->
+    <!-- 方案 A -->
+    <!-- ============================================================ -->
+    <section class="dir A">
+      <span class="dir-label">方案 A · 贴近参考站</span>
+      <p class="dir-note">
+        <strong>新粗野主义</strong>：黑描边 + 硬阴影 + 亮蓝主色 + 鹅黄奖励色 + 马克笔高亮。
+        游戏感和冲击力最强，和参考站气质最接近。<br />
+        代价：黑描边在中文大字上容易显"重"，且这种风格偏"零基础/学生向"；你有 ¥199
+        会员付费，可能显得不够值钱。
+      </p>
+
+      <div class="nav">
+        <div class="logo"><span class="logo-mark">🐛</span><span>学以致用</span></div>
+        <div class="navlinks"><span>功能</span><span>问题</span><span>联系我们</span></div>
+        <div class="nav-cta">登录</div>
+      </div>
+
+      <div class="hero">
+        <div class="pill">🎮 学以致用：像玩游戏一样练英语</div>
+        <div
+          class="h1"
+          style="margin-top: 22px"
+        >
+          让你的英语学习<br /><span class="mark blue">上瘾到停不下来</span>
+        </div>
+        <p class="sub">
+          通过连词成句、i+1 可理解输入与游戏化闯关，在真实对话实战中快速掌握最纯正的英语表达。
+        </p>
+        <div class="ctas">
+          <button class="btn btn-primary">开启学习 →</button>
+          <button class="btn btn-ghost">▶ 看 2 分钟演示</button>
+        </div>
+        <div class="fineprint">免费开始 · 无需信用卡 · 支持电脑 / 平板 / 手机</div>
+
+        <div class="shot">
+          <div class="shot-bar">
+            <span
+              class="dot"
+              style="background: #ff5f57"
+            ></span>
+            <span
+              class="dot"
+              style="background: #febc2e"
+            ></span>
+            <span
+              class="dot"
+              style="background: #28c840"
+            ></span>
+          </div>
+          <div class="shot-body">
+            <div class="shot-q">把下面这句话翻译成英文</div>
+            <div class="shot-cn">我今天需要做这件事情</div>
+            <div class="shot-en">i need to do it today</div>
+            <div class="shot-tags">
+              <span class="tag tag-y">🔥 连续 12 天</span>
+              <span class="tag tag-b">拼图闯关 LV.1</span>
+              <span class="tag tag-y">今日 +8 币</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 方案 B -->
+    <!-- ============================================================ -->
+    <section class="dir B">
+      <span class="dir-label">方案 B · 柔和游戏化 ★ 推荐</span>
+      <p class="dir-note">
+        保留参考站的<strong>黄蓝配色 + 圆润 + 游戏化元素（连击/关卡/金币）</strong>，但去掉黑描边，
+        改用<strong>柔和彩色阴影 + 渐变主色</strong>。活泼但更"值钱"，适合有付费会员的产品。<br />
+        代价：比方案 A 少一点"炸"的冲击力，但更耐看、更适合放价格页。
+      </p>
+
+      <div class="nav">
+        <div class="logo"><span class="logo-mark">🐛</span><span>学以致用</span></div>
+        <div class="navlinks"><span>功能</span><span>问题</span><span>联系我们</span></div>
+        <div class="nav-cta">登录</div>
+      </div>
+
+      <div class="hero">
+        <div class="pill">🎮 学以致用：像玩游戏一样练英语</div>
+        <div
+          class="h1"
+          style="margin-top: 22px"
+        >
+          让你的英语学习<br /><span class="blue">上瘾到停不下来</span>
+        </div>
+        <p class="sub">
+          通过连词成句、i+1 可理解输入与游戏化闯关，在真实对话实战中快速掌握最纯正的英语表达。
+        </p>
+        <div class="ctas">
+          <button class="btn btn-primary">开启学习 →</button>
+          <button class="btn btn-ghost">▶ 看 2 分钟演示</button>
+        </div>
+        <div class="fineprint">免费开始 · 无需信用卡 · 支持电脑 / 平板 / 手机</div>
+
+        <div class="shot">
+          <div class="shot-bar">
+            <span
+              class="dot"
+              style="background: #ff5f57"
+            ></span>
+            <span
+              class="dot"
+              style="background: #febc2e"
+            ></span>
+            <span
+              class="dot"
+              style="background: #28c840"
+            ></span>
+          </div>
+          <div class="shot-body">
+            <div class="shot-q">把下面这句话翻译成英文</div>
+            <div class="shot-cn">我今天需要做这件事情</div>
+            <div class="shot-en">i need to do it today</div>
+            <div class="shot-tags">
+              <span class="tag tag-y">🔥 连续 12 天</span>
+              <span class="tag tag-b">拼图闯关 LV.1</span>
+              <span class="tag tag-y">今日 +8 币</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 方案 C -->
+    <!-- ============================================================ -->
+    <section class="dir C">
+      <span class="dir-label">方案 C · 最小改动</span>
+      <p class="dir-note">
+        保留你现在的主色（紫），只做三件事：<strong
+          >加黄色作奖励色 + 按钮加硬阴影 + 标题更粗更圆</strong
+        >。 改动最小、风险最低，一天能上。<br />
+        代价：只解决"不活泼"的一半问题，颜色仍是单一冷色，和参考站的"黄蓝对比"气质差距还在。
+      </p>
+
+      <div class="nav">
+        <div class="logo"><span class="logo-mark">🐛</span><span>学以致用</span></div>
+        <div class="navlinks"><span>功能</span><span>问题</span><span>联系我们</span></div>
+        <div class="nav-cta">登录</div>
+      </div>
+
+      <div class="hero">
+        <div class="pill">🎮 学以致用：像玩游戏一样练英语</div>
+        <div
+          class="h1"
+          style="margin-top: 22px"
+        >
+          让你的英语学习<br /><span class="mark blue">上瘾到停不下来</span>
+        </div>
+        <p class="sub">
+          通过连词成句、i+1 可理解输入与游戏化闯关，在真实对话实战中快速掌握最纯正的英语表达。
+        </p>
+        <div class="ctas">
+          <button class="btn btn-primary">开启学习 →</button>
+          <button class="btn btn-ghost">▶ 看 2 分钟演示</button>
+        </div>
+        <div class="fineprint">免费开始 · 无需信用卡 · 支持电脑 / 平板 / 手机</div>
+
+        <div class="shot">
+          <div class="shot-bar">
+            <span
+              class="dot"
+              style="background: #ff5f57"
+            ></span>
+            <span
+              class="dot"
+              style="background: #febc2e"
+            ></span>
+            <span
+              class="dot"
+              style="background: #28c840"
+            ></span>
+          </div>
+          <div class="shot-body">
+            <div class="shot-q">把下面这句话翻译成英文</div>
+            <div class="shot-cn">我今天需要做这件事情</div>
+            <div class="shot-en">i need to do it today</div>
+            <div class="shot-tags">
+              <span class="tag tag-y">🔥 连续 12 天</span>
+              <span class="tag tag-b">拼图闯关 LV.1</span>
+              <span class="tag tag-y">今日 +8 币</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

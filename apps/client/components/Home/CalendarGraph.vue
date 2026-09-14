@@ -2,7 +2,7 @@
   <div class="flex justify-between">
     <!-- 左侧打卡图 -->
     <div
-      class="min-w-0 flex-1 rounded-md border border-gray-300 px-2 py-4 text-xs dark:border-gray-700"
+      class="min-w-0 flex-1 rounded-[12px] border border-[#E5E7EB] px-3 py-4 text-xs text-[#666666]"
     >
       <div
         class="w-full overflow-x-auto"
@@ -48,22 +48,22 @@
       </div>
 
       <div class="mt-2 flex justify-between px-1">
-        <span class="justify-self-end text-sm dark:text-gray-400">
+        <span class="justify-self-end text-[12px] font-semibold">
           {{ totalLearningTime > 0 ? "一共学习" : "还没有开始学习" }}
           <span
             v-if="totalLearningTime > 0"
-            class="font-semibold text-purple-500"
+            class="font-extrabold text-[#2C5AF4]"
             >{{ formatLearningTime(totalLearningTime) }}</span
           >
         </span>
         <div class="flex items-center gap-1 text-xs">
-          <div class="text-gray-500">更少</div>
+          <div class="text-[#666666]">更少</div>
           <div class="cell"></div>
           <div class="cell low"></div>
           <div class="cell moderate"></div>
           <div class="cell high"></div>
           <div class="cell higher"></div>
-          <div class="text-gray-500">更多</div>
+          <div class="text-[#666666]">更多</div>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
     <!-- TODO: 多年份选择还没做，目前只有 2024，先写死了 -->
     <div
       v-for="year in yearOptions"
-      class="btn btn-sm tw-btn-blue ml-6 hidden pr-7 xl:flex"
+      class="mc-year ml-6 hidden xl:flex"
       :key="year.value"
     >
       {{ year.label }}
@@ -171,23 +171,43 @@ watch(
 </script>
 
 <style scoped>
+/* 热力图配色改用工作台蓝阶 (wb-accent 方向), 不再用 GitHub 绿 —— 与 wb-* 面板同色系 */
 .cell {
-  @apply h-[12px] w-[12px] rounded-sm border-gray-200 bg-gray-200 hover:scale-125 hover:border hover:border-blue-400 dark:bg-gray-700 dark:hover:border-gray-50;
+  @apply h-[12px] w-[12px] rounded-sm hover:scale-125 hover:border;
+  background: #f2f4f8;
+  border-color: #eef2f7;
+}
+
+.cell:hover {
+  border-color: #2c5af4;
 }
 
 .low {
-  @apply bg-[#9be9a8] dark:bg-[#0e4429];
+  background: #dceeff;
 }
 
 .moderate {
-  @apply bg-[#40c463] dark:bg-[#006d32];
+  background: #a9d2ff;
 }
 
 .high {
-  @apply bg-[#30a14e] dark:bg-[#26a641];
+  background: #6fafff;
 }
 
 .higher {
-  @apply bg-[#216e39] dark:bg-[#39d353];
+  background: #3b82f6;
+}
+
+/* 年份胶囊: 工作台样式 (白底 + wb-border + wb-accent 文字) */
+.mc-year {
+  align-items: center;
+  height: 28px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0 10px;
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #2c5af4;
 }
 </style>

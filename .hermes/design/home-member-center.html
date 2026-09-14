@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>学以致用 · 会员中心主页（新视觉稿）</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+        background: #FBF7E8;              /* 定稿底色: 方案 A 的米黄 */
+        color: #0f172a;
+      }
+      .wrap { display: flex; gap: 22px; max-width: 1180px; margin: 0 auto; padding: 26px 22px 40px; align-items: flex-start; }
+
+      /* ============ 侧边栏 ============ */
+      .side { width: 208px; flex-shrink: 0; background: #fff; border: 1px solid #F0EADA; border-radius: 18px; padding: 12px 10px; box-shadow: 0 10px 26px -14px rgba(120,95,20,.22); }
+      .side-item { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 12px; font-size: 13.5px; font-weight: 600; color: #52627A; margin-bottom: 2px; }
+      .side-item.on { background: linear-gradient(135deg, #2F6FE8, #2563EB); color: #fff; font-weight: 800; box-shadow: 0 8px 18px -6px rgba(77,150,255,.6); }
+      .side-item .ic { width: 18px; text-align: center; font-size: 14px; }
+
+      /* ============ 主区 ============ */
+      .main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+      .topbar { display: flex; align-items: center; justify-content: space-between; }
+      .hello { font-size: 22px; font-weight: 900; letter-spacing: -.3px; }
+      .hello small { display: block; font-size: 12.5px; font-weight: 600; color: #5B6B80; margin-top: 3px; letter-spacing: 0; }
+      .coins { display: flex; align-items: center; gap: 7px; background: #FFD93D; color: #4A3800; border: 1px solid #EAC300;
+               border-radius: 999px; padding: 7px 15px; font-size: 13px; font-weight: 800; box-shadow: 0 3px 0 rgba(180,146,0,.35); }
+
+      .row { display: flex; gap: 18px; align-items: flex-start; }
+      .card { background: #fff; border: 1px solid #F0EADA; border-radius: 18px; box-shadow: 0 12px 30px -18px rgba(120,95,20,.3); }
+
+      /* 打卡卡 */
+      .checkin { flex: 1; padding: 20px 22px; background: linear-gradient(135deg, #fff 58%, #F1F6FF 100%); }
+      .ci-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 16px; }
+      .ci-streak { font-size: 38px; font-weight: 900; #2F6FE8; line-height: 1; }
+      .ci-streak span { font-size: 14px; color: #5B6B80; font-weight: 700; margin-left: 4px; }
+      .ci-title { font-size: 14.5px; font-weight: 800; }
+      .ci-sub { font-size: 11.5px; color: #5B6B80; font-weight: 600; margin-top: 2px; }
+      .week { display: flex; gap: 8px; margin-bottom: 16px; }
+      .day { flex: 1; text-align: center; }
+      .day .d { font-size: 10.5px; color: #5B6B80; font-weight: 700; margin-bottom: 5px; }
+      .day .box { height: 34px; border-radius: 10px; background: #F4F6FA; border: 1px solid #E9EEF6; display: grid; place-items: center; font-size: 13px; }
+      .day .box.done { background: #EAF2FF; border-color: #C9DEFF; color: #2563EB; }
+      .day .box.today { background: linear-gradient(135deg, #2F6FE8, #2563EB); border-color: transparent; color: #fff; box-shadow: 0 6px 14px -5px rgba(77,150,255,.75); }
+      .ci-stats { display: flex; gap: 26px; padding-top: 14px; border-top: 1px dashed #EDE6D6; }
+      .ci-stat .v { font-size: 19px; font-weight: 900; }
+      .ci-stat .k { font-size: 11px; color: #5B6B80; font-weight: 600; margin-top: 2px; }
+
+      /* 任务卡 */
+      .tasks { width: 300px; flex-shrink: 0; padding: 18px 20px; }
+      .sec-title { font-size: 14px; font-weight: 900; margin-bottom: 13px; display: flex; align-items: center; justify-content: space-between; }
+      .sec-title a { font-size: 11.5px; #2F6FE8; font-weight: 800; text-decoration: none; }
+      .task { margin-bottom: 13px; }
+      .task-top { display: flex; justify-content: space-between; font-size: 12px; font-weight: 700; margin-bottom: 6px; color: #52627A; }
+      .task-top b { color: #0f172a; }
+      .bar { height: 8px; border-radius: 999px; background: #F2F4F8; overflow: hidden; }
+      .bar i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #2F6FE8, #2563EB); }
+      .bar i.y { background: linear-gradient(90deg, #FFB300, #FFC72E); }
+      .done-chip { font-size: 10.5px; font-weight: 800; color: #166534; background: #DCFCE7; border: 1px solid #A7E8BF; border-radius: 999px; padding: 2px 8px; }
+
+      /* 我的课程 */
+      .courses { padding: 18px 20px 20px; }
+      .course-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+      .course { border: 1px solid #EEF2F7; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 6px 16px -12px rgba(15,23,42,.35); }
+      .course .cover { height: 78px; display: grid; place-items: center; font-size: 26px; color: #fff; }
+      .course .cbody { padding: 11px 12px 12px; }
+      .course .ct { font-size: 13px; font-weight: 800; margin-bottom: 3px; }
+      .course .cd { font-size: 11px; color: #5B6B80; line-height: 1.5; margin-bottom: 9px; }
+      .course .cbtn { width: 100%; border: none; border-radius: 9px; padding: 8px; font-size: 12px; font-weight: 800;
+                      background: linear-gradient(135deg, #2F6FE8, #2563EB); color: #fff; box-shadow: 0 6px 14px -8px rgba(77,150,255,.85); }
+
+      /* 热力图 */
+      .heat { padding: 18px 20px 20px; }
+      .heat-grid { display: grid; grid-template-columns: repeat(26, 1fr); gap: 3px; }
+      .heat-grid i { aspect-ratio: 1; border-radius: 3px; background: #F2F4F8; display: block; }
+      .l0 { background: #F2F4F8 !important; } .l1 { background: #DCEEFF !important; }
+      .l2 { background: #A9D2FF !important; } .l3 { background: #6FAFFF !important; } .l4 { background: #3B82F6 !important; }
+      .heat-legend { display: flex; align-items: center; gap: 6px; font-size: 10.5px; color: #5B6B80; margin-top: 10px; font-weight: 600; }
+      .heat-legend i { width: 11px; height: 11px; border-radius: 3px; display: block; }
+
+      /* 页脚信息条 */
+      .meter { display: flex; gap: 16px; align-items: center; font-size: 12.5px; color: #5B6B80; font-weight: 600; }
+      .meter b { color: #0f172a; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 侧边栏 -->
+      <aside class="side">
+        <div class="side-item on"><span class="ic">🏠</span><span>主页</span></div>
+        <div class="side-item"><span class="ic">📚</span><span>课程广场</span></div>
+        <div class="side-item"><span class="ic">🗺️</span><span>课程向导</span></div>
+        <div class="side-item"><span class="ic">🎒</span><span>我的课程</span></div>
+        <div class="side-item"><span class="ic">🖼️</span><span>看图学词</span></div>
+        <div class="side-item"><span class="ic">🔁</span><span>复习</span></div>
+        <div class="side-item"><span class="ic">🎁</span><span>奖励</span></div>
+        <div class="side-item"><span class="ic">📈</span><span>成长报告</span></div>
+        <div class="side-item"><span class="ic">👑</span><span>会员</span></div>
+        <div class="side-item"><span class="ic">🤝</span><span>推广中心</span></div>
+        <div class="side-item"><span class="ic">⚙️</span><span>设置</span></div>
+      </aside>
+
+      <!-- 主区 -->
+      <main class="main">
+        <div class="topbar">
+          <div class="hello">下午好，mrdun 👋<small>今天也来练 10 句吧，连续打卡别断</small></div>
+          <div class="coins">🪙 328</div>
+        </div>
+
+        <div class="row">
+          <!-- 打卡卡 -->
+          <section class="checkin card">
+            <div class="ci-head">
+              <div class="ci-streak">12<span>天</span></div>
+              <div>
+                <div class="ci-title">连续打卡</div>
+                <div class="ci-sub">再练 2 天就超过你的最长纪录</div>
+              </div>
+            </div>
+
+            <div class="week">
+              <div class="day">
+                <div class="d">一</div>
+                <div class="box done">✓</div>
+              </div>
+              <div class="day">
+                <div class="d">二</div>
+                <div class="box done">✓</div>
+              </div>
+              <div class="day">
+                <div class="d">三</div>
+                <div class="box done">✓</div>
+              </div>
+              <div class="day">
+                <div class="d">四</div>
+                <div class="box done">✓</div>
+              </div>
+              <div class="day">
+                <div class="d">五</div>
+                <div class="box done">✓</div>
+              </div>
+              <div class="day">
+                <div class="d">六</div>
+                <div class="box today">今</div>
+              </div>
+              <div class="day">
+                <div class="d">日</div>
+                <div class="box">·</div>
+              </div>
+            </div>
+
+            <div class="ci-stats">
+              <div class="ci-stat">
+                <div class="v">28</div>
+                <div class="k">累计打卡</div>
+              </div>
+              <div class="ci-stat">
+                <div class="v">2h 41m</div>
+                <div class="k">累计学习</div>
+              </div>
+              <div class="ci-stat">
+                <div class="v">1,284</div>
+                <div class="k">掌握句子</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 每日任务 -->
+          <section class="tasks card">
+            <div class="sec-title"><span>每日任务</span><a href="#">全部 →</a></div>
+
+            <div class="task">
+              <div class="task-top"><span>今日打卡</span><span class="done-chip">已完成</span></div>
+              <div class="bar">
+                <i
+                  class="y"
+                  style="width: 100%"
+                ></i>
+              </div>
+            </div>
+
+            <div class="task">
+              <div class="task-top">
+                <span>学习 10 句</span><span><b>7</b>/10</span>
+              </div>
+              <div class="bar"><i style="width: 70%"></i></div>
+            </div>
+
+            <div class="task">
+              <div class="task-top">
+                <span>拿到 1 次 SSS</span><span><b>0</b>/1</span>
+              </div>
+              <div class="bar">
+                <i
+                  class="y"
+                  style="width: 6%"
+                ></i>
+              </div>
+            </div>
+
+            <div
+              class="task"
+              style="margin-bottom: 0"
+            >
+              <div class="task-top">
+                <span>今日已得</span><span><b>+18</b> 币</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- 我的课程 -->
+        <section class="courses card">
+          <div class="sec-title"><span>我的课程</span><a href="#">全部 →</a></div>
+          <div class="course-grid">
+            <div class="course">
+              <div
+                class="cover"
+                style="background: linear-gradient(135deg, #4d96ff, #a29bfe)"
+              >
+                📘
+              </div>
+              <div class="cbody">
+                <div class="ct">日常英语口语 100 句</div>
+                <div class="cd">第 3 课 · 已完成 42%</div>
+                <button class="cbtn">继续游戏</button>
+              </div>
+            </div>
+            <div class="course">
+              <div
+                class="cover"
+                style="background: linear-gradient(135deg, #ffb800, #ffc72e); color: #5a3f00"
+              >
+                🎧
+              </div>
+              <div class="cbody">
+                <div class="ct">商务邮件写作</div>
+                <div class="cd">第 1 课 · 还没开始</div>
+                <button class="cbtn">开始第一课</button>
+              </div>
+            </div>
+            <div class="course">
+              <div
+                class="cover"
+                style="background: linear-gradient(135deg, #34d399, #a7f3d0); color: #065f46"
+              >
+                🧩
+              </div>
+              <div class="cbody">
+                <div class="ct">雅思核心搭配</div>
+                <div class="cd">第 8 课 · 已完成 91%</div>
+                <button class="cbtn">继续游戏</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 学习热力图 -->
+        <section class="heat card">
+          <div class="sec-title"><span>学习热力图</span><a href="#">看成长报告 →</a></div>
+          <div class="heat-grid">
+            <i class="l0"></i><i class="l1"></i><i class="l0"></i><i class="l2"></i
+            ><i class="l1"></i><i class="l0"></i><i class="l3"></i> <i class="l1"></i
+            ><i class="l2"></i><i class="l0"></i><i class="l1"></i><i class="l4"></i
+            ><i class="l2"></i><i class="l1"></i> <i class="l0"></i><i class="l3"></i
+            ><i class="l2"></i><i class="l1"></i><i class="l0"></i><i class="l2"></i
+            ><i class="l1"></i> <i class="l2"></i><i class="l1"></i><i class="l4"></i
+            ><i class="l3"></i><i class="l2"></i>
+          </div>
+          <div class="heat-legend">
+            <span>少</span><i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i
+            ><i class="l4"></i><span>多</span>
+          </div>
+        </section>
+
+        <div class="meter">
+          <span>今日学习 <b>23 分钟</b></span
+          ><span>·</span> <span>本周 <b>4 天</b></span
+          ><span>·</span>
+          <span>会员有效期至 <b>2027-03-01</b></span>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

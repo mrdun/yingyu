@@ -3,12 +3,17 @@ import { join } from "node:path";
 
 import { describe, expect, it } from "vitest";
 
+import { WORKBENCH_NAV_ITEMS } from "../../utils/workbenchNav";
+
 // 用户端导航与信息架构守卫 (源码级)。
 //
 // 这一轮把会员功能入口从游客落地页拿掉, 给会员中心补上「主页 / 我的课程」,
 // 并把「学习档案」整页收进「我的课程」。断言分两类:
 //   1. 侧边栏与落地页导航的最终内容 (标签 -> 路径 -> 图标), 改名/回退都会变红;
 //   2. 被取代的旧入口真的消失了 (页面文件 + 侧边栏引用)。
+//
+// 菜单数据已抽到 utils/workbenchNav.ts (AppRail 与营销外壳里的旧侧栏 WorkNav 共用一份),
+// 因此「侧边栏 11 项」的内容断言直接读那份数据, 并额外钉住 WorkNav 确实复用了它。
 //
 // 为什么不做挂载测试: 与仓库其它源码级守卫一致 —— tsconfig 继承 .nuxt/tsconfig.json,
 // spec 里 import .vue 会得到 TS2307; 真实渲染由 RC 手工巡检验证。
@@ -18,6 +23,7 @@ const readSource = (relativePath: string): string =>
   readFileSync(join(process.cwd(), relativePath), "utf8");
 
 const workNav = readSource("components/WorkNav.vue");
+const workbenchNav = readSource("utils/workbenchNav.ts");
 const navbar = readSource("components/Navbar.vue");
 const homeIndex = readSource("components/Home/index.vue");
 const myCoursesPage = readSource("pages/my-courses/index.vue");
@@ -32,7 +38,7 @@ function arrayBlock(source: string, declaration: string): string {
   return source.slice(start, end);
 }
 
-const menuItems = arrayBlock(workNav, "const menuItems = [");
+const menuItems = arrayBlock(workbenchNav, "export const WORKBENCH_NAV_GROUPS");
 const headerOptions = arrayBlock(navbar, "const HEADER_OPTIONS: AnchorAttributes[] = [");
 
 // 断言某个菜单项形如 { label: "x", to: "y", icon: "z" } (允许任意缩进/换行)
@@ -51,7 +57,7 @@ function expectMenuItem(block: string, label: string, to: string, icon: string) 
   );
 }
 
-describe("会员中心侧边栏 (WorkNav) 的文字导航", () => {
+describe("工作台侧边栏菜单 (utils/workbenchNav.ts, AppRail 与 WorkNav 共用) 的文字导航", () => {
   it("新增「主页」, 目标与 LOGO 一致 (/)", () => {
     expectMenuItem(menuItems, "主页", "/", "🏠");
   });
@@ -84,17 +90,22 @@ describe("会员中心侧边栏 (WorkNav) 的文字导航", () => {
   });
 
   it("旧标签与已被取代的入口不再出现在侧边栏", () => {
-    expect(workNav).not.toContain("开始学习");
-    expect(workNav).not.toContain("学习路线");
-    expect(workNav).not.toContain("掌握列表");
-    expect(workNav).not.toContain("学习档案");
-    expect(workNav).not.toContain("/mastered-elements");
-    expect(workNav).not.toContain("/archive");
+    // 共用菜单数据与旧扁平侧栏组件都不得回退
+    for (const source of [workbenchNav, workNav]) {
+      expect(source).not.toContain("开始学习");
+      expect(source).not.toContain("学习路线");
+      expect(source).not.toContain("掌握列表");
+      expect(source).not.toContain("学习档案");
+      expect(source).not.toContain("/mastered-elements");
+      expect(source).not.toContain("/archive");
+    }
   });
 
-  it("样式与高亮判定未被改动", () => {
-    expect(workNav).toContain("function isActive(to: string)");
-    expect(workNav).toContain("return route.path === to;");
+  it("高亮判定仍是 route.path === to (子路径不点亮父项), 且两个侧栏共用同一份菜单", () => {
+    expect(workbenchNav).toContain("export function isWorkbenchNavActive");
+    expect(workbenchNav).toContain("return currentPath === to;");
+    expect(workNav).toContain("isWorkbenchNavActive(route.path, item.to)");
+    expect(WORKBENCH_NAV_ITEMS).toHaveLength(11);
   });
 });
 
@@ -187,9 +198,18 @@ describe("课程向导标题与侧边栏一致", () => {
 });
 
 describe("主页「我的课程」区块给出进完整页的入口", () => {
-  it("标题行新增「全部 →」指向 /my-courses, 旧的课程包商城链接保留", () => {
-    expect(homeIndex).toContain('href="/my-courses"');
+  it("标题行有「全部 →」指向 /my-courses", () => {
+    expect(homeIndex).toContain('to="/my-courses"');
     expect(homeIndex).toContain("全部 →");
-    expect(homeIndex).toContain("课程包商城");
+  });
+
+  it("课程广场入口改由最后一格的「+ 添加课程」承载 (4 列栅格形态)", () => {
+    // 阶段 2 重排主页时, 标题行不再单独放一个「课程广场」文字链接 ——
+    // 入口收进「我的课程」区块最后一格的虚线格 (仍然指向 /course-pack, 没有丢入口)。
+    const recentCoursePack = readSource("components/courses/RecentCoursePack.vue");
+
+    expect(homeIndex).toContain(':member-center="true"');
+    expect(recentCoursePack).toContain('to="/course-pack"');
+    expect(recentCoursePack).toContain("+ 添加课程");
   });
 });

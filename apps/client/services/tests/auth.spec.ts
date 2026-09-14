@@ -26,14 +26,15 @@ describe("auth", () => {
     expect(callback).toBe("/main/1");
 
     const callback2 = getSignInCallback();
-    expect(callback2).toBe("/course-pack");
+    // 没有 callback 时的默认落点 = 会员中心主页 (不是课程广场)
+    expect(callback2).toBe("/");
   });
 
-  it("should get default callback", () => {
+  it("should get default callback = 会员中心主页", () => {
     signIn();
 
     const callback = getSignInCallback();
 
-    expect(callback).toBe("/course-pack");
+    expect(callback).toBe("/");
   });
 });
