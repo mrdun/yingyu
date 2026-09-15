@@ -3,6 +3,7 @@ import { ref } from "vue";
 import { useToolbar } from "~/composables/main/dictation";
 import { usePronunciation } from "~/composables/user/pronunciation";
 import { useCourseStore } from "~/store/course";
+import { setPronunciationSource } from "~/utils/pronunciationAudio";
 
 /** 慢速播放的倍率 */
 export const SLOW_RATE = 0.6;
@@ -45,7 +46,8 @@ export function usePlaySentenceSound() {
     const playRate = rate ?? (Number(toolBarData.rate) || 1);
     let played = 1;
 
-    audio.src = getPronunciationUrl(english);
+    // 三级回退：自有音频 → 有道 → 浏览器朗读（听写模式整句播放，绝不能静默无声）
+    setPronunciationSource(audio, english, getPronunciationUrl(english));
     audio.playbackRate = playRate;
     audio.onended = () => {
       isPlaying.value = false;

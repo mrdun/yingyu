@@ -88,6 +88,9 @@ export default defineNuxtConfig({
       backendEndpoint: process.env.BACKEND_ENDPOINT || "",
       signInRedirectURI: process.env.LOGTO_SIGN_IN_REDIRECT_URI || "",
       signOutRedirectURI: process.env.LOGTO_SIGN_OUT_REDIRECT_URI || "",
+      // 发音音频基址（我们离线生成的 mp3 静态目录 / CDN 地址）。
+      // 留空 = 不发自有音频，播放端直接走有道（即改动前的行为），所以它**不是**构建门禁项。
+      audioBase: process.env.AUDIO_BASE || "",
     },
   },
   build: {

@@ -5,7 +5,7 @@ import { useToolbar } from "~/composables/main/dictation";
 import { useGamePlayMode } from "~/composables/user/gamePlayMode";
 import { usePronunciation } from "~/composables/user/pronunciation";
 import { useCourseStore } from "~/store/course";
-import { play, updateSource } from "./audio";
+import { play, updateSourceForEnglish } from "./audio";
 
 const { getPronunciationUrl } = usePronunciation();
 
@@ -19,7 +19,7 @@ export function useCurrentStatementEnglishSound() {
     const word = courseStore.currentStatement?.english;
     const pronunciationUrl = getPronunciationUrl(word);
     if (lastPronunciationUrl !== pronunciationUrl) {
-      updateSource(pronunciationUrl);
+      updateSourceForEnglish(word);
     }
     lastPronunciationUrl = pronunciationUrl;
   });
@@ -38,13 +38,11 @@ export function useCurrentStatementEnglishSound() {
 
 // 朗读每日一句
 export function readOneSentencePerDayAloud(str: string) {
-  const pronunciationUrl = getPronunciationUrl(str);
-  updateSource(pronunciationUrl);
+  updateSourceForEnglish(str);
   play();
 }
 
 export function playEnglish(english: string) {
-  const pronunciationUrl = getPronunciationUrl(english);
-  updateSource(pronunciationUrl);
+  updateSourceForEnglish(english);
   play();
 }

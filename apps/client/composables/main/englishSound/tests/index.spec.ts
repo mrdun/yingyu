@@ -2,12 +2,12 @@ import { createTestingPinia } from "@pinia/testing";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import { useCourseStore } from "~/store/course";
-import { play, updateSource } from "../audio";
+import { play, updateSourceForEnglish } from "../audio";
 import { useCurrentStatementEnglishSound } from "../index";
 
 vi.mock("../audio.ts", () => {
   return {
-    updateSource: vi.fn(),
+    updateSourceForEnglish: vi.fn(),
     play: vi.fn(),
   };
 });
@@ -55,7 +55,7 @@ describe("useCurrentStatementEnglishSound", () => {
     };
     await vi.advanceTimersToNextTimerAsync();
 
-    expect(updateSource).toBeCalledTimes(1);
+    expect(updateSourceForEnglish).toBeCalledTimes(1);
   });
 
   it("does not update audio source if the word is the same", async () => {
@@ -71,6 +71,6 @@ describe("useCurrentStatementEnglishSound", () => {
       isMastered: false,
     };
 
-    expect(updateSource).toHaveBeenCalledTimes(1);
+    expect(updateSourceForEnglish).toHaveBeenCalledTimes(1);
   });
 });

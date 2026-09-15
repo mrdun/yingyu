@@ -19,6 +19,9 @@ import { createServer } from "node:http";
 import { extname, join, normalize } from "node:path";
 
 const root = join(process.cwd(), "apps/client/.output/public");
+// 发音音频目录（由 scripts/tts/generate-audio.py 生成）。
+// 单独放在 var/ 下而不是 .output/public 里：后者每次构建都会被清空。
+const audioRoot = join(process.cwd(), "var/audio");
 const port = Number(process.env.RC_STATIC_PORT ?? 3000);
 
 const CONTENT_TYPES = {
@@ -44,6 +47,32 @@ if (!existsSync(root)) {
 
 createServer((req, res) => {
   const urlPath = decodeURIComponent((req.url ?? "/").split("?")[0]);
+
+  // 发音音频：/audio/<hash>.mp3 → var/audio/<hash>.mp3
+  // 缺失时**必须回真实 404**（不能走 SPA 回退）：播放端靠 error 事件回退到有道，
+  // 若这里返回 200 + HTML，音频元素仍会失败但语义混乱、且不利于排查。
+  if (urlPath.startsWith("/audio/")) {
+    const rel = normalize(urlPath.slice("/audio/".length)).replace(/^([/\\])+/, "");
+    const audioPath = join(audioRoot, rel);
+    if (
+      !audioPath.startsWith(audioRoot) ||
+      !existsSync(audioPath) ||
+      statSync(audioPath).isDirectory()
+    ) {
+      res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+      res.end("audio not found");
+      return;
+    }
+    res.writeHead(200, {
+      "Content-Type": CONTENT_TYPES[extname(audioPath)] ?? "application/octet-stream",
+      // 音频按内容哈希寻址，内容不变 → 可长缓存（改语速会换文件名吗？不会，
+      // 但重新生成后文件名相同，所以这里保守用 no-cache 便于本地验证）。
+      "Cache-Control": "no-cache",
+    });
+    createReadStream(audioPath).pipe(res);
+    return;
+  }
+
   let filePath = normalize(join(root, urlPath));
 
   // 目录/缺失文件回退到 200.html (SPA)
@@ -58,4 +87,5 @@ createServer((req, res) => {
   createReadStream(filePath).pipe(res);
 }).listen(port, () => {
   console.log(`RC 静态预览: http://127.0.0.1:${port} (root=${root})`);
+  console.log(`发音音频: /audio/* → ${audioRoot}`);
 });
