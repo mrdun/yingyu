@@ -49,7 +49,10 @@ export default defineNuxtConfig({
       },
       // 后台此前**没有** favicon (访问 /favicon.ico 是 404), 浏览器只显示空白默认图标。
       // 用与用户端**不同**的图标 (深底), 这样同时开两个标签页时一眼能分清哪个是后台。
-      link: [{ rel: "icon", href: "/favicon.ico", type: "image/x-icon" }],
+      // ⚠️ 不要写 `type: "image/x-icon"`: vue-tsc 会报 TS2322 —— Nuxt 的 `head.link.type`
+      //    是一个已知 mime 字符串联合类型, 不含 image/x-icon (CI 的 admin type-check 会红)。
+      //    与 apps/client 保持一致, 只写 rel + href (浏览器按扩展名自行判断)。
+      link: [{ rel: "icon", href: "/favicon.ico" }],
       meta: [{ name: "robots", content: "noindex, nofollow" }],
     },
   },
