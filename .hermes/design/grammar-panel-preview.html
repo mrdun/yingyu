@@ -17,7 +17,7 @@
         font-size: 14px;
       }
       .note-top {
-        max-width: 940px;
+        max-width: 960px;
         margin: 0 auto 18px;
         padding: 12px 14px;
         background: #fff;
@@ -31,9 +31,8 @@
         color: #0f172a;
       }
       .item {
-        max-width: 940px;
         margin: 0 auto 18px;
-        padding: 18px 20px 16px;
+        padding: 16px 20px 14px;
         background: #fff;
         border: 1px solid #e5e7eb;
         border-radius: 14px;
@@ -42,7 +41,8 @@
         display: flex;
         align-items: center;
         gap: 9px;
-        margin-bottom: 26px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
       }
       .cn {
         font-size: 15px;
@@ -62,140 +62,101 @@
         background: #f1f5f9;
         color: #64748b;
       }
+      .b-mono {
+        background: #f8fafc;
+        color: #94a3b8;
+        font-family: ui-monospace, monospace;
+        font-weight: 600;
+      }
 
-      /* 列宽按内容 (而不是等宽 1fr) —— 等宽会把每个词拉得很远, 句子读起来割裂 */
-      .grid {
+      /* 句子 = 一串「成分组」。组间留大空隙, 组内词紧挨 —— 这样读起来是一句话。 */
+      .rows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 14px;
+      }
+      .sent {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 16px;
+        row-gap: 12px;
+      }
+      /* 每个成分组 = 4 行网格: [胶囊][词...][横条][词性...] */
+      .grp {
         display: grid;
         justify-content: center;
-        column-gap: 6px;
-        margin-bottom: 4px;
+        column-gap: 4px;
       }
-      .cell {
-        grid-row: 1;
+      /* 胶囊行: 高度固定, 保证所有组的「词行」在同一条基线上 */
+      .cap {
+        grid-column: 1 / -1;
+        height: 24px;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
-        min-width: 0;
+        justify-content: center;
+        margin-bottom: 5px;
       }
-      /* 实心胶囊: 浅色填充 + 同色深字 + 同色描边 (照参照图, 不是描边文字) */
-      .pill {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 4px 11px 5px;
+      .cap:not(:empty) {
+        justify-self: center;
+        padding: 3px 11px 4px;
+        background: var(--c); /* 实心饱和色 */
+        color: #fff; /* 白字, 对比度已算过 >= 4.5:1 */
         border-radius: 999px;
-        background: var(--bg);
-        border: 1px solid var(--bd);
-        color: var(--fg);
         font-size: 12px;
         font-weight: 800;
-        line-height: 1.25;
+        line-height: 1.15;
         white-space: nowrap;
       }
-      .pill b {
-        font-weight: 800;
-      }
-      .pill small {
-        font-size: 9.5px;
-        font-weight: 700;
-        opacity: 0.72;
-        margin-top: 1px;
-      }
-      .pill i {
+      .cap i {
         font-style: normal;
         font-size: 9.5px;
-        font-weight: 600;
-        opacity: 0.6;
+        font-weight: 700;
+        opacity: 0.78;
       }
 
-      /*
-   * 连接线: 单词 = 一根同色下垂线 + 端点小圆点;
-   *         多词短语 = 横跨整段的括号线 + 两端下折 + 中点圆点
-   * 目的: 一眼看出这个成分覆盖了哪几个词, 而不是让线落在词间空隙里。
-   */
-      .conn {
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 18px;
-      }
-      .conn::before,
-      .conn::after {
-        content: "";
-        position: absolute;
-        background: var(--bd);
-      }
-      .conn::before {
-        left: 50%;
-        top: 0;
-        width: 1.5px;
-        height: 15px;
-        margin-left: -0.75px;
-      }
-      .conn::after {
-        left: 50%;
-        bottom: 0;
-        width: 6px;
-        height: 6px;
-        margin-left: -3px;
-        border-radius: 999px;
-      }
-      /* 多词短语: 上横线 + 两端下折的括号 + 中点圆点 */
-      .conn--wide {
-        border-left: 1.5px solid var(--bd);
-        border-right: 1.5px solid var(--bd);
-      }
-      .conn--wide::before {
-        left: 0;
-        right: 0;
-        top: 0;
-        width: auto;
-        height: 1.5px;
-        margin-left: 0;
-      }
-      .conn--wide::after {
-        left: 50%;
-        bottom: 0;
-        width: 6px;
-        height: 6px;
-        margin-left: -3px;
-        border-radius: 999px;
-      }
-
-      .word {
+      /* 单词: 裸露大字, **没有边框/底色/圆角** —— 就是这一点决定了「是不是一个词一个气泡」 */
+      .w {
         grid-row: 2;
         justify-self: center;
-        padding: 5px 9px;
-        border: 1px solid #e9edf3;
-        border-radius: 9px;
-        background: #fcfdff;
-        font-size: 17px;
-        font-weight: 800;
-        line-height: 1.2;
+        align-self: end;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: 0.2px;
         white-space: nowrap;
       }
-      /* 词性: 同色短横条 + 同色文字 (颜色跟随所属成分) */
-      .pos {
+      .w-bare {
+        font-size: 25px;
+      }
+
+      /* 一条横条横跨该成分的**全部词** (不是每词一条) */
+      .bar {
+        grid-column: 1 / -1;
         grid-row: 3;
+        height: 3px;
+        border-radius: 2px;
+        background: var(--c);
+        margin-top: 4px;
+      }
+      .bar-bare {
+        background: #cbd5e1;
+      }
+
+      /* 逐词词性: 与所属词同列对齐 */
+      .p {
+        grid-row: 4;
         justify-self: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-        margin-top: 7px;
-        margin-bottom: 4px;
+        margin-top: 5px;
         font-size: 11px;
         font-weight: 700;
         color: var(--c);
         white-space: nowrap;
       }
-      .pos::before {
-        content: "";
-        width: 20px;
-        height: 2.5px;
-        border-radius: 2px;
-        background: var(--bar);
+      .p-bare {
+        color: #94a3b8;
       }
 
       .cards {
@@ -267,85 +228,47 @@
   </head>
   <body>
     <div class="note-top">
-      <b>练习页语法标注 · 效果预览</b>（真实模型对「零基础学英语 · 第一课」的标注，共 5 条）<br />
-      词上方 <b>实心彩胶囊</b> = 句子成分（按短语标，同色线连到词）；词下方 <b>同色短条 + 文字</b> =
-      逐词词性 （颜色跟随所属成分）；底部卡片 = 结构 / 时态 / 句型 /
-      语法要点。<b>碎片只显示词性</b>，不给成分与结构。
+      <b>练习页语法标注 · 效果预览</b>（真实模型对「零基础学英语 · 第一课」的标注, 共 5 条, 数据源
+      218 条）<br />词上方 <b>实心彩胶囊 = 句子成分</b>（<b>同一成分合成一个胶囊</b>,
+      不是逐词一个）；词 <b>裸露</b>不装框；成分下方
+      <b>一条同色横条</b> 横跨该成分的全部词；横条下逐词词性。<b>碎片不给成分</b>, 只给词性。
     </div>
     <div class="item">
       <div class="item-head">
-        <span class="cn">我喜欢这个食物</span><span class="b-sent badge">完整句</span>
+        <span class="cn">我喜欢这个食物</span><span class="b-sent badge">完整句</span
+        ><span class="b-mono badge">I like the food</span>
       </div>
-      <div
-        class="grid"
-        style="grid-template-columns: repeat(4, auto)"
-      >
-        <div
-          class="cell"
-          style="grid-column: 1 / span 1"
-        >
-          <span
-            class="pill"
-            style="--fg: #be185d; --bg: #fce7f3; --bd: #f9a8d4"
-            ><b>主语</b><small>单词</small></span
-          ><span
-            class="conn"
-            style="--bd: #f9a8d4"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 2 / span 1"
-        >
-          <span
-            class="pill"
-            style="--fg: #1d4ed8; --bg: #dbeafe; --bd: #93c5fd"
-            ><b>谓语</b><small>动词短语</small></span
-          ><span
-            class="conn"
-            style="--bd: #93c5fd"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 3 / span 2"
-        >
-          <span
-            class="pill"
-            style="--fg: #047857; --bg: #d1fae5; --bd: #6ee7b7"
-            ><b>宾语</b><small>名词短语</small></span
-          ><span
-            class="conn conn--wide"
-            style="--bd: #6ee7b7"
-          ></span>
-        </div>
-        <div class="word">I</div>
-        <div class="word">like</div>
-        <div class="word">the</div>
-        <div class="word">food</div>
-        <div
-          class="pos"
-          style="--c: #be185d; --bar: #f9a8d4"
-        >
-          代词
-        </div>
-        <div
-          class="pos"
-          style="--c: #1d4ed8; --bar: #93c5fd"
-        >
-          动词
-        </div>
-        <div
-          class="pos"
-          style="--c: #047857; --bar: #6ee7b7"
-        >
-          冠词
-        </div>
-        <div
-          class="pos"
-          style="--c: #047857; --bar: #6ee7b7"
-        >
-          名词
+      <div class="rows">
+        <div class="sent">
+          <div
+            class="grp"
+            style="--c: #7c3aed; grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap">主语<i>·单词</i></div>
+            <span class="w">I</span>
+            <div class="bar"></div>
+            <span class="p">代词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #2563eb; grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap">谓语<i>·动词短语</i></div>
+            <span class="w">like</span>
+            <div class="bar"></div>
+            <span class="p">动词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #047857; grid-template-columns: repeat(2, auto)"
+          >
+            <div class="cap">宾语<i>·名词短语</i></div>
+            <span class="w">the</span>
+            <span class="w">food</span>
+            <div class="bar"></div>
+            <span class="p">冠词</span>
+            <span class="p">名词</span>
+          </div>
         </div>
       </div>
       <div class="cards">
@@ -374,361 +297,105 @@
     </div>
     <div class="item">
       <div class="item-head">
-        <span class="cn">我不想一整天在这里</span><span class="b-sent badge">完整句</span>
+        <span class="cn">它是非常重要的对我来说所以我必须每天做这件事</span
+        ><span class="b-sent badge">完整句</span
+        ><span class="b-mono badge">It is very important for me so I have to do it every day</span>
       </div>
-      <div
-        class="grid"
-        style="grid-template-columns: repeat(9, auto)"
-      >
-        <div
-          class="cell"
-          style="grid-column: 1 / span 1"
-        >
-          <span
-            class="pill"
-            style="--fg: #be185d; --bg: #fce7f3; --bd: #f9a8d4"
-            ><b>主语</b><small>单词</small></span
-          ><span
-            class="conn"
-            style="--bd: #f9a8d4"
-          ></span>
+      <div class="rows">
+        <div class="sent">
+          <div
+            class="grp"
+            style="--c: #7c3aed; grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap">主语<i>·单词</i></div>
+            <span class="w">It</span>
+            <div class="bar"></div>
+            <span class="p">代词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #2563eb; grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap">谓语<i>·单词</i></div>
+            <span class="w">is</span>
+            <div class="bar"></div>
+            <span class="p">动词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #0e7490; grid-template-columns: repeat(2, auto)"
+          >
+            <div class="cap">表语<i>·形容词短语</i></div>
+            <span class="w">very</span>
+            <span class="w">important</span>
+            <div class="bar"></div>
+            <span class="p">副词</span>
+            <span class="p">形容词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #c2410c; grid-template-columns: repeat(2, auto)"
+          >
+            <div class="cap">状语<i>·介词短语</i></div>
+            <span class="w">for</span>
+            <span class="w">me</span>
+            <div class="bar"></div>
+            <span class="p">介词</span>
+            <span class="p">代词</span>
+          </div>
         </div>
-        <div
-          class="cell"
-          style="grid-column: 2 / span 2"
-        >
-          <span
-            class="pill"
-            style="--fg: #1d4ed8; --bg: #dbeafe; --bd: #93c5fd"
-            ><b>谓语</b><small>动词短语</small></span
-          ><span
-            class="conn conn--wide"
-            style="--bd: #93c5fd"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 4 / span 3"
-        >
-          <span
-            class="pill"
-            style="--fg: #047857; --bg: #d1fae5; --bd: #6ee7b7"
-            ><b>宾语</b><small>不定式短语</small></span
-          ><span
-            class="conn conn--wide"
-            style="--bd: #6ee7b7"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 7 / span 3"
-        >
-          <span
-            class="pill"
-            style="--fg: #6d28d9; --bg: #ede9fe; --bd: #c4b5fd"
-            ><b>状语</b><small>名词短语</small></span
-          ><span
-            class="conn conn--wide"
-            style="--bd: #c4b5fd"
-          ></span>
-        </div>
-        <div class="word">I</div>
-        <div class="word">don't</div>
-        <div class="word">want</div>
-        <div class="word">to</div>
-        <div class="word">be</div>
-        <div class="word">here</div>
-        <div class="word">all</div>
-        <div class="word">the</div>
-        <div class="word">day</div>
-        <div
-          class="pos"
-          style="--c: #be185d; --bar: #f9a8d4"
-        >
-          代词
-        </div>
-        <div
-          class="pos"
-          style="--c: #1d4ed8; --bar: #93c5fd"
-        >
-          助动词
-        </div>
-        <div
-          class="pos"
-          style="--c: #1d4ed8; --bar: #93c5fd"
-        >
-          动词
-        </div>
-        <div
-          class="pos"
-          style="--c: #047857; --bar: #6ee7b7"
-        >
-          不定式
-        </div>
-        <div
-          class="pos"
-          style="--c: #047857; --bar: #6ee7b7"
-        >
-          动词
-        </div>
-        <div
-          class="pos"
-          style="--c: #047857; --bar: #6ee7b7"
-        >
-          副词
-        </div>
-        <div
-          class="pos"
-          style="--c: #6d28d9; --bar: #c4b5fd"
-        >
-          形容词
-        </div>
-        <div
-          class="pos"
-          style="--c: #6d28d9; --bar: #c4b5fd"
-        >
-          冠词
-        </div>
-        <div
-          class="pos"
-          style="--c: #6d28d9; --bar: #c4b5fd"
-        >
-          名词
-        </div>
-      </div>
-      <div class="cards">
-        <div class="c-blue card">
-          <div class="card-t">句子结构</div>
-          <div class="card-v">主语 + 谓语 + 宾语 + 状语</div>
-          <span class="tag">S + V + O + Adv</span>
-        </div>
-        <div class="c-amber card">
-          <div class="card-t">时态</div>
-          <div class="card-v">一般现在时</div>
-        </div>
-        <div class="c-violet card">
-          <div class="card-t">句型</div>
-          <div class="card-v">陈述句</div>
-          <span class="tag">简单句</span>
-        </div>
-        <div class="c-rose card--wide card">
-          <div class="card-t">语法要点</div>
-          <ul>
-            <li>don't want to do sth 的否定形式</li>
-            <li>all the day 作时间状语</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="item-head">
-        <span class="cn">它是重要的对我来说所以我今天必须做这件事</span
-        ><span class="b-sent badge">完整句</span>
-      </div>
-      <div
-        class="grid"
-        style="grid-template-columns: repeat(12, auto)"
-      >
-        <div
-          class="cell"
-          style="grid-column: 1 / span 1"
-        >
-          <span
-            class="pill"
-            style="--fg: #be185d; --bg: #fce7f3; --bd: #f9a8d4"
-            ><b>主语</b><small>单词</small></span
-          ><span
-            class="conn"
-            style="--bd: #f9a8d4"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 2 / span 1"
-        >
-          <span
-            class="pill"
-            style="--fg: #be185d; --bg: #fce7f3; --bd: #f9a8d4"
-            ><b>主语</b><small>单词</small></span
-          ><span
-            class="conn"
-            style="--bd: #f9a8d4"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 3 / span 1"
-        >
-          <span
-            class="pill"
-            style="--fg: #1d4ed8; --bg: #dbeafe; --bd: #93c5fd"
-            ><b>谓语</b><small>单词</small></span
-          ><span
-            class="conn"
-            style="--bd: #93c5fd"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 4 / span 1"
-        >
-          <span
-            class="pill"
-            style="--fg: #0e7490; --bg: #cffafe; --bd: #67e8f9"
-            ><b>表语</b><small>形容词短语</small></span
-          ><span
-            class="conn"
-            style="--bd: #67e8f9"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 5 / span 2"
-        >
-          <span
-            class="pill"
-            style="--fg: #6d28d9; --bg: #ede9fe; --bd: #c4b5fd"
-            ><b>状语</b><small>介词短语</small></span
-          ><span
-            class="conn conn--wide"
-            style="--bd: #c4b5fd"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 7 / span 1"
-        >
-          <span
-            class="pill"
-            style="--fg: #475569; --bg: #f1f5f9; --bd: #cbd5e1"
-            ><b>连接词</b><small>单词</small></span
-          ><span
-            class="conn"
-            style="--bd: #cbd5e1"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 8 / span 3"
-        >
-          <span
-            class="pill"
-            style="--fg: #1d4ed8; --bg: #dbeafe; --bd: #93c5fd"
-            ><b>谓语</b><small>动词短语</small></span
-          ><span
-            class="conn conn--wide"
-            style="--bd: #93c5fd"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 11 / span 1"
-        >
-          <span
-            class="pill"
-            style="--fg: #047857; --bg: #d1fae5; --bd: #6ee7b7"
-            ><b>宾语</b><small>单词</small></span
-          ><span
-            class="conn"
-            style="--bd: #6ee7b7"
-          ></span>
-        </div>
-        <div
-          class="cell"
-          style="grid-column: 12 / span 1"
-        >
-          <span
-            class="pill"
-            style="--fg: #6d28d9; --bg: #ede9fe; --bd: #c4b5fd"
-            ><b>状语</b><small>副词短语</small></span
-          ><span
-            class="conn"
-            style="--bd: #c4b5fd"
-          ></span>
-        </div>
-        <div class="word">It</div>
-        <div class="word">I</div>
-        <div class="word">is</div>
-        <div class="word">important</div>
-        <div class="word">for</div>
-        <div class="word">me</div>
-        <div class="word">so</div>
-        <div class="word">have</div>
-        <div class="word">to</div>
-        <div class="word">do</div>
-        <div class="word">it</div>
-        <div class="word">today</div>
-        <div
-          class="pos"
-          style="--c: #be185d; --bar: #f9a8d4"
-        >
-          代词
-        </div>
-        <div
-          class="pos"
-          style="--c: #be185d; --bar: #f9a8d4"
-        >
-          代词
-        </div>
-        <div
-          class="pos"
-          style="--c: #1d4ed8; --bar: #93c5fd"
-        >
-          动词
-        </div>
-        <div
-          class="pos"
-          style="--c: #0e7490; --bar: #67e8f9"
-        >
-          形容词
-        </div>
-        <div
-          class="pos"
-          style="--c: #6d28d9; --bar: #c4b5fd"
-        >
-          介词
-        </div>
-        <div
-          class="pos"
-          style="--c: #6d28d9; --bar: #c4b5fd"
-        >
-          代词
-        </div>
-        <div
-          class="pos"
-          style="--c: #475569; --bar: #cbd5e1"
-        >
-          连词
-        </div>
-        <div
-          class="pos"
-          style="--c: #1d4ed8; --bar: #93c5fd"
-        >
-          助动词
-        </div>
-        <div
-          class="pos"
-          style="--c: #1d4ed8; --bar: #93c5fd"
-        >
-          不定式
-        </div>
-        <div
-          class="pos"
-          style="--c: #1d4ed8; --bar: #93c5fd"
-        >
-          动词
-        </div>
-        <div
-          class="pos"
-          style="--c: #047857; --bar: #6ee7b7"
-        >
-          代词
-        </div>
-        <div
-          class="pos"
-          style="--c: #6d28d9; --bar: #c4b5fd"
-        >
-          副词
+        <div class="sent">
+          <div
+            class="grp"
+            style="--c: #475569; grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap">连接词<i>·单词</i></div>
+            <span class="w">so</span>
+            <div class="bar"></div>
+            <span class="p">连词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #7c3aed; grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap">主语<i>·单词</i></div>
+            <span class="w">I</span>
+            <div class="bar"></div>
+            <span class="p">代词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #2563eb; grid-template-columns: repeat(3, auto)"
+          >
+            <div class="cap">谓语<i>·动词短语</i></div>
+            <span class="w">have</span>
+            <span class="w">to</span>
+            <span class="w">do</span>
+            <div class="bar"></div>
+            <span class="p">助动词</span>
+            <span class="p">不定式</span>
+            <span class="p">动词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #047857; grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap">宾语<i>·单词</i></div>
+            <span class="w">it</span>
+            <div class="bar"></div>
+            <span class="p">代词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #c2410c; grid-template-columns: repeat(2, auto)"
+          >
+            <div class="cap">状语<i>·名词短语</i></div>
+            <span class="w">every</span>
+            <span class="w">day</span>
+            <div class="bar"></div>
+            <span class="p">形容词</span>
+            <span class="p">名词</span>
+          </div>
         </div>
       </div>
       <div class="cards">
@@ -749,84 +416,149 @@
         <div class="c-rose card--wide card">
           <div class="card-t">语法要点</div>
           <ul>
+            <li>very 修饰形容词 important</li>
             <li>so 连接两个并列分句</li>
-            <li>today 作时间状语</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="item">
       <div class="item-head">
-        <span class="cn">做这件事情</span><span class="b-frag badge">碎片 / 单词</span>
+        <span class="cn">我现在不想吃这个食物</span><span class="b-sent badge">完整句</span
+        ><span class="b-mono badge">I don't want to eat the food now</span>
       </div>
-      <div
-        class="grid"
-        style="grid-template-columns: repeat(3, auto)"
-      >
-        <div
-          class="cell"
-          style="grid-column: 1"
-        ></div>
-        <div
-          class="cell"
-          style="grid-column: 2"
-        ></div>
-        <div
-          class="cell"
-          style="grid-column: 3"
-        ></div>
-        <div class="word">to</div>
-        <div class="word">do</div>
-        <div class="word">it</div>
-        <div
-          class="pos"
-          style="--c: #475569; --bar: #cbd5e1"
-        >
-          不定式
-        </div>
-        <div
-          class="pos"
-          style="--c: #475569; --bar: #cbd5e1"
-        >
-          动词
-        </div>
-        <div
-          class="pos"
-          style="--c: #475569; --bar: #cbd5e1"
-        >
-          代词
+      <div class="rows">
+        <div class="sent">
+          <div
+            class="grp"
+            style="--c: #7c3aed; grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap">主语<i>·单词</i></div>
+            <span class="w">I</span>
+            <div class="bar"></div>
+            <span class="p">代词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #2563eb; grid-template-columns: repeat(2, auto)"
+          >
+            <div class="cap">谓语<i>·动词短语</i></div>
+            <span class="w">don't</span>
+            <span class="w">want</span>
+            <div class="bar"></div>
+            <span class="p">助动词</span>
+            <span class="p">动词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #047857; grid-template-columns: repeat(4, auto)"
+          >
+            <div class="cap">宾语<i>·不定式短语</i></div>
+            <span class="w">to</span>
+            <span class="w">eat</span>
+            <span class="w">the</span>
+            <span class="w">food</span>
+            <div class="bar"></div>
+            <span class="p">不定式</span>
+            <span class="p">动词</span>
+            <span class="p">冠词</span>
+            <span class="p">名词</span>
+          </div>
+          <div
+            class="grp"
+            style="--c: #c2410c; grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap">状语<i>·副词短语</i></div>
+            <span class="w">now</span>
+            <div class="bar"></div>
+            <span class="p">副词</span>
+          </div>
         </div>
       </div>
       <div class="cards">
-        <div class="card--wide muted card">
-          碎片只显示逐词词性 —— 不显示成分胶囊 / 结构 / 时态（按规范 §8 降级）
+        <div class="c-blue card">
+          <div class="card-t">句子结构</div>
+          <div class="card-v">主语 + 谓语 + 宾语 + 状语</div>
+          <span class="tag">S + V + O + Adv</span>
+        </div>
+        <div class="c-amber card">
+          <div class="card-t">时态</div>
+          <div class="card-v">一般现在时</div>
+        </div>
+        <div class="c-violet card">
+          <div class="card-t">句型</div>
+          <div class="card-v">陈述句</div>
+          <span class="tag">简单句</span>
+        </div>
+        <div class="c-rose card--wide card">
+          <div class="card-t">语法要点</div>
+          <ul>
+            <li>don't want to do sth 不想做某事</li>
+            <li>时间状语 now 位于句末</li>
+          </ul>
         </div>
       </div>
     </div>
     <div class="item">
       <div class="item-head">
-        <span class="cn">我</span><span class="b-frag badge">碎片 / 单词</span>
+        <span class="cn">做这件事情</span><span class="b-frag badge">碎片 / 单词</span
+        ><span class="b-mono badge">to do it</span>
       </div>
-      <div
-        class="grid"
-        style="grid-template-columns: repeat(1, auto)"
-      >
-        <div
-          class="cell"
-          style="grid-column: 1"
-        ></div>
-        <div class="word">I</div>
-        <div
-          class="pos"
-          style="--c: #475569; --bar: #cbd5e1"
-        >
-          代词
+      <div class="rows">
+        <div class="sent">
+          <div
+            class="grp grp-bare"
+            style="grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap"></div>
+            <span class="w w-bare">to</span>
+            <div class="bar bar-bare"></div>
+            <span class="p p-bare">不定式</span>
+          </div>
+          <div
+            class="grp grp-bare"
+            style="grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap"></div>
+            <span class="w w-bare">do</span>
+            <div class="bar bar-bare"></div>
+            <span class="p p-bare">动词</span>
+          </div>
+          <div
+            class="grp grp-bare"
+            style="grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap"></div>
+            <span class="w w-bare">it</span>
+            <div class="bar bar-bare"></div>
+            <span class="p p-bare">代词</span>
+          </div>
         </div>
       </div>
       <div class="cards">
-        <div class="card--wide muted card">
-          碎片只显示逐词词性 —— 不显示成分胶囊 / 结构 / 时态（按规范 §8 降级）
+        <div class="card--wide muted card">碎片只显示逐词词性 —— 不显示成分胶囊 / 结构 / 时态</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <span class="cn">我</span><span class="b-frag badge">碎片 / 单词</span
+        ><span class="b-mono badge">I</span>
+      </div>
+      <div class="rows">
+        <div class="sent">
+          <div
+            class="grp grp-bare"
+            style="grid-template-columns: repeat(1, auto)"
+          >
+            <div class="cap"></div>
+            <span class="w w-bare">I</span>
+            <div class="bar bar-bare"></div>
+            <span class="p p-bare">代词</span>
+          </div>
         </div>
+      </div>
+      <div class="cards">
+        <div class="card--wide muted card">碎片只显示逐词词性 —— 不显示成分胶囊 / 结构 / 时态</div>
       </div>
     </div>
   </body>

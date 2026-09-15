@@ -5,11 +5,18 @@
 
 ## 三个文件
 
-| 文件                 | 作用                                                                                          |
-| -------------------- | --------------------------------------------------------------------------------------------- |
-| `system-prompt.txt`  | 交给模型的系统提示词（**改标注口径就改这里**，是唯一来源）                                    |
-| `annotate-lesson.py` | 取一课的全部句子 → 分批调 DeepSeek → 程序补 structure → 增量落盘 → 跑完整规则集校验（E1–E13） |
-| `validate-format.py` | 按规范校验一份文件或文档里的示例（E1–E13 / W1–W5）                                            |
+| 文件                     | 作用                                                                                          |
+| ------------------------ | --------------------------------------------------------------------------------------------- |
+| `system-prompt.txt`      | 交给模型的系统提示词（**改标注口径就改这里**，是唯一来源）                                    |
+| `annotate-lesson.py`     | 取一课的全部句子 → 分批调 DeepSeek → 程序补 structure → 增量落盘 → 跑完整规则集校验（E1–E13） |
+| `validate-format.py`     | 按规范校验一份文件或文档里的示例（E1–E13 / W1–W5）。**唯一校验器**                            |
+| `render-preview.py`      | 渲染练习页效果预览 HTML（含**渲染自检**：每词恰好一次、胶囊数==短语数）                       |
+| `measure-probe.py`       | 生成测量页。`natural` = 自然单行宽（一次量完）；`<宽>` = 该面板宽下的测量页                   |
+| `measure-natural.js`     | 量出每条句子的自然单行宽（配合 `measure-probe.py natural`）                                   |
+| `measure-rows.js`        | 量出「一个面板宽下每条句子占几行」（交叉验证用）                                              |
+| `measure-summary.py`     | 汇总 + **模型 vs 实测交叉验证** + 按词数的单行率表                                            |
+| `measure-all.sh`         | 一键全量重测（自然宽 + 6 个面板宽 + 汇总）                                                    |
+| `render-long-compare.py` | 把最长的并列句在 5 个面板宽下并排渲染（评估长句方案用）                                       |
 
 ## 用法
 
@@ -18,8 +25,16 @@
 python scripts/grammar/annotate-lesson.py            # 第一课
 python scripts/grammar/annotate-lesson.py 3 out.json # 第三课, 指定输出
 
-# 校验规范文档里的示例
+# 校验规范文档里的示例 / 校验一份产物
 python scripts/grammar/validate-format.py
+python scripts/grammar/validate-format.py .hermes/design/grammar-lesson1-annotated.json
+
+# 出效果预览（会自动跑渲染自检）
+python scripts/grammar/render-preview.py
+
+# 长句评估: 全量重测 + 单句并排对比
+bash scripts/grammar/measure-all.sh
+python scripts/grammar/render-long-compare.py 190
 ```
 
 ## 关键设计（四条，别改坏）
