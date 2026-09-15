@@ -1,6 +1,6 @@
 import { createId } from "@paralleldrive/cuid2";
 import { relations } from "drizzle-orm";
-import { integer, jsonb, pgTable, text, timestamp } from "drizzle-orm/pg-core";
+import { customType, integer, pgTable, text, timestamp } from "drizzle-orm/pg-core";
 
 import { course } from "./course";
 
@@ -35,6 +35,36 @@ export interface StatementGrammar {
   structure?: string;
 }
 
+/**
+ * jsonb 列，但**把值原样交给驱动**（不像 drizzle 内置的 `jsonb()` 那样先 `JSON.stringify`）。
+ *
+ * 为什么不能用内置 `jsonb()`：
+ *   内置映射会先 `JSON.stringify`，而驱动 `postgres.js` 对 jsonb 参数会把「JS 字符串」
+ *   当成 **jsonb 值**再包一层 → 库里存成 `jsonb_typeof = 'string'`（双编码的 JSON 字符串），
+ *   于是 `grammar->>'structure'`、`jsonb_array_length(grammar->'phrases')` 这类 SQL 全部取不到东西
+ *   （只有 ORM 读回来时靠再解析一次，看着才正常 —— 所以单测能过、直接查库才发现）。
+ *   实测三种写法：传对象→object（本写法） / 传字符串→string / 传字符串+`::jsonb`→仍是 string。
+ *
+ * 与 `scripts/grammar/ingest-lesson.py`（用 `%s::jsonb` 写）保持一致：
+ * **同一列不能一半是 object 一半是 string**。守卫见
+ * `apps/api/src/ai-content/tests/grammar-annotation-pipeline.spec.ts` 的
+ * `jsonb_typeof = 'object'` 断言（必须用裸 SQL 查，ORM 读回来会掩盖它）。
+ */
+const jsonbPassthrough = customType<{
+  data: StatementGrammar | null;
+  driverData: unknown;
+}>({
+  dataType() {
+    return "jsonb";
+  },
+  toDriver(value) {
+    return value;
+  },
+  fromDriver(value) {
+    return value as StatementGrammar | null;
+  },
+});
+
 export const statement = pgTable("statements", {
   id: text("id")
     .primaryKey()
@@ -52,7 +82,7 @@ export const statement = pgTable("statements", {
     .references(() => course.id),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
-  grammar: jsonb("grammar").$type<StatementGrammar | null>(),
+  grammar: jsonbPassthrough("grammar"),
 });
 
 export const statementRelations = relations(statement, ({ one }) => ({

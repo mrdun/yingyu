@@ -34,10 +34,13 @@ HARD RULES:
 3. "clauseType": 简单句 (one clause) / 并列句 (clauses joined by and/but/so/or) / 复合句 (contains a 从句).
    Omit when isSentence=false.
 4. words: EXACTLY one entry per word, same order as the sentence.
-   Words joined with single spaces MUST equal the sentence exactly (case-sensitive, no punctuation added).
+   Words joined with single spaces MUST equal the sentence exactly (case-sensitive).
+   KEEP the punctuation the input already has, attached to the word it belongs to:
+   for "I like the food." the last word is "food." (NOT "food") — and NEVER add or drop punctuation.
 5. phrases: the texts, joined with single spaces IN ORDER, MUST also equal the sentence exactly.
    i.e. phrases partition the SAME word sequence — you may merge adjacent words, but never skip,
-   reorder, split, or duplicate a word. Do NOT invent punctuation that is not in the original.
+   reorder, split, or duplicate a word, and never drop punctuation that exists in the input.
+   Do NOT invent punctuation that is not in the original.
 6. 成分(role) is PHRASE-level, not per word: "don't like" together = 谓语(动词短语);
    "learning English" together = 宾语(动名词短语); "to do it" together = 宾语(不定式短语).
    NEVER give the same role to each word separately.
