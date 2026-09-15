@@ -10,7 +10,11 @@
 | `system-prompt.txt`      | 交给模型的系统提示词（**改标注口径就改这里**，是唯一来源）                                    |
 | `annotate-lesson.py`     | 取一课的全部句子 → 分批调 DeepSeek → 程序补 structure → 增量落盘 → 跑完整规则集校验（E1–E13） |
 | `validate-format.py`     | 按规范校验一份文件或文档里的示例（E1–E13 / W1–W5）。**唯一校验器**                            |
-| `render-preview.py`      | 渲染练习页效果预览 HTML（含**渲染自检**：每词恰好一次、胶囊数==短语数）                       |
+| `render-preview.py`      | 渲染**静态**效果稿 HTML（含**渲染自检**：每词恰好一次、胶囊数==短语数）                       |
+| `render-effect-page.py`  | 渲染**交互效果页**（自包含单文件、218 条全量、可切句/切筛选/开关从句断行、实时测行数）        |
+| `verify-effect-page.js`  | **效果页的浏览器断言**：逐句核对词与胶囊、开关生效、自报行数属实、无横向溢出                  |
+| `shot-effect-states.js`  | 抓效果页四种状态图（默认 / 长句断行开 / 关 / 碎片），内部自检用                               |
+| `measure-gaps.js`        | 量相邻胶囊的实际间隙（判断「是不是挤成一团」用数字，不靠眼睛）                                |
 | `measure-probe.py`       | 生成测量页。`natural` = 自然单行宽（一次量完）；`<宽>` = 该面板宽下的测量页                   |
 | `measure-natural.js`     | 量出每条句子的自然单行宽（配合 `measure-probe.py natural`）                                   |
 | `measure-rows.js`        | 量出「一个面板宽下每条句子占几行」（交叉验证用）                                              |
@@ -31,6 +35,10 @@ python scripts/grammar/validate-format.py .hermes/design/grammar-lesson1-annotat
 
 # 出效果预览（会自动跑渲染自检）
 python scripts/grammar/render-preview.py
+
+# 出**交互效果页**（交付给用户看的那份）+ 浏览器断言
+python scripts/grammar/render-effect-page.py
+node scripts/grammar/verify-effect-page.js .hermes/design/grammar-effect-page.html
 
 # 长句评估: 全量重测 + 单句并排对比
 bash scripts/grammar/measure-all.sh

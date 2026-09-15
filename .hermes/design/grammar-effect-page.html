@@ -1,0 +1,5311 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>练习页 · 句子语法标注（效果页）</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --cream: #fbf7e8;
+        --ink: #0f172a;
+        --muted: #5b6b80;
+        --line: #e5e7eb;
+        --blue: #2c5af4;
+        --panel: #fffdf7;
+      }
+      body {
+        font-family:
+          "PingFang SC",
+          "Microsoft YaHei",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background: var(--cream);
+        color: var(--ink);
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 14px;
+      }
+      /* 内容靠左铺开、不套居中壳 —— 内联预览靠第一个元素的宽度测尺寸 */
+      .app {
+        width: 100%;
+        max-width: 1040px;
+      }
+
+      /* ── 顶栏（模拟练习页骨架）────────────────────────── */
+      .bar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 0 0 10px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        border: 1px solid var(--line);
+        background: #fff;
+        color: #3f4b5b;
+        border-radius: 999px;
+        padding: 6px 13px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.15s;
+        white-space: nowrap;
+        font-family: inherit;
+      }
+      .btn:hover {
+        border-color: #c7d2fe;
+        color: var(--blue);
+      }
+      .btn:active {
+        transform: translateY(1px);
+      }
+      .btn[aria-pressed="true"] {
+        background: var(--blue);
+        border-color: var(--blue);
+        color: #fff;
+      }
+      .btn[disabled] {
+        opacity: 0.45;
+        cursor: not-allowed;
+      }
+      .title {
+        font-size: 15px;
+        font-weight: 800;
+      }
+      .sub {
+        font-size: 12.5px;
+        color: var(--muted);
+      }
+      .spacer {
+        flex: 1 1 auto;
+      }
+
+      .seg {
+        display: inline-flex;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #fff;
+        overflow: hidden;
+      }
+      .seg button {
+        border: 0;
+        background: transparent;
+        color: #3f4b5b;
+        font-family: inherit;
+        padding: 6px 12px;
+        font-size: 12.5px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .seg button[aria-pressed="true"] {
+        background: #eff6ff;
+        color: var(--blue);
+      }
+
+      /* ── 句子卡 ─────────────────────────────────────── */
+      .card {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 16px 18px 14px;
+        margin-bottom: 12px;
+      }
+      .head {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 6px;
+      }
+      .cn {
+        font-size: 15.5px;
+        font-weight: 800;
+      }
+      .badge {
+        font-size: 11px;
+        font-weight: 700;
+        padding: 3px 9px;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+      .b-sent {
+        background: #eff6ff;
+        color: var(--blue);
+      }
+      .b-frag {
+        background: #f1f5f9;
+        color: #64748b;
+      }
+      .b-en {
+        background: #f8fafc;
+        color: #7b8794;
+        font-family: ui-monospace, SFMono-Regular, monospace;
+        font-weight: 600;
+      }
+      .b-ok {
+        background: #ecfdf5;
+        color: #047857;
+      }
+      .b-warn {
+        background: #fff4e0;
+        color: #8a4b00;
+      }
+
+      .measure {
+        font-size: 12px;
+        color: var(--muted);
+        margin: 2px 0 12px;
+      }
+      .measure b {
+        color: var(--ink);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .rows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 16px;
+        margin: 4px 0 6px;
+      }
+      .sent {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 16px;
+        row-gap: 12px;
+      }
+
+      .grp {
+        display: grid;
+        justify-content: center;
+        column-gap: 4px;
+      }
+      .cap {
+        grid-column: 1 / -1;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+      }
+      .cap:not(:empty) {
+        justify-self: center;
+        padding: 3px 11px 4px;
+        background: var(--c);
+        color: #fff; /* 实心饱和色 + 白字, 对比度已实算 >= 4.5:1 */
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.15;
+        white-space: nowrap;
+      }
+      .cap i {
+        font-style: normal;
+        font-size: 9.5px;
+        font-weight: 700;
+        opacity: 0.78;
+      }
+      .w {
+        grid-row: 2;
+        justify-self: center;
+        align-self: end;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+      }
+      .bar2 {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        height: 3px;
+        border-radius: 2px;
+        background: var(--c);
+        margin-top: 4px;
+      }
+      .p {
+        grid-row: 4;
+        justify-self: center;
+        margin-top: 5px;
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--c);
+        white-space: nowrap;
+      }
+      .bar2.bare {
+        background: #cbd5e1;
+      }
+      .p.bare {
+        color: #94a3b8;
+      }
+
+      /* ── 信息卡 ─────────────────────────────────────── */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 9px;
+        margin-top: 14px;
+      }
+      .info {
+        border-radius: 10px;
+        padding: 9px 11px;
+        border: 1px solid;
+      }
+      .c-blue {
+        background: #eff6ff;
+        border-color: #bfdbfe;
+      }
+      .c-amber {
+        background: #fffbeb;
+        border-color: #fde68a;
+      }
+      .c-violet {
+        background: #f5f3ff;
+        border-color: #ddd6fe;
+      }
+      .c-rose {
+        background: #fff1f2;
+        border-color: #fecdd3;
+      }
+      .wide {
+        grid-column: 1 / -1;
+      }
+      .info-t {
+        font-size: 10.5px;
+        font-weight: 700;
+        opacity: 0.62;
+        margin-bottom: 3px;
+      }
+      .info-v {
+        font-size: 13.5px;
+        font-weight: 800;
+      }
+      .info ul {
+        margin: 0;
+        padding-left: 15px;
+        font-size: 12.5px;
+        line-height: 1.75;
+        color: #334155;
+      }
+      .tag {
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 10.5px;
+        font-weight: 700;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(15, 23, 42, 0.1);
+        border-radius: 999px;
+        padding: 2px 8px;
+        color: #334155;
+      }
+
+      /* ── 图例 + 说明 ────────────────────────────────── */
+      .legend {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .lg {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 11.5px;
+        font-weight: 700;
+        color: #475569;
+      }
+      .dot {
+        width: 22px;
+        height: 12px;
+        border-radius: 999px;
+        background: var(--c);
+      }
+      .note {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 11px 13px;
+        font-size: 12.5px;
+        line-height: 1.85;
+        color: var(--muted);
+      }
+      .note b {
+        color: var(--ink);
+      }
+      .note code {
+        background: #f1f5f9;
+        border-radius: 4px;
+        padding: 1px 5px;
+        font-size: 12px;
+      }
+      .hint {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      kbd {
+        background: #f1f5f9;
+        border: 1px solid var(--line);
+        border-bottom-width: 2px;
+        border-radius: 5px;
+        padding: 1px 5px;
+        font-size: 11px;
+        font-family: inherit;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <!-- 顶栏 -->
+      <div class="bar">
+        <button
+          class="btn"
+          id="prev"
+        >
+          ← 上一句
+        </button>
+        <button
+          class="btn"
+          id="next"
+        >
+          下一句 →
+        </button>
+        <span class="title">零基础学英语 · 第一课</span>
+        <span
+          class="sub"
+          id="pos"
+          >— / —</span
+        >
+        <span class="spacer"></span>
+        <button
+          class="btn"
+          id="jumpLong"
+        >
+          跳到最长句
+        </button>
+      </div>
+
+      <!-- 筛选 + 开关 -->
+      <div class="bar">
+        <span
+          class="seg"
+          id="filter"
+        >
+          <button data-f="all">全部</button>
+          <button data-f="frag">碎片</button>
+          <button data-f="short">短句</button>
+          <button data-f="long">长句</button>
+        </span>
+        <span
+          class="seg"
+          id="toggles"
+        >
+          <button
+            data-t="clause"
+            aria-pressed="true"
+          >
+            从句断行
+          </button>
+          <button
+            data-t="pos"
+            aria-pressed="true"
+          >
+            逐词词性
+          </button>
+          <button
+            data-t="cards"
+            aria-pressed="true"
+          >
+            结构卡
+          </button>
+          <button
+            data-t="cn"
+            aria-pressed="true"
+          >
+            中文
+          </button>
+        </span>
+        <span class="hint">用 <kbd>←</kbd> <kbd>→</kbd> 切换句子</span>
+      </div>
+
+      <!-- 句子 -->
+      <div class="card">
+        <div class="head">
+          <span
+            class="cn"
+            id="cn"
+          ></span>
+          <span
+            class="badge"
+            id="kind"
+          ></span>
+          <span
+            class="b-en badge"
+            id="en"
+          ></span>
+        </div>
+        <div
+          class="measure"
+          id="measure"
+        ></div>
+        <div
+          class="rows"
+          id="rows"
+        ></div>
+        <div
+          class="cards"
+          id="cards"
+        ></div>
+      </div>
+
+      <!-- 图例 -->
+      <div class="card">
+        <div
+          class="legend"
+          id="legend"
+        ></div>
+      </div>
+
+      <!-- 说明 -->
+      <div class="note">
+        <b>这一页是什么</b>：练习页里「句子语法标注」面板的效果页。数据是真实模型对
+        <b>「零基础学英语 · 第一课」218 条</b>的标注，不是示例。
+        <b>一个句子成分 = 一个实心彩色胶囊</b
+        >；单词裸露不装框；胶囊下方<b>一条横条横跨该成分的全部词</b>； 横条下方是逐词词性。<br />
+        <b>要你重点看的两处</b>：① 打开/关闭上面的「<b>从句断行</b>」，看那几句 17–21 词的并列句
+        （点「跳到最长句」）有什么差别 —— 这是我们选的方案，靠它在 <code>so</code> 处断开，
+        现有面板宽度就装得下，不必把练习区改成全宽，也不必限制句子长度。 ②
+        每句下面那行<b>实时测量值</b>：面板可用宽 / 本句单行需要多少 px / 实际占几行。
+        切换宽度看它怎么变（拖动窗口），这是浏览器真实量的，不是我估的。<br />
+        <b>碎片</b>（如 <code>to do it</code>）按规范只给逐词词性，不给成分胶囊与结构。
+      </div>
+    </div>
+
+    <script>
+      const DATA = [
+        {
+          o: 1,
+          en: "I",
+          cn: "我",
+          s: 0,
+          w: [{ t: "I", p: "代词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["人称代词 I 表示“我”"],
+        },
+        {
+          o: 2,
+          en: "like",
+          cn: "喜欢",
+          s: 0,
+          w: [{ t: "like", p: "动词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["动词 like 表示“喜欢”"],
+        },
+        {
+          o: 3,
+          en: "I like",
+          cn: "我喜欢",
+          s: 0,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "like", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["主谓片段，缺少宾语"],
+        },
+        {
+          o: 4,
+          en: "the food",
+          cn: "这个食物",
+          s: 0,
+          w: [
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["名词短语，定冠词 the 修饰 food"],
+        },
+        {
+          o: 5,
+          en: "I like the food",
+          cn: "我喜欢这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "like", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "like", r: "谓语", k: "动词短语" },
+            { t: "the food", r: "宾语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["主语 I + 谓语 like + 宾语 the food", "一般现在时表示喜好"],
+        },
+        {
+          o: 6,
+          en: "don't",
+          cn: "不",
+          s: 0,
+          w: [{ t: "don't", p: "助动词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["do not 的缩写，构成否定"],
+        },
+        {
+          o: 7,
+          en: "like",
+          cn: "喜欢",
+          s: 0,
+          w: [{ t: "like", p: "动词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["动词 like 表示“喜欢”"],
+        },
+        {
+          o: 8,
+          en: "don't like",
+          cn: "不喜欢",
+          s: 0,
+          w: [
+            { t: "don't", p: "助动词" },
+            { t: "like", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["助动词 don't + 动词 like 构成否定谓语"],
+        },
+        {
+          o: 9,
+          en: "I don't like the food",
+          cn: "我不喜欢这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "like", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't like", r: "谓语", k: "动词短语" },
+            { t: "the food", r: "宾语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't like 构成否定谓语", "一般现在时否定句"],
+        },
+        {
+          o: 10,
+          en: "to do",
+          cn: "做",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["动词不定式短语 to do"],
+        },
+        {
+          o: 11,
+          en: "it",
+          cn: "它；这件事情",
+          s: 0,
+          w: [{ t: "it", p: "代词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["代词 it 指代前文提到的事物"],
+        },
+        {
+          o: 12,
+          en: "to do it",
+          cn: "做这件事情",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语 to do sth 作宾语"],
+        },
+        {
+          o: 13,
+          en: "I like",
+          cn: "我喜欢",
+          s: 0,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "like", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["like to do sth 喜欢做某事"],
+        },
+        {
+          o: 14,
+          en: "I like to do it",
+          cn: "我喜欢做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "like", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "like", r: "谓语", k: "动词短语" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["like to do sth 喜欢做某事", "不定式作宾语"],
+        },
+        {
+          o: 15,
+          en: "don't like",
+          cn: "不喜欢",
+          s: 0,
+          w: [
+            { t: "don't", p: "助动词" },
+            { t: "like", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["don't 为 do not 的缩写，表否定"],
+        },
+        {
+          o: 16,
+          en: "I don't like to do it",
+          cn: "我不喜欢做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "like", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't like", r: "谓语", k: "动词短语" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't 构成一般现在时否定", "不定式作宾语"],
+        },
+        {
+          o: 17,
+          en: "now",
+          cn: "现在",
+          s: 0,
+          w: [{ t: "now", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["时间副词 now 作状语"],
+        },
+        {
+          o: 18,
+          en: "I like to do it now",
+          cn: "我喜欢现在做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "like", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "like", r: "谓语", k: "动词短语" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+            { t: "now", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["now 作时间状语", "like to do sth 喜欢做某事"],
+        },
+        {
+          o: 19,
+          en: "I don't like to do it now",
+          cn: "我不喜欢现在做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "like", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't like", r: "谓语", k: "动词短语" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+            { t: "now", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't 构成否定", "now 作时间状语"],
+        },
+        {
+          o: 20,
+          en: "here",
+          cn: "这里",
+          s: 0,
+          w: [{ t: "here", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["地点副词 here 作状语"],
+        },
+        {
+          o: 21,
+          en: "to be here",
+          cn: "在这里",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["to be here 不定式短语"],
+        },
+        {
+          o: 22,
+          en: "I like",
+          cn: "我喜欢",
+          s: 0,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "like", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["like 后需接宾语"],
+        },
+        {
+          o: 23,
+          en: "I like to be here",
+          cn: "我喜欢在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "like", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "like", r: "谓语", k: "单词" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["like to do sth 喜欢做某事"],
+        },
+        {
+          o: 24,
+          en: "don't like",
+          cn: "不喜欢",
+          s: 0,
+          w: [
+            { t: "don't", p: "助动词" },
+            { t: "like", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["don't 表否定"],
+        },
+        {
+          o: 25,
+          en: "I don't like to be here",
+          cn: "我不喜欢在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "like", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't like", r: "谓语", k: "动词短语" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't like to do sth 不喜欢做某事"],
+        },
+        {
+          o: 26,
+          en: "now",
+          cn: "现在",
+          s: 0,
+          w: [{ t: "now", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["now 时间副词"],
+        },
+        {
+          o: 27,
+          en: "I don't like to be here now",
+          cn: "我不喜欢现在在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "like", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't like", r: "谓语", k: "动词短语" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+            { t: "now", r: "状语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't like to do sth 不喜欢做某事", "now 作时间状语"],
+        },
+        {
+          o: 28,
+          en: "want",
+          cn: "想要",
+          s: 0,
+          w: [{ t: "want", p: "动词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["want to do sth 想要做某事"],
+        },
+        {
+          o: 29,
+          en: "to do it",
+          cn: "做这件事情",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["to do sth 做某事"],
+        },
+        {
+          o: 30,
+          en: "I want to do it",
+          cn: "我想要做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "单词" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want to do sth 想要做某事"],
+        },
+        {
+          o: 31,
+          en: "don't want",
+          cn: "不想",
+          s: 0,
+          w: [
+            { t: "don't", p: "助动词" },
+            { t: "want", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["don't = do not，一般现在时否定"],
+        },
+        {
+          o: 32,
+          en: "I don't want to do it",
+          cn: "我不想做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't want", r: "谓语", k: "动词短语" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want to do sth 想要做某事", "否定形式 don't want"],
+        },
+        {
+          o: 33,
+          en: "today",
+          cn: "今天",
+          s: 0,
+          w: [{ t: "today", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["时间副词 today"],
+        },
+        {
+          o: 34,
+          en: "I want to do it today",
+          cn: "我今天想要做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "today", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "动词短语" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+            { t: "today", r: "状语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want to do sth 想要做某事", "today 作时间状语"],
+        },
+        {
+          o: 35,
+          en: "I don't want to do it today",
+          cn: "我今天不想做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "today", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't want", r: "谓语", k: "动词短语" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+            { t: "today", r: "状语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't want 表示不想", "today 作时间状语"],
+        },
+        {
+          o: 36,
+          en: "now",
+          cn: "现在",
+          s: 0,
+          w: [{ t: "now", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["时间副词 now"],
+        },
+        {
+          o: 37,
+          en: "I don't want to do it now",
+          cn: "我现在不想做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't want", r: "谓语", k: "动词短语" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+            { t: "now", r: "状语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't want 表示不想", "now 作时间状语"],
+        },
+        {
+          o: 38,
+          en: "to eat",
+          cn: "吃",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["动词不定式 to eat"],
+        },
+        {
+          o: 39,
+          en: "the food",
+          cn: "这个食物",
+          s: 0,
+          w: [
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["名词短语 the food"],
+        },
+        {
+          o: 40,
+          en: "to eat the food",
+          cn: "吃这个食物",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["动词不定式 to eat 带宾语 the food"],
+        },
+        {
+          o: 41,
+          en: "want",
+          cn: "想要",
+          s: 0,
+          w: [{ t: "want", p: "动词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 42,
+          en: "I want to eat the food",
+          cn: "我想要吃这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "动词短语" },
+            { t: "to eat the food", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want to do sth 想要做某事", "不定式短语作宾语"],
+        },
+        {
+          o: 43,
+          en: "now",
+          cn: "现在",
+          s: 0,
+          w: [{ t: "now", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 44,
+          en: "I want to eat the food now",
+          cn: "我现在想要吃这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "动词短语" },
+            { t: "to eat the food", r: "宾语", k: "不定式短语" },
+            { t: "now", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want to do sth 想要做某事", "时间状语 now 位于句末"],
+        },
+        {
+          o: 45,
+          en: "don't want",
+          cn: "不想",
+          s: 0,
+          w: [
+            { t: "don't", p: "助动词" },
+            { t: "want", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 46,
+          en: "I don't want to eat the food now",
+          cn: "我现在不想吃这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't want", r: "谓语", k: "动词短语" },
+            { t: "to eat the food", r: "宾语", k: "不定式短语" },
+            { t: "now", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't want to do sth 不想做某事", "时间状语 now 位于句末"],
+        },
+        {
+          o: 47,
+          en: "here",
+          cn: "这里",
+          s: 0,
+          w: [{ t: "here", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 48,
+          en: "to be here",
+          cn: "在这里",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 49,
+          en: "I want to be here",
+          cn: "我想要在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "动词短语" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want to do sth 想要做某事", "不定式短语作宾语"],
+        },
+        {
+          o: 50,
+          en: "I don't want to be here",
+          cn: "我不想在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't want", r: "谓语", k: "动词短语" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't want to do sth 不想做某事", "不定式短语作宾语"],
+        },
+        {
+          o: 51,
+          en: "every day",
+          cn: "每天",
+          s: 0,
+          w: [
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["every day 表示频率，作时间状语", "every + 单数可数名词"],
+        },
+        {
+          o: 52,
+          en: "I want to be here every day",
+          cn: "我想要每天在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "动词短语" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+            { t: "every day", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want to do sth 想要做某事", "不定式短语作宾语"],
+        },
+        {
+          o: 53,
+          en: "I don't want to be here every day",
+          cn: "我不想每天在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't want", r: "谓语", k: "动词短语" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+            { t: "every day", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't want to do sth 的否定形式", "助动词 don't 后接动词原形"],
+        },
+        {
+          o: 54,
+          en: "all the day",
+          cn: "一整天",
+          s: 0,
+          w: [
+            { t: "all", p: "形容词" },
+            { t: "the", p: "冠词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["all the day 一整天，作时间状语"],
+        },
+        {
+          o: 55,
+          en: "I don't want to be here all the day",
+          cn: "我不想一整天在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+            { t: "all", p: "形容词" },
+            { t: "the", p: "冠词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't want", r: "谓语", k: "动词短语" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+            { t: "all the day", r: "状语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't want to do sth 的否定形式", "all the day 作时间状语"],
+        },
+        {
+          o: 56,
+          en: "need",
+          cn: "需要",
+          s: 0,
+          w: [{ t: "need", p: "动词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["need 作实义动词或情态动词"],
+        },
+        {
+          o: 57,
+          en: "to be here",
+          cn: "在这里",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["to be here 不定式短语，表状态"],
+        },
+        {
+          o: 58,
+          en: "I need to be here",
+          cn: "我需要在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "need", r: "谓语", k: "动词短语" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["need to do sth 需要做某事", "不定式短语作宾语"],
+        },
+        {
+          o: 59,
+          en: "I don't need to be here",
+          cn: "我不需要在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't need", r: "谓语", k: "动词短语" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't need to do sth 不需要做某事", "助动词 don't 后接动词原形"],
+        },
+        {
+          o: 60,
+          en: "every day",
+          cn: "每天",
+          s: 0,
+          w: [
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["every day 表示频率，作时间状语", "every + 单数可数名词"],
+        },
+        {
+          o: 61,
+          en: "I need to be here every day",
+          cn: "我需要每天在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "need", r: "谓语", k: "动词短语" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+            { t: "every day", r: "状语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["need to do sth 需要做某事", "every day 作时间状语"],
+        },
+        {
+          o: 62,
+          en: "I don't need to be here every day",
+          cn: "我不需要每天在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't need", r: "谓语", k: "动词短语" },
+            { t: "to be here", r: "宾语", k: "不定式短语" },
+            { t: "every day", r: "状语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't need to do sth 不需要做某事", "every day 作时间状语"],
+        },
+        {
+          o: 63,
+          en: "to eat the food",
+          cn: "吃这个食物",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语 to do sth", "the food 指特定食物"],
+        },
+        {
+          o: 64,
+          en: "I need to eat the food",
+          cn: "我需要吃这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "need", r: "谓语", k: "动词短语" },
+            { t: "to eat the food", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["need to do sth 需要做某事", "不定式作宾语"],
+        },
+        {
+          o: 65,
+          en: "now",
+          cn: "现在",
+          s: 0,
+          w: [{ t: "now", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["now 副词，表示现在"],
+        },
+        {
+          o: 66,
+          en: "I need to eat the food now",
+          cn: "我现在需要吃这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "need", r: "谓语", k: "动词短语" },
+            { t: "to eat the food", r: "宾语", k: "不定式短语" },
+            { t: "now", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["need to do sth 需要做某事", "now 作时间状语"],
+        },
+        {
+          o: 67,
+          en: "I don't need to eat the food now",
+          cn: "我现在不需要吃这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't need", r: "谓语", k: "动词短语" },
+            { t: "to eat the food", r: "宾语", k: "不定式短语" },
+            { t: "now", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't need to do sth 不需要做某事", "now 作时间状语"],
+        },
+        {
+          o: 68,
+          en: "it",
+          cn: "它；这件事情",
+          s: 0,
+          w: [{ t: "it", p: "代词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["it 代词，指代事物"],
+        },
+        {
+          o: 69,
+          en: "to do",
+          cn: "做",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式 to do，表示去做某事"],
+        },
+        {
+          o: 70,
+          en: "to do it",
+          cn: "做这件事情",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语 to do it", "it 作 do 的宾语"],
+        },
+        {
+          o: 71,
+          en: "I need to do it",
+          cn: "我需要做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "need", r: "谓语", k: "单词" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["need to do sth 需要做某事"],
+        },
+        {
+          o: 72,
+          en: "today",
+          cn: "今天",
+          s: 0,
+          w: [{ t: "today", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["today 今天，时间副词"],
+        },
+        {
+          o: 73,
+          en: "I need to do it today",
+          cn: "我今天需要做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "today", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "need", r: "谓语", k: "单词" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+            { t: "today", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["need to do sth 需要做某事", "today 作时间状语"],
+        },
+        {
+          o: 74,
+          en: "I don't need to do it today",
+          cn: "我今天不需要做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "today", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't need", r: "谓语", k: "动词短语" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+            { t: "today", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't need to do 不需要做某事", "today 作时间状语"],
+        },
+        {
+          o: 75,
+          en: "have to do",
+          cn: "必须做",
+          s: 0,
+          w: [
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["have to do 必须做"],
+        },
+        {
+          o: 76,
+          en: "I have to do it",
+          cn: "我必须做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to do sth 必须做某事"],
+        },
+        {
+          o: 77,
+          en: "I have to do it today",
+          cn: "我今天必须做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "today", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "today", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to do sth 必须做某事", "today 作时间状语"],
+        },
+        {
+          o: 78,
+          en: "I have to do it now",
+          cn: "我现在必须做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "now", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to do sth 必须做某事", "now 作时间状语"],
+        },
+        {
+          o: 79,
+          en: "don't have to do",
+          cn: "不必做",
+          s: 0,
+          w: [
+            { t: "don't", p: "助动词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["don't have to do 不必做"],
+        },
+        {
+          o: 80,
+          en: "I don't have to do it",
+          cn: "我不必做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't have to do sth 不必做某事"],
+        },
+        {
+          o: 81,
+          en: "I don't have to do it now",
+          cn: "我现在不必做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "now", r: "状语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't have to 表示“不必”，后接动词原形", "now 作时间状语置于句末"],
+        },
+        {
+          o: 82,
+          en: "every day",
+          cn: "每天",
+          s: 0,
+          w: [
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["every day 是表示频率的时间状语"],
+        },
+        {
+          o: 83,
+          en: "I don't have to do it every day",
+          cn: "我不必每天做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "every day", r: "状语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["every day 作时间状语置于句末", "don't have to + 动词原形表示不必"],
+        },
+        {
+          o: 84,
+          en: "all the day",
+          cn: "一整天",
+          s: 0,
+          w: [
+            { t: "all", p: "形容词" },
+            { t: "the", p: "冠词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["all the day 表示“一整天”，作时间状语"],
+        },
+        {
+          o: 85,
+          en: "I don't have to do it all the day",
+          cn: "我不必一整天做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "all", p: "形容词" },
+            { t: "the", p: "冠词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "all the day", r: "状语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["all the day 作时间状语置于句末", "don't have to + 动词原形"],
+        },
+        {
+          o: 86,
+          en: "to eat the food",
+          cn: "吃这个食物",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语 to eat the food"],
+        },
+        {
+          o: 87,
+          en: "I have to eat the food",
+          cn: "我必须吃这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to eat", r: "谓语", k: "动词短语" },
+            { t: "the food", r: "宾语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to = 必须，后接动词原形", "the food 作宾语"],
+        },
+        {
+          o: 88,
+          en: "I don't have to eat the food",
+          cn: "我不必吃这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't have to eat", r: "谓语", k: "动词短语" },
+            { t: "the food", r: "宾语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to 的否定用 don't have to", "don't have to 表示“不必”"],
+        },
+        {
+          o: 89,
+          en: "today",
+          cn: "今天",
+          s: 0,
+          w: [{ t: "today", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["today 表示“今天”，可作时间状语"],
+        },
+        {
+          o: 90,
+          en: "I don't have to eat the food today",
+          cn: "我今天不必吃这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+            { t: "today", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't have to eat", r: "谓语", k: "动词短语" },
+            { t: "the food", r: "宾语", k: "名词短语" },
+            { t: "today", r: "状语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["today 作时间状语置于句末", "don't have to + 动词原形"],
+        },
+        {
+          o: 91,
+          en: "tomorrow",
+          cn: "明天",
+          s: 0,
+          w: [{ t: "tomorrow", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["时间副词：明天"],
+        },
+        {
+          o: 92,
+          en: "I have to eat the food tomorrow",
+          cn: "我明天必须吃这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+            { t: "tomorrow", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to eat", r: "谓语", k: "动词短语" },
+            { t: "the food", r: "宾语", k: "名词短语" },
+            { t: "tomorrow", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to 表示“必须”", "tomorrow 作时间状语"],
+        },
+        {
+          o: 93,
+          en: "to be here",
+          cn: "在这里",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语 to be here"],
+        },
+        {
+          o: 94,
+          en: "I have to be here",
+          cn: "我必须在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to be", r: "谓语", k: "动词短语" },
+            { t: "here", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 状语",
+          pt: "S + V + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to be 表示“必须在”", "here 作地点状语"],
+        },
+        {
+          o: 95,
+          en: "I have to be here today",
+          cn: "我今天必须在这里",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+            { t: "today", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to be", r: "谓语", k: "动词短语" },
+            { t: "here", r: "状语", k: "副词短语" },
+            { t: "today", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 状语",
+          pt: "S + V + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["today 作时间状语", "here 作地点状语"],
+        },
+        {
+          o: 96,
+          en: "to do it",
+          cn: "做这件事情",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语 to do it"],
+        },
+        {
+          o: 97,
+          en: "I like",
+          cn: "我喜欢",
+          s: 0,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "like", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["主谓片段，句意不完整"],
+        },
+        {
+          o: 98,
+          en: "I like to do it",
+          cn: "我喜欢做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "like", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "like", r: "谓语", k: "单词" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["like to do sth 表示喜欢做某事"],
+        },
+        {
+          o: 99,
+          en: "I want",
+          cn: "我想要",
+          s: 0,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["主谓片段，句意不完整"],
+        },
+        {
+          o: 100,
+          en: "I want to do it",
+          cn: "我想要做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "单词" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want to do sth 表示想要做某事"],
+        },
+        {
+          o: 101,
+          en: "I need",
+          cn: "我需要",
+          s: 0,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 102,
+          en: "I need to do it",
+          cn: "我需要做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "need", r: "谓语", k: "动词短语" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["need to do sth 需要做某事"],
+        },
+        {
+          o: 103,
+          en: "I have to do it",
+          cn: "我必须做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to 不得不；必须"],
+        },
+        {
+          o: 104,
+          en: "to know",
+          cn: "知道；认识",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "know", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["know 知道；认识"],
+        },
+        {
+          o: 105,
+          en: "you",
+          cn: "你",
+          s: 0,
+          w: [{ t: "you", p: "代词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 106,
+          en: "to know you",
+          cn: "认识你",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "know", p: "动词" },
+            { t: "you", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 107,
+          en: "I want to know you",
+          cn: "我想要认识你",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "know", p: "动词" },
+            { t: "you", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "动词短语" },
+            { t: "to know you", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want to do sth 想要做某事"],
+        },
+        {
+          o: 108,
+          en: "soon",
+          cn: "尽快",
+          s: 0,
+          w: [{ t: "soon", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["soon 很快；尽快"],
+        },
+        {
+          o: 109,
+          en: "I want to know you soon",
+          cn: "我想要尽快认识你",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "know", p: "动词" },
+            { t: "you", p: "代词" },
+            { t: "soon", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "动词短语" },
+            { t: "to know you", r: "宾语", k: "不定式短语" },
+            { t: "soon", r: "状语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want to do sth 想要做某事", "soon 作时间状语"],
+        },
+        {
+          o: 110,
+          en: "to see",
+          cn: "见到",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 111,
+          en: "to see you",
+          cn: "见到你",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+            { t: "you", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语", "see sb. 表示看见某人"],
+        },
+        {
+          o: 112,
+          en: "I have to see you",
+          cn: "我必须见到你",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+            { t: "you", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to see", r: "谓语", k: "动词短语" },
+            { t: "you", r: "宾语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to 表示必须", "see you 见面"],
+        },
+        {
+          o: 113,
+          en: "tonight",
+          cn: "今晚",
+          s: 0,
+          w: [{ t: "tonight", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["时间副词", "今晚"],
+        },
+        {
+          o: 114,
+          en: "I have to see you tonight",
+          cn: "我今晚必须见到你",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+            { t: "you", p: "代词" },
+            { t: "tonight", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to see", r: "谓语", k: "动词短语" },
+            { t: "you", r: "宾语", k: "单词" },
+            { t: "tonight", r: "状语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to 表示必须", "tonight 作时间状语"],
+        },
+        {
+          o: 115,
+          en: "to tell",
+          cn: "告诉",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "tell", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语", "tell 告诉"],
+        },
+        {
+          o: 116,
+          en: "you",
+          cn: "你",
+          s: 0,
+          w: [{ t: "you", p: "代词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["人称代词宾格", "你"],
+        },
+        {
+          o: 117,
+          en: "to tell you",
+          cn: "告诉你",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "tell", p: "动词" },
+            { t: "you", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语", "tell sb. 告诉某人"],
+        },
+        {
+          o: 118,
+          en: "I need to tell you",
+          cn: "我需要告诉你",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "tell", p: "动词" },
+            { t: "you", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "need to tell", r: "谓语", k: "动词短语" },
+            { t: "you", r: "宾语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["need to do 表示需要做某事", "tell you 告诉你"],
+        },
+        {
+          o: 119,
+          en: "something",
+          cn: "某物；某些事情",
+          s: 0,
+          w: [{ t: "something", p: "代词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定代词", "某事；某物"],
+        },
+        {
+          o: 120,
+          en: "important",
+          cn: "重要的",
+          s: 0,
+          w: [{ t: "important", p: "形容词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["形容词", "重要的"],
+        },
+        {
+          o: 121,
+          en: "something important",
+          cn: "重要的某些事情",
+          s: 0,
+          w: [
+            { t: "something", p: "代词" },
+            { t: "important", p: "形容词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["形容词修饰不定代词需后置"],
+        },
+        {
+          o: 122,
+          en: "I need to tell you something",
+          cn: "我需要告诉你某些事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "tell", p: "动词" },
+            { t: "you", p: "代词" },
+            { t: "something", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "need to tell", r: "谓语", k: "动词短语" },
+            { t: "you", r: "宾语", k: "单词" },
+            { t: "something", r: "宾语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 间接宾语 + 直接宾语",
+          pt: "S + V + IO + DO",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["need to do sth 需要做某事", "tell sb sth 告诉某人某事"],
+        },
+        {
+          o: 123,
+          en: "I need to tell you something important",
+          cn: "我需要告诉你重要的某些事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "tell", p: "动词" },
+            { t: "you", p: "代词" },
+            { t: "something", p: "代词" },
+            { t: "important", p: "形容词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "need to tell", r: "谓语", k: "动词短语" },
+            { t: "you", r: "宾语", k: "单词" },
+            { t: "something important", r: "宾语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 间接宾语 + 直接宾语",
+          pt: "S + V + IO + DO",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["tell sb sth 双宾语结构", "形容词修饰不定代词需后置"],
+        },
+        {
+          o: 124,
+          en: "it",
+          cn: "它；这件事情",
+          s: 0,
+          w: [{ t: "it", p: "代词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 125,
+          en: "It is important",
+          cn: "它是重要的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "important", r: "表语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 表语",
+          pt: "S + V + P",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It is + adj 主系表结构"],
+        },
+        {
+          o: 126,
+          en: "very",
+          cn: "非常",
+          s: 0,
+          w: [{ t: "very", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 127,
+          en: "It is very important",
+          cn: "它是非常重要的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "very", p: "副词" },
+            { t: "important", p: "形容词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "very important", r: "表语", k: "形容词短语" },
+          ],
+          st: "主语 + 谓语 + 表语",
+          pt: "S + V + P",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["very 修饰形容词", "It is + adj 主系表结构"],
+        },
+        {
+          o: 128,
+          en: "me",
+          cn: "我",
+          s: 0,
+          w: [{ t: "me", p: "代词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 129,
+          en: "for me",
+          cn: "对我来说",
+          s: 0,
+          w: [
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["for sb 表示对某人而言"],
+        },
+        {
+          o: 130,
+          en: "It is important for me",
+          cn: "对我来说它是重要的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "important", r: "表语", k: "单词" },
+            { t: "for me", r: "状语", k: "介词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It is + adj + for sb 句型", "for me 作状语"],
+        },
+        {
+          o: 131,
+          en: "It is very important for me",
+          cn: "对我来说它是非常重要的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "very", p: "副词" },
+            { t: "important", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "very important", r: "表语", k: "形容词短语" },
+            { t: "for me", r: "状语", k: "介词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It 作主语", "for me 作状语"],
+        },
+        {
+          o: 132,
+          en: "to do it",
+          cn: "做这件事情",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 133,
+          en: "It is important to do it",
+          cn: "做这件事情（它）是重要的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "important", r: "表语", k: "单词" },
+            { t: "to do it", r: "主语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It 作形式主语", "不定式 to do it 为真正主语"],
+        },
+        {
+          o: 134,
+          en: "to be here",
+          cn: "在这里；来到这里",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 135,
+          en: "It is important to be here",
+          cn: "来到这里（它）是重要的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "important", r: "表语", k: "单词" },
+            { t: "to be here", r: "主语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It 作形式主语", "不定式 to be here 为真正主语"],
+        },
+        {
+          o: 136,
+          en: "to eat the food",
+          cn: "吃这个食物",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 137,
+          en: "It is important to eat the food",
+          cn: "吃这个食物（它）是重要的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "important", r: "表语", k: "单词" },
+            { t: "to eat the food", r: "主语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It 作形式主语", "不定式 to eat the food 为真正主语"],
+        },
+        {
+          o: 138,
+          en: "impossible",
+          cn: "不可能的",
+          s: 0,
+          w: [{ t: "impossible", p: "形容词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 139,
+          en: "It is impossible",
+          cn: "它是不可能的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "impossible", p: "形容词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "impossible", r: "表语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 表语",
+          pt: "S + V + P",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["主系表结构", "impossible 作表语"],
+        },
+        {
+          o: 140,
+          en: "to do it",
+          cn: "做这件事情",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 141,
+          en: "It is impossible to do it",
+          cn: "做这件事情（它）是不可能的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "impossible", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is impossible", r: "谓语", k: "形容词短语" },
+            { t: "to do it", r: "主语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It作形式主语", "不定式短语作真正主语"],
+        },
+        {
+          o: 142,
+          en: "It is impossible to do it now",
+          cn: "现在做这件事情（它）是不可能的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "impossible", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is impossible", r: "谓语", k: "形容词短语" },
+            { t: "to do it", r: "主语", k: "不定式短语" },
+            { t: "now", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It作形式主语", "now作时间状语"],
+        },
+        {
+          o: 143,
+          en: "for me",
+          cn: "对我来说",
+          s: 0,
+          w: [
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["介词短语"],
+        },
+        {
+          o: 144,
+          en: "It is impossible for me",
+          cn: "对我来说它是不可能的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "impossible", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is impossible", r: "谓语", k: "形容词短语" },
+            { t: "for me", r: "状语", k: "介词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["for me作状语", "It指代不确定的事情"],
+        },
+        {
+          o: 145,
+          en: "good",
+          cn: "好的",
+          s: 0,
+          w: [{ t: "good", p: "形容词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["形容词"],
+        },
+        {
+          o: 146,
+          en: "It is good",
+          cn: "它是好的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "good", p: "形容词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "good", r: "表语", k: "形容词短语" },
+          ],
+          st: "主语 + 谓语 + 表语",
+          pt: "S + V + P",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["主系表结构", "good作表语"],
+        },
+        {
+          o: 147,
+          en: "to be here",
+          cn: "在这里；来到这里",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语"],
+        },
+        {
+          o: 148,
+          en: "It is good to be here",
+          cn: "来到这里（它）是好的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "good", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is good", r: "谓语", k: "形容词短语" },
+            { t: "to be here", r: "主语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It作形式主语", "不定式短语作真正主语"],
+        },
+        {
+          o: 149,
+          en: "It is very good to be here",
+          cn: "来到这里（它）是非常好的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "very", p: "副词" },
+            { t: "good", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is very good", r: "谓语", k: "形容词短语" },
+            { t: "to be here", r: "主语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It作形式主语", "very修饰good"],
+        },
+        {
+          o: 150,
+          en: "to see you",
+          cn: "见到你",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+            { t: "you", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语"],
+        },
+        {
+          o: 151,
+          en: "It is very good to see you",
+          cn: "见到你（它）是非常好的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "very", p: "副词" },
+            { t: "good", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+            { t: "you", p: "代词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "very good", r: "表语", k: "形容词短语" },
+            { t: "to see you", r: "主语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It 作形式主语，真正主语是 to see you", "句型：It is + adj + to do sth"],
+        },
+        {
+          o: 152,
+          en: "every day",
+          cn: "每天",
+          s: 0,
+          w: [
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["时间短语：每天"],
+        },
+        {
+          o: 153,
+          en: "It is very good to see you every day",
+          cn: "每天见到你（它）是非常好的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "very", p: "副词" },
+            { t: "good", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+            { t: "you", p: "代词" },
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "very good", r: "表语", k: "形容词短语" },
+            { t: "to see you", r: "主语", k: "不定式短语" },
+            { t: "every day", r: "状语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It 作形式主语，真正主语是 to see you", "every day 作时间状语"],
+        },
+        {
+          o: 154,
+          en: "possible",
+          cn: "可能的",
+          s: 0,
+          w: [{ t: "possible", p: "形容词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["形容词：可能的"],
+        },
+        {
+          o: 155,
+          en: "It is possible",
+          cn: "它是可能的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "possible", p: "形容词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "possible", r: "表语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 表语",
+          pt: "S + V + P",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It 作形式主语", "主系表结构：It is + adj"],
+        },
+        {
+          o: 156,
+          en: "to see you",
+          cn: "见到你",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+            { t: "you", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语：to see you"],
+        },
+        {
+          o: 157,
+          en: "It is possible to see you",
+          cn: "见到你（它）是可能的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "possible", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+            { t: "you", p: "代词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "possible", r: "表语", k: "单词" },
+            { t: "to see you", r: "主语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It 作形式主语，真正主语是 to see you", "句型：It is + adj + to do sth"],
+        },
+        {
+          o: 158,
+          en: "every day",
+          cn: "每天",
+          s: 0,
+          w: [
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["时间短语：每天"],
+        },
+        {
+          o: 159,
+          en: "It is possible to see you every day",
+          cn: "每天见到你（它）是可能的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "possible", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+            { t: "you", p: "代词" },
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "possible", r: "表语", k: "单词" },
+            { t: "to see you", r: "主语", k: "不定式短语" },
+            { t: "every day", r: "状语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It 作形式主语，真正主语是 to see you", "every day 作时间状语"],
+        },
+        {
+          o: 160,
+          en: "impossible",
+          cn: "不可能的",
+          s: 0,
+          w: [{ t: "impossible", p: "形容词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["形容词：不可能的"],
+        },
+        {
+          o: 161,
+          en: "It is impossible to see you every day",
+          cn: "每天见到你（它）是不可能的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "impossible", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+            { t: "you", p: "代词" },
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "impossible", r: "表语", k: "形容词短语" },
+            { t: "to see you every day", r: "主语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 表语",
+          pt: "S + V + P",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It作形式主语", "不定式短语作真正主语"],
+        },
+        {
+          o: 162,
+          en: "to know",
+          cn: "知道；认识",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "know", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 163,
+          en: "I want to know",
+          cn: "我想要知道",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "know", p: "动词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "动词短语" },
+            { t: "to know", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want后接不定式作宾语"],
+        },
+        {
+          o: 164,
+          en: "if",
+          cn: "是否",
+          s: 0,
+          w: [{ t: "if", p: "连词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 165,
+          en: "I want to know if it is possible",
+          cn: "我想要知道是否它是可能的",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "know", p: "动词" },
+            { t: "if", p: "连词" },
+            { t: "it", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "possible", p: "形容词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "动词短语" },
+            { t: "to know", r: "宾语", k: "不定式短语" },
+            { t: "if it is possible", r: "宾语", k: "从句" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 从句",
+          pt: "S + V + O + Clause",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "复合句",
+          kp: ["if引导宾语从句", "if意为“是否”"],
+        },
+        {
+          o: 166,
+          en: "It is important",
+          cn: "它是重要的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "important", r: "表语", k: "形容词短语" },
+          ],
+          st: "主语 + 谓语 + 表语",
+          pt: "S + V + P",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["主系表结构", "It作形式主语"],
+        },
+        {
+          o: 167,
+          en: "I want to know if it is important",
+          cn: "我想要知道是否它是重要的",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "know", p: "动词" },
+            { t: "if", p: "连词" },
+            { t: "it", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "动词短语" },
+            { t: "to know", r: "宾语", k: "不定式短语" },
+            { t: "if it is important", r: "宾语", k: "从句" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 从句",
+          pt: "S + V + O + Clause",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "复合句",
+          kp: ["if引导宾语从句", "if意为“是否”"],
+        },
+        {
+          o: 168,
+          en: "for me",
+          cn: "对我来说",
+          s: 0,
+          w: [
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 169,
+          en: "It is important for me",
+          cn: "对我来说它是重要的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "important", r: "表语", k: "形容词短语" },
+            { t: "for me", r: "状语", k: "介词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It作形式主语", "for me作状语"],
+        },
+        {
+          o: 170,
+          en: "have to do",
+          cn: "必须做",
+          s: 0,
+          w: [
+            { t: "have", p: "情态动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 171,
+          en: "I have to do it",
+          cn: "我必须做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to do 表示必须做", "it 指代这件事"],
+        },
+        {
+          o: 172,
+          en: "I have to do it today",
+          cn: "我今天必须做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "today", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "today", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to do 表示必须做", "today 作时间状语"],
+        },
+        {
+          o: 173,
+          en: "so",
+          cn: "所以",
+          s: 0,
+          w: [{ t: "so", p: "连词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["并列连词，表示所以"],
+        },
+        {
+          o: 174,
+          en: "It is important for me so I have to do it",
+          cn: "它是重要的对我来说所以我必须做这件事",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+            { t: "so", p: "连词" },
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "important", r: "表语", k: "形容词短语" },
+            { t: "for me", r: "状语", k: "介词短语" },
+            { t: "so", r: "连接词", k: "单词" },
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语",
+          pt: "S + V + P + Adv + conj + S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "并列句",
+          kp: ["so 连接两个并列分句", "for me 表示对我来说"],
+        },
+        {
+          o: 175,
+          en: "It is important for me so I have to do it today",
+          cn: "它是重要的对我来说所以我今天必须做这件事",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+            { t: "so", p: "连词" },
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "today", p: "副词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "important", r: "表语", k: "形容词短语" },
+            { t: "for me", r: "状语", k: "介词短语" },
+            { t: "so", r: "连接词", k: "单词" },
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "today", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + P + Adv + conj + S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "并列句",
+          kp: ["so 连接两个并列分句", "today 作时间状语"],
+        },
+        {
+          o: 176,
+          en: "every day",
+          cn: "每天",
+          s: 0,
+          w: [
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["时间状语，表示每天"],
+        },
+        {
+          o: 177,
+          en: "It is important for me so I have to do it every day",
+          cn: "它是重要的对我来说所以我必须每天做这件事",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+            { t: "so", p: "连词" },
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "important", r: "表语", k: "形容词短语" },
+            { t: "for me", r: "状语", k: "介词短语" },
+            { t: "so", r: "连接词", k: "单词" },
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "every day", r: "状语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + P + Adv + conj + S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "并列句",
+          kp: ["so 连接两个并列分句", "every day 作时间状语"],
+        },
+        {
+          o: 178,
+          en: "very",
+          cn: "非常",
+          s: 0,
+          w: [{ t: "very", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["副词，表示非常"],
+        },
+        {
+          o: 179,
+          en: "It is very important for me so I have to do it every day",
+          cn: "它是非常重要的对我来说所以我必须每天做这件事",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "very", p: "副词" },
+            { t: "important", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+            { t: "so", p: "连词" },
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "单词" },
+            { t: "very important", r: "表语", k: "形容词短语" },
+            { t: "for me", r: "状语", k: "介词短语" },
+            { t: "so", r: "连接词", k: "单词" },
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "every day", r: "状语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + P + Adv + conj + S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "并列句",
+          kp: ["very 修饰形容词 important", "so 连接两个并列分句"],
+        },
+        {
+          o: 180,
+          en: "now",
+          cn: "现在",
+          s: 0,
+          w: [{ t: "now", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["副词，表示现在"],
+        },
+        {
+          o: 181,
+          en: "It is very important for me so I have to do it now",
+          cn: "它是非常重要的对我来说所以我必须现在做这件事",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "very", p: "副词" },
+            { t: "important", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+            { t: "so", p: "连词" },
+            { t: "I", p: "代词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "very important", r: "表语", k: "形容词短语" },
+            { t: "for me", r: "状语", k: "介词短语" },
+            { t: "so", r: "连接词", k: "单词" },
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "now", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + P + Adv + conj + S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "并列句",
+          kp: ["so 连接两个并列分句", "have to 表示“必须”"],
+        },
+        {
+          o: 182,
+          en: "not important",
+          cn: "不重要的",
+          s: 0,
+          w: [
+            { t: "not", p: "副词" },
+            { t: "important", p: "形容词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 183,
+          en: "It is not important",
+          cn: "它是不重要的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "not", p: "副词" },
+            { t: "important", p: "形容词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "not important", r: "表语", k: "形容词短语" },
+          ],
+          st: "主语 + 谓语 + 表语",
+          pt: "S + V + P",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It is + adj 结构", "否定词 not 置于 be 之后"],
+        },
+        {
+          o: 184,
+          en: "It is not important for me",
+          cn: "它是不重要的对我来说",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "not", p: "副词" },
+            { t: "important", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "not important", r: "表语", k: "形容词短语" },
+            { t: "for me", r: "状语", k: "介词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["for me 表示“对我来说”", "It is + adj + for sb 结构"],
+        },
+        {
+          o: 185,
+          en: "don't have to do",
+          cn: "不必做",
+          s: 0,
+          w: [
+            { t: "don't", p: "助动词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 186,
+          en: "I don't have to do it",
+          cn: "我不必做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't have to 表示“不必”", "do it 指代做某事"],
+        },
+        {
+          o: 187,
+          en: "now",
+          cn: "现在",
+          s: 0,
+          w: [{ t: "now", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 188,
+          en: "I don't have to do it now",
+          cn: "我现在不必做这件事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "now", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["don't have to 表示“不必”", "now 作时间状语"],
+        },
+        {
+          o: 189,
+          en: "so",
+          cn: "所以",
+          s: 0,
+          w: [{ t: "so", p: "连词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: [],
+        },
+        {
+          o: 190,
+          en: "It is not important for me so I don't have to do it now",
+          cn: "它不是重要的对我来说所以我不必现在做这件事情",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "not", p: "副词" },
+            { t: "important", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+            { t: "so", p: "连词" },
+            { t: "I", p: "代词" },
+            { t: "don't", p: "助动词" },
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "not important", r: "表语", k: "形容词短语" },
+            { t: "for me", r: "状语", k: "介词短语" },
+            { t: "so", r: "连接词", k: "单词" },
+            { t: "I", r: "主语", k: "单词" },
+            { t: "don't have to do", r: "谓语", k: "动词短语" },
+            { t: "it", r: "宾语", k: "单词" },
+            { t: "now", r: "状语", k: "副词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + P + Adv + conj + S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "并列句",
+          kp: ["so 连接两个并列分句", "don't have to 表示“不必”"],
+        },
+        {
+          o: 191,
+          en: "I like to eat the food",
+          cn: "我喜欢吃这个食物",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "like", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "like", r: "谓语", k: "动词短语" },
+            { t: "to eat the food", r: "宾语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 宾语",
+          pt: "S + V + O",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["like to do sth 喜欢做某事"],
+        },
+        {
+          o: 192,
+          en: "I want to do it today",
+          cn: "我想要今天做这件事",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "today", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "want", r: "谓语", k: "动词短语" },
+            { t: "to do it", r: "宾语", k: "不定式短语" },
+            { t: "today", r: "状语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["want to do sth 想要做某事", "today 作时间状语"],
+        },
+        {
+          o: 193,
+          en: "I need to tell you something important",
+          cn: "我需要告诉你重要的某些事情",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "tell", p: "动词" },
+            { t: "you", p: "代词" },
+            { t: "something", p: "代词" },
+            { t: "important", p: "形容词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "need to tell", r: "谓语", k: "动词短语" },
+            { t: "you", r: "宾语", k: "单词" },
+            { t: "something important", r: "宾语", k: "名词短语" },
+          ],
+          st: "主语 + 谓语 + 间接宾语 + 直接宾语",
+          pt: "S + V + IO + DO",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["need to do sth 需要做某事", "tell sb sth 告诉某人某事"],
+        },
+        {
+          o: 194,
+          en: "I have to know you soon",
+          cn: "我必须尽快认识你",
+          s: 1,
+          w: [
+            { t: "I", p: "代词" },
+            { t: "have", p: "助动词" },
+            { t: "to", p: "不定式" },
+            { t: "know", p: "动词" },
+            { t: "you", p: "代词" },
+            { t: "soon", p: "副词" },
+          ],
+          ph: [
+            { t: "I", r: "主语", k: "单词" },
+            { t: "have to know", r: "谓语", k: "动词短语" },
+            { t: "you", r: "宾语", k: "单词" },
+            { t: "soon", r: "状语", k: "单词" },
+          ],
+          st: "主语 + 谓语 + 宾语 + 状语",
+          pt: "S + V + O + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["have to do sth 不得不做某事", "soon 作时间状语"],
+        },
+        {
+          o: 195,
+          en: "It is good to be here",
+          cn: "来到这里（它）是好的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "good", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "good", r: "表语", k: "形容词短语" },
+            { t: "to be here", r: "主语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It is + adj + to do sth 句型", "it 作形式主语"],
+        },
+        {
+          o: 196,
+          en: "It is important for me",
+          cn: "它是重要的对我来说",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "important", p: "形容词" },
+            { t: "for", p: "介词" },
+            { t: "me", p: "代词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "important", r: "表语", k: "形容词短语" },
+            { t: "for me", r: "状语", k: "介词短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It is + adj + for sb 句型", "for me 作状语"],
+        },
+        {
+          o: 197,
+          en: "It is impossible to do it now",
+          cn: "现在做这件事情（它）是不可能的",
+          s: 1,
+          w: [
+            { t: "It", p: "代词" },
+            { t: "is", p: "动词" },
+            { t: "impossible", p: "形容词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+            { t: "it", p: "代词" },
+            { t: "now", p: "副词" },
+          ],
+          ph: [
+            { t: "It", r: "主语", k: "单词" },
+            { t: "is", r: "谓语", k: "动词短语" },
+            { t: "impossible", r: "表语", k: "形容词短语" },
+            { t: "to do it now", r: "主语", k: "不定式短语" },
+          ],
+          st: "主语 + 谓语 + 表语 + 状语",
+          pt: "S + V + P + Adv",
+          te: "一般现在时",
+          ty: "陈述句",
+          cl: "简单句",
+          kp: ["It is + adj + to do sth 句型", "it 作形式主语"],
+        },
+        {
+          o: 198,
+          en: "like to do",
+          cn: "喜欢做",
+          s: 0,
+          w: [
+            { t: "like", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["like to do sth 喜欢做某事"],
+        },
+        {
+          o: 199,
+          en: "need to do",
+          cn: "需要做",
+          s: 0,
+          w: [
+            { t: "need", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["need to do sth 需要做某事"],
+        },
+        {
+          o: 200,
+          en: "want to do",
+          cn: "想要做",
+          s: 0,
+          w: [
+            { t: "want", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["want to do sth 想要做某事"],
+        },
+        {
+          o: 201,
+          en: "have to do",
+          cn: "必须做",
+          s: 0,
+          w: [
+            { t: "have", p: "动词" },
+            { t: "to", p: "不定式" },
+            { t: "do", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["have to 表示必须", "后接动词原形"],
+        },
+        {
+          o: 202,
+          en: "to eat",
+          cn: "吃",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "eat", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语", "表示“吃”"],
+        },
+        {
+          o: 203,
+          en: "to know",
+          cn: "知道；认识",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "know", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语", "表示“知道/认识”"],
+        },
+        {
+          o: 204,
+          en: "to be here",
+          cn: "在这里",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "be", p: "动词" },
+            { t: "here", p: "副词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语", "表示“在这里”"],
+        },
+        {
+          o: 205,
+          en: "to see",
+          cn: "见到",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "see", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语", "表示“见到”"],
+        },
+        {
+          o: 206,
+          en: "to tell",
+          cn: "告诉",
+          s: 0,
+          w: [
+            { t: "to", p: "不定式" },
+            { t: "tell", p: "动词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定式短语", "表示“告诉”"],
+        },
+        {
+          o: 207,
+          en: "you",
+          cn: "你",
+          s: 0,
+          w: [{ t: "you", p: "代词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["人称代词", "意为“你/你们”"],
+        },
+        {
+          o: 208,
+          en: "me",
+          cn: "我",
+          s: 0,
+          w: [{ t: "me", p: "代词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["人称代词宾格", "意为“我”"],
+        },
+        {
+          o: 209,
+          en: "something",
+          cn: "某物；某些事情",
+          s: 0,
+          w: [{ t: "something", p: "代词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["不定代词", "意为“某物/某事”"],
+        },
+        {
+          o: 210,
+          en: "good",
+          cn: "好的",
+          s: 0,
+          w: [{ t: "good", p: "形容词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["形容词", "意为“好的”"],
+        },
+        {
+          o: 211,
+          en: "possible",
+          cn: "可能的",
+          s: 0,
+          w: [{ t: "possible", p: "形容词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["形容词：可能的"],
+        },
+        {
+          o: 212,
+          en: "impossible",
+          cn: "不可能的",
+          s: 0,
+          w: [{ t: "impossible", p: "形容词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["形容词：不可能的，im-否定前缀"],
+        },
+        {
+          o: 213,
+          en: "important",
+          cn: "重要的",
+          s: 0,
+          w: [{ t: "important", p: "形容词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["形容词：重要的"],
+        },
+        {
+          o: 214,
+          en: "the food",
+          cn: "这个食物",
+          s: 0,
+          w: [
+            { t: "the", p: "冠词" },
+            { t: "food", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["名词短语：这个食物"],
+        },
+        {
+          o: 215,
+          en: "here",
+          cn: "这里",
+          s: 0,
+          w: [{ t: "here", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["副词：这里，表地点"],
+        },
+        {
+          o: 216,
+          en: "today",
+          cn: "今天",
+          s: 0,
+          w: [{ t: "today", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["副词：今天，表时间"],
+        },
+        {
+          o: 217,
+          en: "now",
+          cn: "现在",
+          s: 0,
+          w: [{ t: "now", p: "副词" }],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["副词：现在，表时间"],
+        },
+        {
+          o: 218,
+          en: "every day",
+          cn: "每天",
+          s: 0,
+          w: [
+            { t: "every", p: "形容词" },
+            { t: "day", p: "名词" },
+          ],
+          ph: [],
+          st: "",
+          pt: "",
+          te: "",
+          ty: "",
+          cl: "",
+          kp: ["时间状语短语：每天"],
+        },
+      ];
+
+      /* 成分 → 实心色。白字对比度已用 scripts/ew-contrast.py 实算, 全部 >= 4.5:1 */
+      const ROLE_COLOR = {
+        主语: "#7C3AED",
+        谓语: "#2563EB",
+        宾语: "#047857",
+        表语: "#0E7490",
+        状语: "#C2410C",
+        定语: "#BE185D",
+        连接词: "#475569",
+      };
+      const DEFAULT_COLOR = "#475569";
+      const CONJ_ROLE = "连接词";
+
+      const opts = { clause: true, pos: true, cards: true, cn: true };
+      let filter = "all";
+      let list = DATA.slice();
+      let cur = 0;
+      /* ── 把短语匹配到词序号（与 python 端 group_of 同一算法）────────────
+   必须按**起点排序**后再用：早先按「文本首次出现位置」排序会让 cursor 乱走、
+   重复输出已覆盖的词，一条 14 词的句子被渲染出 21 个词。*/
+      function toGroups(item) {
+        const words = item.w.map((x) => x.t);
+        const spans = [];
+        for (const p of item.ph) {
+          const pt = p.t.split(" ");
+          for (let s = 0; s + pt.length <= words.length; s++) {
+            let ok = true;
+            for (let k = 0; k < pt.length; k++)
+              if (words[s + k] !== pt[k]) {
+                ok = false;
+                break;
+              }
+            if (!ok) continue;
+            if (spans.some((sp) => s < sp.e && s + pt.length > sp.b)) continue; // 与已有短语重叠
+            spans.push({ b: s, e: s + pt.length, p });
+            break;
+          }
+        }
+        spans.sort((a, b) => a.b - b.b);
+        return spans.map((sp) => ({
+          p: sp.p,
+          idx: Array.from({ length: sp.e - sp.b }, (_, i) => sp.b + i),
+        }));
+      }
+
+      /* 覆盖全部词的顺序单元（成分组 + 未被成分覆盖的散词） */
+      function toUnits(item, groups) {
+        const n = item.w.length,
+          units = [];
+        let c = 0;
+        for (const g of groups) {
+          while (c < g.idx[0]) {
+            units.push({ p: null, idx: [c] });
+            c++;
+          }
+          units.push(g);
+          c = g.idx[g.idx.length - 1] + 1;
+        }
+        while (c < n) {
+          units.push({ p: null, idx: [c] });
+          c++;
+        }
+        return units;
+      }
+
+      /* 按从句边界切行：连接词另起一行 → 长并列句不再被挤成多行 */
+      function toRows(units, clauseBreak) {
+        const rows = [];
+        let cur = [];
+        for (const u of units) {
+          if (clauseBreak && cur.length && u.p && u.p.r === CONJ_ROLE) {
+            rows.push(cur);
+            cur = [];
+          }
+          cur.push(u);
+        }
+        if (cur.length) rows.push(cur);
+        return rows;
+      }
+
+      function esc(s) {
+        return String(s).replace(
+          /[&<>"]/g,
+          (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c],
+        );
+      }
+
+      function render() {
+        const it = list[cur];
+        const isSent = !!it.s;
+        const groups = isSent ? toGroups(it) : [];
+        const units = isSent ? toUnits(it, groups) : it.w.map((_, i) => ({ p: null, idx: [i] }));
+        const rows = isSent ? toRows(units, opts.clause) : units.map((u) => [u]);
+
+        document.getElementById("cn").textContent = opts.cn ? it.cn : "";
+        document.getElementById("cn").style.display = opts.cn && it.cn ? "" : "none";
+        document.getElementById("en").textContent = it.en;
+        const kind = document.getElementById("kind");
+        kind.className = "badge " + (isSent ? "b-sent" : "b-frag");
+        kind.textContent = isSent ? "完整句" : "碎片 / 单词";
+
+        const out = [];
+        for (const row of rows) {
+          out.push('<div class="sent">');
+          for (const u of row) {
+            const color = u.p ? ROLE_COLOR[u.p.r] || DEFAULT_COLOR : "#475569";
+            const bare = u.p ? "" : " bare";
+            const cols = `repeat(${u.idx.length},auto)`;
+            const sub = u.p && u.p.k ? `<i>·${esc(u.p.k)}</i>` : "";
+            out.push(
+              `<div class="grp" data-c${u.p ? "" : "b"}="1" style="--c:${color};grid-template-columns:${cols}">`,
+            );
+            out.push(`<div class="cap">${u.p ? esc(u.p.r) + sub : ""}</div>`);
+            for (const i of u.idx) out.push(`<span class="w">${esc(it.w[i].t)}</span>`);
+            out.push(`<div class="bar2${bare}"></div>`);
+            if (opts.pos) {
+              for (const i of u.idx) {
+                const p = it.w[i].p;
+                out.push(`<span class="p${bare}">${p ? esc(p) : "&nbsp;"}</span>`);
+              }
+            }
+            out.push("</div>");
+          }
+          out.push("</div>");
+        }
+        const rowsEl = document.getElementById("rows");
+        rowsEl.innerHTML = out.join("");
+
+        /* 信息卡 */
+        const cards = [];
+        const card = opts.cards;
+        if (card && isSent) {
+          if (it.st)
+            cards.push(
+              `<div class="info c-blue"><div class="info-t">句子结构</div><div class="info-v">${esc(it.st)}</div>${it.pt ? `<span class="tag">${esc(it.pt)}</span>` : ""}</div>`,
+            );
+          if (it.te)
+            cards.push(
+              `<div class="info c-amber"><div class="info-t">时态</div><div class="info-v">${esc(it.te)}</div></div>`,
+            );
+          if (it.ty)
+            cards.push(
+              `<div class="info c-violet"><div class="info-t">句型</div><div class="info-v">${esc(it.ty)}</div>${it.cl ? `<span class="tag">${esc(it.cl)}</span>` : ""}</div>`,
+            );
+          if (it.kp && it.kp.length)
+            cards.push(
+              `<div class="info c-rose wide"><div class="info-t">语法要点</div><ul>${it.kp.map((k) => `<li>${esc(k)}</li>`).join("")}</ul></div>`,
+            );
+        } else if (card) {
+          cards.push(
+            `<div class="info wide" style="background:#F8FAFC;border-color:#E5E7EB;color:#94A3B8;font-size:12px;font-weight:600">碎片只显示逐词词性 —— 不显示成分胶囊 / 结构 / 时态</div>`,
+          );
+        }
+        document.getElementById("cards").innerHTML = cards.join("");
+
+        document.getElementById("pos").textContent =
+          `${cur + 1} / ${list.length}　（第 ${it.o} 句）`;
+        measure();
+      }
+
+      /* 实时测量: 面板可用宽 / 本句单行需要多少 px / 实际占几行。浏览器真实量的。*/
+      function measure() {
+        const rowsEl = document.getElementById("rows");
+        const avail = Math.round(rowsEl.getBoundingClientRect().width);
+        const sentRows = Array.from(rowsEl.querySelectorAll(":scope > .sent"));
+        let natural = 0,
+          wrap = 0;
+        for (const r of sentRows) {
+          const grps = Array.from(r.querySelectorAll(":scope > .grp"));
+          const sum = grps.reduce((a, g) => a + g.getBoundingClientRect().width, 0);
+          natural = Math.max(natural, Math.round(sum + Math.max(0, grps.length - 1) * 16));
+          const tops = new Set(grps.map((g) => Math.round(g.getBoundingClientRect().top)));
+          wrap += Math.max(0, tops.size - 1);
+        }
+        const totalLines = sentRows.length + wrap;
+        const m = document.getElementById("measure");
+        const fit = wrap === 0;
+        m.innerHTML =
+          `面板可用宽 <b>${avail}px</b> · 本句单行需 <b>${natural}px</b> · ` +
+          `实际 <b>${totalLines} 行</b>${sentRows.length > 1 ? `（从句断行 ${sentRows.length} 段）` : ""} ` +
+          `　<span class="badge ${fit ? "b-ok" : "b-warn"}">${fit ? "不折行 ✓" : `被迫折行 ${wrap} 次`}</span>`;
+      }
+
+      function applyFilter() {
+        const N = (it) => it.w.length;
+        if (filter === "frag") list = DATA.filter((x) => !x.s);
+        else if (filter === "short") list = DATA.filter((x) => x.s && N(x) <= 6);
+        else if (filter === "long") list = DATA.filter((x) => x.s && N(x) >= 10);
+        else list = DATA.slice();
+        cur = 0;
+        render();
+      }
+
+      /* 打开页面时落在一条**有代表性的完整句**上 —— 第 1 条是单词碎片 `I`, 上方没有任何胶囊,
+   用户打开会以为「怎么没有气泡」。挑第一条 4~6 词的完整句作默认。*/
+      function initialIndex() {
+        const i = DATA.findIndex((x) => x.s && x.w.length >= 4 && x.w.length <= 6);
+        return i >= 0 ? i : 0;
+      }
+
+      /* ── 事件 ─────────────────────────────────────────── */
+      document.getElementById("prev").onclick = () => {
+        cur = (cur - 1 + list.length) % list.length;
+        render();
+      };
+      document.getElementById("next").onclick = () => {
+        cur = (cur + 1) % list.length;
+        render();
+      };
+      document.getElementById("jumpLong").onclick = () => {
+        let best = 0;
+        list.forEach((x, i) => {
+          if (x.w.length > list[best].w.length) best = i;
+        });
+        cur = best;
+        render();
+      };
+      document.querySelectorAll("#filter button").forEach((b) => {
+        b.onclick = () => {
+          filter = b.dataset.f;
+          document
+            .querySelectorAll("#filter button")
+            .forEach((x) => x.setAttribute("aria-pressed", x === b ? "true" : "false"));
+          applyFilter();
+        };
+      });
+      document.querySelectorAll("#toggles button").forEach((b) => {
+        b.onclick = () => {
+          const k = b.dataset.t;
+          opts[k] = !opts[k];
+          b.setAttribute("aria-pressed", opts[k] ? "true" : "false");
+          render();
+        };
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") {
+          cur = (cur - 1 + list.length) % list.length;
+          render();
+        }
+        if (e.key === "ArrowRight") {
+          cur = (cur + 1) % list.length;
+          render();
+        }
+      });
+      window.addEventListener("resize", () => measure());
+
+      /* 图例 */
+      document.getElementById("legend").innerHTML =
+        '<span class="lg" style="margin-right:6px">成分配色</span>' +
+        Object.entries(ROLE_COLOR)
+          .map(([r, c]) => `<span class="lg"><span class="dot" style="--c:${c}"></span>${r}</span>`)
+          .join("");
+
+      document.querySelector('#filter button[data-f="all"]').setAttribute("aria-pressed", "true");
+      cur = initialIndex();
+      render();
+
+      /* 供外部自动化断言用（verify-effect-page.js）—— 只读暴露, 不改页面行为 */
+      window.__grammarPage = {
+        count: () => DATA.length,
+        raw: (i) => DATA[i],
+        goto: (i) => {
+          cur = i;
+          render();
+        },
+        setFilter: applyFilter,
+        text: () => ({
+          words: Array.from(document.querySelectorAll("#rows .w")).map((e) => e.textContent),
+          caps: Array.from(document.querySelectorAll("#rows .cap"))
+            .filter((e) => e.textContent.trim())
+            .map((e) => e.textContent),
+          rows: document.querySelectorAll("#rows > .sent").length,
+          measure: document.getElementById("measure").textContent,
+        }),
+      };
+    </script>
+  </body>
+</html>
