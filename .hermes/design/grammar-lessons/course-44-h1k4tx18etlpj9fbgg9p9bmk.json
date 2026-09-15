@@ -1,0 +1,8259 @@
+[
+  {
+    "order": 1,
+    "chinese": "问",
+    "english": "to ask",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“询问”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to ask",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "问题",
+    "english": "questions",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["questions 问题（复数）", "question 的复数形式"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "questions",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "questions",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "问问题",
+    "english": "to ask questions",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "questions",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to ask questions",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "时间",
+    "english": "time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "任何",
+    "english": "any",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：任何的；也可作代词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "any",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "any",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "任何时间",
+    "english": "any time",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：任何时候"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "any",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "any time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "在任何时间",
+    "english": "at any time",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at any time 任意时候"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "any",
+          "pos": "形容词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at any time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "随时提问",
+    "english": "to ask questions at any time",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at any time 时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "questions",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "any",
+          "pos": "形容词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to ask questions at any time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "随时提问(ing形式)",
+    "english": "asking questions at any time",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语 asking questions", "at any time 作时间状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "asking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "questions",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "any",
+          "pos": "形容词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "asking questions",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        },
+        {
+          "text": "at any time",
+          "role": null,
+          "roleType": null,
+          "start": 17,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "允许",
+    "english": "to permit",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["permit 允许；许可"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to permit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "老师",
+    "english": "the teacher",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语 the teacher"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "老师允许",
+    "english": "the teacher permits",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["permits 为第三人称单数形式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "老师允许随时提问",
+    "english": "the teacher permits asking questions at any time",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["permit doing sth 结构", "at any time 时间状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "asking",
+          "pos": "动名词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "questions",
+          "pos": "名词",
+          "start": 27,
+          "end": 36
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 37,
+          "end": 39
+        },
+        {
+          "text": "any",
+          "pos": "形容词",
+          "start": 40,
+          "end": 43
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 44,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "asking questions",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 36
+        },
+        {
+          "text": "at any time",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 37,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "家",
+    "english": "home",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["home 可作副词，意为“在家/回家”"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "从",
+    "english": "from",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["from 从；来自"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "from",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "从家里",
+    "english": "from home",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["from home 从家里"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "from home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "工作",
+    "english": "to work",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to + 动词原形", "表示目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to work",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "从家里工作",
+    "english": "to work from home",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["work from home 固定表达", "from home 作地点状语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to work from home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "周五",
+    "english": "Friday",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["专有名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "Friday",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Friday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "在周五",
+    "english": "on Friday",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["时间介词短语，在周五"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "Friday",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "on Friday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "在周五居家办公",
+    "english": "to work from home on Fridays",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["on Fridays 表频率的时间状语", "一般现在时习惯用法"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "Fridays",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to work from home on Fridays",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "在周五居家办公(ing形式)",
+    "english": "working from home on Fridays",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语，常表习惯性动作"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "working",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "Fridays",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "working from home on Fridays",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "允许",
+    "english": "to permit",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["permit 允许；许可"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to permit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "公司",
+    "english": "the company",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the company",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "公司允许",
+    "english": "the company permits",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["主谓片段，缺少宾语"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the company",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "公司允许在周五居家办公",
+    "english": "the company permits working from home on Fridays",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["动名词短语作宾语", "on Fridays 作时间状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "working",
+          "pos": "动名词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 38,
+          "end": 40
+        },
+        {
+          "text": "Fridays",
+          "pos": "名词",
+          "start": 41,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the company",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "working from home",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 37
+        },
+        {
+          "text": "on Fridays",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 38,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "音乐",
+    "english": "music",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "music",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "听",
+    "english": "to listen",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to listen",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "听音乐",
+    "english": "to listen to music",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "listen to music 听音乐"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to listen to music",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "打破",
+    "english": "to break",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "动词 break 原形"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "break",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to break",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "休息",
+    "english": "break",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词：打破，折断；名词：休息"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "break",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "break",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "在......期间",
+    "english": "during",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "during",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "在休息期间",
+    "english": "during the break",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "break",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "during the break",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "在休息期间听音乐",
+    "english": "to listen to music during the break",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "during the break 表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "break",
+          "pos": "名词",
+          "start": 30,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to listen to music",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "during the break",
+          "role": null,
+          "roleType": null,
+          "start": 19,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "在休息期间听音乐(ing形式)",
+    "english": "listening to music during the break",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语", "during the break 表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "listening",
+          "pos": "动名词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "break",
+          "pos": "名词",
+          "start": 30,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "listening to music",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "during the break",
+          "role": null,
+          "roleType": null,
+          "start": 19,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "允许",
+    "english": "to permit",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["permit 允许；许可"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to permit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "老师",
+    "english": "the teacher",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语 the teacher"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "老师允许",
+    "english": "the teacher permits",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["permits 为第三人称单数形式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "老师允许在休息期间听音乐",
+    "english": "the teacher permits listening to music during the break",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["permit doing sth 结构", "during the break 时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "listening",
+          "pos": "动名词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 33,
+          "end": 38
+        },
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 39,
+          "end": 45
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 46,
+          "end": 49
+        },
+        {
+          "text": "break",
+          "pos": "名词",
+          "start": 50,
+          "end": 55
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "listening to music",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 38
+        },
+        {
+          "text": "during the break",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 39,
+          "end": 55
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "玩",
+    "english": "to play",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["play 玩；打（球）；演奏"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to play",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "游戏",
+    "english": "games",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词复数：游戏"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "games",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "games",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "玩游戏",
+    "english": "to play games",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["play games 玩游戏"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "games",
+          "pos": "名词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to play games",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "玩游戏(ing形式)",
+    "english": "playing games",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语", "play games 玩游戏"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "games",
+          "pos": "名词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "playing games",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "听音乐(ing形式)",
+    "english": "listening to music",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语，可作主语或宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "listening",
+          "pos": "动名词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "listening to music",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "或者",
+    "english": "or",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["表示选择的并列连词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "or",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "听音乐或者玩游戏(ing形式)",
+    "english": "listening to music or playing games",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["由 or 连接两个动名词短语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "listening",
+          "pos": "动名词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "games",
+          "pos": "名词",
+          "start": 30,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "listening to music",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "or",
+          "role": null,
+          "roleType": null,
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "playing games",
+          "role": null,
+          "roleType": null,
+          "start": 22,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "老师允许在休息期间听音乐或者玩游戏",
+    "english": "the teacher permits listening to music or playing games during the break",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["or 连接两个并列动名词短语作宾语", "during the break 时间状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "listening",
+          "pos": "动名词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 33,
+          "end": 38
+        },
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 42,
+          "end": 49
+        },
+        {
+          "text": "games",
+          "pos": "名词",
+          "start": 50,
+          "end": 55
+        },
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 56,
+          "end": 62
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 63,
+          "end": 66
+        },
+        {
+          "text": "break",
+          "pos": "名词",
+          "start": 67,
+          "end": 72
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "listening to music",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 38
+        },
+        {
+          "text": "or",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "text": "playing games",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 42,
+          "end": 55
+        },
+        {
+          "text": "during the break",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 56,
+          "end": 72
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "在......期间",
+    "english": "during",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "during",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "测验",
+    "english": "test",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["test 测试；考试"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "test",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "在这个测验期间",
+    "english": "during the test",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "during the test",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "使用",
+    "english": "to use",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "use",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to use",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "计算器",
+    "english": "calculator",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：计算器"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "calculator",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "calculator",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "使用计算器",
+    "english": "to use calculators",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "use 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "use",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "calculators",
+          "pos": "名词",
+          "start": 7,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to use calculators",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "使用计算器(ing形式)",
+    "english": "using calculators",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["using 为动名词，后接名词作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "using",
+          "pos": "动名词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "calculators",
+          "pos": "名词",
+          "start": 6,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "using calculators",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "允许",
+    "english": "to permit",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["permit 允许；许可"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to permit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "老师允许",
+    "english": "the teacher permits",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["permits 为第三人称单数形式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "老师允许使用计算器",
+    "english": "the teacher permits using calculators",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["permit doing sth 允许做某事", "动名词短语作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "using",
+          "pos": "动名词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "calculators",
+          "pos": "名词",
+          "start": 26,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "using calculators",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "在这个测验期间",
+    "english": "during the test",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "during the test",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "老师允许在这个测验期间使用计算器",
+    "english": "the teacher permits using calculators during the test",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["permit doing sth 允许做某事", "during the test 在考试期间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "using",
+          "pos": "动名词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "calculators",
+          "pos": "名词",
+          "start": 26,
+          "end": 37
+        },
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 38,
+          "end": 44
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 49,
+          "end": 53
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "using calculators",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 37
+        },
+        {
+          "text": "during the test",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 38,
+          "end": 53
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "喝",
+    "english": "to drink",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "水",
+    "english": "water",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，水"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "喝水",
+    "english": "to drink water",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "测试",
+    "english": "test",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["test 测试；考试"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "test",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "血液",
+    "english": "blood",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：血，血液"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "blood",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "blood",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "血液测试",
+    "english": "the blood test",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语：血液化验"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "blood",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the blood test",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "在血液测试之前",
+    "english": "before the blood test",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before作介词接名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "blood",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 17,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the blood test",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "在血液测试之前喝水",
+    "english": "to drink water before the blood test",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "before 引导时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 15,
+          "end": 21
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "blood",
+          "pos": "名词",
+          "start": 26,
+          "end": 31
+        },
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 32,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "before the blood test",
+          "role": null,
+          "roleType": null,
+          "start": 15,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "在血液测试之前喝水(ing形式)",
+    "english": "drinking water before the blood test",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语 + 介词短语，表示抽血前喝水"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "drinking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 15,
+          "end": 21
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "blood",
+          "pos": "名词",
+          "start": 26,
+          "end": 31
+        },
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 32,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "drinking water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "before the blood test",
+          "role": null,
+          "roleType": null,
+          "start": 15,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "允许",
+    "english": "to permit",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["permit 允许；许可"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to permit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "医生",
+    "english": "the doctor",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the doctor",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "医生允许",
+    "english": "the doctor permits",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the doctor",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "医生允许喝水",
+    "english": "the doctor permits drinking water",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["permit doing sth 允许做某事", "动名词作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "drinking",
+          "pos": "动名词",
+          "start": 19,
+          "end": 27
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 28,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the doctor",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "drinking water",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 19,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "医生允许在血液测试之前喝水",
+    "english": "the doctor permits drinking water before the blood test",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["permit doing sth 允许做某事", "before 引导时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "drinking",
+          "pos": "动名词",
+          "start": 19,
+          "end": 27
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 34,
+          "end": 40
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "blood",
+          "pos": "名词",
+          "start": 45,
+          "end": 50
+        },
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 51,
+          "end": 55
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the doctor",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "drinking water",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 19,
+          "end": 33
+        },
+        {
+          "text": "before the blood test",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 34,
+          "end": 55
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "驾驶",
+    "english": "to drive",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "驾驶(ing形式)",
+    "english": "driving",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["drive 的动名词/现在分词形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "driving",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "driving",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "允许",
+    "english": "to permit",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["permit 允许；许可"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to permit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "政策",
+    "english": "policy",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "policy",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "policy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "政策允许",
+    "english": "the policy permits",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["缺少宾语，非完整句子", "permit 为及物动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "policy",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the policy permits",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "政策允许驾驶",
+    "english": "the policy permits driving",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["动名词 driving 作宾语", "主谓一致：the policy permits"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "policy",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "driving",
+          "pos": "动名词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the policy",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "driving",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "执照",
+    "english": "license",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：执照、许可证"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "有效的",
+    "english": "valid",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：有效的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "valid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "一个有效的执照",
+    "english": "a valid license",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["a valid license 一张有效执照"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a valid license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "拥有",
+    "english": "have",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "你拥有",
+    "english": "you have",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["you have 为不完整片段"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you have",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "你拥有一个有效的执照",
+    "english": "you have a valid license",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have 表示“有”", "valid 有效的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "a valid license",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "如果",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "如果你拥有一个有效的执照",
+    "english": "if you have a valid license",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if引导条件状语从句", "valid 作定语修饰 license"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you have a valid license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "政策允许驾驶",
+    "english": "the policy permits driving",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["动名词 driving 作宾语", "主谓一致：the policy permits"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "policy",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "driving",
+          "pos": "动名词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the policy",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "driving",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "政策允许开车如果你拥有一个有效的执照",
+    "english": "the policy permits driving if you have a valid license",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导条件状语从句", "主句与从句均用一般现在时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "policy",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "driving",
+          "pos": "动名词",
+          "start": 19,
+          "end": 26
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 39,
+          "end": 40
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 41,
+          "end": 46
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 47,
+          "end": 54
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the policy",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "driving",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 19,
+          "end": 26
+        },
+        {
+          "text": "if you have a valid license",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 27,
+          "end": 54
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "旅行",
+    "english": "to travel",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["travel 旅行"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "travel",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to travel",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "出国",
+    "english": "abroad",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词", "abroad 前不加介词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "abroad",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "出国旅行",
+    "english": "to travel abroad",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["travel abroad 出国旅行"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "travel",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to travel abroad",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "出国旅行(ing形式)",
+    "english": "traveling abroad",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语：出国旅行"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "traveling",
+          "pos": "动名词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "traveling abroad",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "允许",
+    "english": "to permit",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["permit 允许；许可"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to permit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "政策",
+    "english": "policy",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "policy",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "policy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "政策允许",
+    "english": "the policy permits",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["缺少宾语，非完整句子", "permit 为及物动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "policy",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the policy permits",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "政策允许出国旅行",
+    "english": "the policy permits traveling abroad",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["permit doing sth 允许做某事", "动名词作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "policy",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "traveling",
+          "pos": "动名词",
+          "start": 19,
+          "end": 28
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 29,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the policy",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "traveling abroad",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 19,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "护照",
+    "english": "passport",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["护照"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "passport",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "passport",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "有效的",
+    "english": "valid",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：有效的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "valid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "一个有效的护照",
+    "english": "a valid passport",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "passport",
+          "pos": "名词",
+          "start": 8,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a valid passport",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "你拥有",
+    "english": "you have",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["you have 为不完整片段"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you have",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "你拥有一个有效的护照",
+    "english": "you have a valid passport",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have 表示“有”", "valid passport 有效护照"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "passport",
+          "pos": "名词",
+          "start": 17,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "a valid passport",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "如果你拥有一个有效的护照",
+    "english": "if you have a valid passport",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if引导条件状语从句", "valid 作定语修饰 passport"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "passport",
+          "pos": "名词",
+          "start": 20,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you have a valid passport",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "政策允许出国旅行",
+    "english": "the policy permits traveling abroad",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["permit doing sth 允许做某事", "动名词作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "policy",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "traveling",
+          "pos": "动名词",
+          "start": 19,
+          "end": 28
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 29,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the policy",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "traveling abroad",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 19,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "政策允许出国旅行如果你拥有一个有效的护照",
+    "english": "the policy permits traveling abroad if you have a valid passport",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导条件状语从句", "permit doing sth 允许做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "policy",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "traveling",
+          "pos": "动名词",
+          "start": 19,
+          "end": 28
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 29,
+          "end": 35
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 43,
+          "end": 47
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 48,
+          "end": 49
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 50,
+          "end": 55
+        },
+        {
+          "text": "passport",
+          "pos": "名词",
+          "start": 56,
+          "end": 64
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the policy",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "permits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "traveling abroad",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 19,
+          "end": 35
+        },
+        {
+          "text": "if you have a valid passport",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 36,
+          "end": 64
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "抽烟",
+    "english": "to smoke",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语(to smoke)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "smoke",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to smoke",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "抽烟(ing形式)",
+    "english": "smoking",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动名词，可作主语或宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "smoking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "smoking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "允许",
+    "english": "to permit",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["permit 允许；许可"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to permit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "我们允许",
+    "english": "we permit",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "我们允许抽烟",
+    "english": "we permit smoking",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["permit doing sth"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "smoking",
+          "pos": "动名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "permit",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "smoking",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "我们不允许抽烟",
+    "english": "we don't permit smoking",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["permit doing sth 允许做某事", "smoking 为动名词作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "smoking",
+          "pos": "动名词",
+          "start": 16,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "don't permit",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "smoking",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 16,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "办公室",
+    "english": "office",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词 office"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "office",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "在办公室里",
+    "english": "in the office",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the office",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "我们不允许在办公室里抽烟",
+    "english": "we don't permit smoking in the office",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["permit doing sth 允许做某事", "in the office 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "permit",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "smoking",
+          "pos": "动名词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 31,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "don't permit",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "smoking",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "in the office",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "禁止",
+    "english": "to prohibit",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to prohibit", "prohibit 禁止"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prohibit",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to prohibit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "我们禁止",
+    "english": "we prohibit",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["prohibit v. 禁止"],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prohibit",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prohibit",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "在办公室里抽烟(ing形式)",
+    "english": "smoking in the office",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语", "in the office 作地点状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "smoking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "smoking in the office",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "我们禁止在办公室里抽烟",
+    "english": "we prohibit smoking in the office",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["prohibit doing sth 禁止做某事", "in the office 在办公室"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prohibit",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "smoking",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 27,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prohibit",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "smoking",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "in the office",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 20,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "公共场所",
+    "english": "public",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["public 公共的；公众的", "形容词，常修饰名词"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "public",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "在公共场所",
+    "english": "in public",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语 in public 意为“当众、公开地”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "public",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in public",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "我们禁止在公共场所抽烟",
+    "english": "we prohibit smoking in public",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["prohibit doing sth 禁止做某事", "in public 在公共场合"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prohibit",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "smoking",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "public",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prohibit",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "smoking",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "in public",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 20,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "禁止",
+    "english": "to prohibit",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to prohibit", "prohibit 禁止"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prohibit",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to prohibit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "法律",
+    "english": "the law",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，缺少谓语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "law",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the law",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "法律禁止",
+    "english": "the law prohibits",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["prohibits 为及物动词，缺宾语，不完整"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "law",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the law",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "prohibits",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "执照",
+    "english": "license",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：执照、许可证"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "有效的",
+    "english": "valid",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：有效的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "valid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "一个有效的执照",
+    "english": "a valid license",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["a valid license 一张有效执照"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a valid license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "驾驶",
+    "english": "to drive",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "和......一起",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "和一个有效的执照一起驾驶",
+    "english": "to drive with a valid license",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "with 短语表条件"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "with a valid license",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "不和......一起",
+    "english": "without",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "without",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "无证驾驶",
+    "english": "to drive without a valid license",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语 to drive", "without 引导条件状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 17,
+          "end": 18
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "without a valid license",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 32
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "无证驾驶(ing形式)",
+    "english": "driving without a valid license",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语 + 介词短语，表示无证驾驶"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "driving",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 24,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "driving",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "without a valid license",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 31
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "禁止",
+    "english": "to prohibit",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to prohibit", "prohibit 禁止"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prohibit",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to prohibit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "法律",
+    "english": "the law",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，缺少谓语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "law",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the law",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "法律禁止",
+    "english": "the law prohibits",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["prohibits 为及物动词，缺宾语，不完整"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "law",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the law",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "prohibits",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "法律禁止无证驾驶",
+    "english": "the law prohibits driving without a valid license",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["prohibit doing sth 禁止做某事", "without a valid license 无有效驾照"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "law",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "text": "driving",
+          "pos": "动名词",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 26,
+          "end": 33
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 34,
+          "end": 35
+        },
+        {
+          "text": "valid",
+          "pos": "形容词",
+          "start": 36,
+          "end": 41
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 42,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the law",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "prohibits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "text": "driving",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "without a valid license",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "禁止",
+    "english": "to prohibit",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to prohibit", "prohibit 禁止"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prohibit",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to prohibit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "老师",
+    "english": "the teacher",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语 the teacher"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "老师禁止",
+    "english": "the teacher prohibits",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["prohibit 是及物动词,需接宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "家庭作业",
+    "english": "homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：家庭作业"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "复制",
+    "english": "to copy",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语：to copy"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "copy",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to copy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "抄作业",
+    "english": "to copy homework",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语：to copy homework", "copy 后接名词作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "copy",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 8,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to copy homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "其他人",
+    "english": "others",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["代词，泛指其他人或物"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "others",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "others",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "从......那里",
+    "english": "from",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["from 从；来自"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "from",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "从其他人那里",
+    "english": "from others",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["from others 来自其他人"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "others",
+          "pos": "代词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "from others",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "从其他人那里抄作业",
+    "english": "to copy homework from others",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["from others 表来源"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "copy",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "others",
+          "pos": "代词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to copy homework from others",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "从其他人那里抄作业(ing形式)",
+    "english": "copying homework from others",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动名词短语：抄袭他人作业"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "copying",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "others",
+          "pos": "代词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "copying homework from others",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "老师禁止",
+    "english": "the teacher prohibits",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["prohibit 是及物动词,需接宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "老师禁止从其他人那里抄作业",
+    "english": "the teacher prohibits copying homework from others",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["prohibit doing sth 禁止做某事", "copy...from... 从……抄袭"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 12,
+          "end": 21
+        },
+        {
+          "text": "copying",
+          "pos": "动名词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 30,
+          "end": 38
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "others",
+          "pos": "代词",
+          "start": 44,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 21
+        },
+        {
+          "text": "copying homework from others",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 22,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "老师禁止",
+    "english": "the teacher prohibits",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["prohibit 是及物动词,需接宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 153,
+    "chinese": "说话",
+    "english": "to talk",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to talk",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 154,
+    "chinese": "笑",
+    "english": "to laugh",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to laugh", "laugh 笑"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "laugh",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to laugh",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 155,
+    "chinese": "或者",
+    "english": "or",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["表示选择的并列连词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "or",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 156,
+    "chinese": "说话或者笑",
+    "english": "to talk or to laugh",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["两个不定式由 or 并列"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "laugh",
+          "pos": "动词",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to talk",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "or",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "to laugh",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 157,
+    "chinese": "说笑(ing形式)",
+    "english": "talking or laughing",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "talking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "laughing",
+          "pos": "动名词",
+          "start": 11,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "talking or laughing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 158,
+    "chinese": "测验",
+    "english": "test",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["test 测试；考试"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "test",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 159,
+    "chinese": "在......期间",
+    "english": "during",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "during",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 160,
+    "chinese": "在这个测验期间",
+    "english": "during the test",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "during the test",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 161,
+    "chinese": "在这个测验期间说笑(ing形式)",
+    "english": "talking or laughing during the test",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "talking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "laughing",
+          "pos": "动名词",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 31,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "talking or laughing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        },
+        {
+          "text": "during the test",
+          "role": null,
+          "roleType": null,
+          "start": 20,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 162,
+    "chinese": "老师禁止",
+    "english": "the teacher prohibits",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["prohibit 是及物动词,需接宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 163,
+    "chinese": "老师禁止在这个测验期间说笑",
+    "english": "the teacher prohibits talking or laughing during the test",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["prohibit doing sth 禁止做某事", "or 连接并列的动名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 12,
+          "end": 21
+        },
+        {
+          "text": "talking",
+          "pos": "动名词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "laughing",
+          "pos": "动名词",
+          "start": 33,
+          "end": 41
+        },
+        {
+          "text": "during",
+          "pos": "介词",
+          "start": 42,
+          "end": 48
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 49,
+          "end": 52
+        },
+        {
+          "text": "test",
+          "pos": "名词",
+          "start": 53,
+          "end": 57
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the teacher",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "prohibits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 21
+        },
+        {
+          "text": "talking or laughing",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 22,
+          "end": 41
+        },
+        {
+          "text": "during the test",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 42,
+          "end": 57
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 164,
+    "chinese": "禁止",
+    "english": "to prohibit",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to prohibit", "prohibit 禁止"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prohibit",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to prohibit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 165,
+    "chinese": "学校",
+    "english": "the school",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["定冠词+名词构成名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the school",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 166,
+    "chinese": "学校禁止",
+    "english": "the school prohibits",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语+谓语，缺少宾语，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 11,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the school",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "prohibits",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 167,
+    "chinese": "吃",
+    "english": "to eat",
+    "annotation": {
+      "order": 38,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式 to eat"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 168,
+    "chinese": "喝",
+    "english": "to drink",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 169,
+    "chinese": "吃或者喝",
+    "english": "to eat or to drink",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["两个不定式由 or 连接", "表示选择关系"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "or",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "to drink",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 170,
+    "chinese": "吃喝(ing形式)",
+    "english": "eating or drinking",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["eating or drinking 吃或喝"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "eating",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "drinking",
+          "pos": "动名词",
+          "start": 10,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "eating or drinking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 171,
+    "chinese": "课程",
+    "english": "class",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": ["名词：班级；课"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "class",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "class",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 172,
+    "chinese": "房间",
+    "english": "room",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：房间；空间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 173,
+    "chinese": "教室",
+    "english": "classroom",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：教室"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "classroom",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "classroom",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 174,
+    "chinese": "在教室里",
+    "english": "in the classroom",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语 in the classroom 表地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "classroom",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the classroom",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 175,
+    "chinese": "在教室里吃喝(ing形式)",
+    "english": "eating or drinking in the classroom",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["in the classroom 在教室里"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "eating",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "drinking",
+          "pos": "动名词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "classroom",
+          "pos": "名词",
+          "start": 26,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "eating or drinking in the classroom",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 176,
+    "chinese": "学校禁止",
+    "english": "the school prohibits",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语+谓语，缺少宾语，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 11,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the school",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "prohibits",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 177,
+    "chinese": "学校禁止在教室里吃喝",
+    "english": "the school prohibits eating or drinking in the classroom",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["prohibit doing sth 禁止做某事", "动名词短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "prohibits",
+          "pos": "动词",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "text": "eating",
+          "pos": "动名词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "or",
+          "pos": "连词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "drinking",
+          "pos": "动名词",
+          "start": 31,
+          "end": 39
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 40,
+          "end": 42
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 43,
+          "end": 46
+        },
+        {
+          "text": "classroom",
+          "pos": "名词",
+          "start": 47,
+          "end": 56
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the school",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "prohibits",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "text": "eating or drinking",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 21,
+          "end": 39
+        },
+        {
+          "text": "in the classroom",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 40,
+          "end": 56
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  }
+]

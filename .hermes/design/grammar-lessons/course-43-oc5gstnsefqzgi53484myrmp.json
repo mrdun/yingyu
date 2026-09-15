@@ -1,0 +1,6455 @@
+[
+  {
+    "order": 1,
+    "chinese": "锁",
+    "english": "to lock",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "lock 锁上"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to lock",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "门",
+    "english": "the door",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the door",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "锁门",
+    "english": "to lock the door",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "lock the door 锁门"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to lock the door",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "忘记",
+    "english": "to forget",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "forget 表示“忘记”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to forget",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "忘记锁门",
+    "english": "to forget to lock the door",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构", "to forget to lock 表示忘记做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 22,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to forget to lock the door",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "忘记锁门(ing形式)",
+    "english": "forgetting to lock the door",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["forget to do sth 忘记去做某事", "不定式短语作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "forgetting",
+          "pos": "动名词",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "forgetting to lock the door",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "承认",
+    "english": "to admit",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“承认”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "admit",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to admit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "他们承认",
+    "english": "they admit",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓结构，缺宾语，为句子片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "admit",
+          "pos": "动词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "admit",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "他们(过去)承认",
+    "english": "they admitted",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓结构，缺宾语，为句子片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "admitted",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "他们(过去)承认忘记锁门",
+    "english": "they admitted forgetting to lock the door",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["admit doing sth 承认做过某事", "forget to do 忘记要做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "forgetting",
+          "pos": "动名词",
+          "start": 14,
+          "end": 24
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 37,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "admitted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "forgetting to lock the door",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 14,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "灯",
+    "english": "light",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["light 可作名词(光)或形容词(轻的)"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "light",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "light",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "红色",
+    "english": "red",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，表示“红色的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "red",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "red",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "一个红灯",
+    "english": "a red light",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词 red 作定语修饰 light"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "red",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "light",
+          "pos": "名词",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a red light",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "跑",
+    "english": "to run",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to run"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "run",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to run",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "闯一个红灯",
+    "english": "to run a red light",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["run a red light 闯红灯"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "run",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "red",
+          "pos": "形容词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "light",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to run",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "a red light",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "闯一个红灯(ing形式)",
+    "english": "running a red light",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语：闯红灯"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "running",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "red",
+          "pos": "形容词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "light",
+          "pos": "名词",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "running a red light",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "驾驶",
+    "english": "to drive",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "司机",
+    "english": "the driver",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "driver",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the driver",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "司机(过去)承认",
+    "english": "the driver admitted",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "driver",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the driver",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "admitted",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "司机(过去)承认闯一个红灯",
+    "english": "the driver admitted running a red light",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["admit doing sth 承认做过某事", "run a red light 闯红灯"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "driver",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "running",
+          "pos": "动名词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 28,
+          "end": 29
+        },
+        {
+          "text": "red",
+          "pos": "形容词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "light",
+          "pos": "名词",
+          "start": 34,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the driver",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "admitted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "running a red light",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "答案",
+    "english": "the answers",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "定冠词+名词复数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "answers",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the answers",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "复制",
+    "english": "to copy",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语：to copy"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "copy",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to copy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "抄答案",
+    "english": "to copy the answers",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["the answers 为特指宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "copy",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "answers",
+          "pos": "名词",
+          "start": 12,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to copy the answers",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "同学",
+    "english": "classmate",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": ["名词：同班同学"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "classmate",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "classmate",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "从......那里",
+    "english": "from",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["from 从；来自"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "from",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "从一个同学那里",
+    "english": "from a classmate",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["from a classmate 来自一位同学"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "classmate",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "from a classmate",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "从一个同学那里抄答案",
+    "english": "to copy the answers from a classmate",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["from a classmate 表来源"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "copy",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "answers",
+          "pos": "名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "classmate",
+          "pos": "名词",
+          "start": 27,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to copy the answers from a classmate",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "从一个同学那里抄答案(ing形式)",
+    "english": "copying the answers from a classmate",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动名词短语：抄同学的答案"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "copying",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "answers",
+          "pos": "名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "classmate",
+          "pos": "名词",
+          "start": 27,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "copying the answers from a classmate",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "那个学生",
+    "english": "the student",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：the + 名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "student",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the student",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "那个学生(过去)承认",
+    "english": "the student admitted",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓结构，缺宾语", "admit doing sth 承认做过某事"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "student",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the student",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "admitted",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "那个学生(过去)承认从一个同学那里抄答案",
+    "english": "the student admitted copying the answers from a classmate",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["admit doing sth 承认做过某事", "动名词短语作宾语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "student",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "copying",
+          "pos": "动名词",
+          "start": 21,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "answers",
+          "pos": "名词",
+          "start": 33,
+          "end": 40
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 41,
+          "end": 45
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 46,
+          "end": 47
+        },
+        {
+          "text": "classmate",
+          "pos": "名词",
+          "start": 48,
+          "end": 57
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the student",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "admitted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "copying the answers from a classmate",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 21,
+          "end": 57
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "迟到的",
+    "english": "late",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["迟的；晚的"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "late",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "她是迟到的",
+    "english": "she is late",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "late 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "late",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "碰面；见到",
+    "english": "to meet",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "meet",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to meet",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "会议",
+    "english": "meeting",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["meeting：会议；meet的动名词形式"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "meeting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "为了；对于",
+    "english": "for",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["for 介词，意为“为了；对于”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "对于这个会议",
+    "english": "for the meeting",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["for 表示目的", "介词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for the meeting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "她是迟到的对于这个会议",
+    "english": "she is late for the meeting",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be late for 迟到", "for the meeting 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "late",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "for the meeting",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 12,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "是(ing形式)",
+    "english": "being",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["be 的动名词/现在分词形式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "being",
+          "pos": "动名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "being",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "她(过去)承认是迟到的对于这个会议",
+    "english": "she admitted being late for the meeting",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["admit doing sth 承认做过某事", "be late for 迟到"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "being",
+          "pos": "动名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 32,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "admitted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "being late for the meeting",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 13,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "说话",
+    "english": "to speak",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to speak",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "演讲",
+    "english": "speaking",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["speak 的动名词形式 speaking"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "speaking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "公开的",
+    "english": "public",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["public 公共的；公众的", "形容词，常修饰名词"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "public",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "公开演讲",
+    "english": "public speaking",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["public speaking 公开演讲", "名词性短语，指演讲技能"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "public speaking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "害怕的",
+    "english": "afraid",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：害怕的，常与 of 连用"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "afraid",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "afraid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "她是害怕的",
+    "english": "she is afraid",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构：she is afraid", "形容词 afraid 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "afraid",
+          "pos": "形容词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "afraid",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "她害怕公开演讲",
+    "english": "she is afraid of public speaking",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be afraid of 害怕……", "public speaking 公开演讲（动名词短语）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "afraid",
+          "pos": "形容词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 24,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "afraid of public speaking",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 7,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "是(ing形式)",
+    "english": "being",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["be 的动名词/现在分词形式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "being",
+          "pos": "动名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "being",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "她(过去)承认",
+    "english": "she admitted",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["admit 后接动名词作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "admitted",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "她(过去)承认害怕公开演讲",
+    "english": "she admitted being afraid of public speaking",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["admit doing sth 承认做过某事", "be afraid of 害怕"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "being",
+          "pos": "动名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "afraid",
+          "pos": "形容词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 29,
+          "end": 35
+        },
+        {
+          "text": "speaking",
+          "pos": "名词",
+          "start": 36,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "admitted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "being afraid of public speaking",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 13,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "食物",
+    "english": "food",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["food 名词，意为“食物”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "food",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "垃圾",
+    "english": "junk",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "junk",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "junk",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "垃圾食物",
+    "english": "junk food",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "junk",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "junk food",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "吃",
+    "english": "to eat",
+    "annotation": {
+      "order": 38,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式 to eat"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "吃垃圾食物",
+    "english": "to eat junk food",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语 to eat", "junk food 名词作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "junk",
+          "pos": "名词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat junk food",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "吃垃圾食物(ing形式)",
+    "english": "eating junk food",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "eating",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "junk",
+          "pos": "名词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "eating junk food",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "避免",
+    "english": "to avoid",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "avoid",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to avoid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "她避免",
+    "english": "she avoids",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["avoid 后接动名词作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoids",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoids",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "她避免吃垃圾食物",
+    "english": "she avoids eating junk food",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["avoid doing sth 避免做某事", "主语第三人称单数用 avoids"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoids",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "eating",
+          "pos": "动名词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "junk",
+          "pos": "名词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoids",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "eating junk food",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 11,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "生活",
+    "english": "life",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：生活、生命"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "方式",
+    "english": "style",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["风格；名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "style",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "style",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "生活方式",
+    "english": "lifestyle",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：生活方式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "lifestyle",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "lifestyle",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "健康的",
+    "english": "healthy",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：健康的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "healthy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "一个健康的生活方式",
+    "english": "a healthy lifestyle",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["a healthy lifestyle 健康的生活方式"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "lifestyle",
+          "pos": "名词",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a healthy lifestyle",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "保持",
+    "english": "to maintain",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "maintain",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to maintain",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "保持一个健康的生活方式",
+    "english": "to maintain a healthy lifestyle",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "maintain",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "lifestyle",
+          "pos": "名词",
+          "start": 22,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to maintain a healthy lifestyle",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 31
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "她避免吃垃圾食物",
+    "english": "she avoids eating junk food",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["avoid doing sth 避免做某事", "主语第三人称单数用 avoids"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoids",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "eating",
+          "pos": "动名词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "junk",
+          "pos": "名词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoids",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "eating junk food",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 11,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "她避免吃垃圾食物来保持一个健康的生活方式",
+    "english": "she avoids eating junk food to maintain a healthy lifestyle",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["avoid doing sth 避免做某事", "不定式 to do 表目的"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoids",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "eating",
+          "pos": "动名词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "junk",
+          "pos": "名词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "maintain",
+          "pos": "动词",
+          "start": 31,
+          "end": 39
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 40,
+          "end": 41
+        },
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 42,
+          "end": 49
+        },
+        {
+          "text": "lifestyle",
+          "pos": "名词",
+          "start": 50,
+          "end": 59
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoids",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "eating junk food",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 11,
+          "end": 27
+        },
+        {
+          "text": "to maintain a healthy lifestyle",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 28,
+          "end": 59
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "告诉",
+    "english": "to tell",
+    "annotation": {
+      "order": 115,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "事实",
+    "english": "the truth",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "告诉事实",
+    "english": "to tell the truth",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["to tell the truth 说实话"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "告诉事实(ing形式)",
+    "english": "telling the truth",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell the truth 说实话"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "telling",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "telling the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "避免",
+    "english": "to avoid",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "avoid",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to avoid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "她(过去)避免",
+    "english": "she avoided",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["avoid 后接动名词作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoided",
+          "pos": "动词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoided",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "她(过去)避免告诉事实",
+    "english": "she avoided telling the truth",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["avoid doing sth 避免做某事", "tell the truth 说实话"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoided",
+          "pos": "动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "telling",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 24,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "telling the truth",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "说谎",
+    "english": "to lie",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "lie",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to lie",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "说谎(ing形式)",
+    "english": "lying",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["lie 的现在分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "lying",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "lying",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "父母",
+    "english": "parents",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["父母", "parent 的复数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "她的父母",
+    "english": "her parents",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["her为形容词性物主代词，修饰复数名词parents"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "向她的父母说谎(ing形式)",
+    "english": "lying to her parents",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["lie to sb 的现在分词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "lying",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "lying to her parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "通过",
+    "english": "by",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 by 表方式/施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "通过向她的父母说谎",
+    "english": "by lying to her parents",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 动名词短语，表方式"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "lying",
+          "pos": "动名词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 16,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by lying to her parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "她(过去)避免告诉事实",
+    "english": "she avoided telling the truth",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["avoid doing sth 避免做某事", "tell the truth 说实话"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoided",
+          "pos": "动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "telling",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 24,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "telling the truth",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "她通过向她的父母说谎来(过去)避免告诉事实",
+    "english": "she avoided telling the truth by lying to her parents",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["avoid doing sth 避免做某事", "by doing sth 通过做某事（方式状语）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoided",
+          "pos": "动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "telling",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 24,
+          "end": 29
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "lying",
+          "pos": "动名词",
+          "start": 33,
+          "end": 38
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 42,
+          "end": 45
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 46,
+          "end": 53
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "avoided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "telling the truth",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 29
+        },
+        {
+          "text": "by lying to her parents",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 30,
+          "end": 53
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "伤害",
+    "english": "to hurt",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["to hurt 伤害；受伤", "hurt 过去式、过去分词同形"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hurt",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hurt",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "她",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "伤害她",
+    "english": "to hurt her",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hurt sb 伤害某人", "her 为宾格代词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hurt",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hurt",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "伤害她(ing形式)",
+    "english": "hurting her",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语", "作主语或宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "hurting",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "hurting her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "避免",
+    "english": "to avoid",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "avoid",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to avoid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "我(过去)避免",
+    "english": "I avoided",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["avoided 后缺宾语, 不是完整句子", "avoid doing sth 避免做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "avoided",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I avoided",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "我(过去)避免伤害她",
+    "english": "I avoided hurting her",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["avoid doing sth 避免做某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "avoided",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "hurting",
+          "pos": "动名词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "avoided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "hurting her",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "沉默",
+    "english": "silent",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，沉默的", "keep silent 保持沉默"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "silent",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "silent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "保持沉默",
+    "english": "to keep silent",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "keep silent 保持沉默"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "silent",
+          "pos": "形容词",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep silent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "保持沉默(ing形式)",
+    "english": "keeping silent",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "keeping",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "silent",
+          "pos": "形容词",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "keeping silent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "通过",
+    "english": "by",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 by 表方式/施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "通过保持沉默",
+    "english": "by keeping silent",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 动名词，表方式"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keeping",
+          "pos": "动名词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "silent",
+          "pos": "形容词",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by keeping silent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "我通过保持沉默来(过去)避免伤害她",
+    "english": "I avoided hurting her by keeping silent",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["avoid doing sth 避免做某事", "by doing sth 表方式"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "avoided",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "hurting",
+          "pos": "动名词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "keeping",
+          "pos": "动名词",
+          "start": 25,
+          "end": 32
+        },
+        {
+          "text": "silent",
+          "pos": "形容词",
+          "start": 33,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "avoided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "hurting her",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 21
+        },
+        {
+          "text": "by keeping silent",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "迟到的",
+    "english": "late",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["迟的；晚的"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "late",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "我是迟到的",
+    "english": "I am late",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be + 形容词作表语", "late 迟到的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "late",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "是(ing形式)",
+    "english": "being",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["be 的动名词/现在分词形式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "being",
+          "pos": "动名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "being",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "我(过去)避免迟到",
+    "english": "I avoided being late",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["avoid doing sth 避免做某事", "being late 动名词短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "avoided",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "being",
+          "pos": "动名词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "avoided",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "being late",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "出租车",
+    "english": "taxi",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "taxi",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "taxi",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "乘坐",
+    "english": "to take",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "take",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to take",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "乘坐一辆出租车",
+    "english": "to take a taxi",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "take a taxi 乘坐出租车"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "take",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "taxi",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to take",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "a taxi",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "乘坐一辆出租车(ing形式)",
+    "english": "taking a taxi",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "taking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "taxi",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "taking a taxi",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "通过",
+    "english": "by",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 by 表方式/施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "通过乘坐一辆出租车",
+    "english": "by taking a taxi",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 动名词，表方式手段"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "taking",
+          "pos": "动名词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "text": "taxi",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by taking a taxi",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "我(过去)避免迟到",
+    "english": "I avoided being late",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["avoid doing sth 避免做某事", "being late 动名词短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "avoided",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "being",
+          "pos": "动名词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "avoided",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "being late",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "我通过乘坐一辆出租车来(过去)避免迟到",
+    "english": "I avoided being late by taking a taxi",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["avoid doing sth 避免做某事", "by doing sth 通过做某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "avoided",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "being",
+          "pos": "动名词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "taking",
+          "pos": "动名词",
+          "start": 24,
+          "end": 30
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 31,
+          "end": 32
+        },
+        {
+          "text": "taxi",
+          "pos": "名词",
+          "start": 33,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "avoided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "being late",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 20
+        },
+        {
+          "text": "by taking a taxi",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "避免",
+    "english": "to avoid",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "avoid",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to avoid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "他避免",
+    "english": "he avoids",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["avoid 后接动名词作宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "avoids",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he avoids",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "抽烟",
+    "english": "to smoke",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语(to smoke)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "smoke",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to smoke",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "抽烟(ing形式)",
+    "english": "smoking",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动名词，可作主语或宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "smoking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "smoking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "他避免抽烟",
+    "english": "he avoids smoking",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["avoid doing sth 避免做某事", "动名词作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "avoids",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "smoking",
+          "pos": "动名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "avoids",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "smoking",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "健康的",
+    "english": "healthy",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：健康的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "healthy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "健康",
+    "english": "health",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：健康"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "health",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "health",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "他的健康",
+    "english": "his health",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "health",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his health",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "保护",
+    "english": "to protect",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "protect 后接宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "protect",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to protect",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "保护他的健康",
+    "english": "to protect his health",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作宾语", "his health 作 protect 的宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "protect",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "health",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to protect his health",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "他避免抽烟来保护他的健康",
+    "english": "he avoids smoking to protect his health",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["avoid doing sth 避免做某事", "不定式 to protect 作目的状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "avoids",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "smoking",
+          "pos": "动名词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "protect",
+          "pos": "动词",
+          "start": 21,
+          "end": 28
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "health",
+          "pos": "名词",
+          "start": 33,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "avoids",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "smoking",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "to protect his health",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 18,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "谎言",
+    "english": "lie",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词：躺；撒谎"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "lie",
+          "pos": "动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "lie",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "一个谎言",
+    "english": "a lie",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定冠词+名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "lie",
+          "pos": "名词",
+          "start": 2,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a lie",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "白色的",
+    "english": "white",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["white 作形容词，表示“白色的”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "white",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "white",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "一个善意的谎言",
+    "english": "a white lie",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "white",
+          "pos": "形容词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "lie",
+          "pos": "名词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a white lie",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "告诉",
+    "english": "to tell",
+    "annotation": {
+      "order": 115,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "说一个善意的谎言",
+    "english": "to tell a white lie",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell a white lie 善意的谎言"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "white",
+          "pos": "形容词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "lie",
+          "pos": "名词",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell a white lie",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "说一个善意的谎言(ing形式)",
+    "english": "telling a white lie",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell a white lie 撒善意的谎言"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "telling",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "white",
+          "pos": "形容词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "lie",
+          "pos": "名词",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "telling a white lie",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "承认",
+    "english": "to admit",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“承认”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "admit",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to admit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "他(过去)承认",
+    "english": "he admitted",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["admit 后常接动名词或从句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he admitted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "他(过去)承认说一个善意的谎言(ing形式)",
+    "english": "he admitted telling a white lie",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["admit doing sth 承认做过某事", "white lie 善意的谎言"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "telling",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 20,
+          "end": 21
+        },
+        {
+          "text": "white",
+          "pos": "形容词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "lie",
+          "pos": "名词",
+          "start": 28,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "admitted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "telling a white lie",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "感觉",
+    "english": "to feel",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "feel",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to feel",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "感情",
+    "english": "feelings",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词复数：感情，感受"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "feelings",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "feelings",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "某个人",
+    "english": "someone",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["不定代词，指某个人，作单数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "someone",
+          "pos": "代词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "someone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "某个人的感情",
+    "english": "someone's feelings",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["所有格 someone's 表所属", "feelings 常用复数形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "someone's",
+          "pos": "代词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "feelings",
+          "pos": "名词",
+          "start": 10,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "someone's feelings",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "伤害",
+    "english": "to hurt",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["to hurt 伤害；受伤", "hurt 过去式、过去分词同形"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hurt",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hurt",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "伤害某个人的感情",
+    "english": "to hurt someone's feelings",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hurt someone's feelings 伤某人的感情", "someone's 为名词所有格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hurt",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "someone's",
+          "pos": "代词",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "text": "feelings",
+          "pos": "名词",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hurt",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "someone's feelings",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "伤害某个人的感情(ing形式)",
+    "english": "hurting someone's feelings",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语", "伤害某人的感情"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "hurting",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "someone's",
+          "pos": "代词",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "text": "feelings",
+          "pos": "名词",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "hurting someone's feelings",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "避免",
+    "english": "to avoid",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "avoid",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to avoid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "避免伤害某个人的感情",
+    "english": "to avoid hurting someone's feelings",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "avoid doing 结构"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "avoid",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "hurting",
+          "pos": "动名词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "someone's",
+          "pos": "代词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "feelings",
+          "pos": "名词",
+          "start": 27,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to avoid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "hurting someone's feelings",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "他(过去)承认说一个善意的谎言",
+    "english": "he admitted telling a white lie",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["admit doing sth 承认做过某事", "white lie 善意的谎言"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "telling",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 20,
+          "end": 21
+        },
+        {
+          "text": "white",
+          "pos": "形容词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "lie",
+          "pos": "名词",
+          "start": 28,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "admitted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "telling a white lie",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "他(过去)承认说一个善意的谎言来避免伤害某个人的感情",
+    "english": "he admitted telling a white lie to avoid hurting someone's feelings",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["不定式 to avoid 作目的状语", "admit doing sth 结构"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "admitted",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "telling",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 20,
+          "end": 21
+        },
+        {
+          "text": "white",
+          "pos": "形容词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "lie",
+          "pos": "名词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "avoid",
+          "pos": "动词",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "text": "hurting",
+          "pos": "动名词",
+          "start": 41,
+          "end": 48
+        },
+        {
+          "text": "someone's",
+          "pos": "代词",
+          "start": 49,
+          "end": 58
+        },
+        {
+          "text": "feelings",
+          "pos": "名词",
+          "start": 59,
+          "end": 67
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "admitted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "telling a white lie",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 31
+        },
+        {
+          "text": "to avoid hurting someone's feelings",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 32,
+          "end": 67
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  }
+]

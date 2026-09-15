@@ -1,0 +1,7326 @@
+[
+  {
+    "order": 1,
+    "chinese": "支付；付出",
+    "english": "to pay",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "注意力",
+    "english": "attention",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "需要",
+    "english": "need",
+    "annotation": {
+      "order": 56,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["need 作实义动词或情态动词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "你需要",
+    "english": "you need",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语+及物动词 need 缺少宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "你需要注意",
+    "english": "you need to pay attention",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["pay attention 注意，留心", "need to do sth 需要做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 16,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to pay",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "attention",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "问题",
+    "english": "question",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["question 问题；疑问", "也可作动词：质疑"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "这个",
+    "english": "this",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "这个问题",
+    "english": "this question",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "注意",
+    "english": "to pay attention",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pay attention 为固定搭配，表示注意"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "注意这个问题",
+    "english": "to pay attention to this question",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pay attention to 后接名词短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 25,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay attention to this question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 33
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "你需要",
+    "english": "you need",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语+及物动词 need 缺少宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "你需要注意这个问题",
+    "english": "you need to pay attention to this question",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["pay attention to sth 注意某事", "this question 作介词 to 的宾语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 16,
+          "end": 25
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 34,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to pay attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 28
+        },
+        {
+          "text": "this question",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 29,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "不",
+    "english": "don't",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do not 的缩写，构成否定"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "你不需要注意这个问题",
+    "english": "you don't need to pay attention to this question",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "pay attention to 注意"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 22,
+          "end": 31
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 35,
+          "end": 39
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 40,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to pay attention to this question",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 15,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "你(过去)需要注意这个问题",
+    "english": "you needed to pay attention to this question",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay attention to 注意", "need to do sth 需要做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "needed",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 36,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "needed to pay attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 30
+        },
+        {
+          "text": "this question",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 31,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "你(过去)不需要注意这个问题",
+    "english": "you didn't need to pay attention to this question",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["need to do sth 结构", "pay attention to 意为“注意”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 23,
+          "end": 32
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 41,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "to pay attention to this question",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "你需要注意这个问题",
+    "english": "you need to pay attention to this question",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["pay attention to sth 注意某事", "this question 作介词 to 的宾语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 16,
+          "end": 25
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 34,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to pay attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 28
+        },
+        {
+          "text": "this question",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 29,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "信息",
+    "english": "information",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["不可数名词，意为“信息；资料”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 0,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "information",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "这个",
+    "english": "this",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "这个信息",
+    "english": "this information",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["this information 这条信息"],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 5,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this information",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "你需要注意这个信息",
+    "english": "you need to pay attention to this information",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["pay attention to sth 注意某事", "this information 作介词 to 的宾语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 16,
+          "end": 25
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 34,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to pay attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 28
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 29,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "你注意这个信息",
+    "english": "you pay attention to this information",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["pay attention to 注意", "一般现在时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 26,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "pay attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "不",
+    "english": "don't",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do not 的缩写，构成否定"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "你没有注意这个信息",
+    "english": "you don't pay attention to this information",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["pay attention to 注意", "information 信息"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 14,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 32,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't pay attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 26
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "注意力",
+    "english": "attention",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "你(过去)注意这个信息",
+    "english": "you paid attention to this information",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay attention to 注意", "paid 是 pay 的过去式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 27,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "paid attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 21
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 22,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "你(过去)没有注意这个信息",
+    "english": "you didn't pay attention to this information",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay attention to 为固定搭配", "一般过去时否定句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 15,
+          "end": 24
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 33,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't pay attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 27
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 28,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "应该",
+    "english": "should",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：应该"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "你应该",
+    "english": "you should",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["should 为情态动词", "后接动词原形，此处缺谓语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "你应该注意这个信息",
+    "english": "you should pay attention to this information",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["should 表示建议“应该”", "pay attention to 意为“注意”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 15,
+          "end": 24
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 33,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should pay attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 27
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 28,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "你不应该",
+    "english": "you should not",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you should not",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "你不应该注意这个信息",
+    "english": "you should not pay attention to this information",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["pay attention to 意为“注意”", "this information 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 19,
+          "end": 28
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 32,
+          "end": 36
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 37,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should not pay attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 31
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 32,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "支付；付出(ing形式)",
+    "english": "paying",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["pay 的动名词/现在分词形式"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "paying",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "paying",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "正在付出",
+    "english": "be paying",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["pay 的现在分词为 paying", "be + doing 现在进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be paying",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "注意力",
+    "english": "attention",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "正在注意(付出注意力)",
+    "english": "be paying attention",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["pay attention：注意、留意", "attention 前常不加冠词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be paying attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "信息",
+    "english": "information",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["不可数名词，意为“信息；资料”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 0,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "information",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "这个信息",
+    "english": "this information",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["this information 这条信息"],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 5,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this information",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "正在注意这个信息",
+    "english": "be paying attention to this information",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["pay attention to：注意……", "information 为不可数名词"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 28,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be paying attention to this information",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 39
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "你(现在)正在注意这个信息",
+    "english": "you are paying attention to this information",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["pay attention to 固定搭配", "现在进行时表正在进行的动作"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 15,
+          "end": 24
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 33,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are paying attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 27
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 28,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "我(现在)正在注意这个信息",
+    "english": "I am paying attention to this information",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["pay attention to 表示注意", "this information 作宾语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 12,
+          "end": 21
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 30,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am paying attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 24
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 25,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "他",
+    "english": "he",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "他(现在)正在注意这个信息",
+    "english": "he is paying attention to this information",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["pay attention to 意为'注意'", "现在进行时表示正在进行"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 6,
+          "end": 12
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 13,
+          "end": 22
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 31,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is paying attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 25
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 26,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "不",
+    "english": "not",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "not",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "他(现在)没有正在注意这个信息",
+    "english": "he is not paying attention to this information",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时否定式", "pay attention to 固定搭配"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "paying",
+          "pos": "分词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 35,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is not paying attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 29
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 30,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "他(过去)正在注意这个信息",
+    "english": "he was paying attention to this information",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时 was paying", "pay attention to sth 注意某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 14,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 32,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was paying attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 26
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "不",
+    "english": "not",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "not",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "他(过去)没有正在注意这个信息",
+    "english": "he was not paying attention to this information",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时的否定式 was not paying", "pay attention to 注意"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 36,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was not paying attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 30
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 31,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "昨天",
+    "english": "yesterday",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "yesterday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "在这个时候",
+    "english": "at this time",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "在昨天这个时候",
+    "english": "at this time yesterday",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time yesterday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "他在昨天这个时候没有注意到这个信息",
+    "english": "he was not paying attention to this information at this time yesterday",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时 + 过去时间状语", "pay attention to sth 注意某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 36,
+          "end": 47
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 48,
+          "end": 50
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 51,
+          "end": 55
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 56,
+          "end": 60
+        },
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 61,
+          "end": 70
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was not paying attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 30
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 31,
+          "end": 47
+        },
+        {
+          "text": "at this time yesterday",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 48,
+          "end": 70
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "正在注意(付出注意力)",
+    "english": "be paying attention",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["pay attention：注意、留意", "attention 前常不加冠词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be paying attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "正在注意这个信息",
+    "english": "be paying attention to this information",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["pay attention to：注意……", "information 为不可数名词"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 28,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be paying attention to this information",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 39
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "他将会",
+    "english": "he will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["will 为情态动词，此处无实义动词，为片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "他将会正在注意这个信息",
+    "english": "he will be paying attention to this information",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": [
+        "将来进行时 will be paying 表将来正在进行",
+        "pay attention to 后接宾语 this information"
+      ],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 36,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will be paying attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 30
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 31,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "明天",
+    "english": "tomorrow",
+    "annotation": {
+      "order": 91,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词：明天"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "在这个时候",
+    "english": "at this time",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "在明天这个时候",
+    "english": "at this time tomorrow",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "他在明天这个时候将会正在注意这个信息",
+    "english": "he will be paying attention to this information at this time tomorrow",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["at this time tomorrow 作将来时间状语", "将来进行时表将来某时刻正在进行"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "paying",
+          "pos": "动词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "information",
+          "pos": "名词",
+          "start": 36,
+          "end": 47
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 48,
+          "end": 50
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 51,
+          "end": 55
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 56,
+          "end": 60
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 61,
+          "end": 69
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will be paying attention to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 30
+        },
+        {
+          "text": "this information",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 31,
+          "end": 47
+        },
+        {
+          "text": "at this time tomorrow",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 48,
+          "end": 69
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "细节",
+    "english": "the detail",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语", "细节"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "detail",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the detail",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "细节(复数)",
+    "english": "the details",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the details",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "所有的",
+    "english": "all",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["all 可作代词/形容词：全部"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "all",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "all",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "所有的细节",
+    "english": "all the details",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：所有细节"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "all the details",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "支付；付出",
+    "english": "to pay",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "注意力",
+    "english": "attention",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "注意(付出注意力)",
+    "english": "to pay attention",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pay attention 为固定搭配，表示注意"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "注意所有的细节",
+    "english": "to pay attention to all the details",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pay attention to 后接名词短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay attention to all the details",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "重要的",
+    "english": "important",
+    "annotation": {
+      "order": 120,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词", "重要的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "它",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "它是重要的",
+    "english": "it is important",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "非常",
+    "english": "very",
+    "annotation": {
+      "order": 126,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "very",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "它是非常重要的",
+    "english": "it is very important",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "very 修饰 important"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 11,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "very important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "注意所有的细节(它)是非常重要的",
+    "english": "it is very important to pay attention to all the details",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["it 作形式主语", "不定式短语为真正主语"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 28,
+          "end": 37
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 38,
+          "end": 40
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 49,
+          "end": 56
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "very important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 20
+        },
+        {
+          "text": "to pay attention to all the details",
+          "role": "主语",
+          "roleType": "不定式短语",
+          "start": 21,
+          "end": 56
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "讨论",
+    "english": "to discuss",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to discuss",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "某件事情",
+    "english": "something",
+    "annotation": {
+      "order": 119,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定代词", "某事；某物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "something",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "讨论某件事情",
+    "english": "to discuss something",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，something作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 11,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to discuss something",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "想要(直接地)",
+    "english": "want",
+    "annotation": {
+      "order": 28,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "愿意;想要(委婉地)",
+    "english": "would like",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["would like 表示“想要”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "would",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "would like",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "我想要",
+    "english": "I would like",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["would like 意为“想要”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "would",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I would like",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "我想要讨论某件事情",
+    "english": "I would like to discuss something",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["would like to do sth 想要做某事"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "would",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 24,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "would like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to discuss something",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "重要的",
+    "english": "important",
+    "annotation": {
+      "order": 120,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词", "重要的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "重要的某件事情",
+    "english": "something important",
+    "annotation": {
+      "order": 121,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词修饰不定代词需后置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "something important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "我想要讨论重要的某件事情",
+    "english": "I would like to discuss something important",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["形容词修饰 something 需后置", "would like to do sth 想要做某事"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "would",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 24,
+          "end": 33
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 34,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "would like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to discuss something important",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "和......一起",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "和你一起",
+    "english": "with you",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "我想要和你一起讨论重要的某件事情",
+    "english": "I would like to discuss something important with you",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["would like to do sth 想要做某事", "不定式短语作宾语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "would",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 24,
+          "end": 33
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 34,
+          "end": 43
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 44,
+          "end": 48
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 49,
+          "end": 52
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "would like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to discuss something important with you",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 52
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "我们",
+    "english": "we",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "我们想要讨论重要的某件事情",
+    "english": "we would like to discuss something important",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["would like to do sth 想要做某事", "something important 形容词后置修饰"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "would",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 25,
+          "end": 34
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 35,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "would like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "to discuss something important",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 14,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "我们讨论",
+    "english": "we discuss",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["discuss 是及物动词，后面需要宾语"],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we discuss",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "可以",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "我们可以讨论",
+    "english": "we can discuss",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["情态动词 can + 动词原形 discuss"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can discuss",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "所有的",
+    "english": "all",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["all 可作代词/形容词：全部"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "all",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "all",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "细节(复数)",
+    "english": "the details",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the details",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "所有的细节",
+    "english": "all the details",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：所有细节"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "all the details",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "我们可以讨论所有的细节",
+    "english": "we can discuss all the details",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["discuss 后接名词作宾语", "all the details 全部细节"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can discuss",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 14
+        },
+        {
+          "text": "all the details",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "这个计划",
+    "english": "the plan",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the plan",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "所有的细节",
+    "english": "all the details",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：所有细节"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "all the details",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "这个计划的所有的细节",
+    "english": "all the details of the plan",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：计划的所有细节", "of 短语作定语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "all the details of the plan",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "我们可以讨论这个计划的所有的细节",
+    "english": "we can discuss all the details of the plan",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["of the plan 介词短语作后置定语", "the details of sth 某事的细节"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 38,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can discuss",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 14
+        },
+        {
+          "text": "all the details of the plan",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "一起",
+    "english": "together",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词单独成块"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "together",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "我们可以一起讨论这个计划的所有的细节",
+    "english": "we can discuss all the details of the plan together",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can discuss 表示能够讨论", "of the plan 作后置定语修饰 details"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 43,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can discuss",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 14
+        },
+        {
+          "text": "all the details of the plan",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 42
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 43,
+          "end": 51
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "我们将会一起讨论这个计划的所有的细节",
+    "english": "we will discuss all the details of the plan together",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时 will + 动词原形", "all the details of the plan 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 44,
+          "end": 52
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will discuss",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "all the details of the plan",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 43
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 44,
+          "end": 52
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "明天",
+    "english": "tomorrow",
+    "annotation": {
+      "order": 91,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词：明天"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "早上",
+    "english": "morning",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词：早晨；上午"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "morning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "明天早上",
+    "english": "tomorrow morning",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语表时间"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow morning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "我们明天早上将会一起讨论这个计划的所有的细节",
+    "english": "we will discuss all the details of the plan together tomorrow morning",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时", "tomorrow morning 作时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 44,
+          "end": 52
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 53,
+          "end": 61
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 62,
+          "end": 69
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will discuss",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "all the details of the plan",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 43
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 44,
+          "end": 52
+        },
+        {
+          "text": "tomorrow morning",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 53,
+          "end": 69
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "讨论(ing形式)",
+    "english": "discussing",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["discuss 的动名词/现在分词形式"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "discussing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "discussing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "正在讨论",
+    "english": "be discussing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "discussing",
+          "pos": "分词",
+          "start": 3,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be discussing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "这个计划的所有的细节",
+    "english": "all the details of the plan",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：计划的所有细节", "of 短语作定语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "all the details of the plan",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "正在讨论这个计划的所有细节",
+    "english": "be discussing all the details of the plan",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时", "of the plan 为介词短语作定语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "discussing",
+          "pos": "分词",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 37,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be discussing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        },
+        {
+          "text": "all the details",
+          "role": null,
+          "roleType": null,
+          "start": 14,
+          "end": 29
+        },
+        {
+          "text": "of the plan",
+          "role": null,
+          "roleType": null,
+          "start": 30,
+          "end": 41
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "一起",
+    "english": "together",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词单独成块"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "together",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "正在一起讨论这个计划的所有细节",
+    "english": "be discussing all the details of the plan together",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时", "together 为副词，作状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "discussing",
+          "pos": "分词",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 37,
+          "end": 41
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 42,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be discussing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        },
+        {
+          "text": "all the details",
+          "role": null,
+          "roleType": null,
+          "start": 14,
+          "end": 29
+        },
+        {
+          "text": "of the plan",
+          "role": null,
+          "roleType": null,
+          "start": 30,
+          "end": 41
+        },
+        {
+          "text": "together",
+          "role": null,
+          "roleType": null,
+          "start": 42,
+          "end": 50
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "我们(现在)正在讨论",
+    "english": "we are discussing",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在进行时结构，缺宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "discussing",
+          "pos": "动词",
+          "start": 7,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we are discussing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "这个计划的所有的细节",
+    "english": "all the details of the plan",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：计划的所有细节", "of 短语作定语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "all the details of the plan",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "我们(现在)正在讨论这个计划的所有的细节",
+    "english": "we are discussing all the details of the plan",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时", "of the plan 作定语修饰 details"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "discussing",
+          "pos": "动词",
+          "start": 7,
+          "end": 17
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 26,
+          "end": 33
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 41,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are discussing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 17
+        },
+        {
+          "text": "all the details",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 33
+        },
+        {
+          "text": "of the plan",
+          "role": "定语",
+          "roleType": "介词短语",
+          "start": 34,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "一起",
+    "english": "together",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词单独成块"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "together",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "我们(现在)正在一起讨论这个计划的所有的细节",
+    "english": "we are discussing all the details of the plan together",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时", "together 作方式状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "discussing",
+          "pos": "动词",
+          "start": 7,
+          "end": 17
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 26,
+          "end": 33
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 41,
+          "end": 45
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 46,
+          "end": 54
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are discussing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 17
+        },
+        {
+          "text": "all the details",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 33
+        },
+        {
+          "text": "of the plan",
+          "role": "定语",
+          "roleType": "介词短语",
+          "start": 34,
+          "end": 45
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 46,
+          "end": 54
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "我们(过去)正在一起讨论这个计划的所有的细节",
+    "english": "we were discussing all the details of the plan together",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时表示过去正在进行的动作", "together 作状语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "discussing",
+          "pos": "动词",
+          "start": 8,
+          "end": 18
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 35,
+          "end": 37
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 38,
+          "end": 41
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 42,
+          "end": 46
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 47,
+          "end": 55
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were discussing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 18
+        },
+        {
+          "text": "all the details of the plan",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 46
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 47,
+          "end": 55
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "正在讨论",
+    "english": "be discussing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "discussing",
+          "pos": "分词",
+          "start": 3,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be discussing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "正在一起讨论这个计划的所有细节",
+    "english": "be discussing all the details of the plan together",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时", "together 为副词，作状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "discussing",
+          "pos": "分词",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 37,
+          "end": 41
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 42,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be discussing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        },
+        {
+          "text": "all the details",
+          "role": null,
+          "roleType": null,
+          "start": 14,
+          "end": 29
+        },
+        {
+          "text": "of the plan",
+          "role": null,
+          "roleType": null,
+          "start": 30,
+          "end": 41
+        },
+        {
+          "text": "together",
+          "role": null,
+          "roleType": null,
+          "start": 42,
+          "end": 50
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "我们将会",
+    "english": "we will",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["缺少主要动词，为残缺片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "我们将会正在一起讨论这个计划的所有的细节",
+    "english": "we will be discussing all the details of the plan together",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时:will be discussing", "of the plan 作后置定语"],
+      "confidence": 0.82,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "discussing",
+          "pos": "动词",
+          "start": 11,
+          "end": 21
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 30,
+          "end": 37
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 38,
+          "end": 40
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 45,
+          "end": 49
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 50,
+          "end": 58
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will be discussing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 21
+        },
+        {
+          "text": "all the details of the plan",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 22,
+          "end": 49
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 50,
+          "end": 58
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "明天",
+    "english": "tomorrow",
+    "annotation": {
+      "order": 91,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词：明天"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "在这个时候",
+    "english": "at this time",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "在明天这个时候",
+    "english": "at this time tomorrow",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "我们在明天这个时候将会正在一起讨论这个计划的所有的细节",
+    "english": "we will be discussing all the details of the plan together at this time tomorrow",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时表将来某时正在进行", "at this time tomorrow 作时间状语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "discussing",
+          "pos": "动词",
+          "start": 11,
+          "end": 21
+        },
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "details",
+          "pos": "名词",
+          "start": 30,
+          "end": 37
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 38,
+          "end": 40
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 45,
+          "end": 49
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 50,
+          "end": 58
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 59,
+          "end": 61
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 62,
+          "end": 66
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 67,
+          "end": 71
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 72,
+          "end": 80
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will be discussing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 21
+        },
+        {
+          "text": "all the details of the plan",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 22,
+          "end": 49
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 50,
+          "end": 58
+        },
+        {
+          "text": "at this time tomorrow",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 59,
+          "end": 80
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  }
+]

@@ -1,0 +1,6869 @@
+[
+  {
+    "order": 1,
+    "chinese": "阅读",
+    "english": "to read",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "这本书",
+    "english": "the book",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语：那本书"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "阅读这本书",
+    "english": "to read the book",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "the book 特指某本书"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read the book",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "阅读这本书(ing形式)",
+    "english": "reading the book",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语，the 后接单数名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "reading the book",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "完成",
+    "english": "to finish",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "他完成",
+    "english": "he finishes",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主谓结构", "主语第三人称单数"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finishes",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finishes",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "他(过去)完成",
+    "english": "he finished",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主谓结构", "finish 作不及物动词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "他(过去)完成阅读这本书",
+    "english": "he finished reading the book",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["finish doing sth 做完某事", "动名词作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "reading the book",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "天",
+    "english": "day",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "一天",
+    "english": "one day",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["one day 有一天；某一天"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "one",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "one day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "在一天内",
+    "english": "in one day",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表时间"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "one",
+          "pos": "数词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in one day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "他在一天内完成了阅读这本书",
+    "english": "he finished reading the book in one day",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["in one day 时间状语", "finish doing sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "one",
+          "pos": "数词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 36,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "reading the book",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 28
+        },
+        {
+          "text": "in one day",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 29,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "晚上",
+    "english": "night",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["night 表示“夜晚”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "在一个晚上内",
+    "english": "in one night",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表时间"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "one",
+          "pos": "数词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in one night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "他在一个晚上内完成了阅读这本书",
+    "english": "he finished reading the book in one night",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["in one night 时间状语", "finish doing sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "one",
+          "pos": "数词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 36,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "reading the book",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 28
+        },
+        {
+          "text": "in one night",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 29,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "洗",
+    "english": "to wash",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to wash 表示目的或打算"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wash",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to wash",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "碟",
+    "english": "dish",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：菜肴；盘子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "dish",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "那些碗碟",
+    "english": "the dishes",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "dishes",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the dishes",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "洗那些碗碟",
+    "english": "to wash the dishes",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "wash the dishes 洗碗"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wash",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "dishes",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to wash the dishes",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "洗那些碗碟(ing形式)",
+    "english": "washing the dishes",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "washing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "dishes",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "washing the dishes",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "晚饭",
+    "english": "dinner",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“晚餐；正餐”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dinner",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "在......之后",
+    "english": "after",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词：在……之后；也可作连词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "after",
+          "pos": "介词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "after",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "在晚饭之后",
+    "english": "after dinner",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语：晚饭后，作时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "after",
+          "pos": "介词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "after dinner",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "在晚饭之后洗那些碗碟(ing形式)",
+    "english": "washing the dishes after dinner",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语", "after dinner 作时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "washing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "dishes",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "after",
+          "pos": "介词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "washing the dishes after dinner",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 31
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "他(过去)完成",
+    "english": "he finished",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主谓结构", "finish 作不及物动词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "他在晚饭之后完成了洗碗",
+    "english": "he finished washing the dishes after dinner",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["finish doing sth 做完某事", "after dinner 时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "washing",
+          "pos": "动名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "dishes",
+          "pos": "名词",
+          "start": 24,
+          "end": 30
+        },
+        {
+          "text": "after",
+          "pos": "介词",
+          "start": 31,
+          "end": 36
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 37,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "washing the dishes",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 30
+        },
+        {
+          "text": "after dinner",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 31,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "作画",
+    "english": "to paint",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或计划"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "paint",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to paint",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "墙",
+    "english": "the wall",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wall",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the wall",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "刷墙",
+    "english": "to paint the wall",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，paint后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "paint",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "wall",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to paint the wall",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "刷墙(ing形式)",
+    "english": "painting the wall",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["粉刷墙壁", "painting 为动名词/现在分词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "painting",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "wall",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "painting the wall",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "完成",
+    "english": "to finish",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "他们完成",
+    "english": "they finish",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语 they + 动词 finish，缺少宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they finish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "他们(过去)完成",
+    "english": "they finished",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语 they + 过去式 finished，缺少宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they finished",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "他们完成了刷墙",
+    "english": "they finished painting the wall",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["finish doing sth 固定搭配"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "painting",
+          "pos": "动名词",
+          "start": 14,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "wall",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "finished",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "painting the wall",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 14,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "太阳",
+    "english": "sun",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "sun",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "sun",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "日落",
+    "english": "sunset",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "sunset",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "sunset",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "在日落之前",
+    "english": "before sunset",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 引导时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "sunset",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before sunset",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "他们在落日之前完成了刷墙",
+    "english": "they finished painting the wall before sunset",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["finish doing sth 固定搭配", "before sunset 表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "painting",
+          "pos": "动名词",
+          "start": 14,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "wall",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 32,
+          "end": 38
+        },
+        {
+          "text": "sunset",
+          "pos": "名词",
+          "start": 39,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "finished",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "painting the wall",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 14,
+          "end": 31
+        },
+        {
+          "text": "before sunset",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "清理",
+    "english": "to clean",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "clean",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to clean",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "这个房子",
+    "english": "the house",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，可作主语或宾语", "由冠词the+名词构成"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the house",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "清理这个房子",
+    "english": "to clean the house",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "clean",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to clean the house",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "清理这个房子(ing形式)",
+    "english": "cleaning the house",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语：打扫房子"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "cleaning",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "cleaning the house",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "完成",
+    "english": "to finish",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "你(过去)完成",
+    "english": "you finished",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时；finished 为不及物动词", "you 作主语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "你完成了清理这个房子",
+    "english": "you finished cleaning the house",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["finish doing sth 结构", "cleaning the house 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "cleaning",
+          "pos": "动名词",
+          "start": 13,
+          "end": 21
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 26,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "cleaning the house",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 13,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "你自己",
+    "english": "yourself",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["yourself 你自己（反身代词）"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "yourself",
+          "pos": "代词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "yourself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "通过你自己",
+    "english": "by yourself",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by oneself 独立完成"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "yourself",
+          "pos": "代词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by yourself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "你自己一个人完成了清理这个房子",
+    "english": "you finished cleaning the house by yourself",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["by yourself 作方式状语", "finish doing sth 结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "cleaning",
+          "pos": "动名词",
+          "start": 13,
+          "end": 21
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 26,
+          "end": 31
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "yourself",
+          "pos": "代词",
+          "start": 35,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "cleaning the house",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 13,
+          "end": 31
+        },
+        {
+          "text": "by yourself",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "打破",
+    "english": "to break",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "动词 break 原形"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "break",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to break",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "那个窗户",
+    "english": "the window",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语，非完整句子"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the window",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "打破那个窗户",
+    "english": "to break the window",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "break + 宾语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "break",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to break",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "the window",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "一个石头",
+    "english": "a stone",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["a stone 一块石头"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "stone",
+          "pos": "名词",
+          "start": 2,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a stone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "和......一起",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "和一个石头一起",
+    "english": "with a stone",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "stone",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with a stone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "用一个石头打破那个窗户",
+    "english": "to break the window with a stone",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "with 表工具"],
+      "confidence": 0.86,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "break",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "stone",
+          "pos": "名词",
+          "start": 27,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to break",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "the window",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "with a stone",
+          "role": null,
+          "roleType": null,
+          "start": 20,
+          "end": 32
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "用一个石头打破那个窗户(ing形式)",
+    "english": "breaking the window with a stone",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语 breaking the window 作宾语", "with a stone 表方式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "breaking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "stone",
+          "pos": "名词",
+          "start": 27,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "breaking the window",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        },
+        {
+          "text": "with a stone",
+          "role": null,
+          "roleType": null,
+          "start": 20,
+          "end": 32
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "否认",
+    "english": "to deny",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "deny",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to deny",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "他们否认",
+    "english": "they deny",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "deny",
+          "pos": "动词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they deny",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "他们(过去)否认",
+    "english": "they denied",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they denied",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "他们(过去)否认用一个石头打破那个窗户",
+    "english": "they denied breaking the window with a stone",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["deny doing sth 否认做过某事", "with a stone 用石头"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "breaking",
+          "pos": "动名词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 32,
+          "end": 36
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 37,
+          "end": 38
+        },
+        {
+          "text": "stone",
+          "pos": "名词",
+          "start": 39,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "breaking the window",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 31
+        },
+        {
+          "text": "with a stone",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "他(过去)否认",
+    "english": "he denied",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["deny 意为“否认”", "后常接动名词或 that 从句"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he denied",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "改变",
+    "english": "to change",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，非完整句子", "change 改变"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "change",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to change",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "想法",
+    "english": "mind",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["mind：可作名词（头脑/想法）或动词（介意）"],
+      "confidence": 0.45,
+      "words": [
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "他的想法",
+    "english": "his mind",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "改变他的想法",
+    "english": "to change his mind",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，非完整句子", "change one's mind 改变主意"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "change",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to change his mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "分钟",
+    "english": "minute",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["minute：分钟；也可读作 adj. 微小的"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "minute",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "minute",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "最后",
+    "english": "last",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "最后一分钟",
+    "english": "the last minute",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["last 作定语修饰 minute"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "minute",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the last minute",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "在最后一个刻",
+    "english": "at the last minute",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at the last minute 意为“在最后一刻”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "minute",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the last minute",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "在最后一刻改变他的想法",
+    "english": "to change his mind at the last minute",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，非完整句子", "at the last minute 在最后一刻"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "change",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "minute",
+          "pos": "名词",
+          "start": 31,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to change his mind at the last minute",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 37
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "在最后一刻改变他的想法(ing形式)",
+    "english": "changing his mind at the last minute",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": ["动名词短语 + 时间状语", "at the last minute 在最后一刻"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "changing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "minute",
+          "pos": "名词",
+          "start": 30,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "changing his mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        },
+        {
+          "text": "at the last minute",
+          "role": null,
+          "roleType": null,
+          "start": 18,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "他(过去)否认",
+    "english": "he denied",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["deny 意为“否认”", "后常接动名词或 that 从句"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he denied",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "他(过去)否认在最后一刻改变他的想法",
+    "english": "he denied changing his mind at the last minute",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["deny doing sth 否认做过某事", "at the last minute 在最后一刻"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "changing",
+          "pos": "动名词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 35,
+          "end": 39
+        },
+        {
+          "text": "minute",
+          "pos": "名词",
+          "start": 40,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "changing his mind",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 27
+        },
+        {
+          "text": "at the last minute",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "父母",
+    "english": "parents",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["父母", "parent 的复数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "他的父母",
+    "english": "his parents",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "撒谎",
+    "english": "to lie",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "lie",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to lie",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "向他的父母撒谎",
+    "english": "to lie to his parents",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "lie",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to lie to his parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "撒谎(ing形式)",
+    "english": "lying",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["lie 的现在分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "lying",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "lying",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "向他的父母撒谎(ing形式)",
+    "english": "lying to his parents",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["lie to sb 的现在分词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "lying",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "lying to his parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "否认",
+    "english": "to deny",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "deny",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to deny",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "他(过去)否认",
+    "english": "he denied",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["deny 意为“否认”", "后常接动名词或 that 从句"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he denied",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "他(过去)否认向他的父母撒谎",
+    "english": "he denied lying to his parents",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["deny doing sth 否认做过某事", "lie to sb 对某人撒谎"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "lying",
+          "pos": "动名词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "lying to his parents",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "有病的",
+    "english": "sick",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，生病的", "be sick 生病"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "sick",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "sick",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "他是有病的",
+    "english": "he is sick",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "sick 作表语说明主语状态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "sick",
+          "pos": "形容词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "sick",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "假装",
+    "english": "to pretend",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to pretend", "pretend 假装"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pretend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "假装是有病的",
+    "english": "to pretend to be sick",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pretend to do sth 假装做某事", "to be sick 作 pretend 的宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "sick",
+          "pos": "形容词",
+          "start": 17,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pretend to be sick",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "假装是有病的(ing形式)",
+    "english": "pretending to be sick",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "pretending",
+          "pos": "动名词",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "sick",
+          "pos": "形容词",
+          "start": 17,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "pretending to be sick",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "否认",
+    "english": "to deny",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "deny",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to deny",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "他(过去)否认",
+    "english": "he denied",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["deny 意为“否认”", "后常接动名词或 that 从句"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he denied",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "他(过去)否认假装是有病的",
+    "english": "he denied pretending to be sick",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["deny doing sth 否认做过某事", "pretend to be 假装是"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "pretending",
+          "pos": "动名词",
+          "start": 10,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "sick",
+          "pos": "形容词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "pretending to be sick",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "监狱",
+    "english": "prison",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "prison",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "从监狱",
+    "english": "from prison",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语：from + 地点名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "from prison",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "逃跑",
+    "english": "to escape",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语 to escape", "escape 为不及物动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "escape",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to escape",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "越狱",
+    "english": "to escape from prison",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语 to escape", "from prison 介词短语表地点"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "escape",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to escape",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "from prison",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "计划",
+    "english": "to plan",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["plan 计划"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "plan",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to plan",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "计划越狱",
+    "english": "to plan to escape from prison",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["plan to do sth 计划做某事", "escape from prison 越狱"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "plan",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "escape",
+          "pos": "动词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to plan to escape from prison",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "计划越狱(ing形式)",
+    "english": "planning to escape from prison",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["plan to do sth 打算做某事", "动名词短语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "planning",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "escape",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 24,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "planning to escape from prison",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 30
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "否认",
+    "english": "to deny",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "deny",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to deny",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "他们(过去)否认",
+    "english": "they denied",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they denied",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "他们(过去)否认计划越狱",
+    "english": "they denied planning to escape from prison",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["deny doing sth 否认做过某事", "plan to do sth 计划做某事"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "planning",
+          "pos": "动名词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "escape",
+          "pos": "动词",
+          "start": 24,
+          "end": 30
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 36,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "planning to escape from prison",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 12,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "偷",
+    "english": "to steal",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "steal",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to steal",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "钱",
+    "english": "the money",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the money 这笔钱"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "偷钱",
+    "english": "to steal the money",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语带宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "steal",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to steal the money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "偷钱(ing形式)",
+    "english": "stealing the money",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语：偷钱"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "stealing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "stealing the money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "银行",
+    "english": "the bank",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bank",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bank",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "从银行",
+    "english": "from the bank",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语：from + the + 名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "bank",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "from the bank",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "从银行偷钱(ing形式)",
+    "english": "stealing the money from the bank",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语：从银行偷钱"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "stealing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "bank",
+          "pos": "名词",
+          "start": 28,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "stealing the money from the bank",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 32
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "否认",
+    "english": "to deny",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "deny",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to deny",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "他(过去)否认",
+    "english": "he denied",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["deny 意为“否认”", "后常接动名词或 that 从句"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he denied",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "他(过去)否认从银行偷钱",
+    "english": "he denied stealing the money from the bank",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["deny doing sth 否认做过某事", "steal sth from sp 从某处偷某物"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "stealing",
+          "pos": "动名词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "bank",
+          "pos": "名词",
+          "start": 38,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "stealing the money",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 28
+        },
+        {
+          "text": "from the bank",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 29,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "接受",
+    "english": "to accept",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to accept",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "接受(过去分词)",
+    "english": "accepted",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词", "accept 的过去式/过去分词"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "被接受了",
+    "english": "be accepted",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["被动语态：被接受"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "他被接受了",
+    "english": "he is accepted",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态：be + 过去分词", "is accepted 被接受"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 6,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "他(过去)被接受了",
+    "english": "he was accepted",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时的被动语态", "was + 过去分词 accepted"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "大学",
+    "english": "the university",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "university",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the university",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "通过大学",
+    "english": "by the university",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "university",
+          "pos": "名词",
+          "start": 7,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by the university",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "他(过去)被大学录取了",
+    "english": "he was accepted by the university",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态 was accepted", "by 引出动作执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 7,
+          "end": 15
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "university",
+          "pos": "名词",
+          "start": 23,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "by the university",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "那个",
+    "english": "that",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["that 可作代词或引导词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "那个他(过去)被大学录取了",
+    "english": "that he was accepted by the university",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["that 引导的从句片段", "被动语态 was accepted"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "university",
+          "pos": "名词",
+          "start": 28,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that he was accepted by the university",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 38
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "他(过去)否认",
+    "english": "he denied",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["deny 意为“否认”", "后常接动名词或 that 从句"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he denied",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "他(过去)否认(那个)他(过去)被大学录取了",
+    "english": "he denied that he was accepted by the university",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["deny that 从句 否认……", "be accepted by 被……录取"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 22,
+          "end": 30
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "university",
+          "pos": "名词",
+          "start": 38,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "that he was accepted by the university",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 10,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "他(过去)否认(那个)",
+    "english": "he denied that",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["that 后缺少从句，非完整句子"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he denied that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "他们(过去)否认(那个)",
+    "english": "they denied that",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they denied that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "邀请",
+    "english": "to invite",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["invite 邀请"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "invite",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to invite",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "邀请(过去分词)",
+    "english": "invited",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词 invite 的过去式/过去分词，意为“邀请”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "invited",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "invited",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "被邀请",
+    "english": "be invited",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词，构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "invited",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be invited",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "他们被邀请",
+    "english": "they are invited",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态 be + 过去分词", "they 作主语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "invited",
+          "pos": "分词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are invited",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "他们(过去)被邀请",
+    "english": "they were invited",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态 were + 过去分词", "未提执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "invited",
+          "pos": "分词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were invited",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "总统",
+    "english": "the president",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "president",
+          "pos": "名词",
+          "start": 4,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the president",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "通过总统",
+    "english": "by the president",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "president",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by the president",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "他们(过去)被总统邀请",
+    "english": "they were invited by the president",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态 were + 过去分词", "by 引出动作执行者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "invited",
+          "pos": "分词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "president",
+          "pos": "名词",
+          "start": 25,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were invited",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 17
+        },
+        {
+          "text": "by the president",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "他们(过去)否认(那个)",
+    "english": "they denied that",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they denied that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "他们(过去)否认(那个)他们(过去)被总统邀请",
+    "english": "they denied that they were invited by the president",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["deny that... 否认……", "被动语态 be invited by"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "invited",
+          "pos": "分词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 35,
+          "end": 37
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 38,
+          "end": 41
+        },
+        {
+          "text": "president",
+          "pos": "名词",
+          "start": 42,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "that they were invited by the president",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 12,
+          "end": 51
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "教",
+    "english": "to teach",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "teach",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to teach",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "教(过去分词)",
+    "english": "taught",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "taught",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "taught",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "被教",
+    "english": "be taught",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "taught",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be taught",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "他们被教",
+    "english": "they are taught",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时被动语态 are + 过去分词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "taught",
+          "pos": "分词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are taught",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "他们(过去)被教",
+    "english": "they were taught",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态 were + 过去分词", "未提执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "taught",
+          "pos": "分词",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were taught",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "教授",
+    "english": "professor",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["professor 教授", "指大学教师职称"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "professor",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "professor",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "有名的",
+    "english": "famous",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：著名的；be famous for"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "famous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "一个有名的教授",
+    "english": "a famous professor",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "形容词作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "professor",
+          "pos": "名词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a famous professor",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "通过一个有名的教授",
+    "english": "by a famous professor",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词短语，表施动者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "professor",
+          "pos": "名词",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by a famous professor",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "他们(过去)被教",
+    "english": "they were taught",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态 were + 过去分词", "未提执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "taught",
+          "pos": "分词",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were taught",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "他们(过去)被一个有名的教授所教",
+    "english": "they were taught by a famous professor",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态 were + 过去分词", "by 短语作状语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "taught",
+          "pos": "分词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 20,
+          "end": 21
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 22,
+          "end": 28
+        },
+        {
+          "text": "professor",
+          "pos": "名词",
+          "start": 29,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were taught",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        },
+        {
+          "text": "by a famous professor",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "他们(过去)否认(那个)",
+    "english": "they denied that",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they denied that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "他们(过去)否认(那个)他们(过去)被一个有名的教授所教",
+    "english": "they denied that they were taught by a famous professor",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["deny that... 否认……", "被动语态 be taught by"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "taught",
+          "pos": "分词",
+          "start": 27,
+          "end": 33
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 37,
+          "end": 38
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 39,
+          "end": 45
+        },
+        {
+          "text": "professor",
+          "pos": "名词",
+          "start": 46,
+          "end": 55
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "denied",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "that they were taught by a famous professor",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 12,
+          "end": 55
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  }
+]

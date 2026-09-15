@@ -1,0 +1,9334 @@
+[
+  {
+    "order": 1,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "我是",
+    "english": "I am",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不完整片段，缺表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "年轻的",
+    "english": "young",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词原级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "young",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "我是年轻的",
+    "english": "I am young",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "young 作表语说明状态"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "我是不年轻的",
+    "english": "I am not young",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be 动词否定式 am not", "young 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "我（过去）是年轻的",
+    "english": "I was young",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主系表结构", "was为系动词过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "我（过去）是不年轻的",
+    "english": "I was not young",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["was 为系动词，young 作表语", "not 放在 was 之后构成否定"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 10,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 10,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "他是",
+    "english": "he is",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["is 为系动词", "缺少表语，句子不完整"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "他是年轻的",
+    "english": "he is young",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "他是不年轻的",
+    "english": "he is not young",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "否定句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 10,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "not young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "他（过去）是年轻的",
+    "english": "he was young",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["was 为系动词，young 作表语", "主系表结构描述状态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "他（过去）是不年轻的",
+    "english": "he was not young",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主系表结构 he was young", "否定词 not 置于系动词后"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "not",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "我们是",
+    "english": "we are",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["系动词 be 形式，缺表语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "我们是年轻的",
+    "english": "we are young",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "be + 形容词作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "我们是不年轻的",
+    "english": "we are not young",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be动词否定句", "形容词作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "not young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "我们（过去）是年轻的",
+    "english": "we were young",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["系表结构表示过去的状态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "我们（过去）是不年轻的",
+    "english": "we were not young",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["系动词 were 表过去状态", "not 构成否定"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "你是",
+    "english": "you are",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语与系动词片段，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "你是年轻的",
+    "english": "you are young",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "young 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "你是不年轻的",
+    "english": "you are not young",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "否定词not置于be后"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "not young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "你（过去）是年轻的",
+    "english": "you were young",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主系表结构", "were表示过去的状态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "你（过去）是不年轻的",
+    "english": "you were not young",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["were是be动词过去式", "not放在be动词之后"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "not young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "非常",
+    "english": "very",
+    "annotation": {
+      "order": 126,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "very",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "你（过去）是非常年轻的",
+    "english": "you were very young",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["very修饰形容词young", "主语you配were"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "very young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 9,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "见到",
+    "english": "to see",
+    "annotation": {
+      "order": 110,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "see",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to see",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "我（过去）见到你",
+    "english": "I saw you",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["see sb 看见某人", "saw 是 see 的过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "saw",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "saw",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "当......的时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "当我（过去）见到你的时候",
+    "english": "when I saw you",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导时间状语从句", "saw 是 see 的过去式"],
+      "tense": "一般过去时",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "saw",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 11,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when I saw you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "第一次",
+    "english": "first",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["序数词：第一"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "first",
+          "pos": "数词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "first",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "当我第一次（过去）见到你的时候",
+    "english": "when I first saw you",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导时间状语从句", "first 作状语，表“第一次”"],
+      "tense": "一般过去时",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "first",
+          "pos": "副词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "saw",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when I first saw you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "当我第一次（过去）见到你的时候你（过去）是非常年轻的",
+    "english": "you were very young when I first saw you",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["when引导时间状语从句", "主句与从句均用一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "first",
+          "pos": "副词",
+          "start": 27,
+          "end": 32
+        },
+        {
+          "text": "saw",
+          "pos": "动词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 37,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "very young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "when I first saw you",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 20,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "吃",
+    "english": "to eat",
+    "annotation": {
+      "order": 38,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式 to eat"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "一个苹果",
+    "english": "an apple",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语", "an 修饰元音音素开头的 apple"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "apple",
+          "pos": "名词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "an apple",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "吃一个苹果",
+    "english": "to eat an apple",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语 to eat", "an apple 作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "apple",
+          "pos": "名词",
+          "start": 10,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat an apple",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "我想要吃一个苹果",
+    "english": "I want to eat an apple",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 不定式作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "apple",
+          "pos": "名词",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to eat an apple",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "每天",
+    "english": "every day",
+    "annotation": {
+      "order": 51,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["every day 表示频率，作时间状语", "every + 单数可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "我想要每天吃一个苹果",
+    "english": "I want to eat an apple every day",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every day 频率时间状语", "不定式作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "apple",
+          "pos": "名词",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 29,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to eat an apple",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 22
+        },
+        {
+          "text": "every day",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "我每天吃一个苹果",
+    "english": "I eat an apple every day",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every day 表示经常性动作", "主语 I 后动词用原形 eat"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "apple",
+          "pos": "名词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 21,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "eat",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "an apple",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 14
+        },
+        {
+          "text": "every day",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "吃了",
+    "english": "ate",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "ate",
+          "pos": "动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ate",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "吃了一个苹果",
+    "english": "ate an apple",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "ate",
+          "pos": "动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "apple",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ate an apple",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "我吃了一个苹果",
+    "english": "I ate an apple",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主语 + 谓语 + 宾语", "an apple 作宾语"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "ate",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "apple",
+          "pos": "名词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "ate",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "an apple",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "她吃了一个苹果",
+    "english": "she ate an apple",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主谓宾结构", "ate 是 eat 的过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "ate",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "apple",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "ate",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "an apple",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "在......之前",
+    "english": "ago",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：以前，常与一般过去时连用"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ago",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "一小时",
+    "english": "an hour",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语", "hour 中 h 不发音，故用 an"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hour",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "an hour",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "在一小时之前",
+    "english": "an hour ago",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["时间状语短语", "常与一般过去时连用"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hour",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "an hour ago",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "她在一小时之前吃了一个苹果",
+    "english": "she ate an apple an hour ago",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["an hour ago 一小时前，用于一般过去时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "ate",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "apple",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "hour",
+          "pos": "名词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "ate",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "an apple",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "an hour ago",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "她在一小时之前没吃一个苹果",
+    "english": "she didn't eat an apple an hour ago",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["didn't eat 一般过去时否定", "an hour ago 时间状语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "apple",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "hour",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 32,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't eat",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "an apple",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 23
+        },
+        {
+          "text": "an hour ago",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 24,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "喝",
+    "english": "to drink",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "一些水",
+    "english": "some water",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["water 为不可数名词，用 some 修饰"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "some water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "喝一些水",
+    "english": "to drink some water",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink some water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "我想要喝一些水",
+    "english": "I want to drink some water",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 不定式作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to drink some water",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "每天早上",
+    "english": "every morning",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["每天早上"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every morning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "我想要每天早上喝一些水",
+    "english": "I want to drink some water every morning",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every morning 频率时间状语", "不定式作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 27,
+          "end": 32
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 33,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to drink some water",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 26
+        },
+        {
+          "text": "every morning",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "我每天早上喝一些水",
+    "english": "I drink some water every morning",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every morning 表频率的时间状语", "一般现在时表习惯"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drink",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "some water",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 18
+        },
+        {
+          "text": "every morning",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "喝了",
+    "english": "drank",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["drink 的过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "drank",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "drank",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "我喝了一些水",
+    "english": "I drank some water",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["drank 是 drink 的过去式", "some 修饰不可数名词 water"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drank",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drank",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "some water",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "这个",
+    "english": "this",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "早上",
+    "english": "morning",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词：早晨；上午"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "morning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "今天早上",
+    "english": "this morning",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["时间短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this morning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "我今天早上喝了一些水",
+    "english": "I drank some water this morning",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["this morning 作时间状语", "drank 是 drink 的过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drank",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 24,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drank",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "some water",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 18
+        },
+        {
+          "text": "this morning",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "任何",
+    "english": "any",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：任何的；也可作代词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "any",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "any",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "我今天早上没喝任何水",
+    "english": "I didn't drink any water this morning",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["any 用于否定句修饰不可数名词", "this morning 表过去时间"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "any",
+          "pos": "形容词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 30,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't drink",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "any water",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 24
+        },
+        {
+          "text": "this morning",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 25,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "知道",
+    "english": "to know",
+    "annotation": {
+      "order": 104,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["know 知道；认识"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "他（过去）知道答案",
+    "english": "he knew the answer",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["know 的过去式 knew", "名词作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "knew",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "answer",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "knew",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the answer",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "问题的答案",
+    "english": "the answer to the question",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the answer to... 表示“……的答案”", "介词短语作后置定语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "answer",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the answer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "to the question",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "他（过去）知道问题的答案",
+    "english": "he knew the answer to the question",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["the answer to ... 的答案", "介词短语作后置定语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "knew",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "answer",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "knew",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the answer to the question",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "已经",
+    "english": "already",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：已经"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "already",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "他已经知道问题的答案",
+    "english": "he already knew the answer to the question",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["the answer to the question 问题的答案", "already 用于肯定句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "knew",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "answer",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 34,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "already",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "knew",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "the answer to the question",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "他（过去）不知道问题的答案",
+    "english": "he didn't know the answer to the question",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["the answer to the question 意为“问题的答案”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "answer",
+          "pos": "名词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 33,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "didn't know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 14
+        },
+        {
+          "text": "the answer to the question",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "忘记",
+    "english": "to forget",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "forget 表示“忘记”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to forget",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "告诉",
+    "english": "to tell",
+    "annotation": {
+      "order": 115,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "我（过去）忘记告诉你",
+    "english": "I forgot to tell you",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["forget to do sth 忘记要做某事", "to tell you 作宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "forgot",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "forgot",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "to tell you",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "他已经知道问题的答案",
+    "english": "he already knew the answer to the question",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["the answer to the question 问题的答案", "already 用于肯定句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "knew",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "answer",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 34,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "already",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "knew",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "the answer to the question",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "我（过去）忘记告诉你他已经知道问题的答案",
+    "english": "I forgot to tell you he already knew the answer to the question",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["宾语从句 that 已省略", "forget to do sth 忘记要做某事"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "forgot",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "knew",
+          "pos": "动词",
+          "start": 32,
+          "end": 36
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "answer",
+          "pos": "名词",
+          "start": 41,
+          "end": 47
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 48,
+          "end": 50
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 51,
+          "end": 54
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 55,
+          "end": 63
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "forgot to tell you",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 20
+        },
+        {
+          "text": "he already knew the answer to the question",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 21,
+          "end": 63
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "工作",
+    "english": "job",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "job",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "我的工作",
+    "english": "my job",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "名词短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my job",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "失去",
+    "english": "to lose",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "lose",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to lose",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "失去了",
+    "english": "lost",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["lose 的过去式/过去分词；迷路的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "lost",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "lost",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "我失去了我的工作",
+    "english": "I lost my job",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["lose one's job 失业", "lost 是 lose 的过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "lost",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "lost",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "my job",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "在......之前",
+    "english": "ago",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：以前，常与一般过去时连用"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ago",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "两年",
+    "english": "two years",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["two years 两年", "时间表达"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "two years",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "在两年之前",
+    "english": "two years ago",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["ago 用于一般过去时", "two years ago 两年前"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "two years ago",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "我在两年前失去了我的工作",
+    "english": "I lost my job two years ago",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["two years ago 两年前", "ago 与一般过去时连用"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "lost",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 24,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "lost",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "my job",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "two years ago",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "我在两年前没有失去我的工作",
+    "english": "I didn't lose my job two years ago",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["two years ago 两年前", "一般过去时否定句"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "lose",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 31,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't lose",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "my job",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "two years ago",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "离开",
+    "english": "to leave",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to leave", "leave 离开"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "leave",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to leave",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "离开了",
+    "english": "left",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["leave 的过去式/过去分词，此处为碎片"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "left",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "left",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "她的",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "办公室",
+    "english": "office",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词 office"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "office",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "她的办公室",
+    "english": "her office",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["her为形容词性物主代词，修饰名词office"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her office",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "我离开了她的办公室",
+    "english": "I left her office",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["left 是 leave 的过去式", "her office 作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "left",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "her office",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "在......之前",
+    "english": "ago",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：以前，常与一般过去时连用"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ago",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "一小时",
+    "english": "an hour",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语", "hour 中 h 不发音，故用 an"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hour",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "an hour",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "在一小时之前",
+    "english": "an hour ago",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["时间状语短语", "常与一般过去时连用"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hour",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "an hour ago",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "我在一小时之前离开了她的办公室",
+    "english": "I left her office an hour ago",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["an hour ago 作时间状语", "left 为 leave 的过去式"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "left",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "hour",
+          "pos": "名词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 26,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "her office",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 17
+        },
+        {
+          "text": "an hour ago",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "我在一小时之前没有离开她的办公室",
+    "english": "I didn't leave her office an hour ago",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时否定句", "an hour ago 一小时前"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "leave",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "hour",
+          "pos": "名词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 34,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't leave",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "her office",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "an hour ago",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 26,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "睡觉",
+    "english": "to sleep",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语(to sleep)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to sleep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "房间",
+    "english": "room",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：房间；空间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "我的房间",
+    "english": "my room",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语:my + room"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "在我的房间（过去）睡觉",
+    "english": "slept in my room",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词过去式 + 介词短语片段", "缺主语，非完整句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "slept",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "slept",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "in my room",
+          "role": null,
+          "roleType": null,
+          "start": 6,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "上一个",
+    "english": "last",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "晚上",
+    "english": "night",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["night 表示“夜晚”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "昨晚",
+    "english": "last night",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "她昨晚睡在我的房间",
+    "english": "she slept in my room last night",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["slept 为 sleep 的过去式", "in my room 地点状语, last night 时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "slept",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 26,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "slept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "in my room",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 10,
+          "end": 20
+        },
+        {
+          "text": "last night",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "她昨晚没有睡在我的房间",
+    "english": "she didn't sleep in my room last night",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["last night 作时间状语", "in my room 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 33,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't sleep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "in my room",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "text": "last night",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 28,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "明白",
+    "english": "to understand",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "understand",
+          "pos": "动词",
+          "start": 3,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to understand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "你必须明白",
+    "english": "you have to understand",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示必须、不得不", "understand 后不接宾语也可成句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "understand",
+          "pos": "动词",
+          "start": 12,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to understand",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "你明白",
+    "english": "you understand",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主谓结构", "understand 可作不及物动词"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "understand",
+          "pos": "动词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "understand",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "你不明白",
+    "english": "you don't understand",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["否定句", "understand 理解"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "understand",
+          "pos": "动词",
+          "start": 10,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't understand",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "你（过去）明白",
+    "english": "you understood",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主谓结构", "understood 为 understand 的过去式"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "understood",
+          "pos": "动词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "understood",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "你不（过去）明白",
+    "english": "you didn't understand",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["understand 此处不接宾语", "一般过去时否定句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "understand",
+          "pos": "动词",
+          "start": 11,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't understand",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "告诉",
+    "english": "to tell",
+    "annotation": {
+      "order": 115,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "告诉过",
+    "english": "told",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["tell 的过去式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "told",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "我告诉过你",
+    "english": "I told you",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["tell sb sth 结构", "间接宾语you"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语"
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "她昨晚没有睡在我的房间",
+    "english": "she didn't sleep in my room last night",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["last night 作时间状语", "in my room 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 33,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't sleep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "in my room",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "text": "last night",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 28,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "我告诉过你她昨晚没有睡在我的房间",
+    "english": "I told you she didn't sleep in my room last night",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["宾语从句省略that", "didn't + 动词原形"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 15,
+          "end": 21
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 44,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "she didn't sleep in my room last night",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 11,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 从句"
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "但是",
+    "english": "but",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词：但是，表转折"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "你（过去）不明白",
+    "english": "you didn't understand",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["understand 此处不接宾语", "一般过去时否定句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "understand",
+          "pos": "动词",
+          "start": 11,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't understand",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "但是你（过去）不明白",
+    "english": "but you didn't understand",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["but 引导的转折从句片段", "一般过去时否定"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "understand",
+          "pos": "动词",
+          "start": 15,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "didn't understand",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 25
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "我告诉过你她昨晚没有睡在我的房间但是你（过去）不明白",
+    "english": "I told you she didn't sleep in my room last night but you didn't understand",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + Clause + conj + S + V",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["but连接两个分句", "宾语从句省略that"],
+      "confidence": 0.78,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 15,
+          "end": 21
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 44,
+          "end": 49
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 50,
+          "end": 53
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 54,
+          "end": 57
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 58,
+          "end": 64
+        },
+        {
+          "text": "understand",
+          "pos": "动词",
+          "start": 65,
+          "end": 75
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "she didn't sleep in my room last night",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 11,
+          "end": 49
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 50,
+          "end": 53
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 54,
+          "end": 57
+        },
+        {
+          "text": "didn't understand",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 58,
+          "end": 75
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 从句 + 连接词 + 主语 + 谓语"
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "买",
+    "english": "to buy",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "一个房子",
+    "english": "a house",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["a house 一座房子"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 2,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a house",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "买一个房子",
+    "english": "to buy a house",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，house 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "a house",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "我想要买一个房子",
+    "english": "I want to buy a house",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 16,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to buy a house",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "买了",
+    "english": "bought",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词过去式：买（buy 的过去式）"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "bought",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "我买了一个房子",
+    "english": "I bought a house",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["bought 是 buy 的过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "a house",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "在......之前",
+    "english": "ago",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：以前，常与一般过去时连用"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ago",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "两年",
+    "english": "two years",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["two years 两年", "时间表达"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "two years",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "在两年之前",
+    "english": "two years ago",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["ago 用于一般过去时", "two years ago 两年前"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "two years ago",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "我在两年之前买了一个房子",
+    "english": "I bought a house two years ago",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["two years ago 作时间状语", "一般过去时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 27,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "a house",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "two years ago",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 17,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "我在两年之前没有买一个房子",
+    "english": "I didn't buy a house two years ago",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["two years ago 与一般过去时连用", "a house 泛指一所房子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 31,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't buy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "a house",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "two years ago",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "他在两年之前买了一个房子",
+    "english": "he bought a house two years ago",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["two years ago 与一般过去时连用", "buy sb sth 过去式 bought"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 28,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "bought",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "a house",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "two years ago",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "他在两年之前没有买一个房子",
+    "english": "he didn't buy a house two years ago",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时否定：didn't + 动词原形", "two years ago 两年前，用于过去时"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 26,
+          "end": 31
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 32,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "didn't buy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "a house",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "two years ago",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 22,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "明白",
+    "english": "to understand",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "understand",
+          "pos": "动词",
+          "start": 3,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to understand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "你必须明白",
+    "english": "you have to understand",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示必须、不得不", "understand 后不接宾语也可成句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "understand",
+          "pos": "动词",
+          "start": 12,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to understand",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "你必须明白我在两年之前买了一个房子",
+    "english": "you have to understand I bought a house two years ago",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示必须、义务", "宾语从句用一般过去时"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "understand",
+          "pos": "动词",
+          "start": 12,
+          "end": 22
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 23,
+          "end": 24
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 25,
+          "end": 31
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 32,
+          "end": 33
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 34,
+          "end": 39
+        },
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 40,
+          "end": 43
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 44,
+          "end": 49
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 50,
+          "end": 53
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to understand",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 22
+        },
+        {
+          "text": "I bought a house two years ago",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 23,
+          "end": 53
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "洗",
+    "english": "to wash",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to wash 表示目的或打算"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wash",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to wash",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "脸",
+    "english": "face",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：脸；也可作动词：面对"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "face",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "face",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "我的脸",
+    "english": "my face",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "face",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my face",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "洗我的脸",
+    "english": "to wash my face",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "wash my face 洗脸"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wash",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "face",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to wash my face",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "我需要洗我的脸",
+    "english": "I need to wash my face",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["wash one's face 洗脸", "need to do sth 需要做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "wash",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "face",
+          "pos": "名词",
+          "start": 18,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to wash my face",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "每天",
+    "english": "every day",
+    "annotation": {
+      "order": 51,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["every day 表示频率，作时间状语", "every + 单数可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "我需要每天洗我的脸",
+    "english": "I need to wash my face every day",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every day 时间状语，表频率", "need to do sth 需要做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "wash",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "face",
+          "pos": "名词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 29,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to wash my face",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 22
+        },
+        {
+          "text": "every day",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "我每天洗我的脸",
+    "english": "I wash my face every day",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every day表频率", "wash one's face 洗脸"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "wash",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "face",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 21,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "wash",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "my face",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "every day",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "洗了",
+    "english": "washed",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "washed",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "washed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "我洗了我的脸",
+    "english": "I washed my face",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["washed为wash的过去式", "主谓宾结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "washed",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "face",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "washed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "my face",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "今天早上",
+    "english": "this morning",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["时间短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this morning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "我今天早上洗了我的脸",
+    "english": "I washed my face this morning",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["this morning表过去时间", "一般过去时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "washed",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "face",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "washed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "my face",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "this morning",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "我告诉过你",
+    "english": "I told you",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["tell sb sth 结构", "间接宾语you"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语"
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "我告诉过你我今天早上洗了我的脸",
+    "english": "I told you I washed my face this morning",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["宾语从句省略that", "一般过去时"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "text": "washed",
+          "pos": "动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "face",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 33,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "I washed my face this morning",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 11,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 从句"
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "打电话给",
+    "english": "to call",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["call 打电话；称呼", "不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to call",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 153,
+    "chinese": "打电话给他",
+    "english": "to call him",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["call sb 给某人打电话", "him 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to call",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "him",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 154,
+    "chinese": "我需要打电话给他",
+    "english": "I need to call him",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 结构", "him 为宾格代词作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 15,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to call him",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 155,
+    "chinese": "我打电话给他",
+    "english": "I call him",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["call sb 意为给某人打电话", "him 是 he 的宾格形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "call",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 156,
+    "chinese": "打了电话给",
+    "english": "called",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["call 的过去式/过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "called",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 157,
+    "chinese": "我打了电话给他",
+    "english": "I called him",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["called 是 call 的过去式", "一般过去时表示过去发生的动作"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "called",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 158,
+    "chinese": "昨晚",
+    "english": "last night",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 159,
+    "chinese": "我昨晚打了电话给他",
+    "english": "I called him last night",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["last night 作时间状语，位于句末", "一般过去时常与过去时间状语连用"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "called",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "last night",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 160,
+    "chinese": "他告诉我",
+    "english": "he told me",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he told me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 161,
+    "chinese": "他两年前买了一个房子",
+    "english": "he bought a house two years ago",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["two years ago 与一般过去时连用", "buy sb sth 过去式 bought"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 28,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "bought",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "a house",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "two years ago",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 162,
+    "chinese": "他告诉我他两年前买了一个房子",
+    "english": "he told me he bought a house two years ago",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["宾语从句用陈述语序", "two years ago 两年前"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 33,
+          "end": 38
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 39,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "told",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "he bought a house two years ago",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 11,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 从句"
+    }
+  },
+  {
+    "order": 163,
+    "chinese": "我昨晚打了电话给他而且他告诉我他在两年之前买了一个房子",
+    "english": "I called him last night and he told me he bought a house two years ago",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv + conj + S + V + IO + DO",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["and 连接两个并列分句", "宾语从句用陈述语序"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 42,
+          "end": 48
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 49,
+          "end": 50
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 51,
+          "end": 56
+        },
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 57,
+          "end": 60
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 61,
+          "end": 66
+        },
+        {
+          "text": "ago",
+          "pos": "副词",
+          "start": 67,
+          "end": 70
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "called",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "last night",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 23
+        },
+        {
+          "text": "and",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "told",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "he bought a house two years ago",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 39,
+          "end": 70
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语 + 连接词 + 主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  }
+]

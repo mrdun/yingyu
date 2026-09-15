@@ -1,0 +1,6829 @@
+[
+  {
+    "order": 1,
+    "chinese": "有名的",
+    "english": "famous",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：著名的；be famous for"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "famous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "他是有名的",
+    "english": "he is famous",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "famous 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "famous",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "更",
+    "english": "more",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["更多"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "更有名的",
+    "english": "more famous",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["more + 多音节形容词原级构成比较级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more famous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "他是更有名的",
+    "english": "he is more famous",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["more 构成比较级", "主系表结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "more famous",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "比我",
+    "english": "than me",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["than + 代词宾格 me"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "than",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "他是比我更有名的",
+    "english": "he is more famous than me",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["than 引导比较对象", "比较级句型"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 23,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "more famous",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 17
+        },
+        {
+          "text": "than me",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "没有人",
+    "english": "nobody",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "nobody",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "nobody",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "迈克尔杰克逊",
+    "english": "Michael Jackson",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "Michael",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "Jackson",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Michael Jackson",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "没有人比迈克尔杰克逊是更有名的",
+    "english": "nobody is more famous than Michael Jackson",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["more famous than 比较级结构", "nobody 作主语谓语用单数 is"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "nobody",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 15,
+          "end": 21
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "Michael",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "Jackson",
+          "pos": "名词",
+          "start": 35,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "nobody",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "more famous than Michael Jackson",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 10,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "最",
+    "english": "the most",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most 最高级标志，后接形容词/副词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "最有名的",
+    "english": "the most famous",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级短语", "the most + 形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most famous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "迈克尔杰克逊是最有名的",
+    "english": "Michael Jackson is the most famous",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most famous 最高级作表语"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "Michael",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "Jackson",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 28,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Michael Jackson",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the most famous",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 19,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "唱歌",
+    "english": "to sing",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语(to sing)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sing",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to sing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "歌手",
+    "english": "singer",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，歌手", "由 sing + -er 构成"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "singer",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "singer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "最有名的歌手",
+    "english": "the most famous singer",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["the most + 形容词最高级", "最高级修饰名词 singer"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "singer",
+          "pos": "名词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most famous singer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "迈克尔杰克逊是最有名的歌手",
+    "english": "Michael Jackson is the most famous singer",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most famous singer 最高级修饰名词", "系表结构"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "Michael",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "Jackson",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 28,
+          "end": 34
+        },
+        {
+          "text": "singer",
+          "pos": "名词",
+          "start": 35,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Michael Jackson",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the most famous singer",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "在世界上",
+    "english": "in the world",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示范围"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "迈克尔杰克逊是在世界上最有名的歌手",
+    "english": "Michael Jackson is the most famous singer in the world",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most famous singer 形容词最高级", "in the world 介词短语作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "Michael",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "Jackson",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 28,
+          "end": 34
+        },
+        {
+          "text": "singer",
+          "pos": "名词",
+          "start": 35,
+          "end": 41
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 42,
+          "end": 44
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 49,
+          "end": 54
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Michael Jackson",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the most famous singer",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 41
+        },
+        {
+          "text": "in the world",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 42,
+          "end": 54
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "迈克尔杰克逊（过去）是在世界上最有名的歌手",
+    "english": "Michael Jackson was the most famous singer in the world",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["the most famous singer 形容词最高级", "was 过去式表状态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "Michael",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "Jackson",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 29,
+          "end": 35
+        },
+        {
+          "text": "singer",
+          "pos": "名词",
+          "start": 36,
+          "end": 42
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 43,
+          "end": 45
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 46,
+          "end": 49
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 50,
+          "end": 55
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Michael Jackson",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "the most famous singer",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 42
+        },
+        {
+          "text": "in the world",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 43,
+          "end": 55
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "歌手",
+    "english": "singer",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，歌手", "由 sing + -er 构成"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "singer",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "singer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "两个歌手",
+    "english": "two singers",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["two + 复数名词", "singers 歌手"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "singers",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "two singers",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "一个",
+    "english": "one",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["数词 one 一"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "one",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "one",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "两个歌手之一",
+    "english": "one of two singers",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["one of + 复数名词", "两名歌手之一"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "one",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "two",
+          "pos": "数词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "singers",
+          "pos": "名词",
+          "start": 11,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "one of two singers",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "最有名的歌手们",
+    "english": "the most famous singers",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["the most + 形容词最高级", "最高级修饰复数名词 singers"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "singers",
+          "pos": "名词",
+          "start": 16,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most famous singers",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "最有名的歌手们之一",
+    "english": "one of the most famous singers",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["one of the + 最高级 + 复数名词", "最著名的歌手之一"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "one",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "singers",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "one of the most famous singers",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 30
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "迈克尔杰克逊（过去）是在世界上最有名的歌手之一",
+    "english": "Michael Jackson was one of the most famous singers in the world",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["one of the most famous singers 最高级表范围", "was 为 is 的过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "Michael",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "Jackson",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "one",
+          "pos": "代词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 36,
+          "end": 42
+        },
+        {
+          "text": "singers",
+          "pos": "名词",
+          "start": 43,
+          "end": 50
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 51,
+          "end": 53
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 54,
+          "end": 57
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 58,
+          "end": 63
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Michael Jackson",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "one of the most famous singers",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 50
+        },
+        {
+          "text": "in the world",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 51,
+          "end": 63
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "最有名的",
+    "english": "the most famous",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级短语", "the most + 形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most famous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "作画",
+    "english": "to paint",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或计划"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "paint",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to paint",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "画",
+    "english": "painting",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["绘画；油画", "paint 的现在分词/动名词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "painting",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "painting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "最有名的画",
+    "english": "the most famous painting",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级修饰名词", "the most famous 作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "painting",
+          "pos": "名词",
+          "start": 16,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most famous painting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "蒙娜丽莎",
+    "english": "The Mona Lisa",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Mona",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "Lisa",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Mona Lisa",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "蒙娜丽莎是最有名的画",
+    "english": "The Mona Lisa is the most famous painting",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most famous painting 作表语", "the most + 形容词最高级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Mona",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "Lisa",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 26,
+          "end": 32
+        },
+        {
+          "text": "painting",
+          "pos": "名词",
+          "start": 33,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Mona Lisa",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "the most famous painting",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "在世界上",
+    "english": "in the world",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示范围"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "蒙娜丽莎是世界上最有名的画",
+    "english": "The Mona Lisa is the most famous painting in the world",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most famous painting 作表语", "in the world 作后置定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Mona",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "Lisa",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 26,
+          "end": 32
+        },
+        {
+          "text": "painting",
+          "pos": "名词",
+          "start": 33,
+          "end": 41
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 42,
+          "end": 44
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 49,
+          "end": 54
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Mona Lisa",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "the most famous painting",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 41
+        },
+        {
+          "text": "in the world",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 42,
+          "end": 54
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "画",
+    "english": "painting",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["绘画；油画", "paint 的现在分词/动名词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "painting",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "painting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "画（复数）",
+    "english": "paintings",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["painting 的复数形式", "绘画；油画作品"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "paintings",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "paintings",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "最有名的画（复数）",
+    "english": "the most famous paintings",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级修饰名词", "the most famous 作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "paintings",
+          "pos": "名词",
+          "start": 16,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most famous paintings",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 25
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "最有名的画（复数）之一",
+    "english": "one of the most famous paintings",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["one of the + 最高级 + 复数名词", "最著名的画作之一"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "one",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "paintings",
+          "pos": "名词",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "one of the most famous paintings",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 32
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "蒙娜丽莎",
+    "english": "The Mona Lisa",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Mona",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "Lisa",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Mona Lisa",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "在世界上",
+    "english": "in the world",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示范围"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "蒙娜丽莎是世界上最有名的画之一",
+    "english": "The Mona Lisa is one of the most famous paintings in the world",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["one of the most famous paintings", "in the world 作后置定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Mona",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "Lisa",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "one",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 33,
+          "end": 39
+        },
+        {
+          "text": "paintings",
+          "pos": "名词",
+          "start": 40,
+          "end": 49
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 50,
+          "end": 52
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 53,
+          "end": 56
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 57,
+          "end": 62
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Mona Lisa",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "one of the most famous paintings",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 49
+        },
+        {
+          "text": "in the world",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 50,
+          "end": 62
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "地",
+    "english": "land",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "land",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "land",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "标志",
+    "english": "mark",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["mark：可作名词（记号）或动词（标记）"],
+      "confidence": 0.45,
+      "words": [
+        {
+          "text": "mark",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mark",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "地标",
+    "english": "landmark",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "landmark",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "landmark",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "最有名的",
+    "english": "the most famous",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级短语", "the most + 形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most famous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "最有名的地标",
+    "english": "the most famous landmark",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级修饰名词", "the most famous 作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "landmark",
+          "pos": "名词",
+          "start": 16,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most famous landmark",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "塔",
+    "english": "tower",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词单数"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "tower",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tower",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "埃菲尔铁塔",
+    "english": "The Eiffel Tower",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["专有名词短语，埃菲尔铁塔"],
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Eiffel",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "Tower",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Eiffel Tower",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "埃菲尔铁塔是最有名的地标",
+    "english": "The Eiffel Tower is the most famous landmark",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most famous 最高级作定语", "主系表结构"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Eiffel",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "Tower",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 29,
+          "end": 35
+        },
+        {
+          "text": "landmark",
+          "pos": "名词",
+          "start": 36,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Eiffel Tower",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 16
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the most famous landmark",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "巴黎",
+    "english": "Paris",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["Paris 巴黎，专有名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "Paris",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Paris",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "在巴黎",
+    "english": "in Paris",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表地点", "在巴黎"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "Paris",
+          "pos": "名词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in Paris",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "埃菲尔铁塔是巴黎最有名的地标",
+    "english": "The Eiffel Tower is the most famous landmark in Paris",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["in Paris 作地点状语", "the most famous 最高级作定语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Eiffel",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "Tower",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 29,
+          "end": 35
+        },
+        {
+          "text": "landmark",
+          "pos": "名词",
+          "start": 36,
+          "end": 44
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 45,
+          "end": 47
+        },
+        {
+          "text": "Paris",
+          "pos": "名词",
+          "start": 48,
+          "end": 53
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Eiffel Tower",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 16
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the most famous landmark",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 44
+        },
+        {
+          "text": "in Paris",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 45,
+          "end": 53
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "最有名的",
+    "english": "the most famous",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级短语", "the most + 形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most famous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "地标",
+    "english": "landmark",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "landmark",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "landmark",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "最有名的地标",
+    "english": "the most famous landmark",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级修饰名词", "the most famous 作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "landmark",
+          "pos": "名词",
+          "start": 16,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most famous landmark",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "墙",
+    "english": "wall",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["wall：名词，墙"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "wall",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "wall",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "伟大的",
+    "english": "great",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，表示“极好的；伟大的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "great",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "great",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "长城",
+    "english": "The Great Wall",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["专有名词短语，长城"],
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Great",
+          "pos": "形容词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "Wall",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Great Wall",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "中国",
+    "english": "China",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["China 中国"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "China",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "China",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "中国的长城",
+    "english": "The Great Wall of China",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["of China 作定语修饰 Wall"],
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Great",
+          "pos": "形容词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "Wall",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "China",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Great Wall of China",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "中国的长城是最有名的地标",
+    "english": "The Great Wall of China is the most famous landmark",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most famous landmark 作表语", "the most + 形容词最高级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Great",
+          "pos": "形容词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "Wall",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "China",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 36,
+          "end": 42
+        },
+        {
+          "text": "landmark",
+          "pos": "名词",
+          "start": 43,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Great Wall of China",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the most famous landmark",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 51
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "在世界上",
+    "english": "in the world",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示范围"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "中国的长城是世界上最有名的地标",
+    "english": "The Great Wall of China is the most famous landmark in the world",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most famous landmark 作表语", "in the world 作后置定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Great",
+          "pos": "形容词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "Wall",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "China",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 36,
+          "end": 42
+        },
+        {
+          "text": "landmark",
+          "pos": "名词",
+          "start": 43,
+          "end": 51
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 52,
+          "end": 54
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 55,
+          "end": 58
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 59,
+          "end": 64
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Great Wall of China",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the most famous landmark",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 51
+        },
+        {
+          "text": "in the world",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 52,
+          "end": 64
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "地标",
+    "english": "landmark",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "landmark",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "landmark",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "地标（复数）",
+    "english": "landmarks",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "landmarks",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "landmarks",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "最有名的地标之一",
+    "english": "one of the most famous landmarks",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["one of the + 最高级 + 复数名词", "最著名的地标之一"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "one",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "landmarks",
+          "pos": "名词",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "one of the most famous landmarks",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 32
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "中国的长城是世界上最有名的地标之一",
+    "english": "The Great Wall of China is one of the most famous landmarks in the world",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["one of the most famous + 复数名词", "in the world 作后置定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Great",
+          "pos": "形容词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "Wall",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "China",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "one",
+          "pos": "代词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "famous",
+          "pos": "形容词",
+          "start": 43,
+          "end": 49
+        },
+        {
+          "text": "landmarks",
+          "pos": "名词",
+          "start": 50,
+          "end": 59
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 60,
+          "end": 62
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 63,
+          "end": 66
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 67,
+          "end": 72
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Great Wall of China",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "one of the most famous landmarks",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 59
+        },
+        {
+          "text": "in the world",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 60,
+          "end": 72
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "好",
+    "english": "good",
+    "annotation": {
+      "order": 145,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "good",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "更好的",
+    "english": "better",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["good/well 的比较级"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "better",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "better",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "中文",
+    "english": "Chinese",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["Chinese 中文、中国人（的）"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "Chinese",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Chinese",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "你的",
+    "english": "your",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词性物主代词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "你的中文",
+    "english": "your Chinese",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["物主代词 your + 名词", "片段，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "Chinese",
+          "pos": "名词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your Chinese",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "英文",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "我的英文",
+    "english": "my English",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["物主代词 my + 名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "你的中文比我的英文是更好的",
+    "english": "Your Chinese is better than my English",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["better 是 good 的比较级", "than 引出比较对象"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "Your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "Chinese",
+          "pos": "名词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "better",
+          "pos": "形容词",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 31,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Your Chinese",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "better than my English",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 16,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "做",
+    "english": "to do",
+    "annotation": {
+      "order": 10,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语 to do"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "完成",
+    "english": "done",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["done 为 do 的过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "done",
+          "pos": "分词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "done",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "完成是更好的",
+    "english": "done is better",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["done 作主语（分词名词化）", "系表结构 is better"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "done",
+          "pos": "分词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "better",
+          "pos": "形容词",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "done",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "better",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "完美的",
+    "english": "perfect",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“完美的”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "perfect",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "比",
+    "english": "than",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["than 比"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "完成比完美是更好的",
+    "english": "done is better than perfect",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["better than 比较结构", "done 作主语"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "done",
+          "pos": "分词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "better",
+          "pos": "形容词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "done",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "better",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "than perfect",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "夏天",
+    "english": "summer",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "summer",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "summer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "冬天",
+    "english": "winter",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "winter",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "winter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "夏天比冬天是更好的",
+    "english": "summer is better than winter",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["better than 比较级结构", "系动词 is 后接形容词作表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "summer",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "better",
+          "pos": "形容词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "winter",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "summer",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "better than winter",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 10,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "我认为",
+    "english": "I think",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I think",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "我认为夏天比冬天是更好的",
+    "english": "I think summer is better than winter",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["better than 比较级结构", "宾语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "summer",
+          "pos": "名词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "better",
+          "pos": "形容词",
+          "start": 18,
+          "end": 24
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "winter",
+          "pos": "名词",
+          "start": 30,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "think",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "summer is better than winter",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 8,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "某个东西",
+    "english": "something",
+    "annotation": {
+      "order": 119,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定代词", "某事；某物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "something",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "没有东西",
+    "english": "nothing",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "nothing",
+          "pos": "代词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "nothing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "某个东西比没有东西是更好的",
+    "english": "something is better than nothing",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["不定代词作主语，谓语用单数", "better than 表比较：有总比没有好"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "better",
+          "pos": "形容词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "than",
+          "pos": "介词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "nothing",
+          "pos": "代词",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "something",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "better than nothing",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "更好的",
+    "english": "better",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["good/well 的比较级"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "better",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "better",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "最好的",
+    "english": "the best",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "形容词最高级"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the best",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "你是",
+    "english": "you are",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语与系动词片段，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "你是最好的",
+    "english": "you are the best",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the best 作表语", "形容词最高级前加the"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the best",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "人",
+    "english": "person",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可数名词，意为“人”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "你是最好的人",
+    "english": "you are the best person",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["最高级修饰名词作表语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the best person",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "认识",
+    "english": "to know",
+    "annotation": {
+      "order": 104,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["know 知道；认识"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "我认识",
+    "english": "I know",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.6,
+      "keyPoints": ["know 知道，通常需接宾语", "仅主语+动词，意思不完整"],
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "know",
+          "role": null,
+          "roleType": null,
+          "start": 2,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "最好的人",
+    "english": "the best person",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the best person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "我认识的最好的人",
+    "english": "the best person I know",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 18,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the best person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        },
+        {
+          "text": "I know",
+          "role": null,
+          "roleType": null,
+          "start": 16,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "你是我认识的最好的人",
+    "english": "you are the best person I know",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["I know 为定语从句修饰person", "从句前省略关系代词that"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 26,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the best person",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 23
+        },
+        {
+          "text": "I know",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 24,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "最好的",
+    "english": "the best",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "形容词最高级"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the best",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "朋友",
+    "english": "friend",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["friend 朋友"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "最好的朋友",
+    "english": "the best friend",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the best friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "我的最好的朋友",
+    "english": "my best friend",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["good 的最高级 best 作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my best friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "你是",
+    "english": "you are",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语与系动词片段，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "你是我最好的朋友",
+    "english": "you are my best friend",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["系动词 are + 名词短语作表语", "best 是 good 的最高级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "my best friend",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "他们是",
+    "english": "they are",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主系结构，缺表语，为句子片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "他们是我最好的朋友",
+    "english": "they are my best friends",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["形容词性物主代词 my 修饰名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "my best friends",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "我最好的朋友们",
+    "english": "my best friends",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词复数 friends"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my best friends",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "我最好的朋友们之一",
+    "english": "one of my best friends",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["one of + 复数名词 表示……之一"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "one",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "one of my best friends",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "他是",
+    "english": "he is",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["is 为系动词", "缺少表语，句子不完整"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "他是我最好的朋友们之一",
+    "english": "he is one of my best friends",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["one of + 形容词最高级 + 复数名词", "of 短语作定语修饰 one"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "one",
+          "pos": "代词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "one of my best friends",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "我的最佳",
+    "english": "my best",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词 best 作定语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my best",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "做",
+    "english": "to do",
+    "annotation": {
+      "order": 10,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语 to do"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "尽我的最大努力",
+    "english": "to do my best",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，do one's best尽力"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "best",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do my best",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "我尽我的最大努力",
+    "english": "I do my best",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["do one's best 尽最大努力"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "best",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "my best",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "我（过去）尽我最大努力",
+    "english": "I did my best",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["do one's best 尽最大努力", "一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "did",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "best",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "my best",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "平衡",
+    "english": "balance",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["平衡；使平衡"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "好的",
+    "english": "good",
+    "annotation": {
+      "order": 145,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "good",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "一个好的平衡",
+    "english": "a good balance",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "形容词作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a good balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "保持一个好的平衡",
+    "english": "to keep a good balance",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "keep 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep a good balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "我（过去）尽我最大努力",
+    "english": "I did my best",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["do one's best 尽最大努力", "一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "did",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "best",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "my best",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "我（过去）尽我最大努力保持一个好的平衡",
+    "english": "I did my best to keep a good balance",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["do one's best to do sth 尽力做某事", "不定式表目的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "did",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "best",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 22,
+          "end": 23
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 29,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "my best",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "to keep a good balance",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 14,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "工作和生活",
+    "english": "work and life",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["并列名词短语，作主语或宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "work and life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "在......之间",
+    "english": "between",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词，表示“在……之间”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "在工作和生活之间",
+    "english": "between work and life",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["between ... and ... 结构；work and life 工作与生活"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 17,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between work and life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "保持一个好的平衡",
+    "english": "to keep a good balance",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "keep 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep a good balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "在工作和生活之间保持一个好的平衡",
+    "english": "to keep a good balance between work and life",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "between...and 表范围"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 40,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep a good balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        },
+        {
+          "text": "between work and life",
+          "role": null,
+          "roleType": null,
+          "start": 23,
+          "end": 44
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "我（过去）尽我最大努力",
+    "english": "I did my best",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["do one's best 尽最大努力", "一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "did",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "best",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "my best",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "我（过去）尽我最大努力在工作和生活之间保持一个好的平衡",
+    "english": "I did my best to keep a good balance between work and life",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["do one's best 尽最大努力", "keep a balance between A and B"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "did",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "best",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 22,
+          "end": 23
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 29,
+          "end": 36
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 37,
+          "end": 44
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 45,
+          "end": 49
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 50,
+          "end": 53
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 54,
+          "end": 58
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "my best",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "to keep a good balance between work and life",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 14,
+          "end": 58
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  }
+]

@@ -1,0 +1,7035 @@
+[
+  {
+    "order": 1,
+    "chinese": "聪明的",
+    "english": "smart",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 smart，意为“聪明的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "smart",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "smart",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "人",
+    "english": "person",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可数名词，意为“人”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "聪明的人",
+    "english": "smart person",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词+名词构成的短语", "可作主语或表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "smart",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "smart person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "最聪明的",
+    "english": "the smartest",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the + 形容词最高级，指最聪明的人或物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "smartest",
+          "pos": "形容词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the smartest",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "最聪明的人",
+    "english": "the smartest person",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the + 最高级 + 名词构成名词短语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "smartest",
+          "pos": "形容词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the smartest person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "认识",
+    "english": "to know",
+    "annotation": {
+      "order": 104,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["know 知道；认识"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "认识(ed形式)",
+    "english": "known",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "known",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "known",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "我曾经...",
+    "english": "I have ever",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时片段, 缺少过去分词后的成分"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I have ever",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "我曾经认识",
+    "english": "I have ever known",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时", "ever 表曾经"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "known",
+          "pos": "分词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I have ever known",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "最聪明的人",
+    "english": "the smartest person",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the + 最高级 + 名词构成名词短语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "smartest",
+          "pos": "形容词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the smartest person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "我曾经认识的最聪明的人",
+    "english": "the smartest person I have ever known",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语含定语从句 I have ever known", "意为“我见过的最聪明的人”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "smartest",
+          "pos": "形容词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 20,
+          "end": 21
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "known",
+          "pos": "分词",
+          "start": 32,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the smartest person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        },
+        {
+          "text": "I have ever known",
+          "role": null,
+          "roleType": null,
+          "start": 20,
+          "end": 37
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "她是",
+    "english": "she is",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["主系结构片段，缺表语", "is 为系动词"],
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "她是我曾经认识的最聪明的人",
+    "english": "she is the smartest person I have ever known",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["最高级 the smartest person", "定语从句 I have ever known"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "smartest",
+          "pos": "形容词",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 27,
+          "end": 28
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "text": "known",
+          "pos": "分词",
+          "start": 39,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "the smartest person I have ever known",
+          "role": "表语",
+          "roleType": "名词短语",
+          "note": "含定语从句修饰 person",
+          "start": 7,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "我曾经知道",
+    "english": "I have ever known",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时", "ever 表曾经"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "known",
+          "pos": "分词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I have ever known",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "他曾经知道",
+    "english": "he has ever known",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时", "known 缺宾语，非完整句"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "known",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he has ever known",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "动物",
+    "english": "animal",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：动物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "animal",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "animal",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "危险的",
+    "english": "dangerous",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dangerous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "危险的动物",
+    "english": "dangerous animal",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "animal",
+          "pos": "名词",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dangerous animal",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "最",
+    "english": "the most",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most 最高级标志，后接形容词/副词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "最危险的",
+    "english": "the most dangerous",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most + 形容词最高级", "形容词短语，省略中心语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most dangerous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "最危险的动物",
+    "english": "the most dangerous animal",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most + 形容词最高级", "名词短语中心语 animal"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "animal",
+          "pos": "名词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most dangerous animal",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 25
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "他曾经知道",
+    "english": "he has ever known",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时", "known 缺宾语，非完整句"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "known",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he has ever known",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "他曾经知道的最危险的动物",
+    "english": "the most dangerous animal he has ever known",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["最高级修饰 animal", "定语从句 he has ever known 修饰 animal"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "animal",
+          "pos": "名词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "text": "known",
+          "pos": "分词",
+          "start": 38,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most dangerous animal",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 25
+        },
+        {
+          "text": "he has ever known",
+          "role": null,
+          "roleType": null,
+          "start": 26,
+          "end": 43
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "这是",
+    "english": "this is",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["this is 这是"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "这是他曾经知道的最危险的动物",
+    "english": "this is the most dangerous animal he has ever known",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["最高级+定语从句(现在完成时)", "he has ever known 作定语从句"],
+      "confidence": 0.86,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "animal",
+          "pos": "名词",
+          "start": 27,
+          "end": 33
+        },
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 41,
+          "end": 45
+        },
+        {
+          "text": "known",
+          "pos": "分词",
+          "start": 46,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the most dangerous animal",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 33
+        },
+        {
+          "text": "he has ever known",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 34,
+          "end": 51
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "他曾经...",
+    "english": "he has ever",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["只有助动词，缺少实义动词", "非完整句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he has ever",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "她曾经...",
+    "english": "she has ever",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has ever",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "建议",
+    "english": "advice",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["不可数名词：建议、忠告"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "好的",
+    "english": "good",
+    "annotation": {
+      "order": 145,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "good",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "好的建议",
+    "english": "good advice",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，advice 为不可数名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "good advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "最好的",
+    "english": "the best",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "形容词最高级"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the best",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "最好的建议",
+    "english": "the best advice",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "形容词最高级作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the best advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "给",
+    "english": "to give",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "给(ed形式)",
+    "english": "given",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["give 的过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "given",
+          "pos": "分词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "given",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "她曾经...",
+    "english": "she has ever",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has ever",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "她曾经给",
+    "english": "she has ever given",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "given",
+          "pos": "动词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has ever given",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "她曾经给我",
+    "english": "she has ever given me",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "given",
+          "pos": "动词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has ever given",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 19,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "最好的建议",
+    "english": "the best advice",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "形容词最高级作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the best advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "她曾经给我的最好的建议",
+    "english": "the best advice she has ever given me",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "given",
+          "pos": "分词",
+          "start": 29,
+          "end": 34
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 35,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the best advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        },
+        {
+          "text": "she has ever given me",
+          "role": null,
+          "roleType": null,
+          "start": 16,
+          "end": 37
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "这是",
+    "english": "this is",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["this is 这是"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "这是她曾经给我的最好的建议",
+    "english": "this is the best advice she has ever given me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["最高级the best advice", "现在完成时 has ever given"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "best",
+          "pos": "形容词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 32,
+          "end": 36
+        },
+        {
+          "text": "given",
+          "pos": "分词",
+          "start": 37,
+          "end": 42
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 43,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the best advice",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 23
+        },
+        {
+          "text": "she has ever given me",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 24,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "她曾经...",
+    "english": "she has ever",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has ever",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "星荣曾经...",
+    "english": "Xingrong has ever",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": "现在完成时",
+      "keyPoints": ["has为现在完成时助动词", "ever意为\"曾经\""],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong has ever",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "设计",
+    "english": "to design",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或计划"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "design",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to design",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "设计(ed形式)",
+    "english": "designed",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["design 的过去式/过去分词形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "designed",
+          "pos": "动词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "designed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "星荣曾经设计",
+    "english": "Xingrong has ever designed",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时结构has + 过去分词", "ever常与完成时连用"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "designed",
+          "pos": "动词",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong has ever designed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "挑战",
+    "english": "to challenge",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，非完整句子", "challenge 挑战"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "challenge",
+          "pos": "动词",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to challenge",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "有挑战性的",
+    "english": "challenging",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：有挑战性的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "challenging",
+          "pos": "形容词",
+          "start": 0,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "challenging",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "最",
+    "english": "the most",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most 最高级标志，后接形容词/副词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "最有挑战性的",
+    "english": "the most challenging",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most + 形容词最高级", "形容词短语，省略中心语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "challenging",
+          "pos": "形容词",
+          "start": 9,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most challenging",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "课程",
+    "english": "course",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["course 名词：课程"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "course",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "course",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "最有挑战性的课程",
+    "english": "the most challenging course",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most + 形容词最高级", "名词短语中心语 course"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "challenging",
+          "pos": "形容词",
+          "start": 9,
+          "end": 20
+        },
+        {
+          "text": "course",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most challenging course",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "星荣曾经设计",
+    "english": "Xingrong has ever designed",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时结构has + 过去分词", "ever常与完成时连用"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "designed",
+          "pos": "动词",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong has ever designed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "星荣曾经设计的最有挑战性的课程",
+    "english": "the most challenging course Xingrong has ever designed",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["最高级修饰 course", "定语从句 Xingrong has ever designed 修饰 course"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "challenging",
+          "pos": "形容词",
+          "start": 9,
+          "end": 20
+        },
+        {
+          "text": "course",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 28,
+          "end": 36
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 41,
+          "end": 45
+        },
+        {
+          "text": "designed",
+          "pos": "分词",
+          "start": 46,
+          "end": 54
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most challenging course",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        },
+        {
+          "text": "Xingrong has ever designed",
+          "role": null,
+          "roleType": null,
+          "start": 28,
+          "end": 54
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "这是",
+    "english": "this is",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["this is 这是"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "这是星荣曾经设计的最有挑战性的课程",
+    "english": "this is the most challenging course Xingrong has ever designed",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["最高级+定语从句(现在完成时)", "Xingrong has ever designed 作定语从句"],
+      "confidence": 0.86,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "challenging",
+          "pos": "形容词",
+          "start": 17,
+          "end": 28
+        },
+        {
+          "text": "course",
+          "pos": "名词",
+          "start": 29,
+          "end": 35
+        },
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 36,
+          "end": 44
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 49,
+          "end": 53
+        },
+        {
+          "text": "designed",
+          "pos": "分词",
+          "start": 54,
+          "end": 62
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the most challenging course",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 35
+        },
+        {
+          "text": "Xingrong has ever designed",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 36,
+          "end": 62
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "星荣(已经)设计",
+    "english": "Xingrong has designed",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": "现在完成时",
+      "keyPoints": ["has designed为现在完成时结构", "design意为\"设计\""],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "designed",
+          "pos": "动词",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong has designed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "课程",
+    "english": "course",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["course 名词：课程"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "course",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "course",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "英文",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "英文课程",
+    "english": "English course",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词作定语构成名词短语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "course",
+          "pos": "名词",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English course",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "多个",
+    "english": "several",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["several: 几个，数个"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "several",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "several",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "多个英文课程",
+    "english": "several English courses",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["several + 名词复数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "several",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "English",
+          "pos": "形容词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "courses",
+          "pos": "名词",
+          "start": 16,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "several English courses",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "星荣(已经)设计了多个英文课程",
+    "english": "Xingrong has designed several English courses",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时:has + 过去分词", "several后接可数名词复数"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "designed",
+          "pos": "动词",
+          "start": 13,
+          "end": 21
+        },
+        {
+          "text": "several",
+          "pos": "形容词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "English",
+          "pos": "形容词",
+          "start": 30,
+          "end": 37
+        },
+        {
+          "text": "courses",
+          "pos": "名词",
+          "start": 38,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "has designed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "several English courses",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 22,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "访问",
+    "english": "to visit",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "visit",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to visit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "访问(ed形式)",
+    "english": "visited",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["visited：visit 的过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "visited",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "visited",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "她(已经)访问",
+    "english": "she has visited",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["现在完成时结构：has + 过去分词", "缺少宾语，只是片段"],
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "visited",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she has visited",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "法国",
+    "english": "France",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["专有名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "France",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "France",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "她(已经)访问过法国",
+    "english": "she has visited France",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时：has visited", "visited 后接宾语 France"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "visited",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "France",
+          "pos": "名词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has visited",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "France",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "次",
+    "english": "time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "三次",
+    "english": "three times",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "three",
+          "pos": "数词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "times",
+          "pos": "名词",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "three times",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "她(已经)访问过法国三次",
+    "english": "she has visited France three times",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时：has visited", "three times 表示次数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "visited",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "France",
+          "pos": "名词",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "three",
+          "pos": "数词",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "times",
+          "pos": "名词",
+          "start": 29,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has visited",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "France",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "three times",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 23,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "完成",
+    "english": "to finish",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "完成(ed形式)",
+    "english": "finished",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["finish 的过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "finished",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "他们(已经)完成",
+    "english": "they have finished",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have + 过去分词构成现在完成时", "finished 此处不及物"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 10,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "项目",
+    "english": "project",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["project 项目；工程", "也可作动词：投射"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "project",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "他们的",
+    "english": "their",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "their",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "他们的项目",
+    "english": "their project",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "their project",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "他们(已经)完成了他们的项目",
+    "english": "they have finished their project",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时后接宾语", "their project 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 18
+        },
+        {
+          "text": "their project",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "我们(已经)完成了我们的项目",
+    "english": "we have finished our project",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时 have + 过去分词", "finish 后接宾语 our project"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 16
+        },
+        {
+          "text": "our project",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "我(已经)完成了我的项目",
+    "english": "I have finished my project",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时表已完成", "have + 过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 7,
+          "end": 15
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        },
+        {
+          "text": "my project",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "你(已经)完成了你的项目",
+    "english": "you have finished your project",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have + 过去分词构成现在完成时", "project 项目"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "your project",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "他(已经)完成了他的项目",
+    "english": "he has finished his project",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时表示已完成的动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 7,
+          "end": 15
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "his project",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "她(已经)完成了她的项目",
+    "english": "she has finished her project",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时表示动作已完成", "finish one's project 完成项目"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "her project",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "星荣(已经)完成了他的项目",
+    "english": "Xingrong has finished his project",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时表示动作已完成", "finish后接名词作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 13,
+          "end": 21
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 26,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "has finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "his project",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 22,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "它(已经)完成了它的项目",
+    "english": "it has finished its project",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时 has + 过去分词", "finish one's project 完成某人的项目"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 7,
+          "end": 15
+        },
+        {
+          "text": "its",
+          "pos": "代词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "its project",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "她(已经)完成了她的项目",
+    "english": "she has finished her project",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时表示动作已完成", "finish one's project 完成项目"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "her project",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "家庭作业",
+    "english": "homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：家庭作业"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "她(已经)完成了她的家庭作业",
+    "english": "she has finished her homework",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时表示动作已完成", "finish one's homework 完成作业"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 21,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "her homework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "她(过去已经)完成了她的家庭作业",
+    "english": "she had finished her homework",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "finish one's homework 完成作业"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "finished",
+          "pos": "分词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 21,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "her homework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "去",
+    "english": "to go",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "go 表示去"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "外面",
+    "english": "out",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["副词，常与动词连用表向外"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "去外面",
+    "english": "to go out",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "go out 外出"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "玩",
+    "english": "to play",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["play 玩；打（球）；演奏"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to play",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "去外面玩",
+    "english": "to go out to play",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to play 表目的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go out to play",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "她去外面玩",
+    "english": "she goes out to play",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["go out 出去", "to play 不定式作目的状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "goes",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "goes out",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "to play",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "她(过去)去外面玩",
+    "english": "she went out to play",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时", "不定式作目的状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "went",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "went out",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "to play",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "在...之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "在她(过去)去外面玩之前",
+    "english": "before she went out to play",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 引导时间状语从句", "go out to do sth 结构"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "went",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before she went out to play",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "她(过去已经)完成了她的家庭作业",
+    "english": "she had finished her homework",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "finish one's homework 完成作业"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "finished",
+          "pos": "分词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 21,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "her homework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "在她(过去)去外面玩之前，她(过去已经)完成了她的家庭作业",
+    "english": "she had finished her homework before she went out to play",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before 引导时间状语从句", "主句过去完成时，从句一般过去时"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "finished",
+          "pos": "分词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 21,
+          "end": 29
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 30,
+          "end": 36
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "went",
+          "pos": "动词",
+          "start": 41,
+          "end": 45
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 46,
+          "end": 49
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 50,
+          "end": 52
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 53,
+          "end": 57
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "her homework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 29
+        },
+        {
+          "text": "before she went out to play",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 30,
+          "end": 57
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "离开",
+    "english": "to leave",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to leave", "leave 离开"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "leave",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to leave",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "离开(ed形式)",
+    "english": "left",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["leave 的过去式/过去分词，此处为碎片"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "left",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "left",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "他们(过去已经)离开",
+    "english": "they had left",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "缺少宾语，为句子片段"],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "left",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they had left",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "派对",
+    "english": "party",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["聚会；派对", "政党"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "party",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "party",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "他们(过去已经)离开了那个派对",
+    "english": "they had left the party",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "the party 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "left",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "party",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "the party",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "到达",
+    "english": "to arrive",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“到达”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "arrive",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to arrive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "我(过去)到达",
+    "english": "I arrived",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主语 + 不及物动词", "arrived 为过去式"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "arrived",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "在...之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "在我(过去)到达之前",
+    "english": "before I arrived",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 引导时间状语从句", "主句谓语 arrived"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before I arrived",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "他们(过去已经)离开了那个派对",
+    "english": "they had left the party",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "the party 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "left",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "party",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "the party",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "在我(过去)到达之前他们(过去已经)离开了那个派对",
+    "english": "they had left the party before I arrived",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before 引导时间状语从句", "主句用过去完成时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "left",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "party",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 24,
+          "end": 30
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 31,
+          "end": 32
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 33,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "the party",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 23
+        },
+        {
+          "text": "before I arrived",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 24,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "吃",
+    "english": "to eat",
+    "annotation": {
+      "order": 38,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式 to eat"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "吃(ed形式)",
+    "english": "eaten",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "eaten",
+          "pos": "分词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "eaten",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "她(过去已经)吃",
+    "english": "she had eaten",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["had + 过去分词构成过去完成时", "eat 可作不及物动词"],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "eaten",
+          "pos": "动词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had eaten",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "晚饭",
+    "english": "dinner",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“晚餐；正餐”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dinner",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "她(过去已经)吃了晚饭",
+    "english": "she had eaten dinner",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "表示过去某时之前已完成"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "eaten",
+          "pos": "分词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 14,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had eaten",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "text": "dinner",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "已经",
+    "english": "already",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：已经"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "already",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "她(过去)已经吃了晚饭",
+    "english": "she had already eaten dinner",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["had + 过去分词构成过去完成时", "already 放在助动词之后"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "eaten",
+          "pos": "动词",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had already eaten",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 21
+        },
+        {
+          "text": "dinner",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "到达",
+    "english": "to arrive",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“到达”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "arrive",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to arrive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "我(过去)到达",
+    "english": "I arrived",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主语 + 不及物动词", "arrived 为过去式"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "arrived",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "家",
+    "english": "home",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["home 可作副词，意为“在家/回家”"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "我(过去)到达家",
+    "english": "I arrived home",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["home 作副词, 前面不加 to", "arrived 为过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "arrived",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "home",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "当...的时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "当我(过去)到达家的时候",
+    "english": "when I arrived home",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导时间状语从句", "arrive home 到家（home 为副词）"],
+      "tense": "一般过去时",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when I arrived home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "她(过去)已经吃了晚饭",
+    "english": "she had already eaten dinner",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["had + 过去分词构成过去完成时", "already 放在助动词之后"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "eaten",
+          "pos": "动词",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had already eaten",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 21
+        },
+        {
+          "text": "dinner",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "当我(过去)到达家的时候她(过去)已经吃了晚饭",
+    "english": "she had already eaten dinner when I arrived home",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["when 引导时间状语从句", "过去完成时表示先发生的动作"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "eaten",
+          "pos": "动词",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 34,
+          "end": 35
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 36,
+          "end": 43
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 44,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had already eaten",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 21
+        },
+        {
+          "text": "dinner",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 28
+        },
+        {
+          "text": "when I arrived home",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 29,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "阅读",
+    "english": "to read",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "阅读(ed形式)",
+    "english": "read",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "read",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "我(过去已经)阅读",
+    "english": "I had read",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.75,
+      "keyPoints": ["had read 为过去完成时，需接宾语才完整"],
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "read",
+          "pos": "分词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I had read",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "那本书",
+    "english": "the book",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语：那本书"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "我(过去已经)阅读过那本书",
+    "english": "I had read the book",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "read 的过去分词形式不变"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "read",
+          "pos": "分词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had read",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "the book",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "改编",
+    "english": "to adapt",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“适应”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "adapt",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to adapt",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "改编",
+    "english": "adaptation",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词", "意为适应/改编"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "adaptation",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "adaptation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "那个电影",
+    "english": "the movie",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the movie",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "那个电影改编",
+    "english": "the movie adaptation",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "adaptation",
+          "pos": "名词",
+          "start": 10,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the movie adaptation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "看",
+    "english": "to watch",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to watch 表示目的或打算"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to watch",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "(过去)看 ",
+    "english": "watched",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "watched",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "watched",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "(过去)看那个电影改编",
+    "english": "watched the movie adaptation",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动宾结构片段", "movie adaptation 电影改编版"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "watched",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "adaptation",
+          "pos": "名词",
+          "start": 18,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "watched the movie adaptation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "我(过去)看那个电影改编",
+    "english": "I watched the movie adaptation",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["watched为过去式", "movie adaptation 电影改编版"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "watched",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "adaptation",
+          "pos": "名词",
+          "start": 20,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "watched",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "the movie adaptation",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 10,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "在...之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "在我(过去)看那个电影改编之前",
+    "english": "before I watched the movie adaptation",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 引导时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "watched",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "adaptation",
+          "pos": "名词",
+          "start": 27,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before I watched the movie adaptation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 37
+        }
+      ]
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "我(过去已经)阅读过那本书",
+    "english": "I had read the book",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "read 的过去分词形式不变"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "read",
+          "pos": "分词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had read",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "the book",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "在我(过去)看那个电影改编之前我(过去已经)阅读过那本书",
+    "english": "I had read the book before I watched the movie adaptation",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + conj + S + V + O",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before 引导时间状语从句", "主句用过去完成时，从句用一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "read",
+          "pos": "分词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 27,
+          "end": 28
+        },
+        {
+          "text": "watched",
+          "pos": "动词",
+          "start": 29,
+          "end": 36
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 41,
+          "end": 46
+        },
+        {
+          "text": "adaptation",
+          "pos": "名词",
+          "start": 47,
+          "end": 57
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had read",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "the book",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "before I watched the movie adaptation",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 20,
+          "end": 57
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 连接词 + 主语 + 谓语 + 宾语"
+    }
+  }
+]

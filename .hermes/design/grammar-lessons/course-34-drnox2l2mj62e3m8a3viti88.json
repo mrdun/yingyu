@@ -1,0 +1,6946 @@
+[
+  {
+    "order": 1,
+    "chinese": "这里",
+    "english": "here",
+    "annotation": {
+      "order": 20,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["地点副词 here 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "我在这里",
+    "english": "I am here",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["here 为地点副词作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "想要",
+    "english": "want",
+    "annotation": {
+      "order": 28,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "我在这里",
+    "english": "I am here",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["here 为地点副词作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "我想要在这里",
+    "english": "I want to be here",
+    "annotation": {
+      "order": 49,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to be here",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "不",
+    "english": "don't",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do not 的缩写，构成否定"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "我不想在这里",
+    "english": "I don't want to be here",
+    "annotation": {
+      "order": 50,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't want to do sth 不想做某事", "不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to be here",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "那里",
+    "english": "there",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "我不想去那里",
+    "english": "I don't want to be there",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "否定形式 don't want to do"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to be there",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "我想要去那里",
+    "english": "I want to be there",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "there 作表语表示地点"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to be there",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "我不想在这里我想要去那里",
+    "english": "I don't want to be here I want to be there",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + S + V + O",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "两个独立分句并列"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 37,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to be here",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 23
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "to be there",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 31,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "我在这里",
+    "english": "I am here",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["here 为地点副词作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "当......时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "当我在这里的时候",
+    "english": "when I am here",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导的时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when I am here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "我想要去那里",
+    "english": "I want to be there",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "there 作表语表示地点"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to be there",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "当我在这里的时候，我想要去那里",
+    "english": "when I am here I want to be there",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Clause + S + V + O",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["when 引导时间状语从句", "want to do sth 表示想做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 28,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when I am here",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "to be there",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 22,
+          "end": 33
+        }
+      ],
+      "structure": "从句 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "当我(过去)在这里的时候，我(过去)想要去那里",
+    "english": "when I was here I wanted to be there",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Clause + S + V + O",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["when 引导时间状语从句", "want to do sth 表示“想要做某事”"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "text": "wanted",
+          "pos": "动词",
+          "start": 18,
+          "end": 24
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 31,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when I was here",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "text": "wanted",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 24
+        },
+        {
+          "text": "to be there",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 25,
+          "end": 36
+        }
+      ],
+      "structure": "从句 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "老师",
+    "english": "teacher",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "我是一名老师",
+    "english": "I am a teacher",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "a teacher 作名词表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "a teacher",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 5,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "想要",
+    "english": "want",
+    "annotation": {
+      "order": 28,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "我想要成为一名老师",
+    "english": "I want to be a teacher",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to be a teacher",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "富有的",
+    "english": "rich",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：富有的；be rich in"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "rich",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "rich",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "我是富有的",
+    "english": "I am rich",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be 动词作系动词，后接形容词作表语", "rich 形容词，意为“富有的”"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "rich",
+          "pos": "形容词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "rich",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "想要",
+    "english": "want",
+    "annotation": {
+      "order": 28,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "我想要变得富有",
+    "english": "I want to be rich",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "rich",
+          "pos": "形容词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to be rich",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "我在这里",
+    "english": "I am here",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["here 为地点副词作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "我(过去)在这里",
+    "english": "I was here",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["was 后接 here 表示过去所处的位置"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "here",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "当......时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "当我(过去)在这里的时候",
+    "english": "when I was here",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导时间状语从句，意为“当我在这里时”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when I was here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "在......之前；以前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "当我以前在这里的时候",
+    "english": "when I was here before",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般过去时",
+      "keyPoints": ["when 引导时间状语从句", "was 为过去式，表示过去的状态"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "before",
+          "pos": "副词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "was here before",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "注意到；察觉到",
+    "english": "to notice",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to notice",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "我注意到",
+    "english": "I notice",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "keyPoints": ["后接宾语从句的片段"],
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "notice",
+          "role": null,
+          "roleType": null,
+          "start": 2,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "那个",
+    "english": "that",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["that 可作代词或引导词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "我注意到那个",
+    "english": "I notice that",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "keyPoints": ["that 引导宾语从句"],
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "notice",
+          "role": null,
+          "roleType": null,
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "我(过去)注意到那个",
+    "english": "I noticed that",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "keyPoints": ["that 引导宾语从句"],
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "role": null,
+          "roleType": null,
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "我(过去)没有注意到那个",
+    "english": "I didn't notice that",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["notice 后接代词作宾语", "didn't + 动词原形"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't notice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "当我以前在这里的时候",
+    "english": "when I was here before",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般过去时",
+      "keyPoints": ["when 引导时间状语从句", "was 为过去式，表示过去的状态"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "before",
+          "pos": "副词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "was here before",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "我(过去)没有注意那个当我以前在这里的时候",
+    "english": "I didn't notice that when I was here before",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["when 引导时间状语从句", "that 作 notice 的宾语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 26,
+          "end": 27
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 32,
+          "end": 36
+        },
+        {
+          "text": "before",
+          "pos": "副词",
+          "start": 37,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't notice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "when I was here before",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 21,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "我(过去)注意到",
+    "english": "I noticed",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "keyPoints": ["后接宾语从句的片段"],
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "role": null,
+          "roleType": null,
+          "start": 2,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "某个东西",
+    "english": "something",
+    "annotation": {
+      "order": 119,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定代词", "某事；某物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "something",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "错误的",
+    "english": "wrong",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "wrong",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "错误的某个东西",
+    "english": "something wrong",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词 wrong 修饰不定代词时后置"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 10,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "something wrong",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "那里",
+    "english": "there",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "错误的某个东西在那里",
+    "english": "something wrong is there",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["there 作地点状语", "形容词 wrong 后置修饰 something"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "something wrong",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "there",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "存在",
+    "english": "there is",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "存在错误的某个东西",
+    "english": "there is something wrong",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S + Attrib",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般现在时",
+      "keyPoints": ["there be 句型表示“有”", "形容词 wrong 后置修饰 something"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "something",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "wrong",
+          "role": "定语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "structure": "There be + 主语 + 定语"
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "这里",
+    "english": "here",
+    "annotation": {
+      "order": 20,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["地点副词 here 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "这里有错误的某个东西",
+    "english": "there is something wrong here",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S + Attrib + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般现在时",
+      "keyPoints": ["there be 句型表示“有”", "here 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 25,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "something",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "wrong",
+          "role": "定语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 25,
+          "end": 29
+        }
+      ],
+      "structure": "There be + 主语 + 定语 + 状语"
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "这里(过去)有错误的某个东西",
+    "english": "there was something wrong here",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S + Attrib + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般过去时",
+      "keyPoints": ["there be 句型过去式 was", "wrong 后置修饰 something"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 26,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "something",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "wrong",
+          "role": "定语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 26,
+          "end": 30
+        }
+      ],
+      "structure": "There be + 主语 + 定语 + 状语"
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "我(过去)注意到",
+    "english": "I noticed",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "keyPoints": ["后接宾语从句的片段"],
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "role": null,
+          "roleType": null,
+          "start": 2,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "我(过去)注意到这里(过去)有错误的某个东西",
+    "english": "I noticed there was something wrong here",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["宾语从句省略 that", "there be 句型"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 30,
+          "end": 35
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 36,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "there was something wrong here",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 10,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "那个",
+    "english": "that",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["that 可作代词或引导词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "我(过去)注意到(那个)这里(过去)有错误的某个东西",
+    "english": "I noticed that there was something wrong here",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["that 引导宾语从句", "there be 句型"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 25,
+          "end": 34
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 41,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "that there was something wrong here",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 10,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "不同的",
+    "english": "different",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“不同的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "different",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "某个东西",
+    "english": "something",
+    "annotation": {
+      "order": 119,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定代词", "某事；某物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "something",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "不同的某个东西",
+    "english": "something different",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定代词 something + 形容词后置定语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "something different",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "存在不同的某个东西",
+    "english": "there is something different",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般现在时",
+      "keyPoints": ["形容词 different 后置修饰 something", "There be 句型表示存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 19,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "something different",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 28
+        }
+      ],
+      "structure": "There be + 主语"
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "这里",
+    "english": "here",
+    "annotation": {
+      "order": 20,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["地点副词 here 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "这里有不同的某个东西",
+    "english": "there is something different here",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般现在时",
+      "keyPoints": ["here 是副词作地点状语", "形容词 different 后置修饰 something"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 19,
+          "end": 28
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 29,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "something different",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 28
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 29,
+          "end": 33
+        }
+      ],
+      "structure": "There be + 主语 + 状语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "这里(过去)有不同的某个东西",
+    "english": "there was something different here",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S + Attrib + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般过去时",
+      "keyPoints": ["there be 句型过去式 was", "different 后置修饰 something"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "something",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "different",
+          "role": "定语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "structure": "There be + 主语 + 定语 + 状语"
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "我(过去)注意到",
+    "english": "I noticed",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "keyPoints": ["后接宾语从句的片段"],
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "role": null,
+          "roleType": null,
+          "start": 2,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "我(过去)注意到这里(过去)存在不同的某个东西",
+    "english": "I noticed there was something different here",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["宾语从句省略 that", "there be 句型"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 30,
+          "end": 39
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 40,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "there was something different here",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 10,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "那个",
+    "english": "that",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["that 可作代词或引导词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "我(过去)注意到(那个)这里(过去)存在不同的某个东西",
+    "english": "I noticed that there was something different here",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["that 引导宾语从句", "there be 句型"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 25,
+          "end": 34
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 35,
+          "end": 44
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 45,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "noticed",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "that there was something different here",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 10,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "不同的",
+    "english": "different",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“不同的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "different",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "不同之处",
+    "english": "difference",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“差别；不同”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "在......之间",
+    "english": "between",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词，表示“在……之间”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "和",
+    "english": "and",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["并列连词", "用于连接并列的词、短语或句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "and",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "你和我",
+    "english": "you and me",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["并列名词短语，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you and me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "在你和我之间",
+    "english": "between you and me",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["between you and me 常用介词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between you and me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "在你和我之间的不同",
+    "english": "difference between you and me",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，介词 between 后接宾格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 27,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "between you and me",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "大的",
+    "english": "big",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 big，大的"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "big",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "一个大的不同",
+    "english": "a big difference",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 6,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a big difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "在你和我之间的一个大的不同",
+    "english": "a big difference between you and me",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：a big difference", "between 表示“在…之间”"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 33,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a big difference between you and me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "那里",
+    "english": "there",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "在你和我之间的一个大的不同在那里",
+    "english": "a big difference between you and me is there",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["there 作地点状语", "主语中心词 difference 为单数"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 39,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a big difference between you and me",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 35
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "there",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 39,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "存在",
+    "english": "there is",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "存在在你和我之间的一个大的不同",
+    "english": "there is a big difference between you and me",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般现在时",
+      "keyPoints": ["There be 句型表示某处有某物", "between you and me 是介词短语作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 26,
+          "end": 33
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 38,
+          "end": 41
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 42,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "a big difference",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 25
+        },
+        {
+          "text": "between you and me",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 44
+        }
+      ],
+      "structure": "There be + 主语 + 状语"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "武器",
+    "english": "weapon",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：武器"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "weapon",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "weapon",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "工具",
+    "english": "tool",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词单数"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "tool",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tool",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "一个武器和一个工具",
+    "english": "a weapon and a tool",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "并列结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "weapon",
+          "pos": "名词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "tool",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a weapon and a tool",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "在......之间",
+    "english": "between",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词，表示“在……之间”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "在一个武器和一个工具之间",
+    "english": "between a weapon and a tool",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["between A and B 结构，表示两者之间"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "weapon",
+          "pos": "名词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "tool",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between a weapon and a tool",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "存在一个大的不同",
+    "english": "there is a big difference",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般现在时",
+      "keyPoints": ["there be 句型表示存在", "a big difference 作主语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 15,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "a big difference",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 25
+        }
+      ],
+      "structure": "There be + 主语"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "存在在一个武器和一个工具之间的一个大的不同",
+    "english": "there is a big difference between a weapon and a tool",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般现在时",
+      "keyPoints": ["there be 句型表示存在", "between...and... 表示两者之间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 26,
+          "end": 33
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 34,
+          "end": 35
+        },
+        {
+          "text": "weapon",
+          "pos": "名词",
+          "start": 36,
+          "end": 42
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 43,
+          "end": 46
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 47,
+          "end": 48
+        },
+        {
+          "text": "tool",
+          "pos": "名词",
+          "start": 49,
+          "end": 53
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "a big difference",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 25
+        },
+        {
+          "text": "between a weapon and a tool",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 53
+        }
+      ],
+      "structure": "There be + 主语 + 状语"
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "正确",
+    "english": "right",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：正确的；反义 wrong"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "right",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "right",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "错误",
+    "english": "wrong",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "wrong",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "正确和错误",
+    "english": "right and wrong",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词性短语：是非、对错"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "right",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 10,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "right and wrong",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "在......之间",
+    "english": "between",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词，表示“在……之间”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "在对和错之间",
+    "english": "between right and wrong",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["between ... and ... 结构；right and wrong 对与错"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "right",
+          "pos": "名词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "wrong",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between right and wrong",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "不同之处",
+    "english": "difference",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“差别；不同”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "那个不同之处(区别)",
+    "english": "the difference",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "在对和错之间的区别",
+    "english": "the difference between right and wrong",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "right",
+          "pos": "名词",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "wrong",
+          "pos": "名词",
+          "start": 33,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "between right and wrong",
+          "role": null,
+          "roleType": null,
+          "start": 15,
+          "end": 38
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "知道",
+    "english": "to know",
+    "annotation": {
+      "order": 104,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["know 知道；认识"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "知道对与错的区别",
+    "english": "to know the difference between right and wrong",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to know", "know the difference between A and B 分辨A与B"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 12,
+          "end": 22
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "right",
+          "pos": "形容词",
+          "start": 31,
+          "end": 36
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 41,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "the difference",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 22
+        },
+        {
+          "text": "between right and wrong",
+          "role": null,
+          "roleType": null,
+          "start": 23,
+          "end": 46
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "我们",
+    "english": "we",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "我们知道",
+    "english": "we know",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["we 作主语，know 作谓语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "所有；全部",
+    "english": "all",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["all 可作代词/形容词：全部"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "all",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "all",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "我们都知道",
+    "english": "we all know",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["all 作同位语，缺宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "all",
+          "pos": "副词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we all know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "我们都知道对与错的区别",
+    "english": "we all know the difference between right and wrong",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["between...and... 表示两者之间", "all 作同位语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "all",
+          "pos": "副词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 16,
+          "end": 26
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "right",
+          "pos": "名词",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "wrong",
+          "pos": "名词",
+          "start": 45,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we all",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "the difference between right and wrong",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "你必须知道",
+    "english": "you have to know",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 后接动词原形", "know 为不及物动词用法"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "你必须知道对与错的区别",
+    "english": "you have to know the difference between right and wrong",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示“必须、不得不”", "between ... and ... 表示“在……之间”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 21,
+          "end": 31
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 32,
+          "end": 39
+        },
+        {
+          "text": "right",
+          "pos": "名词",
+          "start": 40,
+          "end": 45
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 46,
+          "end": 49
+        },
+        {
+          "text": "wrong",
+          "pos": "名词",
+          "start": 50,
+          "end": 55
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "the difference between right and wrong",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 55
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "告诉",
+    "english": "to tell",
+    "annotation": {
+      "order": 115,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "区别",
+    "english": "the difference",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "分辨区别",
+    "english": "to tell the difference",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell the difference 分辨"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 12,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell the difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "在......之间",
+    "english": "between",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词，表示“在……之间”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "正确和错误",
+    "english": "right and wrong",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词性短语：是非、对错"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "right",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 10,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "right and wrong",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "在对和错之间",
+    "english": "between right and wrong",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["between ... and ... 结构；right and wrong 对与错"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "right",
+          "pos": "名词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "wrong",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between right and wrong",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "对与错的区别",
+    "english": "the difference between right and wrong",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "right",
+          "pos": "名词",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "wrong",
+          "pos": "名词",
+          "start": 33,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "between right and wrong",
+          "role": null,
+          "roleType": null,
+          "start": 15,
+          "end": 38
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "分辨是非",
+    "english": "to tell the difference between right and wrong",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell the difference between A and B 辨别A与B"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 12,
+          "end": 22
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "right",
+          "pos": "形容词",
+          "start": 31,
+          "end": 36
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 41,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell the difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        },
+        {
+          "text": "between right and wrong",
+          "role": null,
+          "roleType": null,
+          "start": 23,
+          "end": 46
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "年龄大的；老的",
+    "english": "old",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 old"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "old",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "足够",
+    "english": "enough",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["enough 足够的"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "足够年龄大",
+    "english": "old enough",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词+enough 表足够"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "old enough",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "你是",
+    "english": "you are",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语与系动词片段，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "你是足够年龄大的",
+    "english": "you are old enough",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough 修饰形容词时后置"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "old enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "你是年龄大的足够分辨是非",
+    "english": "you are old enough to tell the difference between right and wrong",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough to do 结构", "不定式作结果状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 31,
+          "end": 41
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 42,
+          "end": 49
+        },
+        {
+          "text": "right",
+          "pos": "名词",
+          "start": 50,
+          "end": 55
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 56,
+          "end": 59
+        },
+        {
+          "text": "wrong",
+          "pos": "名词",
+          "start": 60,
+          "end": 65
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "old enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 18
+        },
+        {
+          "text": "to tell the difference between right and wrong",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 65
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "孩子",
+    "english": "child",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": ["名词：孩子；复数 children"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "child",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "child",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "孩子们",
+    "english": "children",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": ["名词 child 的复数形式"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "children",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "children",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "我们的",
+    "english": "our",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词性物主代词，后接名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "our",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "我们的孩子们",
+    "english": "our children",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，children 是 child 的复数"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "children",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "our children",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "教",
+    "english": "to teach",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "teach",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to teach",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "我们需要",
+    "english": "we need",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["need 后常接 to do sth"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "我们需要教",
+    "english": "we need to teach",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "teach",
+          "pos": "动词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need to teach",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "我们需要教我们的孩子们",
+    "english": "we need to teach our children",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.68,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "teach",
+          "pos": "动词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "children",
+          "pos": "名词",
+          "start": 21,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need to teach our children",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "分辨区别",
+    "english": "to tell the difference",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell the difference 分辨"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 12,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell the difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "在对和错之间",
+    "english": "between right and wrong",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["between ... and ... 结构；right and wrong 对与错"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "right",
+          "pos": "名词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "wrong",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between right and wrong",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "辨别是非",
+    "english": "to tell the difference between right and wrong",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell the difference between A and B 辨别A与B"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 12,
+          "end": 22
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "right",
+          "pos": "形容词",
+          "start": 31,
+          "end": 36
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 41,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell the difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        },
+        {
+          "text": "between right and wrong",
+          "role": null,
+          "roleType": null,
+          "start": 23,
+          "end": 46
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "如何",
+    "english": "how",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["如何；怎样"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "如何辨别是非",
+    "english": "how to tell the difference between right and wrong",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["how + 不定式", "tell the difference"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 16,
+          "end": 26
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "right",
+          "pos": "名词",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "wrong",
+          "pos": "名词",
+          "start": 45,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how to tell the difference between right and wrong",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 50
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "我们需要教我们的孩子们如何辨别是非",
+    "english": "we need to teach our children how to tell the difference between right and wrong",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth", "how to tell the difference"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "teach",
+          "pos": "动词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "children",
+          "pos": "名词",
+          "start": 21,
+          "end": 29
+        },
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 37,
+          "end": 41
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 42,
+          "end": 45
+        },
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 46,
+          "end": 56
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 57,
+          "end": 64
+        },
+        {
+          "text": "right",
+          "pos": "形容词",
+          "start": 65,
+          "end": 70
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 71,
+          "end": 74
+        },
+        {
+          "text": "wrong",
+          "pos": "形容词",
+          "start": 75,
+          "end": 80
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to teach our children how to tell the difference between right and wrong",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 8,
+          "end": 80
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  }
+]

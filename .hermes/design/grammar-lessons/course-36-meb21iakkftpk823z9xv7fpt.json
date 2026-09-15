@@ -1,0 +1,7007 @@
+[
+  {
+    "order": 1,
+    "chinese": "重要的",
+    "english": "important",
+    "annotation": {
+      "order": 120,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词", "重要的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "更",
+    "english": "more",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["更多"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "更重要的",
+    "english": "more important",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["more + 多音节形容词原级构成比较级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 5,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "比",
+    "english": "than",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["than 比"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "困难的",
+    "english": "difficult",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“困难的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "difficult",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "中文",
+    "english": "Chinese",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["Chinese 中文、中国人（的）"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "Chinese",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Chinese",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "英文",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "中文比英文是更难的",
+    "english": "Chinese is more difficult than English",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["比较级 more difficult than", "than 引出比较对象作状语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "Chinese",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 16,
+          "end": 25
+        },
+        {
+          "text": "than",
+          "pos": "介词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 31,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Chinese",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "more difficult",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 11,
+          "end": 25
+        },
+        {
+          "text": "than English",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "更困难的",
+    "english": "more difficult",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["更困难的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 5,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more difficult",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "最",
+    "english": "the most",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most 最高级标志，后接形容词/副词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "最困难的",
+    "english": "the most difficult",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most + 形容词最高级", "形容词短语，省略中心语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most difficult",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "语言",
+    "english": "language",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "language",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "language",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "最难的语言",
+    "english": "the most difficult language",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级修饰名词", "the most difficult 作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "language",
+          "pos": "名词",
+          "start": 19,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most difficult language",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "中文",
+    "english": "Chinese",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["Chinese 中文、中国人（的）"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "Chinese",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Chinese",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "中文是最难的语言",
+    "english": "Chinese is the most difficult language",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主语Chinese + 系动词is + 表语", "形容词最高级 the most difficult"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "Chinese",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "language",
+          "pos": "名词",
+          "start": 30,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Chinese",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the most difficult language",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "世界",
+    "english": "the world",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语，非完整句子"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "在世界上",
+    "english": "in the world",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示范围"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "中文是世界上最难的语言",
+    "english": "Chinese is the most difficult language in the world",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["in the world 作地点状语", "形容词最高级 the most difficult"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "Chinese",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "language",
+          "pos": "名词",
+          "start": 30,
+          "end": 38
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 42,
+          "end": 45
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 46,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Chinese",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the most difficult language",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 38
+        },
+        {
+          "text": "in the world",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 39,
+          "end": 51
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "问题",
+    "english": "problem",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "最困难的",
+    "english": "the most difficult",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most + 形容词最高级", "形容词短语，省略中心语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most difficult",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "最困难的问题",
+    "english": "the most difficult problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级修饰名词", "the most difficult 作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most difficult problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "这是最困难的问题",
+    "english": "this is the most difficult problem",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most difficult 最高级修饰名词作表语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the most difficult problem",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "在世界上",
+    "english": "in the world",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示范围"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "这是在世界上最困难的问题",
+    "english": "this is the most difficult problem in the world",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most difficult 最高级作表语", "in the world 介词短语作地点状语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 35,
+          "end": 37
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 38,
+          "end": 41
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 42,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the most difficult problem",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 34
+        },
+        {
+          "text": "in the world",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 35,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "最",
+    "english": "the most",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most 最高级标志，后接形容词/副词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "危险的",
+    "english": "dangerous",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dangerous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "最危险的",
+    "english": "the most dangerous",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most + 形容词最高级", "形容词短语，省略中心语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most dangerous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "人",
+    "english": "man",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["man 男人；人类"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "man",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "man",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "最危险的人",
+    "english": "the most dangerous man",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most + 形容词最高级", "名词短语中心语 man"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "man",
+          "pos": "名词",
+          "start": 19,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most dangerous man",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "他是最危险的人",
+    "english": "he is the most dangerous man",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most + 形容词构成最高级", "名词短语作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 15,
+          "end": 24
+        },
+        {
+          "text": "man",
+          "pos": "名词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "the most dangerous man",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "在世界上",
+    "english": "in the world",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示范围"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "他是在世界上最危险的人",
+    "english": "he is the most dangerous man in the world",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most dangerous man 形容词最高级", "in the world 作后置定语，修饰 man"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 15,
+          "end": 24
+        },
+        {
+          "text": "man",
+          "pos": "名词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 36,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "the most dangerous man in the world",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "他们是",
+    "english": "they are",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主系结构，缺表语，为句子片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "他们是危险的",
+    "english": "they are dangerous",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "dangerous 作表语说明主语特征"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "dangerous",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "以为",
+    "english": "to think",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to think"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to think",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "你以为",
+    "english": "you think",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you think",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "你以为他们是危险的",
+    "english": "you think they are dangerous",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["think 后接宾语从句", "从句用陈述语序"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 19,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "think",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "they are dangerous",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 10,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "更",
+    "english": "more",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["更多"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "更危险的",
+    "english": "more dangerous",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["更危险的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 5,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more dangerous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "他们是更危险的",
+    "english": "they are more dangerous",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["more 构成比较级"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 14,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "more dangerous",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 9,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "比",
+    "english": "than",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["than 比"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "你以为",
+    "english": "you think",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you think",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "比你以为",
+    "english": "than you think",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["than 后接从句 you think"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than you think",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "他们是比你以为的更危险的",
+    "english": "they are more dangerous than you think",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["比较级 + than 引导比较状语从句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 14,
+          "end": 23
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 33,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "more dangerous",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 9,
+          "end": 23
+        },
+        {
+          "text": "than you think",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 24,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "宝贵的",
+    "english": "valuable",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：贵重的；有价值的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "valuable",
+          "pos": "形容词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "valuable",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "最",
+    "english": "the most",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most 最高级标志，后接形容词/副词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "最宝贵的",
+    "english": "the most valuable",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["the most + 形容词最高级", "省略名词的形容词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "valuable",
+          "pos": "形容词",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most valuable",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "东西",
+    "english": "thing",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "thing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "最宝贵的东西",
+    "english": "the most valuable thing",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["the most + 形容词最高级", "最高级作定语修饰 thing"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "valuable",
+          "pos": "形容词",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most valuable thing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "时间",
+    "english": "time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "时间是最宝贵的东西",
+    "english": "time is the most valuable thing",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most valuable 最高级作定语", "thing 作表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "valuable",
+          "pos": "形容词",
+          "start": 17,
+          "end": 25
+        },
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 26,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the most valuable thing",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "拥有",
+    "english": "to have",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，have 表示拥有"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to have",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "我们",
+    "english": "we",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "我们拥有",
+    "english": "we have",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we have",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "那个东西",
+    "english": "the thing",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语,不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the thing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "我们拥有那个东西",
+    "english": "we have the thing",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have 表示'有'", "the thing 特指某物"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the thing",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "我们拥有的那个东西",
+    "english": "the thing we have",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["含定语从句的名词短语,非完整句子"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the thing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "we have",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "最宝贵的东西",
+    "english": "the most valuable thing",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["the most + 形容词最高级", "最高级作定语修饰 thing"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "valuable",
+          "pos": "形容词",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most valuable thing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "我们拥有的最宝贵的东西",
+    "english": "the most valuable thing we have",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "含定语从句 we have"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "valuable",
+          "pos": "形容词",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most valuable thing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        },
+        {
+          "text": "we have",
+          "role": null,
+          "roleType": null,
+          "start": 24,
+          "end": 31
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "时间是我们拥有的最宝贵的东西",
+    "english": "time is the most valuable thing we have",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Attrib",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["we have 为定语从句修饰 thing", "the most valuable 最高级作定语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "valuable",
+          "pos": "形容词",
+          "start": 17,
+          "end": 25
+        },
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 26,
+          "end": 31
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 35,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the most valuable thing",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 31
+        },
+        {
+          "text": "we have",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 32,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 定语"
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "宝贵的",
+    "english": "valuable",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：贵重的；有价值的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "valuable",
+          "pos": "形容词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "valuable",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "更",
+    "english": "more",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["更多"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "更宝贵的",
+    "english": "more valuable",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["more + 多音节形容词原级构成比较级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "valuable",
+          "pos": "形容词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more valuable",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "时间",
+    "english": "time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "时间是更宝贵的",
+    "english": "time is more valuable",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["more valuable 作表语", "比较级省略 than"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "valuable",
+          "pos": "形容词",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "more valuable",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "金钱",
+    "english": "money",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["钱"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "比",
+    "english": "than",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["than 比"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "比金钱",
+    "english": "than money",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["than + 名词 money"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "than",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "时间比金钱是更宝贵的",
+    "english": "time is more valuable than money",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["than money 作比较状语", "more valuable 作表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "valuable",
+          "pos": "形容词",
+          "start": 13,
+          "end": 21
+        },
+        {
+          "text": "than",
+          "pos": "介词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 27,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "more valuable",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 21
+        },
+        {
+          "text": "than money",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "车",
+    "english": "car",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：小汽车"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "新的",
+    "english": "new",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“新的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "new",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "一辆新车",
+    "english": "a new car",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词修饰名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a new car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "昂贵的",
+    "english": "expensive",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "expensive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "一辆新车是昂贵的",
+    "english": "a new car is expensive",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a new car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "expensive",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "更",
+    "english": "more",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["更多"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "更贵的",
+    "english": "more expensive",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["更昂贵的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 5,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more expensive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "一辆新车是更贵的",
+    "english": "a new car is more expensive",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "more 构成比较级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 18,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a new car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "more expensive",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "使用",
+    "english": "to use",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "use",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to use",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "用过的",
+    "english": "used",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["used 过去式/过去分词", "常与 to 连用"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "used",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "used",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "一辆旧车",
+    "english": "a used car",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["a used car 一辆二手车"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "used",
+          "pos": "形容词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a used car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "比",
+    "english": "than",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["than 比"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "比一辆旧车",
+    "english": "than a used car",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["than a used car 比一辆二手车"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "used",
+          "pos": "形容词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 12,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than a used car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "一辆新车比一辆旧车是更贵的",
+    "english": "a new car is more expensive than a used car",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": [
+        "比较级 more expensive than 表示两者比较",
+        "主语 a new car 为第三人称单数，be 动词用 is"
+      ],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 33,
+          "end": 34
+        },
+        {
+          "text": "used",
+          "pos": "形容词",
+          "start": 35,
+          "end": 39
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 40,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a new car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "more expensive than a used car",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "昂贵的",
+    "english": "expensive",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "expensive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "礼物",
+    "english": "gift",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：礼物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "gift",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "这个礼物是昂贵的",
+    "english": "the gift is expensive",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构：the gift + is + expensive", "一般现在时描述状态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the gift",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "expensive",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "最",
+    "english": "the most",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most 最高级标志，后接形容词/副词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "最贵的",
+    "english": "the most expensive",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级短语", "the most + 形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most expensive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "礼物",
+    "english": "gift",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：礼物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "gift",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "最贵的礼物",
+    "english": "the most expensive gift",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级修饰名词", "the most expensive 作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most expensive gift",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "找到",
+    "english": "to find",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "你可以",
+    "english": "you can",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["you 是主语，can 是情态动词", "缺少实义动词，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "你可以找到",
+    "english": "you can find",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can find",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "你可以找到最贵的礼物",
+    "english": "you can find the most expensive gift",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most expensive 最高级作定语修饰 gift"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 22,
+          "end": 31
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 32,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "the most expensive gift",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "你可以找到的最贵的礼物",
+    "english": "the most expensive gift you can find",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["含定语从句的短语", "you can find 修饰 gift"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 32,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most expensive gift",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        },
+        {
+          "text": "you can find",
+          "role": null,
+          "roleType": null,
+          "start": 24,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "你应该",
+    "english": "you should",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["should 为情态动词", "后接动词原形，此处缺谓语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "买",
+    "english": "to buy",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "你应该买",
+    "english": "you should buy",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["should + 动词原形 buy", "缺少宾语，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "buy",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "你可以找到的最贵的礼物",
+    "english": "the most expensive gift you can find",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["含定语从句的短语", "you can find 修饰 gift"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 32,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most expensive gift",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        },
+        {
+          "text": "you can find",
+          "role": null,
+          "roleType": null,
+          "start": 24,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "你应该买你可以找到的最贵的礼物",
+    "english": "you should buy the most expensive gift you can find",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most expensive 最高级作定语", "you can find 为定语从句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 24,
+          "end": 33
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 43,
+          "end": 46
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 47,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should buy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "the most expensive gift",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 38
+        },
+        {
+          "text": "you can find",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 39,
+          "end": 51
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "你的女儿",
+    "english": "your daughter",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["物主代词 your + 名词", "片段，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "你应该买",
+    "english": "you should buy",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["should + 动词原形 buy", "缺少宾语，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "buy",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "你应该买给你的女儿",
+    "english": "you should buy your daughter",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["buy 后缺直接宾语", "your daughter 为间接宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 20,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "buy",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "your",
+          "role": null,
+          "roleType": null,
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "daughter",
+          "role": null,
+          "roleType": null,
+          "start": 20,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "你可以找到的最贵的礼物",
+    "english": "the most expensive gift you can find",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["含定语从句的短语", "you can find 修饰 gift"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 32,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most expensive gift",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        },
+        {
+          "text": "you can find",
+          "role": null,
+          "roleType": null,
+          "start": 24,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "你应该买给你的女儿你可以找到的最贵的礼物",
+    "english": "you should buy your daughter the most expensive gift you can find",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["buy sb sth 双宾语结构", "you can find 为定语从句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 20,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 38,
+          "end": 47
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 48,
+          "end": 52
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 53,
+          "end": 56
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 57,
+          "end": 60
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 61,
+          "end": 65
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should buy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "your daughter",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 28
+        },
+        {
+          "text": "the most expensive gift",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 29,
+          "end": 52
+        },
+        {
+          "text": "you can find",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 53,
+          "end": 65
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语 + 从句"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "最贵的",
+    "english": "the most expensive",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级短语", "the most + 形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most expensive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "旅馆",
+    "english": "hotel",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["旅馆；酒店"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "hotel",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "hotel",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "最贵的旅馆",
+    "english": "the most expensive hotel",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词最高级修饰名词", "the most expensive 作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "hotel",
+          "pos": "名词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most expensive hotel",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "这是最贵的旅馆",
+    "english": "this is the most expensive hotel",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most expensive 最高级修饰名词作表语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "hotel",
+          "pos": "名词",
+          "start": 27,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the most expensive hotel",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "这个城市",
+    "english": "the city",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "city",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the city",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "在这个城市里",
+    "english": "in the city",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语 in the city 表地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "city",
+          "pos": "名词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the city",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "这是在这个城市里最贵的旅馆",
+    "english": "this is the most expensive hotel in the city",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most expensive 最高级作表语", "in the city 作地点状语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "expensive",
+          "pos": "形容词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "hotel",
+          "pos": "名词",
+          "start": 27,
+          "end": 32
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "city",
+          "pos": "名词",
+          "start": 40,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "the most expensive hotel",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 32
+        },
+        {
+          "text": "in the city",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 33,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "漂亮的",
+    "english": "beautiful",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "beautiful",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "最",
+    "english": "the most",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most 最高级标志，后接形容词/副词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "最漂亮的",
+    "english": "the most beautiful",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most + 形容词 构成最高级"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most beautiful",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "女孩",
+    "english": "girl",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：女孩"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "girl",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "girl",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "最漂亮的女孩",
+    "english": "the most beautiful girl",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the most beautiful girl 最漂亮的女孩"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "girl",
+          "pos": "名词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the most beautiful girl",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "你是",
+    "english": "you are",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语与系动词片段，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "你是最漂亮的女孩",
+    "english": "you are the most beautiful girl",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most beautiful 最高级作定语", "名词短语作表语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "girl",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the most beautiful girl",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "在世界上",
+    "english": "in the world",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示范围"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "你是世界上最漂亮的女孩",
+    "english": "you are the most beautiful girl in the world",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most beautiful girl in the world", "in the world 作后置定语修饰 girl"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "girl",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 39,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the most beautiful girl",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 31
+        },
+        {
+          "text": "in the world",
+          "role": "定语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "漂亮的",
+    "english": "beautiful",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "beautiful",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "更",
+    "english": "more",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["更多"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "更漂亮的",
+    "english": "more beautiful",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["更美丽的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 5,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more beautiful",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "你是",
+    "english": "you are",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语与系动词片段，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "你是更漂亮的",
+    "english": "you are more beautiful",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["系动词 are + 形容词作表语", "more 构成比较级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "more beautiful",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "笑",
+    "english": "to smile",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语(to smile)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "smile",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to smile",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "你笑",
+    "english": "you smile",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主语 you + 谓语 smile", "不及物动词 smile 单独作谓语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "smile",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "smile",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "当......的时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "当你笑的时候",
+    "english": "when you smile",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when引导的时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "smile",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when you smile",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "当你笑的时候你是更漂亮的",
+    "english": "you are more beautiful when you smile",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["when 引导时间状语从句", "主句用系表结构 are more beautiful"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 13,
+          "end": 22
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "smile",
+          "pos": "动词",
+          "start": 32,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "more beautiful",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 22
+        },
+        {
+          "text": "when you smile",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 23,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "看",
+    "english": "to look",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "look 看"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to look",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "你看起来更漂亮",
+    "english": "you look more beautiful",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["look 为系动词", "more beautiful 作表语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 14,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "look",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "more beautiful",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 9,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "当你笑的时候",
+    "english": "when you smile",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when引导的时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "smile",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when you smile",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "你看起来是更漂亮的当你笑的时候",
+    "english": "you look more beautiful when you smile",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["when 引导时间状语从句", "look 为系动词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 14,
+          "end": 23
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "smile",
+          "pos": "动词",
+          "start": 33,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "look",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "more beautiful",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 9,
+          "end": 23
+        },
+        {
+          "text": "when you smile",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 24,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "但是",
+    "english": "but",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词：但是，表转折"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "但是你看起来是更漂亮的当你笑的时候",
+    "english": "but you look more beautiful when you smile",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "conj + S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["look + 形容词作表语", "when 引导时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "smile",
+          "pos": "动词",
+          "start": 37,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "look",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "more beautiful",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 27
+        },
+        {
+          "text": "when you smile",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 28,
+          "end": 42
+        }
+      ],
+      "structure": "连接词 + 主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "你是世界上最漂亮的女孩",
+    "english": "you are the most beautiful girl in the world",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the most beautiful girl in the world", "in the world 作后置定语修饰 girl"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "girl",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 39,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the most beautiful girl",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 31
+        },
+        {
+          "text": "in the world",
+          "role": "定语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "你是世界上最漂亮的女孩但是当你笑的时候你看起来是更漂亮的",
+    "english": "you are the most beautiful girl in the world but you look more beautiful when you smile",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + conj + S + V + P + Clause",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["but 连接两个并列分句", "when 引导时间状语从句"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "most",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "girl",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 39,
+          "end": 44
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 49,
+          "end": 52
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 53,
+          "end": 57
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 58,
+          "end": 62
+        },
+        {
+          "text": "beautiful",
+          "pos": "形容词",
+          "start": 63,
+          "end": 72
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 73,
+          "end": 77
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 78,
+          "end": 81
+        },
+        {
+          "text": "smile",
+          "pos": "动词",
+          "start": 82,
+          "end": 87
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "the most beautiful girl",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 31
+        },
+        {
+          "text": "in the world",
+          "role": "定语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 44
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 49,
+          "end": 52
+        },
+        {
+          "text": "look",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 53,
+          "end": 57
+        },
+        {
+          "text": "more beautiful",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 58,
+          "end": 72
+        },
+        {
+          "text": "when you smile",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 73,
+          "end": 87
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 连接词 + 主语 + 谓语 + 表语 + 从句"
+    }
+  }
+]

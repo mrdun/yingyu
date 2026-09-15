@@ -1,0 +1,6437 @@
+[
+  {
+    "order": 1,
+    "chinese": "去",
+    "english": "to go",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "go 表示去"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "外面",
+    "english": "out",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["副词，常与动词连用表向外"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "去外面",
+    "english": "to go out",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "go out 外出"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "晚上",
+    "english": "night",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["night 表示“夜晚”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "在",
+    "english": "at",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 at"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "在晚上",
+    "english": "at night",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at night 在晚上"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "在晚上去外面",
+    "english": "to go out at night",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "at night 在晚上"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go out at night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "和......一起",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "和我一起",
+    "english": "with me",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "和我一起在晚上去外面",
+    "english": "to go out at night with me",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "with me 和我一起"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 24,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go out at night with me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "和......一起",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "外面",
+    "english": "out",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["副词，常与动词连用表向外"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "不和......一起",
+    "english": "without",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "without",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "不和我一起",
+    "english": "without me",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "without me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "不和我一起在晚上去外面",
+    "english": "to go out at night without me",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "without me 没有我陪伴"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 19,
+          "end": 26
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 27,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go out at night without me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "父母",
+    "english": "parents",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["父母", "parent 的复数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "你的",
+    "english": "your",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词性物主代词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "你的父母",
+    "english": "your parents",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["your parents 你的父母"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "和......一起",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "和你的父母一起",
+    "english": "with your parents",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with your parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "在晚上去外面",
+    "english": "to go out at night",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "at night 在晚上"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go out at night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "和你的父母一起在晚上去外面",
+    "english": "to go out at night with your parents",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "with your parents 和父母一起"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 29,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go out at night with your parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "可以",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "你可以",
+    "english": "you can",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["you 是主语，can 是情态动词", "缺少实义动词，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "你可以和你父母一起在晚上去外面",
+    "english": "you can go out at night with your parents",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can 表示许可", "go out 外出"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 34,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can go out",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "at night",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 23
+        },
+        {
+          "text": "with your parents",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "和......一起",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "外面",
+    "english": "out",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["副词，常与动词连用表向外"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "不和......一起",
+    "english": "without",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "without",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "不和你的父母一起",
+    "english": "without your parents",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["without 引导的介词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "without your parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "不和你的父母一起在晚上去外面",
+    "english": "to go out at night without your parents",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "without 表示“没有”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 19,
+          "end": 26
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 32,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go out at night without your parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 39
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "你可以",
+    "english": "you can",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["you 是主语，can 是情态动词", "缺少实义动词，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "你不可以",
+    "english": "you can't",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can't 表示否定，后省略动词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "你不可以不和你的父母一起在晚上去外面",
+    "english": "you can't go out at night without your parents",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["go out 为动词短语", "两个介词短语均作状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 26,
+          "end": 33
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 39,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't go out",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "at night",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 25
+        },
+        {
+          "text": "without your parents",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "成年人",
+    "english": "adult",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：成年人；也可作形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "adult",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "adult",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "一个成年人",
+    "english": "an adult",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语", "an 用于元音音素开头的词前"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "adult",
+          "pos": "名词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "an adult",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "我是",
+    "english": "I am",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不完整片段，缺表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "我是一个成年人",
+    "english": "I am an adult",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "an adult 作名词表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "adult",
+          "pos": "名词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "an adult",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "你是",
+    "english": "you are",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语与系动词片段，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "你是一个成年人",
+    "english": "you are an adult",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构：you are an adult", "an adult 作表语，表示身份"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "adult",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "an adult",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "你不是一个成年人",
+    "english": "you are not an adult",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be 动词否定式 are not", "an 用于元音音素开头的单数名词前"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "adult",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "an adult",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "如果",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "如果你不是一个成年人",
+    "english": "if you are not an adult",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if引导条件状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "adult",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you are not an adult",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "你不可以不和你的父母一起在晚上去外面",
+    "english": "you can't go out at night without your parents",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["go out 为动词短语", "两个介词短语均作状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 26,
+          "end": 33
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 39,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't go out",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "at night",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 25
+        },
+        {
+          "text": "without your parents",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "你不可以不和你的父母一起在晚上去外面如果你不是一个成年人",
+    "english": "you can't go out at night without your parents if you are not an adult",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导条件状语从句", "主句含两个介词短语作状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 26,
+          "end": 33
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 39,
+          "end": 46
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 47,
+          "end": 49
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 50,
+          "end": 53
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 54,
+          "end": 57
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 58,
+          "end": 61
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 62,
+          "end": 64
+        },
+        {
+          "text": "adult",
+          "pos": "名词",
+          "start": 65,
+          "end": 70
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't go out",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "at night",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 25
+        },
+        {
+          "text": "without your parents",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 46
+        },
+        {
+          "text": "if you are not an adult",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 47,
+          "end": 70
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "你可以不和你的父母一起在晚上去外面",
+    "english": "you can go out at night without your parents",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["without 表示没有", "can 表示许可"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 32,
+          "end": 36
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 37,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can go out",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "at night",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 23
+        },
+        {
+          "text": "without your parents",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "你是一个成年人",
+    "english": "you are an adult",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构：you are an adult", "an adult 作表语，表示身份"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "adult",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "an adult",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "如果你是一个成年人",
+    "english": "if you are an adult",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if引导条件从句", "if + 主语 + 系动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "adult",
+          "pos": "名词",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you are an adult",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "你可以不和你的父母一起在晚上去外面如果你是一个成年人",
+    "english": "you can go out at night without your parents if you are an adult",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导条件状语从句", "can 表示许可"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 32,
+          "end": 36
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 37,
+          "end": 44
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 45,
+          "end": 47
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 48,
+          "end": 51
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 52,
+          "end": 55
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 56,
+          "end": 58
+        },
+        {
+          "text": "adult",
+          "pos": "名词",
+          "start": 59,
+          "end": 64
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can go out",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "at night",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 23
+        },
+        {
+          "text": "without your parents",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 44
+        },
+        {
+          "text": "if you are an adult",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 45,
+          "end": 64
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "驾驶；开车",
+    "english": "to drive",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "你可以",
+    "english": "you can",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["you 是主语，can 是情态动词", "缺少实义动词，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "你可以开车",
+    "english": "you can drive",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can 为情态动词，后接动词原形"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can drive",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "不可以",
+    "english": "can't",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["can 的否定缩写形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "你不可以开车",
+    "english": "you can't drive",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can't 表示不允许", "drive 此处为不及物动词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 10,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't drive",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "驾驶员",
+    "english": "driver",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：司机、驾驶员"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "driver",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "driver",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "执照",
+    "english": "license",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：执照、许可证"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "驾照",
+    "english": "driver's license",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：驾照（美式常见说法）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "driver's",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "driver's license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "一个驾照",
+    "english": "a driver's license",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "所有格 driver's 作定语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "driver's",
+          "pos": "名词",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 11,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a driver's license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "不和......在一起；没有......",
+    "english": "without",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "without",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "没有一个驾照",
+    "english": "without a driver's license",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": [],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "driver's",
+          "pos": "名词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "without a driver's license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "没有一个驾照你不可以开车",
+    "english": "you can't drive without a driver's license",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["without 引导条件状语", "driver's license 驾照"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "text": "driver's",
+          "pos": "名词",
+          "start": 26,
+          "end": 34
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 35,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't drive",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "without a driver's license",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "应该",
+    "english": "should",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：应该"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "不应该",
+    "english": "should not",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["情态动词否定形式", "后接动词原形"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "should not",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "没有一个驾照你不应该开车",
+    "english": "you should not drive without a driver's license",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["should not表示禁止", "without引导介词短语作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "without",
+          "pos": "介词",
+          "start": 21,
+          "end": 28
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 29,
+          "end": 30
+        },
+        {
+          "text": "driver's",
+          "pos": "名词",
+          "start": 31,
+          "end": 39
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 40,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should not drive",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "without a driver's license",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "朋友",
+    "english": "friend",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["friend 朋友"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "老的",
+    "english": "old",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 old"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "old",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "老朋友",
+    "english": "old friend",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词修饰名词，老朋友"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "old friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "一个老朋友",
+    "english": "an old friend",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语", "old 作定语修饰 friend"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "an old friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "老的；年龄大的",
+    "english": "old",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 old"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "old",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "她是年龄大的",
+    "english": "she is old",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["系表结构 she is + 形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is old",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "足够",
+    "english": "enough",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["enough 足够的"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "她是足够年龄大的",
+    "english": "she is old enough",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough 修饰形容词时后置"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is old enough",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "开车",
+    "english": "to drive",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "她是年龄大的足够开车",
+    "english": "she is old enough to drive",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["old enough to do sth 结构", "不定式表结果"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is old enough",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "to drive",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "不",
+    "english": "not",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "not",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "她不是年龄大的足够开车",
+    "english": "she is not old enough to drive",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough to do 表示'足够做某事'", "not old enough to do 不够大做某事"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 15,
+          "end": 21
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 25,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is not old enough",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 21
+        },
+        {
+          "text": "to drive",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 22,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "认为",
+    "english": "to think",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to think"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to think",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "我认为",
+    "english": "I think",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I think",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "我认为她年龄不够开车",
+    "english": "I think she is not old enough to drive",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["not ... enough to do 不够……不能做", "enough 置于形容词之后"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 23,
+          "end": 29
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 33,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "think",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "she is not old enough to drive",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 8,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "我不认为她足够年龄开车",
+    "english": "I don't think she is old enough to drive",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["I don't think + 宾语从句", "old enough to do sth 足够大做某事"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 25,
+          "end": 31
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 35,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't think",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "she is old enough to drive",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 14,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "为了",
+    "english": "for",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["for 介词，意为“为了；对于”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "她",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "自己",
+    "english": "self",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["self: 自我；自己"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "self",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "self",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "她自己",
+    "english": "herself",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["反身代词，意为她自己"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "herself",
+          "pos": "代词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "herself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "为了她自己",
+    "english": "for herself",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["for + 反身代词", "介词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "herself",
+          "pos": "代词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for herself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "决定",
+    "english": "to decide",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "为了她自己决定",
+    "english": "to decide for herself",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语", "for oneself 反身代词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "herself",
+          "pos": "代词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide for herself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "她是年龄大的",
+    "english": "she is old",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["系表结构 she is + 形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is old",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "足够",
+    "english": "enough",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["enough 足够的"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "她是足够年龄大的",
+    "english": "she is old enough",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough 修饰形容词时后置"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is old enough",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "她是年龄大的足够决定",
+    "english": "she is old enough to decide",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["old enough to do sth 结构", "不定式表结果"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is old enough",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "to decide",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 18,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "为了她自己决定",
+    "english": "to decide for herself",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语", "for oneself 反身代词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "herself",
+          "pos": "代词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide for herself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "她是年龄大的足够为了她自己决定",
+    "english": "she is old enough to decide for herself",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["old enough to do sth 结构", "for herself 反身代词作状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "herself",
+          "pos": "代词",
+          "start": 32,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is old enough",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "to decide for herself",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 18,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "外面",
+    "english": "out",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["副词，常与动词连用表向外"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "去",
+    "english": "to go",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "go 表示去"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "去外面",
+    "english": "to go out",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "go out 外出"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "我想要",
+    "english": "I want",
+    "annotation": {
+      "order": 99,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓片段，句意不完整"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "我想要去外面",
+    "english": "I want to go out",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to go out",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "家",
+    "english": "home",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["home 可作副词，意为“在家/回家”"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "去家",
+    "english": "to go home",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "home 作副词，前不加 to"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "我想要去家",
+    "english": "I want to go home",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 不定式作宾语", "home 作副词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to go home",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "学校",
+    "english": "school",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，学校"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "school",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "去",
+    "english": "to go",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "go 表示去"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "去上学",
+    "english": "to go to school",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "go to school 去上学"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go to school",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "我想要",
+    "english": "I want",
+    "annotation": {
+      "order": 99,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓片段，句意不完整"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "我想去上学",
+    "english": "I want to go to school",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "go to school 去上学"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to go to school",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "老的；年龄大的",
+    "english": "old",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 old"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "old",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "他",
+    "english": "he",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "他是年龄大的",
+    "english": "he is old",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "old 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "足够",
+    "english": "enough",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["enough 足够的"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "他是足够年龄大的",
+    "english": "he is old enough",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough 修饰形容词", "主系表结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "去上学",
+    "english": "to go to school",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "go to school 去上学"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go to school",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "他是年龄大的足够去上学",
+    "english": "he is old enough to go to school",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["adj + enough to do sth 结构", "enough 修饰形容词需后置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 26,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "to go to school",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "买",
+    "english": "to buy",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "酒",
+    "english": "alcohol",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：酒精，酒"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "alcohol",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "alcohol",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "买酒",
+    "english": "to buy alcohol",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["alcohol 为不可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "alcohol",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "alcohol",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "他是足够年龄大的",
+    "english": "he is old enough",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough 修饰形容词", "主系表结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "不",
+    "english": "not",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "not",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "他不是足够年龄大的",
+    "english": "he is not old enough",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["not 否定，enough 修饰形容词", "主系表结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 14,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "not old enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "他不是年龄大的足够去买酒",
+    "english": "he is not old enough to buy alcohol",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough to do 结构", "不定式表结果"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "alcohol",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "not old enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 20
+        },
+        {
+          "text": "to buy alcohol",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 21,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "但是",
+    "english": "but",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词：但是，表转折"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "但是他不是年龄大的足够去买酒",
+    "english": "but he is not old enough to buy alcohol",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般现在时",
+      "keyPoints": ["not old enough to do：不够大做某事", "不定式 to buy 表结果"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 18,
+          "end": 24
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "alcohol",
+          "pos": "名词",
+          "start": 32,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but he is not old enough to buy alcohol",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 39
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "他是年龄大的足够去上学",
+    "english": "he is old enough to go to school",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["adj + enough to do sth 结构", "enough 修饰形容词需后置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 26,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "to go to school",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "他是年龄大的足够去上学但是他不是年龄大的足够去买酒",
+    "english": "he is old enough to go to school but he is not old enough to buy alcohol",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv + conj + S + V + P + Adv",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["but 连接两个并列分句", "enough to do 表示'足够做某事'"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 26,
+          "end": 32
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 37,
+          "end": 39
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 40,
+          "end": 42
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 43,
+          "end": 46
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 47,
+          "end": 50
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 51,
+          "end": 57
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 58,
+          "end": 60
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 61,
+          "end": 64
+        },
+        {
+          "text": "alcohol",
+          "pos": "名词",
+          "start": 65,
+          "end": 72
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "to go to school",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 32
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 37,
+          "end": 39
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 40,
+          "end": 42
+        },
+        {
+          "text": "not old enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 43,
+          "end": 57
+        },
+        {
+          "text": "to buy alcohol",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 58,
+          "end": 72
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "他是年龄大的足够去上学但是不是年龄大的足够去买酒",
+    "english": "he is old enough to go to school but not old enough to buy alcohol",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + conj + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["but 连接两个并列的表语", "not ... enough to do 结构"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 26,
+          "end": 32
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 45,
+          "end": 51
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 52,
+          "end": 54
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 55,
+          "end": 58
+        },
+        {
+          "text": "alcohol",
+          "pos": "名词",
+          "start": 59,
+          "end": 66
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "old enough to go to school",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 32
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "not old enough to buy alcohol",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 37,
+          "end": 66
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 连接词 + 表语"
+    }
+  }
+]

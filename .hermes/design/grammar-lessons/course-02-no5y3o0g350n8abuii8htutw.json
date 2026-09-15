@@ -1,0 +1,8578 @@
+[
+  {
+    "order": 1,
+    "chinese": "好的；棒的",
+    "english": "good",
+    "annotation": {
+      "order": 145,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "good",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "它；这件事情",
+    "english": "It",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "It",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "It",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "它是",
+    "english": "It is",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "It",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "It is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "它是好的",
+    "english": "It is good",
+    "annotation": {
+      "order": 146,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "good作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "It",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "It",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "good",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "重要的",
+    "english": "important",
+    "annotation": {
+      "order": 120,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词", "重要的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "它是重要的",
+    "english": "It is important",
+    "annotation": {
+      "order": 125,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["It is + adj 主系表结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "It",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "It",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "我是",
+    "english": "I am",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不完整片段，缺表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "我是重要的",
+    "english": "I am important",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["系动词 am + 形容词作表语", "important 重要的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 5,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 5,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "想要",
+    "english": "want",
+    "annotation": {
+      "order": 28,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "知道",
+    "english": "to know",
+    "annotation": {
+      "order": 104,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["know 知道；认识"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "我想要知道",
+    "english": "I want to know",
+    "annotation": {
+      "order": 163,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want后接不定式作宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to know",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "是否",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "我想要知道是否我是重要的",
+    "english": "I want to know if I am important",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导宾语从句", "am 为系动词作谓语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "if I am important",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 15,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "需要知道",
+    "english": "need to know",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词短语，意为“需要知道”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "need to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "我需要知道是否我是重要的",
+    "english": "I need to know if I am important",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to know 后接 if 宾语从句", "if 引导从句，意为“是否”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "if I am important",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 15,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "完美的",
+    "english": "perfect",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“完美的”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "perfect",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "我是完美的",
+    "english": "I am perfect",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be 动词作系动词", "形容词作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "perfect",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "我需要知道是否我是完美的",
+    "english": "I need to know if I am perfect",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to know 后接 if 宾语从句", "主系表结构 I am perfect"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "if I am perfect",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 15,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "必须知道",
+    "english": "have to know",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "我必须知道是否我是完美的",
+    "english": "I have to know if I am perfect",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示“必须”", "if 引导宾语从句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "if I am perfect",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 15,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "健康的",
+    "english": "healthy",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：健康的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "healthy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "我是健康的",
+    "english": "I am healthy",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be 动词作谓语", "healthy 作表语说明状态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "healthy",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "我必须知道是否我是健康的",
+    "english": "I have to know if I am healthy",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示“必须”", "if 引导宾语从句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "if I am healthy",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 15,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "我是",
+    "english": "I am",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不完整片段，缺表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "星荣",
+    "english": "Xingrong",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "我是星荣",
+    "english": "I am Xingrong",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "Xingrong 作名词表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "Xingrong",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "这里",
+    "english": "here",
+    "annotation": {
+      "order": 20,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["地点副词 here 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "我在这里",
+    "english": "I am here",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["here 为地点副词作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "我18岁",
+    "english": "I am eighteen",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be 动词作谓语", "eighteen 作表语表年龄"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "eighteen",
+          "pos": "数词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "eighteen",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "你是",
+    "english": "you are",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语与系动词片段，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "重要的",
+    "english": "important",
+    "annotation": {
+      "order": 120,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词", "重要的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "你是重要的",
+    "english": "You are important",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "are后接形容词作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "非常",
+    "english": "very",
+    "annotation": {
+      "order": 126,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "very",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "你是非常重要的",
+    "english": "You are very important",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["very修饰形容词", "主系表结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "very important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "完美的",
+    "english": "perfect",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“完美的”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "perfect",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "你是完美的",
+    "english": "You are perfect",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "perfect",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "健康的",
+    "english": "healthy",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：健康的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "healthy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "你是健康的",
+    "english": "You are healthy",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["healthy 形容词作表语", "be + adj 表示状态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "healthy",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "周杰伦",
+    "english": "Jay Chou",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "Jay",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Chou",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Jay Chou",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "你是周杰伦",
+    "english": "You are Jay Chou",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be 动词连接主语和表语", "专有名词 Jay Chou"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "Jay",
+          "pos": "名词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "Chou",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "Jay Chou",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "想要知道",
+    "english": "want to know",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["want to know 想知道"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "want to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "是否",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "我想要知道是否你是周杰伦",
+    "english": "I want to know if you are Jay Chou",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导宾语从句", "be 动词的一般现在时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "Jay",
+          "pos": "名词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "Chou",
+          "pos": "名词",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "if you are Jay Chou",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 15,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "需要知道",
+    "english": "need to know",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词短语，意为“需要知道”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "need to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "你是健康的",
+    "english": "You are healthy",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["healthy 形容词作表语", "be + adj 表示状态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "healthy",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "我需要知道是否你是健康的",
+    "english": "I need to know if you are healthy",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导宾语从句", "you are healthy 主系表"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "healthy",
+          "pos": "形容词",
+          "start": 26,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "if you are healthy",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 15,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "必须知道",
+    "english": "have to know",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "你是完美的",
+    "english": "You are perfect",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "perfect",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "我必须知道是否你是完美的",
+    "english": "I have to know if you are perfect",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示“必须”", "if 引导宾语从句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 26,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "if you are perfect",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 15,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "富有的",
+    "english": "rich",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：富有的；be rich in"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "rich",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "rich",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "他是",
+    "english": "he is",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["is 为系动词", "缺少表语，句子不完整"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "他是富有的",
+    "english": "He is rich",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "rich 作形容词表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "He",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "rich",
+          "pos": "形容词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "He",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "rich",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "她是",
+    "english": "she is",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["主系结构片段，缺表语", "is 为系动词"],
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "她是富有的",
+    "english": "She is rich",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "rich 作形容词表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "She",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "rich",
+          "pos": "形容词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "She",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "rich",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "完美的",
+    "english": "perfect",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“完美的”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "perfect",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "她是完美的",
+    "english": "She is perfect",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["is 为系动词，后接形容词作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "She",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "She",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "perfect",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "它是",
+    "english": "it is",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["it is 缺少表语，不是完整句子", "is 为系动词 be 的第三人称单数"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "重要的",
+    "english": "important",
+    "annotation": {
+      "order": 120,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词", "重要的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "它是重要的",
+    "english": "It is important",
+    "annotation": {
+      "order": 125,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["It is + adj 主系表结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "It",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "It",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "富有的",
+    "english": "rich",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：富有的；be rich in"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "rich",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "rich",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "我是",
+    "english": "I am",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不完整片段，缺表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "我是富有的",
+    "english": "I am rich",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be 动词作系动词，后接形容词作表语", "rich 形容词，意为“富有的”"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "rich",
+          "pos": "形容词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "rich",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "非常",
+    "english": "very",
+    "annotation": {
+      "order": 126,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "very",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "我是非常富有的",
+    "english": "I am very rich",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构，very 修饰形容词", "rich 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "rich",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "very rich",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 5,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "完美的",
+    "english": "perfect",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“完美的”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "perfect",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "你是",
+    "english": "you are",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语与系动词片段，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "你是完美的",
+    "english": "You are perfect",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "perfect",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "漂亮的",
+    "english": "pretty",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "pretty",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "pretty",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "你是漂亮的",
+    "english": "You are pretty",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "pretty作形容词表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "pretty",
+          "pos": "形容词",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "pretty",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "他是漂亮的",
+    "english": "He is pretty",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "pretty 作形容词表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "He",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "pretty",
+          "pos": "形容词",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "He",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "pretty",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "她是漂亮的",
+    "english": "She is pretty",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "pretty 作形容词表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "She",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "pretty",
+          "pos": "形容词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "She",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "pretty",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "它是漂亮的",
+    "english": "It is pretty",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["It 作主语指代事物", "系动词 is + 形容词作表语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "It",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "pretty",
+          "pos": "形容词",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "It",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "pretty",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "我是漂亮的",
+    "english": "I am pretty",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "pretty 作表语形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "pretty",
+          "pos": "形容词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "pretty",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "这里",
+    "english": "here",
+    "annotation": {
+      "order": 20,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["地点副词 here 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "在这里",
+    "english": "to be here",
+    "annotation": {
+      "order": 21,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["to be here 不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to be here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "你想要在这里",
+    "english": "You want to be here",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "be here 在这里"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to be here",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "明天",
+    "english": "tomorrow",
+    "annotation": {
+      "order": 91,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词：明天"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "你明天想要在这里",
+    "english": "You want to be here tomorrow",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "tomorrow 作时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 20,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to be here",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "tomorrow",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "见到",
+    "english": "to see",
+    "annotation": {
+      "order": 110,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "see",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to see",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "见到我",
+    "english": "to see me",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "see",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to see me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "你想要见到我",
+    "english": "You want to see me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "see sb 见某人"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "see",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to see me",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "今天",
+    "english": "today",
+    "annotation": {
+      "order": 33,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词 today"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "today",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "today",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "你想要今天见到我",
+    "english": "You want to see me today",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "today 作时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "see",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "today",
+          "pos": "副词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to see me",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "today",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "说话",
+    "english": "to talk",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to talk",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "和",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "和我",
+    "english": "with me",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "和我说话",
+    "english": "to talk with me",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "with me 表对象"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to talk",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "with me",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "你想要和我说话",
+    "english": "You want to talk with me",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "talk with sb 与某人交谈"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to talk with me",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "现在",
+    "english": "now",
+    "annotation": {
+      "order": 17,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词 now 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "now",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "你想要现在和我说话",
+    "english": "You want to talk with me now",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "now 作时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to talk with me",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 24
+        },
+        {
+          "text": "now",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "必须做",
+    "english": "have to do",
+    "annotation": {
+      "order": 75,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["have to do 必须做"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have to do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "你必须做这件事情",
+    "english": "You have to do it",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to表示必须", "it指代前文内容"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "每天",
+    "english": "every day",
+    "annotation": {
+      "order": 51,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["every day 表示频率，作时间状语", "every + 单数可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "你必须每天做这件事情",
+    "english": "You have to do it every day",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every day作时间状语", "have to表示必须"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 24,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "every day",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "帮助",
+    "english": "to help",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，help 表示帮助"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "help",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to help",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "帮助我",
+    "english": "to help me",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，help 后接宾语 me"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "help",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to help me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "你必须帮助我",
+    "english": "You have to help me",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to表示必须", "help后接宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "help",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to help",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "你必须现在帮助我",
+    "english": "You have to help me now",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["now作时间状语", "have to表示必须"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "help",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 20,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to help",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "now",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "相信",
+    "english": "to believe",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "动词 believe 原形"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to believe",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "相信我",
+    "english": "to believe me",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "believe + 宾语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to believe",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "你必须相信我",
+    "english": "You have to believe me",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to表示必须", "不定式作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to believe",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "这个食物",
+    "english": "the food",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，定冠词 the 修饰 food"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the food",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "吃",
+    "english": "to eat",
+    "annotation": {
+      "order": 38,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式 to eat"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "吃这个食物",
+    "english": "to eat the food",
+    "annotation": {
+      "order": 40,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式 to eat 带宾语 the food"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat the food",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "你需要吃这个食物",
+    "english": "You need to eat the food",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "the food 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 20,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to eat the food",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "你需要现在吃这个食物",
+    "english": "You need to eat the food now",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["now 作时间状语", "need to do sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to eat the food",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 24
+        },
+        {
+          "text": "now",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "告诉",
+    "english": "to tell",
+    "annotation": {
+      "order": 115,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "告诉我",
+    "english": "to tell me",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语", "tell sb 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "事实",
+    "english": "the truth",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "告诉我事实",
+    "english": "to tell me the truth",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell sb sth 双宾语", "tell me the truth"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell me the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "你需要告诉我事实",
+    "english": "You need to tell me the truth",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["tell sb sth 告诉某人某事", "need to do sth 需要做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 24,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to tell",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the truth",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "知道；认识",
+    "english": "to know",
+    "annotation": {
+      "order": 104,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["know 知道；认识"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "事实",
+    "english": "the truth",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "知道事实",
+    "english": "to know the truth",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to know", "know the truth 了解真相"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "the truth",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "你需要知道事实",
+    "english": "You need to know the truth",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "the truth 真相"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "the truth",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "和我说话",
+    "english": "to talk with me",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "with me 表对象"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to talk",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "with me",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "你喜欢和我说话",
+    "english": "You like to talk with me",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["talk with sb 与某人交谈", "不定式作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to talk with me",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "每天",
+    "english": "every day",
+    "annotation": {
+      "order": 51,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["every day 表示频率，作时间状语", "every + 单数可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "你喜欢每天和我说话",
+    "english": "You like to talk with me every day",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every day 作时间状语", "talk with sb 与某人交谈"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 31,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to talk with me",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 24
+        },
+        {
+          "text": "every day",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 25,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "在这里",
+    "english": "to be here",
+    "annotation": {
+      "order": 21,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["to be here 不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to be here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "你喜欢在这里",
+    "english": "You like to be here",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 喜欢做某事", "here 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to be here",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "每天",
+    "english": "every day",
+    "annotation": {
+      "order": 51,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["every day 表示频率，作时间状语", "every + 单数可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "你喜欢每天在这里",
+    "english": "You like to be here every day",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every day 作时间状语", "like to do sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 26,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to be here",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "every day",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "学习",
+    "english": "to study",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "study",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to study",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "你喜欢学习",
+    "english": "You like to study",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 喜欢做某事", "不定式作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "study",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to study",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "你喜欢每天学习",
+    "english": "You like to study every day",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every day 作时间状语", "like to do sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "study",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 24,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to study",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "every day",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "告诉",
+    "english": "to tell",
+    "annotation": {
+      "order": 115,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "告诉我",
+    "english": "to tell me",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语", "tell sb 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "事实",
+    "english": "the truth",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "告诉我事实",
+    "english": "to tell me the truth",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell sb sth 双宾语", "tell me the truth"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell me the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "你想要告诉我事实",
+    "english": "You want to tell me the truth",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["tell sb sth 告诉某人某事", "truth 前用定冠词 the"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 24,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to tell me the truth",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "你必须告诉我事实",
+    "english": "You have to tell me the truth",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示“不得不、必须”", "tell sb sth 双宾语结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 24,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to tell",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the truth",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "重要的",
+    "english": "important",
+    "annotation": {
+      "order": 120,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词", "重要的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "它是重要的",
+    "english": "It is important",
+    "annotation": {
+      "order": 125,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["It is + adj 主系表结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "It",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "It",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "因为",
+    "english": "because",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["because 表示原因，引导原因状语从句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "because",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "你必须告诉我事实因为它是重要的",
+    "english": "You have to tell me the truth because it is important",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO + conj + S + V + P",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["because 引导原因状语从句", "tell sb sth 双宾语结构"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 24,
+          "end": 29
+        },
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 30,
+          "end": 37
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 38,
+          "end": 40
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 41,
+          "end": 43
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 44,
+          "end": 53
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to tell",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the truth",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "because",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 30,
+          "end": 37
+        },
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 38,
+          "end": 40
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 41,
+          "end": 43
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 44,
+          "end": 53
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语 + 连接词 + 主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "知道；认识",
+    "english": "to know",
+    "annotation": {
+      "order": 104,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["know 知道；认识"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "你想要知道",
+    "english": "You want to know",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "know 知道"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to know",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "是否",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "它是重要的",
+    "english": "It is important",
+    "annotation": {
+      "order": 125,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["It is + adj 主系表结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "It",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "It",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "你想要知道是否它是重要的",
+    "english": "You want to know if it is important",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导宾语从句", "want to know 想知道"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 26,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to know",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "if",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 26,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "它是可能的",
+    "english": "it is possible",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "it 作主语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "possible",
+          "pos": "形容词",
+          "start": 6,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "possible",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "你想要知道是否它是可能的",
+    "english": "You want to know if it is possible",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导宾语从句", "possible 可能的"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "You",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "possible",
+          "pos": "形容词",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "You",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to know",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "if",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "possible",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "好的",
+    "english": "good",
+    "annotation": {
+      "order": 145,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "good",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "重要的",
+    "english": "important",
+    "annotation": {
+      "order": 120,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词", "重要的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "完美的",
+    "english": "perfect",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“完美的”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "perfect",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "perfect",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "富有的",
+    "english": "rich",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：富有的；be rich in"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "rich",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "rich",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "我是",
+    "english": "I am",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不完整片段，缺表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 153,
+    "chinese": "你是",
+    "english": "you are",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语与系动词片段，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 154,
+    "chinese": "它是",
+    "english": "it is",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["it is 缺少表语，不是完整句子", "is 为系动词 be 的第三人称单数"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 155,
+    "chinese": "他是",
+    "english": "he is",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["is 为系动词", "缺少表语，句子不完整"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 156,
+    "chinese": "她是",
+    "english": "she is",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["主系结构片段，缺表语", "is 为系动词"],
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 157,
+    "chinese": "你喜欢做这件事",
+    "english": "you like to do it",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 表示喜欢做某事", "it 指代前面提到的事物"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 158,
+    "chinese": "你需要做这件事",
+    "english": "you need to do it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 结构", "it 作宾语指代前文"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 159,
+    "chinese": "你必须做这件事情",
+    "english": "you have to do it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示“必须”", "do it 做这件事"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 160,
+    "chinese": "你想要做这件事",
+    "english": "you want to do it",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 161,
+    "chinese": "帮助",
+    "english": "to help",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，help 表示帮助"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "help",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to help",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 162,
+    "chinese": "相信",
+    "english": "to believe",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "动词 believe 原形"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to believe",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 163,
+    "chinese": "说话",
+    "english": "to talk",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to talk",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 164,
+    "chinese": "学习",
+    "english": "to study",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "study",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to study",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 165,
+    "chinese": "告诉",
+    "english": "to tell",
+    "annotation": {
+      "order": 115,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  }
+]

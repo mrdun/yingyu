@@ -1,0 +1,7449 @@
+[
+  {
+    "order": 1,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "他需要",
+    "english": "he needs",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["need 需要，后接不定式"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "他需要保持",
+    "english": "he needs to keep",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["need to do sth 结构的片段"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he needs",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "练习",
+    "english": "to practice",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to practice", "practice 后接名词或动名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to practice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "练习(ing形式)",
+    "english": "practicing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "practicing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "他需要保持练习",
+    "english": "he needs to keep practicing",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 表示需要做某事", "keep doing sth 继续做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 17,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to keep practicing",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "技术",
+    "english": "skills",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词复数 skills", "意为“技能”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "skills",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "他的技术",
+    "english": "his skills",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["skills 是 skill 的复数形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his skills",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "提升",
+    "english": "to improve",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["improve 改善；提高"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "improve",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to improve",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "提升他的技术",
+    "english": "to improve his skills",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["improve one's skills 提升技能"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "improve",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to improve his skills",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "他需要保持练习",
+    "english": "he needs to keep practicing",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 表示需要做某事", "keep doing sth 继续做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 17,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to keep practicing",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "他需要保持练习来提升他的技术",
+    "english": "he needs to keep practicing to improve his skills",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["to improve his skills 作目的状语", "keep doing sth 继续做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "improve",
+          "pos": "动词",
+          "start": 31,
+          "end": 38
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 43,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to keep practicing",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 27
+        },
+        {
+          "text": "to improve his skills",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 28,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "掌握",
+    "english": "to master",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to master",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "你将会",
+    "english": "you will",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["缺少主要动词，是片段"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "你将会掌握",
+    "english": "you will master",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["master为及物动词，缺宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you will master",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "那个技术",
+    "english": "the skill",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["定冠词 the + 名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "skill",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the skill",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "你将会掌握那个技术",
+    "english": "you will master the skill",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["master作及物动词，后接宾语", "the skill指前文提到的事物"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "skill",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will master",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "the skill",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "你保持",
+    "english": "you keep",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["keep 后常接动名词，表示持续做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "练习",
+    "english": "to practice",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to practice", "practice 后接名词或动名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to practice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "练习(ing形式)",
+    "english": "practicing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "practicing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "你保持练习",
+    "english": "you keep practicing",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep doing sth 表示持续做某事", "you 作主语，practicing 作宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 9,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keep practicing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "你保持练习那么你将会掌握那个技术",
+    "english": "you keep practicing and you will master the skill",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + conj + S + V + O",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["and 连接两个并列分句", "will + 动词原形表将来"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 33,
+          "end": 39
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 40,
+          "end": 43
+        },
+        {
+          "text": "skill",
+          "pos": "名词",
+          "start": 44,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keep practicing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "and",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "will master",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 28,
+          "end": 39
+        },
+        {
+          "text": "the skill",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 40,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 连接词 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "保持练习那么你将会掌握那个技术",
+    "english": "keep practicing and you will master the skill",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "V + O + conj + S + V + O",
+      "clauseType": "并列句",
+      "sentenceType": "祈使句",
+      "tense": "一般将来时",
+      "keyPoints": ["祈使句 + and + 陈述句结构", "will + 动词原形表将来"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 5,
+          "end": 15
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 29,
+          "end": 35
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "skill",
+          "pos": "名词",
+          "start": 40,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "keep practicing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "text": "and",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "will master",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 24,
+          "end": 35
+        },
+        {
+          "text": "the skill",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 36,
+          "end": 45
+        }
+      ],
+      "structure": "谓语 + 宾语 + 连接词 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "新的",
+    "english": "new",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“新的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "new",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "新的技术",
+    "english": "new skills",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词 new 修饰复数名词 skills"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "new skills",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "学习",
+    "english": "to learn",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to learn", "learn 学习"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to learn",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "学习新的技术",
+    "english": "to learn new skills",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to learn new skills", "new skills 新技能"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to learn",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "new skills",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "学习新的技术(ing形式)",
+    "english": "learning new skills",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["学习新技能"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "learning",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "learning new skills",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "她保持",
+    "english": "she keeps",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she keeps",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "她一直学习新的技术",
+    "english": "she keeps learning new skills",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep doing sth 持续做某事", "new skills 新技能"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "learning",
+          "pos": "动名词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps learning",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "new skills",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "提升",
+    "english": "to improve",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["improve 改善；提高"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "improve",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to improve",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "她自己",
+    "english": "herself",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["反身代词，意为她自己"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "herself",
+          "pos": "代词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "herself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "提升她自己",
+    "english": "to improve herself",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["improve oneself 提升自我"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "improve",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "herself",
+          "pos": "代词",
+          "start": 11,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to improve herself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "她一直学习新的技术来提升她自己",
+    "english": "she keeps learning new skills to improve herself",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["不定式表目的 to improve herself", "keep doing sth 持续做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "learning",
+          "pos": "动名词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "improve",
+          "pos": "动词",
+          "start": 33,
+          "end": 40
+        },
+        {
+          "text": "herself",
+          "pos": "代词",
+          "start": 41,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps learning",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "new skills",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 29
+        },
+        {
+          "text": "to improve herself",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "note": "目的状语",
+          "start": 30,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "锁",
+    "english": "to lock",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "lock 锁上"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to lock",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "门",
+    "english": "the door",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the door",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "锁门",
+    "english": "to lock the door",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "lock the door 锁门"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to lock the door",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "忘记",
+    "english": "to forget",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "forget 表示“忘记”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to forget",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "忘记锁门",
+    "english": "to forget to lock the door",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构", "to forget to lock 表示忘记做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 22,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to forget to lock the door",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "忘记锁门(ing形式)",
+    "english": "forgetting to lock the door",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["forget to do sth 忘记去做某事", "不定式短语作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "forgetting",
+          "pos": "动名词",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "forgetting to lock the door",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "她保持",
+    "english": "she keeps",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she keeps",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "她总是忘记锁门",
+    "english": "she keeps forgetting to lock the door",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep doing sth 持续做某事", "forget to do sth 忘记要做"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "forgetting",
+          "pos": "动名词",
+          "start": 10,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 33,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps forgetting",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "to lock the door",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 21,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "离开",
+    "english": "to leave",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to leave", "leave 离开"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "leave",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to leave",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "她离开",
+    "english": "she leaves",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主谓结构 leave 离开"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "leaves",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "leaves",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "当......的时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "当她离开的时候",
+    "english": "when she leaves",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导的时间状语从句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "leaves",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "she leaves",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "她总是忘记锁门",
+    "english": "she keeps forgetting to lock the door",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep doing sth 持续做某事", "forget to do sth 忘记要做"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "forgetting",
+          "pos": "动名词",
+          "start": 10,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 33,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps forgetting",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "to lock the door",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 21,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "她总是忘记锁门当她离开的时候",
+    "english": "she keeps forgetting to lock the door when she leaves",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["when 引导时间状语从句", "keep doing sth 持续做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "forgetting",
+          "pos": "动名词",
+          "start": 10,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "lock",
+          "pos": "动词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "door",
+          "pos": "名词",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 43,
+          "end": 46
+        },
+        {
+          "text": "leaves",
+          "pos": "动词",
+          "start": 47,
+          "end": 53
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keeps forgetting",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "to lock the door",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 21,
+          "end": 37
+        },
+        {
+          "text": "when she leaves",
+          "role": "状语",
+          "roleType": "从句",
+          "note": "时间状语从句",
+          "start": 38,
+          "end": 53
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "钥匙",
+    "english": "keys",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "keys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "他的钥匙",
+    "english": "his keys",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his keys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "忘记",
+    "english": "to forget",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "forget 表示“忘记”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to forget",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "忘记他的钥匙",
+    "english": "to forget his keys",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "his keys 作 forget 的宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to forget",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "his keys",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "家",
+    "english": "home",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["home 可作副词，意为“在家/回家”"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "在家",
+    "english": "at home",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at home 在家"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "忘记他的钥匙在家里",
+    "english": "to forget his keys at home",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "at home 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 22,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to forget",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "his keys",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "at home",
+          "role": null,
+          "roleType": null,
+          "start": 19,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "忘记他的钥匙在家里(ing形式)",
+    "english": "forgetting his keys at home",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["forget doing sth 忘记做过某事", "动名词短语作主语或宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "forgetting",
+          "pos": "动名词",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "forgetting his keys at home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "他保持",
+    "english": "he keeps",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["keep doing sth 一直做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he keeps",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "他总是忘记他的钥匙在家里",
+    "english": "he keeps forgetting his keys at home",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep doing sth 一直做某事", "forget sth 忘记某物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "forgetting",
+          "pos": "动名词",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 32,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keeps",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "forgetting his keys",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 9,
+          "end": 28
+        },
+        {
+          "text": "at home",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 29,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "想法",
+    "english": "mind",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["mind：可作名词（头脑/想法）或动词（介意）"],
+      "confidence": 0.45,
+      "words": [
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "他的想法",
+    "english": "his mind",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "改变",
+    "english": "to change",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，非完整句子", "change 改变"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "change",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to change",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "改变他的想法",
+    "english": "to change his mind",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，非完整句子", "change one's mind 改变主意"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "change",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to change his mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "改变他的想法(ing形式)",
+    "english": "changing his mind",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": ["动名词短语，作主语或宾语", "change one's mind 改变主意"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "changing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "changing his mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "他保持",
+    "english": "he keeps",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["keep doing sth 一直做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he keeps",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "他总是改变他的想法",
+    "english": "he keeps changing his mind",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep doing sth 一直做某事", "动名词短语作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "changing",
+          "pos": "动名词",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 22,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keeps",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "changing his mind",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 9,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "时间",
+    "english": "time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "所有的时间",
+    "english": "all the time",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["副词短语：一直，始终"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "all",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "all the time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "他(一直)总是改变他的想法",
+    "english": "he keeps changing his mind all the time",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep doing sth 一直做某事", "all the time 一直"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keeps",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "changing",
+          "pos": "动名词",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "all",
+          "pos": "代词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 35,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keeps",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "changing his mind",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 9,
+          "end": 26
+        },
+        {
+          "text": "all the time",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "想法",
+    "english": "mind",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["mind：可作名词（头脑/想法）或动词（介意）"],
+      "confidence": 0.45,
+      "words": [
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "介意",
+    "english": "to mind",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to mind",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "我介意",
+    "english": "I mind",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["mind 后常接动名词", "此处为片段，非完整句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "打开",
+    "english": "to open",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "open",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to open",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "这个窗户",
+    "english": "the window",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语，非完整句子"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the window",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "打开这个窗户",
+    "english": "to open the window",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语", "the window 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "open",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to open the window",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "打开这个窗户(ing形式)",
+    "english": "opening the window",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动名词短语作主语或宾语", "开窗"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "opening",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "opening the window",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "我介意打开这个窗户",
+    "english": "I mind opening the window",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind doing sth 固定搭配", "opening 动名词作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "opening",
+          "pos": "动名词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "opening the window",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 7,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "我不介意打开这个窗户",
+    "english": "I don't mind opening the window",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind doing sth 介意做某事", "动名词作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "opening",
+          "pos": "动名词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "opening the window",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 13,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "支付",
+    "english": "to pay",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "账单",
+    "english": "the bill",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语", "定冠词 the 表特指"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bill",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "支付账单",
+    "english": "to pay the bill",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pay the bill 付账单"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay the bill",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "支付账单(ing形式)",
+    "english": "paying the bill",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语，可作主语或宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "paying",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "paying the bill",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "介意",
+    "english": "to mind",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to mind",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "他介意",
+    "english": "he minds",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["mind 介意，后接动名词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "他介意支付账单",
+    "english": "he minds paying the bill",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind doing sth 介意做某事", "pay the bill 付账单"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "paying",
+          "pos": "动名词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 20,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "paying the bill",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 9,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "他不介意支付账单",
+    "english": "he doesn't mind paying the bill",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind doing sth 介意做某事", "pay the bill 付账"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "paying",
+          "pos": "动名词",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "paying the bill",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 16,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "玩具",
+    "english": "toy",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：玩具"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "toy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "他的玩具",
+    "english": "his toys",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["his 修饰复数名词 toys"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "toys",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his toys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "分享",
+    "english": "to share",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "share",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to share",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "分享他的玩具",
+    "english": "to share his toys",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "share one's sth"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "share",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "toys",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to share his toys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "朋友",
+    "english": "friend",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["friend 朋友"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "他的朋友们",
+    "english": "his friends",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his friends",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "和",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "和他的朋友们",
+    "english": "with his friends",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with his friends",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "和他的朋友们分享他的玩具",
+    "english": "to share his toys with his friends",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "share sth with sb"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "share",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "toys",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to share his toys with his friends",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 34
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "和他的朋友们分享他的玩具（ing 形式）",
+    "english": "sharing his toys with his friends",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语；share...with..."],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "sharing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "toys",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 26,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "sharing his toys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        },
+        {
+          "text": "with his friends",
+          "role": null,
+          "roleType": null,
+          "start": 17,
+          "end": 33
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "他介意",
+    "english": "he minds",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["mind 介意，后接动名词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "他介意和他的朋友们分享他的玩具",
+    "english": "he minds sharing his toys with his friends",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind doing sth 介意做某事", "share sth with sb 和某人分享"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "sharing",
+          "pos": "动名词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "toys",
+          "pos": "名词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 35,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "sharing his toys with his friends",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 9,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "他不介意和他的朋友们分享他的玩具",
+    "english": "he doesn't mind sharing his toys with his friends",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind doing sth 介意做某事", "share sth with sb 与某人分享"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "sharing",
+          "pos": "动名词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "toys",
+          "pos": "名词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 38,
+          "end": 41
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 42,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "sharing his toys with his friends",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 16,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "他不介意",
+    "english": "he doesn't mind",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind 介意，后可接动名词", "否定助动词 doesn't"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "他的食物",
+    "english": "his food",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his food",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "分享",
+    "english": "to share",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "share",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to share",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "分享他的食物",
+    "english": "to share his food",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "share",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to share his food",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "别人",
+    "english": "others",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["代词，泛指其他人或物"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "others",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "others",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "和",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "和别人",
+    "english": "with others",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "others",
+          "pos": "代词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with others",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "和别人分享他的食物",
+    "english": "to share his food with others",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "share sth with sb"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "share",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "others",
+          "pos": "代词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to share his food with others",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "和别人分享他的食物(ing形式)",
+    "english": "sharing his food with others",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语；share...with..."],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "sharing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "others",
+          "pos": "代词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "sharing his food",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        },
+        {
+          "text": "with others",
+          "role": null,
+          "roleType": null,
+          "start": 17,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "介意",
+    "english": "to mind",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to mind",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "他介意",
+    "english": "he minds",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["mind 介意，后接动名词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "他不介意",
+    "english": "he doesn't mind",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind 介意，后可接动名词", "否定助动词 doesn't"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "他不介意和别人分享他的食物",
+    "english": "he doesn't mind sharing his food with others",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind doing sth 介意做某事", "share sth with sb 与某人分享"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "sharing",
+          "pos": "动名词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "text": "others",
+          "pos": "代词",
+          "start": 38,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "sharing his food with others",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 16,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "等",
+    "english": "to wait",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wait",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to wait",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "她",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "等她",
+    "english": "to wait for her",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wait",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 12,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to wait for her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "机场",
+    "english": "airport",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：机场"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "airport",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "airport",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "在机场",
+    "english": "at the airport",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "airport",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the airport",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "在机场等她",
+    "english": "to wait for her at the airport",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wait",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "airport",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to wait for her at the airport",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 30
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "在机场等她(ing形式)",
+    "english": "waiting for her at the airport",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["wait for sb. 等待某人", "at the airport 在机场"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "airport",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "waiting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "for her",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "at the airport",
+          "role": null,
+          "roleType": null,
+          "start": 16,
+          "end": 30
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "他不介意",
+    "english": "he doesn't mind",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind 介意，后可接动名词", "否定助动词 doesn't"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "他不介意在机场等她",
+    "english": "he doesn't mind waiting for her at the airport",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind doing sth 介意做某事", "wait for sb 等候某人"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "waiting",
+          "pos": "动名词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "airport",
+          "pos": "名词",
+          "start": 39,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "waiting for her at the airport",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 16,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "介意",
+    "english": "to mind",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to mind",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "他们介意",
+    "english": "they mind",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind 作动词：介意；在意", "主谓结构简单句"],
+      "confidence": 0.68,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "mind",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "秘密",
+    "english": "secret",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，秘密"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "secret",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "他们的秘密",
+    "english": "their secrets",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "secrets",
+          "pos": "名词",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "their secrets",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "分享",
+    "english": "to share",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "share",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to share",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "分享他们的秘密",
+    "english": "to share their secrets",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "share one's secrets"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "share",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "secrets",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to share their secrets",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "任何人",
+    "english": "anyone",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：任何人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "anyone",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "anyone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "和",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "和任何人",
+    "english": "with anyone",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "anyone",
+          "pos": "代词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with anyone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "和任何人分享他们的秘密",
+    "english": "to share their secrets with anyone",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "share sth with sb"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "share",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "secrets",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "anyone",
+          "pos": "代词",
+          "start": 28,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to share their secrets with anyone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 34
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "和任何人分享他们的秘密(ing形式)",
+    "english": "sharing their secrets with anyone",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语；share...with..."],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "sharing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "secrets",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "anyone",
+          "pos": "代词",
+          "start": 27,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "sharing their secrets",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        },
+        {
+          "text": "with anyone",
+          "role": null,
+          "roleType": null,
+          "start": 22,
+          "end": 33
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "他们介意",
+    "english": "they mind",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind 作动词：介意；在意", "主谓结构简单句"],
+      "confidence": 0.68,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "mind",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "他们不介意",
+    "english": "they don't mind",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind 作动词表示介意", "don't mind 不介意"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "don't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "他们不介意和任何人分享他们的秘密",
+    "english": "they don't mind sharing their secrets with anyone",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind doing sth 介意做某事", "share sth with sb 与某人分享某物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "sharing",
+          "pos": "动名词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 24,
+          "end": 29
+        },
+        {
+          "text": "secrets",
+          "pos": "名词",
+          "start": 30,
+          "end": 37
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "anyone",
+          "pos": "代词",
+          "start": 43,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "don't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 15
+        },
+        {
+          "text": "sharing their secrets with anyone",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 16,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "他介意",
+    "english": "he minds",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["mind 介意，后接动名词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "建议",
+    "english": "advice",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["不可数名词：建议、忠告"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "一些",
+    "english": "some",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["限定词，后接可数名词复数或不可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "some",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "一些建议",
+    "english": "some advice",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["advice 为不可数名词，用 some 修饰"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "some advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "问题",
+    "english": "problem",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "这个问题",
+    "english": "this problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "关于",
+    "english": "about",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "about",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "关于这个问题",
+    "english": "about this problem",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语", "this 修饰名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 11,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "about this problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "关于这个问题的一些建议",
+    "english": "some advice about this problem",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["about 引出建议的对象", "名词短语作介词宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "some advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "about this problem",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 30
+        }
+      ]
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "给",
+    "english": "to give",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "给我",
+    "english": "to give me",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "give me 表示给我"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "给我一些建议",
+    "english": "to give me some advice",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "give sb some advice 给某人建议"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give me some advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "给我关于这个问题的一些建议",
+    "english": "to give me some advice about this problem",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "about this problem 作后置定语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 34,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give me some advice about this problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 41
+        }
+      ]
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "给我关于这个问题的一些建议（ing 形式）",
+    "english": "giving me some advice about this problem",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语，非完整句子", "give sb advice about sth 就某事给某人建议"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "giving",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        },
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 33,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "giving me some advice about this problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 40
+        }
+      ]
+    }
+  },
+  {
+    "order": 153,
+    "chinese": "他介意",
+    "english": "he minds",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["mind 介意，后接动名词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "minds",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 154,
+    "chinese": "他不介意",
+    "english": "he doesn't mind",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind 介意，后可接动名词", "否定助动词 doesn't"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 155,
+    "chinese": "他不介意给我关于这个问题的一些建议",
+    "english": "he doesn't mind giving me some advice about this problem",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["mind doing sth 介意做某事", "give sb some advice 给某人建议"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "mind",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "giving",
+          "pos": "动名词",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 31,
+          "end": 37
+        },
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 38,
+          "end": 43
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 44,
+          "end": 48
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 49,
+          "end": 56
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't mind",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "giving me some advice about this problem",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 16,
+          "end": 56
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  }
+]

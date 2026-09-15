@@ -1,0 +1,7353 @@
+[
+  {
+    "order": 1,
+    "chinese": "手",
+    "english": "hand",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "tense": null,
+      "keyPoints": ["hand 可作名词(手)或动词(递)"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "递给",
+    "english": "to hand",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "hand 递给；交给"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hand",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "握；牵",
+    "english": "to hold",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hold 表示握住"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "手",
+    "english": "hand",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "tense": null,
+      "keyPoints": ["hand 可作名词(手)或动词(递)"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "我的手",
+    "english": "my hand",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "名词短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "牵我的手",
+    "english": "to hold my hand",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hold one's hand 握住某人的手", "my hand 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "my hand",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "想要",
+    "english": "want",
+    "annotation": {
+      "order": 28,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "我想要你",
+    "english": "I want you",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb/sth 想要某人/某物"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "牵我的手",
+    "english": "to hold my hand",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hold one's hand 握住某人的手", "my hand 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "my hand",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "我想要你牵我的手",
+    "english": "I want you to hold my hand",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb to do sth 结构", "不定式作宾语补足语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 22,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to hold my hand",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "握；牵",
+    "english": "to hold",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hold 表示握住"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "牵（ing形式）",
+    "english": "holding",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["holding 为 hold 的 -ing 形式"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "holding",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "holding",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "正在牵着",
+    "english": "be holding",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "holding",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be holding",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "我（现在）正在牵着",
+    "english": "I am holding",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在进行时，缺宾语，不成句"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "holding",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am holding",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "你的",
+    "english": "your",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词性物主代词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "你的手",
+    "english": "your hand",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["物主代词 your + 名词", "片段，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "我（现在）正在牵着你的手",
+    "english": "I am holding your hand",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["hold one's hand 握住某人的手", "现在进行时 am doing"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "holding",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 18,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am holding",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "your hand",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "刀",
+    "english": "knife",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "knife",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "我（现在）正在握着",
+    "english": "I am holding",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在进行时，缺宾语，不成句"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "holding",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am holding",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "我（现在）正在握着一把刀",
+    "english": "I am holding a knife",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时: am + doing", "hold a knife 拿着刀"],
+      "confidence": 0.96,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "holding",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am holding",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "a knife",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "我的手",
+    "english": "my hand",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "名词短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "在......里",
+    "english": "in",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 in 表示地点或时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "在我的手里",
+    "english": "in my hand",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表位置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in my hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "我（现在）正在在我的手里握着一把刀",
+    "english": "I am holding a knife in my hand",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时表正在进行的动作", "in my hand 在我手里"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "holding",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am holding",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "a knife",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "in my hand",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "右",
+    "english": "right",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：正确的；反义 wrong"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "right",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "right",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "右手",
+    "english": "right hand",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：右手；right 作定语"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "right",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "right hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "在我的右手里",
+    "english": "in my right hand",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表位置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "right",
+          "pos": "形容词",
+          "start": 6,
+          "end": 11
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in my right hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "我（现在）正在握着一把刀",
+    "english": "I am holding a knife",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时: am + doing", "hold a knife 拿着刀"],
+      "confidence": 0.96,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "holding",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am holding",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "a knife",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "我（现在）正在在我的右手里握着一把刀",
+    "english": "I am holding a knife in my right hand",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时结构 am doing", "in my right hand 在我右手"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "holding",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "right",
+          "pos": "形容词",
+          "start": 27,
+          "end": 32
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 33,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am holding",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "a knife",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "in my right hand",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "叉子",
+    "english": "fork",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["fork 名词：叉子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "fork",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "fork",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "我（现在）正在握着",
+    "english": "I am holding",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在进行时，缺宾语，不成句"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "holding",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am holding",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "我（现在）正在握着一把叉子",
+    "english": "I am holding a fork",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 am + doing", "a fork 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "holding",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "fork",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am holding",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "a fork",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "在我的手里",
+    "english": "in my hand",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表位置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in my hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "左",
+    "english": "left",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["leave 的过去式/过去分词，此处为碎片"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "left",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "left",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "在我的左手里",
+    "english": "in my left hand",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表位置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "left",
+          "pos": "形容词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in my left hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "我（现在）正在握着一把叉子",
+    "english": "I am holding a fork",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 am + doing", "a fork 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "holding",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "fork",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am holding",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "a fork",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "我（现在）正在在我的左手里握着一把叉子",
+    "english": "I am holding a fork in my left hand",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 am + doing", "in my left hand 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "holding",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "fork",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "left",
+          "pos": "形容词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 31,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am holding",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "a fork",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "in my left hand",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 20,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "人",
+    "english": "people",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["people 作“人、人们”时为集合名词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "people",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "四个",
+    "english": "four",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["four 数词：四"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "four",
+          "pos": "数词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "four",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "四个人",
+    "english": "four people",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["four people 四个人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "four",
+          "pos": "数词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "four people",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "汽车",
+    "english": "car",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：小汽车"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "这辆车",
+    "english": "this car",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "握；容纳",
+    "english": "to hold",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hold 表示握住"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "容纳四个人",
+    "english": "to hold four people",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hold 表'容纳'", "four people 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "four",
+          "pos": "数词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "four people",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "可以",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "这辆汽车可以容纳四个人",
+    "english": "this car can hold four people",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["情态动词can表能力", "hold four people"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "four",
+          "pos": "数词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "can hold",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "four people",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "不可以",
+    "english": "can't",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["can 的否定缩写形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "这辆汽车不可以容纳四个人",
+    "english": "this car can't hold four people",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["情态动词can't表否定", "hold four people"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "four",
+          "pos": "数词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "can't hold",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "four people",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "人",
+    "english": "people",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["people 作“人、人们”时为集合名词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "people",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "十个",
+    "english": "ten",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["ten 十"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ten",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "十个人",
+    "english": "ten people",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["ten people 十个人"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ten people",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "握；容纳",
+    "english": "to hold",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hold 表示握住"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "容纳十个人",
+    "english": "to hold ten people",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hold 表'容纳'", "ten people 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "ten people",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "房间",
+    "english": "room",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：房间；空间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "这个房间",
+    "english": "this room",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "可以",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "这个房间可以容纳十个人",
+    "english": "this room can hold ten people",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can 表示能力，后接动词原形", "hold 意为“容纳”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "can hold",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "ten people",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "不可以",
+    "english": "can't",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["can 的否定缩写形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "这个房间不可以容纳十个人",
+    "english": "this room can't hold ten people",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can't 表示没有能力", "hold 意为“容纳”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "can't hold",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 20
+        },
+        {
+          "text": "ten people",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "这个房间",
+    "english": "this room",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "大的",
+    "english": "big",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 big，大的"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "big",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "是",
+    "english": "is",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["be 动词的第三人称单数形式，常用作系动词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "is",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "这个房间是大的",
+    "english": "this room is big",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构，big 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "容纳十个人",
+    "english": "to hold ten people",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hold 表'容纳'", "ten people 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "ten people",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "足够",
+    "english": "enough",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["enough 足够的"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "足够容纳十个人",
+    "english": "enough to hold ten people",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enough to do sth 足够做某事"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "to hold ten people",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 25
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "这个房间是大的",
+    "english": "this room is big",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构，big 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "这个房间是大的（大到）足够容纳十个人",
+    "english": "this room is big enough to hold ten people",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough to do sth 足够…做某事", "this room 作主语，big enough 作表语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 36,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big enough to hold ten people",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "这个房间是足够大的",
+    "english": "this room is big enough",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough 修饰形容词 big，须后置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "我们",
+    "english": "us",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["us 宾格", "we 的宾格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "us",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "对......来说",
+    "english": "for",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["for 介词，意为“为了；对于”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "对我们来说",
+    "english": "for us",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["for 后接宾格 us"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for us",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "这个房间是足够大的对我们来说",
+    "english": "this room is big enough for us",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough 后置；for us 表示对象", "for + 名词表示“对……来说”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 28,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 23
+        },
+        {
+          "text": "for us",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "遇见；碰面",
+    "english": "to meet",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "meet",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to meet",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "碰面（ing形式）",
+    "english": "meeting",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["meeting：会议；meet的动名词形式"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "meeting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "会议",
+    "english": "meeting",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["meeting：会议；meet的动名词形式"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "meeting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "握；容纳；举行",
+    "english": "to hold",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hold 表示握住"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "举行一次会议",
+    "english": "to hold a meeting",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hold a meeting 举行会议", "hold 表'举行(活动)'"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "a meeting",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "决定",
+    "english": "to decide",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "我们",
+    "english": "we",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "我们决定",
+    "english": "we decide",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主语 we + 实义动词 decide", "一般现在时表示习惯或决定"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "我们决定举行一次会议",
+    "english": "we decide to hold a meeting",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["decide to do sth 决定做某事", "hold a meeting 开会"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to hold a meeting",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "在......里",
+    "english": "in",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 in 表示地点或时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "这个房间",
+    "english": "this room",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "在这个房间里",
+    "english": "in this room",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in this room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "我们决定在这个房间里举行一次会议",
+    "english": "we decide to hold a meeting in this room",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["decide to do sth 决定做某事", "in this room 作地点状语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 36,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to hold a meeting",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 27
+        },
+        {
+          "text": "in this room",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "明天",
+    "english": "tomorrow",
+    "annotation": {
+      "order": 91,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词：明天"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "早上",
+    "english": "morning",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词：早晨；上午"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "morning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "明天早上",
+    "english": "tomorrow morning",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语表时间"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow morning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "我们决定明天早上在这个房间里举行一次会议",
+    "english": "we decide to hold a meeting in this room tomorrow morning",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["decide to do sth 决定做某事", "in this room 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 41,
+          "end": 49
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 50,
+          "end": 57
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to hold a meeting",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 27
+        },
+        {
+          "text": "in this room",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 40
+        },
+        {
+          "text": "tomorrow morning",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 41,
+          "end": 57
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "我们将会举行一次会议",
+    "english": "we will hold a meeting",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["will + 动词原形构成一般将来时", "hold a meeting 开会"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will hold",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "a meeting",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "明天早上我们将会在这个房间里举行一次会议",
+    "english": "we will hold a meeting in this room tomorrow morning",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["will + 动词原形构成一般将来时", "状语顺序：地点在前，时间在后"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 36,
+          "end": 44
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 45,
+          "end": 52
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will hold",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "a meeting",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 22
+        },
+        {
+          "text": "in this room",
+          "role": "状语",
+          "roleType": "介词短语",
+          "note": "地点状语",
+          "start": 23,
+          "end": 35
+        },
+        {
+          "text": "tomorrow morning",
+          "role": "状语",
+          "roleType": "名词短语",
+          "note": "时间状语",
+          "start": 36,
+          "end": 52
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "大的",
+    "english": "big",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 big，大的"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "big",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "这个房间",
+    "english": "this room",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "这个房间是大的",
+    "english": "this room is big",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构，big 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "足够",
+    "english": "enough",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["enough 足够的"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "举行一次会议",
+    "english": "to hold a meeting",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hold a meeting 举行会议", "hold 表'举行(活动)'"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "a meeting",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "足够举行一次会议",
+    "english": "enough to hold a meeting",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enough to do sth 足够做某事"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough to hold a meeting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "这个房间是大的（大到）足够举行一次会议",
+    "english": "this room is big enough to hold a meeting",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough to do sth 表示“足够……做某事”", "不定式 to hold 作结果状语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 32,
+          "end": 33
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 34,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 23
+        },
+        {
+          "text": "to hold a meeting",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 24,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "这个房间是足够大的",
+    "english": "this room is big enough",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enough 修饰形容词 big，须后置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "enough",
+          "pos": "副词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "big enough",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "小的",
+    "english": "small",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 small，意为“小的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "small",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "small",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "这个房间是小的",
+    "english": "this room is small",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构，small 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "small",
+          "pos": "形容词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "small",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "非常",
+    "english": "very",
+    "annotation": {
+      "order": 126,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "very",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "这个房间是非常小的",
+    "english": "this room is very small",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["very 修饰形容词 small，作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "small",
+          "pos": "形容词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "very small",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "因为",
+    "english": "because",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["because 表示原因，引导原因状语从句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "because",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "因为这个房间是非常小的",
+    "english": "because this room is very small",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["because 引导原因状语从句", "this room is very small"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "small",
+          "pos": "形容词",
+          "start": 26,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "because this room is very small",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 31
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "会议",
+    "english": "meeting",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["meeting：会议；meet的动名词形式"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "meeting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "握；容纳；举行",
+    "english": "to hold",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hold 表示握住"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "举行一次会议",
+    "english": "to hold a meeting",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hold a meeting 举行会议", "hold 表'举行(活动)'"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "a meeting",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "在......里",
+    "english": "in",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 in 表示地点或时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "这个房间",
+    "english": "this room",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "在这个房间里",
+    "english": "in this room",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in this room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "在这个房间里举行一次会议",
+    "english": "to hold a meeting in this room",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["in this room 作地点状语", "to hold a meeting 举行会议"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 26,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "a meeting",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 17
+        },
+        {
+          "text": "in this room",
+          "role": null,
+          "roleType": null,
+          "start": 18,
+          "end": 30
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "不可能的",
+    "english": "impossible",
+    "annotation": {
+      "order": 138,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "impossible",
+          "pos": "形容词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "impossible",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "它；这件事情",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "它是不可能的",
+    "english": "it is impossible",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "impossible",
+          "pos": "形容词",
+          "start": 6,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "impossible",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "在这个房间里举行一次会议是不可能的",
+    "english": "it is impossible to hold a meeting in this room",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["It 作形式主语，不定式为真正主语", "in this room 作地点状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "impossible",
+          "pos": "形容词",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 35,
+          "end": 37
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 43,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "impossible",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "to hold a meeting",
+          "role": "主语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 34
+        },
+        {
+          "text": "in this room",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 35,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "因为这个房间是非常小的",
+    "english": "because this room is very small",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["because 引导原因状语从句", "this room is very small"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "small",
+          "pos": "形容词",
+          "start": 26,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "because this room is very small",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 31
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "在这个房间里举行一次会议是不可能的因为这个房间是非常小的",
+    "english": "it is impossible to hold a meeting in this room because this room is very small",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["It作形式主语，不定式为真正主语", "because引导原因状语从句"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "impossible",
+          "pos": "形容词",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 35,
+          "end": 37
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 43,
+          "end": 47
+        },
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 48,
+          "end": 55
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 56,
+          "end": 60
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 61,
+          "end": 65
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 66,
+          "end": 68
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 69,
+          "end": 73
+        },
+        {
+          "text": "small",
+          "pos": "形容词",
+          "start": 74,
+          "end": 79
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "impossible",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "to hold a meeting",
+          "role": "主语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 34
+        },
+        {
+          "text": "in this room",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 35,
+          "end": 47
+        },
+        {
+          "text": "because this room is very small",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 48,
+          "end": 79
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "握；容纳；举行",
+    "english": "to hold",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hold 表示握住"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "举行一次会议",
+    "english": "to hold a meeting",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hold a meeting 举行会议", "hold 表'举行(活动)'"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "a meeting",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "决定",
+    "english": "to decide",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "他们",
+    "english": "they",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 they 主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "他们（过去）决定",
+    "english": "they decided",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide 的过去式 decided"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "他们（过去）决定举行一次会议",
+    "english": "they decided to hold a meeting",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 结构", "不定式作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "to hold a meeting",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "脸",
+    "english": "face",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：脸；也可作动词：面对"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "face",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "face",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "面对",
+    "english": "to face",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "face",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to face",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "面对(ing形式)",
+    "english": "facing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["face 的现在分词/动名词"],
+      "confidence": 0.45,
+      "words": [
+        {
+          "text": "facing",
+          "pos": "分词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "facing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "正在面对",
+    "english": "be facing",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "facing",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be facing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "他们",
+    "english": "they",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 they 主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "他们(现在)正在面对",
+    "english": "they are facing",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they are facing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "那个问题",
+    "english": "the problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "他们(现在)正在面对的那个问题",
+    "english": "the problem they are facing",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["定语从句省略关系代词", "现在进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "they are facing",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "解决",
+    "english": "to solve",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "那个问题",
+    "english": "the problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "解决那个问题",
+    "english": "to solve the problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "solve 后接宾语 the problem"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "解决他们（现在）正在面对的那个问题",
+    "english": "to solve the problem they are facing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语含定语从句", "they are facing 修饰 the problem"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "facing",
+          "pos": "分词",
+          "start": 30,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        },
+        {
+          "text": "they are facing",
+          "role": null,
+          "roleType": null,
+          "start": 21,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "如何",
+    "english": "how",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["如何；怎样"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "如何解决他们（现在）正在面对的那个问题",
+    "english": "how to solve the problem they are facing",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["how to do sth 如何做某事", "they are facing 定语从句修饰problem"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 34,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how to solve the problem they are facing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 40
+        }
+      ]
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "讨论",
+    "english": "to discuss",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to discuss",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "讨论如何解决他们（现在）正在面对的那个问题",
+    "english": "to discuss how to solve the problem they are facing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语含宾语从句", "they are facing为定语从句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 45,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to discuss how to solve the problem they are facing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 51
+        }
+      ]
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "举行一次会议",
+    "english": "to hold a meeting",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["hold a meeting 举行会议", "hold 表'举行(活动)'"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "a meeting",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "他们（过去）决定",
+    "english": "they decided",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide 的过去式 decided"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "他们（过去）决定举行一次会议",
+    "english": "they decided to hold a meeting",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 结构", "不定式作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "to hold a meeting",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "他们（过去）决定举行一次会议讨论如何解决他们（现在）正在面对的那个问题",
+    "english": "they decided to hold a meeting to discuss how to solve the problem they are facing",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 决定做某事", "how to solve 如何解决"],
+      "confidence": 0.82,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "meeting",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "discuss",
+          "pos": "动词",
+          "start": 34,
+          "end": 41
+        },
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 42,
+          "end": 45
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 46,
+          "end": 48
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 49,
+          "end": 54
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 55,
+          "end": 58
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 59,
+          "end": 66
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 67,
+          "end": 71
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 72,
+          "end": 75
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 76,
+          "end": 82
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "to hold a meeting",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 30
+        },
+        {
+          "text": "to discuss how to solve the problem they are facing",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 31,
+          "end": 82
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  }
+]

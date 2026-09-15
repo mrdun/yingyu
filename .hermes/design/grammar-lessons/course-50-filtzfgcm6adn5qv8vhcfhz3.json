@@ -1,0 +1,8010 @@
+[
+  {
+    "order": 1,
+    "chinese": "支付",
+    "english": "to pay",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "账单",
+    "english": "the bill",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语", "定冠词 the 表特指"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bill",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "支付账单",
+    "english": "to pay the bill",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pay the bill 付账单"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay the bill",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "我支付账单",
+    "english": "I pay the bill",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["pay the bill 付账"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "pay",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "the bill",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "支付(过去分词)",
+    "english": "paid",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["pay 的过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "paid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "我(已经)支付了账单",
+    "english": "I have paid the bill",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["pay the bill 意为付账", "现在完成时表示动作已完成"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "the bill",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "老师",
+    "english": "teacher",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "teacher",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "我是一名老师",
+    "english": "I am a teacher",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "a teacher 作名词表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "a teacher",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 5,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "我(已经)是一名老师了",
+    "english": "I have been a teacher",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been 表示持续的状态", "a teacher 作表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "a teacher",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "年",
+    "english": "year",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "year",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "year",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "五年",
+    "english": "five years",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["时间长度：五年"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "five",
+          "pos": "数词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "five years",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "我(已经)是一名老师五年了",
+    "english": "I have been a teacher for five years",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["for + 时间段表示持续多久", "a teacher 作表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "five",
+          "pos": "数词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 31,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "a teacher",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 21
+        },
+        {
+          "text": "for five years",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "自从......以来",
+    "english": "since",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词，引导时间状语从句", "也可作介词，后接时间点"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "since",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "since",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "我自从2019年(已经)是一名老师了",
+    "english": "I have been a teacher since 2019",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["since + 时间点表示自从", "a teacher 作表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "teacher",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "since",
+          "pos": "介词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "2019",
+          "pos": "数词",
+          "start": 28,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "a teacher",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 21
+        },
+        {
+          "text": "since 2019",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "医生",
+    "english": "doctor",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：医生"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "doctor",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "他是一名医生",
+    "english": "he is a doctor",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "a doctor 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "a doctor",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "他(已经)是一名医生了",
+    "english": "he has been a doctor",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时表示状态持续", "have been + 表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 14,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "a doctor",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "他(已经)是一名医生15年了",
+    "english": "he has been a doctor for fifteen years",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["for + 时间段表示持续多久", "现在完成时表动作延续"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "fifteen",
+          "pos": "数词",
+          "start": 25,
+          "end": 32
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 33,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "a doctor",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "for fifteen years",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "生病的",
+    "english": "sick",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，生病的", "be sick 生病"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "sick",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "sick",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "他是生病的",
+    "english": "he is sick",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "sick 作表语说明主语状态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "sick",
+          "pos": "形容词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "sick",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "他(已经)生病了",
+    "english": "he has been sick",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been + 形容词表状态", "现在完成时表持续"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "sick",
+          "pos": "形容词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "sick",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "一星期",
+    "english": "a week",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a week",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "他(已经)生病一星期了",
+    "english": "he has been sick for a week",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["for + 时间段表持续一周", "现在完成时表状态延续"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "sick",
+          "pos": "形容词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "sick",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "for a week",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "结婚",
+    "english": "to marry",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "marry",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to marry",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "结婚的",
+    "english": "married",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["married：已婚的；marry的过去式/过去分词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "married",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "married",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "他们是结婚的",
+    "english": "they are married",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be married 表示已婚状态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "married",
+          "pos": "形容词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "married",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "他们(已经)结婚了",
+    "english": "they have been married",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["be married 表示已婚状态", "过去分词作表语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "married",
+          "pos": "分词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 14
+        },
+        {
+          "text": "married",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "十年",
+    "english": "ten years",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["ten years 十年"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ten years",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "他们(已经)结婚十年了",
+    "english": "they have been married for ten years",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["for + 时间段表示持续时间", "have been married 表示婚龄"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "married",
+          "pos": "分词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "years",
+          "pos": "名词",
+          "start": 31,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 14
+        },
+        {
+          "text": "married",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "for ten years",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 23,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "朋友",
+    "english": "friend",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["friend 朋友"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "他们是朋友",
+    "english": "they are friends",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "are 作系动词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "friends",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "他们(已经)是朋友了",
+    "english": "they have been friends",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been + 表语表示持续状态", "表示一直是朋友"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 14
+        },
+        {
+          "text": "friends",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "自从......以来",
+    "english": "since",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词，引导时间状语从句", "也可作介词，后接时间点"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "since",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "since",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "幼儿园",
+    "english": "kindergarten",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "kindergarten",
+          "pos": "名词",
+          "start": 0,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "kindergarten",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "自从幼儿园",
+    "english": "since kindergarten",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["since + 时间点", "常与现在完成时连用"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "since",
+          "pos": "介词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "kindergarten",
+          "pos": "名词",
+          "start": 6,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "since kindergarten",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "他们自从幼儿园(已经)是朋友了",
+    "english": "they have been friends since kindergarten",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["since + 时间点与现在完成时连用", "表示从幼儿园起一直是朋友"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "since",
+          "pos": "介词",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "kindergarten",
+          "pos": "名词",
+          "start": 29,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 14
+        },
+        {
+          "text": "friends",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "since kindergarten",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 23,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "我们是朋友",
+    "english": "we are friends",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "be friends 是朋友"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "friends",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "我们(已经)是朋友了",
+    "english": "we have been friends",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been friends 一直是朋友", "be friends 是朋友"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "friends",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "孩子",
+    "english": "child",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": ["名词：孩子；复数 children"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "child",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "child",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "童年",
+    "english": "childhood",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": ["名词：童年，不可数"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "childhood",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "childhood",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "自从......以来",
+    "english": "since",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词，引导时间状语从句", "也可作介词，后接时间点"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "since",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "since",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "自从童年",
+    "english": "since childhood",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["since + 时间点", "常与现在完成时连用"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "since",
+          "pos": "介词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "childhood",
+          "pos": "名词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "since childhood",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "我们自从童年(已经)是朋友了",
+    "english": "we have been friends since childhood",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["since childhood 从童年起", "since + 时间点"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "since",
+          "pos": "介词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "childhood",
+          "pos": "名词",
+          "start": 27,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "friends",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "since childhood",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "邻居",
+    "english": "neighbor",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“邻居”（美式拼写）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "neighbor",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "neighbor",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "我们是邻居",
+    "english": "we are neighbors",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "be neighbors 是邻居"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "neighbors",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "neighbors",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "我们(已经)是邻居了",
+    "english": "we have been neighbors",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been neighbors 一直是邻居"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "neighbors",
+          "pos": "名词",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "neighbors",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "邻居",
+    "english": "neighbor",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“邻居”（美式拼写）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "neighbor",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "neighbor",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "街区",
+    "english": "neighborhood",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“街区；邻近地区”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "neighborhood",
+          "pos": "名词",
+          "start": 0,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "neighborhood",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "这个街区",
+    "english": "this neighborhood",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "neighborhood",
+          "pos": "名词",
+          "start": 5,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this neighborhood",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "搬家",
+    "english": "to move",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "move",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to move",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "搬家(过去式)",
+    "english": "moved",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["move 的过去式/过去分词", "感动的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "moved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "我们搬家(过去式)",
+    "english": "we moved",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["moved 是 move 的过去式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "moved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "我们搬家到这个街区",
+    "english": "we moved to this neighborhood",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["move to + 地点：搬到某地"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "neighborhood",
+          "pos": "名词",
+          "start": 17,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "moved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to this neighborhood",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 9,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "自从......以来",
+    "english": "since",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词，引导时间状语从句", "也可作介词，后接时间点"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "since",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "since",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "自从我们搬家到这个街区",
+    "english": "since we moved to this neighborhood",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["since 引导时间状语从句", "从句中常用一般过去时"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "since",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "neighborhood",
+          "pos": "名词",
+          "start": 23,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "since we moved to this neighborhood",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "两个都",
+    "english": "both",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：两者都"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "both",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "both",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "自从我们两个都搬家到这个街区",
+    "english": "since we both moved to this neighborhood",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["since 引导时间状语从句", "从句中常用一般过去时"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "since",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "both",
+          "pos": "代词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "neighborhood",
+          "pos": "名词",
+          "start": 28,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "since we both moved to this neighborhood",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 40
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "我们(已经)是邻居了",
+    "english": "we have been neighbors",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been neighbors 一直是邻居"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "neighbors",
+          "pos": "名词",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "neighbors",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "我们(已经)是邻居了自从我们两个都搬家到这个街区",
+    "english": "we have been neighbors since we both moved to this neighborhood",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["since 引导时间状语从句", "both 作同位语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "neighbors",
+          "pos": "名词",
+          "start": 13,
+          "end": 22
+        },
+        {
+          "text": "since",
+          "pos": "连词",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "both",
+          "pos": "代词",
+          "start": 32,
+          "end": 36
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 37,
+          "end": 42
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 43,
+          "end": 45
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 46,
+          "end": 50
+        },
+        {
+          "text": "neighborhood",
+          "pos": "名词",
+          "start": 51,
+          "end": 63
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "neighbors",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 22
+        },
+        {
+          "text": "since we both moved to this neighborhood",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 23,
+          "end": 63
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "在这里",
+    "english": "here",
+    "annotation": {
+      "order": 20,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["地点副词 here 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "我在这里",
+    "english": "I am here",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["here 为地点副词作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "我(已经)在这里过了",
+    "english": "I have been here",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been 后接 here", "表示一直在这里"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "在那里",
+    "english": "there",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "我在那里",
+    "english": "I am there",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["there 为地点状语", "主系表结构表位置"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "there",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "我(已经)去过那里了",
+    "english": "I have been there",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been 后接 there", "表示曾在或到过那里"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "there",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "在国外",
+    "english": "abroad",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词", "abroad 前不加介词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "abroad",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "我在国外",
+    "english": "I am abroad",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "abroad 为副词，表示在国外"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "abroad",
+          "role": "表语",
+          "roleType": "副词短语",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "我(已经)去过国外",
+    "english": "I have been abroad",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been 后接副词 abroad", "表示曾在国外"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "abroad",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "地方",
+    "english": "place",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“地点、地方”"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "place",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "place",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "那个地方",
+    "english": "that place",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["指示限定词 that 修饰名词 place"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "place",
+          "pos": "名词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that place",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "我(已经)去过那个地方",
+    "english": "I have been to that place",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["that 修饰名词 place", "have been to + 地点"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "place",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to that place",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 12,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "还没有",
+    "english": "haven't",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["have not 的缩写形式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "haven't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "haven't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "我(还没有)去过那个地方",
+    "english": "I haven't been to that place",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时否定 haven't been to", "have been to 表示去过某地"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "haven't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "place",
+          "pos": "名词",
+          "start": 23,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "haven't been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "to that place",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "从来没有",
+    "english": "never",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["频度副词，意为“从不；绝不”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "never",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "我从来没有去过那个地方",
+    "english": "I have never been to that place",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been to 表示去过某地", "that 作定语修饰 place"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "place",
+          "pos": "名词",
+          "start": 26,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "to that place",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "墙",
+    "english": "wall",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["wall：名词，墙"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "wall",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "wall",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "伟大的",
+    "english": "great",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，表示“极好的；伟大的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "great",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "great",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "长城",
+    "english": "The Great Wall",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["专有名词短语，长城"],
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Great",
+          "pos": "形容词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "Wall",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Great Wall",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "中国",
+    "english": "China",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["China 中国"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "China",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "China",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "中国的长城",
+    "english": "The Great Wall of China",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["of China 作定语修饰 Wall"],
+      "words": [
+        {
+          "text": "The",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "Great",
+          "pos": "形容词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "Wall",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "China",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "The Great Wall of China",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "我(已经)去过那个地方",
+    "english": "I have been to that place",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["that 修饰名词 place", "have been to + 地点"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "place",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to that place",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 12,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "我(已经)去过中国的长城",
+    "english": "I have been to the Great Wall of China",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["the Great Wall of China 专有名词", "have been to + 地点"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "Great",
+          "pos": "形容词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "Wall",
+          "pos": "名词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "China",
+          "pos": "名词",
+          "start": 33,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to the Great Wall of China",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 12,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "从来没有",
+    "english": "never",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["频度副词，意为“从不；绝不”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "never",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "我从来没有去过中国的长城",
+    "english": "I have never been to the Great Wall of China",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been to 表示去过某地", "of China 作后置定语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "Great",
+          "pos": "形容词",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "text": "Wall",
+          "pos": "名词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "China",
+          "pos": "名词",
+          "start": 39,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "to the Great Wall of China",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "迪士尼乐园",
+    "english": "Disneyland",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 Disneyland(迪士尼乐园)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "Disneyland",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Disneyland",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "我(已经)去过迪士尼乐园",
+    "english": "I have been to Disneyland",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been to 表示\"去过某地\"", "现在完成时: have + 过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "Disneyland",
+          "pos": "名词",
+          "start": 15,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to Disneyland",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 12,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "加州",
+    "english": "California",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["California 加利福尼亚（美国州名）"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "California",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "California",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "在加州的迪士尼乐园",
+    "english": "Disneyland in California",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语 in California 作后置定语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "Disneyland",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "California",
+          "pos": "名词",
+          "start": 14,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Disneyland in California",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "我(已经)去过在加州的迪士尼乐园",
+    "english": "I have been to Disneyland in California",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been to + 地点", "in California 作后置定语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "Disneyland",
+          "pos": "名词",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "California",
+          "pos": "名词",
+          "start": 29,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to Disneyland",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 12,
+          "end": 25
+        },
+        {
+          "text": "in California",
+          "role": "定语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "从来没有",
+    "english": "never",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["频度副词，意为“从不；绝不”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "never",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "我从来没有去过在加州的迪士尼乐园",
+    "english": "I have never been to Disneyland in California",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been to 表示去过某地", "in California 作后置定语修饰 Disneyland"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "Disneyland",
+          "pos": "名词",
+          "start": 21,
+          "end": 31
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "California",
+          "pos": "名词",
+          "start": 35,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "to Disneyland",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 31
+        },
+        {
+          "text": "in California",
+          "role": "定语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "日本",
+    "english": "Japan",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "Japan",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Japan",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "我(已经)去过日本",
+    "english": "I have been to Japan",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been to + 地点", "现在完成时表示经历"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "Japan",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to Japan",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "两次",
+    "english": "twice",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：两次，两倍"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "twice",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "twice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "我(已经)去过日本两次",
+    "english": "I have been to Japan twice",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["twice 表次数, 放句末", "have been to + 地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "Japan",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "twice",
+          "pos": "副词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to Japan",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "twice",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "从来没有",
+    "english": "never",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["频度副词，意为“从不；绝不”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "never",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "我从来没有去过日本",
+    "english": "I have never been to Japan",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been to 表示去过某地", "never 表示从未"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "Japan",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "to Japan",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "加拿大",
+    "english": "Canada",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["Canada 加拿大"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "Canada",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Canada",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "我从来没有去过加拿大",
+    "english": "I have never been to Canada",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been to 表示去过某地", "never 放在助动词 have 之后"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "Canada",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "to Canada",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "你从来没有去过加拿大",
+    "english": "you have never been to Canada",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been to 表示“去过某地”", "never 置于 have 之后"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "Canada",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "to Canada",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 20,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "你从来没有去过加拿大吗？",
+    "english": "have you never been to Canada",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时疑问句", "never 表示“从未”"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "Canada",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "text": "to Canada",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 20,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "以前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "你以前从来没有去过加拿大吗",
+    "english": "have you never been to Canada before",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时疑问句", "before 表示“以前”"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "Canada",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        },
+        {
+          "text": "before",
+          "pos": "副词",
+          "start": 30,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "text": "to Canada",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "before",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 30,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "曾经",
+    "english": "ever",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["曾经；究竟"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ever",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "你以前曾经去过加拿大吗",
+    "english": "have you ever been to Canada before",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时疑问句：Have you ever been to...?", "ever 表示“曾经”，常用于疑问句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "Canada",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        },
+        {
+          "text": "before",
+          "pos": "副词",
+          "start": 29,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "to Canada before",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "你曾经去过加拿大吗",
+    "english": "have you ever been to Canada",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时的一般疑问句", "have been to 表示去过某地"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "Canada",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "to Canada",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "你曾经......吗",
+    "english": "have you ever been",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever been",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "这里",
+    "english": "here",
+    "annotation": {
+      "order": 20,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["地点副词 here 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "你曾经来过这里吗？",
+    "english": "have you ever been here",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时 have + 过去分词", "have been here 来过这里"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "商店",
+    "english": "store",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：商店"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "store",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "store",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "那个商店",
+    "english": "that store",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["指示限定词 that 修饰名词 store"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "store",
+          "pos": "名词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that store",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "你曾去过那个商店吗？",
+    "english": "have you ever been to that store",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": [
+        "现在完成时疑问句：Have you ever been to...?",
+        "ever 表示“曾经”，答语常用 Yes, I have./No, I haven't."
+      ],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "store",
+          "pos": "名词",
+          "start": 27,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "to that store",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "餐厅",
+    "english": "restaurant",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：餐馆；注意拼写"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "restaurant",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "restaurant",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "那个餐厅",
+    "english": "that restaurant",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["指示限定词 that 修饰名词 restaurant"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "restaurant",
+          "pos": "名词",
+          "start": 5,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that restaurant",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "你曾经去过那家餐厅吗？",
+    "english": "have you ever been to that restaurant",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": [
+        "现在完成时疑问句：Have you ever been to...?",
+        "ever 表示“曾经”，常与现在完成时连用"
+      ],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "restaurant",
+          "pos": "名词",
+          "start": 27,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "to that restaurant",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "结婚",
+    "english": "to marry",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "marry",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to marry",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "结婚的",
+    "english": "married",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["married：已婚的；marry的过去式/过去分词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "married",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "married",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "你曾经结过婚吗？",
+    "english": "have you ever been married",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时 have + 过去分词", "be married 已婚"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "married",
+          "pos": "形容词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "married",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "吃",
+    "english": "to eat",
+    "annotation": {
+      "order": 38,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式 to eat"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "吃(过去分词)",
+    "english": "eaten",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "eaten",
+          "pos": "分词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "eaten",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "你曾经吃过",
+    "english": "have you ever eaten",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["现在完成时疑问结构片段", "缺少宾语，非完整句子"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "eaten",
+          "pos": "动词",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "eaten",
+          "role": null,
+          "roleType": null,
+          "start": 14,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "榴莲",
+    "english": "durian",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "durian",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "durian",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "你曾经吃过榴莲吗？",
+    "english": "have you ever eaten durian",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时疑问句", "ever 表示“曾经”"],
+      "confidence": 0.62,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "eaten",
+          "pos": "动词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "durian",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "eaten",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "durian",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "参加",
+    "english": "to attend",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "attend",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to attend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "参加(过去分词)",
+    "english": "attended",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "attended",
+          "pos": "动词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "attended",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "你曾经参加过",
+    "english": "have you ever attended",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "attended",
+          "pos": "动词",
+          "start": 14,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever attended",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "音乐会",
+    "english": "concert",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：音乐会"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "concert",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "concert",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "现场的",
+    "english": "live",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["live 可作动词(居住、生活)"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "live",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "live",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "一个现场的音乐会",
+    "english": "a live concert",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词修饰名词", "现场音乐会"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "live",
+          "pos": "形容词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "concert",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a live concert",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "你曾经参加过",
+    "english": "have you ever attended",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "attended",
+          "pos": "动词",
+          "start": 14,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever attended",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "你曾经参加过一个现场的音乐会吗？",
+    "english": "have you ever attended a live concert",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时 have + 过去分词", "ever 曾经（用于疑问句）"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "attended",
+          "pos": "动词",
+          "start": 14,
+          "end": 22
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 23,
+          "end": 24
+        },
+        {
+          "text": "live",
+          "pos": "形容词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "concert",
+          "pos": "名词",
+          "start": 30,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever attended",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 22
+        },
+        {
+          "text": "a live concert",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 23,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "丢掉",
+    "english": "to lose",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "lose",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to lose",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "丢掉(过去分词)",
+    "english": "lost",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["lose 的过去式/过去分词；迷路的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "lost",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "lost",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "你曾经丢过",
+    "english": "have you ever lost",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["现在完成时疑问结构片段", "缺少宾语，非完整句子"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "lost",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "lost",
+          "role": null,
+          "roleType": null,
+          "start": 14,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "钱包",
+    "english": "wallet",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["wallet：名词，钱包"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "wallet",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "wallet",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "你的钱包",
+    "english": "your wallet",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["your wallet 你的钱包"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "wallet",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your wallet",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "你曾经丢过你的钱包吗？",
+    "english": "have you ever lost your wallet",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": [
+        "现在完成时疑问句：have+主语+ever+过去分词",
+        "ever 意为“曾经”，多用于疑问句和否定句"
+      ],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "lost",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "wallet",
+          "pos": "名词",
+          "start": 24,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "lost",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "your wallet",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "看",
+    "english": "to see",
+    "annotation": {
+      "order": 110,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "see",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to see",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "看(过去分词)",
+    "english": "seen",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["see的过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "seen",
+          "pos": "分词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "seen",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "你曾经看过",
+    "english": "have you ever seen",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时疑问形式", "ever 意为“曾经”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "seen",
+          "pos": "分词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever seen",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "彩虹",
+    "english": "rainbow",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "rainbow",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "rainbow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "你曾经见过一个彩虹吗？",
+    "english": "have you ever seen a rainbow",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时一般疑问句", "ever 表示“曾经”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "seen",
+          "pos": "分词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 19,
+          "end": 20
+        },
+        {
+          "text": "rainbow",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever seen",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "a rainbow",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "学习",
+    "english": "to study",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "study",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to study",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "学习(过去分词)",
+    "english": "studied",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["学习；study的过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "studied",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "studied",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "在国外",
+    "english": "abroad",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词", "abroad 前不加介词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "abroad",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "留学",
+    "english": "studied abroad",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["在国外学习；动词+副词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "studied",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "studied abroad",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "你曾经",
+    "english": "have you ever",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "你曾经留过学吗？",
+    "english": "have you ever studied abroad",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时一般疑问句", "ever 表示“曾经”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "studied",
+          "pos": "分词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever studied",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "text": "abroad",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "做",
+    "english": "to make",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "做(过去分词)",
+    "english": "made",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["make 的过去式/过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "made",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "made",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "你曾经做过",
+    "english": "have you ever made",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "made",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have you ever made",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "雪",
+    "english": "snow",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，也可作动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "snow",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "snow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 153,
+    "chinese": "雪人",
+    "english": "snowman",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["复合名词，snow+man"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "snowman",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "snowman",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 154,
+    "chinese": "你曾经堆过雪人吗？",
+    "english": "have you ever made a snowman",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时疑问句：have+主语+ever+过去分词", "make a snowman 意为“堆雪人”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "made",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 19,
+          "end": 20
+        },
+        {
+          "text": "snowman",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "made",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "a snowman",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 155,
+    "chinese": "你曾经去过加拿大吗？",
+    "english": "have you ever been to Canada",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时的一般疑问句", "have been to 表示去过某地"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "Canada",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "ever",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "to Canada",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 156,
+    "chinese": "我(已经)去过加拿大",
+    "english": "I have been to Canada",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been to + 地点表示去过某地", "to Canada 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "Canada",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to Canada",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  }
+]

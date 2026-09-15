@@ -1,0 +1,6517 @@
+[
+  {
+    "order": 1,
+    "chinese": "我喜欢",
+    "english": "I like",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓片段，缺少宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I like",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "阅读",
+    "english": "to read",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "我喜欢阅读",
+    "english": "I like to read",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["to read 为不定式作宾语", "like to do sth 喜欢做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to read",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "阅读(ing形式)",
+    "english": "reading",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "reading",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "我喜欢阅读",
+    "english": "I like reading",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["reading 为动名词作宾语", "like doing sth 表示爱好"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "reading",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "烹饪",
+    "english": "to cook",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "cook",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to cook",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "烹饪(ing形式)",
+    "english": "cooking",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["cook 的现在分词/动名词"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "cooking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "cooking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "我喜欢烹饪",
+    "english": "I like cooking",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["cooking 为动名词作宾语", "like doing sth 喜欢做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "cooking",
+          "pos": "动名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "cooking",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "购物",
+    "english": "to shop",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "shop 购物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "shop",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to shop",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "购物(ing形式)",
+    "english": "shopping",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动名词：购物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "shopping",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "shopping",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "我喜欢购物",
+    "english": "I like shopping",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["shopping 为动名词作宾语", "like doing sth 喜欢做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "shopping",
+          "pos": "动名词",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "shopping",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "篮球",
+    "english": "basketball",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["篮球"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "basketball",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "basketball",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "打",
+    "english": "to play",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["play 玩；打（球）；演奏"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to play",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "打篮球",
+    "english": "to play basketball",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["play + 球类名词，不加冠词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "basketball",
+          "pos": "名词",
+          "start": 8,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to play basketball",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "打(ing形式)",
+    "english": "playing",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["play 的动名词形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "playing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "打篮球(ing形式)",
+    "english": "playing basketball",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语作主语或宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "basketball",
+          "pos": "名词",
+          "start": 8,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "playing basketball",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "我喜欢打篮球",
+    "english": "I like playing basketball",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["playing basketball 为动名词短语作宾语", "like doing sth 喜欢做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "basketball",
+          "pos": "名词",
+          "start": 15,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "playing basketball",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 7,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "享受",
+    "english": "to enjoy",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语 to enjoy", "常后接宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to enjoy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "我享受",
+    "english": "I enjoy",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enjoy 后需接宾语才能成句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I enjoy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "打篮球(ing形式)",
+    "english": "playing basketball",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语作主语或宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "basketball",
+          "pos": "名词",
+          "start": 8,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "playing basketball",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "我享受打篮球",
+    "english": "I enjoy playing basketball",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy 后接动名词作宾语", "playing basketball 为动名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "basketball",
+          "pos": "名词",
+          "start": 16,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "playing basketball",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 8,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "书",
+    "english": "books",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词复数：书（book 的复数）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "books",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "books",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "阅读(ing形式)",
+    "english": "reading",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "reading",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "读书(ing形式）",
+    "english": "reading books",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["reading 为动名词，后接名词宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "books",
+          "pos": "名词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "reading books",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "我享受",
+    "english": "I enjoy",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enjoy 后需接宾语才能成句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I enjoy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "我享受读书",
+    "english": "I enjoy reading books",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy + 动名词作宾语", "reading books 为动名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "books",
+          "pos": "名词",
+          "start": 16,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "reading books",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 8,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "自由的",
+    "english": "free",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["free 空闲的；免费的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "free",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "free",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "时间",
+    "english": "time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "自由时间",
+    "english": "free time",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["free time 空闲时间"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "free",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "free time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "我的自由时间",
+    "english": "my free time",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "名词短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "free",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my free time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "在我的自由时间里",
+    "english": "in my free time",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表时间"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "free",
+          "pos": "形容词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in my free time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "在我空闲的时候我享受读书",
+    "english": "I enjoy reading books in my free time",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["in my free time 为时间状语", "enjoy + 动名词作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "books",
+          "pos": "名词",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "free",
+          "pos": "形容词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 33,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "reading books",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 8,
+          "end": 21
+        },
+        {
+          "text": "in my free time",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "他享受",
+    "english": "he enjoys",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enjoy 后接动名词", "缺少宾语，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he enjoys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "做",
+    "english": "to make",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "朋友",
+    "english": "friends",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["friends 朋友们"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "friends",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "交朋友",
+    "english": "to make friends",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["make friends 交朋友"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make friends",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "交朋友(ing形式)",
+    "english": "making friends",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["make friends 交朋友"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "making",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "making friends",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "他享受交朋友",
+    "english": "he enjoys making friends",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy doing sth 喜欢做某事", "动名词短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "making",
+          "pos": "动名词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "making friends",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "人",
+    "english": "people",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["people 作“人、人们”时为集合名词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "people",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "不同的",
+    "english": "different",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“不同的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "different",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "不同的人",
+    "english": "different people",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，形容词 different 作定语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "different people",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "和不同的人",
+    "english": "with different people",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 5,
+          "end": 14
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with different people",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "他享受交朋友",
+    "english": "he enjoys making friends",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy doing sth 喜欢做某事", "动名词短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "making",
+          "pos": "动名词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "making friends",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "他享受和不同的人交朋友",
+    "english": "he enjoys making friends with different people",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["make friends with sb 与某人交朋友", "enjoy doing sth 结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "making",
+          "pos": "动名词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 30,
+          "end": 39
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 40,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "making friends with different people",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "看",
+    "english": "to watch",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to watch 表示目的或打算"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to watch",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "电影",
+    "english": "movies",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["movie 的复数形式"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "movies",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "movies",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "看电影",
+    "english": "to watch movies",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "watch movies 看电影（复数）"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "movies",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to watch movies",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "看电影(ing形式)",
+    "english": "watching movies",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "watching",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "movies",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "watching movies",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "他享受",
+    "english": "he enjoys",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enjoy 后接动名词", "缺少宾语，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he enjoys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "他享受看电影",
+    "english": "he enjoys watching movies",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy doing sth 喜欢做某事", "watching movies 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "watching",
+          "pos": "动名词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "movies",
+          "pos": "名词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "watching movies",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "朋友",
+    "english": "friend",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["friend 朋友"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "女孩",
+    "english": "girl",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：女孩"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "girl",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "girl",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "女朋友",
+    "english": "girlfriend",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["合成名词：girl + friend"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "girlfriend",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "girlfriend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "他的女朋友",
+    "english": "his girlfriend",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "girlfriend",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his girlfriend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "和......一起",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "和他的女朋友一起",
+    "english": "with his girlfriend",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "girlfriend",
+          "pos": "名词",
+          "start": 9,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with his girlfriend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "他享受看电影",
+    "english": "he enjoys watching movies",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy doing sth 喜欢做某事", "watching movies 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "watching",
+          "pos": "动名词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "movies",
+          "pos": "名词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "watching movies",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "他享受和他的女朋友一起看电影",
+    "english": "he enjoys watching movies with his girlfriend",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["with 短语作伴随状语", "enjoy doing sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "watching",
+          "pos": "动名词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "movies",
+          "pos": "名词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "girlfriend",
+          "pos": "名词",
+          "start": 35,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "watching movies",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 25
+        },
+        {
+          "text": "with his girlfriend",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "世界",
+    "english": "the world",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语，非完整句子"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "围着",
+    "english": "around",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["around 可作副词或介词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "around",
+          "pos": "副词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "around",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "围着世界",
+    "english": "around the world",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["around the world 意为“全世界”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "around",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "around the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "旅行",
+    "english": "to travel",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["travel 旅行"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "travel",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to travel",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "环游世界",
+    "english": "to travel around the world",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["travel around the world 环游世界"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "travel",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "around",
+          "pos": "介词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to travel",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "around the world",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "环游世界(ing形式)",
+    "english": "traveling around the world",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语：环游世界"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "traveling",
+          "pos": "动名词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "around",
+          "pos": "介词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "traveling around the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "他们享受",
+    "english": "they enjoy",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enjoy 是及物动词，其后需接宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "他们享受环游世界",
+    "english": "they enjoy traveling around the world",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy doing sth 固定搭配", "travel around the world 环游世界"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "traveling",
+          "pos": "动名词",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "text": "around",
+          "pos": "介词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 32,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "traveling around the world",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 11,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "游戏",
+    "english": "games",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词复数：游戏"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "games",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "games",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "视频",
+    "english": "video",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：视频"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "video",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "video",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "电子游戏",
+    "english": "video games",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：电子游戏"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "video",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "games",
+          "pos": "名词",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "video games",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "玩",
+    "english": "to play",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["play 玩；打（球）；演奏"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to play",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "玩电子游戏",
+    "english": "to play video games",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to play video games", "play video games 玩电子游戏"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "video",
+          "pos": "名词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "games",
+          "pos": "名词",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to play video games",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "玩电子游戏(ing形式)",
+    "english": "playing video games",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语", "video games 电子游戏"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "video",
+          "pos": "名词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "games",
+          "pos": "名词",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "playing video games",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "他享受",
+    "english": "he enjoys",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enjoy 后接动名词", "缺少宾语，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he enjoys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "他享受玩电子游戏",
+    "english": "he enjoys playing video games",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy doing sth 喜欢做某事", "动名词短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "video",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "games",
+          "pos": "名词",
+          "start": 24,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "playing video games",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "朋友们",
+    "english": "friends",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["friends 朋友们"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "friends",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "他的朋友们",
+    "english": "his friends",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his friends",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "和......一起",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "和他的朋友们一起",
+    "english": "with his friends",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with his friends",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "他享受和他的朋友们一起玩电子游戏",
+    "english": "he enjoys playing video games with his friends",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy doing sth 结构", "with his friends 表伴随对象"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "video",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "games",
+          "pos": "名词",
+          "start": 24,
+          "end": 29
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "friends",
+          "pos": "名词",
+          "start": 39,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "playing video games with his friends",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "练习",
+    "english": "to practice",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to practice", "practice 后接名词或动名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to practice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "瑜伽",
+    "english": "yoga",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "yoga",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "yoga",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "练习瑜伽",
+    "english": "to practice yoga",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to practice yoga", "practice yoga 练习瑜伽"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "yoga",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to practice yoga",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "练习瑜伽(ing形式)",
+    "english": "practicing yoga",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "yoga",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "practicing yoga",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "我享受",
+    "english": "I enjoy",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enjoy 后需接宾语才能成句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I enjoy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "我享受练习瑜伽",
+    "english": "I enjoy practicing yoga",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy + 动名词作宾语", "practicing yoga 为动名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 8,
+          "end": 18
+        },
+        {
+          "text": "yoga",
+          "pos": "名词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "practicing yoga",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 8,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "每天早上",
+    "english": "every morning",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["每天早上"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every morning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "我享受每天早上练习瑜伽",
+    "english": "I enjoy practicing yoga every morning",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every morning 作时间状语", "enjoy + 动名词作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 8,
+          "end": 18
+        },
+        {
+          "text": "yoga",
+          "pos": "名词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 24,
+          "end": 29
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 30,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "enjoy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "practicing yoga",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 8,
+          "end": 23
+        },
+        {
+          "text": "every morning",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 24,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "他们享受",
+    "english": "they enjoy",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enjoy 是及物动词，其后需接宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "练习(ing形式)",
+    "english": "practicing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "practicing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "他们享受练习",
+    "english": "they enjoy practicing",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy doing sth 喜欢做某事", "practicing 为动名词作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 11,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "practicing",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 11,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "英语",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "他们的",
+    "english": "their",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "their",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "他们的英语",
+    "english": "their English",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "their English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "他们享受练习他们的英语",
+    "english": "they enjoy practicing their English",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy doing sth 喜欢做某事", "practice one's English 练习英语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 11,
+          "end": 21
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "practicing their English",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 11,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "说话",
+    "english": "to speak",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to speak",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "说话的人",
+    "english": "speaker",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词 speaker 说话者/扬声器"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "speaker",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "speaker",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "当地的",
+    "english": "native",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“本地的；本国的”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "native",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "native",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "母语使用者",
+    "english": "native speakers",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，意为“母语者”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "native",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "speakers",
+          "pos": "名词",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "native speakers",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "和母语使用者",
+    "english": "with native speakers",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "native",
+          "pos": "形容词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "speakers",
+          "pos": "名词",
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with native speakers",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "他们享受和母语使用者练习他们的英语",
+    "english": "they enjoy practicing their English with native speakers",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy doing sth 固定搭配", "with native speakers 作伴随状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "pos": "动词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 11,
+          "end": 21
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "native",
+          "pos": "形容词",
+          "start": 41,
+          "end": 47
+        },
+        {
+          "text": "speakers",
+          "pos": "名词",
+          "start": 48,
+          "end": 56
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "enjoy",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "practicing their English",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 11,
+          "end": 35
+        },
+        {
+          "text": "with native speakers",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 36,
+          "end": 56
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "吉他",
+    "english": "guitar",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：吉他"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "guitar",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "guitar",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "技术",
+    "english": "skills",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词复数 skills", "意为“技能”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "skills",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "吉他技术",
+    "english": "guitar skills",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "吉他技能"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "guitar",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "guitar skills",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "他的吉他技术",
+    "english": "his guitar skills",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "guitar",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his guitar skills",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "练习(ing形式)",
+    "english": "practicing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "practicing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "练习他的吉他技术",
+    "english": "practicing his guitar skills",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "guitar",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "practicing his guitar skills",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "他享受",
+    "english": "he enjoys",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enjoy 后接动名词", "缺少宾语，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he enjoys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "他享受练习他的吉他技术",
+    "english": "he enjoys practicing his guitar skills",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["enjoy doing sth 喜欢做某事", "动名词作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 10,
+          "end": 20
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "guitar",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 32,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "practicing his guitar skills",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "每天",
+    "english": "every day",
+    "annotation": {
+      "order": 51,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["every day 表示频率，作时间状语", "every + 单数可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "他享受每天练习他的吉他技术",
+    "english": "he enjoys practicing his guitar skills every day",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["every day 作时间状语", "enjoy doing sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "practicing",
+          "pos": "动名词",
+          "start": 10,
+          "end": 20
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "guitar",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        },
+        {
+          "text": "skills",
+          "pos": "名词",
+          "start": 32,
+          "end": 38
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 39,
+          "end": 44
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 45,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "enjoys",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "practicing his guitar skills",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 10,
+          "end": 38
+        },
+        {
+          "text": "every day",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 39,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "你应该",
+    "english": "you should",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["should 为情态动词", "后接动词原形，此处缺谓语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "练习",
+    "english": "to practice",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to practice", "practice 后接名词或动名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to practice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "你应该练习",
+    "english": "you should practice",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["should 表示建议“应该”", "practice 作不及物动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should practice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "跳舞",
+    "english": "to dance",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语：to dance"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "dance",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to dance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "跳舞(ing形式)",
+    "english": "dancing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "dancing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dancing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "你应该练习跳舞",
+    "english": "you should practice dancing",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["practice doing sth 练习做某事", "dancing 作动名词宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "dancing",
+          "pos": "动名词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should practice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "dancing",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "更加",
+    "english": "more",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["更多"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "经常",
+    "english": "often",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["频度副词 often"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "often",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "often",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "更加经常",
+    "english": "more often",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["more + 副词原级构成比较级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "often",
+          "pos": "副词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more often",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "你应该更加经常地练习跳舞",
+    "english": "you should practice dancing more often",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["practice doing sth 练习做某事", "more often 表频率"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "dancing",
+          "pos": "动名词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "often",
+          "pos": "副词",
+          "start": 33,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should practice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "dancing",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "more often",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 28,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "练习",
+    "english": "to practice",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to practice", "practice 后接名词或动名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to practice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "他需要",
+    "english": "he needs",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["need 需要，后接不定式"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "他需要练习",
+    "english": "he needs to practice",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 表示需要做某事"],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to practice",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "说",
+    "english": "to speak",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to speak",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "英语",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "说英语",
+    "english": "to speak English",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "speak 后接宾语 English"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to speak English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "说英语(ing形式)",
+    "english": "speaking English",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语作主语或宾语", "speaking 后接语言作宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "speaking English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "他需要练习",
+    "english": "he needs to practice",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 表示需要做某事"],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to practice",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "他需要练习说英语",
+    "english": "he needs to practice speaking English",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["practice doing sth 练习做某事", "speaking English 作 practice 的宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 21,
+          "end": 29
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 30,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to practice speaking English",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "更加经常",
+    "english": "more often",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["more + 副词原级构成比较级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "often",
+          "pos": "副词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more often",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "他需要更经常地练习说英语",
+    "english": "he needs to practice speaking English more often",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["practice doing sth 练习做某事", "more often 作频度状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 21,
+          "end": 29
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 30,
+          "end": 37
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "often",
+          "pos": "副词",
+          "start": 43,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to practice speaking English",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 37
+        },
+        {
+          "text": "more often",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 38,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "你应该",
+    "english": "you should",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["should 为情态动词", "后接动词原形，此处缺谓语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "练习",
+    "english": "to practice",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to practice", "practice 后接名词或动名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to practice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "你应该练习",
+    "english": "you should practice",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["should 表示建议“应该”", "practice 作不及物动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should practice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "阅读",
+    "english": "to read",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "大声的",
+    "english": "aloud",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：大声地"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "aloud",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "aloud",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "大声地读",
+    "english": "to read aloud",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "aloud 意为“大声地”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "aloud",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read aloud",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "大声地读(ing形式)",
+    "english": "reading aloud",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "aloud",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "reading aloud",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "你应该练习",
+    "english": "you should practice",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["should 表示建议“应该”", "practice 作不及物动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should practice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "你应该练习大声地读",
+    "english": "you should practice reading aloud",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["practice doing sth 练习做某事", "aloud 修饰 reading"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "aloud",
+          "pos": "副词",
+          "start": 28,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should practice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "reading aloud",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "发音",
+    "english": "pronunciation",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["pronunciation 发音", "名词，注意拼写无 o"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "pronunciation",
+          "pos": "名词",
+          "start": 0,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "pronunciation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "你的发音",
+    "english": "your pronunciation",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["your pronunciation 你的发音"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "pronunciation",
+          "pos": "名词",
+          "start": 5,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your pronunciation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "改善",
+    "english": "to improve",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["improve 改善；提高"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "improve",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to improve",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "改善你的发音",
+    "english": "to improve your pronunciation",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pronunciation 发音"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "improve",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "pronunciation",
+          "pos": "名词",
+          "start": 16,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to improve your pronunciation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "你应该练习大声地读",
+    "english": "you should practice reading aloud",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["practice doing sth 练习做某事", "aloud 修饰 reading"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "aloud",
+          "pos": "副词",
+          "start": 28,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should practice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "reading aloud",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "你应该练习大声地读去改善你的发音",
+    "english": "you should practice reading aloud to improve your pronunciation",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["不定式 to improve 表目的", "pronunciation 意为“发音”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "practice",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "aloud",
+          "pos": "副词",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "improve",
+          "pos": "动词",
+          "start": 37,
+          "end": 44
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 45,
+          "end": 49
+        },
+        {
+          "text": "pronunciation",
+          "pos": "名词",
+          "start": 50,
+          "end": 63
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "should practice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "reading aloud",
+          "role": "宾语",
+          "roleType": "动名词短语",
+          "start": 20,
+          "end": 33
+        },
+        {
+          "text": "to improve your pronunciation",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 34,
+          "end": 63
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  }
+]

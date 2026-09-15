@@ -1,0 +1,6670 @@
+[
+  {
+    "order": 1,
+    "chinese": "这个",
+    "english": "this",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "问题",
+    "english": "problem",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "这个问题",
+    "english": "this problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "解决",
+    "english": "to solve",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "解决这个问题",
+    "english": "to solve this problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "this 修饰 problem"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve this problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "应该",
+    "english": "should",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：应该"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "我们应该",
+    "english": "we should",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["should 情态动词，后接动词原形"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "尝试",
+    "english": "to try",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to try",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "我们应该尝试",
+    "english": "we should try",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["should 后接动词原形 try", "主谓结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "should try",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "解决这个问题",
+    "english": "to solve this problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "this 修饰 problem"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve this problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "我们应该尝试解决这个问题",
+    "english": "we should try to solve this problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["try to do sth 结构", "to solve 为不定式作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "should try",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "to solve this problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 14,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "很快",
+    "english": "soon",
+    "annotation": {
+      "order": 108,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["soon 很快；尽快"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "soon",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "soon",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "可能",
+    "english": "possible",
+    "annotation": {
+      "order": 154,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：可能的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "possible",
+          "pos": "形容词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "possible",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "尽可能地快",
+    "english": "as soon as possible",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["as soon as possible 意为“尽快”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "as",
+          "pos": "副词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "soon",
+          "pos": "副词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "as",
+          "pos": "连词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "possible",
+          "pos": "形容词",
+          "start": 11,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "as soon as possible",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "我们应该尝试尽快解决这个问题",
+    "english": "we should try to solve this problem as soon as possible",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["as soon as possible 作时间状语", "try to do sth 结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        },
+        {
+          "text": "as",
+          "pos": "副词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "soon",
+          "pos": "副词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "as",
+          "pos": "连词",
+          "start": 44,
+          "end": 46
+        },
+        {
+          "text": "possible",
+          "pos": "形容词",
+          "start": 47,
+          "end": 55
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "should try",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "to solve this problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 14,
+          "end": 35
+        },
+        {
+          "text": "as soon as possible",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 36,
+          "end": 55
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "我将会尝试解决这个问题",
+    "english": "I will try to solve this problem",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["will 表示将来", "solve the problem 解决问题"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will try",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "to solve this problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "设法做到",
+    "english": "to manage",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to manage",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "我将会设法解决这个问题",
+    "english": "I will manage to solve this problem",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["manage to do sth 设法做成某事", "solve the problem 解决问题"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "to solve this problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 14,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "家庭作业",
+    "english": "homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：家庭作业"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "我的家庭作业",
+    "english": "my homework",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "homework 为不可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "完成",
+    "english": "to finish",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "完成我的家庭作业",
+    "english": "to finish my homework",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish my homework"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish my homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "我将会尝试完成我的家庭作业",
+    "english": "I will try to finish my homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["will+动词原形表示将来", "try to do sth 努力做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 24,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will try",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "to finish my homework",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "就寝时间",
+    "english": "bedtime",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：就寝时间"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "bedtime",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "bedtime",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "在睡觉之前",
+    "english": "before bedtime",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 引导时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "bedtime",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before bedtime",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "我将会尝试在睡觉之前完成我的家庭作业",
+    "english": "I will try to finish my homework before bedtime",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["before bedtime 作时间状语", "try to do sth 努力做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 24,
+          "end": 32
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 33,
+          "end": 39
+        },
+        {
+          "text": "bedtime",
+          "pos": "名词",
+          "start": 40,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will try",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "to finish my homework",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 32
+        },
+        {
+          "text": "before bedtime",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 33,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "设法做到",
+    "english": "to manage",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to manage",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "我将会设法在睡觉之前完成我的家庭作业",
+    "english": "I will manage to finish my homework before bedtime",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["manage to do sth 设法做成某事", "before bedtime 作时间状语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 27,
+          "end": 35
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 36,
+          "end": 42
+        },
+        {
+          "text": "bedtime",
+          "pos": "名词",
+          "start": 43,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "to finish my homework",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 14,
+          "end": 35
+        },
+        {
+          "text": "before bedtime",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 36,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "设法做到",
+    "english": "to manage",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to manage",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "做",
+    "english": "to do",
+    "annotation": {
+      "order": 10,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语 to do"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "做这件事",
+    "english": "to do it",
+    "annotation": {
+      "order": 12,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do sth 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "你做这件事",
+    "english": "you do it",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时，do 为实义动词", "it 指代前文提到的事物"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "do",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "没有",
+    "english": "don't",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do not 的缩写，构成否定"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "你没有做这件事",
+    "english": "you don't do it",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't 后接实义动词 do", "it 作宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "你有做这件事",
+    "english": "you do do it",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["do 作助动词表强调", "强调句式 You do do it"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "do",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 10,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "do do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 10,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "你没有做这件事",
+    "english": "you don't do it",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't 后接实义动词 do", "it 作宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "你(过去)没有做这件事",
+    "english": "you didn't do it",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["didn't + 动词原形构成否定", "一般过去时否定句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "你(过去)有做这件事",
+    "english": "you did do it",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["did 用于强调谓语动词 do"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "你(过去)有做这件事吗？",
+    "english": "did you do it",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般疑问句，助动词 did 表过去"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "did",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "do it",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "如何",
+    "english": "how",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["如何；怎样"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "你(过去)如何做这件事的？ ",
+    "english": "how did you do it",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how 询问方式", "一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "设法做到",
+    "english": "to manage",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to manage",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "你(过去)如何设法做到这件事的？",
+    "english": "how did you manage to do it",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["manage to do sth 设法做某事", "不定式短语作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 25,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 27
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "你(过去)如何设法做到......",
+    "english": "how did you manage",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how引导的特殊疑问句", "manage意为设法做到"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "到达",
+    "english": "to get",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to get",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "这里",
+    "english": "here",
+    "annotation": {
+      "order": 20,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["地点副词 here 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "到达这里",
+    "english": "to get here",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构", "here 作副词表地点"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to get here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "迅速地",
+    "english": "quickly",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["quickly 迅速地", "副词，修饰动词"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "quickly",
+          "pos": "副词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "quickly",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "如此",
+    "english": "so",
+    "annotation": {
+      "order": 173,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["并列连词，表示所以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "so",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "so",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "如此迅速地",
+    "english": "so quickly",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["so 修饰副词，表程度"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "so",
+          "pos": "副词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "quickly",
+          "pos": "副词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "so quickly",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "如此迅速地到达这里",
+    "english": "to get here so quickly",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构", "so quickly 副词修饰动作"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "so",
+          "pos": "副词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "quickly",
+          "pos": "副词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to get here so quickly",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "你(过去)如何设法做到",
+    "english": "how did you manage",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how引导的特殊疑问句", "manage意为设法做到"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语"
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "你(过去)如何设法做到如此迅速地到达这里的？",
+    "english": "how did you manage to get here so quickly",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["manage to do sth 设法做某事", "so quickly 作方式状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "so",
+          "pos": "副词",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "quickly",
+          "pos": "副词",
+          "start": 34,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to get here",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 30
+        },
+        {
+          "text": "so quickly",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 31,
+          "end": 41
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "你(过去)如何设法做到",
+    "english": "how did you manage",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how引导的特殊疑问句", "manage意为设法做到"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语"
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "钱",
+    "english": "money",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["钱"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "做",
+    "english": "to make",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "赚钱",
+    "english": "to make money",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "如此",
+    "english": "so",
+    "annotation": {
+      "order": 173,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["并列连词，表示所以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "so",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "so",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "多",
+    "english": "much",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "much",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "much",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "如此多",
+    "english": "so much",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["表示程度或数量", "修饰不可数名词或动词"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "so",
+          "pos": "副词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "much",
+          "pos": "副词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "so much",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "钱",
+    "english": "money",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["钱"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "如此多的钱",
+    "english": "so much money",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["so much 后接不可数名词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "so",
+          "pos": "副词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "much",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "so much money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "做",
+    "english": "to make",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "赚如此多的钱",
+    "english": "to make so much money",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "so",
+          "pos": "副词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "much",
+          "pos": "形容词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 16,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make so much money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "你(过去)如何设法做到",
+    "english": "how did you manage",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how引导的特殊疑问句", "manage意为设法做到"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "你(过去)如何设法做到赚如此多的钱的？",
+    "english": "how did you manage to make so much money",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["manage to do sth 设法做某事", "make money 赚钱"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "so",
+          "pos": "副词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "much",
+          "pos": "形容词",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 35,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to make so much money",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 40
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "时间",
+    "english": "time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "短",
+    "english": "short",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：短的、矮的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "short",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "short",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "一段短的时间",
+    "english": "a short time",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["a short time 一小段时间"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "short",
+          "pos": "形容词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a short time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "在......里",
+    "english": "in",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 in 表示地点或时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "在一段短的时间里",
+    "english": "in a short time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["in a short time 在短时间内"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "text": "short",
+          "pos": "形容词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in a short time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "如此",
+    "english": "such",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["这样的；形容词"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "such",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "such",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "在一段如此短的时间里",
+    "english": "in such a short time",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["such a + 形容词 + 名词 结构表强调"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "such",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "short",
+          "pos": "形容词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in such a short time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "你(过去)如何设法做到赚如此多的钱的？",
+    "english": "how did you manage to make so much money",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["manage to do sth 设法做某事", "make money 赚钱"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "so",
+          "pos": "副词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "much",
+          "pos": "形容词",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 35,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to make so much money",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 40
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "你(过去)如何设法做到在一段如此短的时间里赚如此多的钱的？",
+    "english": "how did you manage to make so much money in such a short time",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["manage to do sth 设法做某事", "in such a short time 时间状语"],
+      "confidence": 0.87,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "so",
+          "pos": "副词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "much",
+          "pos": "形容词",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 41,
+          "end": 43
+        },
+        {
+          "text": "such",
+          "pos": "形容词",
+          "start": 44,
+          "end": 48
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 49,
+          "end": 50
+        },
+        {
+          "text": "short",
+          "pos": "形容词",
+          "start": 51,
+          "end": 56
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 57,
+          "end": 61
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to make so much money",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 40
+        },
+        {
+          "text": "in such a short time",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 41,
+          "end": 61
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "写",
+    "english": "to write",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to + 动词原形", "表示目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "write",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to write",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "这本书",
+    "english": "this book",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this book",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "写这本书",
+    "english": "to write this book",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作片段"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "write",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to write this book",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "你(过去)如何设法做到",
+    "english": "how did you manage",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how引导的特殊疑问句", "manage意为设法做到"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "你(过去)如何设法做到写这本书的？",
+    "english": "how did you manage to write this book",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how引导的特殊疑问句", "manage to do sth 设法做某事"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "write",
+          "pos": "动词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 33,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage to write this book",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "监狱",
+    "english": "prison",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "prison",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "在监狱里",
+    "english": "in prison",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语 in prison 表地点或状态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in prison",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "你在监狱里",
+    "english": "you are in prison",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be + 介词短语表示所处状态", "in prison 意为“在监狱里”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "in prison",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "你(过去)在监狱里",
+    "english": "you were in prison",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["in prison 在监狱", "were 是系动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "in prison",
+          "role": "表语",
+          "roleType": "介词短语",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "当",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "当你(过去)在监狱里",
+    "english": "when you were in prison",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when引导的时间状语从句", "in prison 表示地点状态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "were",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when you were in prison",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "你(过去)如何设法做到写这本书的？",
+    "english": "how did you manage to write this book",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how引导的特殊疑问句", "manage to do sth 设法做某事"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "write",
+          "pos": "动词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 33,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage to write this book",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "你(过去)如何设法做到写这本书的当你(过去)在监狱里？",
+    "english": "how did you manage to write this book when you were in prison",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["when引导时间状语从句", "manage to do sth 设法做某事"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "write",
+          "pos": "动词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 43,
+          "end": 46
+        },
+        {
+          "text": "were",
+          "pos": "动词",
+          "start": 47,
+          "end": 51
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 52,
+          "end": 54
+        },
+        {
+          "text": "prison",
+          "pos": "名词",
+          "start": 55,
+          "end": 61
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage to write this book",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 37
+        },
+        {
+          "text": "when you were in prison",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 38,
+          "end": 61
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "说话",
+    "english": "to speak",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to speak",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "演讲",
+    "english": "speaking",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["speak 的动名词形式 speaking"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "speaking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "公开的",
+    "english": "public",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["public 公共的；公众的", "形容词，常修饰名词"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "public",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "公开演讲",
+    "english": "public speaking",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["public speaking 公开演讲", "名词性短语，指演讲技能"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "public speaking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "恐惧",
+    "english": "fear",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词/动词：害怕，恐惧"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "fear",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "fear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "公开演讲的恐惧",
+    "english": "fear of public speaking",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：对当众演讲的恐惧"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "fear",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 15,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "fear of public speaking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "你的公开演讲的恐惧",
+    "english": "your fear of public speaking",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，含 of 介词短语", "fear of + 动名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "fear",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 20,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your fear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "of public speaking",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "克服",
+    "english": "to overcome",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "overcome",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to overcome",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "克服你的公开演讲的恐惧",
+    "english": "to overcome your fear of public speaking",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，可作目的状语或宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "overcome",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "fear",
+          "pos": "名词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 25,
+          "end": 31
+        },
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 32,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to overcome your fear of public speaking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 40
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "你(过去)如何设法做到",
+    "english": "how did you manage",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how引导的特殊疑问句", "manage意为设法做到"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "你(过去)如何设法做到克服你的公开演讲的恐惧的？",
+    "english": "how did you manage to overcome your fear of public speaking",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["manage to do sth 设法做某事", "overcome fear 克服恐惧"],
+      "confidence": 0.87,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "overcome",
+          "pos": "动词",
+          "start": 22,
+          "end": 30
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "fear",
+          "pos": "名词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 41,
+          "end": 43
+        },
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 44,
+          "end": 50
+        },
+        {
+          "text": "speaking",
+          "pos": "动名词",
+          "start": 51,
+          "end": 59
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to overcome your fear of public speaking",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 59
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "工作",
+    "english": "work",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作动词（工作）"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "work",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "生活",
+    "english": "life",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：生活、生命"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "工作和生活",
+    "english": "work and life",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["并列名词短语，作主语或宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "work and life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "在......之间",
+    "english": "between",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词，表示“在……之间”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "在工作和生活之间",
+    "english": "between work and life",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["between ... and ... 结构；work and life 工作与生活"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 17,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between work and life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "平衡",
+    "english": "the balance",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "在工作和生活之间的平衡",
+    "english": "the balance between work and life",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "介词短语作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 29,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the balance between work and life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 33
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "保持在工作和生活之间的平衡",
+    "english": "to keep the balance between work and life",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "between ... and ... 在两者之间"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 37,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep the balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        },
+        {
+          "text": "between work and life",
+          "role": null,
+          "roleType": null,
+          "start": 20,
+          "end": 41
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "你(过去)如何设法做到",
+    "english": "how did you manage",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how引导的特殊疑问句", "manage意为设法做到"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语"
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "你(过去)如何设法做到保持在工作和生活之间的平衡的？",
+    "english": "how did you manage to keep the balance between work and life",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["manage to do sth 设法做某事", "keep the balance between A and B 保持平衡"],
+      "confidence": 0.87,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 31,
+          "end": 38
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 39,
+          "end": 46
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 47,
+          "end": 51
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 52,
+          "end": 55
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 56,
+          "end": 60
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to keep the balance between work and life",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 60
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "钱",
+    "english": "money",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["钱"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "足够的",
+    "english": "enough",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["enough 足够的"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "足够的钱",
+    "english": "enough money",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enough money 足够的钱"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "存",
+    "english": "to save",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["不定式短语 to save"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "save",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to save",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "存足够的钱",
+    "english": "to save enough money",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["不定式短语", "enough 修饰 money"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "save",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to save",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "enough money",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "度假",
+    "english": "vacation",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：假期"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "vacation",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "vacation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "那个度假",
+    "english": "that vacation",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["指示限定词 that 修饰名词 vacation"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "vacation",
+          "pos": "名词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that vacation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "为那个度假存足够的钱",
+    "english": "to save enough money for that vacation",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.92,
+      "keyPoints": ["不定式短语", "for 引出目的"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "save",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "vacation",
+          "pos": "名词",
+          "start": 30,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to save",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "enough money",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 20
+        },
+        {
+          "text": "for that vacation",
+          "role": null,
+          "roleType": null,
+          "start": 21,
+          "end": 38
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "你(过去)如何设法做到",
+    "english": "how did you manage",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how引导的特殊疑问句", "manage意为设法做到"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语"
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "你(过去)如何设法做到为那个度假存足够的钱的？",
+    "english": "how did you manage to save enough money for that vacation",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["manage to do sth 设法做某事", "save money for sth 为…存钱"],
+      "confidence": 0.87,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "save",
+          "pos": "动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 27,
+          "end": 33
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 34,
+          "end": 39
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 40,
+          "end": 43
+        },
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 44,
+          "end": 48
+        },
+        {
+          "text": "vacation",
+          "pos": "名词",
+          "start": 49,
+          "end": 57
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to save enough money for that vacation",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 57
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "短",
+    "english": "short",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词：短的、矮的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "short",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "short",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "一段短的时间",
+    "english": "a short time",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["a short time 一小段时间"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "short",
+          "pos": "形容词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a short time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "在一段短的时间里",
+    "english": "in a short time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["in a short time 在短时间内"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "text": "short",
+          "pos": "形容词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in a short time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "在一段如此短的时间里",
+    "english": "in such a short time",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["such a + 形容词 + 名词 结构表强调"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "such",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "short",
+          "pos": "形容词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in such a short time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "你(过去)如何设法做到为那个度假存足够的钱的？",
+    "english": "how did you manage to save enough money for that vacation",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["manage to do sth 设法做某事", "save money for sth 为…存钱"],
+      "confidence": 0.87,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "save",
+          "pos": "动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 27,
+          "end": 33
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 34,
+          "end": 39
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 40,
+          "end": 43
+        },
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 44,
+          "end": 48
+        },
+        {
+          "text": "vacation",
+          "pos": "名词",
+          "start": 49,
+          "end": 57
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to save enough money for that vacation",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 57
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "你(过去)如何设法做到在一段如此短的时间里为那个度假存足够的钱的？",
+    "english": "how did you manage to save enough money for that vacation in such a short time",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["manage to do sth 设法做某事", "in such a short time 时间状语"],
+      "confidence": 0.87,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "manage",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "save",
+          "pos": "动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 27,
+          "end": 33
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 34,
+          "end": 39
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 40,
+          "end": 43
+        },
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 44,
+          "end": 48
+        },
+        {
+          "text": "vacation",
+          "pos": "名词",
+          "start": 49,
+          "end": 57
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 58,
+          "end": 60
+        },
+        {
+          "text": "such",
+          "pos": "形容词",
+          "start": 61,
+          "end": 65
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 66,
+          "end": 67
+        },
+        {
+          "text": "short",
+          "pos": "形容词",
+          "start": 68,
+          "end": 73
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 74,
+          "end": 78
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you manage",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to save enough money for that vacation",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 57
+        },
+        {
+          "text": "in such a short time",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 58,
+          "end": 78
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语 + 状语"
+    }
+  }
+]

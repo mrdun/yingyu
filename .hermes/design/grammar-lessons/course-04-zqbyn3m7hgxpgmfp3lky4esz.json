@@ -1,0 +1,8743 @@
+[
+  {
+    "order": 1,
+    "chinese": "我需要",
+    "english": "I need",
+    "annotation": {
+      "order": 101,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "我不需要",
+    "english": "I don't need",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I don't need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "做这件事",
+    "english": "to do it",
+    "annotation": {
+      "order": 12,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do sth 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "我不需要做这件事",
+    "english": "I don't need to do it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "不定式作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "今天",
+    "english": "today",
+    "annotation": {
+      "order": 33,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词 today"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "today",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "today",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "我今天不需要做这件事",
+    "english": "I don't need to do it today",
+    "annotation": {
+      "order": 74,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't need to do 不需要做某事", "today 作时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "today",
+          "pos": "副词",
+          "start": 22,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 21
+        },
+        {
+          "text": "today",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 22,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "重要的",
+    "english": "important",
+    "annotation": {
+      "order": 120,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词", "重要的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "不重要的",
+    "english": "not important",
+    "annotation": {
+      "order": 182,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 4,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "not important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "它是不重要的",
+    "english": "it is not important",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["not 置于系动词后构成否定"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "所以",
+    "english": "so",
+    "annotation": {
+      "order": 173,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["并列连词，表示所以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "so",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "so",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "它是不重要的所以我今天不需要做这件事",
+    "english": "it is not important so I don't need to do it today",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + conj + S + V + O + Adv",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["so 连接两个并列分句", "need to do 为“需要做”"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "so",
+          "pos": "连词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 23,
+          "end": 24
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 42,
+          "end": 44
+        },
+        {
+          "text": "today",
+          "pos": "副词",
+          "start": 45,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "so",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 23,
+          "end": 24
+        },
+        {
+          "text": "don't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 25,
+          "end": 35
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 36,
+          "end": 44
+        },
+        {
+          "text": "today",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 45,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 连接词 + 主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "你需要",
+    "english": "you need",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语+及物动词 need 缺少宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "你不需要",
+    "english": "you don't need",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般现在时",
+      "keyPoints": ["need 作实义动词后需接宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't need",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "你不需要做这件事",
+    "english": "you don't need to do it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth. 需要做某事", "不定式作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 15,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "现在",
+    "english": "now",
+    "annotation": {
+      "order": 17,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词 now 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "now",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "你现在不需要做这件事",
+    "english": "you don't need to do it now",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "don't 构成否定"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 24,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 15,
+          "end": 23
+        },
+        {
+          "text": "now",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 24,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "紧急的",
+    "english": "urgent",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["urgent 紧急的", "形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "urgent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "它是紧急的",
+    "english": "it is urgent",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "urgent 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "urgent",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "而且",
+    "english": "and",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["并列连词", "用于连接并列的词、短语或句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "and",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "它是紧急的而且你需要现在做这件事",
+    "english": "it is urgent and you need to do it now",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + conj + S + V + O + Adv",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["and 连接并列句", "need to do sth 表需要做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 6,
+          "end": 12
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 35,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "urgent",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 12
+        },
+        {
+          "text": "and",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "need to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 21,
+          "end": 31
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "now",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 35,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 连接词 + 主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "他需要",
+    "english": "he needs",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["need 需要，后接不定式"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "他需要做这件事",
+    "english": "he needs to do it",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "do it 做这件事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "他不需要",
+    "english": "he doesn't need",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need 作实义动词，否定用 doesn't", "第三人称单数主语 he"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "他不需要做这件事",
+    "english": "he doesn't need to do it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "否定用 doesn't need to"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "她不需要做这件事",
+    "english": "she doesn't need to do it",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "否定用 doesn't need to do"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 23,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "它不需要做这件事",
+    "english": "it doesn't need to do it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "to do it 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "星荣不需要做这件事情",
+    "english": "Xingrong doesn't need to do it",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "doesn't后接动词原形"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 28,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "doesn't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 22,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "我想要",
+    "english": "I want",
+    "annotation": {
+      "order": 99,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓片段，句意不完整"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "我想要做这件事",
+    "english": "I want to do it",
+    "annotation": {
+      "order": 30,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "我不想要",
+    "english": "I don't want",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["don't want 不想，后常接不定式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I don't want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "我不想要做这件事",
+    "english": "I don't want to do it",
+    "annotation": {
+      "order": 32,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "否定形式 don't want"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "你想要",
+    "english": "you want",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "你不想要",
+    "english": "you don't want",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": "一般现在时",
+      "keyPoints": ["否定句", "want 缺宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't want",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "你不想要做这件事",
+    "english": "you don't want to do it",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth", "否定句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 15,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "他想要",
+    "english": "he wants",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he wants",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "他想要做这件事",
+    "english": "he wants to do it",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "主语 he 为第三人称单数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "我需要",
+    "english": "I need",
+    "annotation": {
+      "order": 101,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "知道",
+    "english": "to know",
+    "annotation": {
+      "order": 104,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["know 知道；认识"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "我需要知道",
+    "english": "I need to know",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 结构", "know 知道"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to know",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "是否",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "我需要知道是否他想要做这件事",
+    "english": "I need to know if he wants to do it",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导宾语从句", "从句中 want to do sth 结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 33,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "if he wants to do it",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 15,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "他不想要",
+    "english": "he doesn't want",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般现在时",
+      "keyPoints": ["doesn't want 不想要", "第三人称单数否定形式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't want",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "他不想要做这件事",
+    "english": "he doesn't want to do it",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "doesn't 构成一般现在时否定"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "因为",
+    "english": "because",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["because 表示原因，引导原因状语从句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "because",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "它是不重要的",
+    "english": "it is not important",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["not 置于系动词后构成否定"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "他不想做这件事因为它是不重要的",
+    "english": "he doesn't want to do it because it is not important",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["because 引导原因状语从句", "want to do sth 结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 25,
+          "end": 32
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 43,
+          "end": 52
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 24
+        },
+        {
+          "text": "because it is not important",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 25,
+          "end": 52
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "她不想要做这件事",
+    "english": "she doesn't want to do it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想做某事", "it 指代前面提到的事物"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 23,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "它不想要做这件事",
+    "english": "it doesn't want to do it",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "一般现在时否定式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "我喜欢",
+    "english": "I like",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓片段，缺少宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I like",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "我喜欢做这件事",
+    "english": "I like to do it",
+    "annotation": {
+      "order": 14,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 喜欢做某事", "不定式作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "我不喜欢",
+    "english": "I don't like",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I don't like",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "我不喜欢做这件事",
+    "english": "I don't like to do it",
+    "annotation": {
+      "order": 16,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't 构成一般现在时否定", "不定式作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "你喜欢",
+    "english": "you like",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["like 表示喜欢，后接名词或不定式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you like",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "你不喜欢",
+    "english": "you don't like",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["like 后缺宾语，是句子片段"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you don't like",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "你不喜欢做这件事",
+    "english": "you don't like to do it",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth. 喜欢做某事", "动名词/不定式作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 15,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "他喜欢",
+    "english": "he likes",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["like to do sth 喜欢做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "likes",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he likes",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "他不喜欢",
+    "english": "he doesn't like",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["doesn't like 后缺宾语，为片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't like",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "他不喜欢做这件事",
+    "english": "he doesn't like to do it",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 喜欢做某事", "第三人称单数否定用 doesn't"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "她不喜欢做这件事",
+    "english": "she doesn't like to do it",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 喜欢做某事", "不定式作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 23,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "它不喜欢做这件事",
+    "english": "it doesn't like to do it",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 喜欢做某事", "to do it 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "我必须做这件事",
+    "english": "I have to do it",
+    "annotation": {
+      "order": 76,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to do sth 必须做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "我不必做这件事",
+    "english": "I don't have to do it",
+    "annotation": {
+      "order": 80,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't have to do sth 不必做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't have to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 18
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "你必须做这件事",
+    "english": "you have to do it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示“必须”", "do it 做这件事"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "你不必做这件事",
+    "english": "you don't have to do it",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't have to 表示不必做某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't have to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "他必须做这件事",
+    "english": "he has to do it",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表客观需要，后接动词原形", "it 为宾语指代前文事物"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "他不必做这件事",
+    "english": "he doesn't have to do it",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示“不得不、必须”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't have to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "她必须做这件事",
+    "english": "she has to do it",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["has to 表示“必须”，后接动词原形", "it 指代前文提到的事物"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "她不必做这件事",
+    "english": "she doesn't have to do it",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't have to 表示不必", "do it 指做这件事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 23,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't have to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 22
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 23,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "它必须做这件事",
+    "english": "it has to do it",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to do sth 不得不做某事", "第三人称单数用 has to"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "它不必做这件事",
+    "english": "it doesn't have to do it",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表必须、不得不", "to do it 作宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't have to do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "它需要",
+    "english": "it needs",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语 it + 谓语动词，句子不完整"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it needs",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "它不需要",
+    "english": "it doesn't need",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["doesn't 后接动词原形", "need 作实义动词表需要"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't need",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "吃这个食物",
+    "english": "to eat the food",
+    "annotation": {
+      "order": 40,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式 to eat 带宾语 the food"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat the food",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "它需要吃这个食物",
+    "english": "it needs to eat the food",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "不定式短语作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 20,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to eat the food",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "现在",
+    "english": "now",
+    "annotation": {
+      "order": 17,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词 now 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "now",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "它需要现在吃这个食物",
+    "english": "it needs to eat the food now",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["now 作时间状语", "need to do sth 需要做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to eat the food",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 24
+        },
+        {
+          "text": "now",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "它不需要现在吃这个食物",
+    "english": "it doesn't need to eat the food now",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "第三人称单数否定式 doesn't need"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "food",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 32,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to eat the food",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 31
+        },
+        {
+          "text": "now",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 32,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "星荣需要",
+    "english": "Xingrong needs",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong needs",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "休息",
+    "english": "to rest",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to rest"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "rest",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to rest",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "星荣需要休息",
+    "english": "Xingrong needs to rest",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "主语为第三人称单数，need 加 s"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "rest",
+          "pos": "动词",
+          "start": 18,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "to rest",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "星荣不需要",
+    "english": "Xingrong doesn't need",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": "一般现在时",
+      "keyPoints": ["doesn't为第三人称单数否定助动词", "need作实义动词时需接宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 17,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong doesn't need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "星荣不需要休息",
+    "english": "Xingrong doesn't need to rest",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "rest此处作动词,意为\"休息\""],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "rest",
+          "pos": "动词",
+          "start": 25,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "doesn't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "to rest",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 22,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "他想要",
+    "english": "he wants",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he wants",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "他不想",
+    "english": "he doesn't want",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般现在时",
+      "keyPoints": ["doesn't want 不想要", "第三人称单数否定形式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't want",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "告诉我",
+    "english": "to tell me",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语", "tell sb 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "重要的某事",
+    "english": "something important",
+    "annotation": {
+      "order": 121,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["形容词修饰不定代词需后置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "something important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "他想要告诉我重要的某事",
+    "english": "he wants to tell me something important",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["tell sb sth 双宾语结构", "形容词 important 修饰 something"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 30,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to tell me something important",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "他不想告诉我重要的某件事",
+    "english": "he doesn't want to tell me something important",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["tell sb sth 双宾语结构", "不定式短语作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "something",
+          "pos": "代词",
+          "start": 27,
+          "end": 36
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 37,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to tell me something important",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "她想",
+    "english": "she wants",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she wants",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "她不想",
+    "english": "she doesn't want",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["want to do sth 的省略用法", "缺少宾语，不是完整句子"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't want",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "解释",
+    "english": "to explain",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "explain",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to explain",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "原因",
+    "english": "the reason",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "reason",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the reason",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "解释原因",
+    "english": "to explain the reason",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "explain 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "explain",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "reason",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to explain the reason",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "她想要解释原因",
+    "english": "she wants to explain the reason",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 表示想要做某事", "explain the reason 作不定式宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "explain",
+          "pos": "动词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "reason",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "to explain the reason",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "她不想解释原因",
+    "english": "she doesn't want to explain the reason",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "三单否定用 doesn't"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "explain",
+          "pos": "动词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "reason",
+          "pos": "名词",
+          "start": 32,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't want to explain",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 27
+        },
+        {
+          "text": "the reason",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 28,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "问我",
+    "english": "to ask me",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to ask me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "一个问题",
+    "english": "a question",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，不定冠词 a 修饰可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 2,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "问我一个问题",
+    "english": "to ask me a question",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["ask sb sth 双宾语结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to ask me a question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "她想要问我一个问题",
+    "english": "she wants to ask me a question",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 表示想要做某事", "不定式短语作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 20,
+          "end": 21
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 22,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "to ask me a question",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "她不想问我一个问题",
+    "english": "she doesn't want to ask me a question",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想做某事", "ask sb a question 问某人问题"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 27,
+          "end": 28
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 29,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "to ask me a question",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "它想",
+    "english": "it wants",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "它不想",
+    "english": "it doesn't want",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want 后缺宾语，句子不完整", "第三人称单数否定式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it doesn't want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "飞翔",
+    "english": "to fly",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to fly 表示“飞翔”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "fly",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to fly",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "在天空中",
+    "english": "in the sky",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "sky",
+          "pos": "名词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the sky",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "在天空中飞翔",
+    "english": "to fly in the sky",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "in the sky 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "fly",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "sky",
+          "pos": "名词",
+          "start": 14,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to fly",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "in the sky",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "它想在天空中飞翔",
+    "english": "it wants to fly in the sky",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "in the sky 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "fly",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "sky",
+          "pos": "名词",
+          "start": 23,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to fly",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "in the sky",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "它不想在天空中飞翔",
+    "english": "it doesn't want to fly in the sky",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "in the sky 在天空中，作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "fly",
+          "pos": "动词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "sky",
+          "pos": "名词",
+          "start": 30,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to fly",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "in the sky",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 23,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "他喜欢",
+    "english": "he likes",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["like to do sth 喜欢做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "likes",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he likes",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "他不喜欢",
+    "english": "he doesn't like",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["doesn't like 后缺宾语，为片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't like",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "散步",
+    "english": "to walk",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "walk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to walk",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "在公园里",
+    "english": "in the park",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "park",
+          "pos": "名词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the park",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "在公园里散步",
+    "english": "to walk in the park",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "walk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "park",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to walk in the park",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "他喜欢在公园里散步",
+    "english": "he likes to walk in the park",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 喜欢做某事", "in the park 在公园"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "likes",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "walk",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "park",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "likes",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to walk",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "in the park",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "他不喜欢在公园里散步",
+    "english": "he doesn't like to walk in the park",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 喜欢做某事", "不定式短语作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "walk",
+          "pos": "动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "park",
+          "pos": "名词",
+          "start": 31,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to walk in the park",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "她喜欢",
+    "english": "she likes",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "likes",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she likes",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "她不喜欢",
+    "english": "she doesn't like",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like 后缺宾语，为句子片段"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she doesn't like",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "阅读",
+    "english": "to read",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "在家里",
+    "english": "at home",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at home 在家"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "在家里阅读",
+    "english": "to read at home",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "at home 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read at home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "她喜欢在家里阅读",
+    "english": "she likes to read at home",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 不定式作宾语", "at home 介词短语作地点状语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "likes",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 21,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "likes",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "to read",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "at home",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "她不喜欢在家里阅读",
+    "english": "she doesn't like to read at home",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 喜欢做某事", "at home 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 28,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "to read",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "at home",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "它喜欢",
+    "english": "it likes",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语 it + 谓语动词，句子不完整"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "likes",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it likes",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "它不喜欢",
+    "english": "it doesn't like",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["doesn't 后接动词原形", "like 后可接不定式"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't like",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "睡觉",
+    "english": "to sleep",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语(to sleep)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to sleep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "在床上",
+    "english": "on the bed",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示位置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "bed",
+          "pos": "名词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "on the bed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "在床上睡觉",
+    "english": "to sleep on the bed",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "含地点状语 on the bed"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "bed",
+          "pos": "名词",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to sleep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "on the bed",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "它喜欢在床上睡觉",
+    "english": "it likes to sleep on the bed",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 喜欢做某事", "on the bed 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "likes",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "bed",
+          "pos": "名词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "likes",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to sleep",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "on the bed",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "它不喜欢在床上睡觉",
+    "english": "it doesn't like to sleep on the bed",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["like to do sth 结构", "on the bed 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "like",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "bed",
+          "pos": "名词",
+          "start": 32,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't like",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "to sleep on the bed",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "解释",
+    "english": "to explain",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "explain",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to explain",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "原因",
+    "english": "the reason",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "reason",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the reason",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "解释原因",
+    "english": "to explain the reason",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "explain 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "explain",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "reason",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to explain the reason",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "他必须解释原因",
+    "english": "he has to explain the reason",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表客观需要", "the reason 为宾语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "explain",
+          "pos": "动词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "reason",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has to explain",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 17
+        },
+        {
+          "text": "the reason",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "他不必解释原因",
+    "english": "he doesn't have to explain the reason",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to do sth 不得不做某事", "explain the reason 解释原因"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "explain",
+          "pos": "动词",
+          "start": 19,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "reason",
+          "pos": "名词",
+          "start": 31,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't have to explain",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 26
+        },
+        {
+          "text": "the reason",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "在家里阅读",
+    "english": "to read at home",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "at home 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read at home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "她不必在家里阅读",
+    "english": "she doesn't have to read at home",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't have to 表示不必", "at home 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "home",
+          "pos": "名词",
+          "start": 28,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't have to read",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 24
+        },
+        {
+          "text": "at home",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "告诉我",
+    "english": "to tell me",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语", "tell sb 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "事实",
+    "english": "the truth",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "告诉我事实",
+    "english": "to tell me the truth",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell sb sth 双宾语", "tell me the truth"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell me the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "她必须告诉我事实",
+    "english": "she has to tell me the truth",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["tell sb sth 双宾语结构", "me 是间接宾语，the truth 是直接宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 23,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "has to tell",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the truth",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "她不必告诉我事实",
+    "english": "she doesn't have to tell me the truth",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["tell sb sth 双宾语结构", "don't have to 表示不必"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 32,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doesn't have to tell",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 24
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "the truth",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 28,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "睡觉",
+    "english": "to sleep",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语(to sleep)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to sleep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "在床上",
+    "english": "on the bed",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示位置"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "bed",
+          "pos": "名词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "on the bed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "在床上睡觉",
+    "english": "to sleep on the bed",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "含地点状语 on the bed"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "bed",
+          "pos": "名词",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to sleep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "on the bed",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "它必须在床上睡觉",
+    "english": "it has to sleep on the bed",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to do sth 不得不做某事", "on the bed 介词短语作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "bed",
+          "pos": "名词",
+          "start": 23,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "has to sleep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "on the bed",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "它不必",
+    "english": "it doesn't have",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["doesn't 后接动词原形", "have 作实义动词表拥有"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't have",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "它不必在床上睡觉",
+    "english": "it doesn't have to sleep on the bed",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 的否定形式表不必", "on the bed 作地点状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "bed",
+          "pos": "名词",
+          "start": 32,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't have to sleep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 24
+        },
+        {
+          "text": "on the bed",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 25,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  }
+]

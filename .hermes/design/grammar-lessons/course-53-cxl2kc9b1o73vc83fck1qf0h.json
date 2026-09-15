@@ -1,0 +1,7955 @@
+[
+  {
+    "order": 1,
+    "chinese": "存",
+    "english": "to save",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["不定式短语 to save"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "save",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to save",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "存(ed形式)",
+    "english": "saved",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词过去式或过去分词"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "saved",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "saved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "我们(过去已经)存",
+    "english": "we had saved",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["had saved 已经存了钱"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "saved",
+          "pos": "动词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "had saved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "钱",
+    "english": "money",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["钱"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "足够的",
+    "english": "enough",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["enough 足够的"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "足够的钱",
+    "english": "enough money",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["enough money 足够的钱"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "enough money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "我们(过去已经)存了足够的钱",
+    "english": "we had saved enough money",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["enough money 足够的钱", "save 攒钱"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "saved",
+          "pos": "动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "had saved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "enough money",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "购买",
+    "english": "to buy",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "房子",
+    "english": "house",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["房屋；住宅"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "house",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "买一套房子",
+    "english": "to buy a house",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，house 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "a house",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "决定",
+    "english": "to decide",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "决定买一套房子",
+    "english": "to decide to buy a house",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["decide to do sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 17,
+          "end": 18
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide to buy a house",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "我们决定买一套房子",
+    "english": "we decide to buy a house",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["decide to do sth 决定做某事", "不定式短语作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 17,
+          "end": 18
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to buy a house",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "我们(过去)决定买一套房子",
+    "english": "we decided to buy a house",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 决定做某事", "buy a house 买房子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "to buy a house",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "在我们(过去)决定买一套房子之前",
+    "english": "before we decided to buy a house",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 引导时间状语从句", "decide to do sth 决定做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 27,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before we decided to buy a house",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 32
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "我们(过去已经)存了足够的钱",
+    "english": "we had saved enough money",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["enough money 足够的钱", "save 攒钱"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "saved",
+          "pos": "动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "had saved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "enough money",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "在我们(过去)决定买一个房子之前我们(过去已经)存了足够的钱。",
+    "english": "we had saved enough money before we decided to buy a house",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before 引导时间状语从句", "decide to do 决定做某事"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "saved",
+          "pos": "动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "enough",
+          "pos": "形容词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 26,
+          "end": 32
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 36,
+          "end": 43
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 44,
+          "end": 46
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 47,
+          "end": 50
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 51,
+          "end": 52
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 53,
+          "end": 58
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "had saved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "enough money",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 25
+        },
+        {
+          "text": "before we decided to buy a house",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 26,
+          "end": 58
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "打扫",
+    "english": "to clean",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "clean",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to clean",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "打扫(ed形式)",
+    "english": "cleaned",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["clean 的过去式/过去分词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "cleaned",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "cleaned",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "他们(过去已经)打扫",
+    "english": "they had cleaned",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "缺少宾语，为句子片段"],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "cleaned",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they had cleaned",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "房子",
+    "english": "house",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["房屋；住宅"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "house",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "他们(过去已经)打扫了那个房子",
+    "english": "they had cleaned the house",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "the house 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "cleaned",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had cleaned",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        },
+        {
+          "text": "the house",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "整个",
+    "english": "entire",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["整个的；全部的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "entire",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "entire",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "他们(过去已经)打扫了整个房子",
+    "english": "they had cleaned the entire house",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时表示过去之前已完成", "entire 作定语修饰 house"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "cleaned",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "entire",
+          "pos": "形容词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 28,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had cleaned",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        },
+        {
+          "text": "the entire house",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "父母",
+    "english": "parents",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["父母", "parent 的复数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "他们的",
+    "english": "their",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "their",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "他们的父母",
+    "english": "their parents",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "their parents",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "到达",
+    "english": "to arrive",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“到达”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "arrive",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to arrive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "他们的父母(过去)到达",
+    "english": "their parents arrived",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主语+谓语结构", "arrived为过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "their parents",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "text": "arrived",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "在他们的父母(过去)到达之前",
+    "english": "before their parents arrived",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before引导时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "their parents arrived",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "他们(过去已经)打扫了整个房子",
+    "english": "they had cleaned the entire house",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时表示过去之前已完成", "entire 作定语修饰 house"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "cleaned",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "entire",
+          "pos": "形容词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 28,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had cleaned",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        },
+        {
+          "text": "the entire house",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "在他们的父母(过去)到达之前他们(过去已经)打扫了整个房子。",
+    "english": "they had cleaned the entire house before their parents arrived",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before 引导时间状语从句", "主句用过去完成时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "cleaned",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "entire",
+          "pos": "形容词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 34,
+          "end": 40
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 41,
+          "end": 46
+        },
+        {
+          "text": "parents",
+          "pos": "名词",
+          "start": 47,
+          "end": 54
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 55,
+          "end": 62
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had cleaned",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        },
+        {
+          "text": "the entire house",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 33
+        },
+        {
+          "text": "before their parents arrived",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 34,
+          "end": 62
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "搬家",
+    "english": "move",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词：移动；搬动"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "move",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "move",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "搬家(ed形式)",
+    "english": "moved",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["move 的过去式/过去分词", "感动的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "moved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "他们(过去已经)搬家",
+    "english": "they had moved",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "缺少地点状语，为句子片段"],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they had moved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "城市",
+    "english": "city",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": ["名词：城市；复数 cities"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "city",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "city",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "新的",
+    "english": "new",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“新的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "new",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "一个新的城市",
+    "english": "a new city",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，中心词 city"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "city",
+          "pos": "名词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a new city",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "他们(过去已经)搬家到了一个新的城市",
+    "english": "they had moved to a new city",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "to a new city 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "city",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had moved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 14
+        },
+        {
+          "text": "to a new city",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "出生",
+    "english": "to bear",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "动词 bear 原形"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "bear",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to bear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "出生(ed形式)",
+    "english": "born",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词/分词：出生的，常与 be 连用"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "born",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "born",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "被出生",
+    "english": "be born",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be born 表示“出生”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "born",
+          "pos": "分词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be born",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "那个婴儿",
+    "english": "the baby",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "baby",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the baby",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "那个婴儿(过去)出生",
+    "english": "the baby was born",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态", "一般过去时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "baby",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "born",
+          "pos": "分词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the baby",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "was born",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "在那个婴儿(过去)出生之前",
+    "english": "before the baby was born",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before引导时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "baby",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "born",
+          "pos": "分词",
+          "start": 20,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the baby was born",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "他们(过去已经)搬家到了一个新的城市",
+    "english": "they had moved to a new city",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "to a new city 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "city",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had moved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 14
+        },
+        {
+          "text": "to a new city",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "在那个婴儿(过去)出生之前他们,(过去已经)搬到了一个新的城市",
+    "english": "they had moved to a new city before the baby was born",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before 引导时间状语从句", "主句过去完成时，从句一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "city",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 29,
+          "end": 35
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "baby",
+          "pos": "名词",
+          "start": 40,
+          "end": 44
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "born",
+          "pos": "分词",
+          "start": 49,
+          "end": 53
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had moved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 14
+        },
+        {
+          "text": "to a new city",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 28
+        },
+        {
+          "text": "before the baby was born",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 29,
+          "end": 53
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "计划",
+    "english": "to plan",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["plan 计划"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "plan",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to plan",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "计划(ed形式)",
+    "english": "planned",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["plan 的过去式/过去分词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "planned",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "planned",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "他们(过去已经)计划",
+    "english": "they had planned",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["had + 过去分词构成过去完成时", "缺少宾语，为句子片段"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "planned",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they had planned",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "已经",
+    "english": "already",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：已经"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "already",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "他们(过去)已经计划",
+    "english": "they had already planned",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["过去完成时结构，缺少宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "planned",
+          "pos": "动词",
+          "start": 17,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they had already planned",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "假期",
+    "english": "vacation",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：假期"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "vacation",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "vacation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "他们的",
+    "english": "their",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "their",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "他们的假期",
+    "english": "their vacation",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "vacation",
+          "pos": "名词",
+          "start": 6,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "their vacation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "他们(过去)已经计划了他们的假期",
+    "english": "they had already planned their vacation",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had planned", "plan 后接宾语 their vacation"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "planned",
+          "pos": "动词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "text": "vacation",
+          "pos": "名词",
+          "start": 31,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had already planned",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 24
+        },
+        {
+          "text": "their vacation",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 25,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "邀请",
+    "english": "to invite",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["invite 邀请"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "invite",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to invite",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "邀请",
+    "english": "invitation",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“邀请；请柬”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "那个邀请",
+    "english": "the invitation",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "收到",
+    "english": "to receive",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "receive 意为“收到”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "receive",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to receive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "收到那个邀请",
+    "english": "to receive the invitation",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to receive the invitation"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "receive",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 15,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to receive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 25
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "他们(过去)收到那个邀请",
+    "english": "they received the invitation",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["received 是 receive 的过去式", "the invitation 特指那份邀请"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "received",
+          "pos": "动词",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 18,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "received",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "the invitation",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "在他们(过去)收到那个邀请之前",
+    "english": "before they received the invitation",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before引导时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "received",
+          "pos": "动词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 25,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "they received the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "他们(过去)已经计划了他们的假期",
+    "english": "they had already planned their vacation",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had planned", "plan 后接宾语 their vacation"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "planned",
+          "pos": "动词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "text": "vacation",
+          "pos": "名词",
+          "start": 31,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had already planned",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 24
+        },
+        {
+          "text": "their vacation",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 25,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "在他们(过去)收到那个邀请之前他们(过去)已经计划了他们的假期",
+    "english": "they had already planned their vacation before they received the invitation",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时表示过去某时之前已完成", "before 引导时间状语从句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "already",
+          "pos": "副词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "planned",
+          "pos": "动词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "their",
+          "pos": "代词",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "text": "vacation",
+          "pos": "名词",
+          "start": 31,
+          "end": 39
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 40,
+          "end": 46
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 47,
+          "end": 51
+        },
+        {
+          "text": "received",
+          "pos": "动词",
+          "start": 52,
+          "end": 60
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 61,
+          "end": 64
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 65,
+          "end": 75
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "had already planned",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 24
+        },
+        {
+          "text": "their vacation",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 25,
+          "end": 39
+        },
+        {
+          "text": "before they received the invitation",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 40,
+          "end": 75
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "离开",
+    "english": "to leave",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to leave", "leave 离开"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "leave",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to leave",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "办公室",
+    "english": "office",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词 office"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "office",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "离开办公室",
+    "english": "to leave the office",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["leave the office 离开办公室"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "leave",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to leave the office",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "离开(ed形式)",
+    "english": "left",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["leave 的过去式/过去分词，此处为碎片"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "left",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "left",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "她(过去已经)离开",
+    "english": "she had left",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["leave 作不及物动词", "过去完成时 had + 过去分词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "left",
+          "pos": "分词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "她(过去已经)离开办公室",
+    "english": "she had left the office",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "leave 后接宾语表示离开某地"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "left",
+          "pos": "分词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "the office",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "刚刚",
+    "english": "just",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "just",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "just",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "她(过去已经)刚刚离开办公室",
+    "english": "she had just left the office",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["just 常与过去完成时连用", "left 为 leave 的过去分词"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "just",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "left",
+          "pos": "分词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had just left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "the office",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "老板",
+    "english": "boss",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：老板，上司"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "boss",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "boss",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "她的",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "她的老板",
+    "english": "her boss",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["她的老板"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "boss",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her boss",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "打电话",
+    "english": "to call",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["call 打电话；称呼", "不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to call",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "她的老板(过去)打电话",
+    "english": "her boss called",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主语+不及物动词，句子完整"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "boss",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her boss",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "called",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "当......时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "当她的老板(过去)打电话的时候",
+    "english": "when her boss called",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["when引导的时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "boss",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when her boss called",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "她(过去已经)刚刚离开办公室",
+    "english": "she had just left the office",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["just 常与过去完成时连用", "left 为 leave 的过去分词"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "just",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "left",
+          "pos": "分词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had just left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "the office",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "她(过去已经)刚刚离开办公室当她的老板(过去)打电话的时候",
+    "english": "she had just left the office when her boss called",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["when 引导时间状语从句", "从句用一般过去时"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "just",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "left",
+          "pos": "分词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "boss",
+          "pos": "名词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 43,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had just left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "the office",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 28
+        },
+        {
+          "text": "when her boss called",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 29,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "任务",
+    "english": "task",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "task",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "task",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "紧急的",
+    "english": "urgent",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["urgent 紧急的", "形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "urgent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "一项紧急的任务",
+    "english": "an urgent task",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语", "urgent 作定语修饰 task"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "task",
+          "pos": "名词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "an urgent task",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "她的老板(过去)打电话",
+    "english": "her boss called",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主语+不及物动词，句子完整"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "boss",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her boss",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "called",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "她的老板(过去)打电话给她安排一项紧急的任务",
+    "english": "her boss called with an urgent task",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["with an urgent task 作伴随状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "boss",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 24,
+          "end": 30
+        },
+        {
+          "text": "task",
+          "pos": "名词",
+          "start": 31,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her boss",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "called",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "with an urgent task",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "当她的老板(过去)打电话给她安排一项紧急的任务的时候",
+    "english": "when her boss called with an urgent task",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["when引导的时间状语从句", "with短语表伴随"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "boss",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 29,
+          "end": 35
+        },
+        {
+          "text": "task",
+          "pos": "名词",
+          "start": 36,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when her boss called with an urgent task",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 40
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "她(过去已经)刚刚离开办公室",
+    "english": "she had just left the office",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["just 常与过去完成时连用", "left 为 leave 的过去分词"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "just",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "left",
+          "pos": "分词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had just left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "the office",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "当她的老板(过去)打电话给她安排一项紧急任务的时候她刚刚离开办公室",
+    "english": "she had just left the office when her boss called with an urgent task",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["when 引导时间状语从句", "with an urgent task 作伴随状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "just",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "left",
+          "pos": "分词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "office",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "boss",
+          "pos": "名词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 43,
+          "end": 49
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 50,
+          "end": 54
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 55,
+          "end": 57
+        },
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 58,
+          "end": 64
+        },
+        {
+          "text": "task",
+          "pos": "名词",
+          "start": 65,
+          "end": 69
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had just left",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "the office",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 28
+        },
+        {
+          "text": "when her boss called",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 29,
+          "end": 49
+        },
+        {
+          "text": "with an urgent task",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 50,
+          "end": 69
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "在国外",
+    "english": "abroad",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词", "abroad 前不加介词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "abroad",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "我在国外",
+    "english": "I am abroad",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "abroad 为副词，表示在国外"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "abroad",
+          "role": "表语",
+          "roleType": "副词短语",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "我(已经)去过国外",
+    "english": "I have been abroad",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["have been 后接副词 abroad", "表示曾在国外"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "abroad",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "还没有",
+    "english": "haven't",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["have not 的缩写形式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "haven't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "haven't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "我还没有去过国外",
+    "english": "I haven't been abroad",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时否定 haven't + 过去分词", "abroad 是副词，其前不加介词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "haven't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "haven't been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "abroad",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "从来没有",
+    "english": "never",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["频度副词，意为“从不；绝不”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "never",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "我从来没有去过国外",
+    "english": "I have never been abroad",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时表经历", "never 位于助动词后"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 18,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "abroad",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "我(过去)从来没有去过国外",
+    "english": "I had never been abroad",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时 had + 过去分词", "never 放在助动词之后"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 6,
+          "end": 11
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "abroad",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "她(过去)从来没有去过国外",
+    "english": "she had never been abroad",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时表示过去某时前已发生", "never表示从未有过"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "abroad",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "旅行",
+    "english": "trip",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：旅行，旅程"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "trip",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "trip",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "她的旅行",
+    "english": "her trip",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["her为形容词性物主代词，修饰名词trip"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "trip",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her trip",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "西班牙",
+    "english": "Spain",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "keyPoints": ["专有名词，国家名"],
+      "words": [
+        {
+          "text": "Spain",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Spain",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "她的去西班牙的旅行",
+    "english": "her trip to Spain",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语to Spain修饰trip，表示去西班牙的旅行"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "trip",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "Spain",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her trip to Spain",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "上一个",
+    "english": "last",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "年",
+    "english": "year",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "year",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "year",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "去年",
+    "english": "last year",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["过去时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "year",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last year",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "去年她的去西班牙的旅行",
+    "english": "her trip to Spain last year",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["last year为时间状语，修饰整个名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "trip",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "Spain",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "year",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her trip to Spain last year",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "在去年她的去西班牙的旅行之前",
+    "english": "before her trip to Spain last year",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 短语表时间", "last year 表过去时间"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "trip",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "Spain",
+          "pos": "名词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "year",
+          "pos": "名词",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before her trip to Spain last year",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 34
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "她(过去)从来没有去过国外",
+    "english": "she had never been abroad",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时表示过去某时前已发生", "never表示从未有过"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "abroad",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "在去年她的去西班牙的旅行之前她(过去)从来没有去过国外",
+    "english": "she had never been abroad before her trip to Spain last year",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before引导时间状语，与过去完成时连用", "表示在过去某时之前未做过某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 26,
+          "end": 32
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "trip",
+          "pos": "名词",
+          "start": 37,
+          "end": 41
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 42,
+          "end": 44
+        },
+        {
+          "text": "Spain",
+          "pos": "名词",
+          "start": 45,
+          "end": 50
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 51,
+          "end": 55
+        },
+        {
+          "text": "year",
+          "pos": "名词",
+          "start": 56,
+          "end": 60
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "abroad",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "before her trip to Spain last year",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 60
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 状语"
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "国家",
+    "english": "country",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["country 名词：国家"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "country",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "country",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "外国的",
+    "english": "foreign",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["foreign 形容词：外国的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "foreign",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "foreign",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "外国",
+    "english": "a foreign country",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "形容词作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "foreign",
+          "pos": "形容词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "country",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a foreign country",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "在国外",
+    "english": "abroad",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词", "abroad 前不加介词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "abroad",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "她(过去)从来没有去过国外",
+    "english": "she had never been abroad",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时表示过去某时前已发生", "never表示从未有过"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "abroad",
+          "pos": "副词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "abroad",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "她(过去)从来没有去过外国",
+    "english": "she had never been to a foreign country",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时表示过去某时前已发生", "have been to表示去过某地"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 22,
+          "end": 23
+        },
+        {
+          "text": "foreign",
+          "pos": "形容词",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "country",
+          "pos": "名词",
+          "start": 32,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to a foreign country",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "在去年她的去西班牙的旅行之前",
+    "english": "before her trip to Spain last year",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 短语表时间", "last year 表过去时间"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "trip",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "Spain",
+          "pos": "名词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "year",
+          "pos": "名词",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before her trip to Spain last year",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 34
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "在去年她的去西班牙的旅行之前她(过去)从来没有去过外国",
+    "english": "she had never been to a foreign country before her trip to Spain last year",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before引导时间状语，与过去完成时连用", "have been to表示去过某地"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 22,
+          "end": 23
+        },
+        {
+          "text": "foreign",
+          "pos": "形容词",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "country",
+          "pos": "名词",
+          "start": 32,
+          "end": 39
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 40,
+          "end": 46
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 47,
+          "end": 50
+        },
+        {
+          "text": "trip",
+          "pos": "名词",
+          "start": 51,
+          "end": 55
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 56,
+          "end": 58
+        },
+        {
+          "text": "Spain",
+          "pos": "名词",
+          "start": 59,
+          "end": 64
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 65,
+          "end": 69
+        },
+        {
+          "text": "year",
+          "pos": "名词",
+          "start": 70,
+          "end": 74
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to a foreign country",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 39
+        },
+        {
+          "text": "before her trip to Spain last year",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 40,
+          "end": 74
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 状语"
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "她(过去)从来没有去过",
+    "english": "she had never been",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["过去完成时片段，缺少地点或时间状语", "需补充成分才能成句"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "分词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "加州",
+    "english": "California",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["California 加利福尼亚（美国州名）"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "California",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "California",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "她(过去)从来没有去过加州",
+    "english": "she had never been to California",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时表示过去某时前已发生", "have been to表示去过某地"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "California",
+          "pos": "名词",
+          "start": 22,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to California",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "夏天",
+    "english": "summer",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "summer",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "summer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "上一个",
+    "english": "last",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "去年夏天",
+    "english": "last summer",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["过去时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "summer",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last summer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "在去年夏天之前",
+    "english": "before last summer",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 引导时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "summer",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before last summer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "在去年夏天之前她(过去)从来没有去过加州",
+    "english": "she had never been to California before last summer",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before引导时间状语，与过去完成时连用", "have been to表示去过某地"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "California",
+          "pos": "名词",
+          "start": 22,
+          "end": 32
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 33,
+          "end": 39
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 40,
+          "end": 44
+        },
+        {
+          "text": "summer",
+          "pos": "名词",
+          "start": 45,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to California",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 32
+        },
+        {
+          "text": "before last summer",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 33,
+          "end": 51
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 状语"
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "迟到",
+    "english": "late",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["迟的；晚的"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "late",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "她(过去)从来没有迟到过",
+    "english": "she had never been late",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时表示过去某时前已发生", "be late表示迟到"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "late",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "工作",
+    "english": "work",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作动词（工作）"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "work",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "她(过去)从来没有上班迟到过",
+    "english": "she had never been late to work",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时表示过去某时前已发生", "be late to work表示上班迟到"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "late",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "to work",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "天",
+    "english": "day",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "那天",
+    "english": "that day",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["指示限定词 that 修饰名词 day"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "在那天之前",
+    "english": "before that day",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 短语表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 12,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before that day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "在那天之前她(过去)从来没有上班迟到过",
+    "english": "she had never been late to work before that day",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before引导时间状语，与过去完成时连用", "表示在过去某时之前未迟到过"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "late",
+          "pos": "形容词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 32,
+          "end": 38
+        },
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 44,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never been",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "late",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "to work",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "before that day",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语 + 状语"
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "驾驶",
+    "english": "to drive",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "驾驶(ed形式)",
+    "english": "driven",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["drive 的过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "driven",
+          "pos": "分词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "driven",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "她(过去)从来没有驾驶过",
+    "english": "she had never driven",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时表示过去某时前已发生", "never表示从未做过某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "driven",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never driven",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "车",
+    "english": "car",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：小汽车"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "她(过去)从来没有驾驶过一辆车",
+    "english": "she had never driven a car",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时：had + 过去分词", "never 放在助动词之后"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "driven",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 23,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never driven",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "a car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "驾驶",
+    "english": "to drive",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "驾驶员",
+    "english": "driver",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：司机、驾驶员"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "driver",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "driver",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "执照",
+    "english": "license",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：执照、许可证"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "驾照",
+    "english": "driver's license",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：驾照（美式常见说法）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "driver's",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "driver's license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "她的驾照",
+    "english": "her driver's license",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["driver's license 意为“驾照”", "名词所有格 's"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "driver's",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her driver's license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "拿到",
+    "english": "to get",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to get",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "她(过去)拿到",
+    "english": "she got",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["got 是 get 的过去式，此处缺少宾语"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "got",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she got",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "她(过去)拿到她的驾照",
+    "english": "she got her driver's license",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["get one's driver's license 取得驾照", "get 的过去式为 got"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "got",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "driver's",
+          "pos": "名词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "got",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "her driver's license",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 153,
+    "chinese": "在她(过去)拿到她的驾照之前",
+    "english": "before she got her driver's license",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 引导时间状语从句", "got 为过去式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "got",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "driver's",
+          "pos": "名词",
+          "start": 19,
+          "end": 27
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before she got her driver's license",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 154,
+    "chinese": "她(过去)从来没有驾驶过一辆车",
+    "english": "she had never driven a car",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时：had + 过去分词", "never 放在助动词之后"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "driven",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 23,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never driven",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "a car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 155,
+    "chinese": "在她(过去)拿到她的驾照之前她,(过去)从来没有驾驶过一辆车",
+    "english": "she had never driven a car before she got her driver's license",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before 引导时间状语从句", "主句用过去完成时表示更早发生"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "driven",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 27,
+          "end": 33
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "got",
+          "pos": "动词",
+          "start": 38,
+          "end": 41
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 42,
+          "end": 45
+        },
+        {
+          "text": "driver's",
+          "pos": "名词",
+          "start": 46,
+          "end": 54
+        },
+        {
+          "text": "license",
+          "pos": "名词",
+          "start": 55,
+          "end": 62
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "had never driven",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "a car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "before she got her driver's license",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 27,
+          "end": 62
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  }
+]

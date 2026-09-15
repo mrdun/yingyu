@@ -1,0 +1,5837 @@
+[
+  {
+    "order": 1,
+    "chinese": "解决",
+    "english": "to solve",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "解决(ed形式)",
+    "english": "solved",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词 solve 的过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "solved",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "solved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "被解决",
+    "english": "be solved",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词", "被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be solved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "那个问题",
+    "english": "the problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "那个问题被解决",
+    "english": "the problem is solved",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时的被动语态", "is done 结构"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is solved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "(已经)被解决",
+    "english": "has been solved",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "has been solved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "那个问题(已经)被解决",
+    "english": "the problem has been solved",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时的被动语态", "has been done 结构"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "has been solved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "(过去已经)被解决",
+    "english": "had been solved",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been solved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "那个问题(过去已经)被解决",
+    "english": "the problem had been solved",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态", "had been done 结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "had been solved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "通过他",
+    "english": "by him",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by him",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "那个问题(过去已经)通过他被解决",
+    "english": "the problem had been solved by him",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["by 引出动作执行者", "过去完成时被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 31,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "had been solved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 27
+        },
+        {
+          "text": "by him",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "其他",
+    "english": "else",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["else 别的；其他"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "else",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "else",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "任何人",
+    "english": "anyone",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：任何人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "anyone",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "anyone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "其他任何人",
+    "english": "anyone else",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["代词短语：其他任何人"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "anyone",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "else",
+          "pos": "副词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "anyone else",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "注意到",
+    "english": "to notice",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to notice",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "注意到(过去)",
+    "english": "noticed",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "noticed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "它",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "注意到(过去)它",
+    "english": "noticed it",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词+宾语片段，非完整句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "noticed it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "其他任何人注意到(过去)它",
+    "english": "anyone else noticed it",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["anyone else 表示“其他任何人”"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "anyone",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "else",
+          "pos": "副词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "anyone else",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "noticed it",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "在其他任何人注意到(过去)它之前",
+    "english": "before anyone else noticed it",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 引导时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "anyone",
+          "pos": "代词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "else",
+          "pos": "副词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 19,
+          "end": 26
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 27,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before anyone else noticed it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "那个问题(过去已经)被他解决",
+    "english": "the problem had been solved by him",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["by 引出动作执行者", "过去完成时被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 31,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "had been solved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 27
+        },
+        {
+          "text": "by him",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "在其他任何人注意到(过去)它之前那个问题(过去已经)被他解决",
+    "english": "the problem had been solved by him before anyone else noticed it",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["before 引导时间状语从句", "过去完成时表过去的过去"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 35,
+          "end": 41
+        },
+        {
+          "text": "anyone",
+          "pos": "代词",
+          "start": 42,
+          "end": 48
+        },
+        {
+          "text": "else",
+          "pos": "副词",
+          "start": 49,
+          "end": 53
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 54,
+          "end": 61
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 62,
+          "end": 64
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "had been solved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 27
+        },
+        {
+          "text": "by him",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 34
+        },
+        {
+          "text": "before anyone else noticed it",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 35,
+          "end": 64
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "粉刷",
+    "english": "to paint",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或计划"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "paint",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to paint",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "粉刷(ed形式)",
+    "english": "painted",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["paint 的过去式/过去分词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "painted",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "painted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "被粉刷",
+    "english": "be painted",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["be painted：被粉刷", "被动语态 be + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "painted",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be painted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "(已经)被粉刷",
+    "english": "has been painted",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "painted",
+          "pos": "分词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "has been painted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "(过去已经)被粉刷",
+    "english": "had been painted",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "painted",
+          "pos": "分词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been painted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "那个房子",
+    "english": "the house",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，可作主语或宾语", "由冠词the+名词构成"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the house",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "那个房子(过去已经)被粉刷",
+    "english": "the house had been painted",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态：had been + 过去分词", "主语the house是动作承受者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "painted",
+          "pos": "分词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the house",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "had been painted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "搬",
+    "english": "to move",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "move",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to move",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "搬(过去)",
+    "english": "moved",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["move 的过去式/过去分词", "感动的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "moved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "他们搬(过去)",
+    "english": "they moved",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["moved 是 move 的过去式", "主谓结构简单句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "moved",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "往里面",
+    "english": "in",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 in 表示地点或时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "他们搬(过去)进去",
+    "english": "they moved in",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["move in 搬进来；迁入", "in 在此为副词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "in",
+          "pos": "副词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "moved in",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "在他们搬(过去)进去之前",
+    "english": "before they moved in",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before引导时间状语从句", "in为副词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "in",
+          "pos": "副词",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "they moved in",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "那个房子(过去已经)被粉刷",
+    "english": "the house had been painted",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态：had been + 过去分词", "主语the house是动作承受者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "painted",
+          "pos": "分词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the house",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "had been painted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "在他们搬(过去)进去之前那个房子(过去已经)被粉刷",
+    "english": "the house had been painted before they moved in",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "before引导时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "painted",
+          "pos": "分词",
+          "start": 19,
+          "end": 26
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 27,
+          "end": 33
+        },
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "text": "moved",
+          "pos": "动词",
+          "start": 39,
+          "end": 44
+        },
+        {
+          "text": "in",
+          "pos": "副词",
+          "start": 45,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the house",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "had been painted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 26
+        },
+        {
+          "text": "before they moved in",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 27,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "建造",
+    "english": "to build",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "动词 build 原形"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "build",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to build",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "建筑物",
+    "english": "building",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：建筑物", "也可作动名词“建造”"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "building",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "那个建筑物",
+    "english": "the building",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the building",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "疏散",
+    "english": "to evacuate",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "evacuate",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to evacuate",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "疏散(ed形式)",
+    "english": "evacuated",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["疏散；撤离（evacuate 的过去式/过去分词）"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "evacuated",
+          "pos": "动词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "evacuated",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "被疏散",
+    "english": "be evacuated",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词，构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "evacuated",
+          "pos": "分词",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be evacuated",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "(过去已经)被疏散",
+    "english": "had been evacuated",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "evacuated",
+          "pos": "分词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been evacuated",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "那个建筑物(过去已经)被疏散",
+    "english": "the building had been evacuated",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["被动语态", "过去完成时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "evacuated",
+          "pos": "分词",
+          "start": 22,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the building",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "had been evacuated",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "火",
+    "english": "fire",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：火"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "fire",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "fire",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "蔓延",
+    "english": "to spread",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "spread 意为传播"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "spread",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to spread",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "蔓延(过去)",
+    "english": "spread",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词：传播；展开"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "spread",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "spread",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "火势蔓延(过去)",
+    "english": "the fire spread",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["spread 过去式与原形同形"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "fire",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "spread",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the fire",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "spread",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "在火势蔓延(过去)之前",
+    "english": "before the fire spread",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before引导时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "fire",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "spread",
+          "pos": "动词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the fire spread",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "那个建筑物(过去已经)被疏散",
+    "english": "the building had been evacuated",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["被动语态", "过去完成时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "evacuated",
+          "pos": "分词",
+          "start": 22,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the building",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "had been evacuated",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "在火势蔓延(过去)之前那个建筑物(过去已经)被疏散",
+    "english": "the building had been evacuated before the fire spread",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "before 引导时间状语从句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "evacuated",
+          "pos": "分词",
+          "start": 22,
+          "end": 31
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 32,
+          "end": 38
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "fire",
+          "pos": "名词",
+          "start": 43,
+          "end": 47
+        },
+        {
+          "text": "spread",
+          "pos": "动词",
+          "start": 48,
+          "end": 54
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the building",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "had been evacuated",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 31
+        },
+        {
+          "text": "before the fire spread",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 32,
+          "end": 54
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "停车",
+    "english": "to park",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，park此处为动词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "park",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to park",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "停车(ed形式)",
+    "english": "parked",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["park 的过去式/过去分词", "停放（车辆）"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "parked",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "parked",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "(过去已经)被停",
+    "english": "had been parked",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "parked",
+          "pos": "分词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been parked",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "那辆车",
+    "english": "the car",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "那辆车(过去已经)被停",
+    "english": "the car had been parked",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "had been + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "parked",
+          "pos": "分词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "had been parked",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "车库",
+    "english": "garage",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：车库"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "garage",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "garage",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "在车库里",
+    "english": "in the garage",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语，表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "garage",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the garage",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "那辆车(过去已经)被停在车库里",
+    "english": "the car had been parked in the garage",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "in the garage 作地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "parked",
+          "pos": "分词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "garage",
+          "pos": "名词",
+          "start": 31,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "had been parked",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 23
+        },
+        {
+          "text": "in the garage",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "暴风雨",
+    "english": "storm",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：暴风雨"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "storm",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "storm",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "在暴风雨之前",
+    "english": "before the storm",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before作介词接名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "storm",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the storm",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "在暴风雨之前那辆车(过去已经)被停在车库里",
+    "english": "the car had been parked in the garage before the storm",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "before the storm 作时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "parked",
+          "pos": "分词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "garage",
+          "pos": "名词",
+          "start": 31,
+          "end": 37
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 38,
+          "end": 44
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "storm",
+          "pos": "名词",
+          "start": 49,
+          "end": 54
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "had been parked",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 23
+        },
+        {
+          "text": "in the garage",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 37
+        },
+        {
+          "text": "before the storm",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 38,
+          "end": 54
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "建造",
+    "english": "to constructe",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语（拼写有误）"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "constructe",
+          "pos": "动词",
+          "start": 3,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to constructe",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "建造(ed形式)",
+    "english": "constructed",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["construct 的过去式/过去分词：建造"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "constructed",
+          "pos": "动词",
+          "start": 0,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "constructed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "被建造",
+    "english": "be constructed",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 3,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be constructed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "(过去已经)被建造",
+    "english": "had been constructed",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "had been + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 9,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been constructed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "那座桥",
+    "english": "the bridge",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bridge",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bridge",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "那座桥(过去已经)被建造",
+    "english": "the bridge had been constructed",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bridge",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 20,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bridge",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "had been constructed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "雨",
+    "english": "rain",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "rain",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "rain",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "多雨的",
+    "english": "rainy",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "rainy",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "rainy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "季节",
+    "english": "season",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，季节"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "season",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "season",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "雨季",
+    "english": "rainy season",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "rainy",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "season",
+          "pos": "名词",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "rainy season",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "在雨季之前",
+    "english": "before the rainy season",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before作介词接名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "rainy",
+          "pos": "形容词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "season",
+          "pos": "名词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the rainy season",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "那座桥(过去已经)被建造",
+    "english": "the bridge had been constructed",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bridge",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 20,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bridge",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "had been constructed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "在雨季之前那座桥(过去已经)被建造",
+    "english": "the bridge had been constructed before the rainy season",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "before短语作时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bridge",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 20,
+          "end": 31
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 32,
+          "end": 38
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "rainy",
+          "pos": "形容词",
+          "start": 43,
+          "end": 48
+        },
+        {
+          "text": "season",
+          "pos": "名词",
+          "start": 49,
+          "end": 55
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bridge",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "had been constructed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 31
+        },
+        {
+          "text": "before the rainy season",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 55
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "纠正",
+    "english": "to correct",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语：to correct"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "correct",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to correct",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "纠正(ed形式)",
+    "english": "corrected",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["correct 的过去式/过去分词"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "corrected",
+          "pos": "动词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "corrected",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "被纠正",
+    "english": "be corrected",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词，构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "corrected",
+          "pos": "分词",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be corrected",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "(过去已经)被纠正",
+    "english": "had been corrected",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "had been + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "corrected",
+          "pos": "分词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been corrected",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "错误",
+    "english": "error",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["错误；差错"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "error",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "error",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "那个错误(过去已经)被纠正",
+    "english": "the error had been corrected",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["被动语态", "过去完成时"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "error",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "corrected",
+          "pos": "分词",
+          "start": 19,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the error",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "had been corrected",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "提交",
+    "english": "to submit",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "submit",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to submit",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "提交(ed形式)",
+    "english": "submitted",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["提交；过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "submitted",
+          "pos": "动词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "submitted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "被提交",
+    "english": "be submitted",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "submitted",
+          "pos": "分词",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be submitted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "报告",
+    "english": "report",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：报告；也可作动词"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "report",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "report",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "那个报告(过去)被提交",
+    "english": "the report was submitted",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态was submitted", "主语为动作承受者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "report",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "submitted",
+          "pos": "分词",
+          "start": 15,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the report",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "was submitted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "在那个报告(过去)被提交之前",
+    "english": "before the report was submitted",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before引导时间状语从句", "被动语态 was submitted"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "report",
+          "pos": "名词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "submitted",
+          "pos": "分词",
+          "start": 22,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the report was submitted",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 31
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "那个错误(过去已经)被纠正",
+    "english": "the error had been corrected",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["被动语态", "过去完成时"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "error",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "corrected",
+          "pos": "分词",
+          "start": 19,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the error",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "had been corrected",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "在那个报告(过去)被提交之前那个错误(过去已经)被纠正",
+    "english": "the error had been corrected before the report was submitted",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态", "before 引导时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "error",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "corrected",
+          "pos": "分词",
+          "start": 19,
+          "end": 28
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 29,
+          "end": 35
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "report",
+          "pos": "名词",
+          "start": 40,
+          "end": 46
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 47,
+          "end": 50
+        },
+        {
+          "text": "submitted",
+          "pos": "分词",
+          "start": 51,
+          "end": 60
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the error",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "had been corrected",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 28
+        },
+        {
+          "text": "before the report was submitted",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 29,
+          "end": 60
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "卖",
+    "english": "to sell",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to sell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "卖光",
+    "english": "to sell out",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "sell out 卖光"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to sell out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "卖光(ed形式)",
+    "english": "sold out",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["sell out 的过去分词，意为“售罄”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "sold",
+          "pos": "分词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "sold out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "被卖光",
+    "english": "be sold out",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词 + 副词", "被动语态"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sold",
+          "pos": "分词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be sold out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "(过去已经)被卖光了",
+    "english": "had been sold out",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态", "sell out 的被动形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "sold",
+          "pos": "分词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 14,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been sold out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "票",
+    "english": "ticket",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "ticket",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ticket",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "那些票",
+    "english": "the tickets",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语,不是完整句子", "tickets 为复数形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "tickets",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the tickets",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "那些票(过去已经)被卖光了",
+    "english": "the tickets had been sold out",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态 had been sold out", "sell out 表示售罄"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "tickets",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "sold",
+          "pos": "分词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 26,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the tickets",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "had been sold out",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "到达",
+    "english": "to arrive",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“到达”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "arrive",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to arrive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "达到(过去)",
+    "english": "arrived",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["arrive 的过去式/过去分词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "arrived",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "我们到达(过去)",
+    "english": "we arrived",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["不及物动词 arrive 过去式 arrived"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "arrived",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "时间",
+    "english": "the time",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "我们到达(过去)的时间",
+    "english": "the time we arrived",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the time we arrived",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "在我们到达(过去)的时间",
+    "english": "by the time we arrived",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by the time + 从句，表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by the time",
+          "role": null,
+          "roleType": "介词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "we arrived",
+          "role": null,
+          "roleType": "从句",
+          "start": 12,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "那些票(过去已经)被卖光了",
+    "english": "the tickets had been sold out",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态 had been sold out", "sell out 表示售罄"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "tickets",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "sold",
+          "pos": "分词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 26,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the tickets",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "had been sold out",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "在我们到达(过去)的时间那些票(过去已经)被卖光了",
+    "english": "the tickets had been sold out by the time we arrived",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["by the time 引导时间状语从句", "主句用过去完成时表示过去的过去"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "tickets",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "sold",
+          "pos": "分词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 37,
+          "end": 41
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 42,
+          "end": 44
+        },
+        {
+          "text": "arrived",
+          "pos": "动词",
+          "start": 45,
+          "end": 52
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the tickets",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "had been sold out",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 29
+        },
+        {
+          "text": "by the time we arrived",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 30,
+          "end": 52
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "改变",
+    "english": "to change",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，非完整句子", "change 改变"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "change",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to change",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "改变(ed形式)",
+    "english": "changed",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词过去式/过去分词：改变"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "changed",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "changed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "被改变",
+    "english": "be changed",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "changed",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be changed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "(过去已经)被改变",
+    "english": "had been changed",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "had been + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "changed",
+          "pos": "分词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been changed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "密码",
+    "english": "password",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["密码；口令"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "password",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "password",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "那个密码(过去已经)被改变",
+    "english": "the password had been changed",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "had been + 过去分词"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "password",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "changed",
+          "pos": "分词",
+          "start": 22,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the password",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "had been changed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "非法入侵",
+    "english": "to hack",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "hack 非法入侵；黑客攻击"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hack",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hack",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "非法入侵(ed形式)",
+    "english": "hacked",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["hack 的过去式/过去分词"],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "hacked",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "hacked",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "被非法入侵",
+    "english": "be hacked",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词，构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hacked",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be hacked",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "系统",
+    "english": "system",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "system",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "system",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "系统被(过去)非法入侵",
+    "english": "the system was hacked",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态 was hacked"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "system",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "hacked",
+          "pos": "分词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the system",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "was hacked",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "在系统被(过去)非法入侵之前",
+    "english": "before the system was hacked",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before引导时间状语从句", "被动语态 was hacked"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "system",
+          "pos": "名词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "hacked",
+          "pos": "分词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "the system was hacked",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 28
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "那个密码(过去已经)被改变",
+    "english": "the password had been changed",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "had been + 过去分词"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "password",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "changed",
+          "pos": "分词",
+          "start": 22,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the password",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "had been changed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "在系统被(过去)非法入侵之前那个密码(过去已经)被改变",
+    "english": "the password had been changed before the system was hacked",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + conj + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "before 引导时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "password",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "changed",
+          "pos": "分词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 30,
+          "end": 36
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "system",
+          "pos": "名词",
+          "start": 41,
+          "end": 47
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 48,
+          "end": 51
+        },
+        {
+          "text": "hacked",
+          "pos": "分词",
+          "start": 52,
+          "end": 58
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the password",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "had been changed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 29
+        },
+        {
+          "text": "before the system was hacked",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 30,
+          "end": 58
+        }
+      ],
+      "structure": "主语 + 谓语 + 连接词 + 从句"
+    }
+  }
+]

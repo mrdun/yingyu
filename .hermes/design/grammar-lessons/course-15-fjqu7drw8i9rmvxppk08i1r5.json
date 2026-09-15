@@ -1,0 +1,7209 @@
+[
+  {
+    "order": 1,
+    "chinese": "支付；付钱",
+    "english": "to pay",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "账单",
+    "english": "the bill",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语", "定冠词 the 表特指"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bill",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "支付账单",
+    "english": "to pay the bill",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pay the bill 付账单"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay the bill",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "他",
+    "english": "him",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "him",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "付钱给他",
+    "english": "to pay him",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pay sb 付钱给某人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay him",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "你(过去)付钱给他",
+    "english": "you paid him",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay sb 付钱给某人", "paid 是 pay 的过去式"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "paid",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "十",
+    "english": "ten",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["ten 十"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ten",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "美元",
+    "english": "dollars",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：美元（复数）"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "dollars",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dollars",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "十美元",
+    "english": "ten dollars",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["ten dollars 十美元"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "dollars",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ten dollars",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "你(过去)付给他十美元",
+    "english": "you paid him ten dollars",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay sb sth 双宾语结构", "一般过去时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "dollars",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "ten dollars",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "你(过去)没有付给他十美元",
+    "english": "you didn't pay him ten dollars",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay sb. sth. 双宾语结构", "didn't + 动词原形表否定"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "dollars",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't pay",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "ten dollars",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "做",
+    "english": "to do",
+    "annotation": {
+      "order": 10,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语 to do"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "做这件事",
+    "english": "to do it",
+    "annotation": {
+      "order": 12,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do sth 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "你(过去)付钱给他去做这件事",
+    "english": "you paid him to do it",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay sb to do sth", "不定式表目的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "to do it",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "你(过去)没有付钱给他去做这件事",
+    "english": "you didn't pay him to do it",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay sb to do sth 结构", "to do it 表目的"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 25,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't pay",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "to do it",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "你(过去)付给他十美元去做这件事",
+    "english": "you paid him ten dollars to do it",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay sb sth to do sth", "不定式表目的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "dollars",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 31,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "ten dollars",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 24
+        },
+        {
+          "text": "to do it",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 25,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语 + 状语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "你(过去)没有付给他十美元去做这件事",
+    "english": "you didn't pay him ten dollars to do it",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay sb. sth. to do sth. 结构", "不定式作目的状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "ten",
+          "pos": "数词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "dollars",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 37,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't pay",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "ten dollars",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 30
+        },
+        {
+          "text": "to do it",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 31,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语 + 状语"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "决定",
+    "english": "to decide",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "我们必须决定",
+    "english": "we have to decide",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示'不得不', 后接动词原形", "decide 意为'决定'"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have to decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "今晚",
+    "english": "tonight",
+    "annotation": {
+      "order": 113,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["时间副词", "今晚"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "tonight",
+          "pos": "副词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tonight",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "我们必须今晚决定",
+    "english": "we have to decide tonight",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示“必须、不得不”", "tonight 作时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "tonight",
+          "pos": "副词",
+          "start": 18,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "have to decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 17
+        },
+        {
+          "text": "tonight",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "我们不必今晚决定",
+    "english": "we don't have to decide tonight",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't have to 表示“不必”", "tonight 作时间状语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "tonight",
+          "pos": "副词",
+          "start": 24,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "don't have to decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 23
+        },
+        {
+          "text": "tonight",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 24,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "我们决定",
+    "english": "we decide",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主语 we + 实义动词 decide", "一般现在时表示习惯或决定"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "去",
+    "english": "to go",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "go 表示去"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "外面",
+    "english": "out",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["副词，常与动词连用表向外"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "去外面",
+    "english": "to go out",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "go out 外出"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to go out",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "我们决定去外面",
+    "english": "we decide to go out",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["decide to do sth 决定做某事", "go out 表示外出"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to go out",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "为了",
+    "english": "for",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["for 介词，意为“为了；对于”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "晚餐",
+    "english": "dinner",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“晚餐；正餐”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dinner",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "为了晚餐",
+    "english": "for dinner",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["for 表示目的", "介词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for dinner",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "我们决定去外面为了晚餐",
+    "english": "we decide to go out for dinner",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["decide to go out 决定外出", "for dinner 表示目的/用途"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 24,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to go out",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "for dinner",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 20,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "决定(过去)",
+    "english": "decided",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "decided",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "我们(过去)决定",
+    "english": "we decided",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide 可作不及物动词，单独作谓语"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "我们(过去)决定去外面为了晚餐",
+    "english": "we decided to go out for dinner",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 决定做某事", "go out for dinner 出去吃晚饭"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "go",
+          "pos": "动词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "out",
+          "pos": "副词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "to go out",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "text": "for dinner",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "驾驶",
+    "english": "to drive",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "那辆汽车",
+    "english": "the car",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "开那辆车",
+    "english": "to drive the car",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive the car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "我(过去)决定",
+    "english": "I decided",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide 可作不及物动词", "一般过去时"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "我(过去)决定开那辆车",
+    "english": "I decided to drive the car",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 决定做某事", "不定式作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 23,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to drive the car",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "我开那辆车",
+    "english": "I drive the car",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the car 特指，用定冠词", "一般现在时表经常性动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 12,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drive",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "我(过去)开那辆车",
+    "english": "I drove the car",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["drove 是 drive 的过去式", "过去发生的动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drove",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 12,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drove",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "昨天",
+    "english": "yesterday",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "yesterday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "我昨天开了那辆车",
+    "english": "I drove the car yesterday",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["drove 是 drive 的过去式", "yesterday 作时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drove",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 16,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drove",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "yesterday",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 16,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "我昨天没有开那辆车",
+    "english": "I didn't drive the car yesterday",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["yesterday 与一般过去时连用", "didn't + 动词原形"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't drive",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "the car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "yesterday",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "相信",
+    "english": "to believe",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "动词 believe 原形"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to believe",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "相信我",
+    "english": "to believe me",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "believe + 宾语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to believe",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "你需要",
+    "english": "you need",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语+及物动词 need 缺少宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "你需要相信我",
+    "english": "you need to believe me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 结构", "believe 后接宾语 me"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to believe",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "你相信我",
+    "english": "you believe me",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主谓宾结构", "believe sb 相信某人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "believe",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "你不相信我",
+    "english": "you don't believe me",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't 表否定，后接动词原形", "believe sb 相信某人"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't believe",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "你(过去)相信我",
+    "english": "you believed me",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主谓宾结构", "believed 为过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "believed",
+          "pos": "动词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "believed",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "你(过去)不相信我",
+    "english": "you didn't believe me",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["didn't believe 表示过去没有相信"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't believe",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "但是",
+    "english": "but",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词：但是，表转折"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "但是你(过去)不相信我",
+    "english": "but you didn't believe me",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["but 引导的转折从句片段", "一般过去时否定"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 23,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "didn't believe",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 22
+        },
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 23,
+          "end": 25
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "我昨天开了那辆车但是你(过去)不相信我",
+    "english": "I drove the car yesterday but you didn't believe me",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv + conj + S + V + O",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["but 连接两个并列分句", "didn't believe 为否定过去式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drove",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 16,
+          "end": 25
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 34,
+          "end": 40
+        },
+        {
+          "text": "believe",
+          "pos": "动词",
+          "start": 41,
+          "end": 48
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 49,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drove",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "yesterday",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 16,
+          "end": 25
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "didn't believe",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 34,
+          "end": 48
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 49,
+          "end": 51
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语 + 连接词 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "改变",
+    "english": "to change",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，非完整句子", "change 改变"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "change",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to change",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "想法",
+    "english": "mind",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["mind：可作名词（头脑/想法）或动词（介意）"],
+      "confidence": 0.45,
+      "words": [
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "我的想法",
+    "english": "my mind",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "名词短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "改变我的想法",
+    "english": "to change my mind",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，非完整句子", "change my mind 改变我的主意"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "change",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to change my mind",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "我想要",
+    "english": "I want",
+    "annotation": {
+      "order": 99,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓片段，句意不完整"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "我想要改变我的想法",
+    "english": "I want to change my mind",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "change one's mind 改变主意"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "change",
+          "pos": "动词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 20,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to change my mind",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "我改变我的想法",
+    "english": "I change my mind",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["change one's mind 改变主意", "一般现在时表习惯"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "change",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "change",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "my mind",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "改变了",
+    "english": "changed",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词过去式/过去分词：改变"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "changed",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "changed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "我改变了我的想法",
+    "english": "I changed my mind",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["change one's mind 改变主意", "changed 为不规则过去式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "changed",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "changed",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "my mind",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "再次",
+    "english": "again",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：再一次，又"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "again",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "again",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "我再次改变了我的想法",
+    "english": "I changed my mind again",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["again 表示“再一次”", "一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "changed",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "again",
+          "pos": "副词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "changed",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "my mind",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "again",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "决定",
+    "english": "to decide",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "开那辆车",
+    "english": "to drive the car",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drive the car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "我(过去)决定开那辆车",
+    "english": "I decided to drive the car",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 决定做某事", "不定式作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 23,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to drive the car",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "我再次改变了我的想法我(过去)决定开那辆车",
+    "english": "I changed my mind again I decided to drive the car",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv + S + V + O",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["两句连写，缺少连词", "decided to do sth 决定做某事"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "changed",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "mind",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "again",
+          "pos": "副词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 26,
+          "end": 33
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 37,
+          "end": 42
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 43,
+          "end": 46
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 47,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "changed",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "my mind",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "again",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 26,
+          "end": 33
+        },
+        {
+          "text": "to drive the car",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 34,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "尝试",
+    "english": "to try",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to try",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "我(过去)决定尝试",
+    "english": "I decided to try",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 决定做某事", "不定式作宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to try",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "我(过去)决定尝试开那辆车",
+    "english": "I decided to try to drive the car",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 决定做某事", "不定式嵌套 to try to do"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 30,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to try to drive the car",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "我(过去)没有决定尝试开那辆车",
+    "english": "I didn't decide to try to drive the car",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 决定做某事", "try to do sth 尝试做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 26,
+          "end": 31
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 36,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        },
+        {
+          "text": "to try to drive the car",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "我尝试开那辆车",
+    "english": "I try to drive the car",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["try to do sth 结构", "不定式短语作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 19,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "try",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "to drive the car",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 6,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "我不尝试开那辆车",
+    "english": "I don't try to drive the car",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["try to do sth 尝试做某事", "drive the car 开车"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't try",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to drive the car",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 12,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "我(过去)尝试开那辆车",
+    "english": "I tried to drive the car",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["try to do sth", "不定式作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "tried",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 21,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "tried",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "to drive the car",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 8,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "我(过去)没有尝试开那辆车",
+    "english": "I didn't try to drive the car",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["try to do sth 试图做某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 26,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't try",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to drive the car",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "我开那辆车",
+    "english": "I drive the car",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the car 特指，用定冠词", "一般现在时表经常性动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 12,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drive",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "我不开那辆车",
+    "english": "I don't drive the car",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["否定句", "定冠词 the"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 18,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't drive",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "the car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "我(过去)开那辆车",
+    "english": "I drove the car",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["drove 是 drive 的过去式", "过去发生的动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drove",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 12,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "drove",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "我(过去)没有开那辆车",
+    "english": "I didn't drive the car",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["didn't + 动词原形", "drive the car 开车"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "drive",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 19,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't drive",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "the car",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "停止；阻止",
+    "english": "to stop",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to stop",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "他",
+    "english": "him",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "him",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "阻止他",
+    "english": "to stop him",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语带宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to stop him",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "我(过去)尝试阻止他",
+    "english": "I tried to stop him",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["try to do sth", "不定式作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "tried",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "tried",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "to stop him",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 8,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "我(过去)没有尝试阻止他",
+    "english": "I didn't try to stop him",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["try to do sth 试图做某事", "stop sb 阻止某人"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 21,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't try",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to stop him",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "找到",
+    "english": "to find",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "一个方法",
+    "english": "a way",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "way",
+          "pos": "名词",
+          "start": 2,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a way",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "找到一个方法",
+    "english": "to find a way",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "find a way 找到办法"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "way",
+          "pos": "名词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find a way",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "我必须找到一个方法",
+    "english": "I have to find a way",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to + 动词原形", "find a way 找到办法"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "text": "way",
+          "pos": "名词",
+          "start": 17,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have to find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "a way",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "阻止他",
+    "english": "to stop him",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语带宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to stop him",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "我必须找到一个方法阻止他",
+    "english": "I have to find a way to stop him",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示“必须”", "to stop him 作后置定语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "text": "way",
+          "pos": "名词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 29,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have to find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "a way",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "to stop him",
+          "role": "定语",
+          "roleType": "不定式短语",
+          "start": 21,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "我不必找到一个方法阻止他",
+    "english": "I don't have to find a way to stop him",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Attrib",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 的否定", "不定式作定语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "way",
+          "pos": "名词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 35,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't have to find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 20
+        },
+        {
+          "text": "a way",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "to stop him",
+          "role": "定语",
+          "roleType": "不定式短语",
+          "start": 27,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 定语"
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "我(过去)必须",
+    "english": "I had to",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.8,
+      "keyPoints": ["had to 后须接动词原形"],
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I had to",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "我(过去)必须找到一个方法",
+    "english": "I had to find a way",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["had to 后接动词原形 find", "find a way 意为找到办法"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "text": "way",
+          "pos": "名词",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had to find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "a way",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "我(过去)必须找到一个方法阻止他",
+    "english": "I had to find a way to stop him",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["had to 表示过去必须", "to stop him 作定语修饰 way"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "text": "way",
+          "pos": "名词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 28,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had to find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "a way to stop him",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "我(过去)不必找到一个方法阻止他",
+    "english": "I didn't have to find a way to stop him",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Attrib",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["didn't have to + 动词原形", "不定式作定语修饰 way"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 22,
+          "end": 23
+        },
+        {
+          "text": "way",
+          "pos": "名词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 36,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't have to find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 21
+        },
+        {
+          "text": "a way",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "to stop him",
+          "role": "定语",
+          "roleType": "不定式短语",
+          "start": 28,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 定语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "我找到一个方法阻止他",
+    "english": "I find a way to stop him",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["find a way to do sth 想办法做某事", "to stop him 为不定式作定语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "way",
+          "pos": "名词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 21,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a way",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "to stop him",
+          "role": "定语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "我(过去)找到一个方法阻止他",
+    "english": "I found a way to stop him",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Attrib",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["find a way to do sth 找到做某事的方法", "to stop him 作后置定语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "found",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "way",
+          "pos": "名词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 22,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "found",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "a way",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "to stop him",
+          "role": "定语",
+          "roleType": "不定式短语",
+          "start": 14,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 定语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "我(过去)没有找到一个方法阻止他",
+    "english": "I didn't find a way to stop him",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["find a way to do sth 找到做某事的方法", "stop sb 阻止某人"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "text": "way",
+          "pos": "名词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 28,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "a way",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "to stop him",
+          "role": "定语",
+          "roleType": "不定式短语",
+          "start": 20,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "我阻止他",
+    "english": "I stop him",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["stop sb表示阻止某人", "him为宾格代词作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "stop",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "我阻止了他",
+    "english": "I stopped him",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["stopped为stop的过去式", "stop sb表示阻止某人"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "stopped",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "stopped",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "我(过去)没有阻止他",
+    "english": "I didn't stop him",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["stop sb 阻止某人"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 14,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't stop",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "问",
+    "english": "to ask",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“询问”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to ask",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "问过",
+    "english": "asked",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["ask 的过去式/过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "asked",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "asked",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "他们",
+    "english": "them",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "them",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "问过他们",
+    "english": "asked them",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["asked + 宾语 them"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "asked",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "asked them",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "我问过他们",
+    "english": "I asked them",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主语 + 及物动词 + 宾语", "them 为宾格代词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "asked",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "asked",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "them",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "那个问题",
+    "english": "the question",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "相同的",
+    "english": "same",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，相同的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "same",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "same",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "那个相同的问题",
+    "english": "the same question",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["定冠词+形容词+名词构成名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "same",
+          "pos": "形容词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the same question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "我问过他们那个相同的问题",
+    "english": "I asked them the same question",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["ask sb sth 双宾语结构", "the same question 作直接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "asked",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "same",
+          "pos": "形容词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 22,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "asked",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "them",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "the same question",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "我没有问过他们那个相同的问题",
+    "english": "I didn't ask them the same question",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["ask sb sth 双宾语结构", "the same 前用定冠词 the"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "same",
+          "pos": "形容词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 27,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't ask",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "them",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "the same question",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "回答",
+    "english": "to answer",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“回答”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to answer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "回答过",
+    "english": "answered",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词 answer 的过去式/过去分词：回答"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "answered",
+          "pos": "动词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "answered",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "没有人",
+    "english": "nobody",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "nobody",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "nobody",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "没有人回答过",
+    "english": "nobody answered",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["nobody 作主语时谓语用单数", "answered 为过去式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "nobody",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "answered",
+          "pos": "动词",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "nobody",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "answered",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "但是",
+    "english": "but",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词：但是，表转折"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "但是没有人回答过",
+    "english": "but nobody answered",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般过去时",
+      "keyPoints": ["nobody 作主语，谓语用单数", "answered：一般过去时"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "nobody",
+          "pos": "代词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "answered",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but nobody answered",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "我问过他们那个相同的问题但是没有人回答过",
+    "english": "I asked them the same question but nobody answered",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO + conj + S + V",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["but 连接两个并列分句", "nobody 作第二分句主语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "asked",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "same",
+          "pos": "形容词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 22,
+          "end": 30
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "nobody",
+          "pos": "代词",
+          "start": 35,
+          "end": 41
+        },
+        {
+          "text": "answered",
+          "pos": "动词",
+          "start": 42,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "asked",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "them",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "the same question",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 30
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "nobody",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 35,
+          "end": 41
+        },
+        {
+          "text": "answered",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 42,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语 + 连接词 + 主语 + 谓语"
+    }
+  }
+]

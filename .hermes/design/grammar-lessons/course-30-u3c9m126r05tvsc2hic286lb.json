@@ -1,0 +1,8797 @@
+[
+  {
+    "order": 1,
+    "chinese": "惊喜",
+    "english": "surprise",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "surprise",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "surprise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "一个惊喜",
+    "english": "a surprise",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["a surprise 一个惊喜"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "surprise",
+          "pos": "名词",
+          "start": 2,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a surprise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "大的",
+    "english": "big",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 big，大的"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "big",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "一个大惊喜",
+    "english": "a big surprise",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：a big surprise"],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "surprise",
+          "pos": "名词",
+          "start": 6,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a big surprise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "给",
+    "english": "to give",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "她",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "给她",
+    "english": "to give her",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构", "her 作代词表示对象"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "给她一个大惊喜",
+    "english": "to give her a big surprise",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构", "give sb sth 双宾语结构"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "surprise",
+          "pos": "名词",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give her a big surprise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "我想要",
+    "english": "I want",
+    "annotation": {
+      "order": 99,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓片段，句意不完整"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "我想要给她一个大惊喜",
+    "english": "I want to give her a big surprise",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["give sb sth 双宾语结构", "不定式作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 19,
+          "end": 20
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "surprise",
+          "pos": "名词",
+          "start": 25,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to give her a big surprise",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "给",
+    "english": "to give",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "建议",
+    "english": "advice",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["不可数名词：建议、忠告"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "一些",
+    "english": "some",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["限定词，后接可数名词复数或不可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "some",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "一些建议",
+    "english": "some advice",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["advice 为不可数名词，用 some 修饰"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "some advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "给一些建议",
+    "english": "to give some advice",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "advice 为不可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give some advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "给我",
+    "english": "to give me",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "give me 表示给我"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "给我一些建议",
+    "english": "to give me some advice",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "give sb some advice 给某人建议"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give me some advice",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "可以",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "你可以",
+    "english": "you can",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["you 是主语，can 是情态动词", "缺少实义动词，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "你可以给我一些建议",
+    "english": "you can give me some advice",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["give sb sth 双宾语结构", "some advice 作直接宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can give",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "some advice",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "你可以给我一些建议吗？",
+    "english": "can you give me some advice",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["can 引导的一般疑问句", "some 修饰不可数名词 advice"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "give",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "some advice",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "希望",
+    "english": "to hope",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["to hope 希望", "hope to do sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hope",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hope",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "我希望",
+    "english": "I hope",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["hope 是及物动词，后需接宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hope",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I hope",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "我希望你可以给我一些建议",
+    "english": "I hope you can give me some advice",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["hope 后接宾语从句（省略 that）", "advice 为不可数名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hope",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "advice",
+          "pos": "名词",
+          "start": 28,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hope",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you can give me some advice",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 7,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "希望",
+    "english": "hope",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["希望；可作动词或名词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "hope",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "hope",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "给",
+    "english": "to give",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "给希望",
+    "english": "to give hope",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "give hope 表示给予希望"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "hope",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give hope",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "给我希望",
+    "english": "to give me hope",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "give sb hope 给某人希望"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "hope",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give me hope",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "你给我希望",
+    "english": "you give me hope",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["give sb sth 双宾语结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "hope",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "give",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "note": "间接宾语",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "hope",
+          "role": "宾语",
+          "roleType": "单词",
+          "note": "直接宾语",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "手",
+    "english": "hand",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "tense": null,
+      "keyPoints": ["hand 可作名词(手)或动词(递)"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "你的手",
+    "english": "your hand",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["物主代词 your + 名词", "片段，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "给我",
+    "english": "to give me",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "give me 表示给我"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "给我你的手",
+    "english": "to give me your hand",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "give sb your hand 拉某人一把"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give me your hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "给我帮把手",
+    "english": "to give me a hand",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "give sb a hand 伸出援手"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to give me a hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "你可以",
+    "english": "you can",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["you 是主语，can 是情态动词", "缺少实义动词，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "你可以给我帮把手",
+    "english": "you can give me a hand",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["give sb a hand 意为“帮忙”"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 18,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can give",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "a hand",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "你可以给我帮把手?",
+    "english": "can you give me a hand",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["can 引导的一般疑问句", "give sb a hand 意为帮忙"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 18,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "give",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "a hand",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "希望",
+    "english": "to hope",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["to hope 希望", "hope to do sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hope",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hope",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "我希望",
+    "english": "I hope",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["hope 是及物动词，后需接宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hope",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I hope",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "我希望你可以给我帮把手",
+    "english": "I hope you can give me a hand",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["hope 后接宾语从句（省略 that）", "give sb a hand 意为“帮忙”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hope",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "give",
+          "pos": "动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 23,
+          "end": 24
+        },
+        {
+          "text": "hand",
+          "pos": "名词",
+          "start": 25,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hope",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you can give me a hand",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 7,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "递",
+    "english": "to hand",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "hand 递给；交给"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hand",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hand",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "刀",
+    "english": "knife",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "knife",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "那把刀",
+    "english": "the knife",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，缺少谓语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the knife",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "递那把刀",
+    "english": "to hand the knife",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["不定式短语 to hand the knife"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hand",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hand the knife",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "递给我",
+    "english": "to hand me",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "hand me 递给我"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hand",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hand me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "那把刀",
+    "english": "the knife",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，缺少谓语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the knife",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "递给我那把刀",
+    "english": "to hand me the knife",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": ["不定式短语 to hand me the knife"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hand",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hand me the knife",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "可以",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "你可以",
+    "english": "you can",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["you 是主语，can 是情态动词", "缺少实义动词，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "你可以递给我那把刀",
+    "english": "you can hand me the knife",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["hand sb sth 双宾语", "can 表示请求"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hand",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can hand",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "the knife",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "你可以递给我那把刀吗?",
+    "english": "can you hand me the knife",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["can 引导的请求句型", "hand sb. sth. 双宾语结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hand",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hand",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "the knife",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "可以（礼貌版）",
+    "english": "could",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["情态动词 can 的过去式，表委婉"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "could",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "could",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "你可以（礼貌版）递给我那把刀吗？",
+    "english": "could you hand me the knife",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["Could you do sth? 委婉请求", "hand sb sth 双宾语结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "could",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "hand",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "knife",
+          "pos": "名词",
+          "start": 22,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "could",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "hand",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "the knife",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "读",
+    "english": "to read",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "故事",
+    "english": "story",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：故事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "story",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "读一个故事",
+    "english": "to read a story",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "a story 作 read 的宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 10,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read a story",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "床",
+    "english": "bed",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：床"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "bed",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "bed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "时间",
+    "english": "time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "就寝时间",
+    "english": "bedtime",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：就寝时间"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "bedtime",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "bedtime",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "故事",
+    "english": "story",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：故事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "story",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "睡前故事",
+    "english": "a bedtime story",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bedtime",
+          "pos": "名词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 10,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a bedtime story",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "读",
+    "english": "to read",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "读一个睡前故事",
+    "english": "to read a bedtime story",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "bedtime 作定语修饰 story"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "bedtime",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read a bedtime story",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "她",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "读给她",
+    "english": "to read her",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "her 作 read 的宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "读给她一个睡前故事",
+    "english": "to read her a bedtime story",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "read sb sth 双宾语结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "bedtime",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 22,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read her a bedtime story",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "我的女儿",
+    "english": "my daughter",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "想要",
+    "english": "wants",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["第三人称单数形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "wants",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "我的女儿想要我",
+    "english": "my daughter wants me",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb 想要某人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "wants",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "我的女儿想要我读给她一个睡前故事",
+    "english": "my daughter wants me to read her a bedtime story",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb to do sth 想要某人做某事", "read sb sth 给某人读某物"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 33,
+          "end": 34
+        },
+        {
+          "text": "bedtime",
+          "pos": "名词",
+          "start": 35,
+          "end": 42
+        },
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 43,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "wants",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "to read her a bedtime story",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 21,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "打电话",
+    "english": "to call",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["call 打电话；称呼", "不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to call",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "打电话给我",
+    "english": "to call me",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["call sb 给某人打电话", "me 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to call",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "忘记",
+    "english": "to forget",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "forget 表示“忘记”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to forget",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "忘记打电话给我",
+    "english": "to forget to call me",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "forget to do sth 忘记要做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to forget",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "to call",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 18,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "你忘记打电话给我",
+    "english": "you forget to call me",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["forget to do sth 忘记要做某事", "to call me 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "forget",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "to call me",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "不要",
+    "english": "don't",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do not 的缩写，构成否定"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "你不要忘记打电话给我",
+    "english": "you don't forget to call me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["forget to do sth 忘记要做某事", "don't 表否定"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 25,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't forget",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "to call me",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "不要忘记打电话给我",
+    "english": "don't forget to call me",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "祈使句",
+      "tense": "一般现在时",
+      "keyPoints": ["否定祈使句：Don't + 动词原形", "forget to do sth 忘记要做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 6,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't forget",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "to call me",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "到达",
+    "english": "to get",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to get",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "那里",
+    "english": "there",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "到达那里",
+    "english": "to get there",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构", "there 作副词表地点"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to get there",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "你到达那里",
+    "english": "you get there",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["get there 中 there 为副词", "一般现在时"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "get",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "there",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "当......时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "当你达到那里的时候",
+    "english": "when you get there",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when引导的时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when you get there",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "不要忘记打电话给我当你到达那里的时候",
+    "english": "don't forget to call me when you get there",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "祈使句",
+      "tense": "一般现在时",
+      "keyPoints": ["when 引导时间状语从句", "get there 到达那里"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "forget",
+          "pos": "动词",
+          "start": 6,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 37,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't forget",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "to call me",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 23
+        },
+        {
+          "text": "when you get there",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 24,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "买",
+    "english": "to buy",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "裙子",
+    "english": "dress",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：连衣裙；也可作动词"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dress",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "新的",
+    "english": "new",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“新的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "new",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "一件新裙子",
+    "english": "a new dress",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，中心词 dress"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a new dress",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "买一件新裙子",
+    "english": "to buy a new dress",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["new 作定语修饰 dress"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "a new dress",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "她",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "买给她",
+    "english": "to buy her",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["her 作宾语，指人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "买给她一件新裙子",
+    "english": "to buy her a new dress",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["her 为间接宾语，a new dress 为直接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "a new dress",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "我买给她一件新裙子",
+    "english": "I buy her a new dress",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["buy sb sth 双宾语结构", "一般现在时表习惯"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 16,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "buy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "her",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "a new dress",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 10,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "我（过去）买给她一件新裙子",
+    "english": "I bought her a new dress",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["buy sb sth 双宾语结构"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "her",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "a new dress",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "女儿",
+    "english": "daughter",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "我的女儿",
+    "english": "my daughter",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "我（过去）买给我的女儿一件新裙子",
+    "english": "I bought my daughter a new dress",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["buy sb sth 双宾语结构"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 27,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "my daughter",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 20
+        },
+        {
+          "text": "a new dress",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "周",
+    "english": "week",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：星期，周"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "week",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "上一个",
+    "english": "last",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "上周",
+    "english": "last week",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["过去时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last week",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "我上周买给我女儿一件新裙子",
+    "english": "I bought my daughter a new dress last week",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["buy sb sth 双宾语结构", "last week 作时间状语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 27,
+          "end": 32
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 38,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "my daughter",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 20
+        },
+        {
+          "text": "a new dress",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 32
+        },
+        {
+          "text": "last week",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 33,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语 + 状语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "出生",
+    "english": "birth",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词 birth，出生"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "birth",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "birth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "日",
+    "english": "day",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "生日",
+    "english": "birthday",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词 birthday，生日"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "birthday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "礼物",
+    "english": "gift",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：礼物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "gift",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "生日礼物",
+    "english": "birthday gift",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：生日礼物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "birthday gift",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "一个生日礼物",
+    "english": "a birthday gift",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：a birthday gift"],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a birthday gift",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "买",
+    "english": "to buy",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "买一个生日礼物",
+    "english": "to buy a birthday gift",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，birthday gift 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 18,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "a birthday gift",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "我的女儿",
+    "english": "my daughter",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "买给我的女儿",
+    "english": "to buy my daughter",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["buy sb 给某人买", "my daughter 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 10,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "my daughter",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "买给我的女儿一个生日礼物",
+    "english": "to buy my daughter a birthday gift",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["buy sb sth 双宾语结构", "a birthday gift 作直接宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 19,
+          "end": 20
+        },
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 21,
+          "end": 29
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "my daughter",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 18
+        },
+        {
+          "text": "a birthday gift",
+          "role": null,
+          "roleType": null,
+          "start": 19,
+          "end": 34
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "我将会",
+    "english": "I will",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["will为情态动词表将来", "缺少谓语动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "我将会买给我的女儿一个生日礼物",
+    "english": "I will buy my daughter a birthday gift",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["buy sb sth 双宾语结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 14,
+          "end": 22
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 23,
+          "end": 24
+        },
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 25,
+          "end": 33
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 34,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will buy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "my daughter",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 22
+        },
+        {
+          "text": "a birthday gift",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 23,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "月",
+    "english": "month",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["月份"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "month",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "month",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "下一个",
+    "english": "next",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["next 表示“下一个的”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "next",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "下个月",
+    "english": "next month",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["next 修饰时间名词 month"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "month",
+          "pos": "名词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "next month",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "下个月我将会买给我女儿一个生日礼物",
+    "english": "I will buy my daughter a birthday gift next month",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["buy sb sth 双宾语结构", "next month 作时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 14,
+          "end": 22
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 23,
+          "end": 24
+        },
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 25,
+          "end": 33
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "month",
+          "pos": "名词",
+          "start": 44,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will buy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "my daughter",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 22
+        },
+        {
+          "text": "a birthday gift",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 23,
+          "end": 38
+        },
+        {
+          "text": "next month",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 39,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语 + 状语"
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "做",
+    "english": "to make",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "杯",
+    "english": "cup",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "cup",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "cup",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "一杯",
+    "english": "a cup",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：a cup"],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "cup",
+          "pos": "名词",
+          "start": 2,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a cup",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "咖啡",
+    "english": "coffee",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：咖啡（不可数）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "coffee",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "coffee",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "一杯咖啡",
+    "english": "a cup of coffee",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "表示'一杯咖啡'"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "cup",
+          "pos": "名词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "coffee",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a cup of coffee",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "做一杯咖啡",
+    "english": "to make a cup of coffee",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["make a cup of coffee 冲杯咖啡"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "cup",
+          "pos": "名词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "coffee",
+          "pos": "名词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make a cup of coffee",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "我做一杯咖啡",
+    "english": "I make a cup of coffee",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["make a cup of coffee 冲一杯咖啡", "一般现在时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "cup",
+          "pos": "名词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "coffee",
+          "pos": "名词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "make",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a cup of coffee",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "我自己",
+    "english": "myself",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["反身代词，意为“我自己”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "myself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "我做给我自己一杯咖啡",
+    "english": "I make myself a cup of coffee",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["make sb sth 双宾语结构", "一般现在时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "text": "cup",
+          "pos": "名词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "coffee",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "make",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "myself",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "a cup of coffee",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "早晨",
+    "english": "morning",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词：早晨；上午"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "morning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "每个",
+    "english": "every",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["每一个"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "每天早晨",
+    "english": "every morning",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["每天早上"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every morning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "每天早晨我做给自己一杯咖啡",
+    "english": "I make myself a cup of coffee every morning",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["make sb sth 双宾语结构", "every morning 作时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "text": "cup",
+          "pos": "名词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "coffee",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 30,
+          "end": 35
+        },
+        {
+          "text": "morning",
+          "pos": "名词",
+          "start": 36,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "make",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "myself",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "a cup of coffee",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 29
+        },
+        {
+          "text": "every morning",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 30,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语 + 状语"
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "做给我",
+    "english": "to make me",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "做给我一杯咖啡",
+    "english": "to make me a cup of coffee",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "make + 双宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "text": "cup",
+          "pos": "名词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "coffee",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make me a cup of coffee",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "你可以",
+    "english": "you can",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["you 是主语，can 是情态动词", "缺少实义动词，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "你可以做给我一杯咖啡",
+    "english": "you can make me a cup of coffee",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["双宾语结构 make sb sth", "情态动词can表能力"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "text": "cup",
+          "pos": "名词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "coffee",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can make",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "a cup of coffee",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "你可以做给我一杯咖啡吗？",
+    "english": "can you make me a cup of coffee",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["make sb. sth. 双宾语", "a cup of coffee 一杯咖啡"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "text": "cup",
+          "pos": "名词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "coffee",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "make",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "a cup of coffee",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "她",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "做给她",
+    "english": "to make her",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "你可以做给她一杯咖啡吗？",
+    "english": "can you make her a cup of coffee",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["make sb. sth. 双宾语", "a cup of coffee 一杯咖啡"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 17,
+          "end": 18
+        },
+        {
+          "text": "cup",
+          "pos": "名词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "coffee",
+          "pos": "名词",
+          "start": 26,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "make",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "her",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "a cup of coffee",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "开心",
+    "english": "happy",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "tense": null,
+      "keyPoints": ["形容词：高兴的"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "happy",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "happy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 153,
+    "chinese": "你可以让她开心吗？",
+    "english": "can you make her happy",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["make sb. + 形容词,形容词作宾补", "make her happy 使她开心"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "happy",
+          "pos": "形容词",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "make",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "her",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "happy",
+          "role": "宾语补足语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 154,
+    "chinese": "让她开心",
+    "english": "to make her happy",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "make + 宾语 + 形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "happy",
+          "pos": "形容词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make her happy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 155,
+    "chinese": "我想要",
+    "english": "I want",
+    "annotation": {
+      "order": 99,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓片段，句意不完整"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 156,
+    "chinese": "我想要让她开心",
+    "english": "I want to make her happy",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["make sb happy 使某人开心"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "happy",
+          "pos": "形容词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to make her happy",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 157,
+    "chinese": "生日",
+    "english": "birthday",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词 birthday，生日"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "birthday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 158,
+    "chinese": "小月亮的生日",
+    "english": "Xiaoyueliang's birthday",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "Xiaoyueliang's",
+          "pos": "名词",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 15,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xiaoyueliang's birthday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 159,
+    "chinese": "明天",
+    "english": "tomorrow",
+    "annotation": {
+      "order": 91,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词：明天"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 160,
+    "chinese": "明天是小月亮的生日",
+    "english": "tomorrow is Xiaoyueliang's birthday",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "Xiaoyueliang's 名词所有格"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "Xiaoyueliang's",
+          "pos": "名词",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 27,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "Xiaoyueliang's birthday",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 161,
+    "chinese": "明天是小月亮的生日而且我想要让她开心",
+    "english": "tomorrow is Xiaoyueliang's birthday and I want to make her happy",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + conj + S + V + O",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["and 连接两个分句", "want to do sth 不定式作宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "Xiaoyueliang's",
+          "pos": "名词",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 27,
+          "end": 35
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 40,
+          "end": 41
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 42,
+          "end": 46
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 47,
+          "end": 49
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 50,
+          "end": 54
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 55,
+          "end": 58
+        },
+        {
+          "text": "happy",
+          "pos": "形容词",
+          "start": 59,
+          "end": 64
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "Xiaoyueliang's birthday",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 35
+        },
+        {
+          "text": "and",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 40,
+          "end": 41
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 42,
+          "end": 46
+        },
+        {
+          "text": "to make her happy",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 47,
+          "end": 64
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 连接词 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 162,
+    "chinese": "买",
+    "english": "to buy",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 163,
+    "chinese": "一件新裙子",
+    "english": "a new dress",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，中心词 dress"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a new dress",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 164,
+    "chinese": "买一件新裙子",
+    "english": "to buy a new dress",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["new 作定语修饰 dress"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "a new dress",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 165,
+    "chinese": "她",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 166,
+    "chinese": "买给她",
+    "english": "to buy her",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["her 作宾语，指人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 167,
+    "chinese": "买给她一件新裙子",
+    "english": "to buy her a new dress",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["her 为间接宾语，a new dress 为直接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "a new dress",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 168,
+    "chinese": "我买给她一件新裙子",
+    "english": "I buy her a new dress",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["buy sb sth 双宾语结构", "一般现在时表习惯"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 16,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "buy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "her",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "a new dress",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 10,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 169,
+    "chinese": "我（过去）买给她一件新裙子",
+    "english": "I bought her a new dress",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["buy sb sth 双宾语结构"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "her",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "a new dress",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 170,
+    "chinese": "上周",
+    "english": "last week",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["过去时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last week",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 171,
+    "chinese": "我上周买给她一件新裙子",
+    "english": "I bought her a new dress last week",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["buy sb sth 双宾语结构", "last week 作时间状语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "bought",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "her",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "a new dress",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 24
+        },
+        {
+          "text": "last week",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 25,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语 + 状语"
+    }
+  },
+  {
+    "order": 172,
+    "chinese": "所以",
+    "english": "so",
+    "annotation": {
+      "order": 173,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["并列连词，表示所以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "so",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "so",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 173,
+    "chinese": "所以我上周买给她一件新裙子",
+    "english": "so I bought her a new dress last week",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["so 引出结果", "buy sb sth 双宾语结构"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "so",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 33,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "so",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "text": "bought",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "her",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "a new dress",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 27
+        },
+        {
+          "text": "last week",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 28,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语 + 状语"
+    }
+  },
+  {
+    "order": 174,
+    "chinese": "明天是小月亮的生日而且我想要让她开心所以我上周买给她一件新裙子",
+    "english": "tomorrow is Xiaoyueliang's birthday and I want to make her happy so I bought her a new dress last week",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + conj + S + V + O + conj + S + V + IO + DO + Adv",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["and/so 连接三个分句", "bought sb sth 双宾语结构"],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "Xiaoyueliang's",
+          "pos": "名词",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "birthday",
+          "pos": "名词",
+          "start": 27,
+          "end": 35
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 40,
+          "end": 41
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 42,
+          "end": 46
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 47,
+          "end": 49
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 50,
+          "end": 54
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 55,
+          "end": 58
+        },
+        {
+          "text": "happy",
+          "pos": "形容词",
+          "start": 59,
+          "end": 64
+        },
+        {
+          "text": "so",
+          "pos": "连词",
+          "start": 65,
+          "end": 67
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 68,
+          "end": 69
+        },
+        {
+          "text": "bought",
+          "pos": "动词",
+          "start": 70,
+          "end": 76
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 77,
+          "end": 80
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 81,
+          "end": 82
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 83,
+          "end": 86
+        },
+        {
+          "text": "dress",
+          "pos": "名词",
+          "start": 87,
+          "end": 92
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 93,
+          "end": 97
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 98,
+          "end": 102
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "Xiaoyueliang's birthday",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 35
+        },
+        {
+          "text": "and",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 40,
+          "end": 41
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 42,
+          "end": 46
+        },
+        {
+          "text": "to make her happy",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 47,
+          "end": 64
+        },
+        {
+          "text": "so",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 65,
+          "end": 67
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 68,
+          "end": 69
+        },
+        {
+          "text": "bought",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 70,
+          "end": 76
+        },
+        {
+          "text": "her",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 77,
+          "end": 80
+        },
+        {
+          "text": "a new dress",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 81,
+          "end": 92
+        },
+        {
+          "text": "last week",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 93,
+          "end": 102
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 连接词 + 主语 + 谓语 + 宾语 + 连接词 + 主语 + 谓语 + 间接宾语 + 直接宾语 + 状语"
+    }
+  }
+]

@@ -1,0 +1,8008 @@
+[
+  {
+    "order": 1,
+    "chinese": "支付",
+    "english": "to pay",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "这个账单",
+    "english": "the bill",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语", "定冠词 the 表特指"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bill",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "支付这个账单",
+    "english": "to pay the bill",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pay the bill 付账单"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay the bill",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "支付(过去)",
+    "english": "paid",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["pay 的过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "paid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "我支付(过去)",
+    "english": "I paid",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay 的过去式 paid，付款"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "我支付(过去)这个账单",
+    "english": "I paid the bill",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["pay the bill 付账"],
+      "confidence": 0.94,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "the bill",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "时间",
+    "english": "time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "准时",
+    "english": "on time",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["on time 按时，准时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "on time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "我准时支付(过去)这个账单",
+    "english": "I paid the bill on time",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["on time 按时", "pay the bill 付账"],
+      "confidence": 0.94,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "the bill",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 15
+        },
+        {
+          "text": "on time",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "支付(过去)",
+    "english": "paid",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["pay 的过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "paid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "支付(ed形式)",
+    "english": "paid",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["pay 的过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "paid",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "paid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "被支付",
+    "english": "be paid",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["be paid：被支付", "被动语态 be + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "paid",
+          "pos": "分词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be paid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "这个账单",
+    "english": "the bill",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语", "定冠词 the 表特指"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bill",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "这个账单(过去)被支付",
+    "english": "the bill was paid",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态", "was + 过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "paid",
+          "pos": "分词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bill",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "was paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "这个账单准时(过去)被支付",
+    "english": "the bill was paid on time",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态", "on time 作时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "paid",
+          "pos": "分词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 21,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bill",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "was paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "on time",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "将会被支付",
+    "english": "will be paid",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["will be + 过去分词，一般将来时的被动语态"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "paid",
+          "pos": "分词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be paid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "这个账单将会被准时支付",
+    "english": "the bill will be paid on time",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态", "will be + 过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "paid",
+          "pos": "分词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 25,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bill",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "will be paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "on time",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "be(ed形式)",
+    "english": "been",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["be 的过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "been",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "been",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "(已经)被支付",
+    "english": "has been paid",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "paid",
+          "pos": "分词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "has been paid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "这个账单(已经)被准时支付",
+    "english": "the bill has been paid on time",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时被动语态", "has been + 过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "paid",
+          "pos": "分词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 26,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bill",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "has been paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 22
+        },
+        {
+          "text": "on time",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "(过去已经)被支付",
+    "english": "had been paid",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "paid",
+          "pos": "分词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been paid",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "这个账单(过去已经)被准时支付",
+    "english": "the bill had been paid on time",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "had been + 过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bill",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "paid",
+          "pos": "分词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 26,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bill",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "had been paid",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 22
+        },
+        {
+          "text": "on time",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "邀请",
+    "english": "to invite",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["invite 邀请"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "invite",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to invite",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "那个邀请",
+    "english": "the invitation",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "接收",
+    "english": "to accept",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to accept",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "接收(ed形式)",
+    "english": "accepted",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词", "accept 的过去式/过去分词"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "被接受",
+    "english": "be accepted",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["被动语态：被接受"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "那个邀请被接受了",
+    "english": "the invitation is accepted",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时被动语态", "be+过去分词表被动"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "is accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "客人",
+    "english": "guest",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：客人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "guest",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "guest",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "通过",
+    "english": "by",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 by 表方式/施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "通过那个客人",
+    "english": "by the guest",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表被动动作的执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "guest",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by the guest",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "那个邀请被那个客人接受了",
+    "english": "the invitation is accepted by the guest",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时被动语态", "by引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 18,
+          "end": 26
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "guest",
+          "pos": "名词",
+          "start": 34,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "is accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 26
+        },
+        {
+          "text": "by the guest",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "(过去)被接受",
+    "english": "was accepted",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "was accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "那个邀请(过去)被那个客人接受了",
+    "english": "the invitation was accepted by the guest",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态：一般过去时", "by the guest 表施动者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 19,
+          "end": 27
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "guest",
+          "pos": "名词",
+          "start": 35,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "was accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 27
+        },
+        {
+          "text": "by the guest",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "将会被接受",
+    "english": "will be accepted",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般将来时",
+      "keyPoints": ["will be + 过去分词：一般将来时被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 8,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "那个邀请将会被那个客人接受",
+    "english": "the invitation will be accepted by the guest",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["被动语态：一般将来时", "by the guest 表施动者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 23,
+          "end": 31
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "guest",
+          "pos": "名词",
+          "start": 39,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "will be accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 31
+        },
+        {
+          "text": "by the guest",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "(已经)被接受",
+    "english": "has been accepted",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时的被动语态", "has been + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "has been accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "那个邀请(已经)被那个客人接受了",
+    "english": "the invitation has been accepted by the guest",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时被动语态", "by引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 24,
+          "end": 32
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "guest",
+          "pos": "名词",
+          "start": 40,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "has been accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 32
+        },
+        {
+          "text": "by the guest",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 33,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "(过去已经)被接受",
+    "english": "had been accepted",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "had been + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "那个邀请(过去已经)被那个客人接受了",
+    "english": "the invitation had been accepted by the guest",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "by引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 24,
+          "end": 32
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "guest",
+          "pos": "名词",
+          "start": 40,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "had been accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 32
+        },
+        {
+          "text": "by the guest",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 33,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "发出",
+    "english": "to send",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "send",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to send",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "发出(ed形式)",
+    "english": "sent",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["send的过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "sent",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "sent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "被发出",
+    "english": "be sent",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词", "被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sent",
+          "pos": "分词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be sent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "那个邀请",
+    "english": "the invitation",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "那个邀请被发出",
+    "english": "the invitation was sent",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态：一般过去时"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "sent",
+          "pos": "动词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "was sent",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "主办人",
+    "english": "host",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["主人；主持人"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "host",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "host",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "通过主办人",
+    "english": "by the host",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表被动动作的执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "host",
+          "pos": "名词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by the host",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "那个邀请被主办人发出",
+    "english": "the invitation is sent by the host",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态：一般现在时", "by the host 表施动者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "sent",
+          "pos": "动词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "host",
+          "pos": "名词",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "is sent",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "by the host",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 23,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "(过去)被发出",
+    "english": "was sent",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "sent",
+          "pos": "分词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "was sent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "那个邀请(过去)被主办人发出",
+    "english": "the invitation was sent by the host",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态：一般过去时", "by the host 表施动者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "sent",
+          "pos": "动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "host",
+          "pos": "名词",
+          "start": 31,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "was sent",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 23
+        },
+        {
+          "text": "by the host",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "将会被发出",
+    "english": "will be sent",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["will be + 过去分词，一般将来时的被动语态"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "sent",
+          "pos": "分词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be sent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "那个邀请将会被主办人发出",
+    "english": "the invitation will be sent by the host",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态 will be sent", "by the host 引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "sent",
+          "pos": "分词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "host",
+          "pos": "名词",
+          "start": 35,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "will be sent",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 27
+        },
+        {
+          "text": "by the host",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "下周",
+    "english": "next week",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["next 修饰时间名词 week"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "next week",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "那个邀请将会被主办人下周发出",
+    "english": "the invitation will be sent by the host next week",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态 will be sent", "next week 作时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "sent",
+          "pos": "分词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "host",
+          "pos": "名词",
+          "start": 35,
+          "end": 39
+        },
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 40,
+          "end": 44
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 45,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "will be sent",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 27
+        },
+        {
+          "text": "by the host",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 39
+        },
+        {
+          "text": "next week",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 40,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "(已经)被发出",
+    "english": "has been sent",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "sent",
+          "pos": "分词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "has been sent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "那个邀请(已经)被主办人发出",
+    "english": "the invitation has been sent by the host",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时被动语态", "by引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "sent",
+          "pos": "分词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "host",
+          "pos": "名词",
+          "start": 36,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "has been sent",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 28
+        },
+        {
+          "text": "by the host",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 29,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "(过去已经)被发出",
+    "english": "had been sent",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "sent",
+          "pos": "分词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been sent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "那个邀请(过去已经)被主办人发出",
+    "english": "the invitation had been sent by the host",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "by引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "sent",
+          "pos": "分词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "host",
+          "pos": "名词",
+          "start": 36,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "had been sent",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 28
+        },
+        {
+          "text": "by the host",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 29,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "出版",
+    "english": "to publish",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "publish",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to publish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "出版(ed形式)",
+    "english": "published",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["published 已出版的；过去分词", "publish 的过去式/过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "published",
+          "pos": "分词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "published",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "被出版",
+    "english": "be published",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["publish 的过去分词 published", "被动语态 be + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "published",
+          "pos": "分词",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be published",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "书",
+    "english": "book",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：书；动词：预订"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "book",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "那本书被出版",
+    "english": "the book is published",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时被动语态", "be published 被出版"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "published",
+          "pos": "分词",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "is published",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "公司",
+    "english": "company",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：公司；陪伴"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "company",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "通过",
+    "english": "by",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 by 表方式/施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "通过那个公司",
+    "english": "by the company",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表动作执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by the company",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "那本书通过那个公司被出版",
+    "english": "the book is published by the company",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时被动语态", "by the company作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "published",
+          "pos": "分词",
+          "start": 12,
+          "end": 21
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 29,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "is published",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "by the company",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "将会被出版",
+    "english": "will be published",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["will be + 过去分词，一般将来时的被动语态"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "published",
+          "pos": "分词",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be published",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "那本书将会被那个公司出版",
+    "english": "the book will be published by the company",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态", "by the company作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "published",
+          "pos": "分词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 34,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "will be published",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 26
+        },
+        {
+          "text": "by the company",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "(已经)被出版",
+    "english": "has been published",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "published",
+          "pos": "分词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "has been published",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "那本书(已经)被那个公司出版",
+    "english": "the book has been published by the company",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时被动语态", "by the company 由这家公司"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "published",
+          "pos": "分词",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 35,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "has been published",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 27
+        },
+        {
+          "text": "by the company",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "(过去已经)被出版",
+    "english": "had been published",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "published",
+          "pos": "分词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been published",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "那本书(过去已经)被那个公司出版",
+    "english": "the book had been published by the company",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "by the company 由这家公司"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "published",
+          "pos": "分词",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 35,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "had been published",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 27
+        },
+        {
+          "text": "by the company",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "建造",
+    "english": "to construct",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "construct",
+          "pos": "动词",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to construct",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "建造(ed形式)",
+    "english": "constructed",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["construct 的过去式/过去分词：建造"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "constructed",
+          "pos": "动词",
+          "start": 0,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "constructed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "被建造",
+    "english": "be constructed",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 3,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be constructed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "建筑",
+    "english": "to build",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "动词 build 原形"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "build",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to build",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "建筑",
+    "english": "building",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：建筑物", "也可作动名词“建造”"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "building",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "那个建筑",
+    "english": "the building",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the building",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "那个建筑被建造",
+    "english": "the building is constructed",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态", "一般现在时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 16,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the building",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "is constructed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "通过",
+    "english": "by",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 by 表方式/施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "公司",
+    "english": "company",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：公司；陪伴"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "company",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "通过那个公司",
+    "english": "by the company",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表动作执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by the company",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "建造",
+    "english": "to construct",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "construct",
+          "pos": "动词",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to construct",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "建造",
+    "english": "construction",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：建造，施工"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "construction",
+          "pos": "名词",
+          "start": 0,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "construction",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "建筑公司",
+    "english": "construction company",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语：建筑公司"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "construction",
+          "pos": "名词",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "construction company",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "通过那个建筑公司",
+    "english": "by the construction company",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词短语，表动作执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "construction",
+          "pos": "名词",
+          "start": 7,
+          "end": 19
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by the construction company",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "那个建筑被建造",
+    "english": "the building is constructed",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态", "一般现在时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 16,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the building",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "is constructed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "那个建筑被那个建筑公司建造",
+    "english": "the building is constructed by the construction company",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态", "一般现在时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 16,
+          "end": 27
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "construction",
+          "pos": "名词",
+          "start": 35,
+          "end": 47
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 48,
+          "end": 55
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the building",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "is constructed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 27
+        },
+        {
+          "text": "by the construction company",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 55
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "将会被建造",
+    "english": "will be constructed",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般将来时",
+      "keyPoints": ["will be + 过去分词：一般将来时被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 8,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be constructed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "那个建筑将会被那个建筑公司建造",
+    "english": "the building will be constructed by the construction company",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["被动语态", "一般将来时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 21,
+          "end": 32
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "construction",
+          "pos": "名词",
+          "start": 40,
+          "end": 52
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 53,
+          "end": 60
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the building",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "will be constructed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 32
+        },
+        {
+          "text": "by the construction company",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 33,
+          "end": 60
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "(已经)被建造",
+    "english": "has been constructed",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 9,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "has been constructed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "那个建筑(已经)被那个建筑公司建造",
+    "english": "the building has been constructed by the construction company",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["被动语态", "现在完成时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 22,
+          "end": 33
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "construction",
+          "pos": "名词",
+          "start": 41,
+          "end": 53
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 54,
+          "end": 61
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the building",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "has been constructed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 33
+        },
+        {
+          "text": "by the construction company",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 34,
+          "end": 61
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "(过去已经)被建造",
+    "english": "had been constructed",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "had been + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 9,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been constructed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "那个建筑(过去已经)被那个建筑公司建造",
+    "english": "the building had been constructed by the construction company",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["被动语态", "过去完成时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "building",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "constructed",
+          "pos": "分词",
+          "start": 22,
+          "end": 33
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "construction",
+          "pos": "名词",
+          "start": 41,
+          "end": 53
+        },
+        {
+          "text": "company",
+          "pos": "名词",
+          "start": 54,
+          "end": 61
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the building",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "had been constructed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 33
+        },
+        {
+          "text": "by the construction company",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 34,
+          "end": 61
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "看",
+    "english": "to watch",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to watch 表示目的或打算"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to watch",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "看(ed形式)",
+    "english": "watched",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "watched",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "watched",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "被看",
+    "english": "be watched",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watched",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be watched",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "那个电影",
+    "english": "the movie",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the movie",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "那个电影被看",
+    "english": "the movie was watched",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态", "一般过去时"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "watched",
+          "pos": "分词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the movie",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "was watched",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "百万",
+    "english": "million",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["million：百万；前面有具体数字时用单数"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "million",
+          "pos": "数词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "million",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "人",
+    "english": "people",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["people 作“人、人们”时为集合名词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "people",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "数百万人",
+    "english": "millions of people",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["millions of people：数百万人，泛指数目多"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "millions",
+          "pos": "数词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "millions of people",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "通过",
+    "english": "by",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 by 表方式/施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "通过数百万人",
+    "english": "by millions of people",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 数量短语，表施动者"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "millions",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by millions of people",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "那个电影通过数百万人被看",
+    "english": "the movie was watched by millions of people",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态", "by 引出动作执行者"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "watched",
+          "pos": "分词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "millions",
+          "pos": "名词",
+          "start": 25,
+          "end": 33
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 37,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the movie",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "was watched",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 21
+        },
+        {
+          "text": "by millions of people",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "将会被看",
+    "english": "will be watched",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["will be + 过去分词，一般将来时的被动语态"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "watched",
+          "pos": "分词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be watched",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "那个电影将会被数百万人看",
+    "english": "the movie will be watched by millions of people",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["被动语态", "一般将来时"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "watched",
+          "pos": "分词",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "millions",
+          "pos": "名词",
+          "start": 29,
+          "end": 37
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 38,
+          "end": 40
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 41,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the movie",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "will be watched",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 25
+        },
+        {
+          "text": "by millions of people",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "(已经)被看",
+    "english": "has been watched",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "watched",
+          "pos": "分词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "has been watched",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "那个电影(已经)被数百万人看",
+    "english": "the movie has been watched by millions of people",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["被动语态", "现在完成时"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "watched",
+          "pos": "分词",
+          "start": 19,
+          "end": 26
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "millions",
+          "pos": "名词",
+          "start": 30,
+          "end": 38
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 42,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the movie",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "has been watched",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 26
+        },
+        {
+          "text": "by millions of people",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "(过去已经)被看",
+    "english": "had been watched",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态", "had been + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "watched",
+          "pos": "分词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been watched",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "那个电影(过去已经)被数百万人看",
+    "english": "the movie had been watched by millions of people",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["被动语态", "过去完成时"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "movie",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "watched",
+          "pos": "分词",
+          "start": 19,
+          "end": 26
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "millions",
+          "pos": "名词",
+          "start": 30,
+          "end": 38
+        },
+        {
+          "text": "of",
+          "pos": "介词",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "text": "people",
+          "pos": "名词",
+          "start": 42,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the movie",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "had been watched",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 26
+        },
+        {
+          "text": "by millions of people",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "修复",
+    "english": "to repair",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to repair"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "repair",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to repair",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "修复(ed形式)",
+    "english": "repaired",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["repair 的过去式/过去分词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "repaired",
+          "pos": "动词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "repaired",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "被修复",
+    "english": "be repaired",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词", "被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "repaired",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be repaired",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "那辆车",
+    "english": "the car",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "那辆车(过去)被修复",
+    "english": "the car was repaired",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态", "was + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "repaired",
+          "pos": "分词",
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "was repaired",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "机修工",
+    "english": "mechanic",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["mechanic：机械师，修理工"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "mechanic",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mechanic",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "通过那个机修工",
+    "english": "by the mechanic",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表被动动作的执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "mechanic",
+          "pos": "名词",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by the mechanic",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "那辆车(过去)被那个机修工修复",
+    "english": "the car was repaired by the mechanic",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态", "by the mechanic 引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "repaired",
+          "pos": "分词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "mechanic",
+          "pos": "名词",
+          "start": 28,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "was repaired",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 20
+        },
+        {
+          "text": "by the mechanic",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "将会被修复",
+    "english": "will be repaired",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["will be + 过去分词，一般将来时的被动语态"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "repaired",
+          "pos": "分词",
+          "start": 8,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be repaired",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "那辆车将会被那个机修工修复",
+    "english": "the car will be repaired by the mechanic",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时的被动语态", "by 引出动作执行者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "repaired",
+          "pos": "分词",
+          "start": 16,
+          "end": 24
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "mechanic",
+          "pos": "名词",
+          "start": 32,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "will be repaired",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 24
+        },
+        {
+          "text": "by the mechanic",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 25,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "(已经)被修复",
+    "english": "has been repaired",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "repaired",
+          "pos": "分词",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "has been repaired",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "那辆车(已经)被那个机修工修复",
+    "english": "the car has been repaired by the mechanic",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时被动语态", "by the mechanic 引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "repaired",
+          "pos": "分词",
+          "start": 17,
+          "end": 25
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "mechanic",
+          "pos": "名词",
+          "start": 33,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "has been repaired",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 25
+        },
+        {
+          "text": "by the mechanic",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "(过去已经)被修复",
+    "english": "had been repaired",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "repaired",
+          "pos": "分词",
+          "start": 9,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been repaired",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "那辆车(过去已经)被那个机修工修复",
+    "english": "the car had been repaired by the mechanic",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "by the mechanic 引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "repaired",
+          "pos": "分词",
+          "start": 17,
+          "end": 25
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "mechanic",
+          "pos": "名词",
+          "start": 33,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "had been repaired",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 25
+        },
+        {
+          "text": "by the mechanic",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "决定",
+    "english": "to decide",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "决定",
+    "english": "decision",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "decision",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "decision",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "那个决定",
+    "english": "the decision",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语", "决定"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "decision",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the decision",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "宣布",
+    "english": "to announce",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“宣布”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "announce",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to announce",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "宣布(ed形式)",
+    "english": "announced",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词 announce 的过去式/过去分词：宣布"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "announced",
+          "pos": "动词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "announced",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "被宣布",
+    "english": "be announced",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["被动语态：被宣布"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "announced",
+          "pos": "分词",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be announced",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "那个决定被宣布",
+    "english": "the decision was announced",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时的被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "decision",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "announced",
+          "pos": "动词",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the decision",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "was announced",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "公众",
+    "english": "public",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["public 公共的；公众的", "形容词，常修饰名词"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "public",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "public",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "向公众",
+    "english": "to the public",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["to the public 向公众"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "public",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to the public",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "那个决定被宣布给公众",
+    "english": "the decision was announced to the public",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时的被动语态", "to the public 作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "decision",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "announced",
+          "pos": "动词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "public",
+          "pos": "名词",
+          "start": 34,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the decision",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "was announced",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 26
+        },
+        {
+          "text": "to the public",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "将会被宣布",
+    "english": "will be announced",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般将来时",
+      "keyPoints": ["will be + 过去分词：一般将来时被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "announced",
+          "pos": "分词",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be announced",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "那个决定将会被宣布给公众",
+    "english": "the decision will be announced to the public",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时的被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "decision",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "announced",
+          "pos": "动词",
+          "start": 21,
+          "end": 30
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "public",
+          "pos": "名词",
+          "start": 38,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the decision",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "will be announced",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 30
+        },
+        {
+          "text": "to the public",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 31,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "(已经)被宣布",
+    "english": "has been announced",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "announced",
+          "pos": "分词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "has been announced",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "那个决定(已经)被宣布给公众",
+    "english": "the decision has been announced to the public",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时的被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "decision",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "announced",
+          "pos": "动词",
+          "start": 22,
+          "end": 31
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "public",
+          "pos": "名词",
+          "start": 39,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the decision",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "has been announced",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 31
+        },
+        {
+          "text": "to the public",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "(过去已经)被宣布",
+    "english": "had been announced",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "had been + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "announced",
+          "pos": "分词",
+          "start": 9,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been announced",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "那个决定(过去已经)被宣布给公众",
+    "english": "the decision had been announced to the public",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "decision",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "announced",
+          "pos": "动词",
+          "start": 22,
+          "end": 31
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "public",
+          "pos": "名词",
+          "start": 39,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the decision",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "had been announced",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 31
+        },
+        {
+          "text": "to the public",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "翻译",
+    "english": "to translate",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["translate 翻译"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "translate",
+          "pos": "动词",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to translate",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "翻译(ed形式)",
+    "english": "translated",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["translate 的过去式/过去分词：翻译"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "translated",
+          "pos": "动词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "translated",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "被翻译",
+    "english": "be translated",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "translated",
+          "pos": "分词",
+          "start": 3,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be translated",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "那本书被翻译",
+    "english": "the book was translated",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态", "被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "translated",
+          "pos": "分词",
+          "start": 13,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "was translated",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "语言",
+    "english": "language",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "language",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "language",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "多种",
+    "english": "several",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["several: 几个，数个"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "several",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "several",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "多种语言",
+    "english": "several languages",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["several + 名词复数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "several",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "languages",
+          "pos": "名词",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "several languages",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "那本书被翻译为多种语言",
+    "english": "the book was translated into several languages",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态", "into several languages作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "translated",
+          "pos": "分词",
+          "start": 13,
+          "end": 23
+        },
+        {
+          "text": "into",
+          "pos": "介词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "several",
+          "pos": "形容词",
+          "start": 29,
+          "end": 36
+        },
+        {
+          "text": "languages",
+          "pos": "名词",
+          "start": 37,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "was translated",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 23
+        },
+        {
+          "text": "into several languages",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "将会被翻译",
+    "english": "will be translated",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["will be + 过去分词，一般将来时的被动语态"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "translated",
+          "pos": "分词",
+          "start": 8,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be translated",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "那本书将会被翻译为多种语言",
+    "english": "the book will be translated into several languages",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态", "into several languages作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "translated",
+          "pos": "分词",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "text": "into",
+          "pos": "介词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "several",
+          "pos": "形容词",
+          "start": 33,
+          "end": 40
+        },
+        {
+          "text": "languages",
+          "pos": "名词",
+          "start": 41,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "will be translated",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 27
+        },
+        {
+          "text": "into several languages",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 153,
+    "chinese": "(已经)被翻译",
+    "english": "has been translated",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["现在完成时被动语态结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "translated",
+          "pos": "分词",
+          "start": 9,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "has been translated",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 154,
+    "chinese": "那本书(已经)被翻译为多种语言",
+    "english": "the book has been translated into several languages",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在完成时",
+      "keyPoints": ["现在完成时被动语态", "translate into 翻译成"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "has",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "translated",
+          "pos": "分词",
+          "start": 18,
+          "end": 28
+        },
+        {
+          "text": "into",
+          "pos": "介词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "several",
+          "pos": "形容词",
+          "start": 34,
+          "end": 41
+        },
+        {
+          "text": "languages",
+          "pos": "名词",
+          "start": 42,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "has been translated",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 28
+        },
+        {
+          "text": "into several languages",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 29,
+          "end": 51
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 155,
+    "chinese": "(过去已经)被翻译",
+    "english": "had been translated",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时的被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "translated",
+          "pos": "分词",
+          "start": 9,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "had been translated",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 156,
+    "chinese": "那本书(过去已经)被翻译为多种语言",
+    "english": "the book had been translated into several languages",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去完成时",
+      "keyPoints": ["过去完成时被动语态", "translate into 翻译成"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "had",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "been",
+          "pos": "助动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "translated",
+          "pos": "分词",
+          "start": 18,
+          "end": 28
+        },
+        {
+          "text": "into",
+          "pos": "介词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "several",
+          "pos": "形容词",
+          "start": 34,
+          "end": 41
+        },
+        {
+          "text": "languages",
+          "pos": "名词",
+          "start": 42,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the book",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "had been translated",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 28
+        },
+        {
+          "text": "into several languages",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 29,
+          "end": 51
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  }
+]

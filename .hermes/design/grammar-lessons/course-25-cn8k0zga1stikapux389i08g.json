@@ -1,0 +1,7758 @@
+[
+  {
+    "order": 1,
+    "chinese": "工作",
+    "english": "job",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "job",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "工作；付出劳动",
+    "english": "to work",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to + 动词原形", "表示目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to work",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "需要",
+    "english": "need",
+    "annotation": {
+      "order": 56,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["need 作实义动词或情态动词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "他",
+    "english": "he",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "他需要",
+    "english": "he needs",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["need 需要，后接不定式"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "他需要工作",
+    "english": "he needs to work",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 表示需要做某事"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to work",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "家",
+    "english": "home",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["home 可作副词，意为“在家/回家”"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "家庭作业",
+    "english": "homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：家庭作业"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "他的",
+    "english": "his",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "他的家庭作业",
+    "english": "his homework",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "在......上",
+    "english": "on",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 on"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "on",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "在他的家庭作业上",
+    "english": "on his homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语 on his homework"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "on his homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "他需要在他的家庭作业上工作",
+    "english": "he needs to work on his homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "work on 从事；致力于"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 24,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "needs",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to work on his homework",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "他在他的家庭作业上工作",
+    "english": "he works on his homework",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["work on 从事；忙于", "homework 为不可数名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "works",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 16,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "works",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "on his homework",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 9,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "工作(ing形式)",
+    "english": "working",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["-ing 形式，可用作动名词"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "working",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "working",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "正在工作",
+    "english": "be working",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "working",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be working",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "他(现在)正在工作",
+    "english": "he is working",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 be + doing", "work 表正在工作"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is working",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "在他的家庭作业上",
+    "english": "on his homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语 on his homework"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "on his homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "他(现在)正在在他的家庭作业上工作",
+    "english": "he is working on his homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["work on sth 做某事", "现在进行时表正在进行"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 21,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is working on",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 16
+        },
+        {
+          "text": "his homework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "我的家庭作业",
+    "english": "my homework",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "homework 为不可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "正在工作",
+    "english": "be working",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "working",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be working",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "我(现在)正在工作",
+    "english": "I am working",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "work 表示工作"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am working",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "在......上",
+    "english": "on",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 on"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "on",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "我(现在)正在在我的家庭作业上工作",
+    "english": "I am working on my homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时: be + 现在分词", "work on 表示忙于某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 19,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am working",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "on my homework",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 13,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "它；那件事",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "我(现在)正在在那件事上工作",
+    "english": "I am working on it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "work on sth 从事某事"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am working",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "on it",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "仍然",
+    "english": "still",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：仍然；静止地"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "still",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "still",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "我(现在)仍然正在在那件事上工作",
+    "english": "I am still working on it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["work on 意为“从事、处理”，on 不可省略", "it 为代词，指代前文提到的事物"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "still",
+          "pos": "副词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am still working on",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "我们",
+    "english": "we",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "我们(现在)正在在那件事上工作",
+    "english": "we are working on it",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "work on sth 处理/忙于某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are working",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 14
+        },
+        {
+          "text": "on it",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "项目",
+    "english": "project",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["project 项目；工程", "也可作动词：投射"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "project",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "新的",
+    "english": "new",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“新的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "new",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "一个新的项目",
+    "english": "a new project",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，中心词 project"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a new project",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "我们(现在)正在在一个新的项目上工作",
+    "english": "we are working on a new project",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时", "work on 表示'从事'"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 24,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are working on",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 17
+        },
+        {
+          "text": "a new project",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "正在工作",
+    "english": "be working",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "working",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be working",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "将会正在工作",
+    "english": "will be working",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["will be + 现在分词，将来进行时"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "working",
+          "pos": "分词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be working",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "一个新的项目",
+    "english": "a new project",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，中心词 project"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a new project",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "我们将会正在在一个新的项目上工作",
+    "english": "we will be working on a new project",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时", "work on 表示从事某项工作"],
+      "confidence": 0.78,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 22,
+          "end": 23
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will be working",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 18
+        },
+        {
+          "text": "on a new project",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "周；星期",
+    "english": "week",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：星期，周"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "week",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "下一个",
+    "english": "next",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["next 表示“下一个的”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "next",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "下周",
+    "english": "next week",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["next 修饰时间名词 week"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "next week",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "我们下周将会正在在一个新的项目上工作",
+    "english": "we will be working on a new project next week",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时", "next week 作时间状语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 22,
+          "end": 23
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "project",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        },
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 41,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will be working",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 18
+        },
+        {
+          "text": "on a new project",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 35
+        },
+        {
+          "text": "next week",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 36,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 状语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "它；那件事",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "我们下周将会正在在那件事上工作",
+    "english": "we will be working on it next week",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时", "it 指代上文提到的事物"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "week",
+          "pos": "名词",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will be working",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 18
+        },
+        {
+          "text": "on it",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "next week",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 25,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 状语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "我(现在)正在在那件事上工作",
+    "english": "I am working on it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "work on sth 从事某事"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "working",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am working",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "on it",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "寻找",
+    "english": "to look for",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "look for 寻找"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to look for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "寻找(ing形式)",
+    "english": "looking for",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["look for 的现在分词形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "looking for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "正在寻找",
+    "english": "be looking for",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["look for：寻找", "be + doing 现在进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 11,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be looking for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "她(现在)正在寻找",
+    "english": "she is looking for",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 15,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she is looking for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "她的",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "玩具",
+    "english": "toy",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：玩具"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "toy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "她的玩具",
+    "english": "her toy",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["her为形容词性物主代词，修饰名词toy"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her toy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "她(现在)正在寻找她的玩具",
+    "english": "she is looking for her toy",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["look for 寻找", "her toy 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 23,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "her toy",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "女儿",
+    "english": "daughter",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "我的女儿",
+    "english": "my daughter",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "我的女儿(现在)正在寻找她的玩具",
+    "english": "my daughter is looking for her toy",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["look for 寻找, 相当于及物动词", "现在进行时 be + doing"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 31,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "her toy",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "找到",
+    "english": "to find",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "她的玩具",
+    "english": "her toy",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["her为形容词性物主代词，修饰名词toy"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her toy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "找到她的玩具",
+    "english": "to find her toy",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作宾语：to find her toy"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 12,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find her toy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "我的女儿",
+    "english": "my daughter",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "我的女儿找到她的玩具",
+    "english": "my daughter finds her toy",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主语第三人称单数, 动词加 s: finds", "finds 后接宾语 her toy"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "finds",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 22,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "finds",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "her toy",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "能",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "我的女儿可以找到她的玩具",
+    "english": "my daughter can find her toy",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["情态动词 can 表能力", "find 后接宾语 her toy"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "can find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "her toy",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "不能",
+    "english": "can't",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["can 的否定缩写形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "我的女儿不能找到她的玩具",
+    "english": "my daughter can't find her toy",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can't 表否定能力", "find 后接宾语 her toy"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 27,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "can't find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 22
+        },
+        {
+          "text": "her toy",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 23,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "但是",
+    "english": "but",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词：但是，表转折"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "但是我的女儿不能找到她的玩具",
+    "english": "but my daughter can't find her toy",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般现在时",
+      "keyPoints": ["can't find：情态动词否定", "her toy 作宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 7,
+          "end": 15
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 31,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but my daughter can't find her toy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 34
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "我的女儿(现在)正在寻找她的玩具",
+    "english": "my daughter is looking for her toy",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["look for 寻找, 相当于及物动词", "现在进行时 be + doing"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 31,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "her toy",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "我的女儿(现在)正在寻找她的玩具但是我的女儿不能找到她的玩具",
+    "english": "my daughter is looking for her toy but my daughter can't find her toy",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + conj + S + V + O",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["look for 寻找", "but 表转折"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 42,
+          "end": 50
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 51,
+          "end": 56
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 57,
+          "end": 61
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 62,
+          "end": 65
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 66,
+          "end": 69
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "her toy",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 39,
+          "end": 50
+        },
+        {
+          "text": "can't find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 51,
+          "end": 61
+        },
+        {
+          "text": "her toy",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 62,
+          "end": 69
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 连接词 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "它",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "但是她不能找到它",
+    "english": "but she can't find it",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "conj + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["but 表转折", "can't 表否定能力"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "can't find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 18
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "structure": "连接词 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "我的女儿(现在)正在寻找她的玩具但是她不能找到它",
+    "english": "my daughter is looking for her toy but she can't find it",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + conj + S + V + O",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["look for 寻找", "it 指代前文 her toy"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 43,
+          "end": 48
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 49,
+          "end": 53
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 54,
+          "end": 56
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "her toy",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "can't find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 43,
+          "end": 53
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 54,
+          "end": 56
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 连接词 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "我的女儿(过去)正在寻找她的玩具",
+    "english": "my daughter was looking for her toy",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["look for 寻找"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 32,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "was looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 27
+        },
+        {
+          "text": "her toy",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "但是她(过去)不能找到它",
+    "english": "but she couldn't find it",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "conj + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["but 表转折", "couldn't 表过去否定"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "couldn't",
+          "pos": "情态动词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "couldn't find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 21
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "structure": "连接词 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "我的女儿(过去)正在寻找她的玩具但是她(过去)不能找到它",
+    "english": "my daughter was looking for her toy but she couldn't find it",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + conj + S + V + O",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["look for 寻找", "couldn't find 找不到"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "toy",
+          "pos": "名词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 40,
+          "end": 43
+        },
+        {
+          "text": "couldn't",
+          "pos": "情态动词",
+          "start": 44,
+          "end": 52
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 53,
+          "end": 57
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 58,
+          "end": 60
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "was looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 27
+        },
+        {
+          "text": "her toy",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 28,
+          "end": 35
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 40,
+          "end": 43
+        },
+        {
+          "text": "couldn't find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 44,
+          "end": 57
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 58,
+          "end": 60
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 连接词 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "听见；听说",
+    "english": "to hear",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hear 表示听见"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "听见我",
+    "english": "to hear me",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hear 后接宾语 me"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hear me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "你听见我",
+    "english": "you hear me",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["hear sb 听见某人", "一般现在时表示现在的感知"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "可以",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "你可以听见我",
+    "english": "you can hear me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can hear 能听见", "me 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "是否",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "是否你可以听见我",
+    "english": "if you can hear me",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if引导条件状语从句", "can hear表示能听见"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you can hear me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "我想要",
+    "english": "I want",
+    "annotation": {
+      "order": 99,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓片段，句意不完整"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "知道",
+    "english": "to know",
+    "annotation": {
+      "order": 104,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["know 知道；认识"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "我想要知道",
+    "english": "I want to know",
+    "annotation": {
+      "order": 163,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want后接不定式作宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to know",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "我想要知道是否你可以听见我",
+    "english": "I want to know if you can hear me",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导宾语从句", "hear sb 听见某人"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 31,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want to know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "if you can hear me",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 15,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "我知道",
+    "english": "I know",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.6,
+      "keyPoints": ["know 知道，通常需接宾语", "仅主语+动词，意思不完整"],
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "know",
+          "role": null,
+          "roleType": null,
+          "start": 2,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "我知道你可以听见我",
+    "english": "I know you can hear me",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["you can hear me 是宾语从句，that 已省略", "hear 后接宾格 me"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you can hear me",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 7,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "你可以听见我",
+    "english": "you can hear me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can hear 能听见", "me 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "你可以听见我吗？",
+    "english": "can you hear me",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["can 引导的一般疑问句", "hear sb. 听见某人"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "音乐",
+    "english": "music",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "music",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "你可以听见音乐",
+    "english": "you can hear music",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can hear 能听见", "music 不可数名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "music",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "一些",
+    "english": "some",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["限定词，后接可数名词复数或不可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "some",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "你可以听见一些音乐",
+    "english": "you can hear some music",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["情态动词can表能力", "主语+谓语+宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "some music",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "听",
+    "english": "to listen",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to listen",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "我想要",
+    "english": "I want",
+    "annotation": {
+      "order": 99,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓片段，句意不完整"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "我想要听",
+    "english": "I want to listen",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to listen",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "我听",
+    "english": "I listen",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["listen 听（不及物动词）"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "listen",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 8
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "听(ing形式)",
+    "english": "listening",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["listen 的动名词/现在分词形式"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "listening",
+          "pos": "动名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "listening",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "我(现在)正在听",
+    "english": "I am listening",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时表示正在听", "listen 为不及物动词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "listening",
+          "pos": "动词",
+          "start": 5,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am listening",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "音乐",
+    "english": "music",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "music",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "我(现在)正在听音乐",
+    "english": "I am listening to music",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时结构 be + doing", "listen to 表示听"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "listening",
+          "pos": "动词",
+          "start": 5,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am listening to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "music",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "她(现在)正在听音乐",
+    "english": "she is listening to music",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["listen to 听", "现在进行时：is listening"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "listening",
+          "pos": "动词",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is listening to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "music",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "她(过去)正在听音乐",
+    "english": "she was listening to music",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时 was + doing", "listen to music 听音乐"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "listening",
+          "pos": "动词",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was listening to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "music",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "我(过去)正在听音乐",
+    "english": "I was listening to music",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["listen to 是固定搭配，意为“听”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "listening",
+          "pos": "动词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was listening to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 18
+        },
+        {
+          "text": "music",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "一些",
+    "english": "some",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["限定词，后接可数名词复数或不可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "some",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "我(过去)正在听一些音乐",
+    "english": "I was listening to some music",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["listen to some music 意为“听一些音乐”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "listening",
+          "pos": "动词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 24,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was listening to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 18
+        },
+        {
+          "text": "some music",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "你(现在)正在听",
+    "english": "you are listening",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时表示正在进行的动作", "listen 是不及物动词，可单独使用"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "listening",
+          "pos": "分词",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are listening",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "你(现在)正在听音乐",
+    "english": "you are listening to music",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["listen to 是固定搭配，意为“听……”", "music 作 listen to 的宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "listening",
+          "pos": "分词",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are listening to",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "music",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "你听",
+    "english": "you listen",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主语+谓语结构", "listen 为不及物动词"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "listen",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "认真地",
+    "english": "carefully",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：仔细地"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "carefully",
+          "pos": "副词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "carefully",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "你认真地听",
+    "english": "you listen carefully",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["副词 carefully 修饰动词 listen"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "carefully",
+          "pos": "副词",
+          "start": 11,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "listen carefully",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "如果",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "如果你认真地听",
+    "english": "if you listen carefully",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if引导条件状语从句", "carefully 为副词修饰 listen"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "carefully",
+          "pos": "副词",
+          "start": 14,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you listen carefully",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "你可以听到一些音乐",
+    "english": "you can hear some music",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["情态动词can表能力", "主语+谓语+宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "some music",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "如果你认真地听你可以听到一些音乐",
+    "english": "if you listen carefully you can hear some music",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Clause + S + V + O",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if引导条件状语从句", "can hear 表示能力"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "carefully",
+          "pos": "副词",
+          "start": 14,
+          "end": 23
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 32,
+          "end": 36
+        },
+        {
+          "text": "some",
+          "pos": "形容词",
+          "start": 37,
+          "end": 41
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 42,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you listen carefully",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 28,
+          "end": 36
+        },
+        {
+          "text": "some music",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 37,
+          "end": 47
+        }
+      ],
+      "structure": "从句 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "这段音乐",
+    "english": "the music",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the music",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "如果你认真地听这段音乐",
+    "english": "if you listen to the music carefully",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if引导条件状语从句", "listen to 为固定搭配"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "carefully",
+          "pos": "副词",
+          "start": 27,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you listen to the music carefully",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "吉他",
+    "english": "guitar",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：吉他"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "guitar",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "guitar",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "一把吉他",
+    "english": "a guitar",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["a guitar 一把吉他"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "guitar",
+          "pos": "名词",
+          "start": 2,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a guitar",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "你可以听见",
+    "english": "you can hear",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["情态动词 can + 动词原形"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can hear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "你可以听见一把吉他",
+    "english": "you can hear a guitar",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can hear 能听见", "a guitar 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "guitar",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "a guitar",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "后面的",
+    "english": "back",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "back",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "back",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "场地",
+    "english": "ground",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，地面；也可作动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "ground",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ground",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "背景",
+    "english": "background",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "background",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "background",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "在背景里",
+    "english": "in the background",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["in the background 表位置或背景"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "background",
+          "pos": "名词",
+          "start": 7,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the background",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "你可以听见一把吉他在背景里",
+    "english": "you can hear a guitar in the background",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["in the background 在背景中", "can hear 能听见"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "text": "guitar",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "background",
+          "pos": "名词",
+          "start": 29,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "a guitar",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 21
+        },
+        {
+          "text": "in the background",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "如果你认真地听这段音乐你可以听见一把吉他在背景里",
+    "english": "if you listen to the music carefully you can hear a guitar in the background",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Clause + S + V + O + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if引导条件状语从句", "in the background 意为“在背景中”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "music",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "carefully",
+          "pos": "副词",
+          "start": 27,
+          "end": 36
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 45,
+          "end": 49
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 50,
+          "end": 51
+        },
+        {
+          "text": "guitar",
+          "pos": "名词",
+          "start": 52,
+          "end": 58
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 59,
+          "end": 61
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 62,
+          "end": 65
+        },
+        {
+          "text": "background",
+          "pos": "名词",
+          "start": 66,
+          "end": 76
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you listen to the music carefully",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 0,
+          "end": 36
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 41,
+          "end": 49
+        },
+        {
+          "text": "a guitar",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 50,
+          "end": 58
+        },
+        {
+          "text": "in the background",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 59,
+          "end": 76
+        }
+      ],
+      "structure": "从句 + 主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "你认真地听",
+    "english": "you listen carefully",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["副词 carefully 修饰动词 listen"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "carefully",
+          "pos": "副词",
+          "start": 11,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "listen carefully",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "不",
+    "english": "don't",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do not 的缩写，构成否定"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "你不认真地听",
+    "english": "you don't listen carefully",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["listen 为不及物动词", "副词 carefully 修饰动词"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "carefully",
+          "pos": "副词",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't listen",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "carefully",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "如果",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "如果你不认真地听",
+    "english": "if you don't listen carefully",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if引导条件状语从句", "don't listen 否定形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "carefully",
+          "pos": "副词",
+          "start": 20,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you don't listen carefully",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "听见",
+    "english": "to hear",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hear 表示听见"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "你将会听见",
+    "english": "you will hear",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["will后缺宾语，句子不完整"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you will hear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "东西",
+    "english": "thing",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "thing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "没有东西",
+    "english": "nothing",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "nothing",
+          "pos": "代词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "nothing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "你将会听见没有东西",
+    "english": "you will hear nothing",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["nothing作宾语，表示“什么也听不到”", "will + 动词原形表将来"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "nothing",
+          "pos": "代词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "text": "nothing",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "如果你不认真地听",
+    "english": "if you don't listen carefully",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if引导条件状语从句", "don't listen 否定形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "carefully",
+          "pos": "副词",
+          "start": 20,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you don't listen carefully",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "如果你不认真地听你将会什么都听不到",
+    "english": "if you don't listen carefully you will hear nothing",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Clause + S + V + O",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["if引导条件状语从句", "主句用will，从句用一般现在时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "listen",
+          "pos": "动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "carefully",
+          "pos": "副词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "nothing",
+          "pos": "代词",
+          "start": 44,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you don't listen carefully",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 0,
+          "end": 29
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "will hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 34,
+          "end": 43
+        },
+        {
+          "text": "nothing",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 44,
+          "end": 51
+        }
+      ],
+      "structure": "从句 + 主语 + 谓语 + 宾语"
+    }
+  }
+]

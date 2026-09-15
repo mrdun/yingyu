@@ -19,7 +19,9 @@
 const PW = "C:/Users/mrdun/AppData/Local/hermes/node/node_modules/playwright";
 const BASE = "http://localhost:3000";
 const PACK = "kyrtugjl8fa1f1k9kjv7ve9e";
-const COURSE = "u9mjpktmnpvbjjkh29fvzwa3";
+// 课 id 可用环境变量覆盖（默认第一课）。补标注后要验**新标注的课**时:
+//   COURSE_ID=sj4x85t9tgatv987u3yuuxrq node verify-grammar-panel.js
+const COURSE = process.env.COURSE_ID || "u9mjpktmnpvbjjkh29fvzwa3";
 
 const fails = [];
 const ok = (c, m) => {

@@ -1,0 +1,8330 @@
+[
+  {
+    "order": 1,
+    "chinese": "做",
+    "english": "to make",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "承诺",
+    "english": "promise",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["promise 承诺；诺言", "也可作动词：承诺"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "做一个承诺",
+    "english": "to make a promise",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["make a promise 许下承诺"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make a promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "需要",
+    "english": "need",
+    "annotation": {
+      "order": 56,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["need 作实义动词或情态动词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "你需要",
+    "english": "you need",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语+及物动词 need 缺少宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "你需要做一个承诺",
+    "english": "you need to make a promise",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["make a promise 许下诺言", "need to do sth 需要做某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 17,
+          "end": 18
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to make",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "a promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "做一个承诺",
+    "english": "to make a promise",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["make a promise 许下承诺"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make a promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "我想要你",
+    "english": "I want you",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb/sth 想要某人/某物"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "我想要你做一个承诺",
+    "english": "I want you to make a promise",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["make a promise 许诺", "不定式作宾语补足语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 19,
+          "end": 20
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to make a promise",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "不",
+    "english": "don't",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do not 的缩写，构成否定"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "我不想要你做一个承诺",
+    "english": "I don't want you to make a promise",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb to do sth 想要某人做某事", "make a promise 许下承诺"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "to make a promise",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "承诺",
+    "english": "promise",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["promise 承诺；诺言", "也可作动词：承诺"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "这个承诺",
+    "english": "the promise",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "遵守这个承诺",
+    "english": "to keep the promise",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "keep the promise 遵守诺言"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 12,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep the promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "你需要",
+    "english": "you need",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语+及物动词 need 缺少宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "你需要遵守这个承诺",
+    "english": "you need to keep the promise",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep the promise 遵守诺言", "need to do sth 需要做某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to keep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "the promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "能够",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "你能够遵守这个承诺",
+    "english": "you can keep the promise",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep the promise 履行承诺", "情态动词can表能力"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can keep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "the promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "不能",
+    "english": "can't",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["can 的否定缩写形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "你不能遵守这个承诺",
+    "english": "you can't keep the promise",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep the promise 意为信守诺言"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't keep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "the promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "你不能遵守的这个承诺",
+    "english": "the promise you can't keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["定语从句省略关系代词", "情态动词can't"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 22,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "you can't keep",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "你不能遵守",
+    "english": "you can't keep",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can't keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "我不想要你做一个承诺",
+    "english": "I don't want you to make a promise",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb to do sth 想要某人做某事", "make a promise 许下承诺"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "to make a promise",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "我不想要你做一个你不能遵守的承诺",
+    "english": "I don't want you to make a promise you can't keep",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb to do sth", "定语从句 you can't keep"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "can't",
+          "pos": "助动词",
+          "start": 39,
+          "end": 44
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 45,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "to make a promise",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 17,
+          "end": 34
+        },
+        {
+          "text": "you can't keep",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 35,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "安静",
+    "english": "quiet",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "quiet",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "保持安静",
+    "english": "to keep quiet",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "keep quiet 保持安静"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep quiet",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "你必须保持安静",
+    "english": "you have to keep quiet",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep 作系动词，后接形容词", "quiet 作表语表示保持安静"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to keep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "quiet",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "鱼",
+    "english": "fish",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：鱼"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "fish",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "fish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "钓鱼",
+    "english": "to fish",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to fish 表示“去钓鱼”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "fish",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to fish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "钓鱼(ing形式）",
+    "english": "fishing",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["fish 的动名词形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "fishing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "fishing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "正在钓鱼",
+    "english": "be fishing",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "fishing",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be fishing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "你（现在）正在钓鱼",
+    "english": "you are fishing",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：are fishing 表示正在钓鱼", "fish 此处作动词，意为“钓鱼”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "fishing",
+          "pos": "分词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are fishing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "当......时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "当你（现在）正在钓鱼的时候",
+    "english": "when you are fishing",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导的时间状语从句", "现在进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "fishing",
+          "pos": "分词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you are fishing",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "你必须保持安静",
+    "english": "you have to keep quiet",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep 作系动词，后接形容词", "quiet 作表语表示保持安静"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to keep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "quiet",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "你必须保持安静当你（现在）正在钓鱼的时候",
+    "english": "you have to keep quiet when you are fishing",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["when 引导时间状语从句", "keep + 形容词表保持状态"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "fishing",
+          "pos": "分词",
+          "start": 36,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to keep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "quiet",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "when you are fishing",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 23,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "秘密",
+    "english": "secret",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，秘密"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "secret",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "保守一个秘密",
+    "english": "to keep a secret",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep a secret",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "我们的",
+    "english": "our",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词性物主代词，后接名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "our",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "我们的秘密",
+    "english": "our secret",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，secret 此处作名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "our secret",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "保守我们的秘密",
+    "english": "to keep our secret",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep our secret",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "你必须保守我们的秘密",
+    "english": "you have to keep our secret",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep our secret 保守秘密", "our 为形容词性物主代词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to keep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "our secret",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "保守一个秘密",
+    "english": "to keep a secret",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 10,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep a secret",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "不可以",
+    "english": "can't",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["can 的否定缩写形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "她不可以",
+    "english": "she can't",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["can't 是 can not 的缩写", "片段，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she can't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "她不可以保守一个秘密",
+    "english": "she can't keep a secret",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep a secret 保守秘密", "can't 后接动词原形"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't keep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "a secret",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "分钟",
+    "english": "minute",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["minute：分钟；也可读作 adj. 微小的"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "minute",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "minute",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "五",
+    "english": "five",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["基数词：五"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "five",
+          "pos": "数词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "five",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "五分钟",
+    "english": "five minutes",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["时间长度：五分钟"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "five",
+          "pos": "数词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "minutes",
+          "pos": "名词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "five minutes",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "她不可以保守一个秘密五分钟",
+    "english": "she can't keep a secret for five minutes",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can't keep a secret 谓语+宾语", "for five minutes 表时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "five",
+          "pos": "数词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "minutes",
+          "pos": "名词",
+          "start": 33,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't keep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "a secret",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 23
+        },
+        {
+          "text": "for five minutes",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "说",
+    "english": "to say",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "say",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to say",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "她（过去）说",
+    "english": "she said",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般过去时",
+      "keyPoints": ["said 是 say 的过去式", "缺少宾语从句，为句子片段"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "said",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she said",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "她（过去）说她不可以保守一个秘密五分钟",
+    "english": "she said she can't keep a secret for five minutes",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["said 后接宾语从句", "can't keep a secret 保守不了秘密"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "said",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 26,
+          "end": 32
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "five",
+          "pos": "数词",
+          "start": 37,
+          "end": 41
+        },
+        {
+          "text": "minutes",
+          "pos": "名词",
+          "start": 42,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "said",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "she can't keep a secret for five minutes",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 9,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "平衡",
+    "english": "balance",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["平衡；使平衡"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "保持平衡",
+    "english": "to keep balance",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "好的",
+    "english": "good",
+    "annotation": {
+      "order": 145,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "good",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "保持一个好的平衡",
+    "english": "to keep a good balance",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "keep 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep a good balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "工作",
+    "english": "work",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作动词（工作）"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "work",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "生活",
+    "english": "life",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：生活、生命"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "和",
+    "english": "and",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["并列连词", "用于连接并列的词、短语或句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "and",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "工作和生活",
+    "english": "work and life",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["并列名词短语，作主语或宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "work and life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "在......之间",
+    "english": "between",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词，表示“在……之间”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "在工作和生活之间",
+    "english": "between work and life",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["between ... and ... 结构；work and life 工作与生活"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 17,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between work and life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "保持一个好的平衡",
+    "english": "to keep a good balance",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "keep 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep a good balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "在工作和生活之间保持一个好的平衡",
+    "english": "to keep a good balance between work and life",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "between...and 表范围"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 40,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep a good balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        },
+        {
+          "text": "between work and life",
+          "role": null,
+          "roleType": null,
+          "start": 23,
+          "end": 44
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "你必须在工作和生活之间保持一个好的平衡",
+    "english": "you have to keep a good balance between work and life",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["keep a balance between A and B", "between 短语作后置定语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 17,
+          "end": 18
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 32,
+          "end": 39
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 40,
+          "end": 44
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 49,
+          "end": 53
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "have to keep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "a good balance",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 31
+        },
+        {
+          "text": "between work and life",
+          "role": "定语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 53
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "困难的",
+    "english": "difficult",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“困难的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "difficult",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "它；这件事情",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "它是困难的",
+    "english": "it is difficult",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "一个好的平衡",
+    "english": "a good balance",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "形容词作定语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a good balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "保持一个好的平衡",
+    "english": "to keep a good balance",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "keep 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep a good balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "工作和生活",
+    "english": "work and life",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["并列名词短语，作主语或宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "work and life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "在......之间",
+    "english": "between",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词，表示“在……之间”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "在工作和生活之间",
+    "english": "between work and life",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["between ... and ... 结构；work and life 工作与生活"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 17,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between work and life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "在工作和生活之间保持一个好的平衡",
+    "english": "to keep a good balance between work and life",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "between...and 表范围"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 40,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep a good balance",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        },
+        {
+          "text": "between work and life",
+          "role": null,
+          "roleType": null,
+          "start": 23,
+          "end": 44
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "它是困难的",
+    "english": "it is difficult",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "在工作和生活之间保持一个好的平衡（它）是困难的",
+    "english": "it is difficult to keep a good balance between work and life",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["It 作形式主语，不定式为真正主语", "keep a balance between A and B"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 31,
+          "end": 38
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 39,
+          "end": 46
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 47,
+          "end": 51
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 52,
+          "end": 55
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 56,
+          "end": 60
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "to keep a good balance between work and life",
+          "role": "主语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 60
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "非常",
+    "english": "very",
+    "annotation": {
+      "order": 126,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "very",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "在工作和生活之间保持一个好的平衡（它）是非常困难的",
+    "english": "it is very difficult to keep a good balance between work and life",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["it 作形式主语", "keep a balance between A and B"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 29,
+          "end": 30
+        },
+        {
+          "text": "good",
+          "pos": "形容词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "balance",
+          "pos": "名词",
+          "start": 36,
+          "end": 43
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 44,
+          "end": 51
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 52,
+          "end": 56
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 57,
+          "end": 60
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 61,
+          "end": 65
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "very difficult",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 20
+        },
+        {
+          "text": "to keep a good balance between work and life",
+          "role": "状语",
+          "roleType": "不定式短语",
+          "start": 21,
+          "end": 65
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "安静",
+    "english": "quiet",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "quiet",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "保持安静",
+    "english": "to keep quiet",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "keep quiet 保持安静"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep quiet",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "关于",
+    "english": "about",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "about",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "那件事",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "关于那件事",
+    "english": "about it",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语", "about 表示关于"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "about it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "对于那件事保持沉默",
+    "english": "to keep quiet about it",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "about it 对此"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep quiet",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        },
+        {
+          "text": "about it",
+          "role": null,
+          "roleType": null,
+          "start": 14,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "告诉",
+    "english": "to tell",
+    "annotation": {
+      "order": 115,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "我（过去）告诉你",
+    "english": "I told you",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["tell sb sth 结构", "间接宾语you"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语"
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "我（过去）告诉你对于那件事保持沉默",
+    "english": "I told you to keep quiet about it",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["tell sb to do sth", "不定式作宾语补足语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 31,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to keep quiet about it",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "计划",
+    "english": "plan",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词/动词，此处多作名词“计划”"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "plan",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "我的计划",
+    "english": "my plan",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语:my + plan"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my plan",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "关于我的计划",
+    "english": "about my plan",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语", "my 后接名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "about my plan",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "保持沉默",
+    "english": "to keep quiet",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "keep quiet 保持安静"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep quiet",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "对于我的计划保持沉默",
+    "english": "to keep quiet about my plan",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "about my plan 关于我的计划"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep quiet",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        },
+        {
+          "text": "about my plan",
+          "role": null,
+          "roleType": null,
+          "start": 14,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "我（过去）告诉你",
+    "english": "I told you",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["tell sb sth 结构", "间接宾语you"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语"
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "我（过去）告诉你对于我的计划保持沉默",
+    "english": "I told you to keep quiet about my plan",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["tell sb to do sth", "不定式作宾语补足语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 34,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "told",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to keep quiet about my plan",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "做一个承诺",
+    "english": "to make a promise",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["make a promise 许下承诺"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make a promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "承诺",
+    "english": "to promise",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to promise", "promise 承诺"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "promise",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "你（过去）承诺",
+    "english": "you promised",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["promise 承诺；答应"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "promised",
+          "pos": "动词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "promised",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "你（过去）承诺对于我的计划保持沉默",
+    "english": "you promised to keep quiet about my plan",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["promise to do sth 承诺做某事", "keep quiet about sth 对某事保密"],
+      "confidence": 0.72,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "promised",
+          "pos": "动词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "quiet",
+          "pos": "形容词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "about",
+          "pos": "介词",
+          "start": 27,
+          "end": 32
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "plan",
+          "pos": "名词",
+          "start": 36,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "promised",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "to keep quiet",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 26
+        },
+        {
+          "text": "about my plan",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "承诺",
+    "english": "to promise",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to promise", "promise 承诺"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "promise",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "承诺我",
+    "english": "to promise me",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构", "promise sb sth 双宾语搭配"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "promise",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to promise me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "我想要你",
+    "english": "I want you",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb/sth 想要某人/某物"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "我想要你承诺我",
+    "english": "I want you to promise me",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["promise sb 向某人承诺", "不定式作宾语补足语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "promise",
+          "pos": "动词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to promise me",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "你将会",
+    "english": "you will",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["缺少主要动词，是片段"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "告诉",
+    "english": "to tell",
+    "annotation": {
+      "order": 115,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "你将会告诉",
+    "english": "you will tell",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell 后缺宾语，不是完整句子"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you will tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "你将不会告诉",
+    "english": "you will not tell",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["tell 后缺宾语，为句子片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will not tell",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "他",
+    "english": "him",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "him",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "你将不会告诉他",
+    "english": "you will not tell him",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["tell sb 接宾语", "will not 表将来否定"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will not tell",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "真相",
+    "english": "the truth",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "你将不会告诉他真相",
+    "english": "you will not tell him the truth",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["tell sb sth 双宾语结构", "the truth 作直接宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 26,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will not tell",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "the truth",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 22,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "我想要你承诺我你将不会告诉他真相",
+    "english": "I want you to promise me you will not tell him the truth",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["promise sb (that) 从句", "否定形式 will not"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "promise",
+          "pos": "动词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 43,
+          "end": 46
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 47,
+          "end": 50
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 51,
+          "end": 56
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to promise me you will not tell him the truth",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 56
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语 + 从句"
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "绝不",
+    "english": "never",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["频度副词，意为“从不；绝不”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "never",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "我想要你承诺我你将绝不会告诉他真相",
+    "english": "I want you to promise me you will never tell him the truth",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["promise sb (that) 从句", "宾语从句用 will 表将来"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "promise",
+          "pos": "动词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "never",
+          "pos": "副词",
+          "start": 34,
+          "end": 39
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 40,
+          "end": 44
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 49,
+          "end": 52
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 53,
+          "end": 58
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to promise me you will never tell him the truth",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 58
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语 + 从句"
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "做",
+    "english": "to make",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "承诺",
+    "english": "promise",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["promise 承诺；诺言", "也可作动词：承诺"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "做一个承诺",
+    "english": "to make a promise",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["make a promise 许下承诺"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to make a promise",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "我做一个承诺",
+    "english": "I make a promise",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["make a promise 许下承诺", "一般现在时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "make",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "我自己",
+    "english": "myself",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["反身代词，意为“我自己”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "myself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "我对我自己做一个承诺",
+    "english": "I make a promise to myself",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["make a promise to oneself 向自己承诺", "一般现在时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "make",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 20,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "make",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "to myself",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "我对我自己做了一个承诺",
+    "english": "I made a promise to myself",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["make a promise to myself 向自己承诺", "一般过去时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 20,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "to myself",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "年轻",
+    "english": "young",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词原级"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "young",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "我是年轻的",
+    "english": "I am young",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "young 作表语说明状态"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "我（过去）是年轻的",
+    "english": "I was young",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主系表结构", "was为系动词过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "young",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "当......什么时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "当我（过去）是年轻的时候",
+    "english": "when I was young",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["when引导的时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "young",
+          "pos": "形容词",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when I was young",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "更年轻的",
+    "english": "younger",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词比较级形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "younger",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "younger",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "当我是更年轻的时候",
+    "english": "when I was younger",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["when引导的时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "younger",
+          "pos": "形容词",
+          "start": 11,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when I was younger",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "我对我自己做了一个承诺",
+    "english": "I made a promise to myself",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["make a promise to myself 向自己承诺", "一般过去时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 20,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "to myself",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "当我年轻一点的时候我对自己做了一个承诺",
+    "english": "I made a promise to myself when I was younger",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["when 引导时间状语从句", "主句一般过去时"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 32,
+          "end": 33
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "younger",
+          "pos": "形容词",
+          "start": 38,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "to myself",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "when I was younger",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 27,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "学",
+    "english": "to learn",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to learn", "learn 学习"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to learn",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "英语",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "学英语",
+    "english": "to learn English",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to learn English", "learn English 学英语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to learn",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "每一个",
+    "english": "every",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["每一个"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "天",
+    "english": "day",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "每天",
+    "english": "every day",
+    "annotation": {
+      "order": 51,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["every day 表示频率，作时间状语", "every + 单数可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "every day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "每天学英语",
+    "english": "to learn English every day",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to learn English every day", "every day 每天，作时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 23,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to learn",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "every day",
+          "role": null,
+          "roleType": null,
+          "start": 17,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "我将会",
+    "english": "I will",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["will为情态动词表将来", "缺少谓语动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "我将会每天学英语",
+    "english": "I will learn English every day",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["will + 动词原形表将来", "every day 作时间状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 27,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will learn",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "English",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "every day",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "那个",
+    "english": "that",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["that 可作代词或引导词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 153,
+    "chinese": "那个我将会每天学英语",
+    "english": "that I will learn English every day",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["that 引导的宾语从句部分"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 26,
+          "end": 31
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 32,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that I will learn English every day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 154,
+    "chinese": "当我年轻一点的时候我对自己做了一个承诺",
+    "english": "I made a promise to myself when I was younger",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["when 引导时间状语从句", "主句一般过去时"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 32,
+          "end": 33
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "younger",
+          "pos": "形容词",
+          "start": 38,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "to myself",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "when I was younger",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 27,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 155,
+    "chinese": "当我年轻一点的时候我对自己做了一个承诺（那个）我将会每天学英语",
+    "english": "I made a promise to myself when I was younger that I will learn English every day",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["that 引导同位语从句", "主句过去时，从句用一般将来时"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 32,
+          "end": 33
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "younger",
+          "pos": "形容词",
+          "start": 38,
+          "end": 45
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 46,
+          "end": 50
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 51,
+          "end": 52
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 53,
+          "end": 57
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 58,
+          "end": 63
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 64,
+          "end": 71
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 72,
+          "end": 77
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 78,
+          "end": 81
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "to myself",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "when I was younger",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 27,
+          "end": 45
+        },
+        {
+          "text": "that I will learn English every day",
+          "role": "同位语",
+          "roleType": "从句",
+          "start": 46,
+          "end": 81
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 156,
+    "chinese": "我（过去）将会每天学英语",
+    "english": "I would learn English every day",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["would+动词原形", "every day 作时间状语"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "would",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 28,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "would learn",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "every day",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 22,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 157,
+    "chinese": "当我年轻一点的时候我对自己做了一个承诺（那个）我过去将会每天学英语",
+    "english": "I made a promise to myself when I was younger that I would learn English every day",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["that 引导同位语从句", "would + 动词原形，过去将来时"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "promise",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 32,
+          "end": 33
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "younger",
+          "pos": "形容词",
+          "start": 38,
+          "end": 45
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 46,
+          "end": 50
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 51,
+          "end": 52
+        },
+        {
+          "text": "would",
+          "pos": "助动词",
+          "start": 53,
+          "end": 58
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 59,
+          "end": 64
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 65,
+          "end": 72
+        },
+        {
+          "text": "every",
+          "pos": "形容词",
+          "start": 73,
+          "end": 78
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 79,
+          "end": 82
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "made",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "a promise",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "to myself",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "when I was younger",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 27,
+          "end": 45
+        },
+        {
+          "text": "that I would learn English every day",
+          "role": "同位语",
+          "roleType": "从句",
+          "start": 46,
+          "end": 82
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语 + 从句"
+    }
+  }
+]

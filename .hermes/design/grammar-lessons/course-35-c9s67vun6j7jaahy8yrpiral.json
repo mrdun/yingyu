@@ -1,0 +1,6102 @@
+[
+  {
+    "order": 1,
+    "chinese": "注意到；察觉到",
+    "english": "to notice",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to notice",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "你将会",
+    "english": "you will",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["缺少主要动词，是片段"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "你将会注意到",
+    "english": "you will notice",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["notice 后缺宾语，为句子片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will notice",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "那个",
+    "english": "that",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["that 可作代词或引导词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "你将会注意到那个",
+    "english": "you will notice that",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["that 后从句不完整"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will notice",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 16,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "付出",
+    "english": "to pay",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "注意力",
+    "english": "attention",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "付出注意力",
+    "english": "to pay attention",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pay attention 为固定搭配，表示注意"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "付出注意力在......",
+    "english": "to pay attention to",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["pay attention to 后需接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay attention to",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "密切的",
+    "english": "close",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词：关；形容词：近的"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "close",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "close",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "密切关注",
+    "english": "to pay close attention",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["close 作形容词修饰 attention，意为密切关注"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "close",
+          "pos": "形容词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pay close attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "你密切关注",
+    "english": "you pay close attention",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["pay attention 注意", "close 作定语修饰 attention"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "close",
+          "pos": "形容词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 14,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "pay",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "close attention",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "如果",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "如果你密切关注",
+    "english": "if you pay close attention",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if 引导条件状语从句", "pay close attention 密切关注"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "close",
+          "pos": "形容词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you pay close attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "你将会注意到那个如果你密切关注",
+    "english": "you will notice that if you pay close attention",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["从句内容缺失，为句子片段"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "close",
+          "pos": "形容词",
+          "start": 32,
+          "end": 37
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 38,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will notice",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "if you pay close attention",
+          "role": null,
+          "roleType": null,
+          "start": 21,
+          "end": 47
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "不同的",
+    "english": "different",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“不同的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "different",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "不同之处",
+    "english": "difference",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“差别；不同”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "很多",
+    "english": "many",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["many 许多，修饰可数名词复数"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "many",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "many",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "很多不同之处",
+    "english": "many differences",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["many 修饰可数名词复数 differences"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "many",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "differences",
+          "pos": "名词",
+          "start": 5,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "many differences",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "存在（复数）",
+    "english": "there are",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there are",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "存在很多不同之处",
+    "english": "there are many differences",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般现在时",
+      "keyPoints": ["there be 句型表示存在", "many differences 作主语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "many",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "differences",
+          "pos": "名词",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "many differences",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 10,
+          "end": 26
+        }
+      ],
+      "structure": "There be + 主语"
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "美国的",
+    "english": "American",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["American 既可作形容词也可作名词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "American",
+          "pos": "形容词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "American",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "英语",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "美式英语",
+    "english": "American English",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["American English 美式英语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "American",
+          "pos": "形容词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "American English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "英国的",
+    "english": "British",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["British 英国的、英国人的"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "British",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "British",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "英式英语",
+    "english": "British English",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["British English 英式英语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "British",
+          "pos": "形容词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "British English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "美式英语和英式英语",
+    "english": "American English and British English",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["and 连接两个并列名词短语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "American",
+          "pos": "形容词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "British",
+          "pos": "形容词",
+          "start": 21,
+          "end": 28
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 29,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "American English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        },
+        {
+          "text": "and",
+          "role": null,
+          "roleType": null,
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "British English",
+          "role": null,
+          "roleType": null,
+          "start": 21,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "在......之间",
+    "english": "between",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词，表示“在……之间”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "在美式英语和英式英语之间",
+    "english": "between American English and British English",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["between ... and ... 表示“在……和……之间”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "American",
+          "pos": "形容词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "British",
+          "pos": "形容词",
+          "start": 29,
+          "end": 36
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 37,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "between American English and British English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 44
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "存在很多不同之处",
+    "english": "there are many differences",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般现在时",
+      "keyPoints": ["there be 句型表示存在", "many differences 作主语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "many",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "differences",
+          "pos": "名词",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "many differences",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 10,
+          "end": 26
+        }
+      ],
+      "structure": "There be + 主语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "在美式英语和英式英语之间存在很多不同之处",
+    "english": "there are many differences between American English and British English",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "There be + S + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "there be 句型",
+      "tense": "一般现在时",
+      "keyPoints": ["there be 句型表示存在", "between...and... 连接两个并列成分"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "many",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "differences",
+          "pos": "名词",
+          "start": 15,
+          "end": 26
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "American",
+          "pos": "形容词",
+          "start": 35,
+          "end": 43
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 44,
+          "end": 51
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 52,
+          "end": 55
+        },
+        {
+          "text": "British",
+          "pos": "形容词",
+          "start": 56,
+          "end": 63
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 64,
+          "end": 71
+        }
+      ],
+      "phrases": [
+        {
+          "text": "there are",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "many differences",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 10,
+          "end": 26
+        },
+        {
+          "text": "between American English and British English",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 71
+        }
+      ],
+      "structure": "There be + 主语 + 状语"
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "你将会注意到",
+    "english": "you will notice",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["notice 后缺宾语，为句子片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will notice",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "你将会注意到那个",
+    "english": "you will notice that",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["that 后从句不完整"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will notice",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 16,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "你将会注意到（那个）在美式英语和英式英语之间存在很多不同之处",
+    "english": "you will notice that there are many differences between American English and British English",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["that 引导宾语从句", "从句含 there be 句型"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "many",
+          "pos": "形容词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "differences",
+          "pos": "名词",
+          "start": 36,
+          "end": 47
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 48,
+          "end": 55
+        },
+        {
+          "text": "American",
+          "pos": "形容词",
+          "start": 56,
+          "end": 64
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 65,
+          "end": 72
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 73,
+          "end": 76
+        },
+        {
+          "text": "British",
+          "pos": "形容词",
+          "start": 77,
+          "end": 84
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 85,
+          "end": 92
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will notice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "that there are many differences between American English and British English",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 16,
+          "end": 92
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "如果你密切关注",
+    "english": "if you pay close attention",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if 引导条件状语从句", "pay close attention 密切关注"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "close",
+          "pos": "形容词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you pay close attention",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "你将会注意到（那个）在美式英语和英式英语之间存在很多不同之处如果你密切关注",
+    "english": "you will notice that there are many differences between American English and British English if you pay close attention",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["that 引导宾语从句", "if 引导条件状语从句"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "there",
+          "pos": "副词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "many",
+          "pos": "形容词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "differences",
+          "pos": "名词",
+          "start": 36,
+          "end": 47
+        },
+        {
+          "text": "between",
+          "pos": "介词",
+          "start": 48,
+          "end": 55
+        },
+        {
+          "text": "American",
+          "pos": "形容词",
+          "start": 56,
+          "end": 64
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 65,
+          "end": 72
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 73,
+          "end": 76
+        },
+        {
+          "text": "British",
+          "pos": "形容词",
+          "start": 77,
+          "end": 84
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 85,
+          "end": 92
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 93,
+          "end": 95
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 96,
+          "end": 99
+        },
+        {
+          "text": "pay",
+          "pos": "动词",
+          "start": 100,
+          "end": 103
+        },
+        {
+          "text": "close",
+          "pos": "形容词",
+          "start": 104,
+          "end": 109
+        },
+        {
+          "text": "attention",
+          "pos": "名词",
+          "start": 110,
+          "end": 119
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "will notice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "that there are many differences between American English and British English",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 16,
+          "end": 92
+        },
+        {
+          "text": "if you pay close attention",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 93,
+          "end": 119
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句 + 状语"
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "不同之处",
+    "english": "difference",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“差别；不同”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "difference",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "difference",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "不同的",
+    "english": "different",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“不同的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "different",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "你是不同的",
+    "english": "you are different",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构：you are different", "different 作表语，说明主语特征"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "different",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "假装",
+    "english": "to pretend",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to pretend", "pretend 假装"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pretend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "你假装是不同的",
+    "english": "you pretend to be different",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["pretend to be 假装是…", "different 不同的"],
+      "confidence": 0.72,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 18,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "pretend",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "to be different",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 12,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "需要",
+    "english": "need",
+    "annotation": {
+      "order": 56,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["need 作实义动词或情态动词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "你需要假装是不同的",
+    "english": "you need to pretend to be different",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["pretend to be + adj 假装是……", "different 作不定式 be 的表语"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 26,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to pretend",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "to be different",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 20,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "不",
+    "english": "don't",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do not 的缩写，构成否定"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "你不需要假装是不同的",
+    "english": "you don't need to pretend to be different",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "pretend to be 假装是"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 32,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to pretend to be different",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 15,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "无辜的",
+    "english": "innocent",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“无辜的；天真的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "innocent",
+          "pos": "形容词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "innocent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "你不需要假装是无辜的",
+    "english": "you don't need to pretend to be innocent",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "innocent 无辜的；天真的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "innocent",
+          "pos": "形容词",
+          "start": 32,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to pretend to be innocent",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 15,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "我不想",
+    "english": "I don't want",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["don't want 不想，后常接不定式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I don't want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "我不想假装是不同的",
+    "english": "I don't want to pretend to be different",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "pretend to be 假装是/装作"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "different",
+          "pos": "形容词",
+          "start": 30,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to pretend to be different",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "那个人",
+    "english": "the person",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "我不想假装是那个人",
+    "english": "I don't want to pretend to be the person",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "pretend to be 假装成为"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 34,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to pretend to be the person",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "医生",
+    "english": "doctor",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：医生"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "doctor",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "她是一名医生",
+    "english": "she is a doctor",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构：she is a doctor", "a doctor 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "a doctor",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "她想要",
+    "english": "she wants",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she wants",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "她想要成为一名医生",
+    "english": "she wants to be a doctor",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 表示想要做某事", "不定式短语作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 18,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "to be a doctor",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "那个人",
+    "english": "the person",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "她想要成为那个人",
+    "english": "she wants to be the person",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 表示想要做某事", "不定式短语作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "to be the person",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "她想要我成为那个人",
+    "english": "she wants me to be the person",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb to do sth 想要某人做某事", "be the person 成为那个人"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "wants",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "to be the person",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "她想要我成为的那个人",
+    "english": "the person she wants me to be",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 27,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "she wants me to be",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "我不想假装是那个人",
+    "english": "I don't want to pretend to be the person",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "pretend to be 假装成为"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 34,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to pretend to be the person",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "我不想假装是她想要我成为的那个人",
+    "english": "I don't want to pretend to be the person she wants me to be",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "定语从句 she wants me to be 修饰 the person"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 34,
+          "end": 40
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 45,
+          "end": 50
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 51,
+          "end": 53
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 54,
+          "end": 56
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 57,
+          "end": 59
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "to pretend to be the person she wants me to be",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 59
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "假装",
+    "english": "to pretend",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to pretend", "pretend 假装"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to pretend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "你需要",
+    "english": "you need",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主语+及物动词 need 缺少宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "你不需要",
+    "english": "you don't need",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般现在时",
+      "keyPoints": ["need 作实义动词后需接宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't need",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "你不需要假装",
+    "english": "you don't need to pretend",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "pretend 假装"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 18,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to pretend",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 15,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "那个",
+    "english": "that",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["that 可作代词或引导词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "你不需要假装（那个）",
+    "english": "you don't need to pretend that",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 26,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't need",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to pretend",
+          "role": null,
+          "roleType": null,
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 26,
+          "end": 30
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "注意到；察觉到",
+    "english": "to notice",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to notice",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "你注意到",
+    "english": "you notice",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["notice 注意到（动词）"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "notice",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "你（过去）注意到",
+    "english": "you noticed",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["noticed 是 notice 的过去式"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "noticed",
+          "pos": "动词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "noticed",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "你（过去）没有注意到",
+    "english": "you didn't notice",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["notice 此处作不及物动词", "一般过去时否定句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't notice",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "你不需要假装（那个）你（过去）没有注意到",
+    "english": "you don't need to pretend that you didn't notice",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "宾语从句 that you didn't notice"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "pretend",
+          "pos": "动词",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "that",
+          "pos": "连词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 35,
+          "end": 41
+        },
+        {
+          "text": "notice",
+          "pos": "动词",
+          "start": 42,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't need to pretend",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 25
+        },
+        {
+          "text": "that you didn't notice",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 26,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "重要的",
+    "english": "important",
+    "annotation": {
+      "order": 120,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词", "重要的"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "important",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "它",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "它是重要的",
+    "english": "it is important",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "important",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "更",
+    "english": "more",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["更多"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "它是更重要的",
+    "english": "it is more important",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["more important 为形容词比较级作表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 11,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "more important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "任何事情",
+    "english": "anything",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["anything 常用于疑问句和否定句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "anything",
+          "pos": "代词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "anything",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "比",
+    "english": "than",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["than 比"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "比任何事情",
+    "english": "than anything",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["than 用于比较级，后接名词/代词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "than",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "anything",
+          "pos": "代词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than anything",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "它是比任何事情更重要的",
+    "english": "it is more important than anything",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["than anything 作比较状语", "more important 为比较级作表语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "anything",
+          "pos": "代词",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "more important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 20
+        },
+        {
+          "text": "than anything",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "其他的",
+    "english": "else",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["else 别的；其他"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "else",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "else",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "其他的任何事情",
+    "english": "anything else",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["anything else 表示“其他东西”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "anything",
+          "pos": "代词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "else",
+          "pos": "副词",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "anything else",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "它是比其他的任何事情更重要的",
+    "english": "it is more important than anything else",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["anything else 表示“其他任何事物”", "than 引出比较状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "anything",
+          "pos": "代词",
+          "start": 26,
+          "end": 34
+        },
+        {
+          "text": "else",
+          "pos": "副词",
+          "start": 35,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "more important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
+          "end": 20
+        },
+        {
+          "text": "than anything else",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "家庭",
+    "english": "family",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：家庭，家人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "family",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "family",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "比",
+    "english": "than",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["than 比"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "比家庭",
+    "english": "than family",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["than + 名词 family"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "than",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "family",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "than family",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "没有东西",
+    "english": "nothing",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "nothing",
+          "pos": "代词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "nothing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "没有东西比家庭是更重要的",
+    "english": "nothing is more important than family",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["more important than 比较级结构", "nothing 作主语谓语用单数 is"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "nothing",
+          "pos": "代词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 16,
+          "end": 25
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "family",
+          "pos": "名词",
+          "start": 31,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "nothing",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "more important than family",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 11,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "朋友",
+    "english": "friend",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["friend 朋友"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "船",
+    "english": "ship",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：船"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "ship",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ship",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "友谊",
+    "english": "friendship",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["friendship 友谊"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "friendship",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "friendship",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "我们的",
+    "english": "our",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词性物主代词，后接名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "our",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "我们的友谊",
+    "english": "our friendship",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，friendship 为不可数名词"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "friendship",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "our friendship",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "没有东西比我们的友谊是更重要的",
+    "english": "nothing is more important than our friendship",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["more important than 比较级结构", "our friendship 作比较对象"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "nothing",
+          "pos": "代词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 16,
+          "end": 25
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "friendship",
+          "pos": "名词",
+          "start": 35,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "nothing",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "more important than our friendship",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 11,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "家庭",
+    "english": "family",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：家庭，家人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "family",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "family",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "我的家庭",
+    "english": "my family",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "family",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my family",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "任何事情",
+    "english": "anything",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["anything 常用于疑问句和否定句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "anything",
+          "pos": "代词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "anything",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "我的家庭比任何事情是更重要的",
+    "english": "my family is more important than anything",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "比较级 more important than"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "family",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "anything",
+          "pos": "代词",
+          "start": 33,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my family",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "more important than anything",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "其他的",
+    "english": "else",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["else 别的；其他"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "else",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "else",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "我的家庭比其他的任何事情是更重要的",
+    "english": "my family is more important than anything else",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "else 用于比较级后表其他"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "family",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "anything",
+          "pos": "代词",
+          "start": 33,
+          "end": 41
+        },
+        {
+          "text": "else",
+          "pos": "副词",
+          "start": 42,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my family",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "more important than anything else",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 13,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "生活；生命",
+    "english": "life",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：生活、生命"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "人",
+    "english": "man",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["man 男人；人类"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "man",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "man",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "人的生命",
+    "english": "man's life",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["man's 名词所有格"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "man's",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "man's life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "一个人的生命",
+    "english": "a man's life",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词所有格", "man's 作定语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "man's",
+          "pos": "名词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a man's life",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "金钱",
+    "english": "money",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["钱"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "money",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "一个人的生命比金钱是更重要的",
+    "english": "a man's life is more important than money",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["比较级 more important than", "主系表结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "man's",
+          "pos": "名词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "life",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 21,
+          "end": 30
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "text": "money",
+          "pos": "名词",
+          "start": 36,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a man's life",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "more important than money",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 16,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "做",
+    "english": "to do",
+    "annotation": {
+      "order": 10,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语 to do"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "你做",
+    "english": "you do",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["do 作实义动词", "you 为主语，do 为谓语，但整体不完整"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "那件事情",
+    "english": "the thing",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语,不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the thing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "你做的那件事情",
+    "english": "the thing you do",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["含定语从句的名词短语,非完整句子"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "thing",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the thing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "you do",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "你做的内容",
+    "english": "what you do",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.75,
+      "keyPoints": ["what 引导名词性从句", "从句用陈述语序"],
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what you do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "说",
+    "english": "to say",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "say",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to say",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "你说",
+    "english": "you say",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主语 you + 谓语 say", "一般现在时"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "say",
+          "pos": "动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "say",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "你说的内容",
+    "english": "what you say",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.75,
+      "keyPoints": ["what 引导名词性从句", "从句用陈述语序"],
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "say",
+          "pos": "动词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what you say",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "你做的内容比你说的内容是更重要的",
+    "english": "what you do is more important than what you say",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["what 引导主语从句", "比较级 more important than"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "important",
+          "pos": "形容词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "than",
+          "pos": "连词",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 35,
+          "end": 39
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 40,
+          "end": 43
+        },
+        {
+          "text": "say",
+          "pos": "动词",
+          "start": 44,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what you do",
+          "role": "主语",
+          "roleType": "从句",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "more important",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 15,
+          "end": 29
+        },
+        {
+          "text": "than what you say",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 30,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  }
+]

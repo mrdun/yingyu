@@ -1,0 +1,7373 @@
+[
+  {
+    "order": 1,
+    "chinese": "这个问题",
+    "english": "the question",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "回答",
+    "english": "to answer",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“回答”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to answer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "回答这个问题",
+    "english": "to answer the question",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，后接宾语 the question"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 14,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to answer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "the question",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "这个问题；这个麻烦",
+    "english": "the problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "解决",
+    "english": "to solve",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "解决这个问题",
+    "english": "to solve the problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "solve 后接宾语 the problem"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "需要",
+    "english": "need",
+    "annotation": {
+      "order": 56,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["need 作实义动词或情态动词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "我们需要",
+    "english": "we need",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["need 后常接 to do sth"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "解决这个麻烦",
+    "english": "to solve the problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "solve 后接宾语 the problem"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "我们需要解决这个麻烦",
+    "english": "we need to solve the problem",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "solve the problem 解决问题"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to solve the problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 8,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "一起",
+    "english": "together",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词单独成块"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "together",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "我们需要一起解决这个麻烦",
+    "english": "we need to solve the problem together",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["solve the problem 解决问题", "together 作方式状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 29,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to solve the problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 8,
+          "end": 28
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 29,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "不需要",
+    "english": "don't need",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["don't + need 否定动词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "我们不需要一起解决这个麻烦",
+    "english": "we don't need to solve the problem together",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "together 作方式状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 35,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "don't need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "to solve the problem together",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 14,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "可以",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "我们可以一起解决这个麻烦",
+    "english": "we can solve the problem together",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["solve the problem 意为解决问题", "together 作方式状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 25,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can solve",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 24
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 25,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "我们不可以一起解决这个麻烦",
+    "english": "we can not solve the problem together",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["solve the problem 意为解决问题", "together 作方式状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 29,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can not solve",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 16
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 28
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 29,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "我们将会一起解决这个麻烦",
+    "english": "we will solve the problem together",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["will + 动词原形构成一般将来时", "solve the problem 解决问题"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will solve",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 25
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "副词短语",
+          "note": "方式状语",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "我们将不会一起解决这个麻烦",
+    "english": "we will not solve the problem together",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["否定形式 will not + 动词原形", "together 作状语置于句末"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 30,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will not solve",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 17
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 29
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "副词短语",
+          "note": "方式状语",
+          "start": 30,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "尝试",
+    "english": "to try",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to try",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "解决这个麻烦",
+    "english": "to solve the problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "solve 后接宾语 the problem"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "我们尝试解决这个麻烦",
+    "english": "we try to solve the problem",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["try to do sth 结构", "一般现在时表习惯性动作"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "try",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "to solve the problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "一起",
+    "english": "together",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词单独成块"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "together",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "我们尝试一起解决这个麻烦",
+    "english": "we try to solve the problem together",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["together 作方式状语", "try to do sth 结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 28,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "try",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "to solve the problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 27
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 28,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "尝试(ing形式)",
+    "english": "trying",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["try 的现在分词/动名词：尝试"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "trying",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "trying",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "正在尝试",
+    "english": "be trying",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + doing 构成进行时态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "trying",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be trying",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "我们",
+    "english": "we",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "我们(现在)正在尝试",
+    "english": "we are trying",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时", "try表示'尝试'"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "trying",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are trying",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "解决这个麻烦",
+    "english": "to solve the problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "solve 后接宾语 the problem"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "我们(现在)正在尝试解决这个麻烦",
+    "english": "we are trying to solve the problem",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时", "try to do sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "trying",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are trying",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "to solve the problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 14,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "一起",
+    "english": "together",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词单独成块"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "together",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "我们(现在)正在尝试一起解决这个麻烦",
+    "english": "we are trying to solve the problem together",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时", "together作方式状语"],
+      "confidence": 0.94,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "trying",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 35,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are trying",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "to solve the problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 14,
+          "end": 34
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 35,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "脸",
+    "english": "face",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：脸；也可作动词：面对"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "face",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "face",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "面对",
+    "english": "to face",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "face",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to face",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "面对我",
+    "english": "to face me",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "face 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "face",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to face me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "真相；现实",
+    "english": "the truth",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "面对现实",
+    "english": "to face the truth",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "face the truth 面对事实"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "face",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to face the truth",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "需要",
+    "english": "need",
+    "annotation": {
+      "order": 56,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["need 作实义动词或情态动词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "你需要面对现实",
+    "english": "you need to face the truth",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "face the truth 面对真相"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "face",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "truth",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "need to face",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "the truth",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "这个麻烦",
+    "english": "the problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "面对这个麻烦",
+    "english": "to face the problem",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "face the problem 面对问题"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "face",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 12,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to face the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "我们需要",
+    "english": "we need",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["need 后常接 to do sth"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "我们需要面对这个麻烦",
+    "english": "we need to face the problem",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "face the problem 面对问题"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "face",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to face the problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 8,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "我们面对这个麻烦",
+    "english": "we face the problem",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["face the problem 面对问题"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "face",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 12,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "face",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "面对(ing形式)",
+    "english": "facing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["face 的现在分词/动名词"],
+      "confidence": 0.45,
+      "words": [
+        {
+          "text": "facing",
+          "pos": "分词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "facing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "正在面对",
+    "english": "be facing",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "facing",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be facing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "我们",
+    "english": "we",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "我们(现在)正在面对",
+    "english": "we are facing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "现在进行时",
+      "keyPoints": ["缺宾语，为句子片段"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are facing",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "一个",
+    "english": "a",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "一个麻烦",
+    "english": "a problem",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，不定冠词 a 修饰可数名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 2,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "大的",
+    "english": "big",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 big，大的"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "big",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "一个大麻烦",
+    "english": "a big problem",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：a big problem"],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 6,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a big problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "我们(现在)正在面对一个大麻烦",
+    "english": "we are facing a big problem",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时", "face a problem 面对问题"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are facing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "a big problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "这个麻烦",
+    "english": "the problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "解决",
+    "english": "to solve",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "解决这个麻烦",
+    "english": "to solve the problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "solve 后接宾语 the problem"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "尝试",
+    "english": "to try",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to try",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "我尝试解决这个麻烦",
+    "english": "I try to solve the problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["try to do sth 结构", "不定式短语作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "try",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "try",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "to solve the problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 6,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "尝试(ing形式)",
+    "english": "trying",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["try 的现在分词/动名词：尝试"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "trying",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "trying",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "正在尝试",
+    "english": "be trying",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + doing 构成进行时态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "trying",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be trying",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "我(现在)正在尝试",
+    "english": "I am trying",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：am + doing", "try 此处作不及物动词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "trying",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am trying",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "解决这个麻烦",
+    "english": "to solve the problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "solve 后接宾语 the problem"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "我(现在)正在尝试解决这个麻烦",
+    "english": "I am trying to solve the problem",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["try to do sth 尽力做某事", "solve the problem 解决问题"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "trying",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am trying",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to solve the problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 12,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "面对(ing形式)",
+    "english": "facing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["face 的现在分词/动名词"],
+      "confidence": 0.45,
+      "words": [
+        {
+          "text": "facing",
+          "pos": "分词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "facing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "正在面对",
+    "english": "be facing",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "facing",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be facing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "我们",
+    "english": "we",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "我们(现在)正在面对",
+    "english": "we are facing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "现在进行时",
+      "keyPoints": ["缺宾语，为句子片段"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are facing",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "这个麻烦",
+    "english": "the problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "我们(现在)正在面对的这个麻烦",
+    "english": "the problem we are facing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["定语从句省略关系代词", "现在进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "we are facing",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 25
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "我(现在)正在尝试解决这个麻烦",
+    "english": "I am trying to solve the problem",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["try to do sth 尽力做某事", "solve the problem 解决问题"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "trying",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am trying",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to solve the problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 12,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "我(现在)正在尝试解决我们面对的这个麻烦",
+    "english": "I am trying to solve the problem we are facing",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["we are facing 为定语从句修饰 problem", "try to do sth 结构"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "trying",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 40,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am trying",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to solve the problem we are facing",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 12,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "现在",
+    "english": "now",
+    "annotation": {
+      "order": 17,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词 now 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "now",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "我(现在)正在尝试解决我们现在正在面对的这个麻烦",
+    "english": "I am trying to solve the problem we are facing now",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["we are facing 为定语从句，now 作时间状语", "try to do sth 结构"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "trying",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 40,
+          "end": 46
+        },
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 47,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am trying",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "to solve the problem we are facing",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 12,
+          "end": 46
+        },
+        {
+          "text": "now",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 47,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句 + 状语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "解决这个麻烦",
+    "english": "to solve the problem",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "solve 后接宾语 the problem"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "我解决这个麻烦",
+    "english": "I solve the problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["solve the problem解决问题", "一般现在时表习惯性动作"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 12,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "solve",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 8,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "解决(ing形式)",
+    "english": "solving",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词 solve 的现在分词/动名词形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "solving",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "solving",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "正在解决",
+    "english": "be solving",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + doing 构成进行时态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solving",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be solving",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "我(现在)正在解决",
+    "english": "I am solving",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "现在进行时",
+      "keyPoints": ["solve 为及物动词，通常需接宾语", "现在进行时结构：am/is/are + doing"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "solving",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am solving",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "这个麻烦",
+    "english": "the problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "我(现在)正在解决这个麻烦",
+    "english": "I am solving the problem",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["solve the problem 解决问题", "现在进行时表示正在解决"],
+      "confidence": 0.96,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "solving",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am solving",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "我们(现在)正在面对",
+    "english": "we are facing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "现在进行时",
+      "keyPoints": ["缺宾语，为句子片段"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are facing",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "我们(现在)正在面对的这个麻烦",
+    "english": "the problem we are facing",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["定语从句省略关系代词", "现在进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "we are facing",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 25
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "我(现在)正在解决我们(现在)正在面对的这个麻烦",
+    "english": "I am solving the problem we are facing",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["we are facing 为定语从句，修饰 problem", "主句为现在进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "solving",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 32,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am solving",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 24
+        },
+        {
+          "text": "we are facing",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 25,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "现在",
+    "english": "now",
+    "annotation": {
+      "order": 17,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词 now 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "now",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "我(现在)正在解决我们现在正在面对的这个麻烦",
+    "english": "I am solving the problem we are facing now",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["we are facing now 为定语从句，修饰 problem", "now 说明动作此刻正在发生"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "solving",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "facing",
+          "pos": "动词",
+          "start": 32,
+          "end": 38
+        },
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 39,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am solving",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 24
+        },
+        {
+          "text": "we are facing",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 25,
+          "end": 38
+        },
+        {
+          "text": "now",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 39,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句 + 状语"
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "疑惑",
+    "english": "to wonder",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to + 动词原形", "wonder 后常接从句或疑问词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wonder",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to wonder",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "我疑惑",
+    "english": "I wonder",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["wonder 意为“想知道”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "wonder",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I wonder",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "一起解决这个麻烦",
+    "english": "to solve the problem together",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "together 作方式状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 21,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        },
+        {
+          "text": "together",
+          "role": null,
+          "roleType": null,
+          "start": 21,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "我们可以",
+    "english": "we can",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "我们可以一起解决这个麻烦",
+    "english": "we can solve the problem together",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["solve the problem 意为解决问题", "together 作方式状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 25,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "can solve",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 12
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 24
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 25,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "是否",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "是否我们可以一起解决这个麻烦",
+    "english": "if we can solve the problem together",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if引导条件从句", "if + 主语 + 谓语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 28,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if we can solve the problem together",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "我疑惑",
+    "english": "I wonder",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["wonder 意为“想知道”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "wonder",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I wonder",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "我疑惑是否我们可以一起解决这个麻烦",
+    "english": "I wonder if we can solve the problem together",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["wonder if 引导宾语从句", "从句用陈述语序"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "wonder",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 29,
+          "end": 36
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 37,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "wonder",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "if we can solve the problem together",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 9,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "一起解决这个麻烦",
+    "english": "to solve the problem together",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "together 作方式状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 21,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        },
+        {
+          "text": "together",
+          "role": null,
+          "roleType": null,
+          "start": 21,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "我们需要",
+    "english": "we need",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["need 后常接 to do sth"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "我们需要一起解决这个麻烦",
+    "english": "we need to solve the problem together",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["solve the problem 解决问题", "together 作方式状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 29,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to solve the problem",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 8,
+          "end": 28
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 29,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "为什么",
+    "english": "why",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["why 是疑问副词，表示“为什么”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "为什么我们需要一起解决这个麻烦",
+    "english": "why we need to solve the problem together",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["why 引导从句，此处作标题性表达", "need to do sth 需要做某事"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 33,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "need to solve",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 7,
+          "end": 20
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 32
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 33,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "我疑惑",
+    "english": "I wonder",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["wonder 意为“想知道”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "wonder",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I wonder",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "我疑惑为什么我们需要一起解决这个麻烦",
+    "english": "I wonder why we need to solve the problem together",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["wonder why 引导宾语从句", "need to do sth 需要做某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "wonder",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 24,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 34,
+          "end": 41
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 42,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "wonder",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "why we need to solve the problem together",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 9,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "他",
+    "english": "he",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "他疑惑",
+    "english": "he wonders",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["wonder 常接 how/when 等从句"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wonders",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he wonders",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "一起解决这个麻烦",
+    "english": "to solve the problem together",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "together 作方式状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 21,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        },
+        {
+          "text": "together",
+          "role": null,
+          "roleType": null,
+          "start": 21,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "我们将会",
+    "english": "we will",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["缺少主要动词，为残缺片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 3,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "我们将会一起解决这个麻烦",
+    "english": "we will solve the problem together",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["will + 动词原形构成一般将来时", "solve the problem 解决问题"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will solve",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 25
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "副词短语",
+          "note": "方式状语",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "在什么时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "我们将会在什么时候一起解决这个麻烦",
+    "english": "when we will solve the problem together",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导的时间状语从句", "will + 动词原形表将来"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 31,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "we will solve the problem together",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 39
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "他疑惑我们将会在什么时候一起解决这个麻烦",
+    "english": "he wonders when we will solve the problem together",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["when 引导宾语从句", "从句用陈述语序"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wonders",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 24,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 34,
+          "end": 41
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 42,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wonders",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "when we will solve the problem together",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 11,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "如何",
+    "english": "how",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["如何；怎样"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "我们将会如何一起解决这个问题",
+    "english": "how we will solve the problem together",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["how引导宾语从句", "how + 主语 + 谓语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 30,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how we will solve the problem together",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 38
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "他疑惑我们将会如何一起解决这个麻烦",
+    "english": "he wonders how we will solve the problem together",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["how 引导宾语从句", "从句用陈述语序"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wonders",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 33,
+          "end": 40
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 41,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wonders",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "how we will solve the problem together",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 11,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "疑惑(ing形式)",
+    "english": "wondering",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["-ing 形式，可用作动名词"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "wondering",
+          "pos": "动名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "wondering",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "正在疑惑",
+    "english": "be wondering",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wondering",
+          "pos": "分词",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be wondering",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "我(过去)正在疑惑",
+    "english": "I was wondering",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时表示过去正在进行的动作", "wonder后常接if或wh-从句"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "wondering",
+          "pos": "动词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was wondering",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "是否我们可以一起解决这个麻烦",
+    "english": "if we can solve the problem together",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if引导条件从句", "if + 主语 + 谓语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 28,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if we can solve the problem together",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 36
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "我(过去)正在疑惑是否我们可以一起解决这个麻烦",
+    "english": "I was wondering if we can solve the problem together",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["if引导宾语从句", "过去进行时表示委婉语气"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "wondering",
+          "pos": "动词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 26,
+          "end": 31
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 36,
+          "end": 43
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 44,
+          "end": 52
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was wondering",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        },
+        {
+          "text": "if we can solve the problem together",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 16,
+          "end": 52
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "我(过去)正在疑惑",
+    "english": "I was wondering",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时表示过去正在进行的动作", "wonder后常接if或wh-从句"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "wondering",
+          "pos": "动词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was wondering",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "为什么我们需要一起解决这个麻烦",
+    "english": "why we need to solve the problem together",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["why 引导从句，此处作标题性表达", "need to do sth 需要做某事"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 33,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "need to solve",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 7,
+          "end": 20
+        },
+        {
+          "text": "the problem",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 32
+        },
+        {
+          "text": "together",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 33,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "我(过去)正在疑惑为什么我们需要一起解决这个麻烦",
+    "english": "I was wondering why we need to solve the problem together",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["why引导宾语从句", "need to do sth"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "wondering",
+          "pos": "分词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "why",
+          "pos": "连词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 31,
+          "end": 36
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 41,
+          "end": 48
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 49,
+          "end": 57
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was wondering",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        },
+        {
+          "text": "why we need to solve the problem together",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 16,
+          "end": 57
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "疑惑(ing形式)",
+    "english": "wondering",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["-ing 形式，可用作动名词"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "wondering",
+          "pos": "动名词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "wondering",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "正在疑惑",
+    "english": "be wondering",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wondering",
+          "pos": "分词",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be wondering",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "他",
+    "english": "he",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "他(现在)正在疑惑",
+    "english": "he is wondering",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 be + doing", "wonder 表示想知道"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "wondering",
+          "pos": "动词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is wondering",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "我们将会在什么时候一起解决这个麻烦",
+    "english": "when we will solve the problem together",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导的时间状语从句", "will + 动词原形表将来"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 31,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "we will solve the problem together",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 39
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "他(现在)正在疑惑我们将会在什么时候一起解决这个麻烦",
+    "english": "he is wondering when we will solve the problem together",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["when 引导宾语从句", "从句用一般将来时 will solve"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "wondering",
+          "pos": "动词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 29,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 39,
+          "end": 46
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 47,
+          "end": 55
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is wondering",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "when we will solve the problem together",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 16,
+          "end": 55
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "如何",
+    "english": "how",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["如何；怎样"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "我们将会如何一起解决这个问题",
+    "english": "how we will solve the problem together",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["how引导宾语从句", "how + 主语 + 谓语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 30,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how we will solve the problem together",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 38
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "他(现在)正在疑惑",
+    "english": "he is wondering",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 be + doing", "wonder 表示想知道"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "wondering",
+          "pos": "动词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is wondering",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "他(现在)正在疑惑我们将会如何一起解决这个问题",
+    "english": "he is wondering how we will solve the problem together",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["how 引导宾语从句", "从句用一般将来时 will solve"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "wondering",
+          "pos": "动词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 38,
+          "end": 45
+        },
+        {
+          "text": "together",
+          "pos": "副词",
+          "start": 46,
+          "end": 54
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is wondering",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "how we will solve the problem together",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 16,
+          "end": 54
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  }
+]

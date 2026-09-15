@@ -1,0 +1,7315 @@
+[
+  {
+    "order": 1,
+    "chinese": "听见；听说",
+    "english": "to hear",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hear 表示听见"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "听见我",
+    "english": "to hear me",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hear 后接宾语 me"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hear me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "你听见我",
+    "english": "you hear me",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["hear sb 听见某人", "一般现在时表示现在的感知"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "可以",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "你可以听见我",
+    "english": "you can hear me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can hear 能听见", "me 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "你可以听见我吗？",
+    "english": "can you hear me",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["can 引导的一般疑问句", "hear sb. 听见某人"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "你可以听见我",
+    "english": "you can hear me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can hear 能听见", "me 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "不可以",
+    "english": "can't",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["can 的否定缩写形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "你不可以听见我",
+    "english": "you can't hear me",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can't hear 意为听不见"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "你不可以听见我吗？",
+    "english": "can't you hear me",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["否定疑问句 can't you ...", "hear sb 听见某人"],
+      "confidence": 0.72,
+      "words": [
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can't",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "你不可以听见我",
+    "english": "you can't hear me",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can't hear 意为听不见"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can't hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "你听见我",
+    "english": "you hear me",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["hear sb 听见某人", "一般现在时表示现在的感知"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "不；没有",
+    "english": "don't",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do not 的缩写，构成否定"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "你没有听见我",
+    "english": "you don't hear me",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["hear sb 听见某人", "don't 构成否定"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "你没有听见我吗？",
+    "english": "don't you hear me",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["否定疑问句 Don't you...?", "hear sb 听见某人"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't you hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "你没有听见我",
+    "english": "you don't hear me",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["hear sb 听见某人", "don't 构成否定"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "你有听见我",
+    "english": "you do hear me",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["do 表强调，后接动词原形", "hear sb 听见某人"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "do",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "do hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "你有听见我吗？",
+    "english": "do you hear me",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["do 引导的一般疑问句", "hear sb 听见某人说话"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "do",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "do",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "可以",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "你可以听见我",
+    "english": "you can hear me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can hear 能听见", "me 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "你可以听见我吗？",
+    "english": "can you hear me",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["can 引导的一般疑问句", "hear sb. 听见某人"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "你没有听见我",
+    "english": "you don't hear me",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["hear sb 听见某人", "don't 构成否定"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "你有听见我吗？",
+    "english": "do you hear me",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般现在时",
+      "keyPoints": ["do 引导的一般疑问句", "hear sb 听见某人说话"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "do",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "do",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "你(过去)有听见我吗？",
+    "english": "did you hear me",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般疑问句，hear 后接宾格 me"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "did",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear me",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "你(过去)有听见我",
+    "english": "you did hear me",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["did hear 中 did 表示强调"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "做",
+    "english": "to do",
+    "annotation": {
+      "order": 10,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语 to do"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "这件事",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "做这件事",
+    "english": "to do it",
+    "annotation": {
+      "order": 12,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do sth 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "你做这件事",
+    "english": "you do it",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时，do 为实义动词", "it 指代前文提到的事物"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "do",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "没有",
+    "english": "don't",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do not 的缩写，构成否定"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "don't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "你没有做这件事",
+    "english": "you don't do it",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't 后接实义动词 do", "it 作宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "你有做这件事",
+    "english": "you do do it",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["do 作助动词表强调", "强调句式 You do do it"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "do",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 10,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "do do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 10,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "你没有做这件事",
+    "english": "you don't do it",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["don't 后接实义动词 do", "it 作宾语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "don't do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "你(过去)没有做这件事",
+    "english": "you didn't do it",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["didn't + 动词原形构成否定", "一般过去时否定句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "didn't do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "你(过去)有做这件事",
+    "english": "you did do it",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["did 用于强调谓语动词 do"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "你(过去)有做这件事吗？",
+    "english": "did you do it",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般疑问句，助动词 did 表过去"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "did",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "do it",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "如何",
+    "english": "how",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["如何；怎样"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "为什么",
+    "english": "why",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["why 是疑问副词，表示“为什么”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "什么时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "在哪里",
+    "english": "where",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["疑问副词where"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "什么",
+    "english": "what",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["疑问代词：什么"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "如何",
+    "english": "how",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["如何；怎样"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "你(过去)如何做这件事？",
+    "english": "how did you do it",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how 询问方式", "一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "为什么",
+    "english": "why",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["why 是疑问副词，表示“为什么”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "你(过去)为什么做这件事？",
+    "english": "why did you do it",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["why 引导的特殊疑问句", "did + 动词原形构成过去时疑问"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "什么时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "你(过去)什么时候做这件事？",
+    "english": "when did you do it",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["when引导的特殊疑问句", "助动词did后接动词原形"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 15
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "在哪里",
+    "english": "where",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["疑问副词where"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "你(过去)在哪里做这件事？",
+    "english": "where did you do it",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["where 引导特殊疑问句", "助动词 did + 动词原形"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did you do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "什么",
+    "english": "what",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["疑问代词：什么"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "你(过去)有做这件事吗？",
+    "english": "did you do it",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般疑问句，助动词 did 表过去"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "did",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "do it",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "你(过去)做了什么？",
+    "english": "what did you do",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["疑问词 what 作宾语", "did 构成一般过去时疑问"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "找到",
+    "english": "to find",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "找到我",
+    "english": "to find me",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to find me"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "你(过去)是如何",
+    "english": "how did you",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["特殊疑问句片段"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "你(过去)是如何找到我的？",
+    "english": "how did you find me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how 询问方式", "一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "find",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "她的",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "名字",
+    "english": "name",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“名字；名称”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "name",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "name",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "她的名字",
+    "english": "her name",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["her 为形容词性物主代词", "名词短语：她的名字"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "name",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her name",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "知道",
+    "english": "to know",
+    "annotation": {
+      "order": 104,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["know 知道；认识"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "知道她的名字",
+    "english": "to know her name",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "her name 她的名字"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "name",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know her name",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "你(过去)是如何",
+    "english": "how did you",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["特殊疑问句片段"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "你(过去)是如何知道她的名字的？",
+    "english": "how did you know her name",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how 询问方式", "一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "name",
+          "pos": "名词",
+          "start": 21,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "know",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "her name",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "电话",
+    "english": "phone",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“电话”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "phone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "号码",
+    "english": "number",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词 number"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "number",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "number",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "电话号码",
+    "english": "phone number",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，意为“电话号码”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "number",
+          "pos": "名词",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "phone number",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "我的电话号码",
+    "english": "my phone number",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语:phone number"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "number",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my phone number",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "知道",
+    "english": "to know",
+    "annotation": {
+      "order": 104,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["know 知道；认识"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "知道我的电话号码",
+    "english": "to know my phone number",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "my phone number 我的电话号码"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "number",
+          "pos": "名词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to know",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "my phone number",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "你(过去)是如何",
+    "english": "how did you",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["特殊疑问句片段"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "你(过去)是如何知道我的电话号码的？",
+    "english": "how did you know my phone number",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how引导的特殊疑问句", "询问对方如何得知电话号码"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "number",
+          "pos": "名词",
+          "start": 26,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "my phone number",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 32
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "做",
+    "english": "to do",
+    "annotation": {
+      "order": 10,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语 to do"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "这件事",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "做这件事",
+    "english": "to do it",
+    "annotation": {
+      "order": 12,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do sth 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "决定",
+    "english": "to decide",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "决定做这件事",
+    "english": "to decide to do it",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["decide to do sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide to do it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "你(过去)为什么",
+    "english": "why did you",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般过去时",
+      "keyPoints": ["why 引导特殊疑问句", "助动词 did 后接动词原形"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "你(过去)为什么决定做这件事？",
+    "english": "why did you decide to do it",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 决定做某事", "why 引导的特殊疑问句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 25,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you decide",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "to do it",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 19,
+          "end": 27
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "离开",
+    "english": "to leave",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to leave", "leave 离开"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "leave",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to leave",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "离开我",
+    "english": "to leave me",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "leave",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to leave me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "你(过去)为什么",
+    "english": "why did you",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般过去时",
+      "keyPoints": ["why 引导特殊疑问句", "助动词 did 后接动词原形"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "你(过去)为什么离开我？",
+    "english": "why did you leave me",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["疑问句语序：did + 主语 + 动词原形", "why 询问原因"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "leave",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you leave",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "说",
+    "english": "to say",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "say",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to say",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "它；那句话",
+    "english": "it",
+    "annotation": {
+      "order": 11,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词 it 指代前文提到的事物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "说那句话",
+    "english": "to say it",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "say",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to say it",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "你(过去)为什么",
+    "english": "why did you",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般过去时",
+      "keyPoints": ["why 引导特殊疑问句", "助动词 did 后接动词原形"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "你(过去)为什么说那句话？",
+    "english": "why did you say it",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["疑问句语序：did + 主语 + 动词原形", "it 指代上文提到的事物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "say",
+          "pos": "动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you say",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "到达",
+    "english": "to get",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to get",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "这里",
+    "english": "here",
+    "annotation": {
+      "order": 20,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["地点副词 here 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "到达这里",
+    "english": "to get here",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do 结构", "here 作副词表地点"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to get here",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "你(过去)什么时候",
+    "english": "when did you",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["when开头的疑问句片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "你(过去)什么时候到达这里的？",
+    "english": "when did you get here",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["when引导的特殊疑问句", "here作地点状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "get",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "here",
+          "pos": "副词",
+          "start": 17,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you get",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        },
+        {
+          "text": "here",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 21
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "见到",
+    "english": "to meet",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "meet",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to meet",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "他",
+    "english": "him",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "him",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "见到他",
+    "english": "to meet him",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语", "him 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "meet",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to meet him",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "你(过去)什么时候",
+    "english": "when did you",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["when开头的疑问句片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "你(过去)什么时候见到他的？",
+    "english": "when did you meet him",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["when引导的特殊疑问句", "meet sb 表示见某人"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "meet",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you meet",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 17
+        },
+        {
+          "text": "him",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 21
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "家",
+    "english": "home",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["home 可作副词，意为“在家/回家”"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "工作",
+    "english": "work",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作动词（工作）"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "work",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "家庭作业",
+    "english": "homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：家庭作业"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "你的",
+    "english": "your",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词性物主代词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "你的家庭作业",
+    "english": "your homework",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["物主代词 your + 不可数名词", "片段，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "完成",
+    "english": "to finish",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "完成你的家庭做作业",
+    "english": "to finish your homework",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish your homework"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 15,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish your homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "你(过去)什么时候",
+    "english": "when did you",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["when开头的疑问句片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "你(过去)什么时候完成你的家庭作业的？",
+    "english": "when did you finish your homework",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["when引导的特殊疑问句", "finish后接名词作宾语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 25,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you finish",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 19
+        },
+        {
+          "text": "your homework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 33
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "找到",
+    "english": "to find",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "他们/她们/它们",
+    "english": "them",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "them",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "找到他们",
+    "english": "to find them",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to find them"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find them",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "你(过去)在哪里",
+    "english": "where did you",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["where引导的特殊疑问句开头"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "你(过去)在哪里找到他们的？",
+    "english": "where did you find them",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["where 引导特殊疑问句", "them 是 they 的宾格形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did you find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 6,
+          "end": 18
+        },
+        {
+          "text": "them",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "购买",
+    "english": "to buy",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，表目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "这个",
+    "english": "this",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "购买这个",
+    "english": "to buy this",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["buy sth 买某物", "this 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to buy",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "this",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "你(过去)在哪里",
+    "english": "where did you",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["where引导的特殊疑问句开头"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "你(过去)在哪里购买这个的？",
+    "english": "where did you buy this",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["where引导的特殊疑问句", "did+动词原形构成一般过去时疑问"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "buy",
+          "pos": "动词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 18,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did you buy",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 6,
+          "end": 17
+        },
+        {
+          "text": "this",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "睡觉",
+    "english": "to sleep",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语(to sleep)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to sleep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "你(过去)在哪里",
+    "english": "where did you",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["where引导的特殊疑问句开头"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "你(过去)在哪里睡觉的？",
+    "english": "where did you sleep",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["where 引导特殊疑问句", "sleep 是不及物动词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did you sleep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 6,
+          "end": 19
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语"
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "上一个",
+    "english": "last",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "晚上",
+    "english": "night",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["night 表示“夜晚”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "昨晚",
+    "english": "last night",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "你(过去)昨晚在哪里睡觉的？",
+    "english": "where did you sleep last night",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["last night 作时间状语", "助动词 did + 动词原形"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 25,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did you sleep",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 6,
+          "end": 19
+        },
+        {
+          "text": "last night",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 30
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "说",
+    "english": "to say",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "say",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to say",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "你(过去)......了什么",
+    "english": "what did you",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["疑问句片段，缺少谓语动词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "你(过去)说了什么？",
+    "english": "what did you say",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["疑问词 what 作宾语", "say 的过去式疑问形式 did you say"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "say",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you say",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "学",
+    "english": "to learn",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to learn", "learn 学习"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to learn",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "你(过去)......了什么",
+    "english": "what did you",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["疑问句片段，缺少谓语动词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "你(过去)学到了什么？",
+    "english": "what did you learn",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["疑问词 what 作宾语", "learn 的过去式疑问形式 did you learn"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you learn",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "找到",
+    "english": "to find",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "你(过去)......了什么",
+    "english": "what did you",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["疑问句片段，缺少谓语动词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "你(过去)找到了什么？",
+    "english": "what did you find",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["疑问词 what 作宾语", "find 的过去式疑问形式 did you find"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "听到",
+    "english": "to hear",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hear 表示听见"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "你(过去)......了什么",
+    "english": "what did you",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["疑问句片段，缺少谓语动词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "你(过去)听到了什么？",
+    "english": "what did you hear",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["疑问词 what 作宾语", "hear 的过去式疑问形式 did you hear"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "看到",
+    "english": "to see",
+    "annotation": {
+      "order": 110,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "see",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to see",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "你(过去)......了什么",
+    "english": "what did you",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["疑问句片段，缺少谓语动词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "你(过去)看到了什么？",
+    "english": "what did you see",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["疑问词 what 作宾语", "see 的过去式疑问形式 did you see"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "see",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you see",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "你(过去)如何做这件事？",
+    "english": "how did you do it",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["how 询问方式", "一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "你(过去)为什么做这件事？",
+    "english": "why did you do it",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["why 引导的特殊疑问句", "did + 动词原形构成过去时疑问"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did you do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "你(过去)什么时候做这件事？",
+    "english": "when did you do it",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["when引导的特殊疑问句", "助动词did后接动词原形"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 15
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "你(过去)在哪里做这件事？",
+    "english": "where did you do it",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "Adv + S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["where 引导特殊疑问句", "助动词 did + 动词原形"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did you do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "it",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "structure": "状语 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "你(过去)做了什么？",
+    "english": "what did you do",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "疑问句",
+      "tense": "一般过去时",
+      "keyPoints": ["疑问词 what 作宾语", "did 构成一般过去时疑问"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did you do",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "你(过去)如何......？",
+    "english": "how did you",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["特殊疑问句片段"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "你(过去)为什么......？",
+    "english": "why did you",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般过去时",
+      "keyPoints": ["why 引导特殊疑问句", "助动词 did 后接动词原形"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "why",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "why did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "你(过去)什么时候......？",
+    "english": "when did you",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["when开头的疑问句片段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "你(过去)在哪里......？",
+    "english": "where did you",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["where引导的特殊疑问句开头"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "where",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "where did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 153,
+    "chinese": "你(过去)......了什么？",
+    "english": "what did you",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["疑问句片段，缺少谓语动词"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "what",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "did",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "what did you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  }
+]

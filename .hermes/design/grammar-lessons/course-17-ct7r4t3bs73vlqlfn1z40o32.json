@@ -1,0 +1,8180 @@
+[
+  {
+    "order": 1,
+    "chinese": "我们的",
+    "english": "our",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词性物主代词，后接名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "our",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "团队",
+    "english": "team",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "team",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "我们的团队",
+    "english": "our team",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，team 为集合名词"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "our team",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "加入",
+    "english": "to join",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to join",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "加入我们的团队",
+    "english": "to join our team",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "join 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to join our team",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "决定",
+    "english": "to decide",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "决定加入我们的团队",
+    "english": "to decide to join our team",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["decide to do sth 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decide",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 22,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to decide to join our team",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "他决定加入我们的团队",
+    "english": "he decides to join our team",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["decide to do sth 决定做某事", "主语第三人称单数用 decides"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decides",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decides",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "to join our team",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "他（过去）决定加入我们的团队",
+    "english": "he decided to join our team",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["decide to do sth 决定做某事", "不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decided",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "decided",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "to join our team",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "邀请",
+    "english": "to invite",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["invite 邀请"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "invite",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to invite",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "邀请（名词）",
+    "english": "invitation",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“邀请；请柬”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "这个邀请",
+    "english": "the invitation",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "接受",
+    "english": "to accept",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to accept",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "接受这个邀请",
+    "english": "to accept the invitation",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 14,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to accept the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "加入我们的团队",
+    "english": "to join our team",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "join 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to join our team",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "加入我们的团队的邀请",
+    "english": "the invitation to join our team",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作后置定语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "to join our team",
+          "role": null,
+          "roleType": null,
+          "start": 15,
+          "end": 31
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "接受加入我们团队的邀请",
+    "english": "to accept the invitation to join our team",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，含后置定语 to join our team"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 14,
+          "end": 24
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 37,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to accept",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 24
+        },
+        {
+          "text": "to join our team",
+          "role": null,
+          "roleType": null,
+          "start": 25,
+          "end": 41
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "他接受加入我们团队的邀请",
+    "english": "he accepts the invitation to join our team",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["accept the invitation to do sth", "主语 he 为第三人称单数"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepts",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 38,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepts",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "the invitation to join our team",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "他不接受加入我们团队的邀请",
+    "english": "he doesn't accept the invitation to join our team",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["the invitation to do sth 做某事的邀请"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 22,
+          "end": 32
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 45,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't accept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 17
+        },
+        {
+          "text": "the invitation to join our team",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "他接受了加入我们团队的邀请",
+    "english": "he accepted the invitation to join our team",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["不定式短语作定语修饰 invitation", "accept the invitation 接受邀请"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 16,
+          "end": 26
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 39,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "the invitation",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "to join our team",
+          "role": "定语",
+          "roleType": "不定式短语",
+          "start": 27,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "他（过去）没有接受加入我们团队的邀请",
+    "english": "he didn't accept the invitation to join our team",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["accept the invitation 接受邀请", "不定式作定语修饰名词"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 21,
+          "end": 31
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 35,
+          "end": 39
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 40,
+          "end": 43
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 44,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "didn't accept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 16
+        },
+        {
+          "text": "the invitation",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 31
+        },
+        {
+          "text": "to join our team",
+          "role": "定语",
+          "roleType": "不定式短语",
+          "start": 32,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "这个礼物",
+    "english": "the gift",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，可作主语或宾语", "由冠词the+名词构成"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the gift",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "接受",
+    "english": "to accept",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to accept",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "接受这个礼物",
+    "english": "to accept the gift",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to accept the gift",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "他",
+    "english": "he",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "他接受这个礼物",
+    "english": "he accepts the gift",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时第三人称单数", "accepts 加 -s"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepts",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepts",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "the gift",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "他不接受这个礼物",
+    "english": "he doesn't accept the gift",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主语 he 后否定用 doesn't"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 22,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't accept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 17
+        },
+        {
+          "text": "the gift",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "他（过去）接受这个礼物",
+    "english": "he accepted the gift",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["accept 表示“接受”", "主谓宾结构"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "the gift",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "他（过去）没有接受这个礼物",
+    "english": "he didn't accept the gift",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["accept 接受，后接名词作宾语", "否定用 didn't + 动词原形"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 21,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "didn't accept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 16
+        },
+        {
+          "text": "the gift",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "他想要",
+    "english": "he wants",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he wants",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "他想要接受这个礼物",
+    "english": "he wants to accept the gift",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "accept the gift 接受礼物"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wants",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "to accept the gift",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "他不想接受这个礼物",
+    "english": "he doesn't want to accept the gift",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "accept the gift 接受礼物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doesn't want to accept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 25
+        },
+        {
+          "text": "the gift",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "他（过去）想要接受这个礼物",
+    "english": "he wanted to accept the gift",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["want to do sth 想要做某事", "accept the gift 接受礼物"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wanted",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wanted",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to accept the gift",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "他（过去）不想接受这个礼物",
+    "english": "he didn't want to accept the gift",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 18,
+          "end": 24
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "gift",
+          "pos": "名词",
+          "start": 29,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "didn't want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 14
+        },
+        {
+          "text": "to accept the gift",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 15,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "完成",
+    "english": "to finish",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "你的",
+    "english": "your",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词性物主代词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "家庭作业",
+    "english": "homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：家庭作业"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "你的家庭作业",
+    "english": "your homework",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["物主代词 your + 不可数名词", "片段，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "your homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "完成你的家庭作业",
+    "english": "to finish your homework",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish your homework"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 15,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish your homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "我想要你",
+    "english": "I want you",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb/sth 想要某人/某物"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "我想要你完成你的家庭作业",
+    "english": "I want you to finish your homework",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb to do sth 想要某人做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to finish your homework",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "看",
+    "english": "to watch",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to watch 表示目的或打算"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to watch",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "电视",
+    "english": "TV",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.9,
+      "keyPoints": ["缩写词，电视"],
+      "words": [
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "TV",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "看电视",
+    "english": "to watch TV",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "watch TV 看电视"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to watch TV",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "你看电视",
+    "english": "you watch TV",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["watch TV 看电视"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 10,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "watch",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "TV",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 10,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "在你看电视之前",
+    "english": "before you watch TV",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 引导时间状语从句", "watch TV 看电视"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before you watch TV",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "我想要你完成你的家庭作业",
+    "english": "I want you to finish your homework",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb to do sth 想要某人做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to finish your homework",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "我想要你完成你的家庭作业在你看电视之前",
+    "english": "I want you to finish your homework before you watch TV",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb to do sth", "before 引导时间状语从句"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "your",
+          "pos": "代词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 26,
+          "end": 34
+        },
+        {
+          "text": "before",
+          "pos": "连词",
+          "start": 35,
+          "end": 41
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 42,
+          "end": 45
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 46,
+          "end": 51
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 52,
+          "end": 54
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to finish your homework",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 34
+        },
+        {
+          "text": "before you watch TV",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 35,
+          "end": 54
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语 + 状语"
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "可以",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "你可以",
+    "english": "you can",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["you 是主语，can 是情态动词", "缺少实义动词，不是完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "你可以看电视",
+    "english": "you can watch TV",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can 后接动词原形", "watch TV 为固定搭配"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can watch",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "text": "TV",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "你不可以看电视",
+    "english": "you can not watch TV",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can not表否定", "watch TV 看电视"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can not watch",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 17
+        },
+        {
+          "text": "TV",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "想要",
+    "english": "want",
+    "annotation": {
+      "order": 28,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "你想要",
+    "english": "you want",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "是否；如果",
+    "english": "if",
+    "annotation": {
+      "order": 164,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "如果你想的话",
+    "english": "if you want",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["if 引导条件状语从句", "want 后省略宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "if you want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "你可以看电视",
+    "english": "you can watch TV",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can 后接动词原形", "watch TV 为固定搭配"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can watch",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "text": "TV",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "你可以看电视如果你想的话",
+    "english": "you can watch TV if you want",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["if 引导条件状语从句", "主句含情态动词 can"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "if",
+          "pos": "连词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 24,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "can watch",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "text": "TV",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "if you want",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 17,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "回答",
+    "english": "to answer",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“回答”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to answer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "这个问题",
+    "english": "the question",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "回答这个问题",
+    "english": "to answer the question",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，后接宾语 the question"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 14,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to answer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "the question",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "拒绝",
+    "english": "to refuse",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to refuse"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "refuse",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to refuse",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "拒绝回答这个问题",
+    "english": "to refuse to answer the question",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["refuse to do sth 拒绝做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "refuse",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 24,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to refuse",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "to answer",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "the question",
+          "role": null,
+          "roleType": null,
+          "start": 20,
+          "end": 32
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "我想拒绝回答这个问题",
+    "english": "I want to refuse to answer the question",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["refuse to do sth 拒绝做某事", "answer the question 回答问题"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "refuse",
+          "pos": "动词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 31,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to refuse to answer the question",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "我拒绝回答这个问题",
+    "english": "I refuse to answer the question",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["refuse to do sth 拒绝做某事", "to answer 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refuse",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 23,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refuse",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "to answer the question",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "我（过去）拒绝回答这个问题",
+    "english": "I refused to answer the question",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["refuse to do sth 拒绝做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refused",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 24,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refused",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to answer the question",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "这个问题",
+    "english": "the question",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "困难的",
+    "english": "difficult",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“困难的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "difficult",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "这个问题是困难的",
+    "english": "the question is difficult",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 16,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "is difficult",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "这个问题（过去）是困难的",
+    "english": "the question was difficult",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主系表结构", "was为系动词过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "difficult",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "非常",
+    "english": "very",
+    "annotation": {
+      "order": 126,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "very",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "这个问题（过去）是非常困难的",
+    "english": "the question was very difficult",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["very修饰形容词difficult", "主系表结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 22,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "very difficult",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 17,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "对我来说",
+    "english": "for me",
+    "annotation": {
+      "order": 129,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["for sb 表示对某人而言"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "这个问题（过去）是非常困难的对我来说",
+    "english": "the question was very difficult for me",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["for me作状语", "主系表结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 22,
+          "end": 31
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 36,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "very difficult",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 17,
+          "end": 31
+        },
+        {
+          "text": "for me",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "因为",
+    "english": "because",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["because 表示原因，引导原因状语从句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "because",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "因为这个问题（过去）是非常困难的对我来说",
+    "english": "because the question was very difficult for me",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["because 引导原因状语从句", "very difficult for me"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 30,
+          "end": 39
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 40,
+          "end": 43
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 44,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "because the question was very difficult for me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 46
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "我（过去）拒绝回答这个问题",
+    "english": "I refused to answer the question",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["refuse to do sth 拒绝做某事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refused",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 24,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refused",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to answer the question",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "我（过去）拒绝回答这个问题因为这个问题（过去）是非常困难的对我来说",
+    "english": "I refused to answer the question because the question was very difficult for me",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + conj + S + V + P + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["because 引导原因状语从句", "refuse to do sth 拒绝做某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refused",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 24,
+          "end": 32
+        },
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 33,
+          "end": 40
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 45,
+          "end": 53
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 54,
+          "end": 57
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 58,
+          "end": 62
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 63,
+          "end": 72
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 73,
+          "end": 76
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 77,
+          "end": 79
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refused",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to answer the question",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 32
+        },
+        {
+          "text": "because",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 33,
+          "end": 40
+        },
+        {
+          "text": "the question",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 41,
+          "end": 53
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 54,
+          "end": 57
+        },
+        {
+          "text": "very difficult",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 58,
+          "end": 72
+        },
+        {
+          "text": "for me",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 73,
+          "end": 79
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 连接词 + 主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "我（过去）拒绝回答这个问题因为它（过去）是非常困难的对我来说",
+    "english": "I refused to answer the question because it was very difficult for me",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + conj + S + V + P + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["because 引导原因状语从句", "refuse to do sth 拒绝做某事"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refused",
+          "pos": "动词",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 24,
+          "end": 32
+        },
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 33,
+          "end": 40
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 41,
+          "end": 43
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 44,
+          "end": 47
+        },
+        {
+          "text": "very",
+          "pos": "副词",
+          "start": 48,
+          "end": 52
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 53,
+          "end": 62
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 63,
+          "end": 66
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 67,
+          "end": 69
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refused",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "to answer the question",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 10,
+          "end": 32
+        },
+        {
+          "text": "because",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 33,
+          "end": 40
+        },
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 41,
+          "end": 43
+        },
+        {
+          "text": "was",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 44,
+          "end": 47
+        },
+        {
+          "text": "very difficult",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 48,
+          "end": 62
+        },
+        {
+          "text": "for me",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 63,
+          "end": 69
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 连接词 + 主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "困难的",
+    "english": "difficult",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“困难的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "difficult",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "它是困难的",
+    "english": "it is difficult",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "完成",
+    "english": "to finish",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "这个工作",
+    "english": "the work",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语，非完整句子"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the work",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "完成这个工作",
+    "english": "to finish the work",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish the work"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish the work",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "完成这个工作（它）是困难的",
+    "english": "it is difficult to finish the work",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["It 作形式主语，to finish 为真正主语", "不定式短语作真正主语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "to finish the work",
+          "role": "主语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "一天",
+    "english": "a day",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语", "表示'一天'"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 2,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "在一天内",
+    "english": "in a day",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["in a day 一天之内"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in a day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "在一天内完成这个工作（它）是困难的",
+    "english": "it is difficult to finish the work in a day",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["It 作形式主语", "in a day 作时间状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "work",
+          "pos": "名词",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 35,
+          "end": 37
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 38,
+          "end": 39
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 40,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "difficult",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "to finish the work",
+          "role": "主语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 34
+        },
+        {
+          "text": "in a day",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 35,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "危险的",
+    "english": "dangerous",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dangerous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "它是危险的",
+    "english": "it is dangerous",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "形容词作表语"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "dangerous",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "游泳",
+    "english": "to swim",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "swim",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to swim",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "大海",
+    "english": "the sea",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["定冠词+名词构成名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "sea",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the sea",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "在大海里",
+    "english": "in the sea",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "sea",
+          "pos": "名词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the sea",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "在大海里游泳",
+    "english": "to swim in the sea",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作宾语", "in the sea 表地点"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "swim",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "sea",
+          "pos": "名词",
+          "start": 15,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to swim",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "in the sea",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "在大海里游泳（它）是危险的",
+    "english": "it is dangerous to swim in the sea",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["It 作形式主语，不定式为真正主语", "in the sea 作地点状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "swim",
+          "pos": "动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "sea",
+          "pos": "名词",
+          "start": 31,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "dangerous",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 6,
+          "end": 15
+        },
+        {
+          "text": "to swim",
+          "role": "主语",
+          "roleType": "不定式短语",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "in the sea",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "认为",
+    "english": "think",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "think",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "我认为",
+    "english": "I think",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I think",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "我认为在大海里游泳（它）是危险的",
+    "english": "I think it is dangerous to swim in the sea",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["it 作形式主语", "It is + adj + to do sth 句型"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 14,
+          "end": 23
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "swim",
+          "pos": "动词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "sea",
+          "pos": "名词",
+          "start": 39,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "think",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "it is dangerous to swim in the sea",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 8,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "我不认为在大海里游泳（它）是危险的",
+    "english": "I don't think it is dangerous to swim in the sea",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["I don't think + 宾语从句", "it is adj. to do sth 做某事是……的"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "think",
+          "pos": "动词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "swim",
+          "pos": "动词",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 38,
+          "end": 40
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "sea",
+          "pos": "名词",
+          "start": 45,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't think",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "it is dangerous to swim in the sea",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 14,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "我拒绝",
+    "english": "I refuse",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["I refuse 主谓结构完整"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refuse",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refuse",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "我拒绝在大海里游泳",
+    "english": "I refuse to swim in the sea",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["refuse to do sth 拒绝做某事", "in the sea 地点状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refuse",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "swim",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "sea",
+          "pos": "名词",
+          "start": 24,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refuse",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "to swim",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "in the sea",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "因为",
+    "english": "because",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["because 表示原因，引导原因状语从句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "because",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "因为它是危险的",
+    "english": "because it is dangerous",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["because 引导原因状语从句", "dangerous 危险的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 14,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "because it is dangerous",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "我拒绝在大海里游泳因为它是危险的",
+    "english": "I refuse to swim in the sea because it is dangerous",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["because 引导原因状语从句", "refuse to do sth 拒绝做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refuse",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "swim",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "sea",
+          "pos": "名词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "because",
+          "pos": "连词",
+          "start": 28,
+          "end": 35
+        },
+        {
+          "text": "it",
+          "pos": "代词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "text": "dangerous",
+          "pos": "形容词",
+          "start": 42,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "refuse",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "to swim",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "in the sea",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "text": "because",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 28,
+          "end": 35
+        },
+        {
+          "text": "it",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "text": "dangerous",
+          "role": "表语",
+          "roleType": "单词",
+          "start": 42,
+          "end": 51
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "接受",
+    "english": "to accept",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to accept",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "这个挑战",
+    "english": "the challenge",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 4,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the challenge",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "接受这个挑战",
+    "english": "to accept the challenge",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 14,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to accept the challenge",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "我必须接受这个挑战",
+    "english": "I have to accept the challenge",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["have to 表示必须、不得不", "accept the challenge 接受挑战"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 21,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "have to accept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "the challenge",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "我（过去）必须接受这个挑战",
+    "english": "I had to accept the challenge",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["had to 表示不得不，后接动词原形", "accept 后接宾语 the challenge"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 20,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "had to accept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        },
+        {
+          "text": "the challenge",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "我（过去）不必接受这个挑战",
+    "english": "I didn't have to accept the challenge",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["didn't have to 表示过去不必", "have to 的否定式"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "have",
+          "pos": "动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 28,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't have to accept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 23
+        },
+        {
+          "text": "the challenge",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 24,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "我接受这个挑战",
+    "english": "I accept the challenge",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主谓宾结构", "the challenge 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "accept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "the challenge",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "我不接受这个挑战",
+    "english": "I don't accept the challenge",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["accept the challenge 接受挑战"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 19,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "don't accept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "the challenge",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "我（过去）接受这个挑战",
+    "english": "I accepted the challenge",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主谓宾结构", "accepted 为 accept 的过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 15,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "the challenge",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "我（过去）不接受这个挑战",
+    "english": "I didn't accept the challenge",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["didn't + 动词原形 表过去否定", "accept the challenge 接受挑战"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't",
+          "pos": "助动词",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 20,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "didn't accept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        },
+        {
+          "text": "the challenge",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "大的",
+    "english": "big",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 big，大的"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "big",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "一个大的挑战",
+    "english": "a big challenge",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 6,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a big challenge",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "英语",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "英语是一个大的挑战",
+    "english": "English is a big challenge",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主语English + 系动词is + 表语", "不定冠词 a 修饰可数名词单数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "a big challenge",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "对我来说",
+    "english": "for me",
+    "annotation": {
+      "order": 129,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["for sb 表示对某人而言"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "英语是一个大的挑战对我来说",
+    "english": "English is a big challenge for me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["for me 作状语,表示对象", "主语English + 系动词is + 表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 31,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "a big challenge",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 26
+        },
+        {
+          "text": "for me",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "英语不是一个大的挑战对我来说",
+    "english": "English is not a big challenge for me",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["not 构成否定:is not", "for me 作状语,表示对象"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 21,
+          "end": 30
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 35,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "a big challenge",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 30
+        },
+        {
+          "text": "for me",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 31,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "掌握",
+    "english": "to master",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to master",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "英语",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "掌握英语",
+    "english": "to master English",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to master English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "我将会",
+    "english": "I will",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["will为情态动词表将来", "缺少谓语动词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "我将会掌握英语",
+    "english": "I will master English",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["will + 动词原形表将来", "master 表示掌握"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will master",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "将来",
+    "english": "the future",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，可作主语或宾语", "由冠词the+名词构成"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "future",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the future",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "在将来",
+    "english": "in the future",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["in the future 意为“将来、未来”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "future",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the future",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "不远的",
+    "english": "near",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词，意为“在……附近；靠近”"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "near",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "near",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "在不远的将来",
+    "english": "in the near future",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语，表示将来时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "near",
+          "pos": "形容词",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "text": "future",
+          "pos": "名词",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the near future",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "我将会在不远的将来掌握英语",
+    "english": "I will master English in the near future",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["in the near future 在不久的将来", "will + 动词原形表将来"],
+      "confidence": 0.94,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "near",
+          "pos": "形容词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "future",
+          "pos": "名词",
+          "start": 34,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will master",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "in the near future",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "我知道",
+    "english": "I know",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.6,
+      "keyPoints": ["know 知道，通常需接宾语", "仅主语+动词，意思不完整"],
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "know",
+          "role": null,
+          "roleType": null,
+          "start": 2,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "我知道我将会在不远的将来掌握英语",
+    "english": "I know I will master English in the near future",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["宾语从句中 that 可省略", "in the near future 在不久的将来"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "near",
+          "pos": "形容词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "future",
+          "pos": "名词",
+          "start": 41,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "I will master English in the near future",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 7,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "而且",
+    "english": "and",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["并列连词", "用于连接并列的词、短语或句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "and",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "而且我知道我将会在不远的将来掌握英语",
+    "english": "and I know I will master english in the near future",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["以 and 开头的片段", "含宾语从句 I will master English"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 18,
+          "end": 24
+        },
+        {
+          "text": "english",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "near",
+          "pos": "形容词",
+          "start": 40,
+          "end": 44
+        },
+        {
+          "text": "future",
+          "pos": "名词",
+          "start": 45,
+          "end": 51
+        }
+      ],
+      "phrases": [
+        {
+          "text": "and I know I will master english in the near future",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 51
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "英语不是一个大的挑战对我来说",
+    "english": "English is not a big challenge for me",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["not 构成否定:is not", "for me 作状语,表示对象"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 21,
+          "end": 30
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 35,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "a big challenge",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 30
+        },
+        {
+          "text": "for me",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 31,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "英语不是一个大的挑战对我来说而且我知道我将会在不远的将来掌握英语",
+    "english": "English is not a big challenge for me and I know I will master english in the near future",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Adv + conj + S + V + Clause",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["and 连接的并列句", "know 后接宾语从句"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "text": "big",
+          "pos": "形容词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 21,
+          "end": 30
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 35,
+          "end": 37
+        },
+        {
+          "text": "and",
+          "pos": "连词",
+          "start": 38,
+          "end": 41
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 42,
+          "end": 43
+        },
+        {
+          "text": "know",
+          "pos": "动词",
+          "start": 44,
+          "end": 48
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 49,
+          "end": 50
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 51,
+          "end": 55
+        },
+        {
+          "text": "master",
+          "pos": "动词",
+          "start": 56,
+          "end": 62
+        },
+        {
+          "text": "english",
+          "pos": "名词",
+          "start": 63,
+          "end": 70
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 71,
+          "end": 73
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 74,
+          "end": 77
+        },
+        {
+          "text": "near",
+          "pos": "形容词",
+          "start": 78,
+          "end": 82
+        },
+        {
+          "text": "future",
+          "pos": "名词",
+          "start": 83,
+          "end": 89
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is not a big challenge",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 30
+        },
+        {
+          "text": "for me",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 31,
+          "end": 37
+        },
+        {
+          "text": "and",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 38,
+          "end": 41
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 42,
+          "end": 43
+        },
+        {
+          "text": "know",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 44,
+          "end": 48
+        },
+        {
+          "text": "I will master english in the near future",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 49,
+          "end": 89
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 从句"
+    }
+  }
+]

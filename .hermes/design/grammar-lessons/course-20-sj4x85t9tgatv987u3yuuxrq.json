@@ -1,0 +1,7126 @@
+[
+  {
+    "order": 1,
+    "chinese": "购物",
+    "english": "to shop",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "shop 购物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "shop",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to shop",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "想要",
+    "english": "want",
+    "annotation": {
+      "order": 28,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "我们",
+    "english": "we",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "我们想要",
+    "english": "we want",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "我们想要购物",
+    "english": "we want to shop",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "shop 作动词，购物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "shop",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to shop",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "市场",
+    "english": "the market",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the market 市场"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "market",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the market",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "在",
+    "english": "at",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 at"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "在市场",
+    "english": "at the market",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "market",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the market",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "购物",
+    "english": "to shop",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "shop 购物"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "shop",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to shop",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "在市场购物",
+    "english": "to shop at the market",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "地点状语 at the market"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "shop",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "market",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to shop at the market",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "我们想要在市场购物",
+    "english": "we want to shop at the market",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["at the market 在集市", "介词短语作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "shop",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "market",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to shop",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "at the market",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "超级",
+    "english": "super",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "super",
+          "pos": "形容词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "super",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "超级市场",
+    "english": "supermarket",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 0,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "supermarket",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "在超市",
+    "english": "at the supermarket",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 7,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the supermarket",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "我们想要在超市购物",
+    "english": "we want to shop at the supermarket",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["at the supermarket 在超市", "介词短语作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "shop",
+          "pos": "动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 23,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "to shop",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "at the supermarket",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "我们在超市购物",
+    "english": "we shop at the supermarket",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["shop at 在…购物", "supermarket n. 超市"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "shop",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "shop",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "at the supermarket",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 8,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "购物(ing形式)",
+    "english": "shopping",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动名词：购物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "shopping",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "shopping",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "正在购物",
+    "english": "be shopping",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词", "进行时"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "shopping",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be shopping",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "我们",
+    "english": "we",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "我们(现在)正在购物",
+    "english": "we are shopping",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时", "be + doing 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "shopping",
+          "pos": "动词",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are shopping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "在超市",
+    "english": "at the supermarket",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 7,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the supermarket",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "我们(现在)正在在超市购物",
+    "english": "we are shopping at the supermarket",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时", "at the supermarket地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "shopping",
+          "pos": "动词",
+          "start": 7,
+          "end": 15
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 23,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are shopping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "at the supermarket",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "现在",
+    "english": "now",
+    "annotation": {
+      "order": 17,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词 now 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "now",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "我们现在正在在超市购物",
+    "english": "we are shopping at the supermarket now",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时", "now常用于现在进行时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "shopping",
+          "pos": "动词",
+          "start": 7,
+          "end": 15
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 23,
+          "end": 34
+        },
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 35,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are shopping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        },
+        {
+          "text": "at the supermarket",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 34
+        },
+        {
+          "text": "now",
+          "role": "状语",
+          "roleType": "副词短语",
+          "start": 35,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "我们(过去)正在在超市购物",
+    "english": "we were shopping at the supermarket",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["at the supermarket 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "shopping",
+          "pos": "动词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 24,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were shopping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 16
+        },
+        {
+          "text": "at the supermarket",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "打电话",
+    "english": "to call",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["call 打电话；称呼", "不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to call",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "你(过去)打电话给我",
+    "english": "you called me",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主谓宾结构", "called 为过去式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "called",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "当......的时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "当你(过去)打电话给我的时候",
+    "english": "when you called me",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导的时间状语从句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you called me",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "星期天",
+    "english": "Sunday",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "keyPoints": ["专有名词，星期"],
+      "words": [
+        {
+          "text": "Sunday",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Sunday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "上一个",
+    "english": "last",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "上周日",
+    "english": "last Sunday",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "Sunday",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last Sunday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "当你上周日打电话给我的时候",
+    "english": "when you called me last Sunday",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导的时间状语从句", "last Sunday 表过去时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "Sunday",
+          "pos": "名词",
+          "start": 24,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "you called me",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 18
+        },
+        {
+          "text": "last Sunday",
+          "role": null,
+          "roleType": null,
+          "start": 19,
+          "end": 30
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "我们(过去)正在在超市购物当你上周日打电话给我的时候",
+    "english": "we were shopping at the supermarket when you called me last Sunday",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["when 引导时间状语从句", "主句过去进行时 + 从句一般过去时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "shopping",
+          "pos": "动词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 24,
+          "end": 35
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 45,
+          "end": 51
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 52,
+          "end": 54
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 55,
+          "end": 59
+        },
+        {
+          "text": "Sunday",
+          "pos": "名词",
+          "start": 60,
+          "end": 66
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were shopping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 16
+        },
+        {
+          "text": "at the supermarket",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 35
+        },
+        {
+          "text": "when",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 41,
+          "end": 44
+        },
+        {
+          "text": "called",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 45,
+          "end": 51
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 52,
+          "end": 54
+        },
+        {
+          "text": "last Sunday",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 55,
+          "end": 66
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "我们上周日正在在超市购物",
+    "english": "we were shopping at the supermarket last Sunday",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["last Sunday 作时间状语", "地点+时间状语顺序"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "shopping",
+          "pos": "动词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 24,
+          "end": 35
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "Sunday",
+          "pos": "名词",
+          "start": 41,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were shopping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 16
+        },
+        {
+          "text": "at the supermarket",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 35
+        },
+        {
+          "text": "last Sunday",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 36,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "我们(过去)正在购物",
+    "english": "we were shopping",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时结构 was/were + doing"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "shopping",
+          "pos": "动词",
+          "start": 8,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "were shopping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "我们(现在)正在购物",
+    "english": "we are shopping",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时", "be + doing 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "shopping",
+          "pos": "动词",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "are shopping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "我们将会正在购物",
+    "english": "we will be shopping",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时:will be shopping"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "shopping",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will be shopping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "在超市",
+    "english": "at the supermarket",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 7,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the supermarket",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "我们将会正在在超市购物",
+    "english": "we will be shopping at the supermarket",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时", "at the supermarket 作地点状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "shopping",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 27,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will be shopping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 19
+        },
+        {
+          "text": "at the supermarket",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 20,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "星期一",
+    "english": "Monday",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["Monday 星期一，专有名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "Monday",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Monday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "下一个",
+    "english": "next",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["next 表示“下一个的”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "next",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "下周一",
+    "english": "next Monday",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["next 修饰星期名词 Monday"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "Monday",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "next Monday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "我们将会在下周一正在在超市购物",
+    "english": "we will be shopping at the supermarket next Monday",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时", "next Monday 作时间状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "we",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "shopping",
+          "pos": "动词",
+          "start": 11,
+          "end": 19
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "supermarket",
+          "pos": "名词",
+          "start": 27,
+          "end": 38
+        },
+        {
+          "text": "next",
+          "pos": "形容词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "Monday",
+          "pos": "名词",
+          "start": 44,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "we",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will be shopping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 19
+        },
+        {
+          "text": "at the supermarket",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 20,
+          "end": 38
+        },
+        {
+          "text": "next Monday",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 39,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 状语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "等待",
+    "english": "to wait",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wait",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to wait",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "我需要",
+    "english": "I need",
+    "annotation": {
+      "order": 101,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "我需要等待",
+    "english": "I need to wait",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "wait 等待"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "wait",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to wait",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "朋友",
+    "english": "friend",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["friend 朋友"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "我的朋友",
+    "english": "my friend",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "名词短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "为了",
+    "english": "for",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["for 介词，意为“为了；对于”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "为了我的朋友",
+    "english": "for my friend",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["for + 名词短语", "介词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for my friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "我需要为了我的朋友等待",
+    "english": "I need to wait for my friend",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["wait for sb 等待某人", "need to do sth 需要做某事"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "wait",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to wait for my friend",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "我为了我的朋友等待",
+    "english": "I wait for my friend",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["wait for sb 等待某人", "介词短语作状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "wait",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 14,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "wait",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "for my friend",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 7,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "等待(ing形式)",
+    "english": "waiting",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["waiting：wait 的现在分词/动名词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "waiting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "正在等待",
+    "english": "be waiting",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "waiting",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be waiting",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "我(现在)正在等待",
+    "english": "I am waiting",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：am + doing", "wait 等待，此处不及物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am waiting",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "为了我的朋友",
+    "english": "for my friend",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["for + 名词短语", "介词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for my friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "我(现在)正在为了我的朋友等待",
+    "english": "I am waiting for my friend",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "wait for sb 等待某人"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "公交车",
+    "english": "the bus",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bus",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "停止",
+    "english": "stop",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词：停止"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "stop",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "公交车站",
+    "english": "the bus stop",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bus stop",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "在",
+    "english": "at",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 at"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "在公交车站",
+    "english": "at the bus stop",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the bus stop",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "我在公交车站(现在)正在为了我的朋友等待",
+    "english": "I am waiting for my friend at the bus stop",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "at the bus stop 在公交车站"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 38,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "at the bus stop",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "现在",
+    "english": "now",
+    "annotation": {
+      "order": 17,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词 now 作状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "now",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "我现在在公交车站正在为了我的朋友等待",
+    "english": "I am waiting for my friend at the bus stop now",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "now 表示时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "text": "now",
+          "pos": "副词",
+          "start": 43,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "text": "at the bus stop",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 42
+        },
+        {
+          "text": "now",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 43,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "我在公交车站(过去)正在为了我的朋友等待",
+    "english": "I was waiting for my friend at the bus stop",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时表示过去正在进行的动作", "at the bus stop作地点状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 39,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "at the bus stop",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 43
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "昨天",
+    "english": "yesterday",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "yesterday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "我昨天在公交车站正在为了我的朋友等待",
+    "english": "I was waiting for my friend at the bus stop yesterday",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时表示过去正在进行的动作", "yesterday作时间状语"],
+      "confidence": 0.87,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 44,
+          "end": 53
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "at the bus stop",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 43
+        },
+        {
+          "text": "yesterday",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 44,
+          "end": 53
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "时间；时候",
+    "english": "time",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "这个",
+    "english": "this",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "这个时候",
+    "english": "this time",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "this time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "在",
+    "english": "at",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 at"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "在这个时候",
+    "english": "at this time",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "昨天",
+    "english": "yesterday",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "yesterday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "在昨天这个时候",
+    "english": "at this time yesterday",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time yesterday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "我在昨天这个时候在公交车站正在为了我的朋友等待",
+    "english": "I was waiting for my friend at the bus stop at this time yesterday",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时表示过去正在进行的动作", "at this time yesterday作时间状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 44,
+          "end": 46
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 47,
+          "end": 51
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 52,
+          "end": 56
+        },
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 57,
+          "end": 66
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "at the bus stop",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 43
+        },
+        {
+          "text": "at this time yesterday",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 44,
+          "end": 66
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "在昨天之前",
+    "english": "before yesterday",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 作介词，后接名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "yesterday",
+          "pos": "名词",
+          "start": 7,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before yesterday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "那一天",
+    "english": "the day",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "在昨天之前的那一天(前天)",
+    "english": "the day before yesterday",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["时间短语", "前天"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "yesterday",
+          "pos": "名词",
+          "start": 15,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the day before yesterday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "在这个时候",
+    "english": "at this time",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "在前天这个时候",
+    "english": "at this time the day before yesterday",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the day before yesterday 意为“前天”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "yesterday",
+          "pos": "名词",
+          "start": 28,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "the day before yesterday",
+          "role": null,
+          "roleType": null,
+          "start": 13,
+          "end": 37
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "我在前天这个时候在公交车站正在为了我的朋友等待",
+    "english": "I was waiting for my friend at the bus stop at this time the day before yesterday",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时表示过去正在进行的动作", "the day before yesterday作时间状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 44,
+          "end": 46
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 47,
+          "end": 51
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 52,
+          "end": 56
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 57,
+          "end": 60
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 61,
+          "end": 64
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 65,
+          "end": 71
+        },
+        {
+          "text": "yesterday",
+          "pos": "名词",
+          "start": 72,
+          "end": 81
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "text": "at the bus stop",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 43
+        },
+        {
+          "text": "at this time the day before yesterday",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 44,
+          "end": 81
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "我(过去)正在为了我的朋友等待",
+    "english": "I was waiting for my friend",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时表示过去正在进行的动作", "wait for sb表示等待某人"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "我(现在)正在为了我的朋友等待",
+    "english": "I am waiting for my friend",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "wait for sb 等待某人"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "将来",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "我将会正在为了我的朋友等待",
+    "english": "I will be waiting for my friend",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时 will be doing", "wait for sb 等待某人"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "waiting",
+          "pos": "分词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will be waiting",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "for my friend",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "公交车",
+    "english": "the bus",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bus",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "停止",
+    "english": "stop",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词：停止"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "stop",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "stop",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "公交车站",
+    "english": "the bus stop",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bus stop",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "在公交车站",
+    "english": "at the bus stop",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the bus stop",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "我将会在公交车站正在为了我的朋友等待",
+    "english": "I will be waiting for my friend at the bus stop",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时 will be doing", "at the bus stop 地点状语"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "waiting",
+          "pos": "分词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 43,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will be waiting",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "for my friend",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 31
+        },
+        {
+          "text": "at the bus stop",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 状语"
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "在这个时候",
+    "english": "at this time",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "明天",
+    "english": "tomorrow",
+    "annotation": {
+      "order": 91,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词：明天"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "在明天这个时候",
+    "english": "at this time tomorrow",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "我将会在明天这个时候在公交车站正在为了我的朋友等待",
+    "english": "I will be waiting for my friend at the bus stop at this time tomorrow",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时表示将来某时正在进行的动作", "wait for sb 表示等候某人"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 43,
+          "end": 47
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 48,
+          "end": 50
+        },
+        {
+          "text": "this",
+          "pos": "代词",
+          "start": 51,
+          "end": 55
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 56,
+          "end": 60
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 61,
+          "end": 69
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will be waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 21
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 22,
+          "end": 31
+        },
+        {
+          "text": "at the bus stop",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 47
+        },
+        {
+          "text": "at this time tomorrow",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 48,
+          "end": 69
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "在......之后",
+    "english": "after",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词：在……之后；也可作连词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "after",
+          "pos": "介词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "after",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "在明天之后",
+    "english": "after tomorrow",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语：明天之后，作时间状语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "after",
+          "pos": "介词",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 6,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "after tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "那一天",
+    "english": "the day",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the day",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "在明天之后的那一天(后天)",
+    "english": "the day after tomorrow",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["时间短语", "后天"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "after",
+          "pos": "介词",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "text": "tomorrow",
+          "pos": "名词",
+          "start": 14,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the day after tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "在这个时候",
+    "english": "at this time",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语，表时间"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "后天这个时候",
+    "english": "at this time the day after tomorrow",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the day after tomorrow 意为“后天”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "after",
+          "pos": "介词",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "text": "tomorrow",
+          "pos": "名词",
+          "start": 27,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at this time",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "the day after tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 13,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "我将会在后天这个时候在公交车站正在为了我的朋友等待",
+    "english": "I will be waiting for my friend at the bus stop at this time the day after tomorrow",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Adv + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时 will be doing", "the day after tomorrow 后天"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "waiting",
+          "pos": "分词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "bus",
+          "pos": "名词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "stop",
+          "pos": "名词",
+          "start": 43,
+          "end": 47
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 48,
+          "end": 50
+        },
+        {
+          "text": "this",
+          "pos": "形容词",
+          "start": 51,
+          "end": 55
+        },
+        {
+          "text": "time",
+          "pos": "名词",
+          "start": 56,
+          "end": 60
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 61,
+          "end": 64
+        },
+        {
+          "text": "day",
+          "pos": "名词",
+          "start": 65,
+          "end": 68
+        },
+        {
+          "text": "after",
+          "pos": "介词",
+          "start": 69,
+          "end": 74
+        },
+        {
+          "text": "tomorrow",
+          "pos": "名词",
+          "start": 75,
+          "end": 83
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will be waiting",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "for my friend",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 31
+        },
+        {
+          "text": "at the bus stop",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 47
+        },
+        {
+          "text": "at this time the day after tomorrow",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 48,
+          "end": 83
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 状语 + 状语"
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "我将会为了我的朋友正在等待",
+    "english": "I will be waiting for my friend",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时 will be doing", "wait for sb 等待某人"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "waiting",
+          "pos": "分词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 25,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will be waiting",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "for my friend",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "他",
+    "english": "he",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "他将会为了我的朋友正在等待",
+    "english": "he will be waiting for my friend",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["wait for 为固定搭配，表等待", "将来进行时 will be waiting"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will",
+          "pos": "情态动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 26,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "will be waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 22
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "他们",
+    "english": "they",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 they 主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "他们将会为了我的朋友正在等待",
+    "english": "they will be waiting for my friend",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["将来进行时 will be waiting", "for 引出等待的对象"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 28,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "will be waiting",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 20
+        },
+        {
+          "text": "for my friend",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "我(现在)正在为了我的朋友等待",
+    "english": "I am waiting for my friend",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "wait for sb 等待某人"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "my friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "我(现在)正在等待",
+    "english": "I am waiting",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：am + doing", "wait 等待，此处不及物"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am waiting",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "为了",
+    "english": "for",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["for 介词，意为“为了；对于”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "为了你",
+    "english": "for you",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["for 后接宾格 you"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "我(现在)正在为了你等待",
+    "english": "I am waiting for you",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "wait for sb 等待某人"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "问",
+    "english": "to ask",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“询问”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to ask",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "问我",
+    "english": "to ask me",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to ask me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "那个",
+    "english": "that",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["that 可作代词或引导词"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "问题",
+    "english": "question",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["question 问题；疑问", "也可作动词：质疑"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "那个问题",
+    "english": "that question",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["指示限定词 that 修饰名词 question"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "问我那个问题",
+    "english": "to ask me that question",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["ask sb sth 双宾语结构"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 15,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to ask me that question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "我(现在)正在等你问我",
+    "english": "I am waiting for you to ask me",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["wait for sb to do sth 等某人做某事", "不定式作宾语补足语"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 28,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "to ask me",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 21,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "那个问题",
+    "english": "that question",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["指示限定词 that 修饰名词 question"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "that",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "that question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "我(过去)正在等你问我那个问题",
+    "english": "I was waiting for you to ask me that question",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["wait for sb to do sth结构", "过去进行时表示过去正在进行的动作"],
+      "confidence": 0.78,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 32,
+          "end": 36
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 37,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "to ask me that question",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 22,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "我将会正在等你问我那个问题",
+    "english": "I will be waiting for you to ask me that question",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["wait for sb to do sth 结构", "不定式作宾语补足语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "waiting",
+          "pos": "动词",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "ask",
+          "pos": "动词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "that",
+          "pos": "代词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 41,
+          "end": 49
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "will be waiting for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 21
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "to ask me that question",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 26,
+          "end": 49
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  }
+]

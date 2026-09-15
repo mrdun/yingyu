@@ -1,0 +1,6201 @@
+[
+  {
+    "order": 1,
+    "chinese": "见到",
+    "english": "to see",
+    "annotation": {
+      "order": 110,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "see",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to see",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "见到你",
+    "english": "to see you",
+    "annotation": {
+      "order": 111,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "see sb. 表示看见某人"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "see",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to see you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "我想要",
+    "english": "I want",
+    "annotation": {
+      "order": 99,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["主谓片段，句意不完整"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I want",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "我想要见到你",
+    "english": "I want to see you",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "see you 见你"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "see",
+          "pos": "动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 14,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to see you",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "我想要(有意识地)看你",
+    "english": "I want to look at you",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want to do sth 想要做某事", "look at 看着"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 18,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "单词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to look at you",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "看我",
+    "english": "to look at me",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "look at 看着"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to look at me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "我想要你",
+    "english": "I want you",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["want sb/sth 想要某人/某物"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "我想要你看我",
+    "english": "I want you to look at me",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + OC",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["look at 固定搭配", "不定式作宾语补足语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "want",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "to look at me",
+          "role": "宾语补足语",
+          "roleType": "不定式短语",
+          "start": 11,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 宾语补足语"
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "看我",
+    "english": "to look at me",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "look at 看着"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to look at me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "看你",
+    "english": "to look at you",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "look at 看着"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 11,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to look at you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "我看你",
+    "english": "I look at you",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["look at 看……", "you 你"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "look at",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 9
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "看(ing形式)",
+    "english": "looking",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["look 的现在分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "looking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "正在看着",
+    "english": "be looking",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "looking",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be looking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "正在看着你",
+    "english": "be looking at you",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["look at：看着", "be + doing 现在进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 14,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be looking at you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "我(现在)正在看着你",
+    "english": "I am looking at you",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["look at 表示看", "现在进行时描述正在发生"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am looking at",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "我(过去)正在看着你",
+    "english": "I was looking at you",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时：was/were + doing", "look at 表示“看向”"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 17,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was looking at",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "我自己",
+    "english": "myself",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["反身代词，意为“我自己”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "myself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "我(过去)正在看着我自己",
+    "english": "I was looking at myself",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["look at 是固定搭配，意为“看”", "myself 是反身代词作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was looking at",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "myself",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "镜子",
+    "english": "mirror",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["镜子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "mirror",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mirror",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "在镜子里",
+    "english": "in the mirror",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语，表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "mirror",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the mirror",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "我(过去)正在在镜子里看着我自己",
+    "english": "I was looking at myself in the mirror",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["in the mirror 作地点状语", "look at oneself 表示“看自己”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "mirror",
+          "pos": "名词",
+          "start": 31,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was looking at",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "myself",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "in the mirror",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "我(现在)正在在镜子里看着我自己",
+    "english": "I am looking at myself in the mirror",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["反身代词 myself 作宾语", "in the mirror 作地点状语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "myself",
+          "pos": "代词",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "mirror",
+          "pos": "名词",
+          "start": 30,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am looking at",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 15
+        },
+        {
+          "text": "myself",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "in the mirror",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 23,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "你(现在)正在看着",
+    "english": "you are looking",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：are looking 表示正在看", "look 为不及物动词，可单独使用"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "looking",
+          "pos": "分词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are looking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "你自己",
+    "english": "yourself",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["yourself 你自己（反身代词）"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "yourself",
+          "pos": "代词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "yourself",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "你(现在)正在看着你自己",
+    "english": "you are looking at yourself",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["look at 是固定搭配，意为“看……”", "yourself 是反身代词，作 look at 的宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "looking",
+          "pos": "分词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "yourself",
+          "pos": "代词",
+          "start": 19,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are looking at",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "yourself",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "镜子",
+    "english": "mirror",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["镜子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "mirror",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mirror",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "在镜子里",
+    "english": "in the mirror",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语，表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "mirror",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the mirror",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "你(现在)正在在镜子里看着你自己",
+    "english": "you are looking at yourself in the mirror",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "look at 后接宾语，in the mirror 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "yourself",
+          "pos": "代词",
+          "start": 19,
+          "end": 27
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "mirror",
+          "pos": "名词",
+          "start": 35,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are looking at",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 18
+        },
+        {
+          "text": "yourself",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 27
+        },
+        {
+          "text": "in the mirror",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "你(过去)正在在镜子里看着你自己",
+    "english": "you were looking at yourself in the mirror",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["look at 看", "in the mirror 在镜子里"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "yourself",
+          "pos": "代词",
+          "start": 20,
+          "end": 28
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "mirror",
+          "pos": "名词",
+          "start": 36,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were looking at",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "yourself",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 28
+        },
+        {
+          "text": "in the mirror",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 29,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "他们",
+    "english": "they",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 they 主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "看(ing形式)",
+    "english": "looking",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["look 的现在分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "looking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "他们(现在)正在看着",
+    "english": "they are looking",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they are looking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "我们",
+    "english": "us",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["us 宾格", "we 的宾格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "us",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "他们(现在)正在看着我们",
+    "english": "they are looking at us",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 are + doing", "look at 表示“看”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are looking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        },
+        {
+          "text": "at us",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "仍然",
+    "english": "still",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：仍然；静止地"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "still",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "still",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "他们(现在)仍然正在看着我们",
+    "english": "they are still looking at us",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["still 位于助动词后表持续", "现在进行时 are + doing"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "still",
+          "pos": "副词",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 26,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are still looking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 22
+        },
+        {
+          "text": "at us",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 23,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "为了",
+    "english": "for",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["for 介词，意为“为了；对于”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "新的",
+    "english": "new",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词，意为“新的”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "new",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "工作",
+    "english": "job",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "job",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "为了一个新的工作",
+    "english": "for a new job",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["for 引出对象或目的", "介词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "for a new job",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "为了一个新的工作(有意识地)看",
+    "english": "to look for a new job",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 18,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to look for a new job",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "寻找",
+    "english": "to look for",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "look for 寻找"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to look for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "寻找一个新的工作",
+    "english": "to look for a new job",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 18,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to look for a new job",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "我需要",
+    "english": "I need",
+    "annotation": {
+      "order": 101,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I need",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "我需要找一个新的工作",
+    "english": "I need to look for a new job",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["need to do sth 需要做某事", "look for 寻找"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 19,
+          "end": 20
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "need",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "to look for a new job",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 7,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "我找一个新的工作",
+    "english": "I look for a new job",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["look for 寻找", "a new job 一份新工作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 17,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "look for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "a new job",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "寻找(ing形式)",
+    "english": "looking for",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["look for 的现在分词形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "looking for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "正在寻找",
+    "english": "be looking for",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["look for：寻找", "be + doing 现在进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 11,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be looking for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "一个新的工作",
+    "english": "a new job",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，中心词 job"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a new job",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "正在寻找一个新的工作",
+    "english": "be looking for a new job",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["look for a new job：找新工作", "a 修饰单数可数名词 job"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 21,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be looking for a new job",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "我(现在)正在寻找一个新的工作",
+    "english": "I am looking for a new job",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["look for 表示寻找", "a new job 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 17,
+          "end": 18
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 23,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 16
+        },
+        {
+          "text": "a new job",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "仍然",
+    "english": "still",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词：仍然；静止地"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "still",
+          "pos": "副词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "still",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "我(现在)仍然正在寻找一个新的工作",
+    "english": "I am still looking for a new job",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["look for 意为“寻找”，for 不可省略", "still 常置于助动词之后"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "still",
+          "pos": "副词",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 23,
+          "end": 24
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 29,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am still looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 22
+        },
+        {
+          "text": "a new job",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "我(过去)正在寻找一个新的工作",
+    "english": "I was looking for a new job",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时表示过去正在进行", "look for 意为“寻找”"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "new",
+          "pos": "形容词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "job",
+          "pos": "名词",
+          "start": 24,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "a new job",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "钥匙(复数)",
+    "english": "keys",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "keys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "我的钥匙",
+    "english": "my keys",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "keys 为名词复数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my keys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "我(过去)正在寻找我的钥匙",
+    "english": "I was looking for my keys",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["look for 意为“寻找”", "my 为形容词性物主代词"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 21,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "my keys",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "找到",
+    "english": "to find",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "我的钥匙",
+    "english": "my keys",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "keys 为名词复数"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my keys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "找到我的钥匙",
+    "english": "to find my keys",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to find my keys"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to find my keys",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "能",
+    "english": "can",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：能够；可以"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "我能找到我的钥匙",
+    "english": "I can find my keys",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can + 动词原形", "my keys 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "can",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "can find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "text": "my keys",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 11,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "不能",
+    "english": "can't",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["can 的否定缩写形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "can't",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "我不能找到我的钥匙",
+    "english": "I can't find my keys",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["can't 是cannot的缩写", "my keys 作find的宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 16,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "can't find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "my keys",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "但是",
+    "english": "but",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词：但是，表转折"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "但是我不能找到我的钥匙",
+    "english": "but I can't find my keys",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["can't 为情态动词否定，表能力", "以连词 but 开头，是并列句的一部分"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "text": "can't",
+          "pos": "情态动词",
+          "start": 6,
+          "end": 11
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 20,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "I can't find my keys",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "但是我(过去)不能找到我的钥匙",
+    "english": "but I couldn't find my keys",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["couldn't 表过去未能做到", "以连词 but 开头，需依附前一分句"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "text": "couldn't",
+          "pos": "情态动词",
+          "start": 6,
+          "end": 14
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "I couldn't find my keys",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 27
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "我(过去)正在寻找我的钥匙但是我(过去)不能找到我的钥匙",
+    "english": "I was looking for my keys but I couldn't find my keys",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + conj + S + V + O",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["but 连接两个并列分句", "couldn't 为 could not 的缩写"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 30,
+          "end": 31
+        },
+        {
+          "text": "couldn't",
+          "pos": "情态动词",
+          "start": 32,
+          "end": 40
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 41,
+          "end": 45
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 46,
+          "end": 48
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 49,
+          "end": 53
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "my keys",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 30,
+          "end": 31
+        },
+        {
+          "text": "couldn't find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 32,
+          "end": 45
+        },
+        {
+          "text": "my keys",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 46,
+          "end": 53
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 连接词 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "它们",
+    "english": "them",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "them",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "我(过去)正在寻找我的钥匙但是我(过去)不能找到它们",
+    "english": "I was looking for my keys but I couldn't find them",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + conj + S + V + O",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["用 them 代替 my keys 避免重复", "but 连接并列分句"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "keys",
+          "pos": "名词",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 30,
+          "end": 31
+        },
+        {
+          "text": "couldn't",
+          "pos": "情态动词",
+          "start": 32,
+          "end": 40
+        },
+        {
+          "text": "find",
+          "pos": "动词",
+          "start": 41,
+          "end": 45
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 46,
+          "end": 50
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 17
+        },
+        {
+          "text": "my keys",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 30,
+          "end": 31
+        },
+        {
+          "text": "couldn't find",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 32,
+          "end": 45
+        },
+        {
+          "text": "them",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 46,
+          "end": 50
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 连接词 + 主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "寻找",
+    "english": "look for",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["look for 寻找"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "look",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "look for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "寻找(ing形式)",
+    "english": "looking for",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["look for 的现在分词形式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "looking for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "是；赋值(原型)",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "正在寻找",
+    "english": "be looking for",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": ["look for：寻找", "be + doing 现在进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 11,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be looking for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "你",
+    "english": "you",
+    "annotation": {
+      "order": 105,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "你(现在)正在寻找",
+    "english": "you are looking for",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["look for 意为寻找，此处缺宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are looking for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "你(现在)正在寻找我",
+    "english": "you are looking for me",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "look for 意为寻找"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "听见；听说",
+    "english": "to hear",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hear 表示听见"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "我听说",
+    "english": "I hear",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["hear 是及物动词，后需接宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I hear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "我听说你(现在)正在寻找我",
+    "english": "I hear you are looking for me",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["hear 后接宾语从句", "从句用现在进行时表正在寻找"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 27,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you are looking for me",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 7,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "人",
+    "english": "person",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可数名词，意为“人”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "那个人",
+    "english": "the person",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "你(现在)正在寻找那个人",
+    "english": "you are looking for the person",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "the person 作 look for 的宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 24,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "the person",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "我是",
+    "english": "I am",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不完整片段，缺表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "我是那个人",
+    "english": "I am the person",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构，am 为系动词", "the person 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "the person",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 5,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "我不是那个人",
+    "english": "I am not the person",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["be 动词否定形式 am not", "the person 作表语"],
+      "confidence": 0.94,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "the person",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "你(现在)正在寻找",
+    "english": "you are looking for",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["look for 意为寻找，此处缺宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you are looking for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "那个人",
+    "english": "the person",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "你(现在)正在寻找那个人",
+    "english": "you are looking for the person",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "the person 作 look for 的宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 24,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 19
+        },
+        {
+          "text": "the person",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "你(现在)正在寻找的那个人",
+    "english": "the person you are looking for",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "looking",
+          "pos": "分词",
+          "start": 19,
+          "end": 26
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 27,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the person",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "you are looking for",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 30
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "我是那个人",
+    "english": "I am the person",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构，am 为系动词", "the person 作表语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "the person",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 5,
+          "end": 15
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "我是你(现在)正在寻找的那个人",
+    "english": "I am the person you are looking for",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["you are looking for 为定语从句修饰 person", "look for 寻找，现在进行时"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 32,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "the person",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 5,
+          "end": 15
+        },
+        {
+          "text": "you are looking for",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 16,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "我不是你(现在)正在寻找的那个人",
+    "english": "I am not the person you are looking for",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["定语从句修饰 the person", "关系代词省略"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 28,
+          "end": 35
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 36,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 8
+        },
+        {
+          "text": "the person",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "you are looking for",
+          "role": "定语",
+          "roleType": "从句",
+          "start": 20,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语 + 从句"
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "但是",
+    "english": "but",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["连词：但是，表转折"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "但是我不是你(现在)正在寻找的那个人",
+    "english": "but I am not the person you are looking for",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["含定语从句 you are looking for", "以连词 but 开头，需依附前一分句"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 32,
+          "end": 39
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 40,
+          "end": 43
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "I am not the person",
+          "role": null,
+          "roleType": null,
+          "start": 4,
+          "end": 23
+        },
+        {
+          "text": "you are looking for",
+          "role": null,
+          "roleType": null,
+          "start": 24,
+          "end": 43
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "我听说你(现在)正在寻找我",
+    "english": "I hear you are looking for me",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["hear 后接宾语从句", "从句用现在进行时表正在寻找"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 27,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you are looking for me",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 7,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "我听说你(现在)正在寻找我但是我不是你(现在)正在寻找的那个人",
+    "english": "I hear you are looking for me but I am not the person you are looking for",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause + conj + S + V + P + Attrib",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["but 连接两个并列分句", "含定语从句 you are looking for"],
+      "confidence": 0.82,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 34,
+          "end": 35
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 43,
+          "end": 46
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 47,
+          "end": 53
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 54,
+          "end": 57
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 58,
+          "end": 61
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 62,
+          "end": 69
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 70,
+          "end": 73
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "hear",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "you are looking for me",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 7,
+          "end": 29
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 34,
+          "end": 35
+        },
+        {
+          "text": "am not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 36,
+          "end": 42
+        },
+        {
+          "text": "the person you are looking for",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 43,
+          "end": 73
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句 + 连接词 + 主语 + 谓语 + 表语 + 定语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "听见；听说",
+    "english": "to hear",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hear 表示听见"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hear",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hear",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "我(过去)听说",
+    "english": "I heard",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["heard 是及物动词，后需接宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "heard",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I heard",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "你(过去)正在寻找我",
+    "english": "you were looking for me",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["look for 寻找"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were looking for",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 20
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "我(过去)听说你(过去)正在寻找我",
+    "english": "I heard you were looking for me",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["主句 heard 为一般过去时", "从句用过去进行时表当时正在寻找"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "heard",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 29,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "heard",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "you were looking for me",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 8,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句"
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "但是我(过去)不是你(过去)正在寻找的那个人",
+    "english": "but I was not the person you were looking for",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "过去进行时",
+      "keyPoints": ["were looking for：过去进行时", "you were looking for 为定语从句"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 18,
+          "end": 24
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 34,
+          "end": 41
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 42,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "but I was not the person you were looking for",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 45
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "我(过去)听说你(过去)正在寻找我但是我(过去)不是你(过去)正在寻找的那个人",
+    "english": "I heard you were looking for me but I was not the person you were looking for",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Clause + conj + S + V + P + Attrib",
+      "clauseType": "并列句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["并列句由 but 连接", "含定语从句 you were looking for"],
+      "confidence": 0.82,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "heard",
+          "pos": "动词",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "but",
+          "pos": "连词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 36,
+          "end": 37
+        },
+        {
+          "text": "was",
+          "pos": "动词",
+          "start": 38,
+          "end": 41
+        },
+        {
+          "text": "not",
+          "pos": "副词",
+          "start": 42,
+          "end": 45
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 46,
+          "end": 49
+        },
+        {
+          "text": "person",
+          "pos": "名词",
+          "start": 50,
+          "end": 56
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 57,
+          "end": 60
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 61,
+          "end": 65
+        },
+        {
+          "text": "looking",
+          "pos": "动词",
+          "start": 66,
+          "end": 73
+        },
+        {
+          "text": "for",
+          "pos": "介词",
+          "start": 74,
+          "end": 77
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "heard",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "text": "you were looking for me",
+          "role": "宾语",
+          "roleType": "从句",
+          "start": 8,
+          "end": 31
+        },
+        {
+          "text": "but",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 36,
+          "end": 37
+        },
+        {
+          "text": "was not",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 38,
+          "end": 45
+        },
+        {
+          "text": "the person you were looking for",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 46,
+          "end": 77
+        }
+      ],
+      "structure": "主语 + 谓语 + 从句 + 连接词 + 主语 + 谓语 + 表语 + 定语"
+    }
+  }
+]

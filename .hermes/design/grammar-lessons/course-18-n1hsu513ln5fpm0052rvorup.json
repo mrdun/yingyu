@@ -1,0 +1,6356 @@
+[
+  {
+    "order": 1,
+    "chinese": "吃",
+    "english": "to eat",
+    "annotation": {
+      "order": 38,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式 to eat"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "鸡蛋",
+    "english": "eggs",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["eggs 鸡蛋（复数）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "eggs",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "吃鸡蛋",
+    "english": "to eat eggs",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语 to eat", "eggs 为复数名词作宾语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "eat",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to eat eggs",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "正在吃",
+    "english": "eating",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "eating",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "eating",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "正在吃鸡蛋",
+    "english": "eating eggs",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "eating",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "eating eggs",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "我是",
+    "english": "I am",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不完整片段，缺表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I am",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "我是星荣",
+    "english": "I am Xingrong",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["主系表结构", "Xingrong 作名词表语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "Xingrong",
+          "role": "表语",
+          "roleType": "名词短语",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 表语"
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "正在吃鸡蛋",
+    "english": "eating eggs",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "eating",
+          "pos": "动名词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "eating eggs",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "我正在吃鸡蛋",
+    "english": "I am eating eggs",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 am + doing", "eating 后接宾语 eggs"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "eating",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am eating",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "eggs",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "厨房",
+    "english": "the kitchen",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，缺少谓语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "kitchen",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the kitchen",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "在厨房里",
+    "english": "in the kitchen",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语，表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "kitchen",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the kitchen",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "我在厨房里（现在）正在吃鸡蛋",
+    "english": "I am eating eggs in the kitchen",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 am + doing", "in the kitchen 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "eating",
+          "pos": "动词",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "kitchen",
+          "pos": "名词",
+          "start": 24,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am eating",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 11
+        },
+        {
+          "text": "eggs",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "in the kitchen",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "我在厨房里（过去）正在吃鸡蛋",
+    "english": "I was eating eggs in the kitchen",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时 was + doing 表示过去正在做", "in the kitchen 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "eating",
+          "pos": "动词",
+          "start": 6,
+          "end": 12
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "kitchen",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was eating",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "eggs",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "in the kitchen",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "你在厨房里（现在）正在吃鸡蛋",
+    "english": "you are eating eggs in the kitchen",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：are + doing 表示正在做某事", "in the kitchen 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "eating",
+          "pos": "分词",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "kitchen",
+          "pos": "名词",
+          "start": 27,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "are eating",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "eggs",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "in the kitchen",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 20,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "你在厨房里（过去）正在吃鸡蛋",
+    "english": "you were eating eggs in the kitchen",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时", "in the kitchen 在厨房"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "text": "eating",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "kitchen",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "you",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "were eating",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "eggs",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "in the kitchen",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "他们",
+    "english": "they",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 they 主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "他们在厨房里（现在）正在吃鸡蛋",
+    "english": "they are eating eggs in the kitchen",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 are + doing", "介词短语作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "eating",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "kitchen",
+          "pos": "名词",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are eating",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 15
+        },
+        {
+          "text": "eggs",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "in the kitchen",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "他们在厨房里（过去）正在吃鸡蛋",
+    "english": "they were eating eggs in the kitchen",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时 were + doing", "in the kitchen 作地点状语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "eating",
+          "pos": "动词",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "kitchen",
+          "pos": "名词",
+          "start": 29,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were eating",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 16
+        },
+        {
+          "text": "eggs",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "text": "in the kitchen",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "喝",
+    "english": "to drink",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "茶",
+    "english": "tea",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "tea",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tea",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "喝茶",
+    "english": "to drink tea",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "tea",
+          "pos": "名词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink tea",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "正在喝",
+    "english": "drinking",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["drink 的动名词/现在分词形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "drinking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "drinking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "正在喝茶",
+    "english": "drinking tea",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语，可作主语或宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "drinking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "tea",
+          "pos": "名词",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "drinking tea",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "他们",
+    "english": "they",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 they 主格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "他们（现在）正在喝茶",
+    "english": "they are drinking tea",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 are + doing", "drink tea 动宾搭配"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "drinking",
+          "pos": "动词",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "tea",
+          "pos": "名词",
+          "start": 18,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are drinking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 17
+        },
+        {
+          "text": "tea",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "花园",
+    "english": "the garden",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，可作主语或宾语", "由冠词the+名词构成"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "garden",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the garden",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "在花园里",
+    "english": "in the garden",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语，表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "garden",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the garden",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "他们在花园里（现在）正在喝茶",
+    "english": "they are drinking tea in the garden",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 are + doing", "介词短语作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are",
+          "pos": "助动词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "drinking",
+          "pos": "动词",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "text": "tea",
+          "pos": "名词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "garden",
+          "pos": "名词",
+          "start": 29,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "are drinking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 17
+        },
+        {
+          "text": "tea",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "in the garden",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "茶",
+    "english": "tea",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "tea",
+          "pos": "名词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tea",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "他们在花园里（过去）正在喝茶",
+    "english": "they were drinking tea in the garden",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时 were + doing", "in the garden 作地点状语"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "drinking",
+          "pos": "动词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "tea",
+          "pos": "名词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "garden",
+          "pos": "名词",
+          "start": 30,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were drinking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 18
+        },
+        {
+          "text": "tea",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "in the garden",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 23,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "我在厨房里（过去）正在吃鸡蛋",
+    "english": "I was eating eggs in the kitchen",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时 was + doing 表示过去正在做", "in the kitchen 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "eating",
+          "pos": "动词",
+          "start": 6,
+          "end": 12
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "kitchen",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was eating",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "eggs",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "in the kitchen",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "与此同时",
+    "english": "while",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["while 表示“当……时；然而”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "while",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "他们在花园里（过去）正在喝茶与此同时我在厨房里（过去）正在吃鸡蛋",
+    "english": "they were drinking tea in the garden while I was eating eggs in the kitchen",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv + conj + S + V + O + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["while 引导时间状语从句", "两个过去进行时并列对照"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "they",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were",
+          "pos": "助动词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "drinking",
+          "pos": "动词",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "tea",
+          "pos": "名词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "garden",
+          "pos": "名词",
+          "start": 30,
+          "end": 36
+        },
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 37,
+          "end": 42
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 43,
+          "end": 44
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "eating",
+          "pos": "动词",
+          "start": 49,
+          "end": 55
+        },
+        {
+          "text": "eggs",
+          "pos": "名词",
+          "start": 56,
+          "end": 60
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 61,
+          "end": 63
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 64,
+          "end": 67
+        },
+        {
+          "text": "kitchen",
+          "pos": "名词",
+          "start": 68,
+          "end": 75
+        }
+      ],
+      "phrases": [
+        {
+          "text": "they",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "were drinking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 5,
+          "end": 18
+        },
+        {
+          "text": "tea",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "in the garden",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 23,
+          "end": 36
+        },
+        {
+          "text": "while",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 37,
+          "end": 42
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 43,
+          "end": 44
+        },
+        {
+          "text": "was eating",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 45,
+          "end": 55
+        },
+        {
+          "text": "eggs",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 56,
+          "end": 60
+        },
+        {
+          "text": "in the kitchen",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 61,
+          "end": 75
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语 + 连接词 + 主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "教",
+    "english": "to teach",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "teach",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to teach",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "我们",
+    "english": "us",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["us 宾格", "we 的宾格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "us",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "教我们",
+    "english": "to teach us",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语", "teach sb 结构"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "teach",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to teach us",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "正在教",
+    "english": "teaching",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "teaching",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "teaching",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "正在教我们",
+    "english": "teaching us",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "teaching",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "teaching us",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "说",
+    "english": "to speak",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to speak",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "英语",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "说英语",
+    "english": "to speak English",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do", "speak 后接宾语 English"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to speak English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "如何",
+    "english": "how",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["如何；怎样"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "如何说英语",
+    "english": "how to speak English",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["how + 不定式", "how to do sth"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "how to speak English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "正在教我们如何说英语",
+    "english": "teaching us how to speak English",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "teaching",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 25,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "teaching us",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "how to speak English",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 32
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "星荣正在教我们如何说英语",
+    "english": "Xingrong is teaching us how to speak English",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["teach sb how to do sth", "现在进行时表示正在进行的动作"],
+      "confidence": 0.82,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "teaching",
+          "pos": "动词",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 31,
+          "end": 36
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 37,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "is teaching",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 20
+        },
+        {
+          "text": "us",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "how to speak English",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 24,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "星荣（过去）正在教我们如何说英语",
+    "english": "Xingrong was teaching us how to speak English",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["teach sb how to do sth", "过去进行时 was teaching"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "teaching",
+          "pos": "分词",
+          "start": 13,
+          "end": 21
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 32,
+          "end": 37
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 38,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "was teaching",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "us",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "how to speak English",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 25,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "学习",
+    "english": "to learn",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to learn", "learn 学习"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to learn",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "英语",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "学习英语",
+    "english": "to learn English",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to learn English", "learn English 学英语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "learn",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to learn",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "正在学习",
+    "english": "learning",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["learn 的动名词/现在分词"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "learning",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "learning",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "正在学习英语",
+    "english": "learning English",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["学习英语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "learning",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 9,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "learning English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "我正在学习英语",
+    "english": "I am learning English",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 am doing", "learn English 学英语"],
+      "confidence": 0.96,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "learning",
+          "pos": "动词",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am learning",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "视频",
+    "english": "videos",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词复数：视频"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "videos",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "videos",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "他的",
+    "english": "his",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "他的视频",
+    "english": "his videos",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["videos 是 video 的复数形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "videos",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "his videos",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "观看",
+    "english": "to watch",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to watch 表示目的或打算"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to watch",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "观看他的视频",
+    "english": "to watch his videos",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "watch his videos 看他的视频"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "videos",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to watch his videos",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "正在观看",
+    "english": "watching",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动名词形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "watching",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "watching",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "正在观看他的视频",
+    "english": "watching his videos",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "watching",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "videos",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "watching his videos",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "通过......的方式",
+    "english": "by",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 by 表方式/施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "通过观看他的视频的方式",
+    "english": "by watching his videos",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 动名词，表方式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watching",
+          "pos": "动名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "videos",
+          "pos": "名词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by watching his videos",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "我正在学习英语",
+    "english": "I am learning English",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 am doing", "learn English 学英语"],
+      "confidence": 0.96,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "learning",
+          "pos": "动词",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am learning",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "我正在通过观看他的视频的方式学习英语",
+    "english": "I am learning English by watching his videos",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["by + doing 表示方式", "现在进行时 am doing"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "learning",
+          "pos": "动词",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "watching",
+          "pos": "动名词",
+          "start": 25,
+          "end": 33
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "videos",
+          "pos": "名词",
+          "start": 38,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am learning",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "by watching his videos",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "我（过去）正在通过观看他的视频的方式学习英语",
+    "english": "I was learning English by watching his videos",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时：was learning", "by watching his videos 作方式状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "learning",
+          "pos": "动词",
+          "start": 6,
+          "end": 14
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "text": "watching",
+          "pos": "动名词",
+          "start": 26,
+          "end": 34
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "videos",
+          "pos": "名词",
+          "start": 39,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was learning",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "English",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "by watching his videos",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 23,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "星荣（过去）正在教我们如何说英语",
+    "english": "Xingrong was teaching us how to speak English",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["teach sb how to do sth", "过去进行时 was teaching"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "teaching",
+          "pos": "分词",
+          "start": 13,
+          "end": 21
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 32,
+          "end": 37
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 38,
+          "end": 45
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "was teaching",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "us",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "how to speak English",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 25,
+          "end": 45
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "与此同时",
+    "english": "while",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["while 表示“当……时；然而”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "while",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "星荣（过去）正在教我们如何说英语与此同时我（过去）正在通过观看他的视频的方式学习英语",
+    "english": "Xingrong was teaching us how to speak English while I was learning English by watching his videos",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + IO + DO + conj + S + V + O + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["while 引导时间状语从句", "by doing sth 通过做某事"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "Xingrong",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "teaching",
+          "pos": "分词",
+          "start": 13,
+          "end": 21
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "how",
+          "pos": "副词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 32,
+          "end": 37
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 38,
+          "end": 45
+        },
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 46,
+          "end": 51
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 52,
+          "end": 53
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 54,
+          "end": 57
+        },
+        {
+          "text": "learning",
+          "pos": "分词",
+          "start": 58,
+          "end": 66
+        },
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 67,
+          "end": 74
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 75,
+          "end": 77
+        },
+        {
+          "text": "watching",
+          "pos": "动名词",
+          "start": 78,
+          "end": 86
+        },
+        {
+          "text": "his",
+          "pos": "代词",
+          "start": 87,
+          "end": 90
+        },
+        {
+          "text": "videos",
+          "pos": "名词",
+          "start": 91,
+          "end": 97
+        }
+      ],
+      "phrases": [
+        {
+          "text": "Xingrong",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "was teaching",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "us",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "how to speak English",
+          "role": "宾语",
+          "roleType": "不定式短语",
+          "start": 25,
+          "end": 45
+        },
+        {
+          "text": "while",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 46,
+          "end": 51
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 52,
+          "end": 53
+        },
+        {
+          "text": "was learning",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 54,
+          "end": 66
+        },
+        {
+          "text": "English",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 67,
+          "end": 74
+        },
+        {
+          "text": "by watching his videos",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 75,
+          "end": 97
+        }
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语 + 连接词 + 主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "走路",
+    "english": "to walk",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "walk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to walk",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "家",
+    "english": "home",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["home 可作副词，意为“在家/回家”"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "走路回家",
+    "english": "to walk home",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "walk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to walk home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "学校",
+    "english": "school",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，学校"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "school",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "从",
+    "english": "from",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["from 从；来自"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "from",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "从学校",
+    "english": "from school",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语：from + 地点名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 5,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "from school",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "从学校走路回家",
+    "english": "to walk home from school",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "walk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 18,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to walk home from school",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "正在从学校走路回家",
+    "english": "walking home from school",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["from school 从学校"],
+      "confidence": 0.65,
+      "words": [
+        {
+          "text": "walking",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 18,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "walking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "home",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "from school",
+          "role": null,
+          "roleType": null,
+          "start": 13,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "我正在从学校走路回家",
+    "english": "I am walking home from school",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "from school 从学校"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "walking",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am walking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "home",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "from school",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "我（过去）正在从学校走路回家",
+    "english": "I was walking home from school",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时表示过去正在进行的动作", "home和from school作状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "walking",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 24,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was walking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "home",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "from school",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "朋友",
+    "english": "friend",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["friend 朋友"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "老的",
+    "english": "old",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["形容词 old"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "old",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "一个老朋友",
+    "english": "an old friend",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语", "old 作定语修饰 friend"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "an old friend",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "遇见",
+    "english": "to meet",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "meet",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to meet",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "遇见一个老朋友",
+    "english": "to meet an old friend",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语", "an old friend 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "meet",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to meet an old friend",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "我（过去）遇见一个老朋友",
+    "english": "I met an old friend",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["met 为 meet 的过去式", "an old friend 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "met",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "met",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "an old friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 19
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "我（过去）正在从学校走路回家",
+    "english": "I was walking home from school",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时表示过去正在进行的动作", "home和from school作状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "walking",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 24,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was walking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "home",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "from school",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "当......的时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "当我（过去）正在从学校走路回家的时候",
+    "english": "when I was walking home from school",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["when引导的时间状语从句"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "text": "walking",
+          "pos": "动词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 29,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when I was walking home from school",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 35
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "当我（过去）正在从学校走路回家的时候我（过去）遇见一个老朋友",
+    "english": "I met an old friend when I was walking home from school",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["when 引导时间状语从句", "was walking 为过去进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "met",
+          "pos": "动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "text": "old",
+          "pos": "形容词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "friend",
+          "pos": "名词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "text": "walking",
+          "pos": "动词",
+          "start": 31,
+          "end": 38
+        },
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "text": "from",
+          "pos": "介词",
+          "start": 44,
+          "end": 48
+        },
+        {
+          "text": "school",
+          "pos": "名词",
+          "start": 49,
+          "end": 55
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "met",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "an old friend",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 6,
+          "end": 19
+        },
+        {
+          "text": "when I was walking home from school",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 20,
+          "end": 55
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "睡觉",
+    "english": "to sleep",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语(to sleep)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to sleep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "卧室",
+    "english": "the bedroom",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "bedroom",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the bedroom",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "在卧室里",
+    "english": "in the bedroom",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语 in the bedroom 表地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "bedroom",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the bedroom",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "在卧室里睡觉",
+    "english": "to sleep in the bedroom",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["动词不定式短语", "含地点状语 in the bedroom"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "sleep",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "bedroom",
+          "pos": "名词",
+          "start": 16,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to sleep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "in the bedroom",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "正在睡觉",
+    "english": "sleeping",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["sleep 的 -ing 形式"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "sleeping",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "sleeping",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "正在在卧室里睡觉",
+    "english": "sleeping in the bedroom",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动名词 + 介词短语片段", "in the bedroom 表地点"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "sleeping",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "bedroom",
+          "pos": "名词",
+          "start": 16,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "sleeping",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "in the bedroom",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "我正在在卧室里睡觉",
+    "english": "I am sleeping in the bedroom",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["in the bedroom 作地点状语", "现在进行时表示正在进行的动作"],
+      "confidence": 0.96,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "sleeping",
+          "pos": "动词",
+          "start": 5,
+          "end": 13
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "bedroom",
+          "pos": "名词",
+          "start": 21,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am sleeping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "in the bedroom",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 14,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "我（过去）正在在卧室里睡觉",
+    "english": "I was sleeping in the bedroom",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["in the bedroom 作地点状语", "过去进行时表示当时正在睡"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "sleeping",
+          "pos": "动词",
+          "start": 6,
+          "end": 14
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "bedroom",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was sleeping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "in the bedroom",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "打电话",
+    "english": "to call",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["call 打电话；称呼", "不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to call",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "打电话给我",
+    "english": "to call me",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["call sb 给某人打电话", "me 作宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "call",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to call",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "她（过去）打电话给我",
+    "english": "she called me",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["call sb 给某人打电话", "人称代词宾格 me"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "called",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "me",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "当......的时候",
+    "english": "when",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.6,
+      "keyPoints": ["when 可作疑问副词或连接词"],
+      "words": [
+        {
+          "text": "when",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "当她（过去）打电话给我的时候",
+    "english": "when she called me",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["when 引导的时间状语从句"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "when",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "she called me",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "我（过去）正在在卧室里睡觉",
+    "english": "I was sleeping in the bedroom",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["in the bedroom 作地点状语", "过去进行时表示当时正在睡"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "sleeping",
+          "pos": "动词",
+          "start": 6,
+          "end": 14
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "bedroom",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was sleeping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "in the bedroom",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "当她打电话给我的时候我（过去）正在在卧室里睡觉",
+    "english": "I was sleeping in the bedroom when she called me",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["when引导时间状语从句", "过去进行时表示过去正在进行的动作"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "sleeping",
+          "pos": "动词",
+          "start": 6,
+          "end": 14
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "bedroom",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        },
+        {
+          "text": "when",
+          "pos": "连词",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "called",
+          "pos": "动词",
+          "start": 39,
+          "end": 45
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 46,
+          "end": 48
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was sleeping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "in the bedroom",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 29
+        },
+        {
+          "text": "when she called me",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 30,
+          "end": 48
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 从句"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "玩",
+    "english": "to play",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["play 玩；打（球）；演奏"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to play",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "钢琴",
+    "english": "the piano",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "piano",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the piano",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "弹钢琴",
+    "english": "to play the piano",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["play + the + 乐器名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "play",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "piano",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to play the piano",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "正在玩",
+    "english": "playing",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["play 的动名词形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "playing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "正在弹钢琴",
+    "english": "playing the piano",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["乐器前加定冠词 the"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "playing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "piano",
+          "pos": "名词",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "playing the piano",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "她正在弹钢琴",
+    "english": "she is playing the piano",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 be + doing", "play the piano 弹钢琴"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "playing",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "piano",
+          "pos": "名词",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is playing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "the piano",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 15,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "她（过去）正在弹钢琴",
+    "english": "she was playing the piano",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时 was + doing", "play the piano 弹钢琴"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "playing",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "piano",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was playing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "the piano",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "起居室；客厅",
+    "english": "the living room",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["living room 客厅，复合名词"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "living",
+          "pos": "形容词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the living room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "在客厅",
+    "english": "in the living room",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["介词短语，表示地点"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "living",
+          "pos": "形容词",
+          "start": 7,
+          "end": 13
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the living room",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "她（过去）正在在客厅弹钢琴",
+    "english": "she was playing the piano in the living room",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时", "in the living room 地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "playing",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "piano",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "living",
+          "pos": "形容词",
+          "start": 33,
+          "end": 39
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 40,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was playing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "the piano",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 25
+        },
+        {
+          "text": "in the living room",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "与此同时",
+    "english": "while",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["while 表示“当……时；然而”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "while",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "我（过去）正在在卧室里睡觉",
+    "english": "I was sleeping in the bedroom",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["in the bedroom 作地点状语", "过去进行时表示当时正在睡"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "sleeping",
+          "pos": "动词",
+          "start": 6,
+          "end": 14
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "bedroom",
+          "pos": "名词",
+          "start": 22,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was sleeping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 14
+        },
+        {
+          "text": "in the bedroom",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "她（过去）正在在客厅弹钢琴与此同时我（过去）正在在卧室里睡觉",
+    "english": "she was playing the piano in the living room while I was sleeping in the bedroom",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["while 引导时间状语从句", "两个动作同时进行（过去进行时）"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "playing",
+          "pos": "动词",
+          "start": 8,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "piano",
+          "pos": "名词",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "living",
+          "pos": "形容词",
+          "start": 33,
+          "end": 39
+        },
+        {
+          "text": "room",
+          "pos": "名词",
+          "start": 40,
+          "end": 44
+        },
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 45,
+          "end": 50
+        },
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 51,
+          "end": 52
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 53,
+          "end": 56
+        },
+        {
+          "text": "sleeping",
+          "pos": "动词",
+          "start": 57,
+          "end": 65
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 66,
+          "end": 68
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 69,
+          "end": 72
+        },
+        {
+          "text": "bedroom",
+          "pos": "名词",
+          "start": 73,
+          "end": 80
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was playing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "the piano",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 16,
+          "end": 25
+        },
+        {
+          "text": "in the living room",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 44
+        },
+        {
+          "text": "while",
+          "role": "引导词",
+          "roleType": "单词",
+          "start": 45,
+          "end": 50
+        },
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 51,
+          "end": 52
+        },
+        {
+          "text": "was sleeping",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 53,
+          "end": 65
+        },
+        {
+          "text": "in the bedroom",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 66,
+          "end": 80
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语 + 从句"
+    }
+  }
+]

@@ -1,0 +1,8181 @@
+[
+  {
+    "order": 1,
+    "chinese": "清洗",
+    "english": "to wash",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to wash 表示目的或打算"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "wash",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to wash",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "清洗（过去分词）",
+    "english": "washed",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "washed",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "washed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "被清洗了",
+    "english": "be washed",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "washed",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be washed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "这辆车",
+    "english": "the car",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "这辆车被清洗了",
+    "english": "the car is washed",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时被动语态", "is + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "washed",
+          "pos": "分词",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is washed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "他",
+    "english": "him",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "him",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "通过",
+    "english": "by",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 by 表方式/施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "通过他",
+    "english": "by him",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by him",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "这辆车通过他被清洗了",
+    "english": "the car is washed by him",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时被动语态", "by him 引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "washed",
+          "pos": "分词",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 21,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "is washed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "text": "by him",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 18,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "这辆车（过去）被他清洗了",
+    "english": "the car was washed by him",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态", "by him 引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "washed",
+          "pos": "分词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 22,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "was washed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 18
+        },
+        {
+          "text": "by him",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "昨天",
+    "english": "yesterday",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["副词，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "yesterday",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "这辆车昨天被他清洗了",
+    "english": "the car was washed by him yesterday",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时的被动语态", "by 引出动作执行者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "car",
+          "pos": "名词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "washed",
+          "pos": "分词",
+          "start": 12,
+          "end": 18
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "yesterday",
+          "pos": "副词",
+          "start": 26,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the car",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "was washed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 8,
+          "end": 18
+        },
+        {
+          "text": "by him",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "yesterday",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 26,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 状语"
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "回答",
+    "english": "to answer",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，意为“回答”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "answer",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to answer",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "回答（过去分词）",
+    "english": "answered",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词 answer 的过去式/过去分词：回答"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "answered",
+          "pos": "动词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "answered",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "被回答了",
+    "english": "be answered",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "answered",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be answered",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "这个问题",
+    "english": "the question",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "这个问题被回答了",
+    "english": "the question is answered",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态", "一般现在时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "answered",
+          "pos": "动词",
+          "start": 16,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "is answered",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 24
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "那个学生",
+    "english": "the student",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：the + 名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "student",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the student",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "通过那个学生",
+    "english": "by the student",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "student",
+          "pos": "名词",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by the student",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "这个问题被那个学生回答了",
+    "english": "the question is answered by the student",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态", "by引出动作执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "answered",
+          "pos": "动词",
+          "start": 16,
+          "end": 24
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "text": "student",
+          "pos": "名词",
+          "start": 32,
+          "end": 39
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "is answered",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 24
+        },
+        {
+          "text": "by the student",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 25,
+          "end": 39
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "这个问题（过去）被那个学生回答了",
+    "english": "the question was answered by the student",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态", "by引出动作执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "question",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "answered",
+          "pos": "动词",
+          "start": 17,
+          "end": 25
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "student",
+          "pos": "名词",
+          "start": 33,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the question",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "was answered",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 25
+        },
+        {
+          "text": "by the student",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "解决",
+    "english": "to solve",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solve",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to solve",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "解决（过去分词）",
+    "english": "solved",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词 solve 的过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "solved",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "solved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "被解决了",
+    "english": "be solved",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词", "被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be solved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "那个问题",
+    "english": "the problem",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "那个问题被解决了",
+    "english": "the problem is solved",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时的被动语态", "is done 结构"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is solved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 21
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "那个问题（过去）被解决了",
+    "english": "the problem was solved",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态", "一般过去时"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "solved",
+          "pos": "动词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the problem",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "was solved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "紧急",
+    "english": "urgent",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["urgent 紧急的", "形容词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "urgent",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "那个紧急的问题",
+    "english": "the urgent problem",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 11,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the urgent problem",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "那个紧急的问题（过去）被解决了",
+    "english": "the urgent problem was solved",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态 was solved", "the urgent problem 作主语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 23,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the urgent problem",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "was solved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 19,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "他们",
+    "english": "them",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "them",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "通过他们",
+    "english": "by them",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by them",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "那个紧急的问题（过去）被他们解决了",
+    "english": "the urgent problem was solved by them",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态", "by them 引出动作执行者作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "urgent",
+          "pos": "形容词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "problem",
+          "pos": "名词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "solved",
+          "pos": "分词",
+          "start": 23,
+          "end": 29
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 33,
+          "end": 37
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the urgent problem",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "was solved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 19,
+          "end": 29
+        },
+        {
+          "text": "by them",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 30,
+          "end": 37
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "告诉",
+    "english": "to tell",
+    "annotation": {
+      "order": 115,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "tell",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to tell",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "告诉（过去分词）",
+    "english": "told",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["tell 的过去式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "told",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "被告诉",
+    "english": "be told",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "told",
+          "pos": "分词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be told",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "故事",
+    "english": "story",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：故事"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "story",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "这个故事",
+    "english": "the story",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["定冠词 the + 名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the story",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "这个故事被讲述",
+    "english": "the story is told",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态：is + 过去分词", "the story 作主语"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "told",
+          "pos": "分词",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the story",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is told",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 17
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "这个故事（过去）被讲述",
+    "english": "the story was told",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态：was + 过去分词"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "told",
+          "pos": "分词",
+          "start": 14,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the story",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "was told",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "父亲",
+    "english": "father",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：父亲"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "father",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "father",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "爷爷",
+    "english": "grandfather",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["合成名词：grand + father"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "grandfather",
+          "pos": "名词",
+          "start": 0,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "grandfather",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "我的爷爷",
+    "english": "my grandfather",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "名词短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "grandfather",
+          "pos": "名词",
+          "start": 3,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my grandfather",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "通过我的爷爷",
+    "english": "by my grandfather",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表被动动作的执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "grandfather",
+          "pos": "名词",
+          "start": 6,
+          "end": 17
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by my grandfather",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 17
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "这个故事（过去）被我的爷爷讲述",
+    "english": "the story was told by my grandfather",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态 + by 引出动作执行者", "by my grandfather 作状语"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "story",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "told",
+          "pos": "分词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "grandfather",
+          "pos": "名词",
+          "start": 25,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the story",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "was told",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "by my grandfather",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 19,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "被告诉",
+    "english": "be told",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "told",
+          "pos": "分词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be told",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "她（过去）被告诉",
+    "english": "she was told",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态", "was + 过去分词 told"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "told",
+          "pos": "分词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was told",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "喝",
+    "english": "to drink",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "水",
+    "english": "water",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，水"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "喝水",
+    "english": "to drink water",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "更多",
+    "english": "more",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["更多"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "more",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "more",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "喝更多的水",
+    "english": "to drink more water",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "more",
+          "pos": "形容词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink more water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "她（过去）被告诉",
+    "english": "she was told",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态", "was + 过去分词 told"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "told",
+          "pos": "分词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was told",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "她（过去）被告诉喝更多的水",
+    "english": "she was told to drink more water",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + C",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态 was told", "be told to do sth"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "text": "more",
+          "pos": "形容词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 27,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was told",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "to drink more water",
+          "role": "补语",
+          "roleType": "不定式短语",
+          "start": 13,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 补语"
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "医生",
+    "english": "the doctor",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the doctor",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "通过医生",
+    "english": "by the doctor",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表被动动作的执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by the doctor",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "她被医生告诉",
+    "english": "she was told by the doctor",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态 was + 过去分词", "by the doctor 表示动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "told",
+          "pos": "分词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was told",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "by the doctor",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 13,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "喝更多的水",
+    "english": "to drink more water",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "more",
+          "pos": "形容词",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to drink more water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "她（过去）被医生告诉喝更多的水",
+    "english": "she was told by the doctor to drink more water",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + C",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态 was told", "tell sb to do sth"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "told",
+          "pos": "动词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "doctor",
+          "pos": "名词",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "drink",
+          "pos": "动词",
+          "start": 30,
+          "end": 35
+        },
+        {
+          "text": "more",
+          "pos": "形容词",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 41,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was told",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "by the doctor",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 13,
+          "end": 26
+        },
+        {
+          "text": "to drink more water",
+          "role": "补语",
+          "roleType": "不定式短语",
+          "start": 27,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 补语"
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "水",
+    "english": "water",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，水"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "water",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "浇水",
+    "english": "to water",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to + 动词原形", "表示目的或将来动作"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "water",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to water",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "浇水（过去分词）",
+    "english": "watered",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "watered",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "watered",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "被浇水",
+    "english": "be watered",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watered",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be watered",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "将会被浇水",
+    "english": "will be watered",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["will be + 过去分词，一般将来时的被动语态"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "watered",
+          "pos": "分词",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be watered",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "花",
+    "english": "flower",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["flower 名词，意为“花”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "flower",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "flower",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "这些花",
+    "english": "the flowers",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，中心词为 flowers"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "flowers",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the flowers",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "这些花将会被浇水",
+    "english": "the flowers will be watered",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态：will be + 过去分词", "主语是动作的承受者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "flowers",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "watered",
+          "pos": "分词",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the flowers",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "will be watered",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "我",
+    "english": "me",
+    "annotation": {
+      "order": 128,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "通过我",
+    "english": "by me",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格 me"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "这些花将会被我浇水",
+    "english": "the flowers will be watered by me",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态", "by me 引出动作执行者，作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "flowers",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "watered",
+          "pos": "分词",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 31,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the flowers",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "will be watered",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 27
+        },
+        {
+          "text": "by me",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "说",
+    "english": "to speak",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "speak",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to speak",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "演讲者",
+    "english": "speaker",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词 speaker 说话者/扬声器"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "speaker",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "speaker",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "那个演讲者",
+    "english": "the speaker",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["定冠词 the + 名词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "speaker",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the speaker",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "邀请",
+    "english": "to invite",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["invite 邀请"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "invite",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to invite",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "邀请（过去分词）",
+    "english": "invited",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词 invite 的过去式/过去分词，意为“邀请”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "invited",
+          "pos": "动词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "invited",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "被邀请",
+    "english": "be invited",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词，构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "invited",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be invited",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "那个演讲者被邀请了",
+    "english": "the speaker is invited",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时的被动语态 is invited"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "speaker",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "invited",
+          "pos": "分词",
+          "start": 15,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the speaker",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is invited",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 22
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "那个演讲者（过去）被邀请了",
+    "english": "the speaker was invited",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时的被动语态 was invited"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "speaker",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "invited",
+          "pos": "分词",
+          "start": 16,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the speaker",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "was invited",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "通过他们",
+    "english": "by them",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by them",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "那个演讲者（过去）被他们邀请了",
+    "english": "the speaker was invited by them",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时的被动语态", "by them 说明动作执行者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "speaker",
+          "pos": "名词",
+          "start": 4,
+          "end": 11
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "invited",
+          "pos": "分词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the speaker",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "was invited",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 23
+        },
+        {
+          "text": "by them",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "邀请",
+    "english": "to invite",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["invite 邀请"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "invite",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to invite",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "邀请（名词）",
+    "english": "invitation",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“邀请；请柬”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "那个邀请",
+    "english": "the invitation",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "接受",
+    "english": "to accept",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accept",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to accept",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "接受（过去分词）",
+    "english": "accepted",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词", "accept 的过去式/过去分词"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "被接受了",
+    "english": "be accepted",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["被动语态：被接受"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "那个邀请被接受了",
+    "english": "the invitation is accepted",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时被动语态", "be+过去分词表被动"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "is accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "那个邀请（过去）被接受了",
+    "english": "the invitation was accepted",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态：一般过去时"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 19,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "was accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "通过他们",
+    "english": "by them",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by them",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "那个邀请（过去）被他们接受了",
+    "english": "the invitation was accepted by them",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态：一般过去时", "by them 表施动者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 19,
+          "end": 27
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 31,
+          "end": 35
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "was accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 15,
+          "end": 27
+        },
+        {
+          "text": "by them",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "加入",
+    "english": "to join",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to join",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "团队",
+    "english": "team",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "team",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "我们的团队",
+    "english": "our team",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，team 为集合名词"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "our team",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "加入我们的团队",
+    "english": "to join our team",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "join 后接宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to join our team",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "那个邀请",
+    "english": "the invitation",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "加入我们团队的那个邀请",
+    "english": "the invitation to join our team",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语作后置定语"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        },
+        {
+          "text": "to join our team",
+          "role": null,
+          "roleType": null,
+          "start": 15,
+          "end": 31
+        }
+      ]
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "被接受了",
+    "english": "be accepted",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["被动语态：被接受"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "加入我们团队的那个邀请（过去）被接受了",
+    "english": "the invitation to join our team was accepted",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态：一般过去时", "不定式短语作后置定语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 36,
+          "end": 44
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation to join our team",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 31
+        },
+        {
+          "text": "was accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 32,
+          "end": 44
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "通过他们",
+    "english": "by them",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by them",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "加入我们团队的那个邀请（过去）被他们接受了",
+    "english": "the invitation to join our team was accepted by them",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态：一般过去时", "by them 表施动者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "invitation",
+          "pos": "名词",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "join",
+          "pos": "动词",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "text": "our",
+          "pos": "代词",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "text": "team",
+          "pos": "名词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "accepted",
+          "pos": "动词",
+          "start": 36,
+          "end": 44
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 45,
+          "end": 47
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 48,
+          "end": 52
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the invitation to join our team",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 31
+        },
+        {
+          "text": "was accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 32,
+          "end": 44
+        },
+        {
+          "text": "by them",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 45,
+          "end": 52
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "被接受",
+    "english": "be accepted",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["被动语态：被接受"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "将会被接受",
+    "english": "will be accepted",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般将来时",
+      "keyPoints": ["will be + 过去分词：一般将来时被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 8,
+          "end": 16
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be accepted",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 16
+        }
+      ]
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "那个挑战",
+    "english": "the challenge",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 4,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the challenge",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "那个挑战将会被接受",
+    "english": "the challenge will be accepted",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时的被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 22,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the challenge",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "text": "will be accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 14,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "通过我们",
+    "english": "by us",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by us",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "那个挑战将会被我们接受",
+    "english": "the challenge will be accepted by us",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时的被动语态", "by 引出动作执行者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "challenge",
+          "pos": "名词",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "accepted",
+          "pos": "分词",
+          "start": 22,
+          "end": 30
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "text": "us",
+          "pos": "代词",
+          "start": 34,
+          "end": 36
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the challenge",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "text": "will be accepted",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 14,
+          "end": 30
+        },
+        {
+          "text": "by us",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 31,
+          "end": 36
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "完成",
+    "english": "to finish",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语：to finish"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finish",
+          "pos": "动词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to finish",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "完成（过去分词）",
+    "english": "finished",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["finish 的过去式/过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "finished",
+          "pos": "动词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "finished",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "被完成",
+    "english": "be finished",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词，构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "finished",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be finished",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "应该",
+    "english": "should",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["情态动词：应该"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "should",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "应该被完成",
+    "english": "should be finished",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["should + be + 过去分词，表被动"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "finished",
+          "pos": "分词",
+          "start": 10,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "should be finished",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "家庭作业",
+    "english": "the homework",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词短语，可作主语或宾语", "由冠词the+名词构成"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "家庭作业应该被完成",
+    "english": "the homework should be finished",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["情态动词被动语态：should be + 过去分词", "主语是动作承受者"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "finished",
+          "pos": "分词",
+          "start": 23,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the homework",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "should be finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "通过你",
+    "english": "by you",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by you",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "家庭作业应该被你完成",
+    "english": "the homework should be finished by you",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态 by you 引出动作执行者", "情态动词should表应该"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "finished",
+          "pos": "分词",
+          "start": 23,
+          "end": 31
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 35,
+          "end": 38
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the homework",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "should be finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 31
+        },
+        {
+          "text": "by you",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 38
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "晚饭",
+    "english": "dinner",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“晚餐；正餐”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dinner",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "在......之前",
+    "english": "before",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作介词/连词/副词，需看语境"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "在晚饭之前",
+    "english": "before dinner",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["before 引导时间状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "before dinner",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "家庭作业应该在晚饭之前被你完成",
+    "english": "the homework should be finished by you before dinner",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态＋by短语＋时间状语before dinner", "介词短语作状语"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "should",
+          "pos": "情态动词",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "text": "finished",
+          "pos": "分词",
+          "start": 23,
+          "end": 31
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "text": "you",
+          "pos": "代词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "before",
+          "pos": "介词",
+          "start": 39,
+          "end": 45
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 46,
+          "end": 52
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the homework",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 12
+        },
+        {
+          "text": "should be finished",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 13,
+          "end": 31
+        },
+        {
+          "text": "by you",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 32,
+          "end": 38
+        },
+        {
+          "text": "before dinner",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 39,
+          "end": 52
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 状语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "烹饪；做饭",
+    "english": "to cook",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "cook",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to cook",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "烹饪（过去分词）",
+    "english": "cooked",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["cook 的过去式/过去分词"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "cooked",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "cooked",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "被烹饪",
+    "english": "be cooked",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "cooked",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be cooked",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "母亲",
+    "english": "mother",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词：母亲；妈妈"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mother",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "我的母亲",
+    "english": "my mother",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "名词短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my mother",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "通过我的母亲",
+    "english": "by my mother",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表被动动作的执行者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 6,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by my mother",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "被我妈烹饪",
+    "english": "be cooked by my mother",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词表被动", "by 引出动作执行者"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "cooked",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be cooked",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "by my mother",
+          "role": null,
+          "roleType": null,
+          "start": 10,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "晚饭",
+    "english": "dinner",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，意为“晚餐；正餐”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "dinner",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "这顿晚饭",
+    "english": "the dinner",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the dinner",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "这顿晚饭是被我妈做的",
+    "english": "the dinner is cooked by my mother",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["被动语态：be + 过去分词", "by my mother 表示动作执行者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "cooked",
+          "pos": "分词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 27,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the dinner",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "is cooked",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "text": "by my mother",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "这顿晚饭（过去）是被我妈做的",
+    "english": "the dinner was cooked by my mother",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["被动语态：was + 过去分词", "by my mother 表示动作执行者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "dinner",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "cooked",
+          "pos": "分词",
+          "start": 15,
+          "end": 21
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 28,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the dinner",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "was cooked",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 21
+        },
+        {
+          "text": "by my mother",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "打破",
+    "english": "to break",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "动词 break 原形"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "break",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to break",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "打破（过去分词）",
+    "english": "broken",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["break 的过去分词，含被动/完成意味"],
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "broken",
+          "pos": "分词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "broken",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "被打破",
+    "english": "be broken",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "broken",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be broken",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "窗户",
+    "english": "window",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：窗户"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "window",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "那个窗户",
+    "english": "the window",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语，非完整句子"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the window",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "那个窗户被打破了",
+    "english": "the window is broken",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时被动语态", "the window 作主语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "broken",
+          "pos": "分词",
+          "start": 14,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the window",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "is broken",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 20
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "石头",
+    "english": "stone",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：石头"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "stone",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "stone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "通过",
+    "english": "by",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["介词 by 表方式/施动者"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "通过一个石头",
+    "english": "by a stone",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 名词，表方式/手段"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "text": "stone",
+          "pos": "名词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by a stone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "那个窗户被一个石头打破了",
+    "english": "the window is broken by a stone",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般现在时",
+      "keyPoints": ["一般现在时被动语态", "by a stone 作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "broken",
+          "pos": "分词",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "text": "stone",
+          "pos": "名词",
+          "start": 26,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the window",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "is broken",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "text": "by a stone",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "那个窗户（过去）被一个石头打破了",
+    "english": "the window was broken by a stone",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般过去时",
+      "keyPoints": ["一般过去时被动语态", "by a stone 作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "broken",
+          "pos": "分词",
+          "start": 15,
+          "end": 21
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "a",
+          "pos": "冠词",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "stone",
+          "pos": "名词",
+          "start": 27,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the window",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "was broken",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 21
+        },
+        {
+          "text": "by a stone",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "关闭",
+    "english": "to close",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "close",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to close",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "关闭（过去分词）",
+    "english": "closed",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["close 的过去式/过去分词，也可作形容词"],
+      "confidence": 0.5,
+      "words": [
+        {
+          "text": "closed",
+          "pos": "动词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "closed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "被关闭",
+    "english": "be closed",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "closed",
+          "pos": "分词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be closed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 147,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 148,
+    "chinese": "将会被关闭",
+    "english": "will be closed",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般将来时",
+      "keyPoints": ["will be + 过去分词：一般将来时被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "closed",
+          "pos": "分词",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be closed",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 149,
+    "chinese": "那个窗户",
+    "english": "the window",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语，非完整句子"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the window",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 150,
+    "chinese": "那个窗户将会被关闭",
+    "english": "the window will be closed",
+    "annotation": {
+      "order": 4,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态", "will be + 过去分词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "closed",
+          "pos": "分词",
+          "start": 19,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the window",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "will be closed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 151,
+    "chinese": "通过我",
+    "english": "by me",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格 me"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by me",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 152,
+    "chinese": "那个窗户将会被我关闭",
+    "english": "the window will be closed by me",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态", "by me 作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "window",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "closed",
+          "pos": "分词",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "text": "me",
+          "pos": "代词",
+          "start": 29,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the window",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "will be closed",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 25
+        },
+        {
+          "text": "by me",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 26,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 153,
+    "chinese": "保持",
+    "english": "to keep",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "keep",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to keep",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 154,
+    "chinese": "保持（过去分词）",
+    "english": "kept",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "kept",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "kept",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 155,
+    "chinese": "被保持",
+    "english": "be kept",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词，构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "kept",
+          "pos": "分词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be kept",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 156,
+    "chinese": "将会",
+    "english": "will",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 157,
+    "chinese": "将会被保持",
+    "english": "will be kept",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般将来时",
+      "keyPoints": ["will be + 过去分词：一般将来时被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "kept",
+          "pos": "分词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be kept",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 158,
+    "chinese": "秘密",
+    "english": "secret",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词，秘密"],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "secret",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 159,
+    "chinese": "这个秘密",
+    "english": "the secret",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["定冠词+名词构成名词短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the secret",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 160,
+    "chinese": "这个秘密将会被保持",
+    "english": "the secret will be kept",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时的被动语态 will be done"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "kept",
+          "pos": "分词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the secret",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "will be kept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 161,
+    "chinese": "通过他",
+    "english": "by him",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by him",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 162,
+    "chinese": "这个秘密将会被他保持",
+    "english": "the secret will be kept by him",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时的被动语态 will be kept", "by him 说明动作执行者"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "secret",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "kept",
+          "pos": "分词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "him",
+          "pos": "代词",
+          "start": 27,
+          "end": 30
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the secret",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "will be kept",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 23
+        },
+        {
+          "text": "by him",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 30
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 163,
+    "chinese": "保存；拯救",
+    "english": "to save",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["不定式短语 to save"],
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "save",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to save",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 164,
+    "chinese": "拯救（过去分词）",
+    "english": "saved",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词过去式或过去分词"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "saved",
+          "pos": "动词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "saved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 165,
+    "chinese": "被拯救",
+    "english": "be saved",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词", "被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "saved",
+          "pos": "分词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be saved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 166,
+    "chinese": "将会被拯救",
+    "english": "will be saved",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["will be + 过去分词，一般将来时的被动语态"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "saved",
+          "pos": "分词",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be saved",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 167,
+    "chinese": "世界",
+    "english": "the world",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "keyPoints": ["名词短语，非完整句子"],
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the world",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 168,
+    "chinese": "世界将会被拯救",
+    "english": "the world will be saved",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态", "the world 作主语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "saved",
+          "pos": "分词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the world",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "will be saved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 23
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 169,
+    "chinese": "通过他们",
+    "english": "by them",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["by + 代词宾格"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "by them",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 170,
+    "chinese": "世界将会被他们拯救",
+    "english": "the world will be saved by them",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态", "by them 作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "world",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "saved",
+          "pos": "分词",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "by",
+          "pos": "介词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "them",
+          "pos": "代词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the world",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "will be saved",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 23
+        },
+        {
+          "text": "by them",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 24,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 171,
+    "chinese": "脚",
+    "english": "foot",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["foot 名词，意为“脚”；复数形式为 feet"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "foot",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "foot",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 172,
+    "chinese": "球",
+    "english": "ball",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["球"],
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "ball",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "ball",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 173,
+    "chinese": "足球",
+    "english": "football",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["football 名词，意为“足球”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "football",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "football",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 174,
+    "chinese": "比赛",
+    "english": "match",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["match：可作名词（比赛/火柴）或动词（匹配）"],
+      "confidence": 0.45,
+      "words": [
+        {
+          "text": "match",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "match",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 175,
+    "chinese": "足球比赛",
+    "english": "football match",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["football match 意为“足球比赛”"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "football",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "match",
+          "pos": "名词",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "football match",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 176,
+    "chinese": "那场足球比赛",
+    "english": "the football match",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，中心词为 match"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "football",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "match",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the football match",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 177,
+    "chinese": "举行",
+    "english": "to hold",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，hold 表示握住"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "hold",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to hold",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 178,
+    "chinese": "举行（过去分词）",
+    "english": "held",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动词：握住（过去式/过去分词）"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "held",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "held",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 179,
+    "chinese": "被举行",
+    "english": "be held",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 过去分词，构成被动语态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "held",
+          "pos": "分词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be held",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 180,
+    "chinese": "将会被举行",
+    "english": "will be held",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "tense": "一般将来时",
+      "keyPoints": ["will be + 过去分词：一般将来时被动语态"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "held",
+          "pos": "分词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "will be held",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 181,
+    "chinese": "那场足球比赛将会被举行",
+    "english": "the football match will be held",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态：will be + 过去分词", "hold 的过去分词是 held"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "football",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "match",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "held",
+          "pos": "分词",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the football match",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "will be held",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 19,
+          "end": 31
+        }
+      ],
+      "structure": "主语 + 谓语"
+    }
+  },
+  {
+    "order": 182,
+    "chinese": "明天",
+    "english": "tomorrow",
+    "annotation": {
+      "order": 91,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["时间副词：明天"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tomorrow",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 183,
+    "chinese": "那场足球比赛明天将会被举行",
+    "english": "the football match will be held tomorrow",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "一般将来时",
+      "keyPoints": ["一般将来时被动语态", "tomorrow 作时间状语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "football",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "match",
+          "pos": "名词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "will",
+          "pos": "助动词",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "held",
+          "pos": "分词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "tomorrow",
+          "pos": "副词",
+          "start": 32,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the football match",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 18
+        },
+        {
+          "text": "will be held",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 19,
+          "end": 31
+        },
+        {
+          "text": "tomorrow",
+          "role": "状语",
+          "roleType": "单词",
+          "start": 32,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  }
+]

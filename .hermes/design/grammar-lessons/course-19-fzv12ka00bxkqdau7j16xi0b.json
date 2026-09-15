@@ -1,0 +1,7368 @@
+[
+  {
+    "order": 1,
+    "chinese": "书",
+    "english": "book",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：书；动词：预订"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "book",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "chinese": "英语",
+    "english": "English",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["专有名词 English(英语)"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "English",
+          "pos": "名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "English",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "chinese": "一本英语书",
+    "english": "an English book",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：一本英语书"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "English",
+          "pos": "形容词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "phrases": [
+        {
+          "text": "an English book",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 15
+        }
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "chinese": "阅读",
+    "english": "to read",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "chinese": "阅读一本英语书",
+    "english": "to read an English book",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "an English book 作 read 的宾语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "read",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "English",
+          "pos": "形容词",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to read an English book",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "chinese": "阅读（ing形式）",
+    "english": "reading",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.75,
+      "words": [
+        {
+          "text": "reading",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "reading",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "chinese": "是；赋值（原型）",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 8,
+    "chinese": "正在阅读",
+    "english": "be reading",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词", "构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "reading",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be reading",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "chinese": "正在阅读一本英语书",
+    "english": "be reading an English book",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词 + 宾语", "进行时短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "reading",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "English",
+          "pos": "形容词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 22,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be reading an English book",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "chinese": "我",
+    "english": "I",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 1
+        }
+      ]
+    }
+  },
+  {
+    "order": 11,
+    "chinese": "我（现在）正在阅读一本英语书",
+    "english": "I am reading an English book",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时表正在进行的动作", "read an English book 读英语书"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "reading",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "English",
+          "pos": "形容词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am reading",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "an English book",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 12,
+    "chinese": "这一瞬间；这一刻",
+    "english": "the moment",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["the moment 那一刻；此刻"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the moment",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 13,
+    "chinese": "在这一刻；此刻",
+    "english": "at the moment",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at the moment 意为“此刻”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the moment",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 14,
+    "chinese": "我此刻正在阅读一本英语书",
+    "english": "I am reading an English book at the moment",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["at the moment 意为“此刻”，常与现在进行时连用", "介词短语作时间状语"],
+      "confidence": 0.96,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am",
+          "pos": "助动词",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "reading",
+          "pos": "动词",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "text": "English",
+          "pos": "形容词",
+          "start": 16,
+          "end": 23
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 32,
+          "end": 35
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 36,
+          "end": 42
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "am reading",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 12
+        },
+        {
+          "text": "an English book",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 28
+        },
+        {
+          "text": "at the moment",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 29,
+          "end": 42
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 15,
+    "chinese": "我（过去）正在阅读一本英语书",
+    "english": "I was reading an English book",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时：was/were + doing", "English 作定语修饰 book"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "reading",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "English",
+          "pos": "形容词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 25,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was reading",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "an English book",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 16,
+    "chinese": "昨晚",
+    "english": "last night",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "last night",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 17,
+    "chinese": "我昨晚正在阅读一本英语书",
+    "english": "I was reading an English book last night",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["last night 作时间状语", "过去进行时可与具体过去时间连用"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "reading",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "English",
+          "pos": "形容词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "last",
+          "pos": "形容词",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "text": "night",
+          "pos": "名词",
+          "start": 35,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was reading",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "an English book",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 29
+        },
+        {
+          "text": "last night",
+          "role": "状语",
+          "roleType": "名词短语",
+          "start": 30,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 18,
+    "chinese": "家",
+    "english": "home",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["home 可作副词，意为“在家/回家”"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "home",
+          "pos": "副词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "home",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 19,
+    "chinese": "工作",
+    "english": "work",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作动词（工作）"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "work",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "chinese": "家庭作业",
+    "english": "homework",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：家庭作业"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "chinese": "她的",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "chinese": "她的家庭作业",
+    "english": "her homework",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["homework 为不可数名词", "名词短语：她的作业"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "chinese": "做",
+    "english": "to do",
+    "annotation": {
+      "order": 10,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语 to do"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "chinese": "做她的家庭作业",
+    "english": "to do her homework",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，her为物主代词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 10,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do her homework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "chinese": "做（ing形式）",
+    "english": "doing",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do 的动名词/现在分词形式"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "doing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "doing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "chinese": "是；赋值（原型）",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "chinese": "正在做",
+    "english": "be doing",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doing",
+          "pos": "分词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be doing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "chinese": "正在做她的家庭作业",
+    "english": "be doing her homework",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时", "her homework 为动宾搭配"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doing",
+          "pos": "分词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 13,
+          "end": 21
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be doing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "her homework",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 21
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "chinese": "她（现在）正在做她的家庭作业",
+    "english": "she is doing her homework",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：is doing", "her homework 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "doing",
+          "pos": "动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 17,
+          "end": 25
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is doing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "her homework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 25
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 31,
+    "chinese": "女儿",
+    "english": "daughter",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "chinese": "我的女儿",
+    "english": "my daughter",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "chinese": "我的女儿（现在）正在做她的家庭作业",
+    "english": "my daughter is doing her homework",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 be + doing", "do one's homework 做作业"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "doing",
+          "pos": "动词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 25,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is doing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "her homework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 35,
+    "chinese": "在这一刻；此刻",
+    "english": "at the moment",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at the moment 意为“此刻”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the moment",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "chinese": "我的女儿此刻正在做她的家庭作业",
+    "english": "my daughter is doing her homework at the moment",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["at the moment 表此刻, 用于进行时", "现在进行时 be + doing"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "doing",
+          "pos": "动词",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 25,
+          "end": 33
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 41,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is doing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 20
+        },
+        {
+          "text": "her homework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 21,
+          "end": 33
+        },
+        {
+          "text": "at the moment",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 34,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 37,
+    "chinese": "我的女儿（过去）正在做她的家庭作业",
+    "english": "my daughter was doing her homework",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["do one's homework 做作业"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "doing",
+          "pos": "动词",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 26,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "was doing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 21
+        },
+        {
+          "text": "her homework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 22,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 38,
+    "chinese": "我（过去）正在阅读一本英语书",
+    "english": "I was reading an English book",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时：was/were + doing", "English 作定语修饰 book"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "reading",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "English",
+          "pos": "形容词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 25,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was reading",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "an English book",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 29
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 39,
+    "chinese": "与此同时",
+    "english": "while",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["while 表示“当……时；然而”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "while",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "chinese": "我（过去）正在阅读一本英语书与此同时我的女儿（过去）正在做她的家庭作业",
+    "english": "I was reading an English book while my daughter was doing her homework",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["while 引导时间状语从句", "两个动作同时进行"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I",
+          "pos": "代词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "reading",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "an",
+          "pos": "冠词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "English",
+          "pos": "形容词",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "text": "book",
+          "pos": "名词",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 30,
+          "end": 35
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 36,
+          "end": 38
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 39,
+          "end": 47
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 48,
+          "end": 51
+        },
+        {
+          "text": "doing",
+          "pos": "动词",
+          "start": 52,
+          "end": 57
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 58,
+          "end": 61
+        },
+        {
+          "text": "homework",
+          "pos": "名词",
+          "start": 62,
+          "end": 70
+        }
+      ],
+      "phrases": [
+        {
+          "text": "I",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "was reading",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 2,
+          "end": 13
+        },
+        {
+          "text": "an English book",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 14,
+          "end": 29
+        },
+        {
+          "text": "while my daughter was doing her homework",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 30,
+          "end": 70
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 41,
+    "chinese": "跑步",
+    "english": "to run",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语 to run"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "run",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to run",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "chinese": "街道",
+    "english": "the street",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语：the + 名词"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "street",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the street",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "chinese": "在街上",
+    "english": "in the street",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "street",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the street",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "chinese": "在街上跑步",
+    "english": "to run in the street",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["in the street 在街上"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "run",
+          "pos": "动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "street",
+          "pos": "名词",
+          "start": 14,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to run",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        },
+        {
+          "text": "in the street",
+          "role": null,
+          "roleType": null,
+          "start": 7,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "chinese": "跑步（ing形式）",
+    "english": "running",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["run 的 -ing 形式，可作动名词"],
+      "confidence": 0.55,
+      "words": [
+        {
+          "text": "running",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "running",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "chinese": "是；赋值（原型）",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "chinese": "正在跑步",
+    "english": "be running",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词", "进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "running",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be running",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "chinese": "正在在街上跑步",
+    "english": "be running in the street",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词 + 地点状语", "进行时短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "running",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "street",
+          "pos": "名词",
+          "start": 18,
+          "end": 24
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be running in the street",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "chinese": "他",
+    "english": "he",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "chinese": "他（现在）正在在街上跑步",
+    "english": "he is running in the street",
+    "annotation": {
+      "order": 5,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时表示此刻正在发生", "in the street 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "running",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "street",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is running",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "in the street",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 14,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 51,
+    "chinese": "在这一刻；此刻",
+    "english": "at the moment",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at the moment 意为“此刻”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the moment",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "chinese": "他此刻正在在街上跑步",
+    "english": "he is running in the street at the moment",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["at the moment 常与现在进行时连用", "两个状语均修饰谓语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "running",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "street",
+          "pos": "名词",
+          "start": 21,
+          "end": 27
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 35,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is running",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "in the street",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 14,
+          "end": 27
+        },
+        {
+          "text": "at the moment",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 53,
+    "chinese": "他（过去）正在在街上跑步",
+    "english": "he was running in the street",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时 was running 表过去正在进行", "in the street 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "running",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "street",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was running",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 14
+        },
+        {
+          "text": "in the street",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 54,
+    "chinese": "游泳",
+    "english": "to swim",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "swim",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to swim",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "chinese": "游泳池",
+    "english": "the pool",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "pool",
+          "pos": "名词",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the pool",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "chinese": "在游泳池里",
+    "english": "in the pool",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["介词短语表示地点"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "pool",
+          "pos": "名词",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "in the pool",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "chinese": "在游泳池里游泳",
+    "english": "to swim in the pool",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "含地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "swim",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "pool",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to swim in the pool",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "chinese": "游泳（ing形式）",
+    "english": "swimming",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "swimming",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "swimming",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "chinese": "是；赋值（原型）",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "chinese": "正在游泳",
+    "english": "be swimming",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + doing 构成进行时态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "swimming",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be swimming",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "chinese": "正在在游泳池里游泳",
+    "english": "be swimming in the pool",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + doing 表进行", "in the pool 表地点"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "swimming",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "pool",
+          "pos": "名词",
+          "start": 19,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be swimming",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "in the pool",
+          "role": null,
+          "roleType": null,
+          "start": 12,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "chinese": "她（现在）正在游泳池里游泳",
+    "english": "she is swimming in the pool",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 be + doing", "介词短语作地点状语"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "swimming",
+          "pos": "动词",
+          "start": 7,
+          "end": 15
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "pool",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is swimming",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "in the pool",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 64,
+    "chinese": "在这一刻；此刻",
+    "english": "at the moment",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at the moment 意为“此刻”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the moment",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "chinese": "她此刻正在游泳池里游泳",
+    "english": "she is swimming in the pool at the moment",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["at the moment 表示'此刻'，与进行时连用", "两个介词短语作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "swimming",
+          "pos": "动词",
+          "start": 7,
+          "end": 15
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "pool",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 35,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is swimming",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "in the pool",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 16,
+          "end": 27
+        },
+        {
+          "text": "at the moment",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 66,
+    "chinese": "她（过去）正在游泳池里游泳",
+    "english": "she was swimming in the pool",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时 was + doing", "in the pool 地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "text": "swimming",
+          "pos": "动词",
+          "start": 8,
+          "end": 16
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "pool",
+          "pos": "名词",
+          "start": 24,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "was swimming",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 16
+        },
+        {
+          "text": "in the pool",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 17,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 67,
+    "chinese": "他（过去）正在在街上跑步",
+    "english": "he was running in the street",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时 was running 表过去正在进行", "in the street 作地点状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "running",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "street",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was running",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 14
+        },
+        {
+          "text": "in the street",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 28
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 68,
+    "chinese": "与此同时",
+    "english": "while",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["while 表示“当……时；然而”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "while",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 69,
+    "chinese": "他（过去）正在在街上跑步与此同时她（过去）正在游泳池里游泳",
+    "english": "he was running in the street while she was swimming in the pool",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv + conj + S + V + Adv",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["while 引导时间状语从句，表两动作同时进行", "两个分句均用过去进行时"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "running",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "text": "street",
+          "pos": "名词",
+          "start": 22,
+          "end": 28
+        },
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 29,
+          "end": 34
+        },
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "swimming",
+          "pos": "动词",
+          "start": 43,
+          "end": 51
+        },
+        {
+          "text": "in",
+          "pos": "介词",
+          "start": 52,
+          "end": 54
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 55,
+          "end": 58
+        },
+        {
+          "text": "pool",
+          "pos": "名词",
+          "start": 59,
+          "end": 63
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "was running",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 14
+        },
+        {
+          "text": "in the street",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 15,
+          "end": 28
+        },
+        {
+          "text": "while",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 29,
+          "end": 34
+        },
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 35,
+          "end": 38
+        },
+        {
+          "text": "was swimming",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 39,
+          "end": 51
+        },
+        {
+          "text": "in the pool",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 52,
+          "end": 63
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语 + 连接词 + 主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 70,
+    "chinese": "房子",
+    "english": "house",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["房屋；住宅"],
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "house",
+          "pos": "名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "house",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 71,
+    "chinese": "工作",
+    "english": "work",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["可作动词（工作）"],
+      "confidence": 0.4,
+      "words": [
+        {
+          "text": "work",
+          "pos": "动词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "work",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 72,
+    "chinese": "家务",
+    "english": "the housework",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "phrase",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "housework",
+          "pos": "名词",
+          "start": 4,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the housework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 73,
+    "chinese": "做",
+    "english": "to do",
+    "annotation": {
+      "order": 10,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["动词不定式短语 to do"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 74,
+    "chinese": "做家务",
+    "english": "to do the housework",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语，housework不可数"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "do",
+          "pos": "动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "housework",
+          "pos": "名词",
+          "start": 10,
+          "end": 19
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to do the housework",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 19
+        }
+      ]
+    }
+  },
+  {
+    "order": 75,
+    "chinese": "做（ing形式）",
+    "english": "doing",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["do 的动名词/现在分词形式"],
+      "confidence": 0.8,
+      "words": [
+        {
+          "text": "doing",
+          "pos": "动名词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "doing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 76,
+    "chinese": "是；赋值（原型）",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 77,
+    "chinese": "正在做",
+    "english": "be doing",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doing",
+          "pos": "分词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be doing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 78,
+    "chinese": "正在做家务",
+    "english": "be doing the housework",
+    "annotation": {
+      "order": 7,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词，构成进行时", "do the housework 做家务"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "doing",
+          "pos": "分词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "text": "housework",
+          "pos": "名词",
+          "start": 13,
+          "end": 22
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be doing",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        },
+        {
+          "text": "the housework",
+          "role": null,
+          "roleType": null,
+          "start": 9,
+          "end": 22
+        }
+      ]
+    }
+  },
+  {
+    "order": 79,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 80,
+    "chinese": "她（现在）正在做家务",
+    "english": "she is doing the housework",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：is doing", "housework 作宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "doing",
+          "pos": "动词",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "housework",
+          "pos": "名词",
+          "start": 17,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is doing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "text": "the housework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 13,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 81,
+    "chinese": "母亲；妈妈",
+    "english": "mother",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词：母亲；妈妈"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mother",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 82,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 83,
+    "chinese": "我的妈妈",
+    "english": "my mother",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["my 为形容词性物主代词", "名词短语，非完整句子"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my mother",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 84,
+    "chinese": "我的妈妈（现在）正在做家务",
+    "english": "my mother is doing the housework",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时:be+doing", "my mother 作主语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "doing",
+          "pos": "动词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "housework",
+          "pos": "名词",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my mother",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is doing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "the housework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 32
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 85,
+    "chinese": "在这一刻；此刻",
+    "english": "at the moment",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at the moment 意为“此刻”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the moment",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 86,
+    "chinese": "我妈此刻正在做家务",
+    "english": "my mother is doing the housework at the moment",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["at the moment 作时间状语", "现在进行时表示此刻正在做"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "doing",
+          "pos": "动词",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "text": "housework",
+          "pos": "名词",
+          "start": 23,
+          "end": 32
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 40,
+          "end": 46
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my mother",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is doing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": "the housework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
+          "end": 32
+        },
+        {
+          "text": "at the moment",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 33,
+          "end": 46
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 87,
+    "chinese": "我妈（过去）正在做家务",
+    "english": "my mother was doing the housework",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时:was+doing", "表示过去某一时刻正在做"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "doing",
+          "pos": "动词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "housework",
+          "pos": "名词",
+          "start": 24,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my mother",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "was doing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "the housework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 88,
+    "chinese": "说话",
+    "english": "to talk",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to talk",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 89,
+    "chinese": "手机",
+    "english": "the phone",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "the phone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 90,
+    "chinese": "在手机上",
+    "english": "on the phone",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["on the phone 通过电话"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 7,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "on the phone",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 91,
+    "chinese": "在手机上说话",
+    "english": "to talk on the phone",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "on the phone 通过电话"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "talk",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 15,
+          "end": 20
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to talk",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "text": "on the phone",
+          "role": null,
+          "roleType": null,
+          "start": 8,
+          "end": 20
+        }
+      ]
+    }
+  },
+  {
+    "order": 92,
+    "chinese": "说话（ing形式）",
+    "english": "talking",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "talking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "talking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 93,
+    "chinese": "是；赋值（原型）",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 94,
+    "chinese": "正在说话",
+    "english": "be talking",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + doing 构成进行时态"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "talking",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be talking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 95,
+    "chinese": "正在在手机上说话",
+    "english": "be talking on the phone",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + doing 表进行", "on the phone 表方式"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "talking",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be talking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "on the phone",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 23
+        }
+      ]
+    }
+  },
+  {
+    "order": 96,
+    "chinese": "他",
+    "english": "he",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": "",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["人称代词主格"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 97,
+    "chinese": "他（现在）正在手机上说话",
+    "english": "he is talking on the phone",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["on the phone 意为'在通电话'", "现在进行时表正在进行"],
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "he",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "talking",
+          "pos": "动词",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "he",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "is talking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "on the phone",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 14,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 98,
+    "chinese": "父亲；爸爸",
+    "english": "father",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：父亲"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "father",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "father",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 99,
+    "chinese": "我的",
+    "english": "my",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 100,
+    "chinese": "我的父亲",
+    "english": "my father",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["名词短语，非完整句子"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "father",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my father",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  },
+  {
+    "order": 101,
+    "chinese": "我爸（现在）正在手机上说话",
+    "english": "my father is talking on the phone",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "on the phone 表示在打电话"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "father",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "talking",
+          "pos": "动词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 28,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my father",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is talking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 20
+        },
+        {
+          "text": "on the phone",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 102,
+    "chinese": "在这一刻；此刻",
+    "english": "at the moment",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at the moment 意为“此刻”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the moment",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 103,
+    "chinese": "我爸此刻正在手机上说话",
+    "english": "my father is talking on the phone at the moment",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：be + doing", "at the moment 表示此刻"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "father",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "text": "talking",
+          "pos": "动词",
+          "start": 13,
+          "end": 20
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 41,
+          "end": 47
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my father",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "is talking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 20
+        },
+        {
+          "text": "on the phone",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 21,
+          "end": 33
+        },
+        {
+          "text": "at the moment",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 34,
+          "end": 47
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 104,
+    "chinese": "我爸（过去）正在手机上说话",
+    "english": "my father was talking on the phone",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时：was + doing", "on the phone 表示在打电话"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "father",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "talking",
+          "pos": "动词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 29,
+          "end": 34
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my father",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "was talking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 21
+        },
+        {
+          "text": "on the phone",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 22,
+          "end": 34
+        }
+      ],
+      "structure": "主语 + 谓语 + 状语"
+    }
+  },
+  {
+    "order": 105,
+    "chinese": "与此同时",
+    "english": "while",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["while 表示“当……时；然而”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "while",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 106,
+    "chinese": "我妈（过去）正在做家务",
+    "english": "my mother was doing the housework",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时:was+doing", "表示过去某一时刻正在做"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "doing",
+          "pos": "动词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "housework",
+          "pos": "名词",
+          "start": 24,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my mother",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "was doing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "the housework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 107,
+    "chinese": "我妈（过去）正在做家务与此同时我爸（过去）正在手机上说话",
+    "english": "my mother was doing the housework while my father was talking on the phone",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["while 引导时间状语从句", "两个过去进行时动作同时发生"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 3,
+          "end": 9
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "doing",
+          "pos": "动词",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "text": "housework",
+          "pos": "名词",
+          "start": 24,
+          "end": 33
+        },
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 34,
+          "end": 39
+        },
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 40,
+          "end": 42
+        },
+        {
+          "text": "father",
+          "pos": "名词",
+          "start": 43,
+          "end": 49
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 50,
+          "end": 53
+        },
+        {
+          "text": "talking",
+          "pos": "动词",
+          "start": 54,
+          "end": 61
+        },
+        {
+          "text": "on",
+          "pos": "介词",
+          "start": 62,
+          "end": 64
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 65,
+          "end": 68
+        },
+        {
+          "text": "phone",
+          "pos": "名词",
+          "start": 69,
+          "end": 74
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my mother",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "was doing",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "text": "the housework",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 20,
+          "end": 33
+        },
+        {
+          "text": "while my father was talking on the phone",
+          "role": "状语",
+          "roleType": "从句",
+          "start": 34,
+          "end": 74
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
+    }
+  },
+  {
+    "order": 108,
+    "chinese": "看",
+    "english": "to watch",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "to watch 表示目的或打算"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to watch",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 109,
+    "chinese": "电视",
+    "english": "TV",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.9,
+      "keyPoints": ["缩写词，电视"],
+      "words": [
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "TV",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 110,
+    "chinese": "看电视",
+    "english": "to watch TV",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语", "watch TV 看电视"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watch",
+          "pos": "动词",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to watch TV",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 111,
+    "chinese": "看（ing形式）",
+    "english": "watching",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["动名词形式"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "watching",
+          "pos": "动名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "watching",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 112,
+    "chinese": "是；赋值（原型）",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 113,
+    "chinese": "正在看",
+    "english": "be watching",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watching",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be watching",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 114,
+    "chinese": "正在看电视",
+    "english": "be watching TV",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词 + 宾语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "watching",
+          "pos": "分词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be watching TV",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 14
+        }
+      ]
+    }
+  },
+  {
+    "order": 115,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 116,
+    "chinese": "她（现在）正在看电视",
+    "english": "she is watching TV",
+    "annotation": {
+      "order": 1,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时 is watching", "watch TV 看电视"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "watching",
+          "pos": "动词",
+          "start": 7,
+          "end": 15
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is watching",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "text": "TV",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 117,
+    "chinese": "女儿",
+    "english": "daughter",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 118,
+    "chinese": "我的女儿",
+    "english": "my daughter",
+    "annotation": {
+      "order": 3,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "clauseType": "",
+      "sentenceType": "",
+      "tense": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  },
+  {
+    "order": 119,
+    "chinese": "我女儿（现在）正在看电视",
+    "english": "my daughter is watching TV",
+    "annotation": {
+      "order": 2,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["watch TV 看电视"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "watching",
+          "pos": "动词",
+          "start": 15,
+          "end": 23
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 24,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is watching",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 23
+        },
+        {
+          "text": "TV",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 24,
+          "end": 26
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 120,
+    "chinese": "在这一刻；此刻",
+    "english": "at the moment",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at the moment 意为“此刻”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the moment",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 121,
+    "chinese": "我女儿此刻正在看电视",
+    "english": "my daughter is watching TV at the moment",
+    "annotation": {
+      "order": 3,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["at the moment 此刻"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "watching",
+          "pos": "动词",
+          "start": 15,
+          "end": 23
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 34,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "is watching",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 23
+        },
+        {
+          "text": "TV",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "text": "at the moment",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 122,
+    "chinese": "我女儿（过去）正在看电视",
+    "english": "my daughter was watching TV",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["watch TV 看电视"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "watching",
+          "pos": "动词",
+          "start": 16,
+          "end": 24
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 25,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "was watching",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 24
+        },
+        {
+          "text": "TV",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 25,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 123,
+    "chinese": "烹饪；做饭",
+    "english": "to cook",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "cook",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to cook",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 124,
+    "chinese": "牛肉",
+    "english": "beef",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["名词：牛肉"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "beef",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "beef",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 125,
+    "chinese": "做牛肉",
+    "english": "to cook beef",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "cook",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "beef",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to cook beef",
+          "role": null,
+          "roleType": "不定式短语",
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  },
+  {
+    "order": 126,
+    "chinese": "和",
+    "english": "with",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  },
+  {
+    "order": 127,
+    "chinese": "土豆",
+    "english": "potatoes",
+    "annotation": {
+      "order": 1,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "potatoes",
+          "pos": "名词",
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "phrases": [
+        {
+          "text": "potatoes",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 8
+        }
+      ]
+    }
+  },
+  {
+    "order": 128,
+    "chinese": "和土豆",
+    "english": "with potatoes",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": "",
+      "keyPoints": [],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "potatoes",
+          "pos": "名词",
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "with potatoes",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 129,
+    "chinese": "牛肉和土豆",
+    "english": "beef with potatoes",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["with 表伴随", "名词短语：土豆炖牛肉"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "beef",
+          "pos": "名词",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "text": "potatoes",
+          "pos": "名词",
+          "start": 10,
+          "end": 18
+        }
+      ],
+      "phrases": [
+        {
+          "text": "beef",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 4
+        },
+        {
+          "text": "with potatoes",
+          "role": null,
+          "roleType": null,
+          "start": 5,
+          "end": 18
+        }
+      ]
+    }
+  },
+  {
+    "order": 130,
+    "chinese": "烹饪牛肉和土豆",
+    "english": "to cook beef with potatoes",
+    "annotation": {
+      "order": 0,
+      "isSentence": false,
+      "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语：to cook beef with potatoes", "with 表伴随/方式"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "to",
+          "pos": "不定式",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "cook",
+          "pos": "动词",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "beef",
+          "pos": "名词",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "potatoes",
+          "pos": "名词",
+          "start": 18,
+          "end": 26
+        }
+      ],
+      "phrases": [
+        {
+          "text": "to cook beef with potatoes",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 26
+        }
+      ]
+    }
+  },
+  {
+    "order": 131,
+    "chinese": "烹饪；做饭（ing形式）",
+    "english": "cooking",
+    "annotation": {
+      "order": 2,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["cook 的现在分词/动名词"],
+      "confidence": 0.7,
+      "words": [
+        {
+          "text": "cooking",
+          "pos": "动名词",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "phrases": [
+        {
+          "text": "cooking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 7
+        }
+      ]
+    }
+  },
+  {
+    "order": 132,
+    "chinese": "是；赋值（原型）",
+    "english": "be",
+    "annotation": {
+      "order": 6,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["是；存在"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "动词",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  },
+  {
+    "order": 133,
+    "chinese": "正在烹饪",
+    "english": "be cooking",
+    "annotation": {
+      "order": 8,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词构成进行时"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "cooking",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be cooking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 134,
+    "chinese": "正在做牛肉烧土豆",
+    "english": "be cooking beef with potatoes",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["be + 现在分词表正在进行", "cook...with... 用……烹制"],
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "be",
+          "pos": "助动词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "cooking",
+          "pos": "分词",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "text": "beef",
+          "pos": "名词",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "text": "potatoes",
+          "pos": "名词",
+          "start": 21,
+          "end": 29
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be cooking",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "beef",
+          "role": null,
+          "roleType": null,
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "with potatoes",
+          "role": null,
+          "roleType": null,
+          "start": 16,
+          "end": 29
+        }
+      ]
+    }
+  },
+  {
+    "order": 135,
+    "chinese": "她",
+    "english": "she",
+    "annotation": {
+      "order": 9,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["she: 她（主格）"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 136,
+    "chinese": "她（现在）正在做牛肉烧土豆",
+    "english": "she is cooking beef with potatoes",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：is cooking", "with potatoes 作伴随状语"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "she",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "text": "cooking",
+          "pos": "动词",
+          "start": 7,
+          "end": 14
+        },
+        {
+          "text": "beef",
+          "pos": "名词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "text": "potatoes",
+          "pos": "名词",
+          "start": 25,
+          "end": 33
+        }
+      ],
+      "phrases": [
+        {
+          "text": "she",
+          "role": "主语",
+          "roleType": "单词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "is cooking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 4,
+          "end": 14
+        },
+        {
+          "text": "beef",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "text": "with potatoes",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 20,
+          "end": 33
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 137,
+    "chinese": "母亲；妈妈",
+    "english": "mother",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["名词：母亲；妈妈"],
+      "confidence": 0.97,
+      "words": [
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mother",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  },
+  {
+    "order": 138,
+    "chinese": "她的",
+    "english": "her",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["代词：她；她的"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  },
+  {
+    "order": 139,
+    "chinese": "她的妈妈",
+    "english": "her mother",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["her 为形容词性物主代词", "名词短语：她的母亲"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her mother",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  },
+  {
+    "order": 140,
+    "chinese": "她妈妈（现在）正在做牛肉烧土豆",
+    "english": "her mother is cooking beef with potatoes",
+    "annotation": {
+      "order": 6,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["现在进行时：is cooking", "with potatoes 说明烹调方式，作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "cooking",
+          "pos": "动词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "beef",
+          "pos": "名词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "potatoes",
+          "pos": "名词",
+          "start": 32,
+          "end": 40
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her mother",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "is cooking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 21
+        },
+        {
+          "text": "beef",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "with potatoes",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 40
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 141,
+    "chinese": "在这一刻；此刻",
+    "english": "at the moment",
+    "annotation": {
+      "order": 4,
+      "isSentence": false,
+      "unitType": "phrase",
+      "keyPoints": ["at the moment 意为“此刻”"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 7,
+          "end": 13
+        }
+      ],
+      "phrases": [
+        {
+          "text": "at the moment",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 13
+        }
+      ]
+    }
+  },
+  {
+    "order": 142,
+    "chinese": "她妈妈此刻正在做牛肉烧土豆",
+    "english": "her mother is cooking beef with potatoes at the moment",
+    "annotation": {
+      "order": 7,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "现在进行时",
+      "keyPoints": ["at the moment 表示“此刻”，与现在进行时连用", "现在进行时：is cooking"],
+      "confidence": 0.92,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "is",
+          "pos": "助动词",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "text": "cooking",
+          "pos": "动词",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "text": "beef",
+          "pos": "名词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "potatoes",
+          "pos": "名词",
+          "start": 32,
+          "end": 40
+        },
+        {
+          "text": "at",
+          "pos": "介词",
+          "start": 41,
+          "end": 43
+        },
+        {
+          "text": "the",
+          "pos": "冠词",
+          "start": 44,
+          "end": 47
+        },
+        {
+          "text": "moment",
+          "pos": "名词",
+          "start": 48,
+          "end": 54
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her mother",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "is cooking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 21
+        },
+        {
+          "text": "beef",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "text": "with potatoes",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 27,
+          "end": 40
+        },
+        {
+          "text": "at the moment",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 41,
+          "end": 54
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 143,
+    "chinese": "她妈妈（过去）正在做牛肉烧土豆",
+    "english": "her mother was cooking beef with potatoes",
+    "annotation": {
+      "order": 8,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时：was cooking", "with potatoes 说明烹调方式，作状语"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "text": "cooking",
+          "pos": "动词",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "beef",
+          "pos": "名词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "text": "potatoes",
+          "pos": "名词",
+          "start": 33,
+          "end": 41
+        }
+      ],
+      "phrases": [
+        {
+          "text": "her mother",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "text": "was cooking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 11,
+          "end": 22
+        },
+        {
+          "text": "beef",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "text": "with potatoes",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 28,
+          "end": 41
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
+    }
+  },
+  {
+    "order": 144,
+    "chinese": "我女儿（过去）正在看电视",
+    "english": "my daughter was watching TV",
+    "annotation": {
+      "order": 9,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["watch TV 看电视"],
+      "confidence": 0.95,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "watching",
+          "pos": "动词",
+          "start": 16,
+          "end": 24
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 25,
+          "end": 27
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "was watching",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 24
+        },
+        {
+          "text": "TV",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 25,
+          "end": 27
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语"
+    }
+  },
+  {
+    "order": 145,
+    "chinese": "与此同时",
+    "english": "while",
+    "annotation": {
+      "order": 5,
+      "isSentence": false,
+      "unitType": "word",
+      "keyPoints": ["while 表示“当……时；然而”"],
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "phrases": [
+        {
+          "text": "while",
+          "role": null,
+          "roleType": null,
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  },
+  {
+    "order": 146,
+    "chinese": "我女儿（过去）正在看电视与此同时她妈妈（过去）正在做牛肉烧土豆",
+    "english": "my daughter was watching TV while her mother was cooking beef with potatoes",
+    "annotation": {
+      "order": 0,
+      "isSentence": true,
+      "unitType": "sentence",
+      "pattern": "S + V + O + conj + S + V + O",
+      "clauseType": "复合句",
+      "sentenceType": "陈述句",
+      "tense": "过去进行时",
+      "keyPoints": ["过去进行时：was watching / was cooking", "while 表示两个动作同时进行"],
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "my",
+          "pos": "代词",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "daughter",
+          "pos": "名词",
+          "start": 3,
+          "end": 11
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "text": "watching",
+          "pos": "动词",
+          "start": 16,
+          "end": 24
+        },
+        {
+          "text": "TV",
+          "pos": "名词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "while",
+          "pos": "连词",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "text": "her",
+          "pos": "代词",
+          "start": 34,
+          "end": 37
+        },
+        {
+          "text": "mother",
+          "pos": "名词",
+          "start": 38,
+          "end": 44
+        },
+        {
+          "text": "was",
+          "pos": "助动词",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "cooking",
+          "pos": "动词",
+          "start": 49,
+          "end": 56
+        },
+        {
+          "text": "beef",
+          "pos": "名词",
+          "start": 57,
+          "end": 61
+        },
+        {
+          "text": "with",
+          "pos": "介词",
+          "start": 62,
+          "end": 66
+        },
+        {
+          "text": "potatoes",
+          "pos": "名词",
+          "start": 67,
+          "end": 75
+        }
+      ],
+      "phrases": [
+        {
+          "text": "my daughter",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "text": "was watching",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 12,
+          "end": 24
+        },
+        {
+          "text": "TV",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "while",
+          "role": "连接词",
+          "roleType": "单词",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "text": "her mother",
+          "role": "主语",
+          "roleType": "名词短语",
+          "start": 34,
+          "end": 44
+        },
+        {
+          "text": "was cooking",
+          "role": "谓语",
+          "roleType": "动词短语",
+          "start": 45,
+          "end": 56
+        },
+        {
+          "text": "beef",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 57,
+          "end": 61
+        },
+        {
+          "text": "with potatoes",
+          "role": "状语",
+          "roleType": "介词短语",
+          "start": 62,
+          "end": 75
+        }
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 连接词 + 主语 + 谓语 + 宾语"
+    }
+  }
+]
