@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>练习页语法标注 · 效果预览</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+        background: #fbf7e8;
+        color: #0f172a;
+        padding: 22px;
+        font-size: 14px;
+      }
+      .note-top {
+        max-width: 900px;
+        margin: 0 auto 18px;
+        padding: 12px 14px;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        font-size: 12.5px;
+        line-height: 1.75;
+        color: #5b6b80;
+      }
+      .note-top b {
+        color: #0f172a;
+      }
+      .item {
+        max-width: 900px;
+        margin: 0 auto 16px;
+        padding: 16px 18px;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+      }
+      .item-head {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 14px;
+      }
+      .cn {
+        font-size: 15px;
+        font-weight: 800;
+      }
+      .badge {
+        font-size: 11px;
+        font-weight: 700;
+        padding: 2px 8px;
+        border-radius: 999px;
+      }
+      .b-sent {
+        background: #eff6ff;
+        color: #2c5af4;
+      }
+      .b-frag {
+        background: #f1f5f9;
+        color: #64748b;
+      }
+
+      /* 每词一列的网格: 短语气泡用 grid-column: span N 跨列, 长短词都能对齐 */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(var(--n), minmax(0, 1fr));
+        row-gap: 0;
+        margin-bottom: 6px;
+      }
+      .bubble {
+        grid-row: 1;
+        margin: 0 2px 6px;
+        border-bottom: 1.5px dashed var(--c);
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 11.5px;
+        font-weight: 800;
+        color: var(--c);
+        position: relative;
+      }
+      .bubble::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -4px;
+        width: 5px;
+        height: 5px;
+        margin-left: -2.5px;
+        border-radius: 999px;
+        background: var(--c);
+      }
+      .bubble i {
+        font-style: normal;
+        font-weight: 600;
+        color: #94a3b8;
+        margin-left: 4px;
+      }
+      .bubble small {
+        display: block;
+        font-weight: 600;
+        color: #94a3b8;
+        font-size: 10px;
+      }
+      .bubble--empty {
+        border-bottom-color: transparent;
+      }
+      .bubble--empty::after {
+        display: none;
+      }
+
+      .word {
+        grid-row: 2;
+        text-align: center;
+        font-size: 19px;
+        font-weight: 800;
+        padding: 2px 2px 4px;
+        word-break: break-word;
+      }
+      .pos {
+        grid-row: 3;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--c);
+        border-top: 2px solid var(--c);
+        margin: 0 3px;
+        padding-top: 4px;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+        margin-top: 14px;
+        position: relative;
+      }
+      .card {
+        background: #f8fafe;
+        border: 1px solid #e5e7eb;
+        border-radius: 9px;
+        padding: 9px 11px;
+      }
+      .card--wide {
+        grid-column: 1 / -1;
+      }
+      .card-t {
+        font-size: 10.5px;
+        font-weight: 700;
+        color: #94a3b8;
+        margin-bottom: 3px;
+      }
+      .card-v {
+        font-size: 13.5px;
+        font-weight: 800;
+      }
+      .card ul {
+        margin: 0;
+        padding-left: 16px;
+        font-size: 12.5px;
+        line-height: 1.7;
+        color: #334155;
+      }
+      .pill {
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 10.5px;
+        font-weight: 700;
+        background: #eff6ff;
+        color: #2c5af4;
+        border-radius: 999px;
+        padding: 2px 7px;
+      }
+      .conf {
+        position: absolute;
+        right: 0;
+        bottom: -16px;
+        font-size: 10.5px;
+        color: #94a3b8;
+      }
+      .muted {
+        color: #94a3b8;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="note-top">
+      <b>练习页语法标注 · 效果预览</b>（数据来自真实模型对「零基础学英语 · 第一课」的标注，共 5
+      条示例）<br />
+      上方彩色气泡 = <b>句子成分</b>（按短语标，虚线连到词）；词下方小标签 = <b>逐词词性</b>；
+      底部卡片 = 结构 / 时态 / 句型 / 语法要点。<b>碎片只显示词性</b>，不给成分与结构。
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <span class="cn">我喜欢这个食物</span><span class="b-sent badge">完整句</span>
+      </div>
+      <div
+        class="grid"
+        style="--n: 4"
+      >
+        <div
+          class="bubble"
+          style="grid-column: 1 / span 1; --c: #2c5af4"
+        >
+          主语<small>单词</small>
+        </div>
+        <div
+          class="bubble"
+          style="grid-column: 2 / span 1; --c: #0e9f6e"
+        >
+          谓语<small>动词短语</small>
+        </div>
+        <div
+          class="bubble"
+          style="grid-column: 3 / span 2; --c: #d97706"
+        >
+          宾语<small>名词短语</small>
+        </div>
+        <div class="word">I</div>
+        <div class="word">like</div>
+        <div class="word">the</div>
+        <div class="word">food</div>
+        <div
+          class="pos"
+          style="--c: #d97706"
+        >
+          代词
+        </div>
+        <div
+          class="pos"
+          style="--c: #0e9f6e"
+        >
+          动词
+        </div>
+        <div
+          class="pos"
+          style="--c: #94a3b8"
+        >
+          冠词
+        </div>
+        <div
+          class="pos"
+          style="--c: #d97706"
+        >
+          名词
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-t">句子结构</div>
+          <div class="card-v">主谓宾</div>
+          <span class="pill">S + V + O</span>
+        </div>
+        <div class="card">
+          <div class="card-t">时态</div>
+          <div class="card-v">一般现在时</div>
+        </div>
+        <div class="card">
+          <div class="card-t">句型</div>
+          <div class="card-v">陈述句</div>
+        </div>
+        <div class="card--wide card">
+          <div class="card-t">语法要点</div>
+          <ul>
+            <li>like后接名词作宾语</li>
+            <li>主语I后用动词原形</li>
+          </ul>
+        </div>
+        <div class="conf">置信度 0.95</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <span class="cn">我喜欢现在做这件事情</span><span class="b-sent badge">完整句</span>
+      </div>
+      <div
+        class="grid"
+        style="--n: 6"
+      >
+        <div
+          class="bubble"
+          style="grid-column: 1 / span 1; --c: #2c5af4"
+        >
+          主语<small>单词</small>
+        </div>
+        <div
+          class="bubble"
+          style="grid-column: 2 / span 1; --c: #0e9f6e"
+        >
+          谓语<small>动词短语</small>
+        </div>
+        <div
+          class="bubble"
+          style="grid-column: 3 / span 3; --c: #d97706"
+        >
+          宾语<small>不定式短语</small>
+        </div>
+        <div
+          class="bubble"
+          style="grid-column: 6 / span 1; --c: #7c3aed"
+        >
+          状语<small>副词短语</small>
+        </div>
+        <div class="word">I</div>
+        <div class="word">like</div>
+        <div class="word">to</div>
+        <div class="word">do</div>
+        <div class="word">it</div>
+        <div class="word">now</div>
+        <div
+          class="pos"
+          style="--c: #d97706"
+        >
+          代词
+        </div>
+        <div
+          class="pos"
+          style="--c: #0e9f6e"
+        >
+          动词
+        </div>
+        <div
+          class="pos"
+          style="--c: #0e9f6e"
+        >
+          不定式
+        </div>
+        <div
+          class="pos"
+          style="--c: #0e9f6e"
+        >
+          动词
+        </div>
+        <div
+          class="pos"
+          style="--c: #d97706"
+        >
+          代词
+        </div>
+        <div
+          class="pos"
+          style="--c: #7c3aed"
+        >
+          副词
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-t">句子结构</div>
+          <div class="card-v">主谓宾 + 时间状语</div>
+          <span class="pill">S + V + O + 时间状语</span>
+        </div>
+        <div class="card">
+          <div class="card-t">时态</div>
+          <div class="card-v">一般现在时</div>
+        </div>
+        <div class="card">
+          <div class="card-t">句型</div>
+          <div class="card-v">陈述句</div>
+        </div>
+        <div class="card--wide card">
+          <div class="card-t">语法要点</div>
+          <ul>
+            <li>now 位于句末作时间状语</li>
+          </ul>
+        </div>
+        <div class="conf">置信度 0.95</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <span class="cn">我不想一整天在这里</span><span class="b-sent badge">完整句</span>
+      </div>
+      <div
+        class="grid"
+        style="--n: 9"
+      >
+        <div
+          class="bubble"
+          style="grid-column: 1 / span 1; --c: #2c5af4"
+        >
+          主语<small>单词</small>
+        </div>
+        <div
+          class="bubble"
+          style="grid-column: 2 / span 2; --c: #0e9f6e"
+        >
+          谓语<small>动词短语</small>
+        </div>
+        <div
+          class="bubble"
+          style="grid-column: 4 / span 3; --c: #d97706"
+        >
+          宾语<small>不定式短语</small>
+        </div>
+        <div
+          class="bubble"
+          style="grid-column: 7 / span 3; --c: #7c3aed"
+        >
+          状语<small>名词短语</small>
+        </div>
+        <div class="word">I</div>
+        <div class="word">don&#x27;t</div>
+        <div class="word">want</div>
+        <div class="word">to</div>
+        <div class="word">be</div>
+        <div class="word">here</div>
+        <div class="word">all</div>
+        <div class="word">the</div>
+        <div class="word">day</div>
+        <div
+          class="pos"
+          style="--c: #d97706"
+        >
+          代词
+        </div>
+        <div
+          class="pos"
+          style="--c: #0e9f6e"
+        >
+          助动词
+        </div>
+        <div
+          class="pos"
+          style="--c: #0e9f6e"
+        >
+          动词
+        </div>
+        <div
+          class="pos"
+          style="--c: #0e9f6e"
+        >
+          不定式
+        </div>
+        <div
+          class="pos"
+          style="--c: #0e9f6e"
+        >
+          动词
+        </div>
+        <div
+          class="pos"
+          style="--c: #7c3aed"
+        >
+          副词
+        </div>
+        <div
+          class="pos"
+          style="--c: #db2777"
+        >
+          形容词
+        </div>
+        <div
+          class="pos"
+          style="--c: #94a3b8"
+        >
+          冠词
+        </div>
+        <div
+          class="pos"
+          style="--c: #d97706"
+        >
+          名词
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-t">句子结构</div>
+          <div class="card-v">主谓宾 + 地点状语 + 时间状语</div>
+          <span class="pill">S + don&#x27;t + V + to be here + all the day</span>
+        </div>
+        <div class="card">
+          <div class="card-t">时态</div>
+          <div class="card-v">一般现在时</div>
+        </div>
+        <div class="card">
+          <div class="card-t">句型</div>
+          <div class="card-v">陈述句</div>
+        </div>
+        <div class="card--wide card">
+          <div class="card-t">语法要点</div>
+          <ul>
+            <li>don&#x27;t 构成否定</li>
+            <li>all the day 作时间状语</li>
+          </ul>
+        </div>
+        <div class="conf">置信度 0.92</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <span class="cn">做这件事情</span><span class="b-frag badge">碎片/单词</span>
+      </div>
+      <div
+        class="grid"
+        style="--n: 3"
+      >
+        <div
+          class="bubble bubble--empty"
+          style="grid-column: 1"
+        ></div>
+        <div
+          class="bubble bubble--empty"
+          style="grid-column: 2"
+        ></div>
+        <div
+          class="bubble bubble--empty"
+          style="grid-column: 3"
+        ></div>
+        <div class="word">to</div>
+        <div class="word">do</div>
+        <div class="word">it</div>
+        <div
+          class="pos"
+          style="--c: #0e9f6e"
+        >
+          不定式
+        </div>
+        <div
+          class="pos"
+          style="--c: #0e9f6e"
+        >
+          动词
+        </div>
+        <div
+          class="pos"
+          style="--c: #d97706"
+        >
+          代词
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card--wide muted card">
+          碎片只显示逐词词性 —— 不显示成分/结构/时态（按规范 §8 降级）
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <span class="cn">我</span><span class="b-frag badge">碎片/单词</span>
+      </div>
+      <div
+        class="grid"
+        style="--n: 1"
+      >
+        <div
+          class="bubble bubble--empty"
+          style="grid-column: 1"
+        ></div>
+        <div class="word">I</div>
+        <div
+          class="pos"
+          style="--c: #d97706"
+        >
+          代词
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card--wide muted card">
+          碎片只显示逐词词性 —— 不显示成分/结构/时态（按规范 §8 降级）
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
