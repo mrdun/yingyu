@@ -1,4 +1,4 @@
-import { type Course } from "~/types";
+import { type Course, type StatementGrammar } from "~/types";
 import { getHttp } from "./http";
 
 export interface StatementApiResponse {
@@ -8,6 +8,7 @@ export interface StatementApiResponse {
   english: string;
   soundmark: string;
   isMastered: boolean;
+  grammar?: StatementGrammar | null;
 }
 
 export interface CourseApiResponse {

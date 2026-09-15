@@ -188,8 +188,8 @@ TEMPLATE = r"""<!doctype html>
       <button data-f="frag">碎片</button>
     </span>
     <span class="seg" id="palette">
-      <button data-p="A">A · 下划线按词性</button>
       <button data-p="B">B · 下划线跟随成分</button>
+      <button data-p="A">A · 下划线按词性</button>
     </span>
     <button class="btn" id="clause" aria-pressed="true">从句断行</button>
     <span class="hint"><kbd>←</kbd> <kbd>→</kbd> 切换</span>
@@ -258,7 +258,7 @@ const FRAG_THEME = { bg: "#EEF2F7", ink: "#1E293B", acc: "#475569" };
 const roleTheme = r => ROLE_THEME[r] || FRAG_THEME;
 const posTheme = p => POS_THEME[p] || FRAG_THEME;
 
-let scheme = "A";          /* A = 下划线按词性 ; B = 下划线跟随成分 */
+let scheme = "B";          /* 用户已拍板: B = 下划线跟随成分（A 保留供对比） */
 let clauseBreak = true;
 let filter = "all";
 let list = DATA.slice();
@@ -444,7 +444,7 @@ document.addEventListener("keydown", e => {
 window.addEventListener("resize", () => measure());
 
 document.querySelector('#filter button[data-f="all"]').setAttribute("aria-pressed", "true");
-document.querySelector('#palette button[data-p="A"]').setAttribute("aria-pressed", "true");
+document.querySelector('#palette button[data-p="B"]').setAttribute("aria-pressed", "true");
 cur = initialIndex();
 render();
 

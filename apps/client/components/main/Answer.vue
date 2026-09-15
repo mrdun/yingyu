@@ -20,6 +20,7 @@
     <div class="my-6 text-xl text-gray-500">
       {{ courseStore.currentStatement?.chinese }}
     </div>
+    <MainGrammarPanel />
     <div class="space-y-3">
       <div>
         <button

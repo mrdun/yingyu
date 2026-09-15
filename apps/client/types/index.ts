@@ -1,6 +1,7 @@
 export * from "./models/user";
 export * from "./models/membership";
 export * from "./models/course";
+export * from "./models/grammar";
 export * from "./models/course-history";
 export * from "./models/course-pack";
 export * from "./models/tool";

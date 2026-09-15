@@ -438,8 +438,8 @@
           class="seg"
           id="palette"
         >
-          <button data-p="A">A · 下划线按词性</button>
           <button data-p="B">B · 下划线跟随成分</button>
+          <button data-p="A">A · 下划线按词性</button>
         </span>
         <button
           class="btn"
@@ -5070,7 +5070,7 @@
       const roleTheme = (r) => ROLE_THEME[r] || FRAG_THEME;
       const posTheme = (p) => POS_THEME[p] || FRAG_THEME;
 
-      let scheme = "A"; /* A = 下划线按词性 ; B = 下划线跟随成分 */
+      let scheme = "B"; /* 用户已拍板: B = 下划线跟随成分（A 保留供对比） */
       let clauseBreak = true;
       let filter = "all";
       let list = DATA.slice();
@@ -5335,7 +5335,7 @@
       window.addEventListener("resize", () => measure());
 
       document.querySelector('#filter button[data-f="all"]').setAttribute("aria-pressed", "true");
-      document.querySelector('#palette button[data-p="A"]').setAttribute("aria-pressed", "true");
+      document.querySelector('#palette button[data-p="B"]').setAttribute("aria-pressed", "true");
       cur = initialIndex();
       render();
 
