@@ -95,12 +95,12 @@ const PW = "C:/Users/mrdun/AppData/Local/hermes/node/node_modules/playwright";
       }
     }
     groupsWithComp += withComp.length;
-    // 3. 成分名 == 成分, 且颜色 == 胶囊色
+    // 3. 成分名 == 成分; 成分名的颜色 == 胶囊**描边**色（亮色点缀同一族）
     for (const g of withComp) {
       if (g.name !== g.comp) {
         if (fails.length < 5) fails.push(`[${it.o}] 成分名「${g.name}」!= 成分「${g.comp}」`);
       }
-      if (g.nameColor !== g.pill) colorBad++;
+      if (g.nameColor !== g.pillBorder) colorBad++;
     }
     // 4. 中心线 + 下划线色 == 词性文字色
     for (const grp of r.centers) {
@@ -115,7 +115,7 @@ const PW = "C:/Users/mrdun/AppData/Local/hermes/node/node_modules/playwright";
   console.log(`  已核对 ${checked}/${n} 句；成分胶囊共 ${groupsWithComp} 个`);
   ok(checked === n, `只核对到 ${checked}/${n} 句`);
   ok(centerBad === 0, `单词/下划线/词性 中心线不齐 ${centerBad} 处`);
-  ok(colorBad === 0, `「成分名与胶囊同色」「下划线与词性文字同色」违反 ${colorBad} 处`);
+  ok(colorBad === 0, `「成分名与胶囊描边同色」「下划线与词性文字同色」违反 ${colorBad} 处`);
 
   // ── 5. A/B 两套配色确实不同 ─────────────────────
   const probe = await page.evaluate(() => {
@@ -146,7 +146,7 @@ const PW = "C:/Users/mrdun/AppData/Local/hermes/node/node_modules/playwright";
           window.__grammarPage.goto(i);
           const g = window.__grammarPage.text().groups.find((x) => x.words.join(" ") === ph);
           return g
-            ? { uls: [...new Set(g.uls)], pp: [...new Set(g.ppColors)], pill: g.pill }
+            ? { uls: [...new Set(g.uls)], pp: [...new Set(g.ppColors)], pill: g.pill, acc: g.acc }
             : null;
         },
         { i: probe.idx, ph: probe.phrase, sch: scheme },
@@ -158,9 +158,87 @@ const PW = "C:/Users/mrdun/AppData/Local/hermes/node/node_modules/playwright";
     console.log(`    B 随成分 : 下划线色 ${JSON.stringify(B.uls)}  (胶囊 ${B.pill})`);
     ok(A.uls.length >= 2, `A 方案下划线应出现 >=2 种颜色（词性不同），实得 ${A.uls.length}`);
     ok(B.uls.length === 1, `B 方案下划线应为 1 种颜色，实得 ${B.uls.length}`);
-    ok(B.uls[0] === B.pill, `B 方案下划线色应等于胶囊色（${B.pill}），实得 ${B.uls[0]}`);
+    // 注意归一化: 页面给的是 rgb(...)，数据属性给的是 #RRGGBB —— 同一个颜色不能直接比字符串
+    const norm = (s) => {
+      const m = String(s).match(/^#([0-9a-f]{6})$/i);
+      if (m) {
+        const n = parseInt(m[1], 16);
+        return `rgb(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255})`;
+      }
+      return String(s);
+    };
+    ok(
+      norm(B.uls[0]) === norm(B.acc),
+      `B 方案下划线色应等于该成分的亮色 ${B.acc}，实得 ${B.uls[0]}`,
+    );
     await page.evaluate(() => window.__grammarPage.setScheme("A"));
   }
+
+  // ── 5b. 亮色系色板必须真的达到 AA（把「配色」变成硬断言，不靠肉眼）──
+  const contrastReport = await page.evaluate(() => {
+    const toRgb = (s) => {
+      const m = String(s).match(/(\d+(?:\.\d+)?)/g);
+      return m ? m.slice(0, 3).map(Number) : null;
+    };
+    const lin = (c) => {
+      c = c / 255;
+      return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+    };
+    const L = (rgb) => 0.2126 * lin(rgb[0]) + 0.7152 * lin(rgb[1]) + 0.0722 * lin(rgb[2]);
+    const ratio = (a, b) => {
+      const l1 = L(a),
+        l2 = L(b);
+      return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+    };
+    const out = [];
+    for (let i = 0; i < window.__grammarPage.count(); i++) {
+      const it = window.__grammarPage.raw(i);
+      if (!it.s) continue;
+      window.__grammarPage.goto(i);
+      window.__grammarPage.text().groups.forEach((g) => {
+        if (!g.comp) return;
+        const bg = toRgb(g.pill),
+          ink = toRgb(g.wordColor);
+        if (bg && ink)
+          out.push({ o: it.o, what: "词/浅底", a: g.wordColor, b: g.pill, r: ratio(bg, ink) });
+        const n = toRgb(g.nameColor);
+        if (n)
+          out.push({
+            o: it.o,
+            what: "亮色/白底",
+            a: g.nameColor,
+            b: "rgb(255,255,255)",
+            r: ratio(n, [255, 255, 255]),
+          });
+        const p = toRgb(g.ppColors[0]);
+        if (p)
+          out.push({
+            o: it.o,
+            what: "亮色/白底",
+            a: g.ppColors[0],
+            b: "rgb(255,255,255)",
+            r: ratio(p, [255, 255, 255]),
+          });
+      });
+    }
+    return out;
+  });
+  const cMin = contrastReport.reduce((m, x) => Math.min(m, x.r), 99);
+  const cWorst = contrastReport
+    .slice()
+    .sort((a, b) => a.r - b.r)
+    .slice(0, 4);
+  console.log(`  色板对比度: 检查 ${contrastReport.length} 对，最低 ${cMin.toFixed(2)}:1`);
+  cWorst.forEach((x) =>
+    console.log(`     最低样本 [${x.o}] ${x.what}: ${x.a} on ${x.b} = ${x.r.toFixed(2)}:1`),
+  );
+  const badPairs = contrastReport.filter((x) => x.r < 4.5);
+  ok(contrastReport.length > 0, "没取到配色样本");
+  ok(
+    badPairs.length === 0,
+    `有 ${badPairs.length} 处对比度不足 4.5:1（最低 ${badPairs.length ? Math.min(...badPairs.map((x) => x.r)).toFixed(2) : "-"}）` +
+      (badPairs.length ? ` 例: ${badPairs[0].what} ${badPairs[0].a} on ${badPairs[0].b}` : ""),
+  );
 
   // ── 6. 从句断行 + 四个卡片 ──────────────────────
   const longest = await page.evaluate(() => {

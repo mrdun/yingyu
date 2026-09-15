@@ -198,41 +198,43 @@
         column-gap: 24px;
         position: relative;
       }
-      /* 成分名: 在胶囊上方, 与胶囊居中, 颜色与胶囊一致 */
+      /* 成分名: 在胶囊上方, 与胶囊居中, 颜色与胶囊边框同色（亮色点缀） */
       .grp .name {
         grid-row: 1;
         grid-column: 1 / -1;
         justify-self: center;
-        color: var(--c);
+        color: var(--acc);
         font-size: 12.5px;
         font-weight: 800;
         margin-bottom: 6px;
         white-space: nowrap;
         letter-spacing: 0.3px;
       }
-      /* 胶囊底色: 跨列铺满, 左右各外扩 13px 当作内边距（这样词与下划线仍共用列宽） */
+      /* 胶囊: **浅彩底 + 亮色描边**（参考图的“亮色”做法；不是深色饱和底）
+     底色跨列铺满、左右各外扩 13px 当内边距 —— 这样词与下划线仍共用列宽 */
       .grp .pill {
         grid-row: 2;
         grid-column: 1 / -1;
         margin: 0 -13px;
-        background: var(--c);
+        background: var(--bg);
+        border: 1.5px solid var(--acc);
         border-radius: 999px;
       }
-      /* 词: 各自占一列, 压在胶囊底色上 */
+      /* 词: 各自占一列, 压在浅彩底上, **深色字**（压浅底实算 6.3~13.0:1） */
       .grp .w {
         grid-row: 2;
         justify-self: center;
         align-self: center;
         position: relative;
         z-index: 1;
-        color: #fff;
+        color: var(--ink);
         font-size: 22px;
         font-weight: 700;
         line-height: 1.2;
         padding: 9px 0;
         white-space: nowrap;
       }
-      /* 下划线: 每个单词一条, 颜色 = var(--u) */
+      /* 下划线: 每个单词一条, 颜色 = var(--u)（亮色） */
       .grp .ul {
         grid-row: 3;
         justify-self: center;
@@ -243,7 +245,7 @@
         background: var(--u);
         margin-top: 8px;
       }
-      /* 词性文字: 与词、下划线同一中心线, 颜色与下划线一致 */
+      /* 词性文字: 与词、下划线同一中心线, 颜色与下划线一致（亮色） */
       .grp .pp {
         grid-row: 4;
         justify-self: center;
@@ -254,18 +256,13 @@
         white-space: nowrap;
       }
 
-      /* 碎片: 无成分 → 中性灰胶囊(不声称任何成分), 无成分名 */
+      /* 碎片: 无成分 → 中性浅灰胶囊(不声称任何成分), 无成分名 */
       .grp.frag .pill {
-        background: #e4e9f0;
+        background: #f1f5f9;
+        border-color: #cbd5e1;
       }
       .grp.frag .w {
-        color: #334155;
-      }
-      .grp.frag .ul {
-        background: var(--u);
-      }
-      .grp.frag .pp {
-        color: var(--u);
+        color: #1e293b;
       }
 
       /* ── 四个卡片: 等宽等高一排 ─────────────────────── */
@@ -364,10 +361,11 @@
         color: #475569;
       }
       .dot {
-        width: 22px;
-        height: 11px;
+        width: 24px;
+        height: 12px;
         border-radius: 999px;
-        background: var(--c);
+        background: var(--bg);
+        border: 1.5px solid var(--acc);
         display: inline-block;
       }
       .lgtitle {
@@ -494,9 +492,12 @@
         <b>「零基础学英语 · 第一课」218 条</b>的标注，不是示例。<br />
         <b>怎么看</b>：① 上面那两个按钮切换 <b>下划线配色 A / B</b> —— A 是下划线按<b>词性</b>上色，
         B 是下划线<b>跟随所属成分</b>的颜色，你挑一套。② 胶囊里装的是<b>该成分的英文词</b>
-        （同一成分合成一个胶囊）；胶囊上方小字是成分名，颜色与胶囊一致；每个单词下面一条下划线 +
+        （同一成分合成一个胶囊）；胶囊上方小字是成分名，颜色与胶囊描边一致；每个单词下面一条下划线 +
         中文词性，三者同一条中心线。③ <b>碎片</b>（如 <code>to do it</code>）按规范不给成分，
-        胶囊为中性灰、没有成分名。
+        胶囊为中性浅灰、没有成分名。<br />
+        <b>配色</b>：按你给的参考图改成<b>亮色系</b> —— 胶囊是<b>浅彩底 + 亮色描边</b>，
+        英文词用<b>深色字</b>压在浅底上；成分名 / 下划线 / 词性用<b>亮色</b>。
+        每一对配色都实算过对比度（词压浅底 6.3–13.0:1，亮色压白底 4.6–7.6:1）。
       </div>
     </div>
 
@@ -5036,31 +5037,38 @@
         },
       ];
 
-      /* 成分 → 实心色（胶囊底 + 成分名文字色）。白字 / 压白底 都实算过 >= 4.5:1 */
-      const ROLE_COLOR = {
-        主语: "#7C3AED",
-        谓语: "#2563EB",
-        宾语: "#047857",
-        表语: "#0E7490",
-        状语: "#C2410C",
-        定语: "#BE185D",
-        连接词: "#475569",
+      /* ── 色板（亮色系，取自用户给的参考图并补足到全部成分/词性）──────────────
+   参考图的规律: **浅彩底 + 深色字 + 亮色点缀**（不是深色饱和底 + 白字）。
+   每个色族给三个值:
+     bg  浅彩底   —— 胶囊底色 + 边框内
+     ink 深色字   —— 胶囊里的英文词（压浅底, 实算 6.3~13.0:1）
+     acc 亮色点缀 —— 成分名 / 下划线 / 词性文字（压白底, 实算 4.6~7.6:1）
+   全部 24 个值都过了 scripts/ew-contrast.py, 最低 4.60:1。改色前必须重算。 */
+      const ROLE_THEME = {
+        主语: { bg: "#FEE6EF", ink: "#9F1239", acc: "#DB2777" }, // 玫红
+        谓语: { bg: "#E1F1FE", ink: "#1E3A8A", acc: "#2563EB" }, // 蓝
+        宾语: { bg: "#D8FAED", ink: "#065F46", acc: "#047857" }, // 绿
+        表语: { bg: "#D9F3F8", ink: "#155E75", acc: "#0E7490" }, // 青
+        状语: { bg: "#FEF3D7", ink: "#78350F", acc: "#B45309" }, // 琥珀
+        定语: { bg: "#E9E4FE", ink: "#5B21B6", acc: "#7C3AED" }, // 紫
+        连接词: { bg: "#EEF2F7", ink: "#1E293B", acc: "#475569" }, // 灰
       };
-      /* 词性 → 色（A 方案用）。11 色白字均 >= 5.02:1 */
-      const POS_COLOR = {
-        代词: "#7C3AED",
-        动词: "#2563EB",
-        助动词: "#4338CA",
-        情态动词: "#0369A1",
-        不定式: "#0F766E",
-        名词: "#047857",
-        形容词: "#B45309",
-        副词: "#C2410C",
-        介词: "#BE185D",
-        冠词: "#A21CAF",
-        连词: "#475569",
+      const POS_THEME = {
+        代词: { bg: "#FEE6EF", ink: "#9F1239", acc: "#DB2777" },
+        动词: { bg: "#E1F1FE", ink: "#1E3A8A", acc: "#2563EB" },
+        助动词: { bg: "#E4E9FF", ink: "#312E81", acc: "#4338CA" },
+        情态动词: { bg: "#E0F0FB", ink: "#0C4A6E", acc: "#0369A1" },
+        不定式: { bg: "#D5F5EE", ink: "#115E59", acc: "#0F766E" },
+        名词: { bg: "#D8FAED", ink: "#065F46", acc: "#047857" },
+        形容词: { bg: "#FEF3D7", ink: "#78350F", acc: "#B45309" },
+        副词: { bg: "#FFE8D6", ink: "#7C2D12", acc: "#C2410C" },
+        介词: { bg: "#FCE7F3", ink: "#831843", acc: "#BE185D" },
+        冠词: { bg: "#F7E3FA", ink: "#701A75", acc: "#A21CAF" },
+        连词: { bg: "#EEF2F7", ink: "#1E293B", acc: "#475569" },
       };
-      const GREY = "#475569";
+      const FRAG_THEME = { bg: "#EEF2F7", ink: "#1E293B", acc: "#475569" };
+      const roleTheme = (r) => ROLE_THEME[r] || FRAG_THEME;
+      const posTheme = (p) => POS_THEME[p] || FRAG_THEME;
 
       let scheme = "A"; /* A = 下划线按词性 ; B = 下划线跟随成分 */
       let clauseBreak = true;
@@ -5151,29 +5159,36 @@
           out.push('<div class="sent">');
           for (const u of row) {
             const comp = u.p;
-            const c = comp ? ROLE_COLOR[comp.r] || GREY : "#E4E9F0";
+            /* 胶囊底色/描边恒按**成分**（它表示句子成分）；A/B 只改下划线与词性文字的颜色 */
+            const rt = comp ? roleTheme(comp.r) : FRAG_THEME;
             const frag = comp ? "" : " frag";
             out.push(
-              `<div class="grp${frag}" data-comp="${comp ? esc(comp.r) : ""}" style="--n:${u.idx.length};--c:${c}">`,
+              `<div class="grp${frag}" data-comp="${comp ? esc(comp.r) : ""}" ` +
+                `data-bg="${rt.bg}" data-acc="${rt.acc}" data-ink="${rt.ink}" ` +
+                `style="--n:${u.idx.length};--bg:${rt.bg};--acc:${rt.acc};--ink:${rt.ink}">`,
             );
             out.push(`<div class="name">${comp ? esc(comp.r) : ""}</div>`);
             out.push('<div class="pill"></div>');
-            /* ⚠️ 必须**显式**给每列指定 grid-column：胶囊底色用 `1/-1` 占满了第 2 行，
+            /* ⚠️ 必须**显式**给每列指定 grid-column：胶囊用 `1/-1` 占满了第 2 行，
          grid 自动排布会「避开已占用格子」把单词挤到第 3 行 → 单词与它的下划线错位。
          实测踩过：不写列号时「单词/下划线/词性」中心线不齐 871 处。 */
             u.idx.forEach((i, k) =>
               out.push(`<span class="w" style="grid-column:${k + 1}">${esc(it.w[i].t)}</span>`),
             );
+            /* A 方案: 下划线/词性文字按**词性**取亮色（同一成分内不同词可能不同色）
+         B 方案: 跟随**所属成分**的亮色（与胶囊描边同色） */
+            const colorOf = (i) => {
+              const pos = it.w[i].p;
+              if (scheme === "A") return posTheme(pos).acc;
+              return comp ? rt.acc : FRAG_THEME.acc;
+            };
+            u.idx.forEach((i, k) =>
+              out.push(`<span class="ul" style="grid-column:${k + 1};--u:${colorOf(i)}"></span>`),
+            );
             u.idx.forEach((i, k) => {
               const pos = it.w[i].p;
-              const u2 = scheme === "A" ? posColorOf(pos) : comp ? c : GREY;
-              out.push(`<span class="ul" style="grid-column:${k + 1};--u:${u2}"></span>`);
-            });
-            u.idx.forEach((i, k) => {
-              const pos = it.w[i].p;
-              const u2 = scheme === "A" ? posColorOf(pos) : comp ? c : GREY;
               out.push(
-                `<span class="pp" style="grid-column:${k + 1};--u:${u2}">${pos ? esc(pos) : ""}</span>`,
+                `<span class="pp" style="grid-column:${k + 1};--u:${colorOf(i)}">${pos ? esc(pos) : ""}</span>`,
               );
             });
             out.push("</div>");
@@ -5237,21 +5252,19 @@
 
       /* 图例跟随当前配色方案 */
       function drawLegend() {
-        const map = scheme === "A" ? POS_COLOR : ROLE_COLOR;
+        const map = scheme === "A" ? POS_THEME : ROLE_THEME;
         const title =
-          scheme === "A" ? "下划线 / 词性文字配色（按词性）" : "下划线 / 词性文字配色（跟随成分）";
+          scheme === "A" ? "下划线 / 词性文字（按词性）" : "下划线 / 词性文字（跟随成分）";
+        const sw = (t) =>
+          `<span class="lg"><span class="dot" style="--bg:${t.bg};--acc:${t.acc}"></span></span>`;
         document.getElementById("legend").innerHTML =
-          `<span class="lgtitle">胶囊 / 成分名配色</span>` +
-          Object.entries(ROLE_COLOR)
-            .map(
-              ([r, c]) => `<span class="lg"><span class="dot" style="--c:${c}"></span>${r}</span>`,
-            )
+          `<span class="lgtitle">胶囊底色 / 描边（按成分）</span>` +
+          Object.entries(ROLE_THEME)
+            .map(([r, t]) => `<span class="lg">${sw(t)}${r}</span>`)
             .join("") +
           `<span class="lgtitle" style="margin-left:14px">${title}</span>` +
           Object.entries(map)
-            .map(
-              ([k, c]) => `<span class="lg"><span class="dot" style="--c:${c}"></span>${k}</span>`,
-            )
+            .map(([k, t]) => `<span class="lg">${sw(t)}${k}</span>`)
             .join("");
       }
 
@@ -5343,14 +5356,20 @@
           words: Array.from(document.querySelectorAll("#rows .w")).map((e) => e.textContent),
           groups: Array.from(document.querySelectorAll("#rows .grp")).map((g) => {
             const nameEl = g.querySelector(".name"),
-              pillEl = g.querySelector(".pill");
+              pillEl = g.querySelector(".pill"),
+              wEl = g.querySelector(".w");
             const cs = (el) => (el ? getComputedStyle(el) : null);
             return {
               comp: g.dataset.comp,
               words: Array.from(g.querySelectorAll(".w")).map((e) => e.textContent),
               name: nameEl ? nameEl.textContent : "",
               nameColor: nameEl ? cs(nameEl).color : "",
+              bg: g.dataset.bg,
+              acc: g.dataset.acc,
+              ink: g.dataset.ink,
               pill: pillEl ? cs(pillEl).backgroundColor : "",
+              pillBorder: pillEl ? cs(pillEl).borderTopColor : "",
+              wordColor: wEl ? cs(wEl).color : "",
               uls: Array.from(g.querySelectorAll(".ul")).map((e) => cs(e).backgroundColor),
               pps: Array.from(g.querySelectorAll(".pp")).map((e) => e.textContent),
               ppColors: Array.from(g.querySelectorAll(".pp")).map((e) => cs(e).color),
