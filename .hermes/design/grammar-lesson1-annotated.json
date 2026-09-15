@@ -7,6 +7,8 @@
       "order": 1,
       "isSentence": false,
       "unitType": "word",
+      "keyPoints": ["人称代词 I 表示“我”"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -23,9 +25,7 @@
           "start": 0,
           "end": 1
         }
-      ],
-      "keyPoints": ["人称代词主格"],
-      "confidence": 0.95
+      ]
     }
   },
   {
@@ -36,6 +36,8 @@
       "order": 2,
       "isSentence": false,
       "unitType": "word",
+      "keyPoints": ["动词 like 表示“喜欢”"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "like",
@@ -52,9 +54,7 @@
           "start": 0,
           "end": 4
         }
-      ],
-      "keyPoints": ["动词原形，表示喜欢"],
-      "confidence": 0.95
+      ]
     }
   },
   {
@@ -65,6 +65,8 @@
       "order": 3,
       "isSentence": false,
       "unitType": "phrase",
+      "keyPoints": ["主谓片段，缺少宾语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "I",
@@ -87,9 +89,7 @@
           "start": 0,
           "end": 6
         }
-      ],
-      "keyPoints": ["主谓结构，缺少宾语"],
-      "confidence": 0.9
+      ]
     }
   },
   {
@@ -100,6 +100,8 @@
       "order": 4,
       "isSentence": false,
       "unitType": "phrase",
+      "keyPoints": ["名词短语，定冠词 the 修饰 food"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "the",
@@ -122,9 +124,7 @@
           "start": 0,
           "end": 8
         }
-      ],
-      "keyPoints": ["定冠词+名词，名词短语"],
-      "confidence": 0.95
+      ]
     }
   },
   {
@@ -135,10 +135,12 @@
       "order": 5,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
+      "keyPoints": ["主语 I + 谓语 like + 宾语 the food", "一般现在时表示喜好"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -188,8 +190,7 @@
           "end": 15
         }
       ],
-      "keyPoints": ["like后接名词作宾语", "主语I后用动词原形"],
-      "confidence": 0.95
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -200,6 +201,8 @@
       "order": 6,
       "isSentence": false,
       "unitType": "word",
+      "keyPoints": ["do not 的缩写，构成否定"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "don't",
@@ -216,9 +219,7 @@
           "start": 0,
           "end": 5
         }
-      ],
-      "keyPoints": ["do not的缩写，否定助动词"],
-      "confidence": 0.9
+      ]
     }
   },
   {
@@ -229,6 +230,8 @@
       "order": 7,
       "isSentence": false,
       "unitType": "word",
+      "keyPoints": ["动词 like 表示“喜欢”"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "like",
@@ -245,9 +248,7 @@
           "start": 0,
           "end": 4
         }
-      ],
-      "keyPoints": ["动词原形"],
-      "confidence": 0.95
+      ]
     }
   },
   {
@@ -258,6 +259,8 @@
       "order": 8,
       "isSentence": false,
       "unitType": "phrase",
+      "keyPoints": ["助动词 don't + 动词 like 构成否定谓语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "don't",
@@ -280,9 +283,7 @@
           "start": 0,
           "end": 10
         }
-      ],
-      "keyPoints": ["否定谓语，助动词+动词原形"],
-      "confidence": 0.9
+      ]
     }
   },
   {
@@ -293,10 +294,12 @@
       "order": 9,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
+      "keyPoints": ["don't like 构成否定谓语", "一般现在时否定句"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -352,8 +355,7 @@
           "end": 21
         }
       ],
-      "keyPoints": ["don't后接动词原形", "否定句用don't+动词原形"],
-      "confidence": 0.95
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -364,6 +366,8 @@
       "order": 10,
       "isSentence": false,
       "unitType": "phrase",
+      "keyPoints": ["动词不定式短语 to do"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "to",
@@ -386,9 +390,7 @@
           "start": 0,
           "end": 5
         }
-      ],
-      "keyPoints": ["不定式短语，to+动词原形"],
-      "confidence": 0.85
+      ]
     }
   },
   {
@@ -428,7 +430,7 @@
       "order": 12,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["不定式短语 to do it 作宾语"],
+      "keyPoints": ["不定式短语 to do sth 作宾语"],
       "confidence": 0.9,
       "words": [
         {
@@ -469,7 +471,7 @@
       "order": 13,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["like 后接不定式作宾语"],
+      "keyPoints": ["like to do sth 喜欢做某事"],
       "confidence": 0.9,
       "words": [
         {
@@ -487,17 +489,10 @@
       ],
       "phrases": [
         {
-          "text": "I",
+          "text": "I like",
           "role": null,
           "roleType": null,
           "start": 0,
-          "end": 1
-        },
-        {
-          "text": "like",
-          "role": null,
-          "roleType": null,
-          "start": 2,
           "end": 6
         }
       ]
@@ -511,11 +506,11 @@
       "order": 14,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["like to do sth 喜欢做某事"],
+      "keyPoints": ["like to do sth 喜欢做某事", "不定式作宾语"],
       "confidence": 0.95,
       "words": [
         {
@@ -571,7 +566,8 @@
           "start": 7,
           "end": 15
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -582,7 +578,7 @@
       "order": 15,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["don't 为 do not 的缩写"],
+      "keyPoints": ["don't 为 do not 的缩写，表否定"],
       "confidence": 0.9,
       "words": [
         {
@@ -617,11 +613,11 @@
       "order": 16,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["否定助动词 don't + 动词原形"],
+      "keyPoints": ["don't 构成一般现在时否定", "不定式作宾语"],
       "confidence": 0.95,
       "words": [
         {
@@ -683,7 +679,8 @@
           "start": 13,
           "end": 21
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -694,7 +691,7 @@
       "order": 17,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["时间副词 now 作时间状语"],
+      "keyPoints": ["时间副词 now 作状语"],
       "confidence": 0.95,
       "words": [
         {
@@ -723,11 +720,11 @@
       "order": 18,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["now 位于句末作时间状语"],
+      "keyPoints": ["now 作时间状语", "like to do sth 喜欢做某事"],
       "confidence": 0.95,
       "words": [
         {
@@ -796,7 +793,8 @@
           "start": 16,
           "end": 19
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -807,11 +805,11 @@
       "order": 19,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["否定句 don't + 动词原形", "now 作时间状语"],
+      "keyPoints": ["don't 构成否定", "now 作时间状语"],
       "confidence": 0.95,
       "words": [
         {
@@ -886,7 +884,8 @@
           "start": 22,
           "end": 25
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -897,7 +896,7 @@
       "order": 20,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["地点副词 here 作地点状语"],
+      "keyPoints": ["地点副词 here 作状语"],
       "confidence": 0.95,
       "words": [
         {
@@ -926,6 +925,7 @@
       "order": 21,
       "isSentence": false,
       "unitType": "phrase",
+      "keyPoints": ["to be here 不定式短语"],
       "confidence": 0.95,
       "words": [
         {
@@ -966,7 +966,8 @@
       "order": 22,
       "isSentence": false,
       "unitType": "phrase",
-      "confidence": 0.9,
+      "keyPoints": ["like 后需接宾语"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -1000,12 +1001,12 @@
       "order": 23,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["like to do 表示喜欢做某事", "不定式短语作宾语"],
-      "confidence": 0.95,
+      "keyPoints": ["like to do sth 喜欢做某事"],
+      "confidence": 0.98,
       "words": [
         {
           "text": "I",
@@ -1049,7 +1050,7 @@
         {
           "text": "like",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 2,
           "end": 6
         },
@@ -1060,7 +1061,8 @@
           "start": 7,
           "end": 17
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -1071,6 +1073,7 @@
       "order": 24,
       "isSentence": false,
       "unitType": "phrase",
+      "keyPoints": ["don't 表否定"],
       "confidence": 0.95,
       "words": [
         {
@@ -1105,12 +1108,12 @@
       "order": 25,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't 构成否定", "like to do 喜欢做某事"],
-      "confidence": 0.95,
+      "keyPoints": ["don't like to do sth 不喜欢做某事"],
+      "confidence": 0.98,
       "words": [
         {
           "text": "I",
@@ -1171,7 +1174,8 @@
           "start": 13,
           "end": 23
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -1182,7 +1186,8 @@
       "order": 26,
       "isSentence": false,
       "unitType": "word",
-      "confidence": 0.95,
+      "keyPoints": ["now 时间副词"],
+      "confidence": 0.98,
       "words": [
         {
           "text": "now",
@@ -1210,12 +1215,12 @@
       "order": 27,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't like to do 不喜欢做某事", "now 作时间状语置于句末"],
-      "confidence": 0.9,
+      "keyPoints": ["don't like to do sth 不喜欢做某事", "now 作时间状语"],
+      "confidence": 0.98,
       "words": [
         {
           "text": "I",
@@ -1289,7 +1294,8 @@
           "start": 24,
           "end": 27
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -1300,7 +1306,8 @@
       "order": 28,
       "isSentence": false,
       "unitType": "word",
-      "confidence": 0.95,
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.98,
       "words": [
         {
           "text": "want",
@@ -1328,7 +1335,8 @@
       "order": 29,
       "isSentence": false,
       "unitType": "phrase",
-      "confidence": 0.9,
+      "keyPoints": ["to do sth 做某事"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "to",
@@ -1368,12 +1376,12 @@
       "order": 30,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["want to do 想要做某事", "不定式短语作宾语"],
-      "confidence": 0.95,
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.98,
       "words": [
         {
           "text": "I",
@@ -1417,7 +1425,7 @@
         {
           "text": "want",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 2,
           "end": 6
         },
@@ -1428,7 +1436,8 @@
           "start": 7,
           "end": 15
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -1439,8 +1448,8 @@
       "order": 31,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["don't 是 do not 的缩写", "want 后常接不定式"],
-      "confidence": 0.95,
+      "keyPoints": ["don't = do not，一般现在时否定"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "don't",
@@ -1474,12 +1483,12 @@
       "order": 32,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
-      "pattern": "S + V + to do",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["want to do sth 想要做某事", "否定式为 don't want to do"],
-      "confidence": 0.95,
+      "keyPoints": ["want to do sth 想要做某事", "否定形式 don't want"],
+      "confidence": 0.92,
       "words": [
         {
           "text": "I",
@@ -1540,7 +1549,8 @@
           "start": 13,
           "end": 21
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -1551,8 +1561,8 @@
       "order": 33,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["today 表示今天", "可作时间状语"],
-      "confidence": 0.98,
+      "keyPoints": ["时间副词 today"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "today",
@@ -1580,12 +1590,12 @@
       "order": 34,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + to do + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["want to do sth 想要做某事", "today 作时间状语置于句末"],
-      "confidence": 0.95,
+      "keyPoints": ["want to do sth 想要做某事", "today 作时间状语"],
+      "confidence": 0.92,
       "words": [
         {
           "text": "I",
@@ -1649,11 +1659,12 @@
         {
           "text": "today",
           "role": "状语",
-          "roleType": "副词短语",
+          "roleType": "单词",
           "start": 16,
           "end": 21
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -1664,12 +1675,12 @@
       "order": 35,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + to do + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't want to do 表示不想做某事", "today 作时间状语置于句末"],
-      "confidence": 0.95,
+      "keyPoints": ["don't want 表示不想", "today 作时间状语"],
+      "confidence": 0.92,
       "words": [
         {
           "text": "I",
@@ -1739,11 +1750,12 @@
         {
           "text": "today",
           "role": "状语",
-          "roleType": "副词短语",
+          "roleType": "单词",
           "start": 22,
           "end": 27
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -1754,8 +1766,8 @@
       "order": 36,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["now 表示现在", "常作时间状语"],
-      "confidence": 0.98,
+      "keyPoints": ["时间副词 now"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "now",
@@ -1783,12 +1795,12 @@
       "order": 37,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + to do + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't want to do 表示不想做某事", "now 作时间状语置于句末"],
-      "confidence": 0.95,
+      "keyPoints": ["don't want 表示不想", "now 作时间状语"],
+      "confidence": 0.92,
       "words": [
         {
           "text": "I",
@@ -1858,11 +1870,12 @@
         {
           "text": "now",
           "role": "状语",
-          "roleType": "副词短语",
+          "roleType": "单词",
           "start": 22,
           "end": 25
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -1873,8 +1886,8 @@
       "order": 38,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["to eat 为不定式短语", "表示吃"],
-      "confidence": 0.95,
+      "keyPoints": ["动词不定式 to eat"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "to",
@@ -1908,8 +1921,8 @@
       "order": 39,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["the 为定冠词修饰 food", "food 为不可数名词"],
-      "confidence": 0.95,
+      "keyPoints": ["名词短语 the food"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "the",
@@ -1943,8 +1956,8 @@
       "order": 40,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["to eat 为不定式短语", "the food 作 eat 的宾语"],
-      "confidence": 0.92,
+      "keyPoints": ["动词不定式 to eat 带宾语 the food"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "to",
@@ -1990,7 +2003,6 @@
       "order": 41,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["want 是动词，表示“想要”"],
       "confidence": 0.95,
       "words": [
         {
@@ -2019,11 +2031,11 @@
       "order": 42,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["want to do sth 想要做某事", "the food 特指这个食物"],
+      "keyPoints": ["want to do sth 想要做某事", "不定式短语作宾语"],
       "confidence": 0.95,
       "words": [
         {
@@ -2085,7 +2097,8 @@
           "start": 7,
           "end": 22
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -2096,7 +2109,6 @@
       "order": 43,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["now 是副词，表示“现在”"],
       "confidence": 0.95,
       "words": [
         {
@@ -2125,11 +2137,11 @@
       "order": 44,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["now 放句末作时间状语", "want to do sth 想要做某事"],
+      "keyPoints": ["want to do sth 想要做某事", "时间状语 now 位于句末"],
       "confidence": 0.95,
       "words": [
         {
@@ -2204,7 +2216,8 @@
           "start": 23,
           "end": 26
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -2215,7 +2228,6 @@
       "order": 45,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["don't 是 do not 的缩写"],
       "confidence": 0.9,
       "words": [
         {
@@ -2250,11 +2262,11 @@
       "order": 46,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't want to do sth 不想做某事", "now 作时间状语"],
+      "keyPoints": ["don't want to do sth 不想做某事", "时间状语 now 位于句末"],
       "confidence": 0.95,
       "words": [
         {
@@ -2335,7 +2347,8 @@
           "start": 29,
           "end": 32
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -2346,7 +2359,6 @@
       "order": 47,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["here 是副词，表示“这里”"],
       "confidence": 0.95,
       "words": [
         {
@@ -2375,7 +2387,6 @@
       "order": 48,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["to be here 是动词不定式短语"],
       "confidence": 0.9,
       "words": [
         {
@@ -2416,11 +2427,11 @@
       "order": 49,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["want to do sth 想要做某事", "to be here 作宾语"],
+      "keyPoints": ["want to do sth 想要做某事", "不定式短语作宾语"],
       "confidence": 0.95,
       "words": [
         {
@@ -2476,7 +2487,8 @@
           "start": 7,
           "end": 17
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -2487,11 +2499,11 @@
       "order": 50,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't want to do sth 不想做某事", "to be here 作宾语"],
+      "keyPoints": ["don't want to do sth 不想做某事", "不定式短语作宾语"],
       "confidence": 0.95,
       "words": [
         {
@@ -2553,7 +2565,8 @@
           "start": 13,
           "end": 23
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -2564,7 +2577,11 @@
       "order": 51,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["every day 表示\"每天\"，作时间状语"],
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["every day 表示频率，作时间状语", "every + 单数可数名词"],
       "confidence": 0.95,
       "words": [
         {
@@ -2599,11 +2616,11 @@
       "order": 52,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 地点状语 + 时间状语",
-      "pattern": "S + V + to be here + every day",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["want to do 表示想要做某事", "every day 作时间状语"],
+      "keyPoints": ["want to do sth 想要做某事", "不定式短语作宾语"],
       "confidence": 0.95,
       "words": [
         {
@@ -2674,11 +2691,12 @@
         {
           "text": "every day",
           "role": "状语",
-          "roleType": "名词短语",
+          "roleType": "副词短语",
           "start": 18,
           "end": 27
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -2689,11 +2707,11 @@
       "order": 53,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 地点状语 + 时间状语",
-      "pattern": "S + don't + V + to be here + every day",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't 构成否定", "want to do 表示想要做某事"],
+      "keyPoints": ["don't want to do sth 的否定形式", "助动词 don't 后接动词原形"],
       "confidence": 0.95,
       "words": [
         {
@@ -2770,11 +2788,12 @@
         {
           "text": "every day",
           "role": "状语",
-          "roleType": "名词短语",
+          "roleType": "副词短语",
           "start": 24,
           "end": 33
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -2785,8 +2804,12 @@
       "order": 54,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["all the day 表示\"一整天\"，作时间状语"],
-      "confidence": 0.9,
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["all the day 一整天，作时间状语"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "all",
@@ -2826,12 +2849,12 @@
       "order": 55,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 地点状语 + 时间状语",
-      "pattern": "S + don't + V + to be here + all the day",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't 构成否定", "all the day 作时间状语"],
-      "confidence": 0.92,
+      "keyPoints": ["don't want to do sth 的否定形式", "all the day 作时间状语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "I",
@@ -2917,7 +2940,8 @@
           "start": 24,
           "end": 35
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -2928,8 +2952,12 @@
       "order": 56,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["need 表示\"需要\"，实义动词"],
-      "confidence": 0.9,
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["need 作实义动词或情态动词"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "need",
@@ -2957,7 +2985,11 @@
       "order": 57,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["to be here 为不定式短语，表示\"在这里\""],
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["to be here 不定式短语，表状态"],
       "confidence": 0.9,
       "words": [
         {
@@ -2998,11 +3030,11 @@
       "order": 58,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 地点状语",
-      "pattern": "S + V + to be here",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["need to do 表示需要做某事", "to be here 作宾语"],
+      "keyPoints": ["need to do sth 需要做某事", "不定式短语作宾语"],
       "confidence": 0.95,
       "words": [
         {
@@ -3058,7 +3090,8 @@
           "start": 7,
           "end": 17
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -3069,11 +3102,11 @@
       "order": 59,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 地点状语",
-      "pattern": "S + don't + V + to be here",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't 构成否定", "need to do 表示需要做某事"],
+      "keyPoints": ["don't need to do sth 不需要做某事", "助动词 don't 后接动词原形"],
       "confidence": 0.95,
       "words": [
         {
@@ -3135,7 +3168,8 @@
           "start": 13,
           "end": 23
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -3146,7 +3180,11 @@
       "order": 60,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["every day 表示\"每天\"，作时间状语"],
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["every day 表示频率，作时间状语", "every + 单数可数名词"],
       "confidence": 0.95,
       "words": [
         {
@@ -3181,11 +3219,11 @@
       "order": 61,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + to be + 地点 + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["need to do sth 需要做某事", "every day 每天"],
+      "keyPoints": ["need to do sth 需要做某事", "every day 作时间状语"],
       "confidence": 0.92,
       "words": [
         {
@@ -3260,7 +3298,8 @@
           "start": 18,
           "end": 27
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -3271,12 +3310,12 @@
       "order": 62,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + don't + V + to be + 地点 + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't need to do 不需要做某事", "否定句用助动词 don't"],
-      "confidence": 0.92,
+      "keyPoints": ["don't need to do sth 不需要做某事", "every day 作时间状语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "I",
@@ -3356,7 +3395,8 @@
           "start": 24,
           "end": 33
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -3367,7 +3407,8 @@
       "order": 63,
       "isSentence": false,
       "unitType": "phrase",
-      "confidence": 0.9,
+      "keyPoints": ["不定式短语 to do sth", "the food 指特定食物"],
+      "confidence": 0.93,
       "words": [
         {
           "text": "to",
@@ -3396,17 +3437,10 @@
       ],
       "phrases": [
         {
-          "text": "to eat",
+          "text": "to eat the food",
           "role": null,
           "roleType": null,
           "start": 0,
-          "end": 6
-        },
-        {
-          "text": "the food",
-          "role": null,
-          "roleType": null,
-          "start": 7,
           "end": 15
         }
       ]
@@ -3420,11 +3454,11 @@
       "order": 64,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
-      "pattern": "S + V + to do + O",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["need to do sth 需要做某事", "the food 这个食物"],
+      "keyPoints": ["need to do sth 需要做某事", "不定式作宾语"],
       "confidence": 0.92,
       "words": [
         {
@@ -3486,7 +3520,8 @@
           "start": 7,
           "end": 22
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -3497,6 +3532,7 @@
       "order": 65,
       "isSentence": false,
       "unitType": "word",
+      "keyPoints": ["now 副词，表示现在"],
       "confidence": 0.95,
       "words": [
         {
@@ -3525,11 +3561,11 @@
       "order": 66,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + to do + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["need to do sth 需要做某事", "now 现在，作时间状语"],
+      "keyPoints": ["need to do sth 需要做某事", "now 作时间状语"],
       "confidence": 0.92,
       "words": [
         {
@@ -3604,7 +3640,8 @@
           "start": 23,
           "end": 26
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -3615,12 +3652,12 @@
       "order": 67,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + don't + V + to do + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't need to do 不需要做某事", "now 现在，作时间状语"],
-      "confidence": 0.92,
+      "keyPoints": ["don't need to do sth 不需要做某事", "now 作时间状语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "I",
@@ -3700,7 +3737,8 @@
           "start": 29,
           "end": 32
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -3711,6 +3749,7 @@
       "order": 68,
       "isSentence": false,
       "unitType": "word",
+      "keyPoints": ["it 代词，指代事物"],
       "confidence": 0.95,
       "words": [
         {
@@ -3739,7 +3778,8 @@
       "order": 69,
       "isSentence": false,
       "unitType": "phrase",
-      "confidence": 0.9,
+      "keyPoints": ["不定式 to do，表示去做某事"],
+      "confidence": 0.93,
       "words": [
         {
           "text": "to",
@@ -3773,7 +3813,8 @@
       "order": 70,
       "isSentence": false,
       "unitType": "phrase",
-      "confidence": 0.9,
+      "keyPoints": ["不定式短语 to do it", "it 作 do 的宾语"],
+      "confidence": 0.93,
       "words": [
         {
           "text": "to",
@@ -3796,17 +3837,10 @@
       ],
       "phrases": [
         {
-          "text": "to do",
+          "text": "to do it",
           "role": null,
           "roleType": null,
           "start": 0,
-          "end": 5
-        },
-        {
-          "text": "it",
-          "role": null,
-          "roleType": null,
-          "start": 6,
           "end": 8
         }
       ]
@@ -3820,8 +3854,8 @@
       "order": 71,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
       "keyPoints": ["need to do sth 需要做某事"],
@@ -3869,7 +3903,7 @@
         {
           "text": "need",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 2,
           "end": 6
         },
@@ -3880,7 +3914,8 @@
           "start": 7,
           "end": 15
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -3891,7 +3926,7 @@
       "order": 72,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["today 今天；时间副词"],
+      "keyPoints": ["today 今天，时间副词"],
       "confidence": 0.95,
       "words": [
         {
@@ -3920,8 +3955,8 @@
       "order": 73,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
       "keyPoints": ["need to do sth 需要做某事", "today 作时间状语"],
@@ -3975,7 +4010,7 @@
         {
           "text": "need",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 2,
           "end": 6
         },
@@ -3993,7 +4028,8 @@
           "start": 16,
           "end": 21
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -4004,12 +4040,12 @@
       "order": 74,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + don't + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't need to do 不需要做", "today 作时间状语"],
-      "confidence": 0.9,
+      "keyPoints": ["don't need to do 不需要做某事", "today 作时间状语"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -4083,7 +4119,8 @@
           "start": 22,
           "end": 27
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -4135,12 +4172,12 @@
       "order": 76,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
-      "pattern": "S + have to + V + O",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
       "keyPoints": ["have to do sth 必须做某事"],
-      "confidence": 0.9,
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -4195,7 +4232,8 @@
           "start": 13,
           "end": 15
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -4206,12 +4244,12 @@
       "order": 77,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + have to + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
       "keyPoints": ["have to do sth 必须做某事", "today 作时间状语"],
-      "confidence": 0.9,
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -4279,7 +4317,8 @@
           "start": 16,
           "end": 21
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -4290,12 +4329,12 @@
       "order": 78,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + have to + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
       "keyPoints": ["have to do sth 必须做某事", "now 作时间状语"],
-      "confidence": 0.9,
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -4363,7 +4402,8 @@
           "start": 16,
           "end": 19
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -4421,12 +4461,12 @@
       "order": 80,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
-      "pattern": "S + don't have to + V + O",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't have to do 不必做某事"],
-      "confidence": 0.9,
+      "keyPoints": ["don't have to do sth 不必做某事"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -4487,7 +4527,8 @@
           "start": 19,
           "end": 21
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -4498,12 +4539,12 @@
       "order": 81,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't have to 表示“不必”", "now 作时间状语"],
-      "confidence": 0.9,
+      "keyPoints": ["don't have to 表示“不必”，后接动词原形", "now 作时间状语置于句末"],
+      "confidence": 0.92,
       "words": [
         {
           "text": "I",
@@ -4577,7 +4618,8 @@
           "start": 22,
           "end": 25
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -4588,7 +4630,7 @@
       "order": 82,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["表示频率的时间短语"],
+      "keyPoints": ["every day 是表示频率的时间状语"],
       "confidence": 0.9,
       "words": [
         {
@@ -4623,12 +4665,12 @@
       "order": 83,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't have to 表示“不必”", "every day 作频率状语"],
-      "confidence": 0.9,
+      "keyPoints": ["every day 作时间状语置于句末", "don't have to + 动词原形表示不必"],
+      "confidence": 0.92,
       "words": [
         {
           "text": "I",
@@ -4708,7 +4750,8 @@
           "start": 22,
           "end": 31
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -4719,8 +4762,8 @@
       "order": 84,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["表示“一整天”的时间短语"],
-      "confidence": 0.75,
+      "keyPoints": ["all the day 表示“一整天”，作时间状语"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "all",
@@ -4760,12 +4803,12 @@
       "order": 85,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't have to 表示“不必”", "all the day 作时间状语"],
-      "confidence": 0.8,
+      "keyPoints": ["all the day 作时间状语置于句末", "don't have to + 动词原形"],
+      "confidence": 0.88,
       "words": [
         {
           "text": "I",
@@ -4851,7 +4894,8 @@
           "start": 22,
           "end": 33
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -4862,8 +4906,8 @@
       "order": 86,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["不定式短语，表示目的或动作"],
-      "confidence": 0.9,
+      "keyPoints": ["不定式短语 to eat the food"],
+      "confidence": 0.92,
       "words": [
         {
           "text": "to",
@@ -4909,12 +4953,12 @@
       "order": 87,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["have to 表示“必须”", "the food 作宾语"],
-      "confidence": 0.9,
+      "keyPoints": ["have to = 必须，后接动词原形", "the food 作宾语"],
+      "confidence": 0.93,
       "words": [
         {
           "text": "I",
@@ -4975,7 +5019,8 @@
           "start": 14,
           "end": 22
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -4986,12 +5031,12 @@
       "order": 88,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't have to 表示“不必”", "the food 作宾语"],
-      "confidence": 0.9,
+      "keyPoints": ["have to 的否定用 don't have to", "don't have to 表示“不必”"],
+      "confidence": 0.93,
       "words": [
         {
           "text": "I",
@@ -5058,7 +5103,8 @@
           "start": 20,
           "end": 28
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -5069,7 +5115,7 @@
       "order": 89,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["时间副词，表示“今天”"],
+      "keyPoints": ["today 表示“今天”，可作时间状语"],
       "confidence": 0.95,
       "words": [
         {
@@ -5098,12 +5144,12 @@
       "order": 90,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't have to 表示“不必”", "today 作时间状语"],
-      "confidence": 0.9,
+      "keyPoints": ["today 作时间状语置于句末", "don't have to + 动词原形"],
+      "confidence": 0.92,
       "words": [
         {
           "text": "I",
@@ -5183,7 +5229,8 @@
           "start": 29,
           "end": 34
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -5194,6 +5241,7 @@
       "order": 91,
       "isSentence": false,
       "unitType": "word",
+      "keyPoints": ["时间副词：明天"],
       "confidence": 0.95,
       "words": [
         {
@@ -5222,12 +5270,12 @@
       "order": 92,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["have to 表示必须", "tomorrow 作时间状语"],
-      "confidence": 0.95,
+      "keyPoints": ["have to 表示“必须”", "tomorrow 作时间状语"],
+      "confidence": 0.92,
       "words": [
         {
           "text": "I",
@@ -5301,7 +5349,8 @@
           "start": 23,
           "end": 31
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -5312,6 +5361,7 @@
       "order": 93,
       "isSentence": false,
       "unitType": "phrase",
+      "keyPoints": ["不定式短语 to be here"],
       "confidence": 0.95,
       "words": [
         {
@@ -5352,12 +5402,12 @@
       "order": 94,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓 + 地点状语",
-      "pattern": "S + V + 地点状语",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["have to be 表示必须在", "here 作地点状语"],
-      "confidence": 0.93,
+      "keyPoints": ["have to be 表示“必须在”", "here 作地点状语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "I",
@@ -5412,7 +5462,8 @@
           "start": 13,
           "end": 17
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 状语"
     }
   },
   {
@@ -5423,12 +5474,12 @@
       "order": 95,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓 + 地点状语 + 时间状语",
-      "pattern": "S + V + 地点状语 + 时间状语",
+      "pattern": "S + V + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["have to be 表示必须在", "today 作时间状语"],
-      "confidence": 0.93,
+      "keyPoints": ["today 作时间状语", "here 作地点状语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "I",
@@ -5496,7 +5547,8 @@
           "start": 18,
           "end": 23
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 状语"
     }
   },
   {
@@ -5507,6 +5559,7 @@
       "order": 96,
       "isSentence": false,
       "unitType": "phrase",
+      "keyPoints": ["不定式短语 to do it"],
       "confidence": 0.95,
       "words": [
         {
@@ -5547,7 +5600,8 @@
       "order": 97,
       "isSentence": false,
       "unitType": "phrase",
-      "confidence": 0.9,
+      "keyPoints": ["主谓片段，句意不完整"],
+      "confidence": 0.93,
       "words": [
         {
           "text": "I",
@@ -5581,12 +5635,12 @@
       "order": 98,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["like to do 表示喜欢做某事", "不定式作宾语"],
-      "confidence": 0.95,
+      "keyPoints": ["like to do sth 表示喜欢做某事"],
+      "confidence": 0.93,
       "words": [
         {
           "text": "I",
@@ -5641,7 +5695,8 @@
           "start": 7,
           "end": 15
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -5652,7 +5707,8 @@
       "order": 99,
       "isSentence": false,
       "unitType": "phrase",
-      "confidence": 0.9,
+      "keyPoints": ["主谓片段，句意不完整"],
+      "confidence": 0.93,
       "words": [
         {
           "text": "I",
@@ -5686,12 +5742,12 @@
       "order": 100,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["want to do 表示想要做某事", "不定式作宾语"],
-      "confidence": 0.95,
+      "keyPoints": ["want to do sth 表示想要做某事"],
+      "confidence": 0.93,
       "words": [
         {
           "text": "I",
@@ -5746,7 +5802,8 @@
           "start": 7,
           "end": 15
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -5757,8 +5814,11 @@
       "order": 101,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["need 需要"],
-      "confidence": 1.0,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
       "words": [
         {
           "text": "I",
@@ -5792,12 +5852,12 @@
       "order": 102,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
       "keyPoints": ["need to do sth 需要做某事"],
-      "confidence": 1.0,
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -5841,7 +5901,7 @@
         {
           "text": "need",
           "role": "谓语",
-          "roleType": "单词",
+          "roleType": "动词短语",
           "start": 2,
           "end": 6
         },
@@ -5852,7 +5912,8 @@
           "start": 7,
           "end": 15
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -5863,12 +5924,12 @@
       "order": 103,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["have to 不得不/必须"],
-      "confidence": 1.0,
+      "keyPoints": ["have to 不得不；必须"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -5878,7 +5939,7 @@
         },
         {
           "text": "have",
-          "pos": "动词",
+          "pos": "助动词",
           "start": 2,
           "end": 6
         },
@@ -5923,7 +5984,8 @@
           "start": 13,
           "end": 15
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -5934,8 +5996,11 @@
       "order": 104,
       "isSentence": false,
       "unitType": "phrase",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
       "keyPoints": ["know 知道；认识"],
-      "confidence": 1.0,
+      "confidence": 0.9,
       "words": [
         {
           "text": "to",
@@ -5969,8 +6034,11 @@
       "order": 105,
       "isSentence": false,
       "unitType": "word",
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
       "keyPoints": [],
-      "confidence": 1.0,
+      "confidence": 0.95,
       "words": [
         {
           "text": "you",
@@ -5998,8 +6066,11 @@
       "order": 106,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["know you 认识你"],
-      "confidence": 1.0,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
       "words": [
         {
           "text": "to",
@@ -6039,12 +6110,12 @@
       "order": 107,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
       "keyPoints": ["want to do sth 想要做某事"],
-      "confidence": 1.0,
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -6088,7 +6159,7 @@
         {
           "text": "want",
           "role": "谓语",
-          "roleType": "单词",
+          "roleType": "动词短语",
           "start": 2,
           "end": 6
         },
@@ -6099,7 +6170,8 @@
           "start": 7,
           "end": 18
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -6110,8 +6182,11 @@
       "order": 108,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["soon 尽快"],
-      "confidence": 1.0,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["soon 很快；尽快"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "soon",
@@ -6139,12 +6214,12 @@
       "order": 109,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["want to do sth 想要做某事", "soon 尽快"],
-      "confidence": 1.0,
+      "keyPoints": ["want to do sth 想要做某事", "soon 作时间状语"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "I",
@@ -6194,7 +6269,7 @@
         {
           "text": "want",
           "role": "谓语",
-          "roleType": "单词",
+          "roleType": "动词短语",
           "start": 2,
           "end": 6
         },
@@ -6208,11 +6283,12 @@
         {
           "text": "soon",
           "role": "状语",
-          "roleType": "副词短语",
+          "roleType": "单词",
           "start": 19,
           "end": 23
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -6223,8 +6299,11 @@
       "order": 110,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["see 见到"],
-      "confidence": 1.0,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": [],
+      "confidence": 0.9,
       "words": [
         {
           "text": "to",
@@ -6258,6 +6337,11 @@
       "order": 111,
       "isSentence": false,
       "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "see sb. 表示看见某人"],
       "confidence": 0.95,
       "words": [
         {
@@ -6298,11 +6382,11 @@
       "order": 112,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["have to 表示“必须”", "to see 为不定式短语"],
+      "keyPoints": ["have to 表示必须", "see you 见面"],
       "confidence": 0.95,
       "words": [
         {
@@ -6345,13 +6429,21 @@
           "end": 1
         },
         {
-          "text": "have to see you",
+          "text": "have to see",
           "role": "谓语",
           "roleType": "动词短语",
           "start": 2,
+          "end": 13
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
           "end": 17
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -6362,6 +6454,11 @@
       "order": 113,
       "isSentence": false,
       "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["时间副词", "今晚"],
       "confidence": 0.95,
       "words": [
         {
@@ -6390,11 +6487,11 @@
       "order": 114,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["have to 表示“必须”", "tonight 作时间状语"],
+      "keyPoints": ["have to 表示必须", "tonight 作时间状语"],
       "confidence": 0.95,
       "words": [
         {
@@ -6443,20 +6540,28 @@
           "end": 1
         },
         {
-          "text": "have to see you",
+          "text": "have to see",
           "role": "谓语",
           "roleType": "动词短语",
           "start": 2,
+          "end": 13
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 14,
           "end": 17
         },
         {
           "text": "tonight",
           "role": "状语",
-          "roleType": "副词短语",
+          "roleType": "单词",
           "start": 18,
           "end": 25
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -6467,7 +6572,12 @@
       "order": 115,
       "isSentence": false,
       "unitType": "phrase",
-      "confidence": 0.9,
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell 告诉"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "to",
@@ -6501,6 +6611,11 @@
       "order": 116,
       "isSentence": false,
       "unitType": "word",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["人称代词宾格", "你"],
       "confidence": 0.95,
       "words": [
         {
@@ -6529,6 +6644,11 @@
       "order": 117,
       "isSentence": false,
       "unitType": "phrase",
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定式短语", "tell sb. 告诉某人"],
       "confidence": 0.95,
       "words": [
         {
@@ -6569,11 +6689,11 @@
       "order": 118,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["need to do 表示“需要做”", "you 作 tell 的宾语"],
+      "keyPoints": ["need to do 表示需要做某事", "tell you 告诉你"],
       "confidence": 0.95,
       "words": [
         {
@@ -6616,13 +6736,21 @@
           "end": 1
         },
         {
-          "text": "need to tell you",
+          "text": "need to tell",
           "role": "谓语",
           "roleType": "动词短语",
           "start": 2,
+          "end": 14
+        },
+        {
+          "text": "you",
+          "role": "宾语",
+          "roleType": "单词",
+          "start": 15,
           "end": 18
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -6633,7 +6761,12 @@
       "order": 119,
       "isSentence": false,
       "unitType": "word",
-      "confidence": 0.95,
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["不定代词", "某事；某物"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "something",
@@ -6661,7 +6794,12 @@
       "order": 120,
       "isSentence": false,
       "unitType": "word",
-      "confidence": 0.95,
+      "pattern": null,
+      "clauseType": null,
+      "sentenceType": null,
+      "tense": null,
+      "keyPoints": ["形容词", "重要的"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "important",
@@ -6689,7 +6827,7 @@
       "order": 121,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["形容词修饰不定代词需后置", "something important 某事"],
+      "keyPoints": ["形容词修饰不定代词需后置"],
       "confidence": 0.95,
       "words": [
         {
@@ -6724,12 +6862,12 @@
       "order": 122,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主 + 谓 + 间宾 + 直宾",
       "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
       "keyPoints": ["need to do sth 需要做某事", "tell sb sth 告诉某人某事"],
-      "confidence": 0.95,
+      "confidence": 0.9,
       "words": [
         {
           "text": "I",
@@ -6797,7 +6935,8 @@
           "start": 19,
           "end": 28
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
     }
   },
   {
@@ -6808,12 +6947,12 @@
       "order": 123,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主 + 谓 + 间宾 + 直宾",
       "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["形容词修饰不定代词需后置", "tell sb sth 告诉某人某事"],
-      "confidence": 0.95,
+      "keyPoints": ["tell sb sth 双宾语结构", "形容词修饰不定代词需后置"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "I",
@@ -6887,7 +7026,8 @@
           "start": 19,
           "end": 38
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
     }
   },
   {
@@ -6898,7 +7038,7 @@
       "order": 124,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["代词 it 指代前文事物"],
+      "keyPoints": [],
       "confidence": 0.95,
       "words": [
         {
@@ -6927,11 +7067,11 @@
       "order": 125,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主 + 系 + 表",
-      "pattern": "S + V + Predicative",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It is + adj. 句型", "主语 it 指代前文事物"],
+      "keyPoints": ["It is + adj 主系表结构"],
       "confidence": 0.95,
       "words": [
         {
@@ -6964,18 +7104,19 @@
         {
           "text": "is",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 3,
           "end": 5
         },
         {
           "text": "important",
           "role": "表语",
-          "roleType": "形容词短语",
+          "roleType": "单词",
           "start": 6,
           "end": 15
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语"
     }
   },
   {
@@ -6986,8 +7127,8 @@
       "order": 126,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["very 为程度副词"],
-      "confidence": 0.95,
+      "keyPoints": [],
+      "confidence": 0.9,
       "words": [
         {
           "text": "very",
@@ -7015,11 +7156,11 @@
       "order": 127,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主 + 系 + 表",
-      "pattern": "S + V + Predicative",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["very 修饰形容词 important", "It is + adj. 句型"],
+      "keyPoints": ["very 修饰形容词", "It is + adj 主系表结构"],
       "confidence": 0.95,
       "words": [
         {
@@ -7058,7 +7199,7 @@
         {
           "text": "is",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 3,
           "end": 5
         },
@@ -7069,7 +7210,8 @@
           "start": 6,
           "end": 20
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语"
     }
   },
   {
@@ -7080,7 +7222,7 @@
       "order": 128,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["me 为 I 的宾格形式"],
+      "keyPoints": [],
       "confidence": 0.95,
       "words": [
         {
@@ -7109,8 +7251,8 @@
       "order": 129,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["for + 人称代词宾格", "for me 对我来说"],
-      "confidence": 0.95,
+      "keyPoints": ["for sb 表示对某人而言"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "for",
@@ -7144,12 +7286,12 @@
       "order": 130,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主 + 系 + 表 + 状语",
-      "pattern": "S + V + Predicative + Adverbial",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It is + adj. + for sb 句型", "for me 作状语表对象"],
-      "confidence": 0.95,
+      "keyPoints": ["It is + adj + for sb 句型", "for me 作状语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "It",
@@ -7193,14 +7335,14 @@
         {
           "text": "is",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 3,
           "end": 5
         },
         {
           "text": "important",
           "role": "表语",
-          "roleType": "形容词短语",
+          "roleType": "单词",
           "start": 6,
           "end": 15
         },
@@ -7211,7 +7353,8 @@
           "start": 16,
           "end": 22
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -7222,11 +7365,11 @@
       "order": 131,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 状语",
-      "pattern": "S + V + P + 状语",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It作形式主语/代词主语，is为系动词", "for me 为介词短语作状语"],
+      "keyPoints": ["It 作主语", "for me 作状语"],
       "confidence": 0.9,
       "words": [
         {
@@ -7277,7 +7420,7 @@
         {
           "text": "is",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 3,
           "end": 5
         },
@@ -7295,7 +7438,8 @@
           "start": 21,
           "end": 27
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -7306,8 +7450,7 @@
       "order": 132,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["不定式短语，不能独立成句"],
-      "confidence": 0.95,
+      "confidence": 0.9,
       "words": [
         {
           "text": "to",
@@ -7347,12 +7490,12 @@
       "order": 133,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 真正主语(不定式)",
-      "pattern": "It + is + adj + to do sth",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It为形式主语，to do it为真正主语", "常用句型 It is + adj + to do sth"],
-      "confidence": 0.92,
+      "keyPoints": ["It 作形式主语", "不定式 to do it 为真正主语"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "It",
@@ -7402,14 +7545,14 @@
         {
           "text": "is",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 3,
           "end": 5
         },
         {
           "text": "important",
           "role": "表语",
-          "roleType": "形容词短语",
+          "roleType": "单词",
           "start": 6,
           "end": 15
         },
@@ -7420,7 +7563,8 @@
           "start": 16,
           "end": 24
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -7431,8 +7575,7 @@
       "order": 134,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["不定式短语，表目的或内容"],
-      "confidence": 0.95,
+      "confidence": 0.9,
       "words": [
         {
           "text": "to",
@@ -7472,12 +7615,12 @@
       "order": 135,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 真正主语(不定式)",
-      "pattern": "It + is + adj + to do sth",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It为形式主语，to be here为真正主语", "here为地点副词"],
-      "confidence": 0.92,
+      "keyPoints": ["It 作形式主语", "不定式 to be here 为真正主语"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "It",
@@ -7527,14 +7670,14 @@
         {
           "text": "is",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 3,
           "end": 5
         },
         {
           "text": "important",
           "role": "表语",
-          "roleType": "形容词短语",
+          "roleType": "单词",
           "start": 6,
           "end": 15
         },
@@ -7545,7 +7688,8 @@
           "start": 16,
           "end": 26
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -7556,8 +7700,7 @@
       "order": 136,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["不定式短语，the food 为宾语"],
-      "confidence": 0.95,
+      "confidence": 0.9,
       "words": [
         {
           "text": "to",
@@ -7603,12 +7746,12 @@
       "order": 137,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 真正主语(不定式)",
-      "pattern": "It + is + adj + to do sth",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It为形式主语，to eat the food为真正主语", "the food 为不定式的宾语"],
-      "confidence": 0.92,
+      "keyPoints": ["It 作形式主语", "不定式 to eat the food 为真正主语"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "It",
@@ -7664,14 +7807,14 @@
         {
           "text": "is",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 3,
           "end": 5
         },
         {
           "text": "important",
           "role": "表语",
-          "roleType": "形容词短语",
+          "roleType": "单词",
           "start": 6,
           "end": 15
         },
@@ -7682,7 +7825,8 @@
           "start": 16,
           "end": 31
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -7693,8 +7837,7 @@
       "order": 138,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["形容词，意为“不可能的”"],
-      "confidence": 0.98,
+      "confidence": 0.95,
       "words": [
         {
           "text": "impossible",
@@ -7722,12 +7865,12 @@
       "order": 139,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表",
       "pattern": "S + V + P",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It作主语，is为系动词", "impossible作表语"],
-      "confidence": 0.95,
+      "keyPoints": ["主系表结构", "impossible 作表语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "It",
@@ -7759,18 +7902,19 @@
         {
           "text": "is",
           "role": "谓语",
-          "roleType": "动词短语",
+          "roleType": "单词",
           "start": 3,
           "end": 5
         },
         {
           "text": "impossible",
           "role": "表语",
-          "roleType": "形容词短语",
+          "roleType": "单词",
           "start": 6,
           "end": 16
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语"
     }
   },
   {
@@ -7781,8 +7925,7 @@
       "order": 140,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["不定式短语，不能独立成句"],
-      "confidence": 0.95,
+      "confidence": 0.9,
       "words": [
         {
           "text": "to",
@@ -7822,12 +7965,12 @@
       "order": 141,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主 + 系 + 表 + 真主语(不定式)",
-      "pattern": "It + be + adj + to do sth",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["it作形式主语，真主语是不定式", "be impossible to do sth"],
-      "confidence": 0.95,
+      "keyPoints": ["It作形式主语", "不定式短语作真正主语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "It",
@@ -7888,7 +8031,8 @@
           "start": 17,
           "end": 25
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -7899,12 +8043,12 @@
       "order": 142,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主 + 系 + 表 + 真主语(不定式) + 时间状语",
-      "pattern": "It + be + adj + to do sth + 时间状语",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["it作形式主语，真主语是to do it", "now作时间状语置于句末"],
-      "confidence": 0.95,
+      "keyPoints": ["It作形式主语", "now作时间状语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "It",
@@ -7974,11 +8118,12 @@
         {
           "text": "now",
           "role": "状语",
-          "roleType": "单词",
+          "roleType": "副词短语",
           "start": 26,
           "end": 29
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -7989,7 +8134,7 @@
       "order": 143,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["for me 介词短语，意为\"对我来说\""],
+      "keyPoints": ["介词短语"],
       "confidence": 0.95,
       "words": [
         {
@@ -8024,12 +8169,12 @@
       "order": 144,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主 + 系 + 表 + 状语",
-      "pattern": "It + be + adj + for sb",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["it作形式主语", "for me 是介词短语作状语"],
-      "confidence": 0.7,
+      "keyPoints": ["for me作状语", "It指代不确定的事情"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "It",
@@ -8084,7 +8229,8 @@
           "start": 17,
           "end": 23
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -8095,7 +8241,7 @@
       "order": 145,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["good 形容词，意为\"好的\""],
+      "keyPoints": ["形容词"],
       "confidence": 0.95,
       "words": [
         {
@@ -8124,11 +8270,11 @@
       "order": 146,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主 + 系 + 表",
-      "pattern": "It + be + adj",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["主系表结构，good作表语"],
+      "keyPoints": ["主系表结构", "good作表语"],
       "confidence": 0.95,
       "words": [
         {
@@ -8159,13 +8305,21 @@
           "end": 2
         },
         {
-          "text": "is good",
+          "text": "is",
           "role": "谓语",
-          "roleType": "形容词短语",
+          "roleType": "单词",
           "start": 3,
+          "end": 5
+        },
+        {
+          "text": "good",
+          "role": "表语",
+          "roleType": "形容词短语",
+          "start": 6,
           "end": 10
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语"
     }
   },
   {
@@ -8176,8 +8330,8 @@
       "order": 147,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["to be here 不定式短语"],
-      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "to",
@@ -8217,12 +8371,12 @@
       "order": 148,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主 + 系 + 表 + 真主语(不定式)",
-      "pattern": "It + be + adj + to do sth",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["it作形式主语", "to be here 是真正的主语"],
-      "confidence": 0.95,
+      "keyPoints": ["It作形式主语", "不定式短语作真正主语"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "It",
@@ -8283,7 +8437,8 @@
           "start": 11,
           "end": 21
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -8294,12 +8449,12 @@
       "order": 149,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主 + 系 + 表 + 真主语(不定式)",
-      "pattern": "It + be + adv + adj + to do sth",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["very 作状语修饰形容词 good", "it作形式主语，to be here 是真主语"],
-      "confidence": 0.95,
+      "keyPoints": ["It作形式主语", "very修饰good"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "It",
@@ -8366,7 +8521,8 @@
           "start": 16,
           "end": 26
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -8377,8 +8533,8 @@
       "order": 150,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["to see you 不定式短语"],
-      "confidence": 0.9,
+      "keyPoints": ["不定式短语"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "to",
@@ -8418,11 +8574,11 @@
       "order": 151,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 不定式短语(真实主语)",
-      "pattern": "It + be + adj + to do",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It作形式主语", "不定式to see you为真实主语"],
+      "keyPoints": ["It 作形式主语，真正主语是 to see you", "句型：It is + adj + to do sth"],
       "confidence": 0.9,
       "words": [
         {
@@ -8497,7 +8653,8 @@
           "start": 16,
           "end": 26
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -8508,6 +8665,7 @@
       "order": 152,
       "isSentence": false,
       "unitType": "phrase",
+      "keyPoints": ["时间短语：每天"],
       "confidence": 0.95,
       "words": [
         {
@@ -8542,11 +8700,11 @@
       "order": 153,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 不定式短语 + 时间状语",
-      "pattern": "It + be + adj + to do + 时间状语",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It作形式主语", "every day作时间状语"],
+      "keyPoints": ["It 作形式主语，真正主语是 to see you", "every day 作时间状语"],
       "confidence": 0.9,
       "words": [
         {
@@ -8640,7 +8798,8 @@
           "start": 27,
           "end": 36
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -8651,6 +8810,7 @@
       "order": 154,
       "isSentence": false,
       "unitType": "word",
+      "keyPoints": ["形容词：可能的"],
       "confidence": 0.95,
       "words": [
         {
@@ -8679,12 +8839,12 @@
       "order": 155,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表",
-      "pattern": "It + be + adj",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It指代事物作主语", "is为系动词，possible作表语"],
-      "confidence": 0.85,
+      "keyPoints": ["It 作形式主语", "主系表结构：It is + adj"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "It",
@@ -8723,11 +8883,12 @@
         {
           "text": "possible",
           "role": "表语",
-          "roleType": "形容词短语",
+          "roleType": "单词",
           "start": 6,
           "end": 14
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语"
     }
   },
   {
@@ -8738,6 +8899,7 @@
       "order": 156,
       "isSentence": false,
       "unitType": "phrase",
+      "keyPoints": ["不定式短语：to see you"],
       "confidence": 0.95,
       "words": [
         {
@@ -8778,11 +8940,11 @@
       "order": 157,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 不定式短语(真实主语)",
-      "pattern": "It + be + adj + to do",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It作形式主语", "to see you为真实主语"],
+      "keyPoints": ["It 作形式主语，真正主语是 to see you", "句型：It is + adj + to do sth"],
       "confidence": 0.9,
       "words": [
         {
@@ -8840,7 +9002,7 @@
         {
           "text": "possible",
           "role": "表语",
-          "roleType": "形容词短语",
+          "roleType": "单词",
           "start": 6,
           "end": 14
         },
@@ -8851,7 +9013,8 @@
           "start": 15,
           "end": 25
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -8862,6 +9025,7 @@
       "order": 158,
       "isSentence": false,
       "unitType": "phrase",
+      "keyPoints": ["时间短语：每天"],
       "confidence": 0.95,
       "words": [
         {
@@ -8896,11 +9060,11 @@
       "order": 159,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 不定式短语 + 时间状语",
-      "pattern": "It + be + adj + to do + 时间状语",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It作形式主语", "every day作时间状语"],
+      "keyPoints": ["It 作形式主语，真正主语是 to see you", "every day 作时间状语"],
       "confidence": 0.9,
       "words": [
         {
@@ -8970,7 +9134,7 @@
         {
           "text": "possible",
           "role": "表语",
-          "roleType": "形容词短语",
+          "roleType": "单词",
           "start": 6,
           "end": 14
         },
@@ -8988,7 +9152,8 @@
           "start": 26,
           "end": 35
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -8999,6 +9164,7 @@
       "order": 160,
       "isSentence": false,
       "unitType": "word",
+      "keyPoints": ["形容词：不可能的"],
       "confidence": 0.95,
       "words": [
         {
@@ -9027,12 +9193,12 @@
       "order": 161,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 不定式(真正主语)",
-      "pattern": "It + be + adj + to do",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
       "keyPoints": ["It作形式主语", "不定式短语作真正主语"],
-      "confidence": 0.92,
+      "confidence": 0.88,
       "words": [
         {
           "text": "It",
@@ -9094,7 +9260,7 @@
         {
           "text": "is",
           "role": "谓语",
-          "roleType": "单词",
+          "roleType": "动词短语",
           "start": 3,
           "end": 5
         },
@@ -9112,7 +9278,8 @@
           "start": 17,
           "end": 37
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语"
     }
   },
   {
@@ -9123,7 +9290,6 @@
       "order": 162,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["to know 为动词不定式短语"],
       "confidence": 0.95,
       "words": [
         {
@@ -9158,12 +9324,12 @@
       "order": 163,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["want to do 结构", "不定式作宾语"],
-      "confidence": 0.93,
+      "keyPoints": ["want后接不定式作宾语"],
+      "confidence": 0.8,
       "words": [
         {
           "text": "I",
@@ -9201,7 +9367,7 @@
         {
           "text": "want",
           "role": "谓语",
-          "roleType": "单词",
+          "roleType": "动词短语",
           "start": 2,
           "end": 6
         },
@@ -9212,7 +9378,8 @@
           "start": 7,
           "end": 14
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -9223,7 +9390,6 @@
       "order": 164,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["if 引导宾语从句"],
       "confidence": 0.95,
       "words": [
         {
@@ -9252,11 +9418,11 @@
       "order": 165,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 宾语从句",
-      "pattern": "S + V + O(宾语从句)",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["if 引导宾语从句", "从句用陈述语序"],
+      "keyPoints": ["if引导宾语从句", "if意为“是否”"],
       "confidence": 0.9,
       "words": [
         {
@@ -9319,7 +9485,7 @@
         {
           "text": "want",
           "role": "谓语",
-          "roleType": "单词",
+          "roleType": "动词短语",
           "start": 2,
           "end": 6
         },
@@ -9337,7 +9503,8 @@
           "start": 15,
           "end": 32
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
     }
   },
   {
@@ -9348,12 +9515,12 @@
       "order": 166,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表",
-      "pattern": "It + be + adj",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It作形式主语"],
-      "confidence": 0.9,
+      "keyPoints": ["主系表结构", "It作形式主语"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "It",
@@ -9385,7 +9552,7 @@
         {
           "text": "is",
           "role": "谓语",
-          "roleType": "单词",
+          "roleType": "动词短语",
           "start": 3,
           "end": 5
         },
@@ -9396,7 +9563,8 @@
           "start": 6,
           "end": 15
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语"
     }
   },
   {
@@ -9407,11 +9575,11 @@
       "order": 167,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 宾语从句",
-      "pattern": "S + V + O(宾语从句)",
+      "pattern": "S + V + O + Clause",
+      "clauseType": "复合句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["if 引导宾语从句", "主句用一般现在时"],
+      "keyPoints": ["if引导宾语从句", "if意为“是否”"],
       "confidence": 0.9,
       "words": [
         {
@@ -9474,7 +9642,7 @@
         {
           "text": "want",
           "role": "谓语",
-          "roleType": "单词",
+          "roleType": "动词短语",
           "start": 2,
           "end": 6
         },
@@ -9492,7 +9660,8 @@
           "start": 15,
           "end": 33
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 从句"
     }
   },
   {
@@ -9503,7 +9672,6 @@
       "order": 168,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["for me 为介词短语"],
       "confidence": 0.95,
       "words": [
         {
@@ -9538,12 +9706,12 @@
       "order": 169,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 状语",
-      "pattern": "It + be + adj + for sb",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["for me 作状语", "It作形式主语"],
-      "confidence": 0.9,
+      "keyPoints": ["It作形式主语", "for me作状语"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "It",
@@ -9587,7 +9755,7 @@
         {
           "text": "is",
           "role": "谓语",
-          "roleType": "单词",
+          "roleType": "动词短语",
           "start": 3,
           "end": 5
         },
@@ -9605,7 +9773,8 @@
           "start": 16,
           "end": 22
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -9616,12 +9785,11 @@
       "order": 170,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["have to 表示必须", "后接动词原形"],
-      "confidence": 0.9,
+      "confidence": 0.85,
       "words": [
         {
           "text": "have",
-          "pos": "助动词",
+          "pos": "情态动词",
           "start": 0,
           "end": 4
         },
@@ -9657,11 +9825,11 @@
       "order": 171,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["have to do 表示必须做", "it 指代前面提到的事"],
+      "keyPoints": ["have to do 表示必须做", "it 指代这件事"],
       "confidence": 0.92,
       "words": [
         {
@@ -9672,7 +9840,7 @@
         },
         {
           "text": "have",
-          "pos": "动词",
+          "pos": "助动词",
           "start": 2,
           "end": 6
         },
@@ -9717,7 +9885,8 @@
           "start": 13,
           "end": 15
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -9728,11 +9897,11 @@
       "order": 172,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["today 作时间状语置于句末", "have to do 表示必须做"],
+      "keyPoints": ["have to do 表示必须做", "today 作时间状语"],
       "confidence": 0.92,
       "words": [
         {
@@ -9743,7 +9912,7 @@
         },
         {
           "text": "have",
-          "pos": "动词",
+          "pos": "助动词",
           "start": 2,
           "end": 6
         },
@@ -9797,11 +9966,12 @@
         {
           "text": "today",
           "role": "状语",
-          "roleType": "单词",
+          "roleType": "副词短语",
           "start": 16,
           "end": 21
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -9812,7 +9982,7 @@
       "order": 173,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["so 表因果，连接两个句子"],
+      "keyPoints": ["并列连词，表示所以"],
       "confidence": 0.95,
       "words": [
         {
@@ -9841,12 +10011,12 @@
       "order": 174,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 原因状语 + 主谓宾",
-      "pattern": "It + is + adj + for sb + so + S + V + O",
+      "pattern": "S + V + P + Adv + conj + S + V + O",
+      "clauseType": "并列句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It is important for sb 句型", "so 连接两个并列分句"],
-      "confidence": 0.9,
+      "keyPoints": ["so 连接两个并列分句", "for me 表示对我来说"],
+      "confidence": 0.88,
       "words": [
         {
           "text": "It",
@@ -9892,7 +10062,7 @@
         },
         {
           "text": "have",
-          "pos": "动词",
+          "pos": "助动词",
           "start": 28,
           "end": 32
         },
@@ -9933,7 +10103,7 @@
         {
           "text": "important",
           "role": "表语",
-          "roleType": "单词",
+          "roleType": "形容词短语",
           "start": 6,
           "end": 15
         },
@@ -9972,7 +10142,8 @@
           "start": 39,
           "end": 41
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语"
     }
   },
   {
@@ -9983,12 +10154,12 @@
       "order": 175,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 原因状语 + 主谓宾 + 时间状语",
-      "pattern": "It + is + adj + for sb + so + S + V + O + 时间状语",
+      "pattern": "S + V + P + Adv + conj + S + V + O + Adv",
+      "clauseType": "并列句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["today 放句末作时间状语", "for me 表示对象"],
-      "confidence": 0.9,
+      "keyPoints": ["so 连接两个并列分句", "today 作时间状语"],
+      "confidence": 0.88,
       "words": [
         {
           "text": "It",
@@ -10034,7 +10205,7 @@
         },
         {
           "text": "have",
-          "pos": "动词",
+          "pos": "助动词",
           "start": 28,
           "end": 32
         },
@@ -10081,7 +10252,7 @@
         {
           "text": "important",
           "role": "表语",
-          "roleType": "单词",
+          "roleType": "形容词短语",
           "start": 6,
           "end": 15
         },
@@ -10123,11 +10294,12 @@
         {
           "text": "today",
           "role": "状语",
-          "roleType": "单词",
+          "roleType": "副词短语",
           "start": 42,
           "end": 47
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -10138,8 +10310,8 @@
       "order": 176,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["every day 表示每天，作时间状语"],
-      "confidence": 0.95,
+      "keyPoints": ["时间状语，表示每天"],
+      "confidence": 0.93,
       "words": [
         {
           "text": "every",
@@ -10173,12 +10345,12 @@
       "order": 177,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 原因状语 + 主谓宾 + 时间状语",
-      "pattern": "It + is + adj + for sb + so + S + V + O + 时间状语",
+      "pattern": "S + V + P + Adv + conj + S + V + O + Adv",
+      "clauseType": "并列句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["every day 作频度时间状语", "It is important for sb 句型"],
-      "confidence": 0.9,
+      "keyPoints": ["so 连接两个并列分句", "every day 作时间状语"],
+      "confidence": 0.87,
       "words": [
         {
           "text": "It",
@@ -10224,7 +10396,7 @@
         },
         {
           "text": "have",
-          "pos": "动词",
+          "pos": "助动词",
           "start": 28,
           "end": 32
         },
@@ -10277,7 +10449,7 @@
         {
           "text": "important",
           "role": "表语",
-          "roleType": "单词",
+          "roleType": "形容词短语",
           "start": 6,
           "end": 15
         },
@@ -10323,7 +10495,8 @@
           "start": 42,
           "end": 51
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -10334,7 +10507,7 @@
       "order": 178,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["very 是副词，修饰形容词或副词"],
+      "keyPoints": ["副词，表示非常"],
       "confidence": 0.95,
       "words": [
         {
@@ -10363,12 +10536,12 @@
       "order": 179,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 原因状语 + 主谓宾 + 时间状语",
-      "pattern": "It + is + adv + adj + for sb + so + S + V + O + 时间状语",
+      "pattern": "S + V + P + Adv + conj + S + V + O + Adv",
+      "clauseType": "并列句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["very 修饰形容词 important", "every day 作时间状语"],
-      "confidence": 0.9,
+      "keyPoints": ["very 修饰形容词 important", "so 连接两个并列分句"],
+      "confidence": 0.87,
       "words": [
         {
           "text": "It",
@@ -10420,7 +10593,7 @@
         },
         {
           "text": "have",
-          "pos": "动词",
+          "pos": "助动词",
           "start": 33,
           "end": 37
         },
@@ -10519,7 +10692,8 @@
           "start": 47,
           "end": 56
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -10530,7 +10704,7 @@
       "order": 180,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["now 是时间副词，表示现在"],
+      "keyPoints": ["副词，表示现在"],
       "confidence": 0.95,
       "words": [
         {
@@ -10559,12 +10733,12 @@
       "order": 181,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 状语 + 并列连词 + 主谓宾 + 时间状语",
-      "pattern": "S + be + adj + for sb + so + S + have to do + O + now",
+      "pattern": "S + V + P + Adv + conj + S + V + O + Adv",
+      "clauseType": "并列句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["so 连接两个并列分句", "have to 表示客观必须"],
-      "confidence": 0.95,
+      "keyPoints": ["so 连接两个并列分句", "have to 表示“必须”"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "It",
@@ -10705,11 +10879,12 @@
         {
           "text": "now",
           "role": "状语",
-          "roleType": "单词",
+          "roleType": "副词短语",
           "start": 47,
           "end": 50
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -10754,11 +10929,11 @@
       "order": 183,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表",
-      "pattern": "S + be + not + adj",
+      "pattern": "S + V + P",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["否定句直接在 be 后加 not"],
+      "keyPoints": ["It is + adj 结构", "否定词 not 置于 be 之后"],
       "confidence": 0.95,
       "words": [
         {
@@ -10808,7 +10983,8 @@
           "start": 6,
           "end": 19
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语"
     }
   },
   {
@@ -10819,11 +10995,11 @@
       "order": 184,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 状语",
-      "pattern": "S + be + not + adj + for sb",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["for me 表示对某人而言"],
+      "keyPoints": ["for me 表示“对我来说”", "It is + adj + for sb 结构"],
       "confidence": 0.95,
       "words": [
         {
@@ -10892,7 +11068,8 @@
           "start": 20,
           "end": 26
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -10949,12 +11126,12 @@
       "order": 186,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
-      "pattern": "S + don't have to do + O",
+      "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't have to 表示不必", "do 为实义动词,后接宾语"],
-      "confidence": 0.95,
+      "keyPoints": ["don't have to 表示“不必”", "do it 指代做某事"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "I",
@@ -11015,7 +11192,8 @@
           "start": 19,
           "end": 21
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -11026,7 +11204,7 @@
       "order": 187,
       "isSentence": false,
       "unitType": "word",
-      "confidence": 0.95,
+      "confidence": 0.98,
       "words": [
         {
           "text": "now",
@@ -11054,12 +11232,12 @@
       "order": 188,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + don't have to do + O + now",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["don't have to 表示不必", "now 作时间状语"],
-      "confidence": 0.95,
+      "keyPoints": ["don't have to 表示“不必”", "now 作时间状语"],
+      "confidence": 0.92,
       "words": [
         {
           "text": "I",
@@ -11129,11 +11307,12 @@
         {
           "text": "now",
           "role": "状语",
-          "roleType": "单词",
+          "roleType": "副词短语",
           "start": 22,
           "end": 25
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -11144,7 +11323,7 @@
       "order": 189,
       "isSentence": false,
       "unitType": "word",
-      "confidence": 0.95,
+      "confidence": 0.98,
       "words": [
         {
           "text": "so",
@@ -11172,12 +11351,12 @@
       "order": 190,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 状语 + 并列连词 + 主谓宾 + 时间状语",
-      "pattern": "S + be + not + adj + for sb + so + S + don't have to do + O + now",
+      "pattern": "S + V + P + Adv + conj + S + V + O + Adv",
+      "clauseType": "并列句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["so 连接两个并列分句", "don't have to 表示不必"],
-      "confidence": 0.95,
+      "keyPoints": ["so 连接两个并列分句", "don't have to 表示“不必”"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "It",
@@ -11324,11 +11503,12 @@
         {
           "text": "now",
           "role": "状语",
-          "roleType": "单词",
+          "roleType": "副词短语",
           "start": 52,
           "end": 55
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语 + 连接词 + 主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -11339,12 +11519,12 @@
       "order": 191,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
       "pattern": "S + V + O",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["like to do 喜欢做某事", "不定式作宾语"],
-      "confidence": 0.95,
+      "keyPoints": ["like to do sth 喜欢做某事"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "I",
@@ -11405,7 +11585,8 @@
           "start": 7,
           "end": 22
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语"
     }
   },
   {
@@ -11416,12 +11597,12 @@
       "order": 192,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["want to do 想要做某事", "today 作时间状语"],
-      "confidence": 0.95,
+      "keyPoints": ["want to do sth 想要做某事", "today 作时间状语"],
+      "confidence": 0.92,
       "words": [
         {
           "text": "I",
@@ -11489,7 +11670,8 @@
           "start": 16,
           "end": 21
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -11500,11 +11682,11 @@
       "order": 193,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾",
-      "pattern": "S + V + O",
+      "pattern": "S + V + IO + DO",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["need to do 需要做某事", "形容词 important 后置修饰 something"],
+      "keyPoints": ["need to do sth 需要做某事", "tell sb sth 告诉某人某事"],
       "confidence": 0.9,
       "words": [
         {
@@ -11559,20 +11741,28 @@
           "end": 1
         },
         {
-          "text": "need",
+          "text": "need to tell",
           "role": "谓语",
           "roleType": "动词短语",
           "start": 2,
-          "end": 6
+          "end": 14
         },
         {
-          "text": "to tell you something important",
+          "text": "you",
           "role": "宾语",
-          "roleType": "不定式短语",
-          "start": 7,
+          "roleType": "单词",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "text": "something important",
+          "role": "宾语",
+          "roleType": "名词短语",
+          "start": 19,
           "end": 38
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 间接宾语 + 直接宾语"
     }
   },
   {
@@ -11583,11 +11773,11 @@
       "order": 194,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主谓宾 + 时间状语",
-      "pattern": "S + V + O + 时间状语",
+      "pattern": "S + V + O + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["have to 不得不，必须", "soon 作时间状语"],
+      "keyPoints": ["have to do sth 不得不做某事", "soon 作时间状语"],
       "confidence": 0.9,
       "words": [
         {
@@ -11598,7 +11788,7 @@
         },
         {
           "text": "have",
-          "pos": "情态动词",
+          "pos": "助动词",
           "start": 2,
           "end": 6
         },
@@ -11656,7 +11846,8 @@
           "start": 19,
           "end": 23
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 宾语 + 状语"
     }
   },
   {
@@ -11667,12 +11858,12 @@
       "order": 195,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表",
-      "pattern": "It + be + 形容词 + 不定式",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It 作形式主语", "不定式 to be here 作真实主语"],
-      "confidence": 0.9,
+      "keyPoints": ["It is + adj + to do sth 句型", "it 作形式主语"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "It",
@@ -11740,7 +11931,8 @@
           "start": 11,
           "end": 21
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -11751,12 +11943,12 @@
       "order": 196,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 状语",
-      "pattern": "It + be + 形容词 + 介词短语",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["for me 表示对某人而言", "主系表结构"],
-      "confidence": 0.9,
+      "keyPoints": ["It is + adj + for sb 句型", "for me 作状语"],
+      "confidence": 0.88,
       "words": [
         {
           "text": "It",
@@ -11818,7 +12010,8 @@
           "start": 16,
           "end": 22
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -11829,12 +12022,12 @@
       "order": 197,
       "isSentence": true,
       "unitType": "sentence",
-      "structure": "主系表 + 时间状语",
-      "pattern": "It + be + 形容词 + 不定式",
+      "pattern": "S + V + P + Adv",
+      "clauseType": "简单句",
       "sentenceType": "陈述句",
       "tense": "一般现在时",
-      "keyPoints": ["It 作形式主语", "不定式 to do it now 作真实主语"],
-      "confidence": 0.9,
+      "keyPoints": ["It is + adj + to do sth 句型", "it 作形式主语"],
+      "confidence": 0.85,
       "words": [
         {
           "text": "It",
@@ -11908,7 +12101,8 @@
           "start": 17,
           "end": 29
         }
-      ]
+      ],
+      "structure": "主语 + 谓语 + 表语 + 状语"
     }
   },
   {
@@ -11919,7 +12113,8 @@
       "order": 198,
       "isSentence": false,
       "unitType": "phrase",
-      "confidence": 0.95,
+      "keyPoints": ["like to do sth 喜欢做某事"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "like",
@@ -11959,7 +12154,8 @@
       "order": 199,
       "isSentence": false,
       "unitType": "phrase",
-      "confidence": 0.95,
+      "keyPoints": ["need to do sth 需要做某事"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "need",
@@ -11999,7 +12195,8 @@
       "order": 200,
       "isSentence": false,
       "unitType": "phrase",
-      "confidence": 0.95,
+      "keyPoints": ["want to do sth 想要做某事"],
+      "confidence": 0.9,
       "words": [
         {
           "text": "want",
@@ -12039,8 +12236,8 @@
       "order": 201,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["have to 表必须，后接动词原形"],
-      "confidence": 0.85,
+      "keyPoints": ["have to 表示必须", "后接动词原形"],
+      "confidence": 1.0,
       "words": [
         {
           "text": "have",
@@ -12080,8 +12277,8 @@
       "order": 202,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["不定式短语，表目的或动作"],
-      "confidence": 0.9,
+      "keyPoints": ["不定式短语", "表示“吃”"],
+      "confidence": 1.0,
       "words": [
         {
           "text": "to",
@@ -12115,8 +12312,8 @@
       "order": 203,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["know 表示知道、认识"],
-      "confidence": 0.9,
+      "keyPoints": ["不定式短语", "表示“知道/认识”"],
+      "confidence": 1.0,
       "words": [
         {
           "text": "to",
@@ -12150,8 +12347,8 @@
       "order": 204,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["be here 表在这里，be 用原形"],
-      "confidence": 0.85,
+      "keyPoints": ["不定式短语", "表示“在这里”"],
+      "confidence": 1.0,
       "words": [
         {
           "text": "to",
@@ -12191,8 +12388,8 @@
       "order": 205,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["see 表示见到、看见"],
-      "confidence": 0.9,
+      "keyPoints": ["不定式短语", "表示“见到”"],
+      "confidence": 1.0,
       "words": [
         {
           "text": "to",
@@ -12226,8 +12423,8 @@
       "order": 206,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["tell 表示告诉"],
-      "confidence": 0.9,
+      "keyPoints": ["不定式短语", "表示“告诉”"],
+      "confidence": 1.0,
       "words": [
         {
           "text": "to",
@@ -12261,8 +12458,8 @@
       "order": 207,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["人称代词，主格/宾格同形"],
-      "confidence": 0.95,
+      "keyPoints": ["人称代词", "意为“你/你们”"],
+      "confidence": 1.0,
       "words": [
         {
           "text": "you",
@@ -12290,8 +12487,8 @@
       "order": 208,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["人称代词 I 的宾格形式"],
-      "confidence": 0.95,
+      "keyPoints": ["人称代词宾格", "意为“我”"],
+      "confidence": 1.0,
       "words": [
         {
           "text": "me",
@@ -12319,8 +12516,8 @@
       "order": 209,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["不定代词，指某物或某事"],
-      "confidence": 0.9,
+      "keyPoints": ["不定代词", "意为“某物/某事”"],
+      "confidence": 1.0,
       "words": [
         {
           "text": "something",
@@ -12348,8 +12545,8 @@
       "order": 210,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["形容词，表示好的"],
-      "confidence": 0.95,
+      "keyPoints": ["形容词", "意为“好的”"],
+      "confidence": 1.0,
       "words": [
         {
           "text": "good",
@@ -12377,8 +12574,8 @@
       "order": 211,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["形容词：可能的；反义词 impossible"],
-      "confidence": 0.95,
+      "keyPoints": ["形容词：可能的"],
+      "confidence": 0.98,
       "words": [
         {
           "text": "possible",
@@ -12406,8 +12603,8 @@
       "order": 212,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["形容词：不可能的；由 possible 加 im- 构成"],
-      "confidence": 0.95,
+      "keyPoints": ["形容词：不可能的，im-否定前缀"],
+      "confidence": 0.98,
       "words": [
         {
           "text": "impossible",
@@ -12435,8 +12632,8 @@
       "order": 213,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["形容词：重要的；常用 It is important to do sth."],
-      "confidence": 0.95,
+      "keyPoints": ["形容词：重要的"],
+      "confidence": 0.98,
       "words": [
         {
           "text": "important",
@@ -12464,8 +12661,8 @@
       "order": 214,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["名词短语，可作主语或宾语"],
-      "confidence": 0.9,
+      "keyPoints": ["名词短语：这个食物"],
+      "confidence": 0.97,
       "words": [
         {
           "text": "the",
@@ -12499,8 +12696,8 @@
       "order": 215,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["副词：这里；常与 come/go 连用"],
-      "confidence": 0.95,
+      "keyPoints": ["副词：这里，表地点"],
+      "confidence": 0.98,
       "words": [
         {
           "text": "here",
@@ -12528,8 +12725,8 @@
       "order": 216,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["可作副词，表示时间：今天"],
-      "confidence": 0.9,
+      "keyPoints": ["副词：今天，表时间"],
+      "confidence": 0.95,
       "words": [
         {
           "text": "today",
@@ -12557,8 +12754,8 @@
       "order": 217,
       "isSentence": false,
       "unitType": "word",
-      "keyPoints": ["副词：现在；常用于现在进行时"],
-      "confidence": 0.95,
+      "keyPoints": ["副词：现在，表时间"],
+      "confidence": 0.98,
       "words": [
         {
           "text": "now",
@@ -12586,8 +12783,8 @@
       "order": 218,
       "isSentence": false,
       "unitType": "phrase",
-      "keyPoints": ["时间状语短语，用于一般现在时"],
-      "confidence": 0.9,
+      "keyPoints": ["时间状语短语：每天"],
+      "confidence": 0.96,
       "words": [
         {
           "text": "every",

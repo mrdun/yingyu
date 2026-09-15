@@ -7,8 +7,8 @@ Per item:
 {"order":<int>,
  "isSentence":<bool>,
  "unitType":"sentence"|"phrase"|"word",
- "structure":"<主谓宾 + 时间状语>",
- "pattern":"<S + V + O>",
+ "pattern":"<closed-set symbols, see RULE 2>",
+ "clauseType":"简单句"|"并列句"|"复合句",
  "sentenceType":"<陈述句|疑问句|祈使句|感叹句|there be 句型>",
  "tense":"<一般现在时|一般过去时|一般将来时|现在进行时|过去进行时|现在完成时|过去完成时>",
  "keyPoints":["<=40 chars, at most 2"],
@@ -19,20 +19,33 @@ Per item:
 HARD RULES:
 1. "isSentence": true only if the item is a COMPLETE standalone sentence (subject + predicate, meaningful on its own).
    Fragments, single words, and phrases like "to see" / "I like" / "the food" are FALSE.
-2. structure / pattern / sentenceType / tense: include ONLY when isSentence=true. Omit them entirely otherwise.
-3. words: EXACTLY one entry per word, same order as the sentence.
+2. "pattern" — ONLY when isSentence=true. Build it by joining symbols from this CLOSED SET with " + ":
+   S (主语) | V (谓语) | O (宾语) | P (表语) | IO (间接宾语) | DO (直接宾语) |
+   OC (宾语补足语) | C (补语) | Attrib (定语) | Adv (状语) | conj (连接词) | Clause (从句) | There be
+   Examples: "S + V + O" / "S + V + O + Adv" / "S + V + P" / "S + V + IO + DO" /
+             "S + V + O + conj + S + V + O" (并列句) / "S + V + Clause" (复合句) / "There be + S + Adv"
+   NEVER invent symbols. These are WRONG (they appear in bad data — do not copy them):
+     "S + V + O + 时间状语"  → write "S + V + O + Adv"
+     "It + is + adj + to do sth" → write "S + V + P + Adv" (It is the formal subject)
+     "S + V + Predicative" → write "S + V + P"
+     "S + have to + V + O" → write "S + V + O"
+   Put the fine detail (时间/地点/原因状语, clause content) in phrases[].note instead.
+   ⚠️ Do NOT output a "structure" field — the display string is derived from `pattern` by code.
+3. "clauseType": 简单句 (one clause) / 并列句 (clauses joined by and/but/so/or) / 复合句 (contains a 从句).
+   Omit when isSentence=false.
+4. words: EXACTLY one entry per word, same order as the sentence.
    Words joined with single spaces MUST equal the sentence exactly (case-sensitive, no punctuation added).
-4. phrases: the texts, joined with single spaces IN ORDER, MUST also equal the sentence exactly.
+5. phrases: the texts, joined with single spaces IN ORDER, MUST also equal the sentence exactly.
    i.e. phrases partition the SAME word sequence — you may merge adjacent words, but never skip,
    reorder, split, or duplicate a word. Do NOT invent punctuation that is not in the original.
-5. 成分(role) is PHRASE-level, not per word: "don't like" together = 谓语(动词短语);
+6. 成分(role) is PHRASE-level, not per word: "don't like" together = 谓语(动词短语);
    "learning English" together = 宾语(动名词短语); "to do it" together = 宾语(不定式短语).
    NEVER give the same role to each word separately.
-6. If isSentence=false → every phrase's role and roleType MUST be null
+7. If isSentence=false → every phrase's role and roleType MUST be null
    (fragments have no sentence roles), but words[] must still carry full per-word pos.
-7. Enums —
+8. Enums —
    pos: 名词|代词|动词|助动词|情态动词|形容词|副词|介词|连词|冠词|数词|动名词|不定式|分词|感叹词
    role: 主语|谓语|宾语|表语|定语|状语|补语|宾语补足语|同位语|连接词|插入语|引导词
    roleType: 名词短语|动词短语|形容词短语|副词短语|介词短语|动名词短语|不定式短语|分词短语|从句|单词
-8. If unsure, LOWER "confidence" — never invent. Omitting detail beats inventing it.
-9. Output PURE JSON only.
+9. If unsure, LOWER "confidence" — never invent. Omitting detail beats inventing it.
+10. Output PURE JSON only.

@@ -5,40 +5,43 @@
 
 ## 三个文件
 
-| 文件                 | 作用                                                                |
-| -------------------- | ------------------------------------------------------------------- |
-| `system-prompt.txt`  | 交给模型的系统提示词（**改标注口径就改这里**，是唯一来源）          |
-| `annotate-lesson.py` | 取一课的全部句子 → 分批调 DeepSeek → 增量落盘 → 跑规范校验          |
-| `validate-format.py` | 按 `COURSE_CREATION_FORMAT.md` 的 E1–E13 / W1–W5 校验一份文件或示例 |
+| 文件                 | 作用                                                                                          |
+| -------------------- | --------------------------------------------------------------------------------------------- |
+| `system-prompt.txt`  | 交给模型的系统提示词（**改标注口径就改这里**，是唯一来源）                                    |
+| `annotate-lesson.py` | 取一课的全部句子 → 分批调 DeepSeek → 程序补 structure → 增量落盘 → 跑完整规则集校验（E1–E13） |
+| `validate-format.py` | 按规范校验一份文件或文档里的示例（E1–E13 / W1–W5）                                            |
 
 ## 用法
 
 ```bash
 # 标注一课 (默认第一课; 结果落在 $LOCALAPPDATA/Temp/ew-lesson1-annotated.json)
-python scripts/grammar/annotate-lesson.py
+python scripts/grammar/annotate-lesson.py            # 第一课
+python scripts/grammar/annotate-lesson.py 3 out.json # 第三课, 指定输出
 
-# 校验规范文档里的示例 (E1-E13 + W1-W5)
+# 校验规范文档里的示例
 python scripts/grammar/validate-format.py
 ```
 
-## 已实测结论（2026-09-15）
-
-- 「零基础学英语 · 第一课」**218 条全部标注成功**：218/218 返回、0 不合格、4 条告警
-- 完整句 100 / 碎片 118；置信度均值 0.931、最低 0.7
-- 22 次调用，23,119 输入 / 51,556 输出 token，约 4 分钟
-
-## 关键设计（别改坏）
+## 关键设计（四条，别改坏）
 
 1. **不让模型数字符位置**。模型只输出短语/词的**原文**，偏移由脚本按空白走位算出来
-   —— 这样 `english.slice(start,end) === text` 在原理上不可能违反（实测 0 次偏移错误）。
-2. **`words` 与 `phrases` 是两个数组**：前者逐词标词性（每词恰一条），后者短语标成分（可跨词）。
+   —— `english.slice(start,end) === text` 构造性成立（实测 0 次偏移错误）。
+2. **不让模型写 `structure`**。模型只输出闭集 `pattern`（S/V/O/P/IO/DO/OC/C/Attrib/Adv/conj/Clause/There be），
+   `structure` 由脚本按映射表算出来 —— E13 构造性成立。
+   ⚠️ 实测教训：把 structure 交给模型写时，**100/100 条**与 pattern 对不上；
+   改成程序映射后 **0 条**不合格。**凡是程序能确定性做对的，就别交给模型。**
+3. **`words` 与 `phrases` 是两个数组**：前者逐词标词性（每词恰一条），后者短语标成分（可跨词）。
    合成一个数组会让碎片只落一个标签、丢掉逐词词性。
-3. **碎片（`isSentence=false`）不给成分**：`role`/`roleType` 必须为 `null`。
-4. **`structure` 不许自由写**：只输出闭集 `pattern`，`structure` 由映射表得出
-   —— 否则模型会用 20+ 种写法表达同一结构（实测教训）。
-5. **分批调用**：一次给 22 条会超 `max_tokens` 导致 JSON 截断。当前每批 10 条 + `response_format: json_object`。
+4. **碎片（`isSentence=false`）不给成分**：`role`/`roleType` 必须为 `null`。
 
-## 数据样本
+## 已实测结论（2026-09-15）
 
-`.hermes/design/grammar-lesson1-annotated.json` = 第一课 218 条的真实标注结果（带算好的字符位置）。
-效果预览见 `.hermes/design/grammar-panel-preview.html`。
+- 「零基础学英语 · 第一课」**218 条全部标注成功**：完整句 100 / 碎片 118
+- 完整规则集（E1–E13）**0 条不合格**；告警仅 W1 ×5（已知误报）
+- `pattern` 取值收敛到 **9 种**、`clauseType` 100 条齐全（简单句 92 / 并列句 6 / 复合句 2）
+- 22 次调用 + 首次重试，约 4~6 分钟
+
+## 产物
+
+- `.hermes/design/grammar-lesson1-annotated.json` —— 第一课 218 条真实标注（含算好的字符位置）
+- `.hermes/design/grammar-panel-preview.html` —— 练习页效果预览（真实数据渲染）
