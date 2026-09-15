@@ -125,8 +125,18 @@ for (const idx of [...withAudio, ...withoutAudio].sort((a, b) => a - b)) {
 
   const sentence = statements[idx];
   const hash = fnv1a64(sentence);
-  const selfReq = batch.filter((e) => e.kind === "self");
-  const youdaoReq = batch.filter((e) => e.kind === "youdao");
+  // 精确到「本句」的请求：窗口可能跨到相邻句子（切题会顺带触发上一句的预加载），
+  // 不筛就会把别的句子的请求算进来 → 断言变脆（实测 [6] 混入过上一句的 200）。
+  const selfReq = batch.filter((e) => e.kind === "self" && e.url.includes(`/${hash}.mp3`));
+  const youdaoReq = batch.filter((e) => {
+    if (e.kind !== "youdao") return false;
+    try {
+      // 注意：本仓拼 youdao 地址时**不对原文做 URL 编码**，所以要按「取值后解码」比对
+      return decodeURIComponent(new URL(e.url).searchParams.get("audio") ?? "") === sentence;
+    } catch {
+      return false;
+    }
+  });
   results.push({
     idx,
     sentence,
