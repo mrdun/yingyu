@@ -1,17 +1,27 @@
 """生成「练习页语法标注」效果页 —— 自包含单文件 HTML, 可直接双击打开, 也可在 Hermes 里内联预览。
 
-与 `render-preview.py` 的区别:
-  * `render-preview.py` 出的是**静态截图用**的稿子（服务端渲染, 固定展示 5 条）
-  * 本脚本出的是**能点、能切、能截图真值**的效果页（客户端渲染, 全部 218 条, 真实测量行数）
+## 视觉结构（用户逐条拍板, 改前先读）
 
-页面能力:
-  * 上一句 / 下一句 / 跳到最长句 / 按类型筛选（全部·碎片·短句·长句）
-  * 四个开关: **从句断行**（本轮的核心结论）/ 逐词词性 / 结构卡 / 中文
-  * 键盘 ← → 切换
-  * 每句**实时测量**: 面板可用宽 / 本句单行需多少 px / 实际占几行 / 是否被迫折行
+    ┌──────────┐
+    │   主语    │  ← 成分名: 在胶囊**上方**、与胶囊居中、**颜色与胶囊一致**
+    └──────────┘
+                 ← 胶囊: **装着该成分的英文词**（同一成分的词合成【一个】胶囊）, 成分色 + 白字
+       I
+     ▁▁▁▁▁        ← 每个单词一条下划线（词性色）
+      代词        ← 中文词性文字, 与单词/下划线**同一中心线**, 颜色与下划线一致
 
-数据 = 真实模型对「零基础学英语 · 第一课」218 条的标注（`.hermes/design/grammar-lesson1-annotated.json`）。
-不内嵌任何 CDN —— 离线可用。
+## 用户否掉过的两版（别改回去）
+1. 单词各自装进小卡片 + 胶囊只写成分名 → 看着像「一个单词一个气泡胶囊」。
+2. 胶囊写成分名、单词在胶囊外面、再用一条长横条跨过整段 → 仍不是「成分合在一个胶囊里」。
+**正解: 胶囊里装的就是英文词本身。**
+
+## 下划线配色两套（用户要求 A/B 对比）
+- **A 按词性**: 代词一色 / 动词一色 / 名词一色…（词性色板, 与成分色是两套颜色）
+- **B 跟随成分**: 下划线与词性文字用所属成分的颜色（与上方胶囊同色）
+
+## 两种配色都实算过对比度（scripts/ew-contrast.py）
+- 词性色板 11 色, 白字 ≥ 5.02:1
+- 成分色板 7 色, 白字 ≥ 5.17:1; 同时作为文字压白底也 ≥ 5.17:1（成分名要用它当文字色）
 """
 import json
 from pathlib import Path
@@ -22,29 +32,19 @@ SRC = REPO / ".hermes/design/grammar-lesson1-annotated.json"
 
 
 def slim(x):
-    """压掉前端用不到的字段（note/confidence/start/end）以缩小体积。"""
     g = x["annotation"]
     words = [{"t": w["text"], "p": w.get("pos") or ""} for w in g.get("words", [])]
     if not words:
         words = [{"t": t, "p": ""} for t in x["english"].split(" ")]
-    phrases = []
-    for p in g.get("phrases", []):
-        if not p.get("role"):
-            continue
-        phrases.append({"t": p["text"], "r": p["role"], "k": p.get("roleType") or ""})
+    phrases = [{"t": p["text"], "r": p["role"], "k": p.get("roleType") or ""}
+               for p in g.get("phrases", []) if p.get("role")]
     return {
-        "o": x.get("order"),
-        "en": x["english"],
-        "cn": x.get("chinese") or "",
+        "o": x.get("order"), "en": x["english"], "cn": x.get("chinese") or "",
         "s": 1 if g.get("isSentence") else 0,
-        "w": words,
-        "ph": phrases,
-        "st": g.get("structure") or "",
-        "pt": g.get("pattern") or "",
-        "te": g.get("tense") or "",
-        "ty": g.get("sentenceType") or "",
-        "cl": g.get("clauseType") or "",
-        "kp": g.get("keyPoints") or [],
+        "w": words, "ph": phrases,
+        "st": g.get("structure") or "", "pt": g.get("pattern") or "",
+        "te": g.get("tense") or "", "ty": g.get("sentenceType") or "",
+        "cl": g.get("clauseType") or "", "kp": g.get("keyPoints") or [],
     }
 
 
@@ -57,59 +57,44 @@ TEMPLATE = r"""<!doctype html>
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>练习页 · 句子语法标注（效果页）</title>
+<title>练习页 · 句子成分胶囊（效果页）</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    --cream: #FBF7E8;
-    --ink: #0F172A;
-    --muted: #5B6B80;
-    --line: #E5E7EB;
-    --blue: #2C5AF4;
-    --panel: #FFFDF7;
+    --cream: #FBF7E8; --ink: #0F172A; --muted: #5B6B80;
+    --line: #E5E7EB; --blue: #2C5AF4;
   }
   body {
     font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
-    background: var(--cream); color: var(--ink);
-    font-size: 14px; line-height: 1.5;
-    padding: 14px;
+    background: var(--cream); color: var(--ink); font-size: 14px; line-height: 1.5; padding: 14px;
   }
-  /* 内容靠左铺开、不套居中壳 —— 内联预览靠第一个元素的宽度测尺寸 */
-  .app { width: 100%; max-width: 1040px; }
+  .app { width: 100%; max-width: 1060px; }
 
-  /* ── 顶栏（模拟练习页骨架）────────────────────────── */
-  .bar {
-    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
-    padding: 0 0 10px;
-  }
+  /* ── 控制条 ─────────────────────────────────── */
+  .bar { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; padding-bottom: 9px; }
   .btn {
-    display: inline-flex; align-items: center; gap: 5px;
     border: 1px solid var(--line); background: #fff; color: #3F4B5B;
     border-radius: 999px; padding: 6px 13px; font-size: 13px; font-weight: 600;
-    cursor: pointer; transition: .15s; white-space: nowrap;
-    font-family: inherit;
+    cursor: pointer; font-family: inherit; white-space: nowrap; transition: .15s;
   }
   .btn:hover { border-color: #C7D2FE; color: var(--blue); }
-  .btn:active { transform: translateY(1px); }
   .btn[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
-  .btn[disabled] { opacity: .45; cursor: not-allowed; }
   .title { font-size: 15px; font-weight: 800; }
   .sub { font-size: 12.5px; color: var(--muted); }
   .spacer { flex: 1 1 auto; }
-
   .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; background: #fff; overflow: hidden; }
   .seg button {
     border: 0; background: transparent; color: #3F4B5B; font-family: inherit;
     padding: 6px 12px; font-size: 12.5px; font-weight: 700; cursor: pointer;
   }
   .seg button[aria-pressed="true"] { background: #EFF6FF; color: var(--blue); }
+  .hint { font-size: 12px; color: var(--muted); }
+  kbd { background: #F1F5F9; border: 1px solid var(--line); border-bottom-width: 2px;
+        border-radius: 5px; padding: 1px 5px; font-size: 11px; font-family: inherit; font-weight: 700; }
 
-  /* ── 句子卡 ─────────────────────────────────────── */
-  .card {
-    background: #fff; border: 1px solid var(--line); border-radius: 14px;
-    padding: 16px 18px 14px; margin-bottom: 12px;
-  }
-  .head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+  /* ── 句子卡 ─────────────────────────────────── */
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px 15px; margin-bottom: 12px; }
+  .head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
   .cn { font-size: 15.5px; font-weight: 800; }
   .badge { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
   .b-sent { background: #EFF6FF; color: var(--blue); }
@@ -117,71 +102,74 @@ TEMPLATE = r"""<!doctype html>
   .b-en { background: #F8FAFC; color: #7B8794; font-family: ui-monospace, SFMono-Regular, monospace; font-weight: 600; }
   .b-ok { background: #ECFDF5; color: #047857; }
   .b-warn { background: #FFF4E0; color: #8A4B00; }
-
-  .measure { font-size: 12px; color: var(--muted); margin: 2px 0 12px; }
+  .measure { font-size: 12px; color: var(--muted); margin: 2px 0 16px; }
   .measure b { color: var(--ink); font-variant-numeric: tabular-nums; }
 
-  .rows { display: flex; flex-direction: column; align-items: center; row-gap: 16px; margin: 4px 0 6px; }
-  .sent { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; column-gap: 16px; row-gap: 12px; }
+  /* ── 句子本体 ─────────────────────────────────
+     每个成分一个 grid: 4 行 —— [成分名][胶囊+词][下划线][词性]。
+     用**同一个 grid** 是为了让「胶囊里的词」与「下面的下划线、词性」共用列宽,
+     三者天然同一条中心线（用户明确要求三者居中对齐）。 */
+  .rows { display: flex; flex-direction: column; align-items: center; row-gap: 20px; }
+  .sent { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center;
+          column-gap: 46px; row-gap: 16px; }
 
-  .grp { display: grid; justify-content: center; column-gap: 4px; }
-  .cap {
-    grid-column: 1 / -1; height: 24px;
-    display: flex; align-items: center; justify-content: center; margin-bottom: 5px;
-  }
-  .cap:not(:empty) {
-    justify-self: center; padding: 3px 11px 4px;
-    background: var(--c); color: #fff;      /* 实心饱和色 + 白字, 对比度已实算 >= 4.5:1 */
-    border-radius: 999px; font-size: 12px; font-weight: 800; line-height: 1.15; white-space: nowrap;
-  }
-  .cap i { font-style: normal; font-size: 9.5px; font-weight: 700; opacity: .78; }
-  .w {
-    grid-row: 2; justify-self: center; align-self: end;
-    font-size: 25px; font-weight: 700; line-height: 1.15; letter-spacing: .2px; white-space: nowrap;
-  }
-  .bar2 { grid-column: 1 / -1; grid-row: 3; height: 3px; border-radius: 2px; background: var(--c); margin-top: 4px; }
-  .p { grid-row: 4; justify-self: center; margin-top: 5px; font-size: 11px; font-weight: 700; color: var(--c); white-space: nowrap; }
-  .bar2.bare { background: #CBD5E1; }
-  .p.bare { color: #94A3B8; }
+  .grp { display: grid; grid-template-columns: repeat(var(--n), max-content); column-gap: 24px; position: relative; }
+  /* 成分名: 在胶囊上方, 与胶囊居中, 颜色与胶囊一致 */
+  .grp .name { grid-row: 1; grid-column: 1 / -1; justify-self: center;
+               color: var(--c); font-size: 12.5px; font-weight: 800;
+               margin-bottom: 6px; white-space: nowrap; letter-spacing: .3px; }
+  /* 胶囊底色: 跨列铺满, 左右各外扩 13px 当作内边距（这样词与下划线仍共用列宽） */
+  .grp .pill { grid-row: 2; grid-column: 1 / -1; margin: 0 -13px; background: var(--c); border-radius: 999px; }
+  /* 词: 各自占一列, 压在胶囊底色上 */
+  .grp .w { grid-row: 2; justify-self: center; align-self: center; position: relative; z-index: 1;
+            color: #fff; font-size: 22px; font-weight: 700; line-height: 1.2;
+            padding: 9px 0; white-space: nowrap; }
+  /* 下划线: 每个单词一条, 颜色 = var(--u) */
+  .grp .ul { grid-row: 3; justify-self: center; width: 100%; min-width: 26px; height: 3px;
+             border-radius: 2px; background: var(--u); margin-top: 8px; }
+  /* 词性文字: 与词、下划线同一中心线, 颜色与下划线一致 */
+  .grp .pp { grid-row: 4; justify-self: center; color: var(--u);
+             font-size: 11.5px; font-weight: 700; margin-top: 5px; white-space: nowrap; }
 
-  /* ── 信息卡 ─────────────────────────────────────── */
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 9px; margin-top: 14px; }
-  .info { border-radius: 10px; padding: 9px 11px; border: 1px solid; }
+  /* 碎片: 无成分 → 中性灰胶囊(不声称任何成分), 无成分名 */
+  .grp.frag .pill { background: #E4E9F0; }
+  .grp.frag .w { color: #334155; }
+  .grp.frag .ul { background: var(--u); }
+  .grp.frag .pp { color: var(--u); }
+
+  /* ── 四个卡片: 等宽等高一排 ─────────────────────── */
+  .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+           gap: 10px; margin-top: 18px; align-items: stretch; }
+  .info { border-radius: 10px; padding: 10px 12px; border: 1px solid; display: flex; flex-direction: column; }
   .c-blue { background: #EFF6FF; border-color: #BFDBFE; }
   .c-amber { background: #FFFBEB; border-color: #FDE68A; }
   .c-violet { background: #F5F3FF; border-color: #DDD6FE; }
   .c-rose { background: #FFF1F2; border-color: #FECDD3; }
-  .wide { grid-column: 1 / -1; }
-  .info-t { font-size: 10.5px; font-weight: 700; opacity: .62; margin-bottom: 3px; }
+  .info-t { font-size: 10.5px; font-weight: 700; opacity: .62; margin-bottom: 4px; }
   .info-v { font-size: 13.5px; font-weight: 800; }
-  .info ul { margin: 0; padding-left: 15px; font-size: 12.5px; line-height: 1.75; color: #334155; }
-  .tag {
-    display: inline-block; margin-top: 5px; font-size: 10.5px; font-weight: 700;
-    background: rgba(255,255,255,.75); border: 1px solid rgba(15,23,42,.10);
-    border-radius: 999px; padding: 2px 8px; color: #334155;
-  }
+  .info ul { margin: 0; padding-left: 15px; font-size: 12.5px; line-height: 1.7; color: #334155; }
+  .tag { display: inline-block; margin-top: 5px; font-size: 10.5px; font-weight: 700;
+         background: rgba(255,255,255,.75); border: 1px solid rgba(15,23,42,.10);
+         border-radius: 999px; padding: 2px 8px; color: #334155; align-self: flex-start; }
+  .footnote { background: #F8FAFC; border: 1px solid var(--line); border-radius: 10px;
+              padding: 10px 12px; font-size: 12px; font-weight: 600; color: #94A3B8; }
+  @media (max-width: 900px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .cards { grid-template-columns: 1fr; } }
 
-  /* ── 图例 + 说明 ────────────────────────────────── */
-  .legend { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
-  .lg { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 700; color: #475569; }
-  .dot { width: 22px; height: 12px; border-radius: 999px; background: var(--c); }
-  .note {
-    background: #fff; border: 1px solid var(--line); border-radius: 12px;
-    padding: 11px 13px; font-size: 12.5px; line-height: 1.85; color: var(--muted);
-  }
+  /* ── 图例 / 说明 ─────────────────────────────── */
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .lg { display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px; font-weight: 700; color: #475569; }
+  .dot { width: 22px; height: 11px; border-radius: 999px; background: var(--c); display: inline-block; }
+  .lgtitle { font-size: 12px; font-weight: 800; color: var(--ink); margin-right: 2px; }
+  .note { background: #fff; border: 1px solid var(--line); border-radius: 12px;
+          padding: 11px 13px; font-size: 12.5px; line-height: 1.85; color: var(--muted); }
   .note b { color: var(--ink); }
   .note code { background: #F1F5F9; border-radius: 4px; padding: 1px 5px; font-size: 12px; }
-  .hint { font-size: 12px; color: var(--muted); }
-  kbd {
-    background: #F1F5F9; border: 1px solid var(--line); border-bottom-width: 2px;
-    border-radius: 5px; padding: 1px 5px; font-size: 11px; font-family: inherit; font-weight: 700;
-  }
 </style>
 </head>
 <body>
 <div class="app">
 
-  <!-- 顶栏 -->
   <div class="bar">
     <button class="btn" id="prev">← 上一句</button>
     <button class="btn" id="next">下一句 →</button>
@@ -191,24 +179,21 @@ TEMPLATE = r"""<!doctype html>
     <button class="btn" id="jumpLong">跳到最长句</button>
   </div>
 
-  <!-- 筛选 + 开关 -->
   <div class="bar">
     <span class="seg" id="filter">
       <button data-f="all">全部</button>
-      <button data-f="frag">碎片</button>
-      <button data-f="short">短句</button>
+      <button data-f="sent">完整句</button>
       <button data-f="long">长句</button>
+      <button data-f="frag">碎片</button>
     </span>
-    <span class="seg" id="toggles">
-      <button data-t="clause" aria-pressed="true">从句断行</button>
-      <button data-t="pos" aria-pressed="true">逐词词性</button>
-      <button data-t="cards" aria-pressed="true">结构卡</button>
-      <button data-t="cn" aria-pressed="true">中文</button>
+    <span class="seg" id="palette">
+      <button data-p="A">A · 下划线按词性</button>
+      <button data-p="B">B · 下划线跟随成分</button>
     </span>
-    <span class="hint">用 <kbd>←</kbd> <kbd>→</kbd> 切换句子</span>
+    <button class="btn" id="clause" aria-pressed="true">从句断行</button>
+    <span class="hint"><kbd>←</kbd> <kbd>→</kbd> 切换</span>
   </div>
 
-  <!-- 句子 -->
   <div class="card">
     <div class="head">
       <span class="cn" id="cn"></span>
@@ -220,67 +205,60 @@ TEMPLATE = r"""<!doctype html>
     <div class="cards" id="cards"></div>
   </div>
 
-  <!-- 图例 -->
-  <div class="card">
-    <div class="legend" id="legend"></div>
-  </div>
+  <div class="card"><div class="legend" id="legend"></div></div>
 
-  <!-- 说明 -->
   <div class="note">
-    <b>这一页是什么</b>：练习页里「句子语法标注」面板的效果页。数据是真实模型对
-    <b>「零基础学英语 · 第一课」218 条</b>的标注，不是示例。
-    <b>一个句子成分 = 一个实心彩色胶囊</b>；单词裸露不装框；胶囊下方<b>一条横条横跨该成分的全部词</b>；
-    横条下方是逐词词性。<br />
-    <b>要你重点看的两处</b>：① 打开/关闭上面的「<b>从句断行</b>」，看那几句 17–21 词的并列句
-    （点「跳到最长句」）有什么差别 —— 这是我们选的方案，靠它在 <code>so</code> 处断开，
-    现有面板宽度就装得下，不必把练习区改成全宽，也不必限制句子长度。
-    ② 每句下面那行<b>实时测量值</b>：面板可用宽 / 本句单行需要多少 px / 实际占几行。
-    切换宽度看它怎么变（拖动窗口），这是浏览器真实量的，不是我估的。<br />
-    <b>碎片</b>（如 <code>to do it</code>）按规范只给逐词词性，不给成分胶囊与结构。
+    <b>这一页是什么</b>：练习页里「句子成分胶囊」的效果页，数据是真实模型对
+    <b>「零基础学英语 · 第一课」218 条</b>的标注，不是示例。<br />
+    <b>怎么看</b>：① 上面那两个按钮切换 <b>下划线配色 A / B</b> —— A 是下划线按<b>词性</b>上色，
+    B 是下划线<b>跟随所属成分</b>的颜色，你挑一套。② 胶囊里装的是<b>该成分的英文词</b>
+    （同一成分合成一个胶囊）；胶囊上方小字是成分名，颜色与胶囊一致；每个单词下面一条下划线 +
+    中文词性，三者同一条中心线。③ <b>碎片</b>（如 <code>to do it</code>）按规范不给成分，
+    胶囊为中性灰、没有成分名。
   </div>
 </div>
 
 <script>
 const DATA = __DATA__;
 
-/* 成分 → 实心色。白字对比度已用 scripts/ew-contrast.py 实算, 全部 >= 4.5:1 */
+/* 成分 → 实心色（胶囊底 + 成分名文字色）。白字 / 压白底 都实算过 >= 4.5:1 */
 const ROLE_COLOR = {
   "主语": "#7C3AED", "谓语": "#2563EB", "宾语": "#047857",
-  "表语": "#0E7490", "状语": "#C2410C", "定语": "#BE185D",
-  "连接词": "#475569"
+  "表语": "#0E7490", "状语": "#C2410C", "定语": "#BE185D", "连接词": "#475569"
 };
-const DEFAULT_COLOR = "#475569";
-const CONJ_ROLE = "连接词";
+/* 词性 → 色（A 方案用）。11 色白字均 >= 5.02:1 */
+const POS_COLOR = {
+  "代词": "#7C3AED", "动词": "#2563EB", "助动词": "#4338CA", "情态动词": "#0369A1",
+  "不定式": "#0F766E", "名词": "#047857", "形容词": "#B45309", "副词": "#C2410C",
+  "介词": "#BE185D", "冠词": "#A21CAF", "连词": "#475569"
+};
+const GREY = "#475569";
 
-const opts = { clause: true, pos: true, cards: true, cn: true };
+let scheme = "A";          /* A = 下划线按词性 ; B = 下划线跟随成分 */
+let clauseBreak = true;
 let filter = "all";
 let list = DATA.slice();
 let cur = 0;
-/* ── 把短语匹配到词序号（与 python 端 group_of 同一算法）────────────
-   必须按**起点排序**后再用：早先按「文本首次出现位置」排序会让 cursor 乱走、
-   重复输出已覆盖的词，一条 14 词的句子被渲染出 21 个词。*/
+
+/* 短语 → 词序号。**必须按起点排序**：早先按「文本首次出现位置」排序会让 cursor 乱走、
+   重复输出已覆盖的词（一条 14 词的句子被渲染出 21 个词）。 */
 function toGroups(item) {
-  const words = item.w.map(x => x.t);
-  const spans = [];
+  const ws = item.w.map(x => x.t), spans = [];
   for (const p of item.ph) {
     const pt = p.t.split(" ");
-    for (let s = 0; s + pt.length <= words.length; s++) {
+    for (let s = 0; s + pt.length <= ws.length; s++) {
       let ok = true;
-      for (let k = 0; k < pt.length; k++) if (words[s + k] !== pt[k]) { ok = false; break; }
+      for (let k = 0; k < pt.length; k++) if (ws[s + k] !== pt[k]) { ok = false; break; }
       if (!ok) continue;
-      if (spans.some(sp => s < sp.e && s + pt.length > sp.b)) continue;  // 与已有短语重叠
-      spans.push({ b: s, e: s + pt.length, p });
-      break;
+      if (spans.some(sp => s < sp.e && s + pt.length > sp.b)) continue;
+      spans.push({ b: s, e: s + pt.length, p }); break;
     }
   }
   spans.sort((a, b) => a.b - b.b);
   return spans.map(sp => ({ p: sp.p, idx: Array.from({ length: sp.e - sp.b }, (_, i) => sp.b + i) }));
 }
-
-/* 覆盖全部词的顺序单元（成分组 + 未被成分覆盖的散词） */
 function toUnits(item, groups) {
-  const n = item.w.length, units = [];
-  let c = 0;
+  const n = item.w.length, units = []; let c = 0;
   for (const g of groups) {
     while (c < g.idx[0]) { units.push({ p: null, idx: [c] }); c++; }
     units.push(g); c = g.idx[g.idx.length - 1] + 1;
@@ -288,29 +266,26 @@ function toUnits(item, groups) {
   while (c < n) { units.push({ p: null, idx: [c] }); c++; }
   return units;
 }
-
-/* 按从句边界切行：连接词另起一行 → 长并列句不再被挤成多行 */
-function toRows(units, clauseBreak) {
+function toRows(units, brk) {
   const rows = []; let cur = [];
   for (const u of units) {
-    if (clauseBreak && cur.length && u.p && u.p.r === CONJ_ROLE) { rows.push(cur); cur = []; }
+    if (brk && cur.length && u.p && u.p.r === "连接词") { rows.push(cur); cur = []; }
     cur.push(u);
   }
   if (cur.length) rows.push(cur);
   return rows;
 }
-
 function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+const posColorOf = p => POS_COLOR[p] || GREY;
 
 function render() {
   const it = list[cur];
   const isSent = !!it.s;
   const groups = isSent ? toGroups(it) : [];
   const units = isSent ? toUnits(it, groups) : it.w.map((_, i) => ({ p: null, idx: [i] }));
-  const rows = isSent ? toRows(units, opts.clause) : units.map(u => [u]);
+  const rows = isSent ? toRows(units, clauseBreak) : [units];
 
-  document.getElementById("cn").textContent = opts.cn ? it.cn : "";
-  document.getElementById("cn").style.display = (opts.cn && it.cn) ? "" : "none";
+  document.getElementById("cn").textContent = it.cn || "";
   document.getElementById("en").textContent = it.en;
   const kind = document.getElementById("kind");
   kind.className = "badge " + (isSent ? "b-sent" : "b-frag");
@@ -320,20 +295,26 @@ function render() {
   for (const row of rows) {
     out.push('<div class="sent">');
     for (const u of row) {
-      const color = u.p ? (ROLE_COLOR[u.p.r] || DEFAULT_COLOR) : "#475569";
-      const bare = u.p ? "" : " bare";
-      const cols = `repeat(${u.idx.length},auto)`;
-      const sub = (u.p && u.p.k) ? `<i>·${esc(u.p.k)}</i>` : "";
-      out.push(`<div class="grp" data-c${u.p ? "" : "b"}="1" style="--c:${color};grid-template-columns:${cols}">`);
-      out.push(`<div class="cap">${u.p ? esc(u.p.r) + sub : ""}</div>`);
-      for (const i of u.idx) out.push(`<span class="w">${esc(it.w[i].t)}</span>`);
-      out.push(`<div class="bar2${bare}"></div>`);
-      if (opts.pos) {
-        for (const i of u.idx) {
-          const p = it.w[i].p;
-          out.push(`<span class="p${bare}">${p ? esc(p) : "&nbsp;"}</span>`);
-        }
-      }
+      const comp = u.p;
+      const c = comp ? (ROLE_COLOR[comp.r] || GREY) : "#E4E9F0";
+      const frag = comp ? "" : " frag";
+      out.push(`<div class="grp${frag}" data-comp="${comp ? esc(comp.r) : ""}" style="--n:${u.idx.length};--c:${c}">`);
+      out.push(`<div class="name">${comp ? esc(comp.r) : ""}</div>`);
+      out.push('<div class="pill"></div>');
+      /* ⚠️ 必须**显式**给每列指定 grid-column：胶囊底色用 `1/-1` 占满了第 2 行，
+         grid 自动排布会「避开已占用格子」把单词挤到第 3 行 → 单词与它的下划线错位。
+         实测踩过：不写列号时「单词/下划线/词性」中心线不齐 871 处。 */
+      u.idx.forEach((i, k) => out.push(`<span class="w" style="grid-column:${k + 1}">${esc(it.w[i].t)}</span>`));
+      u.idx.forEach((i, k) => {
+        const pos = it.w[i].p;
+        const u2 = scheme === "A" ? posColorOf(pos) : (comp ? c : GREY);
+        out.push(`<span class="ul" style="grid-column:${k + 1};--u:${u2}"></span>`);
+      });
+      u.idx.forEach((i, k) => {
+        const pos = it.w[i].p;
+        const u2 = scheme === "A" ? posColorOf(pos) : (comp ? c : GREY);
+        out.push(`<span class="pp" style="grid-column:${k + 1};--u:${u2}">${pos ? esc(pos) : ""}</span>`);
+      });
       out.push("</div>");
     }
     out.push("</div>");
@@ -341,24 +322,25 @@ function render() {
   const rowsEl = document.getElementById("rows");
   rowsEl.innerHTML = out.join("");
 
-  /* 信息卡 */
+  /* 四个卡片等宽等高一排: 句子结构 / 时态 / 句型 / 语法要点 */
   const cards = [];
-  const card = opts.cards;
-  if (card && isSent) {
-    if (it.st) cards.push(`<div class="info c-blue"><div class="info-t">句子结构</div><div class="info-v">${esc(it.st)}</div>${it.pt ? `<span class="tag">${esc(it.pt)}</span>` : ""}</div>`);
-    if (it.te) cards.push(`<div class="info c-amber"><div class="info-t">时态</div><div class="info-v">${esc(it.te)}</div></div>`);
-    if (it.ty) cards.push(`<div class="info c-violet"><div class="info-t">句型</div><div class="info-v">${esc(it.ty)}</div>${it.cl ? `<span class="tag">${esc(it.cl)}</span>` : ""}</div>`);
-    if (it.kp && it.kp.length) cards.push(`<div class="info c-rose wide"><div class="info-t">语法要点</div><ul>${it.kp.map(k => `<li>${esc(k)}</li>`).join("")}</ul></div>`);
-  } else if (card) {
-    cards.push(`<div class="info wide" style="background:#F8FAFC;border-color:#E5E7EB;color:#94A3B8;font-size:12px;font-weight:600">碎片只显示逐词词性 —— 不显示成分胶囊 / 结构 / 时态</div>`);
+  if (isSent) {
+    cards.push(`<div class="info c-blue"><div class="info-t">句子结构</div><div class="info-v">${esc(it.st || "—")}</div>${it.pt ? `<span class="tag">${esc(it.pt)}</span>` : ""}</div>`);
+    cards.push(`<div class="info c-amber"><div class="info-t">时态</div><div class="info-v">${esc(it.te || "—")}</div></div>`);
+    cards.push(`<div class="info c-violet"><div class="info-t">句型</div><div class="info-v">${esc(it.ty || "—")}</div>${it.cl ? `<span class="tag">${esc(it.cl)}</span>` : ""}</div>`);
+    const kp = (it.kp && it.kp.length) ? `<ul>${it.kp.map(k => `<li>${esc(k)}</li>`).join("")}</ul>` : `<div class="info-v">—</div>`;
+    cards.push(`<div class="info c-rose"><div class="info-t">语法要点</div>${kp}</div>`);
+  } else {
+    cards.push(`<div class="footnote" style="grid-column:1/-1">碎片只显示逐词词性 —— 不显示成分胶囊 / 结构 / 时态（按规范 §8 降级）。上面的灰胶囊只表示「这些词是一块」，不声称任何成分。</div>`);
   }
   document.getElementById("cards").innerHTML = cards.join("");
 
   document.getElementById("pos").textContent = `${cur + 1} / ${list.length}　（第 ${it.o} 句）`;
   measure();
+  drawLegend();
 }
 
-/* 实时测量: 面板可用宽 / 本句单行需要多少 px / 实际占几行。浏览器真实量的。*/
+/* 实时测量: 面板可用宽 / 本句单行需要多少 px / 实际占几行 */
 function measure() {
   const rowsEl = document.getElementById("rows");
   const avail = Math.round(rowsEl.getBoundingClientRect().width);
@@ -367,83 +349,100 @@ function measure() {
   for (const r of sentRows) {
     const grps = Array.from(r.querySelectorAll(":scope > .grp"));
     const sum = grps.reduce((a, g) => a + g.getBoundingClientRect().width, 0);
-    natural = Math.max(natural, Math.round(sum + Math.max(0, grps.length - 1) * 16));
+    natural = Math.max(natural, Math.round(sum + Math.max(0, grps.length - 1) * 46));
     const tops = new Set(grps.map(g => Math.round(g.getBoundingClientRect().top)));
     wrap += Math.max(0, tops.size - 1);
   }
-  const totalLines = sentRows.length + wrap;
-  const m = document.getElementById("measure");
+  const total = sentRows.length + wrap;
   const fit = wrap === 0;
-  m.innerHTML = `面板可用宽 <b>${avail}px</b> · 本句单行需 <b>${natural}px</b> · `
-    + `实际 <b>${totalLines} 行</b>${sentRows.length > 1 ? `（从句断行 ${sentRows.length} 段）` : ""} `
+  document.getElementById("measure").innerHTML =
+    `面板可用宽 <b>${avail}px</b> · 本句单行需 <b>${natural}px</b> · 实际 <b>${total} 行</b>`
+    + (sentRows.length > 1 ? `（从句断行 ${sentRows.length} 段）` : "")
     + `　<span class="badge ${fit ? "b-ok" : "b-warn"}">${fit ? "不折行 ✓" : `被迫折行 ${wrap} 次`}</span>`;
+}
+
+/* 图例跟随当前配色方案 */
+function drawLegend() {
+  const map = scheme === "A" ? POS_COLOR : ROLE_COLOR;
+  const title = scheme === "A" ? "下划线 / 词性文字配色（按词性）" : "下划线 / 词性文字配色（跟随成分）";
+  document.getElementById("legend").innerHTML =
+    `<span class="lgtitle">胶囊 / 成分名配色</span>`
+    + Object.entries(ROLE_COLOR).map(([r, c]) => `<span class="lg"><span class="dot" style="--c:${c}"></span>${r}</span>`).join("")
+    + `<span class="lgtitle" style="margin-left:14px">${title}</span>`
+    + Object.entries(map).map(([k, c]) => `<span class="lg"><span class="dot" style="--c:${c}"></span>${k}</span>`).join("");
 }
 
 function applyFilter() {
   const N = it => it.w.length;
-  if (filter === "frag") list = DATA.filter(x => !x.s);
-  else if (filter === "short") list = DATA.filter(x => x.s && N(x) <= 6);
+  if (filter === "sent") list = DATA.filter(x => x.s);
   else if (filter === "long") list = DATA.filter(x => x.s && N(x) >= 10);
+  else if (filter === "frag") list = DATA.filter(x => !x.s);
   else list = DATA.slice();
-  cur = 0;
-  render();
+  cur = 0; render();
 }
-
-/* 打开页面时落在一条**有代表性的完整句**上 —— 第 1 条是单词碎片 `I`, 上方没有任何胶囊,
-   用户打开会以为「怎么没有气泡」。挑第一条 4~6 词的完整句作默认。*/
+/* 默认落在一条有代表性的完整句上 —— 第 1 条是单词碎片 `I`, 打开会看不到胶囊 */
 function initialIndex() {
   const i = DATA.findIndex(x => x.s && x.w.length >= 4 && x.w.length <= 6);
   return i >= 0 ? i : 0;
 }
 
-/* ── 事件 ─────────────────────────────────────────── */
 document.getElementById("prev").onclick = () => { cur = (cur - 1 + list.length) % list.length; render(); };
 document.getElementById("next").onclick = () => { cur = (cur + 1) % list.length; render(); };
 document.getElementById("jumpLong").onclick = () => {
-  let best = 0;
-  list.forEach((x, i) => { if (x.w.length > list[best].w.length) best = i; });
-  cur = best; render();
+  let b = 0; list.forEach((x, i) => { if (x.w.length > list[b].w.length) b = i; });
+  cur = b; render();
 };
 document.querySelectorAll("#filter button").forEach(b => {
-  b.onclick = () => {
-    filter = b.dataset.f;
+  b.onclick = () => { filter = b.dataset.f;
     document.querySelectorAll("#filter button").forEach(x => x.setAttribute("aria-pressed", x === b ? "true" : "false"));
-    applyFilter();
-  };
+    applyFilter(); };
 });
-document.querySelectorAll("#toggles button").forEach(b => {
-  b.onclick = () => {
-    const k = b.dataset.t;
-    opts[k] = !opts[k];
-    b.setAttribute("aria-pressed", opts[k] ? "true" : "false");
-    render();
-  };
+document.querySelectorAll("#palette button").forEach(b => {
+  b.onclick = () => { scheme = b.dataset.p;
+    document.querySelectorAll("#palette button").forEach(x => x.setAttribute("aria-pressed", x === b ? "true" : "false"));
+    render(); };
 });
+document.getElementById("clause").onclick = (e) => {
+  clauseBreak = !clauseBreak;
+  e.currentTarget.setAttribute("aria-pressed", clauseBreak ? "true" : "false");
+  render();
+};
 document.addEventListener("keydown", e => {
   if (e.key === "ArrowLeft") { cur = (cur - 1 + list.length) % list.length; render(); }
   if (e.key === "ArrowRight") { cur = (cur + 1) % list.length; render(); }
 });
 window.addEventListener("resize", () => measure());
 
-/* 图例 */
-document.getElementById("legend").innerHTML =
-  '<span class="lg" style="margin-right:6px">成分配色</span>' +
-  Object.entries(ROLE_COLOR).map(([r, c]) => `<span class="lg"><span class="dot" style="--c:${c}"></span>${r}</span>`).join("");
-
 document.querySelector('#filter button[data-f="all"]').setAttribute("aria-pressed", "true");
+document.querySelector('#palette button[data-p="A"]').setAttribute("aria-pressed", "true");
 cur = initialIndex();
 render();
 
-/* 供外部自动化断言用（verify-effect-page.js）—— 只读暴露, 不改页面行为 */
+/* 供外部自动化断言（verify-effect-page.js）—— 只读暴露 */
 window.__grammarPage = {
   count: () => DATA.length,
   raw: i => DATA[i],
   goto: i => { cur = i; render(); },
-  setFilter: applyFilter,
+  setScheme: s => { scheme = s; render(); },
+  state: () => ({ scheme, clauseBreak, filter }),
   text: () => ({
     words: Array.from(document.querySelectorAll("#rows .w")).map(e => e.textContent),
-    caps: Array.from(document.querySelectorAll("#rows .cap")).filter(e => e.textContent.trim()).map(e => e.textContent),
+    groups: Array.from(document.querySelectorAll("#rows .grp")).map(g => {
+      const nameEl = g.querySelector(".name"), pillEl = g.querySelector(".pill");
+      const cs = el => el ? getComputedStyle(el) : null;
+      return {
+        comp: g.dataset.comp,
+        words: Array.from(g.querySelectorAll(".w")).map(e => e.textContent),
+        name: nameEl ? nameEl.textContent : "",
+        nameColor: nameEl ? cs(nameEl).color : "",
+        pill: pillEl ? cs(pillEl).backgroundColor : "",
+        uls: Array.from(g.querySelectorAll(".ul")).map(e => cs(e).backgroundColor),
+        pps: Array.from(g.querySelectorAll(".pp")).map(e => e.textContent),
+        ppColors: Array.from(g.querySelectorAll(".pp")).map(e => cs(e).color)
+      };
+    }),
     rows: document.querySelectorAll("#rows > .sent").length,
+    cards: Array.from(document.querySelectorAll("#cards .info")).map(e => e.textContent.slice(0, 8)),
     measure: document.getElementById("measure").textContent
   })
 };
@@ -455,7 +454,6 @@ window.__grammarPage = {
 doc = TEMPLATE.replace("__DATA__", payload)
 OUT.parent.mkdir(parents=True, exist_ok=True)
 OUT.write_text(doc, encoding="utf-8")
-size = OUT.stat().st_size
 print(f"句数 {len(slim_data)}（完整句 {sum(1 for x in slim_data if x['s'])} / 碎片 {sum(1 for x in slim_data if not x['s'])}）")
 print(f"已生成: {OUT}")
-print(f"体积: {size/1024:.0f} KB（内嵌 {len(payload)/1024:.0f} KB 数据，无 CDN）")
+print(f"体积: {OUT.stat().st_size/1024:.0f} KB（内嵌 {len(payload)/1024:.0f} KB 数据，无 CDN）")

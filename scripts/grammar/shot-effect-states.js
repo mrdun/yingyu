@@ -1,9 +1,19 @@
 /**
- * 抓效果页的几种状态图（内部自检用，交付物是页面本身）。
- * 用法: node shot-effect-states.js <html> <输出目录前缀>
+ * 抓效果页几种状态图（内部自检用，交付物是页面本身）。
+ * 用法: node shot-effect-states.js <html> <输出前缀>
+ *
+ * ⚠️ prep 函数是**在页面里序列化执行**的，不能引用本文件的 Node 变量/函数
+ *   （踩过：`longest is not defined`）。要复用的逻辑必须内联进每个 prep。
  */
 const path = require("path");
 const PW = "C:/Users/mrdun/AppData/Local/hermes/node/node_modules/playwright";
+
+const GO_LONGEST = `
+  let b = 0;
+  for (let i = 0; i < window.__grammarPage.count(); i++)
+    if (window.__grammarPage.raw(i).w.length > window.__grammarPage.raw(b).w.length) b = i;
+  window.__grammarPage.goto(b);
+`;
 
 (async () => {
   const file = process.argv[2];
@@ -11,40 +21,24 @@ const PW = "C:/Users/mrdun/AppData/Local/hermes/node/node_modules/playwright";
   const { chromium } = require(PW);
   const browser = await chromium.launch();
 
-  async function shot(name, width, prep) {
-    const page = await browser.newPage({ viewport: { width, height: 1100 }, deviceScaleFactor: 2 });
+  async function shot(name, prepJs) {
+    const page = await browser.newPage({
+      viewport: { width: 1080, height: 1300 },
+      deviceScaleFactor: 2,
+    });
     await page.goto("file:///" + path.resolve(file).replace(/\\/g, "/"), { waitUntil: "load" });
     await page.waitForTimeout(350);
-    if (prep) await page.evaluate(prep);
+    if (prepJs) await page.evaluate(prepJs);
     await page.waitForTimeout(300);
     const p = `${out}-${name}.png`;
     await page.screenshot({ path: p, fullPage: true });
-    const h = await page.evaluate(() => document.documentElement.scrollHeight);
-    console.log(`${name}: ${p}  (${width}x${h})`);
+    console.log(`${name}: ${p}`);
     await page.close();
   }
 
-  const LONG = () => {
-    let best = 0;
-    for (let i = 0; i < window.__grammarPage.count(); i++) {
-      if (window.__grammarPage.raw(i).w.length > window.__grammarPage.raw(best).w.length) best = i;
-    }
-    window.__grammarPage.goto(best);
-  };
-
-  await shot("1-default", 1040, null);
-  await shot("2-long-break", 1040, LONG);
-  await shot("3-long-nobreak", 1040, () => {
-    document.querySelector('#toggles button[data-t="clause"]').click();
-    let best = 0;
-    for (let i = 0; i < window.__grammarPage.count(); i++) {
-      if (window.__grammarPage.raw(i).w.length > window.__grammarPage.raw(best).w.length) best = i;
-    }
-    window.__grammarPage.goto(best);
-  });
-  await shot("4-frag", 1040, () => {
-    document.querySelector('#filter button[data-f="frag"]').click();
-    window.__grammarPage.goto(2);
-  });
+  await shot("A-default", null); // A 方案 + 默认短句
+  await shot("A-long", GO_LONGEST); // A 方案 + 最长句
+  await shot("B-long", `window.__grammarPage.setScheme("B"); ${GO_LONGEST}`); // B 方案 + 最长句
+  await shot("A-nobreak", `document.getElementById("clause").click(); ${GO_LONGEST}`);
   await browser.close();
 })();
